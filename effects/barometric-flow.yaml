@@ -1,0 +1,64 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: barometric-flow
+kind: effect
+home: move|liquid
+functions:
+  - move|liquid
+parameters:
+  - change|position
+  - increase|speed
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: verbreitet
+sources:
+  - https://de.wikipedia.org/wiki/Simon-Effekt
+  - https://en.wikipedia.org/wiki/Barometric_formula
+authors:
+  - Robert Adunka
+origin: triz-consulting
+text:
+  de:
+    name: Siphon-Effekt
+    description: >-
+      Der Siphon-Effekt ermöglicht das selbstständige Überleiten einer Flüssigkeit aus einem
+      höher gelegenen in ein tieferes Becken über eine dazwischenliegende Barriere hinweg.
+      Dies geschieht durch ein gefülltes Rohr oder einen Schlauch, in dem der hydrostatische
+      Druckunterschied zwischen den beiden Flüssigkeitsspiegeln eine kontinuierliche Strömung
+      antreibt. Sobald der Fluss initiiert ist, zieht die absinkende Flüssigkeitssäule im
+      längeren Auslassarm durch den entstehenden Unterdruck kontinuierlich neues Medium nach.
+    example: Geruchsverschluss am Waschbecken, Abschlauchen eines Fahrzeugtanks
+    conditions: ''
+    limits: >-
+      Der Effekt bricht ab, wenn Luft in das Schlauchsystem eindringt oder wenn der Scheitelpunkt
+      der Leitung die maximale geodätische Saughöhe der jeweiligen Flüssigkeit überschreitet.
+    sideEffects: >-
+      Es besteht die Gefahr des ungewollten Leerlaufens von Behältern bei unkontrolliertem
+      Start des Flusses sowie das Risiko von Rücksaugungen verunreinigter Medien in saubere
+      Systeme.
+    kind: geprueft
+    author: Robert Adunka
+    model: gemini-3.5-flash
+    updated: '2026-09-26'
+  en:
+    name: Barometric Flow
+    description: >-
+      The siphon effect enables the automatic transfer of a liquid from a higher reservoir
+      to a lower one across an intervening barrier. This is achieved using a pre-filled pipe
+      or hose, where the difference in hydrostatic pressure between the two liquid levels
+      drives a continuous flow. Once the flow is initiated, the falling liquid column in the
+      longer discharge arm creates a partial vacuum that continuously draws in new medium.
+    example: U-bend odour trap under a sink, siphoning a vehicle fuel tank
+    conditions: ''
+    limits: >-
+      The effect stops if air enters the tubing system or if the highest point of the conduit
+      exceeds the maximum geodetic suction lift of the respective liquid.
+    sideEffects: >-
+      There is a risk of accidental draining of containers if the flow starts unintentionally,
+      as well as the danger of back-siphoning contaminated fluids into clean systems.
+    kind: geprueft
+    author: Robert Adunka
+    model: gemini-3.5-flash
+    updated: '2026-09-26'

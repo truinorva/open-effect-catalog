@@ -1,0 +1,62 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: thermosiphon-two-phase
+kind: effect
+home: keep-temp|gas
+functions:
+  - keep-temp|gas
+  - move|gas
+  - move|liquid
+parameters:
+  - change|state
+  - stabilise|temperature
+uses: []
+domain:
+  id: Verfahrenstechnik
+  de: Verfahrenstechnik
+  en: Process engineering
+maturity: nische
+sources:
+  - https://de.wikipedia.org/wiki/Thermosiphon
+  - https://en.wikipedia.org/wiki/Thermosiphon
+authors:
+  - Robert Adunka
+origin: triz-consulting
+text:
+  de:
+    name: Thermosiphon (Zweiphasen)
+    description: >-
+      Dieser Effekt nutzt das Strömen eines Fluids in einem geschlossenen Kreislauf zur passiven
+      Wärmeübertragung ohne mechanische Pumpe mit oder ohne Phasenübergang. Am warmen Ende
+      verdampft das Medium, steigt aufgrund der geringeren Dichte auf, kondensiert am kalten
+      Ende unter Wärmeabgabe und fließt durch die Schwerkraft wieder zurück.
+    example: Zweiphasen-Prozessorkühlung mit Radiator
+    conditions: ''
+    limits: >-
+      Die Funktion bricht zusammen, wenn keine Schwerkraft wirkt oder das System so ungünstig
+      ausgerichtet ist, dass das Kondensat nicht selbstständig zurückfließen kann.
+    sideEffects: >-
+      Bei einer zu hohen Wärmezufuhr kann es zum Sieden im Rücklauf kommen, wodurch der Flüssigkeitsstrom
+      blockiert wird und die Kühlleistung abrupt abfällt.
+    kind: geprueft
+    author: Robert Adunka
+    model: gemini-3.5-flash
+    updated: '2026-09-26'
+  en:
+    name: Thermosiphon (Two-Phase)
+    description: >-
+      This effect utilizes the flow of a fluid in a closed loop for passive heat transfer
+      without a mechanical pump, with or without phase transition. At the hot end, the medium
+      evaporates, rises due to its lower density, condenses at the cold end while releasing
+      heat, and flows back under the influence of gravity.
+    example: Two-phase CPU cooling with radiator
+    conditions: ''
+    limits: >-
+      The function collapses if there is no gravity or if the system is oriented in such an
+      unfavorable way that the condensate cannot flow back on its own.
+    sideEffects: >-
+      Excessive heat input can lead to boiling in the return line, which blocks the liquid
+      flow and causes a sudden drop in cooling performance.
+    kind: geprueft
+    author: Robert Adunka
+    model: gemini-3.5-flash
+    updated: '2026-09-26'

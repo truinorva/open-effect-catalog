@@ -1,0 +1,85 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: vortex-flow
+kind: effect
+home: rotate|liquid
+functions:
+  - deform|gas
+  - mix|liquid
+  - move|gas
+  - rotate|gas
+  - rotate|liquid
+  - separate|gas
+  - separate|liquid
+  - separate|particles
+  - stop|gas
+  - vibrate|gas
+  - vibrate|liquid
+parameters:
+  - change|orientation
+  - change|position
+  - change|shape
+  - decrease|pressure
+  - decrease|speed
+  - increase|speed
+uses: []
+domain:
+  id: Verfahrenstechnik
+  de: Verfahrenstechnik
+  en: Process engineering
+maturity: verbreitet
+sources:
+  - https://de.wikipedia.org/wiki/Wirbel_(Str%C3%B6mungslehre)
+  - https://en.wikipedia.org/wiki/Vortex
+authors:
+  - Robert Adunka
+origin: triz-consulting
+text:
+  de:
+    name: Wirbelströmung
+    description: >-
+      Eine kreisende Bewegung von Fluiden um eine Achse erzeugt im Zentrum eine hohe Fließgeschwindigkeit
+      bei gleichzeitig stark abfallendem statischen Druck und sinkender Temperatur. Durch
+      die Erhaltung des Drehimpulses bilden sich stabile, schlauchförmige Strukturen aus,
+      die Energie und Masse über weite Strecken transportieren können. Strömungshindernisse
+      rufen periodische Ablösungen hervor, deren Frequenz proportional zur Strömungsgeschwindigkeit
+      ist.
+    example: >-
+      Wirbelzähler, Zyklonabscheider, Wirbelrohr nach Ranque-Hilsch, Vortex-Kühler, hydrozyklonischer
+      Sandfang, Rezirkulationsdüse
+    conditions: ''
+    limits: >-
+      Sehr zähe Medien dämpfen die Rotationsbewegung stark und verhindern die Ausbildung stabiler
+      Wirbelstrukturen. Bei extrem niedrigen Strömungsgeschwindigkeiten reicht die kinetische
+      Energie nicht aus, um die Trägheitskräfte für eine stabile Kreisströmung zu überwinden.
+    sideEffects: >-
+      Es entstehen starke Druckverluste im Leitungssystem sowie erhebliche Schallemissionen
+      und mechanische Vibrationen an den Rohrwänden. Lokaler Unterdruck im Wirbelkern kann
+      bei Flüssigkeiten zu schädigender Kavitation führen.
+    kind: geprueft
+    author: Robert Adunka
+    model: gemini-3.5-flash
+    updated: '2026-09-30'
+  en:
+    name: Vortex Flow
+    description: >-
+      A rotational movement of fluids around an axis generates high flow velocities in the
+      center while significantly reducing static pressure and temperature. Due to the conservation
+      of angular momentum, stable, tube-like structures form that can transport energy and
+      mass over long distances. Flow obstacles induce periodic shedding whose frequency is
+      proportional to the flow velocity.
+    example: >-
+      Vortex flowmeter, cyclone separator, Ranque-Hilsch vortex tube, vortex cooler, hydrocyclone
+      sand separator, recirculation nozzle
+    conditions: ''
+    limits: >-
+      Highly viscous media heavily damp the rotational motion and prevent the formation of
+      stable vortex structures. At extremely low flow velocities, the kinetic energy is insufficient
+      to overcome inertial forces for a stable circular flow.
+    sideEffects: >-
+      Significant pressure losses occur in the piping system, along with substantial noise
+      emissions and mechanical vibrations on the pipe walls. Local underpressure in the vortex
+      core can lead to damaging cavitation in liquids.
+    kind: geprueft
+    author: Robert Adunka
+    model: gemini-3.5-flash
+    updated: '2026-09-30'

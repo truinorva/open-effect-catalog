@@ -1,0 +1,75 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: magnetic-levitation-maglev
+kind: effect
+home: hold|solid
+functions:
+  - hold|solid
+  - move|solid
+  - rotate|solid
+parameters:
+  - change|position
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: verbreitet
+sources:
+  - >-
+    https://de.wikipedia.org/wiki/Levitation_(Technik)#Magnetische_Levitation
+  - https://en.wikipedia.org/wiki/Magnetic_levitation
+authors:
+  - Robert Adunka
+origin: triz-consulting
+text:
+  de:
+    name: Magnetische Levitation (Maglev)
+    description: >-
+      Magnetische Levitation gleicht die Gewichtskraft eines Objekts durch berührungslose
+      magnetische Kräfte aus, um es im Raum schweben zu lassen. Da rein statische Magnetfelder
+      nach Earnshaw-Theorem ein stabiles Gleichgewicht nicht erlauben, wird die Stabilität
+      durch Regelkreise, diamagnetische Materialien, Supraleitung oder dynamische Effekte
+      wie Wirbelströme erzwungen. Dadurch entfällt jegliche mechanische Reibung zwischen dem
+      schwebenden Körper und seiner Umgebung. Magnetische Kräfte wirkten der Gravitationskraft
+      entgegen.
+    example: >-
+      Magnetschwebebahn, Magnetlager, Levitationstiegel, Schwebekupplung für Waagen, Zippe-Zentrifuge
+    conditions: ''
+    limits: >-
+      Bei passiven Systemen ohne Supraleiter schränken geringe Tragkräfte die Anwendung auf
+      leichte Objekte ein. Aktive Systeme benötigen eine permanente Energieversorgung und
+      versagen sofort bei einem Stromausfall oder Sensorfehler.
+    sideEffects: >-
+      Die zur Stabilisierung und Felderzeugung genutzten Wechselströme induzieren unerwünschte
+      Wirbelströme, die zu einer starken Erwärmung der beteiligten Komponenten führen. Zudem
+      erfordern aktive Regelungen komplexe elektronische Steuerungen und verursachen elektromagnetische
+      Störfelder.
+    kind: geprueft
+    author: Robert Adunka
+    model: gemini-3.5-flash
+    updated: '2026-09-28'
+  en:
+    name: Magnetic Levitation (Maglev)
+    description: >-
+      Magnetic levitation counteracts gravitational force of an object using non-contact magnetic
+      forces to suspend it in space. Since purely static magnetic fields do not allow for
+      constant equilibrium according to Earnshaw's theorem, stability is enforced by control
+      loops, diamagnetic materials, superconductivity, or dynamic effects such as eddy currents.
+      This eliminates any mechanical friction between the levitating body and its surroundings.
+      Magnetic forces counteract the force of gravity.
+    example: >-
+      Maglev train, Magnetic bearing, Induction cold crucible, Magnetic coupling for balances,
+      Zippe-type centrifuge
+    conditions: ''
+    limits: >-
+      In passive systems without superconductors, low load capacities limit the application
+      to lightweight objects. Active systems require a continuous power supply and fail instantly
+      during power outages or sensor malfunctions.
+    sideEffects: >-
+      The alternating currents used for stabilization and field generation induce unwanted
+      eddy currents, leading to severe heating of the components. Additionally, active control
+      requires complex electronic circuitry and generates electromagnetic interference.
+    kind: geprueft
+    author: Robert Adunka
+    model: gemini-3.5-flash
+    updated: '2026-09-28'

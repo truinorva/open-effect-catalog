@@ -1,0 +1,71 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: air-classification
+kind: effect
+home: separate|particles
+functions:
+  - dilute|particles
+  - remove|particles
+  - separate|particles
+parameters:
+  - decrease|quantity
+uses: []
+domain:
+  id: Verfahrenstechnik
+  de: Verfahrenstechnik
+  en: Process engineering
+maturity: verbreitet
+sources:
+  - https://en.wikipedia.org/wiki/Air_classifier
+  - https://doi.org/10.1002/jsfa.2740350510
+authors:
+  - Eric Dirk Pryputsch
+origin: triz-consulting
+text:
+  de:
+    name: Sichtklassierung (Luftstrom)
+    description: >-
+      Ein aufwärts gerichteter Gasstrom erzeugt Strömungswiderstandskräfte auf Partikel, die
+      der Schwerkraft entgegenwirken. Da diese Wiederstandskräfte von Geometrie, Masse und
+      Aerodynamik der Feststoffe abhängen, steigen leichte oder großflächige Teilchen nach
+      oben, während schwere oder kompakte Partikel nach unten sinken. Die Trennung erfolgt
+      somit im fluiden Trägermedium anhand des Verhältnisses von Sinkgeschwindigkeit zu Strömungsgeschwindigkeit.
+    example: >-
+      Umlaufsichter für Zementmahlung, Kaskadensichter zur Kunststoffsortierung, Zickzacksichter
+      in der Automobil-Schredderleichtfraktion, Strömungstrennkanal im Müllrecycling, Windhalmsichter
+      für Saatgut
+    conditions: ''
+    limits: >-
+      Bei zu hoher Feuchtigkeit verkleben die Partikel und bilden Agglomerate, wodurch die
+      getrennte Sichtung nach Eigenschaftsprofilen fehlschlägt. Nahezu identische Sinkgeschwindigkeiten
+      unterschiedlicher Stoffe verhindern eine saubere Fraktionierung.
+    sideEffects: >-
+      Feine Stäube belasten die Prozessabluft und erfordern nachgeschaltete Filteranlagen
+      oder Zyklone. Hohe Feststoffgeschwindigkeiten verursachen abrassiven Verschleiß an den
+      Kammerwandungen.
+    kind: geprueft
+    author: Eric Dirk Pryputsch
+    model: gemini-3.6-flash
+    updated: '2026-11-11'
+  en:
+    name: Air Classification
+    description: >-
+      An upward gas stream generates aerodynamic drag forces on particles that counteract
+      gravity. Because these forces depend on the geometry, mass, and aerodynamics of the
+      solids, light or large-surface particles ascend while heavy or compact ones sink. Separation
+      occurs within the fluid medium based on the settling of velocity to flow velocity.
+    example: >-
+      Circulating air classifier for cement grinding, cascade classifier for plastic sorting,
+      zig-zag classifier for shredder light fraction, air separation channel in municipal
+      waste recycling, seed winnower
+    conditions: ''
+    limits: >-
+      Excessive moisture causes particles to agglomerate, which prevents separation based
+      on individual physical properties. Nearly identical settling velocities among different
+      materials impede a clean fractionation.
+    sideEffects: >-
+      Fine dust contaminates the exhaust air, requiring downstream filter systems or cyclones.
+      High particle velocities induce abrasive wear on the chamber walls.
+    kind: geprueft
+    author: Eric Dirk Pryputsch
+    model: gemini-3.6-flash
+    updated: '2026-11-11'

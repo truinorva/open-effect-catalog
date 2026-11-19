@@ -1,0 +1,62 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: surface-tension
+kind: effect
+home: hold|liquid
+functions:
+  - hold|liquid
+  - separate|liquid
+parameters:
+  - decrease|surface-area
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: verbreitet
+sources:
+  - https://de.wikipedia.org/wiki/Oberfl%C3%A4chenspannung
+  - https://en.wikipedia.org/wiki/Surface_tension
+authors:
+  - Robert Adunka
+origin: triz-consulting
+text:
+  de:
+    name: Oberflächenspannung
+    description: >-
+      An der Grenze zu einem anderen Medium ziehen sich die Teilchen einer Flüssigkeit gegenseitig
+      stärker an, als sie vom Nachbarmedium angezogen werden. Dies erzeugt eine nach innen
+      gerichtete Kraft, wodurch die Flüssigkeit ihre Oberfläche minimiert und sich wie eine
+      elastische Haut verhält. Makroskopisch zeigt sich dies in der spontanen Entstehung runder
+      Tropfenformen.
+    example: Offsetdruck
+    conditions: ''
+    limits: >-
+      Der Effekt verliert bei extrem hohen Temperaturen nahe dem kritischen Punkt des Mediums
+      oder durch den intensiven Einsatz von Tensiden seine Wirkung.
+    sideEffects: >-
+      Die Minimierung der Kontaktfläche erschwert das gleichmäßige Befeuchten von feinen Strukturen
+      und kann unerwünschte Blasenbildung in Rohrleitungen begünstigen.
+    kind: geprueft
+    author: Robert Adunka
+    model: gemini-3.5-flash
+    updated: '2026-09-26'
+  en:
+    name: Surface Tension
+    description: >-
+      At the boundary with another medium, the particles of a liquid attract each other more
+      strongly than they are attracted by the neighboring medium. This generates an inward
+      force, causing the liquid to make its surface area minimal and behave like an elastic
+      skin. Macroscopically, this is manifested in the spontaneous formation of spherical
+      droplet shapes.
+    example: Offset printing
+    conditions: ''
+    limits: >-
+      The effect loses its efficacy at extremely high temperatures near the critical point
+      of the medium or through the intensive use of surfactants.
+    sideEffects: >-
+      The minimization of the contact area complicates the uniform wetting of fine structures
+      and can promote unwanted bubble formation in pipelines.
+    kind: geprueft
+    author: Robert Adunka
+    model: gemini-3.5-flash
+    updated: '2026-09-26'

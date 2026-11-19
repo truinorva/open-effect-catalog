@@ -1,0 +1,63 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: freezing
+kind: effect
+home: hold|liquid
+functions:
+  - change-phase|liquid
+  - hold|liquid
+  - preserve|liquid
+parameters:
+  - change|state
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: verbreitet
+sources:
+  - https://de.wikipedia.org/wiki/Erstarren
+  - https://en.wikipedia.org/wiki/Freezing
+authors:
+  - Robert Adunka
+origin: triz-consulting
+text:
+  de:
+    name: Gefrieren
+    description: >-
+      Dieser physikalische Vorgang beschreibt den Wechsel von Stoffen aus dem flüssigen in
+      den festen Zustand durch den Entzug von thermischer Energie. Während dieses Phasenübergangs
+      ordnen sich die Moleküle meist in einer festen Gitterstruktur an, wobei die Temperatur
+      des Systems bis zur vollständigen Erstarrung stabil bleibt. Bei den meisten Substanzen
+      verringert sich dabei das Volumen, während sich die Dichte erhöht.
+    example: Lebensmittelkonservierung durch Tiefkühlung
+    conditions: ''
+    limits: >-
+      Der Prozess setzt voraus, dass dem System ausreichend Wärme entzogen werden kann, und
+      verschiebt sich unter extrem hohem Druck zu deutlich tieferen Temperaturen.
+    sideEffects: >-
+      Bei wasserbasierten Medien führt die Volumenausdehnung beim Phasenübergang zu enormen
+      mechanischen Spannungen, die Rohrleitungen oder Behälter zerstören können.
+    kind: geprueft
+    author: Robert Adunka
+    model: gemini-3.5-flash
+    updated: '2026-09-26'
+  en:
+    name: Freezing
+    description: >-
+      This physical process describes the transition of a substance from a liquid to a solid
+      state through the extraction of thermal energy. During this phase change, the molecules
+      usually arrange themselves into a rigid lattice structure, while the temperature of
+      the system remains stable until solidification is complete. For most substances, this
+      is accompanied by a decrease in volume and an increase in density.
+    example: Food preservation by deep-freezing
+    conditions: ''
+    limits: >-
+      The process requires that sufficient heat can be extracted from the system, and under
+      extremely high pressure, the transition point shifts to significantly lower temperatures.
+    sideEffects: >-
+      In water-based media, the volume expansion during the phase transition leads to enormous
+      mechanical stress, which can destroy pipelines or containers.
+    kind: geprueft
+    author: Robert Adunka
+    model: gemini-3.5-flash
+    updated: '2026-09-26'

@@ -1,0 +1,58 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: marangoni-effect
+kind: effect
+home: move|liquid
+functions:
+  - deform|liquid
+  - mix|liquid
+  - move|liquid
+  - orient|liquid
+parameters:
+  - change|orientation
+  - change|position
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: ''
+sources:
+  - https://en.wikipedia.org/wiki/Marangoni_effect
+  - https://meetings-archive.aps.org/dfd/2023/x41/5
+authors:
+  - Robert Adunka
+origin: triz-consulting
+text:
+  de:
+    name: Marangoni-Effekt
+    description: >-
+      Der Marangoni-Effekt bezeichnet eine Flüssigkeitsströmung, die durch örtliche Unterschiede
+      der Oberflächenspannung entsteht. Auslöser sind beispielsweise Temperaturunterschiede
+      oder eine ungleichmäßige Verteilung von Stoffen, wobei die Flüssigkeit entlang der Oberfläche
+      zu Bereichen mit höherer Oberflächenspannung strömt. Ein bekanntes Beispiel sind die
+      sogenannten Weintränen, bei denen die Verdunstung von Alkohol Flüssigkeit an der Glaswand
+      nach oben zieht, bevor sie in Tropfen zurückläuft.
+    example: Marangoni-Trocknung von Wafern
+    conditions: ''
+    limits: ''
+    sideEffects: ''
+    kind: original
+    author: Robert Adunka
+    model: ''
+    updated: '2026-09-25'
+  en:
+    name: Marangoni effect
+    description: >-
+      The Marangoni effect refers to a fluid flow caused by local differences in surface tension.
+      Triggers include, for example, temperature differences or an uneven distribution of
+      substances, whereby the liquid flows along the surface towards areas of higher surface
+      tension. A well-known example is the tears of wine, where the evaporation of alcohol
+      pulls liquid up the glass wall before it runs back down in droplets.
+    example: Marangoni drying of wafers
+    conditions: ''
+    limits: ''
+    sideEffects: ''
+    kind: geprueft
+    author: Robert Adunka
+    model: gemini-3.5-flash
+    updated: '2026-09-25'

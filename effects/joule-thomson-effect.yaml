@@ -1,0 +1,75 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: joule-thomson-effect
+kind: effect
+home: cool|gas
+functions:
+  - change-phase|gas
+  - cool|gas
+  - cool|particles
+  - cool|solid
+  - expand|gas
+parameters:
+  - decrease|pressure
+  - decrease|temperature
+  - increase|volume
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: verbreitet
+sources:
+  - https://de.wikipedia.org/wiki/Joule-Thomson-Effekt
+  - https://en.wikipedia.org/wiki/Joule%E2%80%93Thomson_effect
+authors:
+  - Tim Kunkelmann
+origin: triz-consulting
+text:
+  de:
+    name: Joule-Thomson-Effekt
+    description: >-
+      Ein reales Gas ändert seine Temperatur, wenn es ohne Wärmeaustausch mit der Umgebung
+      durch eine Drosselstelle strömt und dabei einen Druckabfall erfährt. Diese Temperaturänderung
+      beruht auf den zwischenmolekularen Kräften und der Volumenarbeit des Gases bei der isenthalpen
+      Expansion. Je nach Ausgangstemperatur und Gasart kann der Effekt zu einer Abkühlung
+      oder zu einer Erwärmung führen.
+    example: >-
+      Linde-Verfahren, Schneekanone, Trockeneis-Herstellungsgerät, Druckluft-Deospray, Schlagsahnespender
+    conditions: ''
+    limits: >-
+      Bei idealen Gasen tritt keine Temperaturänderung auf, da keine Wechselwirkungen zwischen
+      den Teilchen existieren. Zudem verkehrt sich die Abkühlung in eine Erwärmung, wenn die
+      Ausgangstemperatur oberhalb der spezifischen Inversionstemperatur des jeweiligen Gases
+      liegt.
+    sideEffects: >-
+      Unerwünschte Vereisung von Ventilen und Rohrleitungen durch die starke Abkühlung. Bei
+      hydraulischen Systemen führt die Drosselung zu einer unerwünschten Erwärmung des Öls
+      und damit zu Energieverlusten.
+    kind: geprueft
+    author: Tim Kunkelmann
+    model: gemini-3.5-flash
+    updated: '2026-11-11'
+  en:
+    name: Joule-Thomson Effect
+    description: >-
+      A real gas changes its temperature when it flows through a throttling restriction without
+      heat exchange with the environment, undergoing a drop in pressure. This temperature
+      change is based on intermolecular forces and the flow work of the gas during isenthalpic
+      expansion. Depending on the initial temperature and the type of gas, the process results
+      in either cooling or heating.
+    example: >-
+      Linde-process liquefier, snowmaking gun, dry ice production device, compressed gas deodorant
+      spray, whipped cream dispenser
+    conditions: ''
+    limits: >-
+      No temperature change occurs in ideal gases due to the absence of particle interactions.
+      Furthermore, the cooling effect reverses into heating if the starting temperature is
+      above the specific inversion temperature of the respective gas.
+    sideEffects: >-
+      Unwanted icing of valves and pipelines caused by the severe temperature drop. In hydraulic
+      systems, the throttling action leads to undesirable heating of the oil and associated
+      energy losses.
+    kind: geprueft
+    author: Tim Kunkelmann
+    model: gemini-3.5-flash
+    updated: '2026-11-11'

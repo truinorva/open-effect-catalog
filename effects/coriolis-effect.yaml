@@ -1,0 +1,63 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: coriolis-effect
+kind: effect
+home: move|liquid
+functions:
+  - dilute|particles
+  - move|gas
+  - move|liquid
+  - orient|solid
+  - rotate|gas
+  - rotate|liquid
+  - rotate|particles
+  - rotate|solid
+parameters:
+  - change|orientation
+  - change|position
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: ''
+sources:
+  - https://de.wikipedia.org/wiki/Corioliskraft
+authors:
+  - Robert Adunka
+origin: triz-consulting
+text:
+  de:
+    name: Coriolis-Effekt
+    description: >-
+      Die Corioliskraft beschreibt eine scheinbare Ablenkung bewegter Körper aus Sicht eines
+      mitrotierenden Beobachters. Sofern die Bewegung nicht ausschließlich entlang der Rotationsachse
+      erfolgt, wirkt diese Trägheitskraft quer zur Bewegungsrichtung und verändert dadurch
+      die Richtung, jedoch nicht unmittelbar das Tempo. Auf der Erde beeinflusst der Corioliseffekt
+      vor allem großräumige Luft- und Meeresströmungen und prägt damit die Zirkulation in
+      Atmosphäre und Ozeanen.
+    example: >-
+      Coriolis-Massendurchflussmesser, Corioliswaage, Kreiselpumpen, Drehratensensoren
+    conditions: ''
+    limits: ''
+    sideEffects: ''
+    kind: original
+    author: Robert Adunka
+    model: ''
+    updated: '2026-09-25'
+  en:
+    name: Coriolis effect
+    description: >-
+      The Coriolis force describes an apparent deflection of moving bodies from the perspective
+      of a co-rotating observer. Unless the movement occurs exclusively along the axis of
+      rotation, this inertial force acts transversely to the direction of movement and thereby
+      changes the direction, but not directly the speed. On Earth, the Coriolis effect primarily
+      influences large-scale air and ocean currents, thus shaping the circulation in the atmosphere
+      and oceans.
+    example: Coriolis mass flow meter, Coriolis scale, centrifugal pumps, gyroscopes
+    conditions: ''
+    limits: ''
+    sideEffects: ''
+    kind: geprueft
+    author: Robert Adunka
+    model: gemini-3.5-flash
+    updated: '2026-09-25'

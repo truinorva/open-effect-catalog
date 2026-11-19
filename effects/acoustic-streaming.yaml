@@ -1,0 +1,64 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: acoustic-streaming
+kind: effect
+home: move|liquid
+functions:
+  - deform|gas
+  - mix|gas
+  - mix|liquid
+  - move|gas
+  - move|liquid
+  - move|particles
+  - vibrate|gas
+  - vibrate|liquid
+  - vibrate|solid
+parameters:
+  - change|orientation
+  - change|position
+  - change|shape
+  - increase|speed
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: ''
+sources:
+  - https://en.wikipedia.org/wiki/Acoustic_streaming
+authors:
+  - Robert Adunka
+origin: triz-consulting
+text:
+  de:
+    name: Akustische Strömung
+    description: >-
+      Akustische Strömung bezeichnet eine im zeitlichen Mittel beständige Bewegung von Flüssigkeiten
+      oder Gasen, die durch Schallwellen hervorgerufen wird. Durch die Dämpfung des Schalls
+      im Medium oder nahe einer Begrenzungsfläche wird Impuls übertragen, sodass sich den
+      schnellen Schwingungen eine dauerhafte Strömung überlagert. Beobachten lässt sich dieser
+      Effekt beispielsweise in der Nähe von Ultraschallquellen oder als Strömungswirbel im
+      stehenden Schallfeld eines Kundtschen Rohrs.
+    example: Kundtsches Staubrohr
+    conditions: ''
+    limits: ''
+    sideEffects: ''
+    kind: original
+    author: Robert Adunka
+    model: ''
+    updated: '2026-09-25'
+  en:
+    name: Acoustic streaming
+    description: >-
+      Acoustic streaming refers to a time-averaged, steady motion of liquids or gases induced
+      by sound waves. Due to the attenuation of sound in the medium or near a boundary surface,
+      momentum is transferred, so that a permanent flow is superimposed on the rapid oscillations.
+      This effect can be observed, for example, in the vicinity of ultrasound sources or as
+      flow vortices in the standing sound field of a Kundt's tube.
+    example: Kundt's tube
+    conditions: ''
+    limits: ''
+    sideEffects: ''
+    kind: geprueft
+    author: Robert Adunka
+    model: gemini-3.5-flash
+    updated: '2026-09-25'

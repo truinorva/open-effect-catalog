@@ -1,0 +1,70 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: electrohydrodynamic-ehd-flow
+kind: effect
+home: move|liquid
+functions:
+  - cool|solid
+  - move|gas
+  - move|liquid
+  - move|particles
+  - rotate|gas
+  - rotate|liquid
+  - rotate|particles
+  - rotate|solid
+parameters:
+  - change|orientation
+  - change|position
+  - increase|speed
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: nische
+sources:
+  - https://en.wikipedia.org/wiki/Electrohydrodynamics
+authors:
+  - Robert Adunka
+origin: triz-consulting
+text:
+  de:
+    name: Elektrohydrodynamische Strömung
+    description: >-
+      Ein elektrisches Feld übt Kräfte auf geladene Teilchen oder polarisierbare Moleküle
+      in einem Fluid aus und versetzt dieses dadurch in Bewegung. Die direkte Wechselwirkung
+      zwischen dem Feld und den Ladungsträgern erzeugt eine mechanische Strömung ohne bewegliche
+      Bauteile.
+    example: >-
+      Elektrohydrodynamischer Ionenwind-Lüfter, Elektrohydrodynamischer Antrieb, Mikrofluidik-Pumpe,
+      Elektrostatische Farbspritzpistole, Elektrospinnen
+    conditions: ''
+    limits: >-
+      Der Prozess erfordert eine Mindestfeldstärke zur Ionisation und versagt bei zu hoher
+      elektrischer Leitfähigkeit des Mediums, da es dann zu einem Kurzschluss kommt.
+    sideEffects: >-
+      Die hohen elektrischen Spannungen erzeugen Ozon und führen durch elektrochemische Reaktionen
+      an den Elektroden zu Materialverschleiß.
+    kind: original
+    author: Robert Adunka
+    model: ''
+    updated: '2026-09-30'
+  en:
+    name: Electrohydrodynamic (EHD) Flow
+    description: >-
+      An electric field exerts forces on charged particles or polarizable molecules within
+      a fluid, thereby inducing motion. This direct interaction between the field and the
+      charge carriers generates a mechanical flow without any moving parts.
+    example: >-
+      Electrohydrodynamic ion-drag blower, Electrohydrodynamic thruster, Microfluidic pump,
+      Electrostatic paint sprayer, Electrospinning
+    conditions: ''
+    limits: >-
+      The process requires a minimum field strength for ionization and fails if the electrical
+      conductivity of the medium is too high, which causes a short circuit.
+    sideEffects: >-
+      The high electrical voltages generate ozone and lead to material wear due to electrochemical
+      reactions at the electrodes.
+    kind: geprueft
+    author: Robert Adunka
+    model: gemini-3.5-flash
+    updated: '2026-09-30'

@@ -1,0 +1,74 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: taylor-coutte-flow
+kind: effect
+home: rotate|liquid
+functions:
+  - deform|gas
+  - mix|gas
+  - mix|liquid
+  - move|gas
+  - move|liquid
+  - move|particles
+  - rotate|gas
+  - rotate|liquid
+  - rotate|particles
+  - rotate|solid
+parameters:
+  - change|orientation
+  - change|position
+  - change|shape
+uses: []
+domain:
+  id: Rheologie
+  de: Rheologie
+  en: Rheology
+maturity: nische
+sources:
+  - https://de.wikipedia.org/wiki/Taylor-Couette-Str%C3%B6mung
+  - https://en.wikipedia.org/wiki/Taylor%E2%80%93Couette_flow
+authors:
+  - Robert Adunka
+origin: triz-consulting
+text:
+  de:
+    name: Taylor-Couette-Strömung
+    description: >-
+      In einer Flüssigkeit zwischen zwei konzentrischen, gegeneinander rotierenden Zylindern
+      entstehen ab einer kritischen Drehzahl ringförmige Wirbel. Die Fliehkraft drückt das
+      Medium am rotierenden Innenzylinder nach außen, wodurch sich abwechselnd gegensinnig
+      rotierende, toroidale Strömungsstrukturen entlang der Drehachse aufbauen.
+    example: >-
+      Rotationsviskosimeter, mechanischer Flockenformer, dynamischer Membranfilter zur Meerwasserentsalzung,
+      Reaktor für Taylor-Couette-Polymerisation
+    conditions: ''
+    limits: >-
+      Der Effekt bricht zusammen, wenn die Viskosität des Mediums zu hoch ist oder die Drehzahldifferenz
+      die Grenze zum voll turbulenten Strömungsregime überschreitet.
+    sideEffects: >-
+      Die Wirbelbildung erhöht den mechanischen Reibungswiderstand und führt zu einer verstärkten
+      Erwärmung des Fluids.
+    kind: geprueft
+    author: Robert Adunka
+    model: gemini-3.5-flash
+    updated: '2026-09-30'
+  en:
+    name: Taylor-Couette Flow
+    description: >-
+      In a fluid confined between two concentric, counter-rotating cylinders, toroidal vortices
+      form once a critical rotational speed is exceeded. Centrifugal forces push the medium
+      near the rotating inner cylinder outward, establishing alternating, counter-rotating
+      toroidal flow structures along the axis of rotation.
+    example: >-
+      Rotational viscometer, mechanical flocculator, dynamic membrane filter for seawater
+      desalination, Taylor-Couette polymerization reactor
+    conditions: ''
+    limits: >-
+      The effect collapses if the viscosity of the medium is too high or if the rotational
+      speed difference exceeds the threshold to a fully turbulent flow regime.
+    sideEffects: >-
+      The formation of vortices increases mechanical frictional resistance and leads to enhanced
+      heating of the fluid.
+    kind: geprueft
+    author: Robert Adunka
+    model: gemini-3.5-flash
+    updated: '2026-09-30'

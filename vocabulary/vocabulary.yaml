@@ -1,0 +1,1096 @@
+# Vocabulary: actions (grouped in domains), objects, operations and parameters.
+# Taken over from the TRIZ Effects Database by Robert Adunka, TRIZ Consulting Group
+# (CC BY 4.0). Ids are stable: cells in effects/*.yaml refer to them. Labels,
+# hints and synonyms may be reworded at any time.
+meta:
+  title: TRIZ Effects Database — Vokabular
+  version: 2.1.1
+  updated: '2026-09-15'
+  hinweis: >-
+    Hergeleitet aus der Funktionsanalyse-Regel: Ein Verb kommt hinein, wenn es einen Parameter
+    des Objekts aendert oder erhaelt; Messen ist der Sonderfall, Bestand (etwas entsteht oder
+    verschwindet) die vierte Art. Die ids sind stabil und werden nie geaendert - an ihnen
+    haengen die Zellzuordnungen. Labels, Erklaerungen und Synonyme duerfen jederzeit umformuliert
+    werden. Erzeugt aus dem Reiter Vokabular; dort pflegen, nicht hier. Zweiter Teil: die
+    Parametersicht (Operation x Parameter, OHNE Objektspalte). Sie ist eine unabhaengige zweite
+    Zuordnung auf denselben Effekten, keine Ableitung aus den Handlungen. Welche Sicht eine
+    Zelle meint, entscheidet die zweite Haelfte - Objekt- und Parameterkennungen duerfen sich
+    niemals ueberschneiden.
+kinds:
+  - id: aendern
+    label:
+      de: ändern
+      en: change
+  - id: erhalten
+    label:
+      de: erhalten
+      en: maintain
+  - id: messen
+    label:
+      de: messen
+      en: measure
+  - id: bestand
+    label:
+      de: Bestand
+      en: existence
+objects:
+  - id: solid
+    label:
+      de: Feststoff
+      en: Solid
+    hint:
+      de: 'Vollmaterial: Körper, Platten, Schichten, Werkstücke.'
+      en: 'Bulk material: bodies, sheets, layers, workpieces.'
+    synonyms:
+      de: Körper, Werkstück, Platte, Schicht, Vollmaterial
+      en: body, workpiece, plate, layer, solid body
+  - id: particles
+    label:
+      de: Partikel
+      en: Particles
+    hint:
+      de: >-
+        Zerteilter Feststoff — fließt, hat sehr viel Oberfläche, lässt sich nach Korngröße
+        sortieren.
+      en: >-
+        Divided solid — it flows, has vast surface area, can be sorted by particle size.
+    synonyms:
+      de: Pulver, Granulat, Schüttgut, Späne, Fasern, Staub, Schwebstoff, Korn
+      en: >-
+        powder, granulate, bulk solid, chips, fibres, dust, suspended solids, grain
+  - id: liquid
+    label:
+      de: Flüssigkeit
+      en: Liquid
+    hint:
+      de: Schmelzen, Lösungen, Suspensionen, Emulsionen.
+      en: Melts, solutions, suspensions, emulsions.
+    synonyms:
+      de: Schmelze, Lösung, Suspension, Emulsion, Fluid, Tropfen
+      en: melt, solution, suspension, emulsion, fluid, droplet
+  - id: gas
+    label:
+      de: Gas
+      en: Gas
+    hint:
+      de: Gase, Dämpfe, Aerosole, auch das Vakuum als deren Fehlen.
+      en: Gases, vapours, aerosols, and vacuum as their absence.
+    synonyms:
+      de: Dampf, Luft, Aerosol, Vakuum, Atmosphäre
+      en: vapour, air, aerosol, vacuum, atmosphere
+  - id: field
+    label:
+      de: Feld
+      en: Field
+    hint:
+      de: >-
+        mechanisch, thermisch, elektrisch, magnetisch, optisch, akustisch, chemisch.
+      en: mechanical, thermal, electrical, magnetic, optical, acoustic, chemical.
+    synonyms:
+      de: >-
+        Kraft, Strahlung, Licht, Schall, Wärme, Magnetfeld, elektrisches Feld, Strom
+      en: >-
+        force, radiation, light, sound, heat, magnetic field, electric field, current
+domains:
+  - id: motion
+    label:
+      de: Ort und Bewegung
+      en: Position and movement
+    actions:
+      - id: move
+        label:
+          de: bewegen
+          en: Move
+        kind: aendern
+        hint:
+          de: Den Ort des Objekts ändern — irgendwohin, in irgendeine Richtung.
+          en: Change where the object is — anywhere, in any direction.
+        synonyms:
+          de: >-
+            transportieren, fördern, verschieben, heben, senken, pumpen, treiben, befördern
+          en: transport, convey, displace, lift, raise, lower, pump, propel
+      - id: rotate
+        label:
+          de: drehen
+          en: Rotate
+        kind: aendern
+        hint:
+          de: Das Objekt um eine Achse bewegen.
+          en: Move the object about an axis.
+        synonyms:
+          de: rotieren, wirbeln, schleudern, verdrillen, kreisen lassen
+          en: spin, swirl, whirl, twist, revolve
+      - id: orient
+        label:
+          de: ausrichten
+          en: Orient
+        kind: aendern
+        hint:
+          de: Die Lage des Objekts im Raum festlegen, ohne es fortzubewegen.
+          en: Set the object's attitude in space without moving it away.
+        synonyms:
+          de: positionieren, richten, orientieren, polarisieren, ordnen
+          en: position, align, aim, polarise, arrange
+      - id: vibrate
+        label:
+          de: schwingen lassen
+          en: Vibrate
+        kind: aendern
+        hint:
+          de: Das Objekt periodisch bewegen — hin und her, auf und ab.
+          en: Move the object periodically — back and forth, up and down.
+        synonyms:
+          de: >-
+            vibrieren, oszillieren, rütteln, schütteln, anregen, beschallen, pulsieren
+          en: oscillate, shake, agitate, excite, sonicate, pulsate
+      - id: stop
+        label:
+          de: stoppen
+          en: Stop
+        kind: aendern
+        hint:
+          de: >-
+            Die Geschwindigkeit des Objekts verringern, bis hin zum Stillstand. „Helm stoppt
+            Stein“ — die Funktion heißt stoppen und nicht schützen, weil sie das Objekt nennt,
+            an dem sie wirkt. Bremsen ist dieselbe Funktion in geringerem Grad.
+          en: >-
+            Reduce the object's speed, down to standstill. “Helmet stops stone” — the function
+            is called stopping, not protecting, because it names the object it acts on. Braking
+            is the same function to a lesser degree.
+        synonyms:
+          de: >-
+            bremsen, abbremsen, dämpfen, auffangen, abfangen, verzögern, aufhalten, zurückhalten
+          en: brake, decelerate, damp, cushion, arrest, retard, catch, halt
+      - id: hold
+        label:
+          de: halten
+          en: Hold
+        kind: erhalten
+        hint:
+          de: >-
+            Den Ort oder die Lage des Objekts bewahren, auch gegen eine Kraft, die sie ändern
+            würde.
+          en: >-
+            Keep the object's position or attitude, also against a force that would change
+            it.
+        synonyms:
+          de: >-
+            festhalten, fixieren, begrenzen, einschließen, tragen, stützen, klemmen, spannen,
+            führen, abdichten, zurückhalten
+          en: >-
+            fix, constrain, confine, retain, support, carry, clamp, grip, guide, seal, contain
+  - id: shape
+    label:
+      de: Form und Volumen
+      en: Shape and volume
+    actions:
+      - id: deform
+        label:
+          de: verformen
+          en: Deform
+        kind: aendern
+        hint:
+          de: >-
+            Die Gestalt oder die Oberfläche des Objekts ändern, ohne es zu zerteilen.
+          en: Change the object's shape or surface without dividing it.
+        synonyms:
+          de: >-
+            biegen, umformen, prägen, walzen, ziehen, stauchen, glätten, polieren, aufrauen,
+            strukturieren
+          en: >-
+            bend, shape, form, emboss, roll, draw, upset, smooth, polish, roughen, texture
+      - id: expand
+        label:
+          de: ausdehnen
+          en: Expand
+        kind: aendern
+        hint:
+          de: Das Volumen des Objekts vergrößern.
+          en: Increase the object's volume.
+        synonyms:
+          de: dehnen, aufweiten, quellen, aufschäumen, blähen, strecken, expandieren
+          en: stretch, widen, swell, foam, inflate, dilate
+      - id: compress
+        label:
+          de: verdichten
+          en: Compress
+        kind: aendern
+        hint:
+          de: Das Volumen des Objekts verkleinern, seine Dichte erhöhen.
+          en: Reduce the object's volume, raise its density.
+        synonyms:
+          de: zusammendrücken, pressen, komprimieren, stauchen, sintern, kompaktieren
+          en: compact, press, squeeze, densify, sinter, consolidate
+      - id: stabilise
+        label:
+          de: stabilisieren
+          en: Stabilise
+        kind: erhalten
+        hint:
+          de: >-
+            Die Form oder die Verteilung des Objekts gegen Störungen bewahren — versteifen,
+            in Schwebe halten, eine Emulsion zusammenhalten.
+          en: >-
+            Keep the object's shape or distribution against disturbances — stiffen, keep suspended,
+            hold an emulsion together.
+        synonyms:
+          de: >-
+            versteifen, verfestigen, aussteifen, in Schwebe halten, dispergieren, emulgieren,
+            puffern, beruhigen
+          en: stiffen, strengthen, brace, suspend, disperse, emulsify, buffer, steady
+  - id: cohesion
+    label:
+      de: Zusammenhalt
+      en: Cohesion
+    actions:
+      - id: join
+        label:
+          de: verbinden
+          en: Join
+        kind: aendern
+        hint:
+          de: Zwei Dinge aneinander bringen, so dass sie zusammenhalten.
+          en: Bring two things together so that they hold together.
+        synonyms:
+          de: >-
+            fügen, kleben, schweißen, löten, haften, einbetten, verankern, koppeln, agglomerieren,
+            flocken
+          en: >-
+            bond, glue, weld, solder, adhere, embed, anchor, couple, agglomerate, flocculate
+      - id: separate
+        label:
+          de: trennen
+          en: Separate
+        kind: aendern
+        hint:
+          de: >-
+            Ein Gemisch in seine Bestandteile zerlegen. Abgrenzung zu „entfernen“: Beim Trennen
+            bleiben beide Teile von Belang, beim Entfernen ist eines danach einfach weg.
+          en: >-
+            Take a mixture apart into its constituents. Distinction from “remove”: in separating,
+            both parts still matter; in removing, one is simply gone.
+        synonyms:
+          de: >-
+            abtrennen, sortieren, filtern, sieben, klassieren, extrahieren, aufreinigen, abscheiden,
+            dekantieren, fraktionieren, entmischen
+          en: >-
+            sort, filter, sieve, classify, extract, purify, precipitate, decant, fractionate,
+            demix
+      - id: disassemble
+        label:
+          de: zerlegen
+          en: Break up
+        kind: aendern
+        hint:
+          de: Ein Objekt in Teile zerlegen — grob oder bis ins Feine.
+          en: Break one object into parts — coarse or down to fine.
+        synonyms:
+          de: >-
+            zerkleinern, mahlen, brechen, zerstäuben, vernebeln, zerspanen, spalten, demontieren,
+            aufschließen
+          en: >-
+            crush, grind, mill, break, atomise, nebulise, machine off, split, dismantle
+  - id: matter
+    label:
+      de: Stoffmenge und Zusammensetzung
+      en: Quantity and composition
+    actions:
+      - id: mix
+        label:
+          de: mischen
+          en: Mix
+        kind: aendern
+        hint:
+          de: Zwei Stoffe gleichmäßig ineinander verteilen.
+          en: Distribute two substances evenly in one another.
+        synonyms:
+          de: >-
+            vermengen, rühren, homogenisieren, legieren, lösen, einrühren, verwirbeln
+          en: blend, stir, homogenise, alloy, dissolve, fold in, swirl together
+      - id: absorb
+        label:
+          de: aufnehmen
+          en: Absorb
+        kind: aendern
+        hint:
+          de: Einen Stoff in das Objekt hinein oder an es heran holen und dort halten.
+          en: Take a substance into or onto the object and keep it there.
+        synonyms:
+          de: >-
+            aufsaugen, adsorbieren, binden, speichern, ansammeln, anreichern, einlagern, sorbieren
+          en: soak up, adsorb, bind, store, accumulate, take up, intercalate, sorb
+      - id: remove
+        label:
+          de: entfernen
+          en: Remove
+        kind: aendern
+        hint:
+          de: >-
+            Einen Stoff aus dem Objekt oder von ihm herunter holen; danach ist er weg. Abgrenzung
+            zu „trennen“: Dort bleiben beide Teile von Belang.
+          en: >-
+            Get a substance out of the object or off it; afterwards it is gone. Distinction
+            from “separate”: there, both parts still matter.
+        synonyms:
+          de: >-
+            trocknen, entfeuchten, entgasen, reinigen, säubern, absaugen, abtragen, entölen,
+            entstauben, auswaschen, spülen, austreiben
+          en: >-
+            dry, dehydrate, degas, clean, suck off, ablate, strip, de-dust, leach, rinse,
+            purge
+      - id: concentrate
+        label:
+          de: aufkonzentrieren
+          en: Concentrate
+        kind: aendern
+        hint:
+          de: Den Anteil eines Stoffes im Gemisch erhöhen.
+          en: Raise the share of one substance in a mixture.
+        synonyms:
+          de: anreichern, eindicken, eindampfen, konzentrieren, verstärken
+          en: enrich, thicken, evaporate down, upgrade
+      - id: dilute
+        label:
+          de: verdünnen
+          en: Dilute
+        kind: aendern
+        hint:
+          de: Den Anteil eines Stoffes im Gemisch senken.
+          en: Lower the share of one substance in a mixture.
+        synonyms:
+          de: strecken, ausdünnen, abschwächen, verschneiden
+          en: thin, weaken, attenuate, cut
+      - id: produce
+        label:
+          de: erzeugen
+          en: Produce
+        kind: bestand
+        hint:
+          de: >-
+            Etwas hervorbringen, das vorher nicht da war. Ändert keinen Parameter eines vorhandenen
+            Objekts — deshalb die eigene Art „Bestand“.
+          en: >-
+            Bring something into being that was not there before. Changes no parameter of
+            an existing object — hence its own kind, “existence”.
+        synonyms:
+          de: >-
+            bilden, synthetisieren, entwickeln, freisetzen, ausscheiden, keimen lassen, ausfällen
+          en: form, synthesise, generate, release, evolve, nucleate, precipitate out
+      - id: destroy
+        label:
+          de: zerstören
+          en: Destroy
+        kind: bestand
+        hint:
+          de: Etwas zum Verschwinden bringen — als Stoff, nicht nur als Form.
+          en: Make something cease to exist — as a substance, not only as a shape.
+        synonyms:
+          de: >-
+            zersetzen, abbauen, veraschen, verbrennen, neutralisieren, mineralisieren, abtöten,
+            auflösen
+          en: >-
+            decompose, degrade, incinerate, burn, neutralise, mineralise, kill, dissolve away
+      - id: preserve
+        label:
+          de: konservieren
+          en: Preserve
+        kind: erhalten
+        hint:
+          de: >-
+            Die Zusammensetzung des Objekts bewahren — gegen Zersetzung, Korrosion, Befall.
+          en: Keep the object's composition — against decay, corrosion, infestation.
+        synonyms:
+          de: >-
+            haltbar machen, schützen, inhibieren, passivieren, sterilisieren, einschließen,
+            verkapseln
+          en: protect, inhibit, passivate, sterilise, encapsulate, seal in
+  - id: thermal
+    label:
+      de: Temperatur und Phase
+      en: Temperature and phase
+    actions:
+      - id: heat
+        label:
+          de: erwärmen
+          en: Heat
+        kind: aendern
+        hint:
+          de: Die Temperatur des Objekts erhöhen.
+          en: Raise the object's temperature.
+        synonyms:
+          de: aufheizen, erhitzen, wärmen, glühen, anwärmen
+          en: warm, raise temperature, fire, anneal
+      - id: cool
+        label:
+          de: kühlen
+          en: Cool
+        kind: aendern
+        hint:
+          de: Die Temperatur des Objekts senken.
+          en: Lower the object's temperature.
+        synonyms:
+          de: abkühlen, abschrecken, tiefkühlen, kryogen kühlen, entwärmen
+          en: chill, quench, refrigerate, cryocool
+      - id: keep-temp
+        label:
+          de: Temperatur halten
+          en: Keep temperature
+        kind: erhalten
+        hint:
+          de: Die Temperatur des Objekts bewahren, obwohl Wärme fließen würde.
+          en: Keep the object's temperature although heat would flow.
+        synonyms:
+          de: isolieren, dämmen, thermostatisieren, Wärme puffern, Kälte halten
+          en: insulate, lag, thermostat, buffer heat
+      - id: change-phase
+        label:
+          de: Phase ändern
+          en: Change phase
+        kind: aendern
+        hint:
+          de: >-
+            Den Aggregatzustand des Objekts wechseln. Die Richtung ergibt sich meist schon
+            aus dem Objekt — ein Feststoff kann nur schmelzen oder sublimieren.
+          en: >-
+            Change the object's state of matter. The direction usually follows from the object
+            — a solid can only melt or sublimate.
+        synonyms:
+          de: >-
+            schmelzen, erstarren, gefrieren, auftauen, verdampfen, sieden, kondensieren, sublimieren,
+            resublimieren, kristallisieren
+          en: >-
+            melt, solidify, freeze, thaw, evaporate, boil, condense, sublimate, deposit, crystallise
+  - id: sensing
+    label:
+      de: Messen
+      en: Measuring
+    actions:
+      - id: detect
+        label:
+          de: erkennen
+          en: Detect
+        kind: messen
+        hint:
+          de: >-
+            Feststellen, ob etwas da ist oder ob ein Zustand eingetreten ist — ja oder nein.
+          en: >-
+            Establish whether something is there or a state has occurred — yes or no.
+        synonyms:
+          de: nachweisen, anzeigen, aufspüren, orten, sichtbar machen, melden, prüfen
+          en: sense, indicate, trace, locate, visualise, signal, check
+      - id: measure
+        label:
+          de: messen
+          en: Measure
+        kind: messen
+        hint:
+          de: Den Wert eines Parameters bestimmen — wie viel.
+          en: Determine the value of a parameter — how much.
+        synonyms:
+          de: bestimmen, quantifizieren, wiegen, zählen, dosieren, kalibrieren
+          en: quantify, gauge, weigh, count, meter, calibrate
+operations:
+  - id: increase
+    label:
+      de: erhöhen
+      en: Increase
+    hint:
+      de: Den Wert des Parameters größer machen.
+      en: Make the parameter's value larger.
+    synonyms:
+      de: steigern, vergrößern, verstärken, anheben
+      en: raise, enlarge, amplify, boost
+  - id: decrease
+    label:
+      de: senken
+      en: Decrease
+    hint:
+      de: Den Wert des Parameters kleiner machen.
+      en: Make the parameter's value smaller.
+    synonyms:
+      de: verringern, verkleinern, abschwächen, absenken
+      en: lower, reduce, attenuate, diminish
+  - id: change
+    label:
+      de: ändern
+      en: Change
+    hint:
+      de: >-
+        Den Parameter verändern, wo es kein Mehr und kein Weniger gibt — Farbe, Form, Ort,
+        Ausrichtung, Aggregatzustand.
+      en: >-
+        Alter the parameter where there is no more and no less — colour, shape, position,
+        orientation, state of matter.
+    synonyms:
+      de: umstellen, wechseln, umwandeln
+      en: alter, switch, convert
+  - id: stabilise
+    label:
+      de: stabilisieren
+      en: Stabilise
+    hint:
+      de: Den Wert des Parameters halten, obwohl etwas ihn verändern würde.
+      en: Keep the parameter's value although something would change it.
+    synonyms:
+      de: konstant halten, ausregeln, puffern, kompensieren
+      en: keep constant, regulate, buffer, compensate
+  - id: measure
+    label:
+      de: messen
+      en: Measure
+    hint:
+      de: >-
+        Den Wert des Parameters feststellen — erkennen, ob er da ist, oder bestimmen, wie
+        groß er ist.
+      en: >-
+        Establish the parameter's value — detect that it is there, or determine how large
+        it is.
+    synonyms:
+      de: bestimmen, erkennen, nachweisen, anzeigen, quantifizieren
+      en: determine, detect, sense, indicate, quantify
+parameterGroups:
+  - id: geometry
+    label:
+      de: Geometrie und Lage
+      en: Geometry and position
+    parameters:
+      - id: position
+        label:
+          de: Ort
+          en: Position
+        hint:
+          de: Wo sich das Objekt befindet.
+          en: Where the object is.
+        synonyms:
+          de: Lage, Stelle, Koordinate, Abstand
+          en: location, place, coordinate, distance
+        directionless: true
+        unit: m
+      - id: orientation
+        label:
+          de: Ausrichtung
+          en: Orientation
+        hint:
+          de: Wie das Objekt im Raum liegt, ohne dass es den Ort wechselt.
+          en: How the object sits in space, without changing place.
+        synonyms:
+          de: Orientierung, Winkel, Neigung, Drehlage, Polrichtung
+          en: angle, tilt, attitude, alignment
+        directionless: true
+        unit: °
+      - id: shape
+        label:
+          de: Form
+          en: Shape
+        hint:
+          de: Die Gestalt des Objekts.
+          en: The object's geometry.
+        synonyms:
+          de: Gestalt, Kontur, Geometrie, Krümmung, Profil
+          en: form, contour, geometry, curvature, profile
+        directionless: true
+      - id: size
+        label:
+          de: Abmessung
+          en: Size
+        hint:
+          de: Länge, Breite, Durchmesser, Dicke — jede einzelne Erstreckung.
+          en: Length, width, diameter, thickness — any single extent.
+        synonyms:
+          de: Länge, Breite, Höhe, Durchmesser, Dicke, Spaltmaß
+          en: length, width, height, diameter, thickness, gap
+        unit: m
+      - id: volume
+        label:
+          de: Volumen
+          en: Volume
+        hint:
+          de: Der Raum, den das Objekt einnimmt.
+          en: The space the object occupies.
+        synonyms:
+          de: Rauminhalt, Füllmenge, Verdrängung
+          en: capacity, bulk, displacement
+        unit: m³
+      - id: surface-area
+        label:
+          de: Oberfläche
+          en: Surface area
+        hint:
+          de: >-
+            Wie viel Fläche das Objekt der Umgebung anbietet — entscheidet über alles, was
+            an der Grenzfläche geschieht.
+          en: >-
+            How much area the object offers its surroundings — decides everything that happens
+            at the interface.
+        synonyms:
+          de: Grenzfläche, spezifische Oberfläche, Kontaktfläche
+          en: interface, specific surface, contact area
+        unit: m²
+      - id: surface-finish
+        label:
+          de: Oberflächengüte
+          en: Surface finish
+        hint:
+          de: Wie glatt oder rau die Oberfläche ist.
+          en: How smooth or rough the surface is.
+        synonyms:
+          de: Rauheit, Glätte, Textur, Politur, Welligkeit
+          en: roughness, smoothness, texture, polish, waviness
+        unit: µm Ra
+      - id: porosity
+        label:
+          de: Porosität
+          en: Porosity
+        hint:
+          de: Anteil an Hohlräumen und ihre Durchgängigkeit.
+          en: Share of voids and whether they connect.
+        synonyms:
+          de: Hohlraumanteil, Durchlässigkeit, Permeabilität, Poren
+          en: void fraction, permeability, pores
+        unit: '%'
+      - id: tightness
+        label:
+          de: Dichtheit
+          en: Tightness
+        hint:
+          de: >-
+            Wie gut das Objekt Gas oder Flüssigkeit zurückhält — oder umgekehrt hindurchlässt.
+            Nicht dasselbe wie Porosität: Ein poröser Körper kann dicht sein, wenn die Poren
+            nicht durchgehen.
+          en: >-
+            How well the object holds gas or liquid back — or lets it through. Not the same
+            as porosity: a porous body can be tight if the pores do not connect.
+        synonyms:
+          de: >-
+            Diffusion, Permeabilität, Durchlässigkeit, Gasdichtheit, Leckrate, Sperrschicht,
+            Barriere
+          en: diffusion, permeability, gas tightness, leak rate, barrier layer
+        unit: mbar·l/s
+  - id: mechanics
+    label:
+      de: Bewegung und Kraft
+      en: Movement and force
+    parameters:
+      - id: speed
+        label:
+          de: Geschwindigkeit
+          en: Speed
+        hint:
+          de: >-
+            Wie schnell sich das Objekt bewegt — auch die Strömungsgeschwindigkeit und der
+            Durchsatz einer Flüssigkeit.
+          en: >-
+            How fast the object moves — including flow velocity and throughput of a liquid.
+        synonyms:
+          de: >-
+            Tempo, Strömungsgeschwindigkeit, Durchsatz, Volumenstrom, Beschleunigung, Drehzahl
+          en: >-
+            velocity, flow rate, throughput, fluid flow, acceleration, rotational speed
+        unit: m/s
+      - id: vibration
+        label:
+          de: Schwingung
+          en: Vibration
+        hint:
+          de: >-
+            Amplitude und Frequenz einer periodischen Bewegung — beides zusammen, weil man
+            selten nur nach einem davon sucht.
+          en: >-
+            Amplitude and frequency of a periodic movement — both together, because one rarely
+            looks for only one of them.
+        synonyms:
+          de: Frequenz, Amplitude, Vibration, Oszillation, Resonanz, Takt, Puls
+          en: frequency, amplitude, oscillation, resonance, pulse, cycle
+        unit: Hz · mm
+      - id: force
+        label:
+          de: Kraft
+          en: Force
+        hint:
+          de: Die Kraft, die auf das Objekt wirkt oder von ihm ausgeht.
+          en: The force acting on the object or coming from it.
+        synonyms:
+          de: Zugkraft, Druckkraft, Moment, Haltekraft, Vorspannung
+          en: tension, thrust, torque, holding force, preload
+        unit: N
+      - id: pressure
+        label:
+          de: Druck
+          en: Pressure
+        hint:
+          de: >-
+            Kraft je Fläche, im Objekt oder an seiner Grenze — auch Unterdruck und Vakuum.
+          en: >-
+            Force per area, inside the object or at its boundary — including negative pressure
+            and vacuum.
+        synonyms:
+          de: Überdruck, Unterdruck, Vakuum, Spannung, Kapillardruck
+          en: overpressure, suction, vacuum, stress, capillary pressure
+        unit: Pa · bar
+      - id: friction
+        label:
+          de: Reibung
+          en: Friction
+        hint:
+          de: Widerstand gegen Gleiten an der Grenzfläche.
+          en: Resistance to sliding at the interface.
+        synonyms:
+          de: Haftung, Gleitwiderstand, Schmierung, Reibwert, Verschleiß
+          en: grip, sliding resistance, lubrication, coefficient of friction, wear
+        unit: µ
+      - id: drag
+        label:
+          de: Strömungswiderstand
+          en: Drag
+        hint:
+          de: >-
+            Widerstand, den ein Objekt einer Strömung entgegensetzt. Folgt aus Form und Oberfläche,
+            ist aber so oft das Ziel, dass er eigen steht.
+          en: >-
+            Resistance an object puts up against a flow. It follows from shape and surface,
+            but is so often the goal that it stands on its own.
+        synonyms:
+          de: Luftwiderstand, Widerstandsbeiwert, Druckverlust, Turbulenz
+          en: air resistance, drag coefficient, pressure drop, turbulence
+        unit: cW
+  - id: material
+    label:
+      de: Stoffkennwerte
+      en: Material properties
+    parameters:
+      - id: mass
+        label:
+          de: Masse
+          en: Mass
+        hint:
+          de: >-
+            Die Masse des Objekts. Gewicht ist Masse × Fallbeschleunigung — die Objekteigenschaft
+            ist die Masse.
+          en: >-
+            The object's mass. Weight is mass × gravity — the object's property is the mass.
+        synonyms:
+          de: Gewicht, Eigengewicht, Trägheit, Flächengewicht
+          en: weight, dead weight, inertia, areal weight
+        unit: kg
+      - id: density
+        label:
+          de: Dichte
+          en: Density
+        hint:
+          de: Masse je Volumen.
+          en: Mass per volume.
+        synonyms:
+          de: Schüttdichte, Wichte, spezifisches Gewicht, Packungsdichte
+          en: bulk density, specific gravity, packing density
+        unit: kg/m³
+      - id: viscosity
+        label:
+          de: Viskosität
+          en: Viscosity
+        hint:
+          de: Widerstand gegen Fließen und Verformen.
+          en: Resistance to flowing and deforming.
+        synonyms:
+          de: Zähigkeit, Fließfähigkeit, Konsistenz, Thixotropie
+          en: thickness, flowability, consistency, thixotropy
+        unit: Pa·s
+      - id: hardness
+        label:
+          de: Härte
+          en: Hardness
+        hint:
+          de: Widerstand gegen Eindringen und Kratzen.
+          en: Resistance to indentation and scratching.
+        synonyms:
+          de: Kratzfestigkeit, Oberflächenhärte, Eindringwiderstand
+          en: scratch resistance, surface hardness, indentation resistance
+        unit: HV · HRC
+      - id: strength
+        label:
+          de: Festigkeit
+          en: Strength
+        hint:
+          de: Welche Last das Objekt erträgt, bevor es bricht oder bleibend nachgibt.
+          en: What load the object bears before it breaks or yields permanently.
+        synonyms:
+          de: >-
+            Zugfestigkeit, Bruchfestigkeit, Zähigkeit, Ermüdungsfestigkeit, Haltbarkeit
+          en: >-
+            tensile strength, fracture strength, toughness, fatigue strength, durability
+        unit: MPa
+      - id: rigidity
+        label:
+          de: Steifigkeit
+          en: Rigidity
+        hint:
+          de: >-
+            Wie stark sich das Objekt unter Last verformt — anders als Festigkeit, die vom
+            Versagen spricht.
+          en: >-
+            How much the object deforms under load — unlike strength, which speaks of failure.
+        synonyms:
+          de: Elastizität, E-Modul, Biegesteifigkeit, Nachgiebigkeit, Flexibilität
+          en: elasticity, Young's modulus, bending stiffness, compliance, flexibility
+        unit: GPa
+  - id: composition
+    label:
+      de: Zusammensetzung
+      en: Composition
+    parameters:
+      - id: quantity
+        label:
+          de: Stoffmenge
+          en: Quantity
+        hint:
+          de: Wie viel von dem Stoff überhaupt da ist.
+          en: How much of the substance there is at all.
+        synonyms:
+          de: Menge, Anzahl, Vorrat, Dosis, Füllstand
+          en: amount, number, stock, dose, fill level
+        unit: kg · mol
+      - id: concentration
+        label:
+          de: Konzentration
+          en: Concentration
+        hint:
+          de: Anteil eines Stoffes im Gemisch.
+          en: Share of one substance in a mixture.
+        synonyms:
+          de: Gehalt, Anteil, Verdünnung, Sättigung, pH-Wert
+          en: content, share, dilution, saturation, pH
+        unit: '% · mol/l'
+      - id: purity
+        label:
+          de: Reinheit
+          en: Purity
+        hint:
+          de: Wie frei der Stoff von Fremdanteilen ist.
+          en: How free the substance is of foreign matter.
+        synonyms:
+          de: Sauberkeit, Verunreinigung, Fremdstoffanteil, Keimfreiheit
+          en: cleanliness, contamination, impurity level, sterility
+        unit: '%'
+      - id: homogeneity
+        label:
+          de: Homogenität
+          en: Homogeneity
+        hint:
+          de: Wie gleichmäßig der Stoff verteilt ist.
+          en: How evenly the substance is distributed.
+        synonyms:
+          de: >-
+            Gleichmäßigkeit, Durchmischung, Entmischung, Verteilung, Korngrößenverteilung
+          en: >-
+            uniformity, mixedness, segregation, distribution, particle size distribution
+      - id: humidity
+        label:
+          de: Feuchte
+          en: Humidity
+        hint:
+          de: Wassergehalt im Stoff oder in der Umgebungsluft.
+          en: Water content in the substance or in the surrounding air.
+        synonyms:
+          de: Wassergehalt, Trockenheit, relative Luftfeuchte, Restfeuchte
+          en: water content, dryness, relative humidity, residual moisture
+        unit: '% · g/m³'
+      - id: state
+        label:
+          de: Aggregatzustand
+          en: State of matter
+        hint:
+          de: Fest, flüssig, gasförmig — und die Übergänge dazwischen.
+          en: Solid, liquid, gaseous — and the transitions between them.
+        synonyms:
+          de: >-
+            Phase, Phasenübergang, Schmelzen, Erstarren, Verdampfen, Kondensieren, Sublimieren
+          en: >-
+            phase, phase transition, melting, solidifying, evaporating, condensing, sublimating
+        directionless: true
+      - id: solubility
+        label:
+          de: Löslichkeit
+          en: Solubility
+        hint:
+          de: >-
+            Wie viel von einem Stoff sich in einem anderen überhaupt lösen lässt. Abgrenzung
+            zur Konzentration: Die Konzentration sagt, wie viel drin ist — die Löslichkeit,
+            wie viel hineingeht.
+          en: >-
+            How much of one substance can dissolve in another at all. Distinction from concentration:
+            concentration says how much is in there — solubility, how much will go in.
+        synonyms:
+          de: >-
+            Lösbarkeit, Sättigungsgrenze, Mischbarkeit, Aufschließbarkeit, Löslichkeitsprodukt
+          en: dissolvability, saturation limit, miscibility, solubility product
+        unit: g/l
+  - id: heat
+    label:
+      de: Wärme
+      en: Heat
+    parameters:
+      - id: temperature
+        label:
+          de: Temperatur
+          en: Temperature
+        hint:
+          de: Die Temperatur des Objekts.
+          en: The object's temperature.
+        synonyms:
+          de: Wärme, Hitze, Kälte, Temperaturgefälle, Erwärmung, Kühlung
+          en: heat, warmth, cold, temperature gradient, heating, cooling
+        unit: K · °C
+      - id: heat-conduction
+        label:
+          de: Wärmeleitfähigkeit
+          en: Heat conduction
+        hint:
+          de: Wie gut das Objekt Wärme durchlässt.
+          en: How well the object lets heat through.
+        synonyms:
+          de: Wärmedurchgang, Wärmedämmung, Isolation, Wärmeübergang
+          en: thermal conductivity, insulation, heat transfer
+        unit: W/(m·K)
+      - id: heat-capacity
+        label:
+          de: Wärmekapazität
+          en: Heat capacity
+        hint:
+          de: Wie viel Wärme das Objekt aufnimmt, bevor es wärmer wird.
+          en: How much heat the object takes up before it gets warmer.
+        synonyms:
+          de: Wärmespeicherung, Latentwärme, spezifische Wärme, Wärmepuffer
+          en: heat storage, latent heat, specific heat, thermal buffer
+        unit: J/(kg·K)
+  - id: em
+    label:
+      de: Elektrik und Magnetismus
+      en: Electricity and magnetism
+    parameters:
+      - id: conductivity
+        label:
+          de: Elektrische Leitfähigkeit
+          en: Electrical conductivity
+        hint:
+          de: Wie gut das Objekt elektrischen Strom leitet.
+          en: How well the object conducts electric current.
+        synonyms:
+          de: Widerstand, Isolation, Halbleitung, Supraleitung, Durchschlagfestigkeit
+          en: >-
+            resistance, insulation, semiconduction, superconduction, dielectric strength
+        unit: S/m
+      - id: charge
+        label:
+          de: Elektrische Ladung
+          en: Electric charge
+        hint:
+          de: Wie viel Ladung das Objekt trägt.
+          en: How much charge the object carries.
+        synonyms:
+          de: Aufladung, Entladung, Elektrostatik, Ionisierung, Potential, Spannung
+          en: charging, discharge, electrostatics, ionisation, potential, voltage
+        unit: C
+      - id: polarisation
+        label:
+          de: Polarisation
+          en: Polarisation
+        hint:
+          de: Ausrichtung der Dipole im Objekt — elektrisch wie optisch.
+          en: Alignment of the dipoles in the object — electrical as well as optical.
+        synonyms:
+          de: Dielektrizität, Piezoeffekt, Doppelbrechung, Ferroelektrizität
+          en: dielectricity, piezo effect, birefringence, ferroelectricity
+      - id: magnetism
+        label:
+          de: Magnetische Eigenschaften
+          en: Magnetic properties
+        hint:
+          de: Wie stark das Objekt magnetisiert ist oder auf ein Magnetfeld antwortet.
+          en: How strongly the object is magnetised or responds to a magnetic field.
+        synonyms:
+          de: >-
+            Magnetisierung, Permeabilität, Suszeptibilität, Curie-Punkt, Entmagnetisierung
+          en: >-
+            magnetisation, permeability, susceptibility, Curie point, demagnetisation
+        unit: T · A/m
+  - id: wave
+    label:
+      de: Optik und Akustik
+      en: Optics and acoustics
+    parameters:
+      - id: brightness
+        label:
+          de: Helligkeit
+          en: Brightness
+        hint:
+          de: Wie viel Licht das Objekt abgibt oder empfängt.
+          en: How much light the object emits or receives.
+        synonyms:
+          de: Leuchtdichte, Beleuchtungsstärke, Lumineszenz, Strahlungsintensität
+          en: luminance, illuminance, luminescence, radiant intensity
+        unit: lx · cd/m²
+      - id: colour
+        label:
+          de: Farbe
+          en: Colour
+        hint:
+          de: >-
+            Welche Wellenlängen das Objekt zeigt — es gibt kein Mehr und kein Weniger an Farbe.
+          en: >-
+            Which wavelengths the object shows — there is no more and no less of colour.
+        synonyms:
+          de: Farbton, Wellenlänge, Spektrum, Verfärbung, Farbumschlag, Fluoreszenz
+          en: hue, wavelength, spectrum, discolouration, colour change, fluorescence
+        directionless: true
+        unit: nm
+      - id: reflectivity
+        label:
+          de: Reflexion
+          en: Reflectivity
+        hint:
+          de: Wie viel Strahlung die Oberfläche zurückwirft.
+          en: How much radiation the surface throws back.
+        synonyms:
+          de: Spiegelung, Glanz, Albedo, Streuung, Entspiegelung
+          en: mirroring, gloss, albedo, scattering, anti-reflection
+        unit: '%'
+      - id: translucency
+        label:
+          de: Lichtdurchlässigkeit
+          en: Translucency
+        hint:
+          de: Wie viel Strahlung durch das Objekt hindurchgeht.
+          en: How much radiation passes through the object.
+        synonyms:
+          de: Transparenz, Trübung, Opazität, Absorption, Brechung
+          en: transparency, turbidity, opacity, absorption, refraction
+        unit: '%'
+      - id: sound
+        label:
+          de: Schall
+          en: Sound
+        hint:
+          de: Wie viel Schall das Objekt abgibt, durchlässt oder aufnimmt.
+          en: How much sound the object emits, transmits or absorbs.
+        synonyms:
+          de: Lautstärke, Geräusch, Schalldämmung, Ultraschall, Akustik, Körperschall
+          en: >-
+            loudness, noise, sound insulation, ultrasound, acoustics, structure-borne sound
+        unit: dB
+      - id: refraction
+        label:
+          de: Brechungsindex
+          en: Refractive index
+        hint:
+          de: >-
+            Wie stark das Objekt Licht ablenkt. Nicht dasselbe wie Lichtdurchlässigkeit: Ein
+            Glas kann klar sein und trotzdem kaum brechen — für alles mit Linsen ist die Brechung
+            das Ziel.
+          en: >-
+            How strongly the object bends light. Not the same as translucency: a glass can
+            be clear and still hardly refract — for anything with lenses, refraction is the
+            goal.
+        synonyms:
+          de: >-
+            Brechzahl, Lichtbrechung, Brennweite, Dispersion, Doppelbrechung, Linsenwirkung
+          en: refractive power, focal length, dispersion, birefringence, lensing
+        unit: n

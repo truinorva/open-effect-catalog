@@ -1,0 +1,34 @@
+# Release metadata. tools/build.py copies this into the "meta" block of
+# dist/effects.json. Change licences here and in NOTICE.md together.
+
+title: Open Effect Catalog
+description: >-
+  An open catalog of physical, chemical, biological and geometric effects,
+  searchable by function (action x object) and by parameter (operation x
+  parameter). Made for function-oriented search in TRIZ and engineering design.
+source: https://github.com/truinorva/open-effect-catalog
+license: MIT
+# Points to NOTICE.md because the release mixes licences (see origins below).
+licenseUrl: https://github.com/truinorva/open-effect-catalog/blob/main/NOTICE.md
+copyright: Truinorva GmbH and contributors
+notice: >-
+  Attribution is given once, centrally, in NOTICE.md. Passing on NOTICE.md
+  (or a link to it) together with LICENSE fulfils every attribution
+  requirement of this data set; entries need not be credited one by one.
+
+# Collections that entries were taken over from. An entry points here with
+# `origin: <key>`. If an upstream licence differs from `license` above, the
+# release licence becomes an SPDX "AND" expression and NOTICE.md must say
+# which entries it covers.
+origins:
+  triz-consulting:
+    title: TRIZ Effects Database
+    attribution: Robert Adunka, TRIZ Consulting Group
+    url: https://www.triz-consulting.de/EffectsDatabase/
+    version: '2026-11-11'
+    license: CC-BY-4.0
+    licenseUrl: https://creativecommons.org/licenses/by/4.0/
+    changes: >-
+      Converted from effects.json and functions.json into one YAML file per
+      entry and one vocabulary file; wording and cell allocations unchanged
+      at import. Later changes are recorded in the git history.

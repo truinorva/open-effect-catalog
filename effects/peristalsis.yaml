@@ -1,0 +1,65 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: peristalsis
+kind: effect
+home: move|liquid
+functions:
+  - compress|liquid
+  - move|liquid
+parameters:
+  - change|position
+  - increase|pressure
+  - increase|speed
+uses: []
+domain:
+  id: Verfahrenstechnik
+  de: Verfahrenstechnik
+  en: Process engineering
+maturity: verbreitet
+sources:
+  - https://de.wikipedia.org/wiki/Peristaltik
+authors:
+  - Robert Adunka
+origin: triz-consulting
+text:
+  de:
+    name: Peristaltik
+    description: >-
+      Peristaltik bezeichnet koordinierte Muskelbewegungen in Hohlorganen, die deren Inhalt
+      weiterbefördern oder durchmischen. Beim gerichteten Transport ziehen sich aufeinanderfolgende
+      Abschnitte der Organwand zusammen, sodass eine wandernde Einschnürung den Inhalt voranschiebt.
+      Auf diese Weise gelangt beispielsweise Nahrung durch die Speiseröhre zum Magen, während
+      peristaltische Bewegungen im Darm auch zur Durchmischung des Speisebreis beitragen.
+    example: Schlauchpumpe
+    conditions: ''
+    limits: >-
+      Für die Peristaltik als Transportprinzip gibt es keine allgemeine Temperatur- oder Größengrenze.
+      Der Transport versagt, wenn die wandernde Einschnürung keinen ausreichenden Vortrieb
+      mehr erzeugt oder sich der Kanal anschließend nicht genügend öffnet.
+    sideEffects: >-
+      Wärme: Wiederholtes Quetschen und Reibung erwärmen den Schlauch. Verschleiß: Materialermüdung
+      kann zu Rissen, Leckagen und sinkender Förderleistung führen.
+    kind: original
+    author: Robert Adunka
+    model: ''
+    updated: '2026-09-26'
+  en:
+    name: Peristalsis
+    description: >-
+      Peristalsis refers to coordinated muscle movements in hollow organs that transport or
+      mix their contents. In directional transport, successive sections of the organ wall
+      contract, so that a traveling constriction pushes the contents forward. In this way,
+      for example, food passes through the esophagus to the stomach, while peristaltic movements
+      in the intestine also contribute to the mixing of the chyme.
+    example: Peristaltic pump
+    conditions: ''
+    limits: >-
+      There is no general temperature or size limit for peristalsis as a transport principle.
+      Transport fails when the traveling constriction no longer generates sufficient propulsion
+      or the channel does not open sufficiently afterwards.
+    sideEffects: >-
+      Heat: Repeated squeezing and friction heat up the hose. Wear: Material fatigue can lead
+      to cracks, leaks, and decreasing delivery rates.
+    kind: geprueft
+    author: Robert Adunka
+    model: gemini-3.5-flash
+    updated: '2026-09-26'

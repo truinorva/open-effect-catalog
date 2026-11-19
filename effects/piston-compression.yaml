@@ -1,0 +1,67 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: piston-compression
+kind: effect
+home: compress|gas
+functions:
+  - compress|gas
+  - move|solid
+parameters:
+  - decrease|volume
+  - increase|pressure
+uses: []
+domain:
+  id: Verfahrenstechnik
+  de: Verfahrenstechnik
+  en: Process engineering
+maturity: verbreitet
+sources:
+  - https://de.wikipedia.org/wiki/Kolbenkompressor
+  - https://en.wikipedia.org/wiki/Reciprocating_compressor
+authors:
+  - Robert Adunka
+origin: triz-consulting
+text:
+  de:
+    name: Kolbenkompression
+    description: >-
+      Die mechanische Verkleinerung eines abgeschlossenen Volumens mittels eines beweglichen
+      Kolbens erzeugt einen Druckanstieg im eingeschlossenen Gas. Ventile steuern den Einlass
+      des Mediums bei der Volumenvergrößerung und den Auslass nach der Verdichtung. Dieser
+      Vorgang wandelt mechanische Arbeit in potenzielle Energie des Gases um.
+    example: >-
+      Druckluft-Schlagschrauber, Reifenfüllmessgerät, Kompressorkühlschrank, Druckluftbremse,
+      PET-Flaschen-Blasmaschine, Tauchkompressor
+    conditions: ''
+    limits: >-
+      Bei sehr hohen Volumenströmen erfordern die oszillierenden Massen und die Ventilsteuerung
+      unwirtschaftlich große Dimensionen. Verschmutzungen im Gas beschädigen die Dichtungen
+      und Zylinderwände.
+    sideEffects: >-
+      Die Verdichtung erzeugt starke Wärme, die gekühlt werden muss. Oszillierende Massen
+      verursachen Vibrationen und Lärm, während der Abrieb an den Dichtungen den Wartungsbedarf
+      erhöht.
+    kind: geprueft
+    author: Robert Adunka
+    model: gemini-3.5-flash
+    updated: '2026-09-26'
+  en:
+    name: Piston Compression
+    description: >-
+      Mechanically reducing a closed volume using a movable piston causes a pressure increase
+      in the trapped gas. Valves control the medium intake during volume expansion and the
+      discharge after compression. This process converts mechanical work into potential energy
+      of the gas.
+    example: >-
+      Pneumatic impact wrench, tire inflator, vapor-compression refrigerator, air brake system,
+      PET bottle blowing machine, diving air compressor
+    conditions: ''
+    limits: >-
+      At very high volume flow rates, the oscillating masses and valve control require uneconomically
+      large dimensions. Contaminants in the gas damage the seals and cylinder walls.
+    sideEffects: >-
+      The compression generates significant heat that requires cooling. Oscillating masses
+      cause vibrations and noise, while wear on the seals increases maintenance requirements.
+    kind: geprueft
+    author: Robert Adunka
+    model: gemini-3.5-flash
+    updated: '2026-09-26'

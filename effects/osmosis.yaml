@@ -1,0 +1,72 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: osmosis
+kind: effect
+home: separate|liquid
+functions:
+  - absorb|liquid
+  - concentrate|liquid
+  - dilute|liquid
+  - remove|liquid
+  - remove|solid
+  - separate|liquid
+parameters:
+  - change|position
+  - decrease|concentration
+  - increase|concentration
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: verbreitet
+sources:
+  - https://de.wikipedia.org/wiki/Osmose
+  - https://en.wikipedia.org/wiki/Osmosis
+authors:
+  - Adrian Fischer
+origin: triz-consulting
+text:
+  de:
+    name: Osmose
+    description: >-
+      Ein Lösungsmittel wandert selbsttätig durch eine halbdurchlässige Trennschicht in Richtung
+      einer höheren Konzentration gelöster Stoffe. Dieser Fluss erfolgt entlang eines Gefälles
+      des chemischen Potenzials und dauert an, bis sich ein Gleichgewicht einstellt. Dadurch
+      baut sich auf der Seite der höheren Konzentration ein mechanischer Druck auf.
+    example: >-
+      Meerwasserentsalzung durch Umkehrosmose, Dialysator, Osmosekraftwerk, Konservierung
+      durch Einsalzen, Bestimmung der molaren Masse mit Membranosmometrie
+    conditions: ''
+    limits: >-
+      Die Trennschicht muss für das Lösungsmittel durchlässig, für die gelösten Teilchen jedoch
+      undurchlässig sein. Zu hohe Konzentrationsunterschiede erfordern extrem druckfeste Membranen
+      und Apparaturen.
+    sideEffects: >-
+      Die Poren der Trennschicht verstopfen durch Ablagerungen und biologischen Bewuchs. Der
+      hohe mechanische Druck belastet die Bauteile und führt zu Materialermüdung.
+    kind: geprueft
+    author: Adrian Fischer
+    model: gemini-3.5-flash
+    updated: '2026-11-11'
+  en:
+    name: Osmosis
+    description: >-
+      A solvent moves naturally through a semipermeable membrane toward the side with a higher
+      concentration of dissolved substances. This flow occurs along a gradient of chemical
+      potential and continues until equilibrium is reached. As a result, mechanical pressure
+      builds up on the side with the higher concentration.
+    example: >-
+      Seawater desalination by reverse osmosis, dialyzer, osmotic power plant, food preservation
+      by salting, molar mass determination via membrane osmometry
+    conditions: ''
+    limits: >-
+      The membrane must be permeable to the solvent but impermeable to the dissolved particles.
+      Excessive concentration differences require extremely pressure-resistant membranes and
+      equipment.
+    sideEffects: >-
+      The pores of the membrane clog due to scaling and biofouling. The high mechanical pressure
+      stresses the components and leads to material fatigue.
+    kind: geprueft
+    author: Adrian Fischer
+    model: gemini-3.5-flash
+    updated: '2026-11-11'

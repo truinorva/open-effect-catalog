@@ -1,0 +1,66 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: high-shear-mixing
+kind: effect
+home: disassemble|liquid
+functions:
+  - disassemble|liquid
+  - mix|liquid
+parameters:
+  - decrease|size
+  - increase|homogeneity
+uses: []
+domain:
+  id: Verfahrenstechnik
+  de: Verfahrenstechnik
+  en: Process engineering
+maturity: verbreitet
+sources:
+  - https://en.wikipedia.org/wiki/High-shear_mixer
+authors:
+  - Finn-Ole Jensen
+origin: triz-consulting
+text:
+  de:
+    name: Hochscher-Mischen
+    description: >-
+      Ein schnell rotierendes Laufrad erzeugt im Zusammenspiel mit einem feststehenden Stator
+      extrem hohe Geschwindigkeitsunterschiede im Fluid. Die dadurch wirkenden Scherkräfte
+      zerkleinern Partikel oder Tröpfchen und verteilen sie in einer kontinuierlichen Phase.
+      Ein enger Spalt zwischen Rotor und Stator maximiert das Schergefälle auf engstem Raum.
+    example: >-
+      Rotor-Stator-Homogenisator, Inline-Scherdispergierer, Nasszerkleinerer, Kolloidmühle,
+      Hochscher-Granulator, Inline-Pulverinduktor
+    conditions: ''
+    limits: >-
+      Bei extrem hochviskosen Pasten bricht die Strömung ab, wodurch das Material nicht mehr
+      eigenständig nachfließt. Hochpolymere oder empfindliche Zellstrukturen werden durch
+      die mechanische Belastung zerstört.
+    sideEffects: >-
+      Der hohe Energieeintrag erwärmt das Mischgut stark, was Kühlmaßnahmen erforderlich macht.
+      Die mechanische Reibung im engen Scherspalt führt zu Verschleiß an Rotor und Stator.
+    kind: geprueft
+    author: Finn-Ole Jensen
+    model: gemini-3.6-flash
+    updated: '2026-11-11'
+  en:
+    name: High-shear Mixing
+    description: >-
+      A fast-spinning impeller creates extreme velocity differentials within the fluid in
+      combination with a stationary stator. The resulting shear forces break down particles
+      or droplets and distribute them throughout a continuous phase. A narrow clearance between
+      rotor and stator maximizes the shear rate within a confined space.
+    example: >-
+      Rotor-stator homogenizer, Inline shear disperser, Wet comminution mill, Colloid mill,
+      High-shear granulator, Inline powder inductor
+    conditions: ''
+    limits: >-
+      Extremely high-viscosity pastes cause flow disruption, preventing the material from
+      feeding into the mixing zone. High polymers or delicate cellular structures are destroyed
+      by the mechanical stress.
+    sideEffects: >-
+      The high energy input causes significant heating of the mixture, requiring active cooling.
+      Mechanical friction inside the tight shearing gap leads to wear on the rotor and stator.
+    kind: geprueft
+    author: Finn-Ole Jensen
+    model: gemini-3.6-flash
+    updated: '2026-11-11'

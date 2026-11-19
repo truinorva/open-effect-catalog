@@ -1,0 +1,58 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: induction-heating
+kind: effect
+home: heat|liquid
+functions:
+  - heat|liquid
+  - heat|solid
+parameters:
+  - change|state
+  - increase|temperature
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: ''
+sources:
+  - https://de.wikipedia.org/wiki/Induktive_Erw%C3%A4rmung
+authors:
+  - Tabitha Adunka
+origin: triz-consulting
+text:
+  de:
+    name: Induktionserwärmung
+    description: >-
+      Mit der induktiven Erwärmung werden in elektrisch leitenden Stoffen Wirbelstromverluste
+      erzeugt, welche den Stoff aufheizen. Dazu werden Induktionsheizungen oder -ofen benutzt,
+      die mit einem Wechselstrom durchflossenen Spule ein magnetisches Wechselfeld erzeugen,
+      das im Stoff Wirbelströme induziert. Bei ferromagnetischen Stoffen unterhalb der Curietemperatur
+      treten Ummagnetisierungsverluste auf.
+    example: >-
+      Induktionskochfeld, gezieltes Erwärmen zum Härten, werkzeugloses Drahtziehen, aktive
+      Thermografie, Plasmaerzeugung
+    conditions: Elektrisch leitender Stoff kann nur dadurch erwärmt werden.
+    limits: ''
+    sideEffects: ''
+    kind: original
+    author: Tabitha Adunka
+    model: ''
+    updated: '2026-09-14'
+  en:
+    name: Induction heating
+    description: >-
+      Induction heating generates eddy current losses in electrically conductive materials,
+      which heat the material. For this purpose, induction heaters are used, which generate
+      an alternating magnetic field with a coil through which an alternating current flows,
+      inducing eddy currents in the material. In ferromagnetic materials below the Curie temperature,
+      hysteresis losses occur.
+    example: >-
+      Induction cooking, targeted heating for hardening, tool-less wire drawing, active thermography,
+      plasma generation
+    conditions: Only electrically conductive material can be heated this way.
+    limits: ''
+    sideEffects: ''
+    kind: geprueft
+    author: Tabitha Adunka
+    model: gemini-2.5-flash
+    updated: '2026-09-14'

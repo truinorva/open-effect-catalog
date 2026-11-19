@@ -1,0 +1,50 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: archimedes-screw
+kind: effect
+home: move|liquid
+functions:
+  - move|liquid
+  - move|particles
+  - remove|liquid
+  - remove|particles
+parameters:
+  - change|position
+  - increase|speed
+uses: []
+domain:
+  id: Geometrie
+  de: Geometrie
+  en: Geometry
+maturity: ''
+sources:
+  - https://de.wikipedia.org/wiki/Archimedische_Schraube
+authors:
+  - Robert Adunka
+origin: triz-consulting
+text:
+  de:
+    name: Archimedische Schraube
+    description: >-
+      Die Archimedische Schraube kennt man vor allem von Kinderspielplätzen, wo sie genutzt
+      wird, um mit einer drehenden Bewegung Wasser nach oben zu befördern.
+    example: Schneckenförderer
+    conditions: ''
+    limits: ''
+    sideEffects: ''
+    kind: original
+    author: Robert Adunka
+    model: ''
+    updated: '2026-09-21'
+  en:
+    name: Archimedes' screw
+    description: >-
+      The Archimedes' screw is mainly known from children's playgrounds, where it is used
+      to transport water upwards with a rotating movement.
+    example: Screw conveyor
+    conditions: ''
+    limits: ''
+    sideEffects: ''
+    kind: geprueft
+    author: Robert Adunka
+    model: ''
+    updated: '2026-09-21'

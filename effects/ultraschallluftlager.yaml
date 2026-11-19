@@ -1,0 +1,54 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: ultraschallluftlager
+kind: application
+home: hold|liquid
+functions:
+  - hold|liquid
+parameters: []
+uses:
+  - acoustic-levitation
+domain:
+  id: ''
+  de: ''
+  en: ''
+maturity: ''
+sources:
+  - >-
+    https://de.wikipedia.org/wiki/Ber%C3%BChrungslose_Handhabung_mit_Ultraschall
+  - https://zs-handling.com/index.php
+authors:
+  - Robert Adunka
+origin: triz-consulting
+text:
+  de:
+    name: Ultraschallluftlager
+    description: >-
+      Durch den Nahfeldeffekt im Ultraschallfeld kann ein nahe an der Ultraschallquelle liegender
+      Gegenstand durch die Kompression des Gases im Spalt (ähnlich fluiddynamischen Lager)
+      in einem Abstand von 50-500 µm schweben. Durch Kombination mit Vakuum, kann damit auch
+      von oben gegriffen werden. Gegenstände mit wenigen Millimeter Größe bis 2,5 Meter große
+      Glasscheiben können transportiert, gelagert und gegriffen werden.
+    example: Halbleiterindustrie, Ultra-Dünnes Glas
+    conditions: ''
+    limits: ''
+    sideEffects: ''
+    kind: original
+    author: Robert Adunka
+    model: ''
+    updated: '2026-09-16'
+  en:
+    name: Ultrasonic air bearings
+    description: >-
+      Due to the near-field effect in the ultrasonic field, an object located close to the
+      ultrasonic source can levitate at a distance of 50-500 µm due to the compression of
+      the gas in the gap (similar to fluid dynamic bearings). By combining it with vacuum,
+      it can also be gripped from above. Objects ranging from a few millimeters in size to
+      2.5 meter large glass panes can be transported, stored, and gripped.
+    example: Semiconductor industry, ultra-thin glass
+    conditions: ''
+    limits: ''
+    sideEffects: ''
+    kind: geprueft
+    author: Robert Adunka
+    model: ''
+    updated: '2026-09-16'

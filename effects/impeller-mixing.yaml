@@ -1,0 +1,60 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: impeller-mixing
+kind: effect
+home: mix|particles
+functions:
+  - mix|particles
+  - move|gas
+  - move|liquid
+parameters:
+  - increase|speed
+uses: []
+domain:
+  id: Verfahrenstechnik
+  de: Verfahrenstechnik
+  en: Process engineering
+maturity: verbreitet
+sources:
+  - https://de.wikipedia.org/wiki/R%C3%BChrkessel
+  - https://doi.org/10.1016/j.cherd.2018.06.005
+authors:
+  - Robert Adunka
+origin: triz-consulting
+text:
+  de:
+    name: Rührmischen
+    description: >-
+      Durch das Rotieren mechanischer Mischwerkzeuge in einem Behälter wird kinetische Energie
+      auf fluide Medien übertragen. Dies erzeugt Strömungen und Turbulenzen, die Stoff- und
+      Wärmetransportprozesse beschleunigen sowie Phasen homogenisieren.
+    example: Rührkesselreaktor in der chemischen Industrie
+    conditions: ''
+    limits: >-
+      Das Verfahren stößt bei extrem hochviskosen oder pastösen Medien an seine Grenzen, da
+      sich dort keine ausreichenden Strömungsfelder mehr ausbilden.
+    sideEffects: >-
+      Es können unerwünschte Trombenbildungen und hohe Scherkräfte auftreten, die empfindliche
+      Substanzen beschädigen, zudem führt der mechanische Eintrag zu erheblichem Verschleiß
+      an Wellendichtungen.
+    kind: geprueft
+    author: Robert Adunka
+    model: gemini-3.5-flash
+    updated: '2026-09-26'
+  en:
+    name: Impeller Mixing
+    description: >-
+      By rotating mechanical mixing tools inside a vessel, kinetic energy is transferred to
+      fluid media. This generates currents and turbulence that accelerate mass and heat transfer
+      processes and homogenize phases.
+    example: Stirred-tank reactor in the chemical industry
+    conditions: ''
+    limits: >-
+      The process reaches its limits with extremely highly viscous or pasty media, as sufficient
+      flow fields can no longer develop under these conditions.
+    sideEffects: >-
+      Undesired vortex formation and high shear forces can occur, which may damage sensitive
+      substances, and the mechanical input leads to significant wear on shaft seals.
+    kind: geprueft
+    author: Robert Adunka
+    model: gemini-3.5-flash
+    updated: '2026-09-26'

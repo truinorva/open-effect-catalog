@@ -1,0 +1,72 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: gelation
+kind: effect
+home: hold|liquid
+functions:
+  - change-phase|liquid
+  - hold|liquid
+  - join|liquid
+parameters:
+  - change|state
+  - increase|viscosity
+uses: []
+domain:
+  id: Chemie
+  de: Chemie
+  en: Chemistry
+maturity: verbreitet
+sources:
+  - https://de.wikipedia.org/wiki/Gel
+  - https://en.wikipedia.org/wiki/Gelation
+authors:
+  - Tim Jacobsen
+origin: triz-consulting
+text:
+  de:
+    name: Gelbildung
+    description: >-
+      Flüssige Systeme wandeln sich durch die Verknüpfung von Makromolekülen oder Partikeln
+      in ein elastisches, dreidimensionales Netzwerk um. Diese Struktur immobilisiert das
+      umgebende Medium, wodurch die Viskosität sprunghaft ansteigt und ein viskoelastisches
+      System zwischen Flüssigkeit und Festkörper entsteht. Der Übergang erfolgt am Gelpunkt
+      entweder über physikalische Wechselwirkungen oder kovalente chemische Bindungen.
+    example: >-
+      Gelelektrophorese, Haargel, Zahnpasta, Pudding, feste Wandfarbe, Gelfüllung in Fahrradsätteln,
+      Gel-Kugelschreibertinte, Arzneimittel-Gele
+    conditions: ''
+    limits: >-
+      Physikalisch vernetzte Gele (z. B. aus Gelatine oder Pektin) verflüssigen sich beim
+      Erwärmen wieder und geben die Flüssigkeit frei. Kovalent vernetzte Gele sind dagegen
+      nicht umkehrbar: Das Netz löst sich nicht mehr auf, kann aber quellen. Gelbildung setzt
+      erst ein, wenn die Vernetzung einen kritischen Umsatz erreicht.
+    sideEffects: >-
+      Irreversible Erstarrung kann Rohrleitungen und Ventile dauerhaft verstopfen. Zudem neigen
+      alternde Gele zu Synerese, wodurch Flüssigkeit unkontrolliert aus dem Netzwerk austritt.
+    kind: geprueft
+    author: Tim Jacobsen
+    model: gemini-3.5-flash
+    updated: '2026-11-11'
+  en:
+    name: Gelation
+    description: >-
+      Liquid systems transform into an elastic, three-dimensional network through the cross-linking
+      of macromolecules or particles. This structure immobilizes the surrounding medium, causing
+      the viscosity to rise abruptly and creating a viscoelastic system between liquid and
+      solid. The transition occurs at the gel point via either physical interactions or covalent
+      chemical bonds.
+    example: >-
+      Gel electrophoresis, hair gel, toothpaste, pudding, non-drip paint, gel filling in bicycle
+      saddles, gel pen ink, pharmaceutical gels
+    conditions: ''
+    limits: >-
+      Physically cross-linked gels (e.g., made from gelatin or pectin) liquefy again upon
+      heating and release the liquid. Covalently cross-linked gels, on the other hand, are
+      irreversible: The network no longer dissolves, but it can swell. Gelation only sets
+      in when the cross-linking reaches a critical conversion level.
+    sideEffects: >-
+      Irreversible solidification can permanently clog pipelines and valves. In addition,
+      aging gels are prone to syneresis, causing fluid to exude uncontrollably from the network.
+    kind: geprueft
+    author: Tim Jacobsen
+    model: gemini-3.6-flash
+    updated: '2026-11-11'

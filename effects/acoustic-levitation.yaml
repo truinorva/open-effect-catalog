@@ -1,0 +1,56 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: acoustic-levitation
+kind: effect
+home: hold|liquid
+functions:
+  - hold|liquid
+  - hold|particles
+  - move|liquid
+  - move|particles
+  - orient|liquid
+  - orient|particles
+  - orient|solid
+parameters:
+  - change|orientation
+  - change|position
+  - change|shape
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: ''
+sources:
+  - https://de.wikipedia.org/wiki/Levitation_(Technik)#Akustische_Levitation
+authors:
+  - Robert Adunka
+origin: triz-consulting
+text:
+  de:
+    name: Akustische Levitation
+    description: >-
+      Eine Probe wie Styroporkügelchen oder Wassertropfen können durch stehende Ultraschallwellen
+      zum Schweben gebracht werden. Das Stehwellenfeld beruht auf Kräften, die im Wechseldruckfeld
+      der Ultraschallwellen auf dem schwebenden Körper wirken.
+    example: Ultraschallluftlager
+    conditions: ''
+    limits: ''
+    sideEffects: ''
+    kind: original
+    author: Robert Adunka
+    model: ''
+    updated: '2026-09-16'
+  en:
+    name: Acoustic levitation
+    description: >-
+      A sample such as polystyrene beads or water droplets can be made to levitate by standing
+      ultrasonic waves. The standing wave field is based on forces acting on the levitating
+      body in the alternating pressure field of the ultrasonic waves.
+    example: Ultrasonic air bearings
+    conditions: ''
+    limits: ''
+    sideEffects: ''
+    kind: geprueft
+    author: Robert Adunka
+    model: ''
+    updated: '2026-09-16'

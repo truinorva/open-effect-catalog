@@ -1,0 +1,67 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: syneresis
+kind: effect
+home: separate|liquid
+functions:
+  - deform|solid
+  - move|liquid
+  - separate|liquid
+parameters:
+  - change|position
+  - decrease|volume
+  - increase|concentration
+uses: []
+domain:
+  id: Rheologie
+  de: Rheologie
+  en: Rheology
+maturity: verbreitet
+sources:
+  - https://de.wikipedia.org/wiki/Syn%C3%A4rese_(Physik)
+  - https://en.wikipedia.org/wiki/Syneresis_(chemistry)
+authors:
+  - Robert Adunka
+origin: triz-consulting
+text:
+  de:
+    name: Synärese
+    description: >-
+      Bei diesem Vorgang trennt sich eine flüssige Phase spontan aus einem Gel oder einer
+      kolloidalen Dispersion ab. Das Zusammenziehen des Feststoffgerüsts oder das Absinken
+      der dispergierten Teilchen drückt die eingeschlossene Flüssigkeit nach außen. Dieser
+      Prozess verändert die Struktur und das Volumen des verbleibenden Stoffsystems spürbar.
+    example: >-
+      Käsebruchbereitung, Joghurt-Serumseparation, Alginat-Abdruckschrumpfung, Rührei-Wässern,
+      Saucen-Entmischung
+    conditions: ''
+    limits: >-
+      Der Prozess stoppt, sobald das molekulare Netzwerk seine maximale Verdichtung erreicht
+      hat oder die treibenden Temperatur- und Konzentrationsunterschiede ausgeglichen sind.
+    sideEffects: >-
+      Die Materialschwindung führt zu Maßabweichungen bei Abformungen, während der Flüssigkeitsaustritt
+      die Textur von Lebensmitteln beeinträchtigt oder unerwünschte Phasengrenzen erzeugt.
+    kind: original
+    author: Robert Adunka
+    model: ''
+    updated: '2026-09-30'
+  en:
+    name: Syneresis
+    description: >-
+      During this process, a liquid phase spontaneously separates from a gel or a colloidal
+      dispersion. The contraction of the solid network or the sedimentation of the dispersed
+      particles forces the entrapped liquid outward. This process noticeably alters the structure
+      and volume of the remaining material system.
+    example: >-
+      Cheese curd processing, Yogurt serum separation, Alginate impression shrinkage, Scrambled
+      egg weeping, Sauce splitting
+    conditions: ''
+    limits: >-
+      The process stops once the molecular network reaches its maximum compaction or the driving
+      temperature and concentration gradients are balanced.
+    sideEffects: >-
+      Material shrinkage leads to dimensional inaccuracies in molds, while the release of
+      liquid impairs the texture of food products or creates unwanted phase boundaries.
+    kind: geprueft
+    author: Robert Adunka
+    model: gemini-3.5-flash
+    updated: '2026-09-30'

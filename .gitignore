@@ -1,0 +1,10 @@
+# Build output: released as GitHub Release assets, never committed
+dist/
+
+# Internal working material (e.g. candidate lists from third-party sources)
+work/
+
+# Python
+.venv/
+__pycache__/
+*.pyc

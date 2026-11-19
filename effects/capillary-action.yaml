@@ -1,0 +1,56 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: capillary-action
+kind: effect
+home: hold|liquid
+functions:
+  - absorb|liquid
+  - hold|liquid
+  - move|liquid
+parameters:
+  - change|position
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: ''
+sources:
+  - https://de.wikipedia.org/wiki/Kapillareffekt
+authors:
+  - Robert Adunka
+origin: triz-consulting
+text:
+  de:
+    name: Kapillarwirkung
+    description: >-
+      Der Kapillareffekt bewirkt, dass Flüssigkeiten in schmalen Röhrchen, Spalten oder Poren
+      selbstständig aufsteigen oder gegenüber dem umgebenden Flüssigkeitsspiegel absinken.
+      Entscheidend sind dabei die Oberflächenspannung und die Benetzung der angrenzenden Feststoffoberfläche,
+      die gemeinsam Richtung und Stärke des Effekts bestimmen. Dadurch kann beispielsweise
+      Wasser in saugfähiges Papier eindringen oder geschmolzenes Wachs durch einen Kerzendocht
+      zur Flamme gelangen.
+    example: Kerzendocht, Füller, Papier, Abzapfen von Blut, Löten, Bauwesen
+    conditions: ''
+    limits: ''
+    sideEffects: ''
+    kind: original
+    author: Robert Adunka
+    model: ''
+    updated: '2026-09-25'
+  en:
+    name: Capillary action
+    description: >-
+      The capillary effect causes liquids to rise or fall on their own in narrow tubes, crevices,
+      or pores relative to the surrounding liquid level. Surface tension and the wetting of
+      the adjacent solid surface are crucial in this process, together determining the direction
+      and strength of the effect. This allows, for example, water to penetrate absorbent paper
+      or melted wax to reach the flame through a candle wick.
+    example: >-
+      Candle wick, fountain pen, paper, blood sampling, soldering, cleaning cloth
+    conditions: ''
+    limits: ''
+    sideEffects: ''
+    kind: geprueft
+    author: Robert Adunka
+    model: gemini-3.5-flash
+    updated: '2026-09-25'

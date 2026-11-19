@@ -1,0 +1,65 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: weissenberg-effect
+kind: effect
+home: move|liquid
+functions:
+  - move|liquid
+  - rotate|liquid
+parameters:
+  - change|position
+  - increase|pressure
+uses: []
+domain:
+  id: Rheologie
+  de: Rheologie
+  en: Rheology
+maturity: verbreitet
+sources:
+  - https://de.wikipedia.org/wiki/Weissenberg-Effekt
+  - https://en.wikipedia.org/wiki/Weissenberg_effect
+  - https://doi.org/10.1143/jpsj.13.1200
+authors:
+  - Robert Adunka
+origin: triz-consulting
+text:
+  de:
+    name: Weissenberg-Effekt
+    description: >-
+      Beim Rühren von viskoelastischen, nicht-newtonschen Fluiden steigt das Medium entlang
+      der Rotationsachse oder eines rotierenden Stabes nach oben, anstatt durch die Fliehkraft
+      nach außen gedrängt zu werden. Ursache hierfür sind auftretende Normalspannungen, die
+      wie eine umschließende Ringspannung wirken und die Flüssigkeit radial nach innen zur
+      Drehachse pressen. Dieses Verhalten ist unabhängig von der konkreten Geometrie des Rührers
+      und tritt selbst bei bodenseitigem Antrieb auf.
+    example: Knetmaschine für zähe Teige, Rührwerk in der Teigverarbeitung
+    conditions: ''
+    limits: >-
+      Das Phänomen ist an das Vorhandensein ausgeprägter elastischer Eigenschaften im Fluid
+      gebunden und bleibt bei rein newtonschen Flüssigkeiten wie Wasser vollständig aus.
+    sideEffects: >-
+      In verfahrenstechnischen Anlagen kann das emporsteigende Medium die Wellendichtungen,
+      Lager oder Antriebsmotoren von Rührwerken verschmutzen und dadurch blockieren oder beschädigen.
+    kind: geprueft
+    author: Robert Adunka
+    model: gemini-3.5-flash
+    updated: '2026-09-26'
+  en:
+    name: Weissenberg Effect
+    description: >-
+      When stirring viscoelastic, non-Newtonian fluids, the medium rises upward along the
+      rotation axis or a spinning rod instead of being forced outward by centrifugal forces.
+      This is caused by emerging normal stresses that act like an enveloping hoop stress,
+      squeezing the liquid radially inward toward the rotational axis. This behavior is independent
+      of the specific stirrer geometry and occurs even with a bottom-driven setup.
+    example: Dough kneading machine, mixer for viscous doughs
+    conditions: ''
+    limits: >-
+      The phenomenon depends on the presence of distinct elastic properties within the fluid
+      and does not occur at all in purely Newtonian liquids like water.
+    sideEffects: >-
+      In chemical processing plants, the rising medium can contaminate shaft seals, bearings,
+      or drive motors of agitators, leading to blockages or damage.
+    kind: geprueft
+    author: Robert Adunka
+    model: gemini-3.5-flash
+    updated: '2026-09-26'

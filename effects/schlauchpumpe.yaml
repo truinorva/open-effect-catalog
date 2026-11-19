@@ -1,0 +1,63 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: schlauchpumpe
+kind: application
+home: move|liquid
+functions:
+  - move|liquid
+parameters: []
+uses:
+  - peristalsis
+domain:
+  id: ''
+  de: ''
+  en: ''
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Schlauchpumpe
+authors:
+  - Robert Adunka
+origin: triz-consulting
+text:
+  de:
+    name: Schlauchpumpe
+    description: >-
+      Dieses Förderprinzip basiert auf dem kontinuierlichen Zusammenquetschen eines flexiblen
+      Rohres durch rotierende Rollen oder Gleitelemente. Durch das fortlaufende Entlanggleiten
+      dieser Pressstellen wird die eingeschlossene Flüssigkeit mechanisch vorwärtsbewegt,
+      während die Eigenelastizität des Materials danach für das Ansaugen neuer Substanz sorgt.
+      Da das Transportgut ausschließlich mit der Innenseite der Leitung in Kontakt kommt,
+      bleibt das System hermetisch sauber und benötigt keine internen Ventile.
+    example: Dialysegerät, Herz-Lungen-Maschine
+    conditions: ''
+    limits: >-
+      Die Belastbarkeit endet bei extremen Systemdrücken über 16 bar sowie bei Temperaturen,
+      welche die Elastizität und Festigkeit des flexiblen Leitungsmaterials zerstören.
+    sideEffects: >-
+      Durch die ständige mechanische Verformung altert das elastische Material rasch, was
+      zu Materialermüdung, nachlassender Fördergenauigkeit und feinstem Abrieb im Transportmedium
+      führt.
+    kind: geprueft
+    author: Robert Adunka
+    model: gemini-3.5-flash
+    updated: '2026-09-26'
+  en:
+    name: Schlauchpumpe
+    description: >-
+      This pumping principle relies on the continuous squeezing of a flexible tube by rotating
+      rollers or sliding elements. As these pinch points move along the line, the trapped
+      fluid is mechanically pushed forward, while the material's inherent elasticity subsequently
+      draws in new substance. Since the pumped medium only contacts the inside of the tubing,
+      the system remains hermetically clean and requires no internal valves.
+    example: Dialysis machine, heart-lung machine
+    conditions: ''
+    limits: >-
+      The operating limits are reached at extreme system pressures exceeding 16 bar and at
+      temperatures that destroy the elasticity and strength of the flexible tubing material.
+    sideEffects: >-
+      Due to constant mechanical deformation, the elastic material ages rapidly, leading to
+      material fatigue, decreasing dosing accuracy, and fine particulate debris within the
+      pumped medium.
+    kind: geprueft
+    author: Robert Adunka
+    model: gemini-3.5-flash
+    updated: '2026-09-26'

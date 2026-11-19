@@ -1,0 +1,70 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: magnus-effect
+kind: effect
+home: move|solid
+functions:
+  - move|solid
+  - rotate|solid
+parameters:
+  - change|orientation
+  - change|position
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: verbreitet
+sources:
+  - https://de.wikipedia.org/wiki/Magnus-Effekt
+authors:
+  - Robert Adunka
+origin: triz-consulting
+text:
+  de:
+    name: Magnus-Effekt
+    description: >-
+      Ein rotierender runder Körper erfährt in einer vorbeiströmenden Flüssigkeit oder einem
+      Gas eine Kraft quer zur Strömungsrichtung. Auf der Seite, auf der sich die Oberfläche
+      des Körpers in Strömungsrichtung bewegt, erhöht sich die Strömungsgeschwindigkeit, während
+      sie sich auf der gegenüberliegenden Seite verringert. Der daraus resultierende Druckunterschied
+      lenkt den Körper seitlich ab.
+    example: >-
+      Flettner-Rotor, Flettner-Doppelrotor, Flettner-Flügel, Drallgeschoss, Effet-Fußball,
+      Topspin-Tennisball, Golfball mit Dimples
+    conditions: ''
+    limits: >-
+      Die Kraftwirkung bricht zusammen, wenn die Strömungsgeschwindigkeit zu gering ist oder
+      die Viskosität des Mediums die Ausbildung der Grenzschicht verhindert. Bei extrem hohen
+      Drehzahlen oder rauen Oberflächen kann sich die Strömung vorzeitig ablösen, was den
+      Effekt abschwächt oder umkehrt.
+    sideEffects: >-
+      Die Rotation erzeugt zusätzliche mechanische Vibrationen und erfordert einen ständigen
+      Antrieb des rotierenden Körpers. Zudem steigt der Strömungswiderstand in Bewegungsrichtung
+      deutlich an.
+    kind: original
+    author: Robert Adunka
+    model: ''
+    updated: '2026-10-01'
+  en:
+    name: Magnus Effect
+    description: >-
+      A rotating round body in a passing fluid or gas experiences a force perpendicular to
+      the direction of flow. On the side where the surface of the body moves in the direction
+      of the flow, the flow velocity increases, while it decreases on the opposite side. The
+      resulting pressure difference deflects the body laterally.
+    example: >-
+      Flettner rotor, Flettner double rotor, Flettner rotor wing, spin-stabilized projectile,
+      curveball, topspin tennis ball, dimpled golf ball
+    conditions: ''
+    limits: >-
+      The force effect collapses if the flow velocity is too low or if the viscosity of the
+      medium prevents the formation of the boundary layer. At extremely high rotational speeds
+      or rough surfaces, the flow may detach prematurely, weakening or reversing the effect.
+    sideEffects: >-
+      The rotation generates additional mechanical vibrations and requires a continuous drive
+      for the rotating body. Furthermore, the aerodynamic drag in the direction of travel
+      increases significantly.
+    kind: geprueft
+    author: Robert Adunka
+    model: gemini-3.5-flash
+    updated: '2026-10-01'

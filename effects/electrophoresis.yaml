@@ -1,0 +1,60 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: electrophoresis
+kind: effect
+home: move|solid
+functions:
+  - concentrate|liquid
+  - hold|liquid
+  - move|liquid
+  - move|solid
+  - separate|liquid
+parameters:
+  - change|position
+  - decrease|concentration
+  - increase|concentration
+  - increase|purity
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: ''
+sources:
+  - https://de.wikipedia.org/wiki/Elektrophorese
+authors:
+  - Tabitha Adunka
+  - Robert Adunka
+origin: triz-consulting
+text:
+  de:
+    name: Elektrophorese
+    description: >-
+      Bei der Elektrophorese versetzt ein elektrisches Feld geladene Teilchen oder Moleküle
+      in eine gerichtete Bewegung relativ zum umgebenden Medium. Wie schnell sie wandern,
+      hängt unter anderem von ihrer Ladung, ihrer Größe und den Eigenschaften des Trägermaterials
+      ab. Diese Unterschiede ermöglichen es, beispielsweise DNA-Fragmente oder Proteine in
+      einem Gel voneinander zu trennen und anschließend zu untersuchen.
+    example: Analytik in Biologie und Medizin, präparative Proteinreinigung
+    conditions: ''
+    limits: ''
+    sideEffects: ''
+    kind: original
+    author: Tabitha Adunka
+    model: ''
+    updated: '2026-09-25'
+  en:
+    name: Electrophoresis
+    description: >-
+      In electrophoresis, an electric field causes charged particles or molecules to move
+      in a directed motion relative to the surrounding medium. How fast they migrate depends,
+      among other things, on their charge, their size, and the properties of the carrier material.
+      These differences make it possible, for example, to separate DNA fragments or proteins
+      from one another in a gel and subsequently analyze them.
+    example: Analysis in biology and medicine, preparative protein purification
+    conditions: ''
+    limits: ''
+    sideEffects: ''
+    kind: geprueft
+    author: Robert Adunka
+    model: gemini-3.5-flash
+    updated: '2026-09-25'

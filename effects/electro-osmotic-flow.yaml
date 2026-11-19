@@ -1,0 +1,47 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: electro-osmotic-flow
+kind: effect
+home: move|liquid
+functions:
+  - move|liquid
+  - orient|liquid
+parameters:
+  - change|orientation
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: ''
+sources:
+  - https://de.wikipedia.org/wiki/Elektroosmose
+authors:
+  - Robert Adunka
+origin: triz-consulting
+text:
+  de:
+    name: Elektroosmotischer Fluss
+    description: >-
+      In einem elektrischen Feld bewegt sich Flüssigkeit. Tritt in Kapillaren unter Anlegung
+      einer Spannung auf.
+    example: Nanopumpe
+    conditions: ''
+    limits: ''
+    sideEffects: ''
+    kind: original
+    author: Robert Adunka
+    model: ''
+    updated: '2026-09-25'
+  en:
+    name: Electroosmotic flow
+    description: >-
+      In an electric field, liquid moves. Occurs in capillaries under the application of a
+      voltage.
+    example: Nanopump
+    conditions: ''
+    limits: ''
+    sideEffects: ''
+    kind: geprueft
+    author: Robert Adunka
+    model: ''
+    updated: '2026-09-25'

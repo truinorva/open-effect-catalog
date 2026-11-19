@@ -1,0 +1,80 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: mechanical-sieving
+kind: effect
+home: separate|particles
+functions:
+  - orient|particles
+  - separate|particles
+  - vibrate|particles
+parameters:
+  - increase|vibration
+uses: []
+domain:
+  id: Verfahrenstechnik
+  de: Verfahrenstechnik
+  en: Process engineering
+maturity: verbreitet
+sources:
+  - https://de.wikipedia.org/wiki/Siebmaschine
+authors:
+  - Till Wersig
+  - Robert Adunka
+origin: triz-consulting
+text:
+  de:
+    name: Mechanisches Sieben
+    description: >-
+      Mechanisches Sieben zerlegt ein körniges Gemenge mithilfe von Lochblechen oder Drahtgewebe
+      anhand der Partikelgröße. Rüttelnde Siebböden, ein Rotor oder ein Luftstrom wälzen das
+      Gut ständig um, sodass Körner unterhalb der Maschenweite durch die Öffnungen fallen.
+      Was zu grob ist, bleibt oben liegen und wird separat ausgetragen.
+    example: >-
+      Kies, Sand und Schotter im Baustoffwerk nach Körnung sortieren, grobe Brocken vor dem
+      Brecher abtrennen, Mehl und Zucker in der Lebensmittelproduktion sieben, nasses Schüttgut
+      entwässern, Körnungsverteilung von Proben im Labor bestimmen.
+    conditions: ''
+    limits: >-
+      Nasses, klebriges oder zum Verklumpen neigendes Material haftet am Belag und setzt die
+      Öffnungen zu. Gewebe mit Öffnungen unter rund 20 µm sind nicht erhältlich, feinere Stäube
+      lassen sich damit nicht mehr klassieren. Längliche, flache oder faserige Teilchen rutschen
+      je nach Lage mal durch und mal nicht, wodurch der Trennschnitt verschwimmt. Bei Antrieben
+      mit Unwucht nimmt die Schwingweite ab, wenn mehr Gut auf dem Deck liegt.
+    sideEffects: >-
+      Die Rüttelbewegung bringt wechselnde Kräfte in Gestell und Fundament ein, weshalb Gegenmassen
+      oder elastische Lager nötig werden. Im Betrieb entsteht viel Lärm. Der Belag nutzt sich
+      ab und muss in Intervallen erneuert werden, dabei weiten sich die Maschen und der Trennschnitt
+      wandert. Reibung am Schüttgut erzeugt Abrieb und Staub, den eine Absaugung erfassen
+      muss.
+    kind: geprueft
+    author: Till Wersig
+    model: gemini-3.6-flash
+    updated: '2026-11-11'
+  en:
+    name: Mechanical Sieving
+    description: >-
+      Mechanical screening separates a granular mixture based on particle size using perforated
+      plates or wire mesh. Vibrating screen decks, a rotor, or an air stream continuously
+      tumble the material so that grains smaller than the mesh size fall through the openings.
+      Material that is too coarse remains on top and is discharged separately.
+    example: >-
+      Sorting gravel, sand, and crushed stone by grain size in a building materials plant,
+      separating coarse lumps upstream of the crusher, sieving flour and sugar in food production,
+      dewatering wet bulk solids, determining particle size distribution of samples in the
+      laboratory.
+    conditions: ''
+    limits: >-
+      Wet, sticky, or agglomerating material adheres to the screen media and blinds the openings.
+      Meshes with openings under approximately 20 µm are not available, preventing the classification
+      of finer dusts. Elongated, flat, or fibrous particles pass through or are retained depending
+      on their orientation, which blurs the cut point. In drives with unbalanced masses, the
+      stroke amplitude decreases as the load on the deck increases.
+    sideEffects: >-
+      The vibrating motion introduces alternating forces into the frame and foundation, requiring
+      counterweights or elastic mounts. High noise levels are generated during operation.
+      The screen media wears out and must be replaced periodically, during which the mesh
+      expands and the cut point shifts. Friction on the bulk material generates abrasion and
+      dust, which must be captured by an extraction system.
+    kind: geprueft
+    author: Robert Adunka
+    model: gemini-3.6-flash
+    updated: '2026-11-11'

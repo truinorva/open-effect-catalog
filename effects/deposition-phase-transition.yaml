@@ -1,0 +1,70 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: deposition-phase-transition
+kind: effect
+home: change-phase|solid
+functions:
+  - change-phase|gas
+  - change-phase|solid
+  - join|gas
+  - produce|solid
+  - remove|gas
+parameters:
+  - change|state
+  - decrease|temperature
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: verbreitet
+sources:
+  - https://de.wikipedia.org/wiki/Resublimieren
+  - https://en.wikipedia.org/wiki/Deposition_(phase_transition)
+authors:
+  - Philipp Mahncke
+origin: triz-consulting
+text:
+  de:
+    name: Resublimation
+    description: >-
+      Ein Stoff geht bei Drücken und Temperaturen unterhalb seines Tripelpunkts direkt vom
+      gasförmigen in den neuen festen Zustand über. Dieser exotherme Phasenübergang setzt
+      die Sublimationsenthalpie frei, ohne dass eine flüssige Zwischenphase entsteht. Die
+      Kristallisation erfolgt meist an kühlen Oberflächen oder Kondensationskeimen.
+    example: >-
+      Elektronenstrahl-Verdampfen, Thermisches Verdampfen, Eisabscheidung am Kondensator bei
+      der Gefriertrocknung
+    conditions: ''
+    limits: >-
+      Erfordert Systemdrücke und Temperaturen strikt unterhalb des Tripelpunkts. Bei Überschreiten
+      dieser Schwellenwerte schmilzt das Material oder geht primär in die flüssige Phase über.
+    sideEffects: >-
+      Freigesetzte Erstarrungswärme erhöht die Lokaltemperatur und kann den Abscheidungsprozess
+      verlangsamen. Aufgewachsene Feststoffschichten bilden thermische Isolationsschichten
+      oder verstopfen Strömungsquerschnitte.
+    kind: geprueft
+    author: Philipp Mahncke
+    model: gemini-3.6-flash
+    updated: '2026-11-11'
+  en:
+    name: Desublimation
+    description: >-
+      A substance transitions directly from the gaseous to a new solid state at pressures
+      and temperatures below its triple point. This exothermic phase transition releases the
+      enthalpy of sublimation without creating an intermediate liquid phase. Crystallization
+      usually occurs on cool surfaces or condensation nuclei.
+    example: >-
+      Electron beam evaporation, thermal evaporation, ice deposition on the condenser during
+      freeze-drying
+    conditions: ''
+    limits: >-
+      Requires system pressures and temperatures strictly below the triple point. Exceeding
+      these thresholds causes the material to melt or transition primarily into the liquid
+      phase.
+    sideEffects: >-
+      Released heat of solidification increases the local temperature and can slow down the
+      deposition process. Grown solid layers form thermal insulation layers or clog flow cross-sections.
+    kind: geprueft
+    author: Philipp Mahncke
+    model: gemini-3.6-flash
+    updated: '2026-11-11'

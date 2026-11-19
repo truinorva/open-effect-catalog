@@ -1,0 +1,69 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: electroactive-polymers-eap
+kind: effect
+home: deform|solid
+functions:
+  - deform|solid
+  - expand|solid
+  - move|solid
+  - vibrate|solid
+parameters:
+  - change|shape
+  - increase|volume
+uses: []
+domain:
+  id: Materialwissenschaft
+  de: Materialwissenschaft
+  en: Materials science
+maturity: nische
+sources:
+  - https://de.wikipedia.org/wiki/Elektroaktive_Polymere
+  - https://en.wikipedia.org/wiki/Electroactive_polymer
+authors:
+  - Robert Adunka
+origin: triz-consulting
+text:
+  de:
+    name: Elektroaktive Polymere (EAP)
+    description: >-
+      Elektroaktive Polymere verändern ihre geometrische Form, sobald eine elektrische Spannung
+      an sie angelegt wird. Die Verformung basiert entweder auf der Verschiebung von Ionen
+      innerhalb des Materials oder auf elektrostatischen Anziehungskräften zwischen Elektroden,
+      die das Polymer komprimieren.
+    example: >-
+      Künstlicher Muskel, adaptive Gebäudeverschattung, einstellbare optische Blende, akustischer
+      Wandler, piezoelektrischer Sensor
+    conditions: ''
+    limits: >-
+      Elektronische Varianten benötigen elektrische Spannungen im Kilovoltbereich. Ionische
+      Varianten arbeiten zwar bei geringen Spannungen, sind jedoch auf eine feuchte Umgebung
+      angewiesen und reagieren träge.
+    sideEffects: >-
+      Die hohen Betriebsspannungen erfordern aufwendige elektrische Isolierungen und bergen
+      das Risiko von elektrischen Durchschlägen. Bei ionischen Systemen kann das Lösungsmittel
+      mit der Zeit verdampfen, was die Lebensdauer verkürzt.
+    kind: geprueft
+    author: Robert Adunka
+    model: gemini-3.5-flash
+    updated: '2026-09-26'
+  en:
+    name: Electroactive Polymers (EAP)
+    description: >-
+      Electroactive polymers undergo a change in shape or size when an electric voltage is
+      applied. This deformation is driven either by the migration of ions within the material
+      or by electrostatic forces between electrodes that compress the polymer.
+    example: >-
+      Artificial muscle, adaptive building shading, adjustable optical aperture, acoustic
+      transducer, piezoelectric sensor
+    conditions: ''
+    limits: >-
+      Dielectric types require operating voltages in the kilovolt range. Ionic types function
+      at low voltages but depend on a wet environment and exhibit slow response times.
+    sideEffects: >-
+      High operating voltages necessitate complex electrical insulation and increase the risk
+      of dielectric breakdown. In ionic systems, solvent evaporation over time limits the
+      operational lifetime.
+    kind: geprueft
+    author: Robert Adunka
+    model: gemini-3.5-flash
+    updated: '2026-09-26'

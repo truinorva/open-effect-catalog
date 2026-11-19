@@ -1,0 +1,71 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: suction
+kind: effect
+home: move|liquid
+functions:
+  - hold|solid
+  - move|gas
+  - move|liquid
+  - move|particles
+  - move|solid
+parameters:
+  - decrease|pressure
+  - increase|force
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: verbreitet
+sources:
+  - https://de.wikipedia.org/wiki/Sog_(Saugwirkung)
+  - https://en.wikipedia.org/wiki/Suction
+authors:
+  - Robert Adunka
+origin: triz-consulting
+text:
+  de:
+    name: Saugen
+    description: >-
+      Ein Druckunterschied zwischen zwei Bereichen erzeugt eine Kraft, die Gase oder Flüssigkeiten
+      vom höheren zum niedrigeren Druck treibt. Physikalisch gesehen zieht der Unterdruck
+      das Medium nicht an, sondern der höhere Umgebungsdruck drückt es in den evakuierten
+      Raum. Die maximale Druckdifferenz wird durch das Erreichen eines vollständigen Vakuums
+      begrenzt.
+    example: >-
+      Saugstrahlpumpe, Vakuumsauger, Pipette, Saugheber, Strohhalm, Medizinischer Schleimsauger,
+      Staubsauger
+    conditions: ''
+    limits: >-
+      Die maximale Förderhöhe für Wasser beträgt unter atmosphärischem Druck theoretisch knapp
+      über zehn Meter. Bei sehr zähflüssigen Medien oder extremen Temperaturen, die zum Sieden
+      der Flüssigkeit führen, versagt die Methode.
+    sideEffects: >-
+      In Flüssigkeiten droht Kavitation, die Bauteile durch implodierende Dampfblasen beschädigt.
+      Zudem können flexible Leitungen unter dem äußeren Druck kollabieren.
+    kind: geprueft
+    author: Robert Adunka
+    model: gemini-3.5-flash
+    updated: '2026-09-29'
+  en:
+    name: Suction
+    description: >-
+      A pressure difference between two regions generates a force that drives gases or liquids
+      from the higher to the lower pressure. Physically, the lower pressure does not pull
+      the medium, but the higher ambient pressure pushes it into the evacuated space. The
+      maximum pressure difference is limited by reaching a perfect vacuum.
+    example: >-
+      Ejector pump, Vacuum suction cup, Pipette, Siphon, Drinking straw, Medical suction device,
+      Vacuum cleaner
+    conditions: ''
+    limits: >-
+      The maximum suction lift for water is theoretically just over ten meters under atmospheric
+      pressure. The method fails with highly viscous media or extreme temperatures that cause
+      the liquid to boil.
+    sideEffects: >-
+      Cavitation threatens in liquids, damaging components through imploding vapor bubbles.
+      Additionally, flexible hoses can collapse under the external pressure.
+    kind: geprueft
+    author: Robert Adunka
+    model: gemini-3.5-flash
+    updated: '2026-09-29'

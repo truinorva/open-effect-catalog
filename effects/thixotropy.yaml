@@ -1,0 +1,66 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: thixotropy
+kind: effect
+home: hold|liquid
+functions:
+  - hold|liquid
+  - stabilise|liquid
+parameters:
+  - decrease|viscosity
+uses: []
+domain:
+  id: Rheologie
+  de: Rheologie
+  en: Rheology
+maturity: verbreitet
+sources:
+  - https://de.wikipedia.org/wiki/Thixotropie
+  - https://en.wikipedia.org/wiki/Thixotropy
+  - https://doi.org/10.1016/j.cemconres.2011.09.004
+authors:
+  - Robert Adunka
+origin: triz-consulting
+text:
+  de:
+    name: Thixotropie
+    description: >-
+      Dieses Phänomen beschreibt die zeitabhängige Verringerung der Zähigkeit einer Flüssigkeit
+      unter dem Einfluss einer andauernden mechanischen Krafteinwirkung wie Schütteln oder
+      Rühren. Sobald diese äußere Belastung aufhört, kehrt das System nach einer gewissen
+      Ruhephase wieder in seinen ursprünglichen, zähflüssigen oder festen Zustand zurück.
+      Ursache hierfür ist der reversible Abbau von inneren Strukturen im Fluid durch die wirkende
+      Scherspannung.
+    example: Bohrspülung in der Tiefbohrtechnik
+    conditions: ''
+    limits: >-
+      Die Wirkung bricht zusammen, wenn die mechanische Belastung zu gering ist, um die inneren
+      Bindungskräfte zu überwinden, oder wenn irreversible Strukturveränderungen im Material
+      auftreten.
+    sideEffects: >-
+      Beim Seetransport von feuchten Erzen kann die Vibration des Schiffes zu einer unerwarteten
+      Verflüssigung der Ladung führen, was durch gefährliche Ladungsverlagerungen die Stabilität
+      des Schiffes bedroht.
+    kind: geprueft
+    author: Robert Adunka
+    model: gemini-3.5-flash
+    updated: '2026-09-26'
+  en:
+    name: Thixotropy
+    description: >-
+      This phenomenon describes the time-dependent decrease in the viscosity of a fluid under
+      the influence of continuous mechanical stress such as shaking or stirring. As soon as
+      this external load ceases, the system returns to its original, viscous or solid state
+      after a certain period of rest. This is caused by the reversible degradation of internal
+      structures within the fluid due to the applied shear stress.
+    example: Drilling mud in deep drilling
+    conditions: ''
+    limits: >-
+      The effect breaks down if the mechanical stress is too low to overcome the internal
+      binding forces, or if irreversible structural changes occur within the material.
+    sideEffects: >-
+      During the maritime transport of moist ores, ship vibrations can cause unexpected liquefaction
+      of the cargo, which threatens the ship's stability due to dangerous cargo shifting.
+    kind: geprueft
+    author: Robert Adunka
+    model: gemini-3.5-flash
+    updated: '2026-09-26'

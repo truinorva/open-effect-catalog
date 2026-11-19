@@ -1,0 +1,68 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: friction
+kind: effect
+home: hold|solid
+functions:
+  - hold|solid
+  - move|solid
+  - stop|solid
+parameters:
+  - decrease|speed
+  - increase|friction
+  - increase|temperature
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: verbreitet
+sources:
+  - https://de.wikipedia.org/wiki/Reibung
+  - https://en.wikipedia.org/wiki/Friction
+authors:
+  - Robert Adunka
+origin: triz-consulting
+text:
+  de:
+    name: Reibung
+    description: >-
+      Berühren sich zwei feste Körper oder Teilchen unter Druck, wirkt an den Kontaktflächen
+      eine Kraft gegen die relative Bewegungsrichtung. Diese Kraft hemmt das Gleiten, Rollen
+      oder Haften der Partner aneinander. Zur Überwindung dieses Widerstands ist mechanische
+      Arbeit erforderlich, die sich in Wärme oder Verformung umwandelt.
+    example: >-
+      Scheibenbremse, Reifenprofil, Reibungskupplung, Gleitlager, Keilriemen, Schmirgelpapier,
+      Seilwinde
+    conditions: ''
+    limits: >-
+      Bei extrem hohen Temperaturen schmelzen die Kontaktflächen, wodurch sich die Materialeigenschaften
+      verändern. Extrem glatte Oberflächen im Vakuum führen zu Adhäsion, was die Bewegung
+      blockiert statt sie nur zu hemmen.
+    sideEffects: >-
+      Es entstehen unerwünschte Wärme und Materialabrieb an den Oberflächen. Dies führt zu
+      Energieverlusten im System und verkürzt die Lebensdauer der Bauteile.
+    kind: geprueft
+    author: Robert Adunka
+    model: gemini-3.5-flash
+    updated: '2026-09-26'
+  en:
+    name: Friction
+    description: >-
+      When two solid bodies or particles touch under pressure, a force acts on the contact
+      surfaces against the direction of relative motion. This force inhibits the sliding,
+      rolling, or static adhesion of the partners. Overcoming this resistance requires mechanical
+      work, which is converted into heat or deformation.
+    example: >-
+      Disc brake, tire tread, friction clutch, plain bearing, V-belt, sandpaper, cable winch
+    conditions: ''
+    limits: >-
+      At extremely high temperatures, the contact surfaces melt, which alters the material
+      properties. Extremely smooth surfaces in a vacuum lead to adhesion, which blocks movement
+      instead of merely inhibiting it.
+    sideEffects: >-
+      Unwanted heat and material abrasion occur on the surfaces. This leads to energy losses
+      within the system and shortens the lifespan of the components.
+    kind: geprueft
+    author: Robert Adunka
+    model: gemini-3.5-flash
+    updated: '2026-09-26'

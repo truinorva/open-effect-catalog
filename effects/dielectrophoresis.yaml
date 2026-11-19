@@ -1,0 +1,78 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: dielectrophoresis
+kind: effect
+home: hold|liquid
+functions:
+  - hold|liquid
+  - move|liquid
+  - move|particles
+  - orient|liquid
+  - orient|particles
+  - separate|liquid
+  - separate|particles
+parameters:
+  - change|orientation
+  - change|position
+  - decrease|concentration
+  - increase|purity
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: nische
+sources:
+  - https://de.wikipedia.org/wiki/Dielektrophorese
+  - https://en.wikipedia.org/wiki/Dielectrophoresis
+authors:
+  - Robert Adunka
+origin: triz-consulting
+text:
+  de:
+    name: Dielektrophorese
+    description: >-
+      Ein ungleichmäßiges elektrisches Feld polarisiert neutrale Teilchen in einem Medium
+      und erzeugt dadurch ein Dipolmoment. Die ungleichen Feldstärken an den Polen des Teilchens
+      führen zu einer resultierenden Kraft, die das Teilchen entlang des Feldgradienten bewegt.
+      Je nach Polarität von Medium und Teilchen wandert dieses in Bereiche stärkerer oder
+      schwächerer Feldintensität.
+    example: >-
+      Dielektrophoretischer Feldkäfig, Zellsortierer, Nanodraht-Ausrichtungsgerät, Viren-Detektionssystem,
+      Impedanzspektroskopie-Chip
+    conditions: ''
+    limits: >-
+      Sehr kleine Partikel unterhalb der Mikrometerskala entziehen sich der Bewegung, da die
+      thermische Brownsche Molekularbewegung die wirkende Kraft überlagert. Zudem schirmen
+      hochleitfähige Medien das elektrische Feld ab und verhindern die Polarisation.
+    sideEffects: >-
+      Starke elektrische Felder erwärmen das umgebende Medium durch Joule-Erwärmung, was störende
+      Konvektionsströmungen auslöst. Zudem drohen elektrochemische Reaktionen und Gasbildung
+      an den Elektrodenoberflächen.
+    kind: geprueft
+    author: Robert Adunka
+    model: gemini-3.5-flash
+    updated: '2026-09-30'
+  en:
+    name: Dielectrophoresis
+    description: >-
+      A non-uniform electric field polarizes neutral particles within a medium, thereby inducing
+      a dipole moment. The unequal field strengths at the poles of the particle result in
+      a net force that moves the particle along the field gradient. Depending on the relative
+      polarizability of medium and particle, the latter migrates toward regions of higher
+      or lower field intensity.
+    example: >-
+      Dielectrophoretic field cage, cell sorter, nanowire alignment device, virus detection
+      system, impedance spectroscopy chip
+    conditions: ''
+    limits: >-
+      Very small particles below the micrometer scale evade manipulation because thermal Brownian
+      motion overrides the acting force. Additionally, highly conductive media shield the
+      electric field and prevent polarization.
+    sideEffects: >-
+      Strong electric fields heat the surrounding medium via Joule heating, which triggers
+      disruptive convective currents. Furthermore, electrochemical reactions and gas formation
+      can occur at the electrode surfaces.
+    kind: geprueft
+    author: Robert Adunka
+    model: gemini-3.5-flash
+    updated: '2026-09-30'

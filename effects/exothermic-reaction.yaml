@@ -1,0 +1,67 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: exothermic-reaction
+kind: effect
+home: heat|liquid
+functions:
+  - heat|liquid
+  - keep-temp|liquid
+  - produce|gas
+parameters:
+  - increase|temperature
+uses: []
+domain:
+  id: Chemie
+  de: Chemie
+  en: Chemistry
+maturity: verbreitet
+sources:
+  - https://de.wikipedia.org/wiki/Exotherme_Reaktion
+  - https://en.wikipedia.org/wiki/Exothermic_reaction
+authors:
+  - Walid Sayd
+origin: triz-consulting
+text:
+  de:
+    name: Exotherme Reaktion
+    description: >-
+      Bei diesem chemischen oder kernphysikalischen Vorgang wird Energie an die Umgebung abgegeben,
+      da die Endprodukte ein niedrigeres Energieniveau als die Ausgangsstoffe besitzen. Meist
+      äußert sich dieser Energieüberschuss durch eine spontane Erwärmung des Systems. Für
+      den Start ist oft nur eine geringe Aktivierungsenergie erforderlich, woraufhin der Prozess
+      selbstständig weiterläuft.
+    example: >-
+      Aluminothermische Schweißung, Betonhydratation, Taschenwärmer, Kernspaltungsreaktor,
+      Wasserstoffverbrennung, Polyurethan-Aufschäumung
+    conditions: ''
+    limits: >-
+      Die Freisetzung stoppt, sobald die Ausgangsstoffe vollständig aufgezehrt sind oder die
+      Temperatur ein Niveau erreicht, bei dem die chemischen Bindungen der Endprodukte wieder
+      thermisch gespalten werden.
+    sideEffects: >-
+      Unkontrollierte Temperaturanstiege können zu einer thermischen Explosion, dem Schmelzen
+      von Reaktionsgefäßen oder unerwünschten thermischen Zersetzungsprozessen führen.
+    kind: geprueft
+    author: Walid Sayd
+    model: gemini-3.5-flash
+    updated: '2026-11-11'
+  en:
+    name: Exothermic reaction
+    description: >-
+      This chemical or nuclear process releases energy to the environment because the final
+      products have a lower energy level than the starting materials. Most often, this excess
+      energy manifests as a spontaneous heating of the system. Often only a small activation
+      energy is required to start the process, after which it continues independently.
+    example: >-
+      Aluminothermic welding, concrete hydration, hand warmer, nuclear fission reactor, hydrogen
+      combustion, polyurethane foaming
+    conditions: ''
+    limits: >-
+      The release stops as soon as the starting materials are completely consumed or the temperature
+      reaches a level where the chemical bonds of the end products are thermally cleaved again.
+    sideEffects: >-
+      Uncontrolled temperature increases can lead to a thermal explosion, the melting of reaction
+      vessels, or undesired thermal decomposition processes.
+    kind: geprueft
+    author: Walid Sayd
+    model: gemini-3.5-flash
+    updated: '2026-11-11'

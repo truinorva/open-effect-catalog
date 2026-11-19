@@ -1,0 +1,55 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: electrowetting
+kind: effect
+home: hold|liquid
+functions:
+  - hold|liquid
+  - move|liquid
+  - orient|liquid
+  - separate|liquid
+parameters:
+  - change|shape
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: ''
+sources:
+  - https://de.wikipedia.org/wiki/Elektrobenetzung
+authors:
+  - Robert Adunka
+origin: triz-consulting
+text:
+  de:
+    name: Elektrobenetzung
+    description: >-
+      Elektrobenetzung bezeichnet das gezielte verändern des Benetzungsverhaltens einer Flüssigkeit
+      durch eine angelegte elektrische Spannung. Dabei verkleinert sich üblicherweise der
+      Kontaktwinkel eines Tropfens, sodass er sich flacher ausbreitet und eine größere Fläche
+      bedeckt. Der Effekt ermöglicht beispielsweise elektrisch steuerbare Flüssiglinsen, deren
+      Brennweite durch eine Änderung der Flüssigkeitsform angepasst wird.
+    example: Mikrofluidik, Flüssiglinse, Smartphone, Endoskop, Barcode-Scanner
+    conditions: ''
+    limits: ''
+    sideEffects: ''
+    kind: original
+    author: Robert Adunka
+    model: ''
+    updated: '2026-09-25'
+  en:
+    name: Electrowetting
+    description: >-
+      Electrowetting refers to the targeted modification of the wetting behavior of liquids
+      by applying an electrical voltage. This usually reduces the contact angle of a droplet,
+      causing it to spread flatter and cover a larger area. The effect enables, for example,
+      electrically controllable liquid lenses whose focal length is adjusted by changing the
+      shape of the liquid.
+    example: Microfluidics, liquid lens, smartphone, endoscope, barcode scanner
+    conditions: ''
+    limits: ''
+    sideEffects: ''
+    kind: geprueft
+    author: Robert Adunka
+    model: gemini-3.5-flash
+    updated: '2026-09-25'

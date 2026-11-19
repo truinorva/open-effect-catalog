@@ -1,0 +1,74 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: swirling-flow
+kind: effect
+home: rotate|liquid
+functions:
+  - mix|gas
+  - mix|liquid
+  - move|liquid
+  - rotate|gas
+  - rotate|liquid
+  - rotate|particles
+  - rotate|solid
+  - separate|particles
+parameters:
+  - change|orientation
+  - change|position
+  - increase|concentration
+  - increase|speed
+uses: []
+domain:
+  id: Verfahrenstechnik
+  de: Verfahrenstechnik
+  en: Process engineering
+maturity: verbreitet
+sources:
+  - >-
+    https://www.ksb.com/de-global/kreiselpumpenlexikon/artikel/drallstroemung-1076376
+authors:
+  - Robert Adunka
+origin: triz-consulting
+text:
+  de:
+    name: Drallströmung
+    description: >-
+      Eine Drallströmung überlagert eine axiale Strömung mit einer Rotationsbewegung um die
+      Längsachse. Die dadurch entstehenden Zentrifugalkräfte erzeugen radiale Druckgradienten,
+      die den Stoffaustausch und die Durchmischung intensivieren. Dies führt zu einer stabileren
+      Flammenführung bei Verbrennungsprozessen und erhöht den Wärmeübergang an Kanalwänden.
+    example: >-
+      Zyklonabscheider, Drallbrenner, Wirbelrohr, Drallrad, Wirbelkammer, Wirbelstrom-Durchflussmesser
+    conditions: ''
+    limits: >-
+      Bei sehr zähen Medien oder geringen Strömungsgeschwindigkeiten bricht die Rotationsbewegung
+      aufgrund von Reibungsverlusten schnell zusammen.
+    sideEffects: >-
+      Der Strömungswiderstand steigt deutlich an, was einen höheren Druckverlust im System
+      verursacht und stärkere Pumpen oder Gebläse erfordert. Zudem können asymmetrische Wirbel
+      zu Vibrationen und erhöhtem Verschleiß an den Rohrwandungen führen.
+    kind: geprueft
+    author: Robert Adunka
+    model: gemini-3.5-flash
+    updated: '2026-09-26'
+  en:
+    name: Swirling Flow
+    description: >-
+      A swirling flow superimposes an axial flow with a rotational movement around the longitudinal
+      axis. The resulting centrifugal forces generate radial pressure gradients that intensify
+      mass transfer and mixing. This leads to more stable flame guidance in combustion processes
+      and increases heat transfer at duct walls.
+    example: >-
+      Cyclone separator, swirl burner, vortex tube, swirl impeller, vortex chamber, vortex
+      shedding flowmeter
+    conditions: ''
+    limits: >-
+      With highly viscous media or low flow velocities, the rotational movement collapses
+      quickly due to frictional losses.
+    sideEffects: >-
+      The flow resistance increases significantly, causing a higher pressure drop in the system
+      and requiring stronger pumps or blowers. Additionally, asymmetric vortices can lead
+      to vibrations and increased wear on the pipe walls.
+    kind: geprueft
+    author: Robert Adunka
+    model: gemini-3.5-flash
+    updated: '2026-09-26'

@@ -1,0 +1,49 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: thermal-expansion-of-liquids
+kind: effect
+home: expand|liquid
+functions:
+  - expand|liquid
+  - measure|liquid
+parameters:
+  - increase|size
+  - increase|volume
+  - measure|temperature
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: ''
+sources:
+  - https://de.wikipedia.org/wiki/W%C3%A4rmeausdehnung
+authors:
+  - Tabitha Adunka
+origin: triz-consulting
+text:
+  de:
+    name: Thermische Ausdehnung von Flüssigkeiten
+    description: >-
+      Wie bei Feststoffen kann Wärme auch zur Ausdehnung von Flüssigkeiten führen. Wobei der
+      Effekt eher mit der Ausdehnung bei Gasen vergleichbar ist als mit Festkörpern.
+    example: Flüssigkeitsthermometer
+    conditions: ''
+    limits: ''
+    sideEffects: ''
+    kind: original
+    author: Tabitha Adunka
+    model: ''
+    updated: '2026-09-14'
+  en:
+    name: Thermal expansion of liquids
+    description: >-
+      As with solids, heat can also lead to the expansion of liquids. However, the effect
+      is more comparable to the expansion of gases than that of solids.
+    example: Liquid-in-glass thermometer
+    conditions: ''
+    limits: ''
+    sideEffects: ''
+    kind: geprueft
+    author: Tabitha Adunka
+    model: gemini-2.5-flash
+    updated: '2026-09-14'

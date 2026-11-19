@@ -1,0 +1,66 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: centrifugal-force
+kind: effect
+home: hold|liquid
+functions:
+  - hold|liquid
+  - move|liquid
+  - remove|liquid
+  - rotate|liquid
+  - separate|liquid
+  - separate|particles
+parameters:
+  - change|position
+  - decrease|concentration
+  - increase|concentration
+  - increase|purity
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: ''
+sources:
+  - https://de.wikipedia.org/wiki/Zentrifugalkraft
+authors:
+  - Robert Adunka
+origin: triz-consulting
+text:
+  de:
+    name: Zentrifugalkraft
+    description: >-
+      Die Zentrifugalkraft, auch Fliehkraft genannt, beschreibt eine nach außen gerichtete
+      Trägheitswirkung, die aus der Perspektive eines mitrotierenden Beobachters auftritt.
+      Ihre Stärke wächst proportional zur Körpermasse und zum Abstand von der Drehachse sowie
+      quadratisch mit der Winkelgeschwindigkeit des Bezugssystems. Anschaulich zeigt sich
+      diese Wirkung beim Kettenkarussell, dessen Sitze während der Drehung nach außen ausschwenken.
+    example: >-
+      Trennung von Wasser und Salat in einer Salatschleuder; Wäscheschleuder; Zweiradfahrer,
+      der sich in die Kurve legt; Rotierende Flüssigkeit, die an den Wänden des Glases nach
+      oben steigt; Achterbahn; Fliehkraftkupplung; Zentrifuge; Fliehkraftregler
+    conditions: ''
+    limits: ''
+    sideEffects: ''
+    kind: original
+    author: Robert Adunka
+    model: ''
+    updated: '2026-09-25'
+  en:
+    name: Centrifugal force
+    description: >-
+      Centrifugal force describes an outward inertial effect that occurs from the perspective
+      of an observer that co-rotates. Its magnitude increases proportionally to the body mass
+      and the distance from axis of rotation, and quadratically with the angular velocity
+      of the reference system. This effect is clearly demonstrated by a swing ride, whose
+      seats swing outward during rotation.
+    example: >-
+      Separation of water and lettuce in a salad spinner; Washing machine spin cycle; Two-wheeler
+      rider leaning into a curve; Rotating liquid rising up the walls of the glass; Roller
+      coaster; Centrifugal clutch; Centrifuge; Centrifugal governor
+    conditions: ''
+    limits: ''
+    sideEffects: ''
+    kind: geprueft
+    author: Robert Adunka
+    model: gemini-3.5-flash
+    updated: '2026-09-25'

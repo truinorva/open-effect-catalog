@@ -1,0 +1,72 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: sedimentation
+kind: effect
+home: remove|particles
+functions:
+  - concentrate|particles
+  - concentrate|solid
+  - dilute|particles
+  - remove|particles
+  - separate|particles
+parameters:
+  - decrease|homogeneity
+  - decrease|quantity
+  - increase|concentration
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: verbreitet
+sources:
+  - https://de.wikipedia.org/wiki/Sedimentation
+  - https://en.wikipedia.org/wiki/Sedimentation
+  - https://doi.org/10.1039/tf9524800166
+authors:
+  - Eric Dirk Pryputsch
+origin: triz-consulting
+text:
+  de:
+    name: Sedimentation
+    description: >-
+      Schwerkraft oder Fliehkräfte ziehen in einem Fluid suspendierte Feststoffe zum Beckenboden
+      oder Außenrand. Unterscheiden sich die Dichten der Partikel vom umgebenden Medium, trennen
+      sich die Phasen durch Absinken oder Aufsteigen. Form, Masse und Viskosität bestimmen
+      dabei die Absinkgeschwindigkeit.
+    example: >-
+      Absetzbecken, Pflanzenöl-Sedimentationsbehälter, Sedimentationsanalyse, Photosedimentation,
+      Ultrazentrifuge
+    conditions: ''
+    limits: >-
+      Bei zu geringen Dichteunterschieden, sehr feinen Kolloiden oder starker thermischer
+      Konvektion unterbleibt die Auftrennung. Turbulent strömende Medien verhindern das Absinken
+      der Partikel dauerhaft.
+    sideEffects: >-
+      Kompakte Bodenabscheidungen verfestigen sich zu schwer entfernbaren Schlämmen. Verstopfte
+      Rohrleitungen und ungleiche Stoffverteilungen in Suspensionen stören kontinuierliche
+      Prozesse.
+    kind: geprueft
+    author: Eric Dirk Pryputsch
+    model: gemini-3.6-flash
+    updated: '2026-11-11'
+  en:
+    name: Sedimentation
+    description: >-
+      Gravity or centrifugal forces pull suspended solids in a fluid toward the bottom or
+      outer wall. When particle densities differ from the surrounding medium, phases separate
+      through settling or floating. Shape, mass, and viscosity determine the rate of subsidence.
+    example: >-
+      Settling basin, vegetable oil sedimentation tank, sedimentation analysis, photosedimentation,
+      ultracentrifuge
+    conditions: ''
+    limits: >-
+      Separation fails if density differences are negligible, colloidal particles are extremely
+      fine, or thermal convection is high. Turbulent fluid flows permanently prevent particles
+      from settling.
+    sideEffects: >-
+      Compacted bottom deposits harden into sludges that are difficult to remove. Clogged
+      pipes and uneven material distribution within suspensions disrupt continuous operations.
+    kind: geprueft
+    author: Eric Dirk Pryputsch
+    model: gemini-3.6-flash
+    updated: '2026-11-11'

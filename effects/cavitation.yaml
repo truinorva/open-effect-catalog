@@ -1,0 +1,76 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: cavitation
+kind: effect
+home: expand|liquid
+functions:
+  - destroy|liquid
+  - disassemble|liquid
+  - expand|liquid
+  - mix|liquid
+  - remove|liquid
+  - remove|solid
+  - vibrate|liquid
+parameters:
+  - change|state
+  - decrease|pressure
+  - decrease|strength
+  - increase|vibration
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: verbreitet
+sources:
+  - https://de.wikipedia.org/wiki/Kavitation
+  - https://en.wikipedia.org/wiki/Cavitation
+authors:
+  - Robert Adunka
+origin: triz-consulting
+text:
+  de:
+    name: Kavitation
+    description: >-
+      Lokale Druckabsenkungen in strömenden Flüssigkeiten führen zur Bildung von Dampfblasen,
+      sobald der statische Druck unter Verdampfungsdruck sinkt. Steigt der Druck im weiteren
+      Strömungsverlauf wieder an, kondensiert der Dampf schlagartig, und die Hohlräume kollabieren
+      implosionsartig. Dieser Zusammenfall erzeugt extreme, punktuelle Druckstöße und Flüssigkeitsstrahlen
+      mit hoher Zerstörungskraft.
+    example: >-
+      Ultraschallreinigungsbad, Ultraschall-Zahnsteinentfernungsgerät, Stoßwellen-Lithotripter,
+      Superkavitationstorpedo, Homogenisator, Kavitationsreaktor
+    conditions: ''
+    limits: >-
+      Der Effekt bleibt aus, wenn der statische Druck im System stets über dem materialspezifischen
+      Dampfdruck der Flüssigkeit liegt oder die Viskosität des Mediums das schnelle Blasenwachstum
+      verhindert.
+    sideEffects: >-
+      Es entstehen starker Materialverschleiß durch Oberflächenermüdung, laute Strömungsgeräusche,
+      Vibrationen sowie ein sinkender Wirkungsgrad von Strömungsmaschinen.
+    kind: geprueft
+    author: Robert Adunka
+    model: gemini-3.5-flash
+    updated: '2026-11-11'
+  en:
+    name: Cavitation
+    description: >-
+      Local pressure drops in flowing liquids lead to the formation of vapor bubbles as soon
+      as the static pressure falls below the vapor pressure. If the pressure rises again further
+      downstream, the vapor condenses abruptly and the cavities collapse implosively. This
+      collapse generates extreme, localized pressure pulses and liquid jets with high destructive
+      power.
+    example: >-
+      Ultrasonic cleaning bath, ultrasonic scaler, shockwave lithotripter, supercavitating
+      torpedo, homogenizer, cavitation reactor
+    conditions: ''
+    limits: >-
+      The effect does not occur if the static pressure in the system remains constantly above
+      the material-specific vapor pressure of the liquid or if high viscosity prevents rapid
+      bubble growth.
+    sideEffects: >-
+      It causes severe material wear due to surface fatigue, loud flow noise, vibrations,
+      and a reduction in the efficiency of fluid machinery.
+    kind: geprueft
+    author: Robert Adunka
+    model: gemini-3.6-flash
+    updated: '2026-11-11'

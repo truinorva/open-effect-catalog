@@ -1,0 +1,62 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: microwave-heating
+kind: effect
+home: heat|liquid
+functions:
+  - heat|liquid
+  - heat|solid
+  - remove|liquid
+  - remove|solid
+parameters:
+  - decrease|humidity
+  - increase|temperature
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: ''
+sources:
+  - https://de.wikipedia.org/wiki/Mikrowellenherd
+  - https://www.weltderphysik.de/thema/hinter-den-dingen/mikrowellenherd/
+authors:
+  - Robert Adunka
+origin: triz-consulting
+text:
+  de:
+    name: Mikrowellenerwärmung
+    description: >-
+      Bei der Mikrowellenerwärmung nimmt ein Material Energie aus elektromagnetischen Wellen
+      auf und wandelt sie in Wärme um. Das rasch wechselnde elektrische Feld versetzt insbesondere
+      polare Moleküle wie Wasser in Drehbewegungen, wobei ihre Wechselwirkungen mit benachbarten
+      Molekülen zur Erwärmung beitragen. Da die Strahlung in das Material eindringen kann,
+      entsteht Wärme auch unterhalb der Oberfläche, was beispielsweise zum Erhitzen von Lebensmitteln
+      genutzt wird.
+    example: >-
+      Mikrowellenherd, therapeutische Gewebeerwärmung, industrielle Trocknung, Aushärten von
+      Faserverbundwerkstoffen statt im Autoklaven
+    conditions: Wasser muss vorhanden sein.
+    limits: ''
+    sideEffects: ''
+    kind: original
+    author: Robert Adunka
+    model: ''
+    updated: '2026-09-25'
+  en:
+    name: Microwave heating
+    description: >-
+      In microwave heating, a material absorbs energy from electromagnetic waves and converts
+      it into heat. The rapidly alternating electric field induces rotational movements particularly
+      in polar molecules such as water, whereby their interactions with neighboring molecules
+      contribute to the heating. Since the radiation can penetrate into the material, heat
+      is also generated below the surface, which is used for heating food as an example.
+    example: >-
+      Microwave oven, therapeutic tissue heating, industrial drying, curing of fibre-reinforced
+      composites instead of an autoclave
+    conditions: Water must be present.
+    limits: ''
+    sideEffects: ''
+    kind: geprueft
+    author: Robert Adunka
+    model: gemini-3.5-flash
+    updated: '2026-09-25'

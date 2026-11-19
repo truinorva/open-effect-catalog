@@ -1,0 +1,70 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: electrophoretic-expansion-electro-osmosis
+kind: effect
+home: expand|liquid
+functions:
+  - expand|liquid
+  - move|liquid
+  - separate|liquid
+parameters:
+  - change|position
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: verbreitet
+sources:
+  - https://de.wikipedia.org/wiki/Elektroosmose
+authors:
+  - Robert Adunka
+origin: triz-consulting
+text:
+  de:
+    name: Elektrophoretische Expansion (Elektroosmose)
+    description: >-
+      An einer geladenen Feststoffoberfläche bildet sich in einer angrenzenden Flüssigkeit
+      eine elektrochemische Doppelschicht mit überschüssigen Ionen aus. Wird parallel zu dieser
+      Grenzfläche ein elektrisches Feld angelegt, wandern diese mobilen Ladungsträger und
+      ziehen die umgebende Flüssigkeit durch Reibung mit sich. Dadurch entsteht eine gleichmäßige
+      Strömung über den gesamten Querschnitt dünner Kanäle.
+    example: >-
+      Kapillarelektrophorese, elektroosmotische Mikropumpe, elektrophysikalische Mauertrockenlegung,
+      Tonentwässerungsanlage
+    conditions: ''
+    limits: >-
+      Der Effekt zeigt sich nur in engen Kanälen oder Poren im Nanometer- bis Mikrometerbereich,
+      da bei größeren Querschnitten die viskose Reibung und Volumeneffekte überwiegen. Zudem
+      blockieren elektrisch leitende Wandmaterialien das benötigte elektrische Feld durch
+      einen Kurzschluss.
+    sideEffects: >-
+      Die hohen elektrischen Spannungen können unerwünschte Elektrolyseprozesse an den Elektroden
+      sowie eine Erwärmung der Flüssigkeit auslösen. Zudem verändert sich die Strömungsgeschwindigkeit
+      stark mit dem pH-Wert und der Ionenkonzentration des Mediums.
+    kind: geprueft
+    author: Robert Adunka
+    model: gemini-3.5-flash
+    updated: '2026-09-30'
+  en:
+    name: Electrophoretic Expansion (Electro-osmosis)
+    description: >-
+      An electrochemical double layer with excess ions forms in a liquid adjacent to a charged
+      solid surface. Applying an electric field parallel to this interface causes these mobile
+      charge carriers to migrate, dragging the surrounding fluid along via viscous shear.
+      This generates a uniform flow profile across the entire cross-section of thin channels.
+    example: >-
+      capillary electrophoresis, electroosmotic micropump, electro-osmotic damp-proofing,
+      clay dewatering system
+    conditions: ''
+    limits: >-
+      The effect is restricted to narrow channels or pores in the nanometer to micrometer
+      range, as viscous friction and bulk volume effects dominate in larger dimensions. Additionally,
+      electrically conductive wall materials short-circuit the required electric field.
+    sideEffects: >-
+      The high electric voltages can trigger unwanted electrolysis at the electrodes and cause
+      thermal heating of the fluid. Furthermore, the flow rate varies significantly with the
+      pH value and the ionic concentration of the medium.
+    kind: geprueft
+    author: Robert Adunka
+    model: gemini-3.5-flash
+    updated: '2026-09-30'

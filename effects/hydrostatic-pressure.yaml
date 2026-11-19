@@ -1,0 +1,66 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: hydrostatic-pressure
+kind: effect
+home: hold|liquid
+functions:
+  - compress|liquid
+  - detect|liquid
+  - hold|liquid
+  - measure|liquid
+parameters:
+  - decrease|volume
+  - increase|pressure
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: verbreitet
+sources:
+  - https://de.wikipedia.org/wiki/Hydrostatischer_Druck
+  - https://en.wikipedia.org/wiki/Hydrostatic_pressure
+authors:
+  - Robert Adunka
+origin: triz-consulting
+text:
+  de:
+    name: Hydrostatischer Druck
+    description: >-
+      In einem ruhenden Fluid erzeugt die Gewichtskraft der darüberliegenden Masse einen mechanischen
+      Druck, der sich gleichmäßig in alle Richtungen ausbreitet. Dieser Druck steigt linear
+      mit der Tiefe und der Dichte des Mediums an und wirkt stets rechtwinklig auf jede berührende
+      Oberfläche. Da ruhende Flüssigkeiten keine Scherkräfte übertragen können, bleibt der
+      Spannungszustand rein isotrop.
+    example: Hydraulische Presse, Hebebühne
+    conditions: ''
+    limits: >-
+      Der lineare Zusammenhang gilt nicht mehr bei extremen Tiefenänderungen in Gasen aufgrund
+      ihrer Kompressibilität oder bei extremen Drücken, die auch die Dichte von Flüssigkeiten
+      verändern.
+    sideEffects: >-
+      Hohe Druckbelastungen erfordern massive Wandstärken bei Behältern und können bei beweglichen
+      Dichtungen zu erhöhter Reibung und schnellem Verschleiß führen.
+    kind: geprueft
+    author: Robert Adunka
+    model: gemini-3.5-flash
+    updated: '2026-09-26'
+  en:
+    name: Hydrostatic Pressure
+    description: >-
+      In a static fluid, the gravitational force of the overhead mass generates a mechanical
+      pressure that propagates uniformly in all directions. This pressure increases linearly
+      with the depth and density of the medium and always acts perpendicular to any contacting
+      surface. Since fluids at rest cannot transmit shear stresses, the state of stress remains
+      purely isotropic.
+    example: Hydraulic press, vehicle lift
+    conditions: ''
+    limits: >-
+      The linear relationship no longer holds during extreme depth changes in gases due to
+      their compressibility, or under extreme pressures that alter the density of liquids.
+    sideEffects: >-
+      High pressure loads necessitate massive wall thicknesses for containment vessels and
+      can lead to increased friction and rapid wear in moving seals.
+    kind: geprueft
+    author: Robert Adunka
+    model: gemini-3.5-flash
+    updated: '2026-09-26'

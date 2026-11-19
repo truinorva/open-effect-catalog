@@ -1,0 +1,65 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: magnetohydrodynamics-mhd
+kind: effect
+home: move|liquid
+functions:
+  - deform|gas
+  - heat|gas
+  - move|gas
+  - move|liquid
+  - stabilise|liquid
+  - vibrate|liquid
+parameters:
+  - change|position
+  - change|shape
+  - increase|pressure
+  - increase|speed
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: ''
+sources:
+  - https://en.wikipedia.org/wiki/Magnetohydrodynamics
+authors:
+  - Robert Adunka
+origin: triz-consulting
+text:
+  de:
+    name: Magnetohydrodynamik (MHD)
+    description: >-
+      Der magnetohydrodynamische Effekt beschreibt die Wechselwirkung zwischen Magnetfeldern
+      und elektrisch leitfähigen Flüssigkeiten oder Plasmen. Fließt durch ein solches Medium
+      ein elektrischer Strom, kann die Lorentzkraft in einem Magnetfeld seine Strömung antreiben,
+      abbremsen oder umlenken. Dieses Prinzip wird beispielsweise zum Pumpen flüssiger Metalle
+      und in experimentellen Schiffsantrieben genutzt, die ohne mechanisch bewegte Antriebsteile
+      auskommen.
+    example: >-
+      Kernfusion mit magnetischem Einschluss, Plasmaeinschluss, Flüssigmetallkühlung in Kernreaktoren,
+      elektromagnetisches Gießen
+    conditions: ''
+    limits: ''
+    sideEffects: ''
+    kind: original
+    author: Robert Adunka
+    model: ''
+    updated: '2026-09-25'
+  en:
+    name: Magnetohydrodynamics (MHD)
+    description: >-
+      The magnetohydrodynamic effect describes a interaction between magnetic fields and electrically
+      conductive fluids or plasmas. If an electric current flows through such a medium, the
+      Lorentz force in a magnetic field can drive, decelerate, or redirect its flow. This
+      principle is used, for example, for pumping liquid metals and in experimental marine
+      propulsion systems that operate without mechanically moving propulsion parts.
+    example: >-
+      Magnetic confinement fusion, plasma confinement, liquid-metal cooling in nuclear reactors,
+      electromagnetic casting
+    conditions: ''
+    limits: ''
+    sideEffects: ''
+    kind: geprueft
+    author: Robert Adunka
+    model: gemini-3.5-flash
+    updated: '2026-09-25'

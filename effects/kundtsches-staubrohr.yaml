@@ -1,0 +1,60 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: kundtsches-staubrohr
+kind: application
+home: move|liquid
+functions:
+  - move|liquid
+parameters: []
+uses:
+  - acoustic-streaming
+domain:
+  id: ''
+  de: ''
+  en: ''
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Kundtsches_Staubrohr
+authors:
+  - Robert Adunka
+origin: triz-consulting
+text:
+  de:
+    name: Kundtsches Staubrohr
+    description: >-
+      Schallwellen regen feine Partikel in einem geschlossenen Rohr zum Mitschwingen an. Die
+      Teilchen sammeln sich an den Stellen geringster Bewegung und machen so die Knotenpunkte
+      einer stehenden Welle sichtbar.
+    example: >-
+      Schallgeschwindigkeitsmessgerät, Resonanzfrequenzmesser, akustisches Demonstrationsgerät,
+      Wellenlängenmessgerät
+    conditions: ''
+    limits: >-
+      Zu schwere Partikel lassen sich durch die Schallenergie nicht bewegen, während zu starke
+      Schallamplituden das Pulver unkontrolliert aufwirbeln.
+    sideEffects: >-
+      Das verwendete Pulver verschmutzt die Rohrinnenwand und muss regelmäßig ausgetauscht
+      oder getrocknet werden.
+    kind: geprueft
+    author: Robert Adunka
+    model: gemini-3.5-flash
+    updated: '2026-09-26'
+  en:
+    name: Kundtsches Staubrohr
+    description: >-
+      Sound waves excite fine particles inside a closed tube into vibration. The particles
+      accumulate at the points of minimal movement, thereby visualizing the nodes of a standing
+      wave.
+    example: >-
+      Sound velocity meter, resonance frequency meter, acoustic demonstration apparatus, wavelength
+      meter
+    conditions: ''
+    limits: >-
+      Excessively heavy particles cannot be displaced by the acoustic energy, whereas overly
+      high sound amplitudes cause uncontrolled turbulent dispersion of the powder.
+    sideEffects: >-
+      The powder used contaminates the inner wall of the tube and requires regular replacement
+      or drying.
+    kind: geprueft
+    author: Robert Adunka
+    model: gemini-3.5-flash
+    updated: '2026-09-26'

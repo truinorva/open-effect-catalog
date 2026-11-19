@@ -1,0 +1,68 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: entrainment
+kind: effect
+home: change-phase|liquid
+functions:
+  - change-phase|liquid
+  - move|liquid
+  - separate|gas
+parameters:
+  - change|state
+  - increase|speed
+uses: []
+domain:
+  id: Verfahrenstechnik
+  de: Verfahrenstechnik
+  en: Process engineering
+maturity: verbreitet
+sources:
+  - https://de.wikipedia.org/wiki/Neufriedstein
+authors:
+  - Robert Adunka
+origin: triz-consulting
+text:
+  de:
+    name: Mitreißen (von Flüssigkeitstropfen)
+    description: >-
+      Eine strömende Gasphase reißt beim Kontakt mit einer Flüssigkeitsoberfläche oder beim
+      Durchströmen einer Flüssigkeit feine Tröpfchen mit sich. Dies geschieht durch Scherkräfte
+      an der Phasengrenzfläche, die die Flüssigkeit aufpeitschen und Partikel aus der flüssigen
+      Phase herauslösen. Das Resultat ist ein zweiphasiges Gemisch aus Gas und dispergierten
+      Flüssigkeitstropfen.
+    example: >-
+      Kolonnenboden, Verdampferanlage, Gaswäscher, Nassabscheider, Dampftrommel, Sprühdüsenvergaser
+    conditions: ''
+    limits: >-
+      Der Effekt setzt eine Mindestgeschwindigkeit des Gasstroms voraus, um die Oberflächenspannung
+      der Flüssigkeit zu überwinden. Bei sehr viskosen Medien oder extrem geringen Strömungsgeschwindigkeiten
+      bleibt das Mitreißen aus.
+    sideEffects: >-
+      Die mitgeführte Flüssigkeit verunreinigt nachfolgende Anlagenkomponenten und führt zu
+      Materialverlusten. Zudem drohen Korrosion und erosiver Verschleiß an Rohrleitungen und
+      Turbinenschaufeln.
+    kind: geprueft
+    author: Robert Adunka
+    model: gemini-3.5-flash
+    updated: '2026-09-26'
+  en:
+    name: Entrainment
+    description: >-
+      A flowing gas phase entrains fine droplets upon contact with a liquid surface or when
+      passing through a liquid. This occurs due to shear forces at the phase interface that
+      agitate the liquid and detach particles from the liquid phase. The result is a two-phase
+      mixture of gas and dispersed liquid droplets.
+    example: >-
+      Tray column, evaporator system, gas scrubber, wet scrubber, steam drum, spray nozzle
+      carburetor
+    conditions: ''
+    limits: >-
+      The effect requires a minimum gas velocity to overcome the surface tension of the liquid.
+      With highly viscous media or extremely low flow velocities, entrainment does not occur.
+    sideEffects: >-
+      The entrained liquid contaminates downstream equipment components and leads to material
+      losses. Additionally, there is a risk of corrosion and erosive wear on pipelines and
+      turbine blades.
+    kind: geprueft
+    author: Robert Adunka
+    model: gemini-3.5-flash
+    updated: '2026-09-26'

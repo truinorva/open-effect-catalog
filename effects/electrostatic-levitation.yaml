@@ -1,0 +1,73 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: electrostatic-levitation
+kind: effect
+home: vibrate|particles
+functions:
+  - hold|particles
+  - move|particles
+  - move|solid
+  - stabilise|particles
+  - vibrate|particles
+parameters:
+  - change|position
+  - decrease|friction
+  - increase|vibration
+  - stabilise|position
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: nische
+sources:
+  - https://en.wikipedia.org/wiki/Electrostatic_levitation
+authors:
+  - Robert Adunka
+origin: triz-consulting
+text:
+  de:
+    name: Elektrostatische Levitation
+    description: >-
+      Ein elektrisches Feld kompensiert die Gewichtskraft eines elektrisch geladenen Objekts
+      und hält es in der Schwebe. Da statische Ladungsanordnungen nach dem Earnshaw-Theorem
+      kein stabiles Gleichgewicht erlauben, regelt eine aktive Steuerung die Feldstärke fortlaufend
+      nach.
+    example: >-
+      Millikan-Versuch, Gyroskop-Aufhängung in Gravity Probe B, elektrostatischer Schwebeofen,
+      elektrostatische Staubfontäne auf dem Mond
+    conditions: ''
+    limits: >-
+      Das Verfahren versagt im Vakuum bei ungeladenen Objekten oder solchen, die ihre Ladung
+      schnell an die Umgebung abgeben. Sehr schwere Objekte erfordern extrem hohe elektrische
+      Feldstärken, die zu elektrischen Durchschlägen führen.
+    sideEffects: >-
+      Die notwendige Hochspannung erzeugt ein hohes Risiko von Funkenüberschlägen und Ionisation
+      der Umgebungsluft. Zudem beeinflussen die starken elektrischen Felder empfindliche Messinstrumente
+      in der Nähe des Schwebekörpers.
+    kind: geprueft
+    author: Robert Adunka
+    model: gemini-3.5-flash
+    updated: '2026-10-01'
+  en:
+    name: Electrostatic Levitation
+    description: >-
+      An electric field counteracts the gravitational force of an electrically charged object
+      and keeps it suspended. Since static charge configurations cannot provide stable equilibrium
+      as described in Earnshaw's theorem, an active control system continuously adjusts the
+      field strength.
+    example: >-
+      Millikan oil drop experiment, gyroscope suspension in Gravity Probe B, electrostatic
+      levitation furnace, electrostatic dust fountain on the Moon
+    conditions: ''
+    limits: >-
+      The process fails in a vacuum with uncharged objects or those that rapidly discharge
+      to the environment. Very heavy objects require extremely high electric field strengths,
+      which lead to electrical breakdown.
+    sideEffects: >-
+      The required high voltage creates a high risk of sparking and ionization of the surrounding
+      air. Additionally, the strong electric fields interfere with sensitive measuring instruments
+      near the levitated object.
+    kind: geprueft
+    author: Robert Adunka
+    model: gemini-3.5-flash
+    updated: '2026-10-01'

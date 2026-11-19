@@ -1,0 +1,79 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: magnetic-stirring
+kind: effect
+home: rotate|liquid
+functions:
+  - mix|liquid
+  - move|liquid
+  - move|particles
+  - rotate|gas
+  - rotate|liquid
+  - rotate|particles
+  - rotate|solid
+parameters:
+  - change|orientation
+  - change|position
+  - increase|homogeneity
+uses: []
+domain:
+  id: Verfahrenstechnik
+  de: Verfahrenstechnik
+  en: Process engineering
+maturity: verbreitet
+sources:
+  - https://de.wikipedia.org/wiki/Magnetr%C3%BChrer
+  - https://en.wikipedia.org/wiki/Plate_tectonics
+  - https://doi.org/10.1016/j.talanta.2010.11.076
+authors:
+  - Robert Adunka
+origin: triz-consulting
+text:
+  de:
+    name: Magnetrühren
+    description: >-
+      Ein berührungsloses Mischverfahren, bei dem ein extern erzeugtes, rotierendes Magnetfeld
+      einen magnetischen Körper im Inneren eines Behälters in Drehung versetzt. Durch diese
+      Kopplung wird die umgebende Flüssigkeit ohne direkte mechanische Verbindung nach außen
+      in Bewegung versetzt. Dies ermöglicht ein hermetisch dichtes Rühren ohne verschleißanfällige
+      Wellendichtungen.
+    example: >-
+      Magnetrührer im Chemielabor, Reaktionsansatz unter Schutzgas, sterile Medienbereitung
+      in der Pharmazie
+    conditions: ''
+    limits: >-
+      Das Verfahren stößt bei hochviskosen Medien an seine Grenzen, da die Reibungskräfte
+      die magnetische Kopplungskraft übersteigen und der Rührkörper abreißt. Zudem ist die
+      Kraftübertragung durch dicke Behälterwände oder stark abschirmende Materialien stark
+      eingeschränkt.
+    sideEffects: >-
+      Es kann zu mechanischem Abrieb am Behälterboden durch den rotierenden Rührkörper kommen.
+      Zudem besteht die Gefahr des Entkoppels (Schlagen des Rührstabs), was zu unvollständiger
+      Durchmischung und Lärm führt.
+    kind: geprueft
+    author: Robert Adunka
+    model: gemini-3.5-flash
+    updated: '2026-09-26'
+  en:
+    name: Magnetic Stirring
+    description: >-
+      A contactless mixing method where an externally generated, rotating magnetic field drives
+      a magnetic element inside a vessel. This coupling sets the surrounding liquid in motion
+      without any direct mechanical connection to the outside. This allows for hermetically
+      sealed stirring without wear-prone shaft seals.
+    example: >-
+      Magnetic stirrer in the chemistry lab, reaction mixture under inert gas, sterile media
+      preparation in pharmaceuticals
+    conditions: ''
+    limits: >-
+      The process reaches its limits with highly viscous media, as the frictional forces exceed
+      the magnetic coupling force, causing the stirring element to decouple. Furthermore,
+      power transmission is severely restricted by thick vessel walls or highly shielding
+      materials.
+    sideEffects: >-
+      Mechanical abrasion can occur at the bottom of the vessel due to the rotating stirring
+      element. Additionally, there is a risk of decoupling (spinning out of control), which
+      leads to incomplete mixing and noise.
+    kind: geprueft
+    author: Robert Adunka
+    model: gemini-3.5-flash
+    updated: '2026-09-26'

@@ -1,0 +1,73 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: radiative-cooling
+kind: effect
+home: cool|gas
+functions:
+  - cool|gas
+  - cool|particles
+  - cool|solid
+  - keep-temp|solid
+parameters:
+  - decrease|brightness
+  - decrease|temperature
+  - increase|reflectivity
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: verbreitet
+sources:
+  - https://en.wikipedia.org/wiki/Radiative_cooling
+authors:
+  - Obaidullah Sharifi
+origin: triz-consulting
+text:
+  de:
+    name: Strahlungskühlung
+    description: >-
+      Ein physikalischer Körper gibt Wärmeenergie in Form von elektromagnetischer Strahlung
+      an seine Umgebung ab. Liegt die abgestrahlte Leistung über der absorbierten Leistung,
+      sinkt die Temperatur des Körpers. Dieser Prozess läuft ohne mechanischen Antrieb ab
+      und nutzt bei terrestrischen Anwendungen das atmosphärische Transmissionsfenster, um
+      Energie direkt in das kalte Weltall zu leiten.
+    example: >-
+      Passivkühlung für Gebäude, Infrarot-Weltraumteleskop, Strahlungskühler für Satelliten,
+      Tausammler, Eisgewinnung durch Himmelsstrahlung
+    conditions: ''
+    limits: >-
+      Wolken, Nebel und hohe Luftfeuchtigkeit blockieren das atmosphärische Fenster im Wellenlängenbereich
+      von 8 bis 13 Mikrometern und unterbinden den Wärmeabfluss. Am Tag verhindern unzureichende
+      Reflexionsgrade im sichtbaren Spektrum eine Abkühlung unter die Umgebungstemperatur.
+    sideEffects: >-
+      Auf waagerechten Außenflächen bildet sich durch die starke Abkühlung unerwünschtes Kondenswasser
+      oder Frost, was die optischen Eigenschaften der Kühler beeinträchtigt. Zudem verschmutzen
+      die hochreflektierenden Oberflächen im Freien schnell, wodurch die Kühlleistung nachlässt.
+    kind: geprueft
+    author: Obaidullah Sharifi
+    model: gemini-3.5-flash
+    updated: '2026-11-11'
+  en:
+    name: Radiative Cooling
+    description: >-
+      A physical body releases thermal energy to its surroundings in the form of electromagnetic
+      radiation. If the emitted power exceeds the absorbed power, the temperature of the body
+      decreases. This process operates without mechanical drive and, in terrestrial applications,
+      utilizes the atmospheric transmission window to direct energy straight into cold outer
+      space.
+    example: >-
+      Passive cooling for buildings, Infrared space telescope, Radiative cooler for satellites,
+      Dew condenser, Ice making by sky radiation
+    conditions: ''
+    limits: >-
+      Clouds, fog, and high humidity block the atmospheric window in the 8 to 13 micrometer
+      wavelength range and stop the heat dissipation. During the day, insufficient reflectance
+      in the visible spectrum prevents cooling below the ambient temperature.
+    sideEffects: >-
+      Severe cooling causes unwanted condensation or frost to form on horizontal outdoor surfaces,
+      which degrades the optical properties of the coolers. Additionally, the highly reflective
+      surfaces contaminate quickly outdoors, reducing the cooling performance.
+    kind: geprueft
+    author: Obaidullah Sharifi
+    model: gemini-3.5-flash
+    updated: '2026-11-11'
