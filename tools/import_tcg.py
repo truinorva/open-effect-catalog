@@ -9,7 +9,8 @@ and the vocabulary to vocabulary/vocabulary.yaml. Entries written for this
 project (no origin, or another origin) are never touched. A re-sync overwrites
 local edits to imported entries; review the result with `git diff`.
 
-The upstream data is licensed CC BY 4.0 (Robert Adunka, TRIZ Consulting Group).
+Upstream publishes the data under CC BY 4.0; Robert Adunka, TRIZ Consulting Group,
+permitted its use in this repository under the MIT License.
 After a re-sync, update the data version in dataset.yaml and NOTICE.md.
 """
 
@@ -35,8 +36,8 @@ ENTRY_KEYS = [
 VOCAB_HEADER = (
     "# Vocabulary: actions (grouped in domains), objects, operations and parameters.\n"
     "# Taken over from the TRIZ Effects Database by Robert Adunka, TRIZ Consulting Group\n"
-    "# (CC BY 4.0). Ids are stable: cells in effects/*.yaml refer to them. Labels,\n"
-    "# hints and synonyms may be reworded at any time.\n"
+    "# (used under MIT with his permission). Ids are stable: cells in effects/*.yaml refer\n"
+    "# to them. Labels, hints and synonyms may be reworded at any time.\n"
 )
 
 

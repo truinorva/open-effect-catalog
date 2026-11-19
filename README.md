@@ -131,8 +131,14 @@ The workflow validates, builds with that version and attaches `effects.json`,
 
 ## Licence
 
-Tooling and entries written for this project: **MIT** — see
-[`LICENSE`](LICENSE). Entries taken over from the TRIZ Effects Database by
-Robert Adunka, TRIZ Consulting Group, and the vocabulary: **CC BY 4.0**.
-Details and attribution wording: [`NOTICE.md`](NOTICE.md).
-© 2026 Truinorva GmbH and contributors.
+Released under the **MIT License** — see [`LICENSE`](LICENSE). Anyone may use,
+change and pass on the data, also commercially and inside closed products, as
+long as the licence notice stays with it.
+
+The first entries and the vocabulary were written by **Robert Adunka (TRIZ
+Consulting Group)** and his co-authors for the
+[TRIZ Effects Database](https://www.triz-consulting.de/EffectsDatabase/) and
+are used here under MIT with his permission. All contributors and a ready-made
+attribution line: [`NOTICE.md`](NOTICE.md).
+
+© 2026 Truinorva GmbH, Robert Adunka (TRIZ Consulting Group) and contributors.
