@@ -8,9 +8,8 @@ description: >-
   parameter). Made for function-oriented search in TRIZ and engineering design.
 source: https://github.com/truinorva/open-effect-catalog
 license: MIT
-# Points to NOTICE.md because the release mixes licences (see origins below).
-licenseUrl: https://github.com/truinorva/open-effect-catalog/blob/main/NOTICE.md
-copyright: Truinorva GmbH and contributors
+licenseUrl: https://github.com/truinorva/open-effect-catalog/blob/main/LICENSE
+copyright: Truinorva GmbH, TRIZ Consulting Group GmbH, Robert Adunka and contributors
 notice: >-
   Attribution is given once, centrally, in NOTICE.md. Passing on NOTICE.md
   (or a link to it) together with LICENSE fulfils every attribution
@@ -26,8 +25,11 @@ origins:
     attribution: Robert Adunka, TRIZ Consulting Group
     url: https://www.triz-consulting.de/EffectsDatabase/
     version: '2026-11-11'
-    license: CC-BY-4.0
-    licenseUrl: https://creativecommons.org/licenses/by/4.0/
+    # Published upstream under CC BY 4.0; used here under MIT with the
+    # permission of Robert Adunka, TRIZ Consulting Group.
+    license: MIT
+    upstreamLicense: CC-BY-4.0
+    permission: Used under the MIT License with the permission of Robert Adunka, TRIZ Consulting Group.
     changes: >-
       Converted from effects.json and functions.json into one YAML file per
       entry and one vocabulary file; wording and cell allocations unchanged

@@ -1,7 +1,7 @@
 # Vocabulary: actions (grouped in domains), objects, operations and parameters.
 # Taken over from the TRIZ Effects Database by Robert Adunka, TRIZ Consulting Group
-# (CC BY 4.0). Ids are stable: cells in effects/*.yaml refer to them. Labels,
-# hints and synonyms may be reworded at any time.
+# (used under MIT with his permission). Ids are stable: cells in effects/*.yaml refer
+# to them. Labels, hints and synonyms may be reworded at any time.
 meta:
   title: TRIZ Effects Database — Vokabular
   version: 2.1.1

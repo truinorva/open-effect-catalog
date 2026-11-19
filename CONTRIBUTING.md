@@ -53,9 +53,9 @@ Edit the YAML file directly — on GitHub in the browser is fine. Set `updated`
 to today's date in every language block you changed. If you substantially
 rewrite an entry, add your name to `authors`.
 
-Entries with `origin: triz-consulting` come from the TRIZ Effects Database
-(CC BY 4.0). They may be improved here like any other entry; the changes are
-recorded in the git history, which is what the licence asks for.
+Entries with `origin: triz-consulting` were written by Robert Adunka and his
+co-authors for the TRIZ Effects Database and are used here under MIT with his
+permission. They may be improved here like any other entry.
 
 ## Reviewing an entry
 
