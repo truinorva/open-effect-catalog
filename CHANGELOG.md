@@ -25,4 +25,5 @@ changed or removed.
   were merged.
 - Licence: the imported entries and the vocabulary are now used under MIT with
   the permission of Robert Adunka, TRIZ Consulting Group; the release licence
-  is plain MIT. Robert Adunka is named in LICENSE and NOTICE.md.
+  is plain MIT. TRIZ Consulting Group GmbH and Robert Adunka are named as
+  copyright holders in LICENSE and NOTICE.md.

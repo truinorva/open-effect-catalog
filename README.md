@@ -149,4 +149,4 @@ Consulting Group)** and his co-authors for the
 are used here under MIT with his permission. All contributors and a ready-made
 attribution line: [`NOTICE.md`](NOTICE.md).
 
-© 2026 Truinorva GmbH, Robert Adunka (TRIZ Consulting Group) and contributors.
+© 2026 Truinorva GmbH, TRIZ Consulting Group GmbH, Robert Adunka and contributors.
