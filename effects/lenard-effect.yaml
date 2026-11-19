@@ -1,0 +1,64 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: lenard-effect
+kind: effect
+home: produce|field
+functions:
+  - produce|field
+parameters:
+  - increase|charge
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: nische
+sources:
+  - https://de.wikipedia.org/wiki/Philipp_Lenard
+  - https://en.wikipedia.org/wiki/Philipp_Lenard
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Lenard-Effekt (Wasserfallelektrizität)
+    description: >-
+      Zerspritzen Wassertropfen beim Aufprall auf eine Fläche oder werden sie zerrissen, werden
+      dabei elektrische Ladungen getrennt: Die umgebende Luft nimmt überwiegend negative Ladung
+      auf, während größere Tropfen positiv geladen zurückbleiben. Ursache ist die elektrische
+      Doppelschicht an der Wasseroberfläche, die beim Abreißen feinster Tröpfchen ungleich
+      aufgeteilt wird. Philipp Lenard beschrieb den Effekt Ende des 19. Jahrhunderts an Wasserfällen.
+    example: >-
+      Erhöhte Konzentration negativer Luftionen an Wasserfällen und in Brandungszonen, elektrische
+      Aufladung von Dusch- und Sprühnebeln
+    conditions: >-
+      Tropfen, die aufprallen, zerspritzen oder von einer Luftströmung zerrissen werden.
+    limits: >-
+      Die getrennten Ladungsmengen sind klein, und gelöste Salze verändern die Stärke des
+      Effekts deutlich.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Lenard effect (waterfall electricity)
+    description: >-
+      When water drops splash on impact with a surface or are torn apart, electric charges
+      are separated: the surrounding air mostly takes on negative charge, while larger drops
+      remain positively charged. The cause is the electric double layer at the water surface,
+      which is divided unevenly when the finest droplets break off. Philipp Lenard described
+      the effect at waterfalls at the end of the 19th century.
+    example: >-
+      Increased concentration of negative air ions at waterfalls and in surf zones, electric
+      charging of shower and spray mists
+    conditions: Drops that impact, splash or are torn apart by an air flow.
+    limits: >-
+      The separated charges are small, and dissolved salts change the strength of the effect
+      considerably.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

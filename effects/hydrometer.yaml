@@ -1,0 +1,62 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: hydrometer
+kind: application
+home: measure|liquid
+functions:
+  - measure|liquid
+parameters:
+  - measure|density
+  - measure|concentration
+uses:
+  - hydrostatic-pressure
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Ar%C3%A4ometer
+  - https://en.wikipedia.org/wiki/Hydrometer
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Aräometer (Senkspindel)
+    description: >-
+      Ein Aräometer ist ein beschwerter Glasschwimmer mit dünnem, skaliertem Hals. Es sinkt
+      so tief ein, bis die verdrängte Flüssigkeit so viel wiegt wie das Gerät selbst; in dichteren
+      Flüssigkeiten taucht es daher weniger tief ein, und an der Skala lässt sich die Dichte
+      oder ein davon abhängiger Gehalt ablesen.
+    example: >-
+      Säureprüfer für Bleiakkus, Mostwaage (Oechsle-Grade), Alkoholometer, Frostschutzprüfer,
+      Milchprüfung
+    conditions: Eine ruhige Flüssigkeit und eine bekannte Bezugstemperatur.
+    limits: >-
+      Die Anzeige hängt von der Temperatur ab und wird durch Oberflächenspannung und Gasblasen
+      am Schwimmer verfälscht.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Hydrometer
+    description: >-
+      A hydrometer is a weighted glass float with a thin, graduated stem. It sinks until the
+      liquid it displaces weighs as much as the instrument itself; in denser liquids it therefore
+      floats higher, and the scale shows the density or a content that depends on it.
+    example: >-
+      Acid testers for lead-acid batteries, must weight (Oechsle degrees), alcoholmeters,
+      antifreeze testers, milk testing
+    conditions: A still liquid and a known reference temperature.
+    limits: >-
+      The reading depends on temperature and is distorted by surface tension and gas bubbles
+      on the float.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

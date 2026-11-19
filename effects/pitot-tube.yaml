@@ -1,0 +1,67 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: pitot-tube
+kind: application
+home: measure|gas
+functions:
+  - measure|gas
+  - measure|liquid
+parameters:
+  - measure|speed
+  - measure|pressure
+uses: []
+domain:
+  id: ''
+  de: ''
+  en: ''
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Pitotrohr
+  - https://en.wikipedia.org/wiki/Pitot_tube
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Pitotrohr (Staurohr)
+    description: >-
+      Ein Pitotrohr ist ein dünnes Rohr, dessen Öffnung genau gegen die Strömung zeigt. Das
+      ankommende Fluid wird in der Öffnung bis zum Stillstand abgebremst, sodass dort der
+      Gesamtdruck aus statischem und dynamischem Druck anliegt. Misst man zusätzlich den statischen
+      Druck, wie beim Prandtlschen Staurohr über seitliche Bohrungen, ergibt sich aus der
+      Differenz nach Bernoulli die Strömungsgeschwindigkeit.
+    example: >-
+      Fahrtmesser in Flugzeugen, Geschwindigkeitsmessung in Windkanälen und an Rennwagen,
+      Durchflussmessung in Lüftungskanälen und Rohrleitungen
+    conditions: Ausrichtung parallel zur Strömung und eine bekannte Dichte des Fluids.
+    limits: >-
+      Bei geringen Geschwindigkeiten ist der Druckunterschied sehr klein, und im Überschall
+      muss der Verdichtungsstoß vor der Sonde rechnerisch berücksichtigt werden.
+    sideEffects: >-
+      Vereisung oder Insekten können die Öffnung verstopfen und zu gefährlich falschen Geschwindigkeitsanzeigen
+      führen.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Pitot tube
+    description: >-
+      A pitot tube is a thin tube whose opening points straight into the flow. The oncoming
+      fluid is brought to rest in the opening, so the total pressure, static plus dynamic,
+      acts there. If the static pressure is measured as well, as in the Prandtl tube through
+      side holes, the flow velocity follows from the difference via Bernoulli's equation.
+    example: >-
+      Airspeed indicators in aircraft, speed measurement in wind tunnels and on racing cars,
+      flow measurement in ventilation ducts and pipelines
+    conditions: Alignment parallel to the flow and a known fluid density.
+    limits: >-
+      At low speeds the pressure difference is very small, and in supersonic flow the shock
+      in front of the probe must be corrected for.
+    sideEffects: >-
+      Icing or insects can block the opening and lead to dangerously wrong airspeed readings.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

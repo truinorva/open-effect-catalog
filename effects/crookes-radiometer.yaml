@@ -1,0 +1,64 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: crookes-radiometer
+kind: application
+home: rotate|solid
+functions:
+  - rotate|solid
+  - detect|field
+parameters: []
+uses: []
+domain:
+  id: ''
+  de: ''
+  en: ''
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Lichtm%C3%BChle
+  - https://en.wikipedia.org/wiki/Crookes_radiometer
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Lichtmühle (Crookes-Radiometer)
+    description: >-
+      In einem teilweise evakuierten Glaskolben dreht sich ein Flügelrad, dessen Plättchen
+      auf einer Seite geschwärzt und auf der anderen hell sind. Die dunklen Seiten erwärmen
+      sich im Licht stärker; Gasmoleküle, die an den warmen Flächen und vor allem an deren
+      Rändern anstoßen, übertragen mehr Impuls, und das Rad dreht sich mit den dunklen Seiten
+      vom Licht weg. Der Strahlungsdruck des Lichts ist dafür viel zu schwach und würde in
+      die Gegenrichtung wirken.
+    example: >-
+      Physikalisches Demonstrationsgerät, Dekoration, Anzeige von Licht- und Wärmestrahlung
+    conditions: Restgas bei niedrigem Druck im Kolben sowie Licht- oder Wärmestrahlung.
+    limits: >-
+      Bei Normaldruck bremst die Gasreibung das Rad und im Hochvakuum fehlen die Gasmoleküle,
+      so dass es sich nur in einem engen Druckbereich dreht und Strahlung nur grob anzeigt.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Crookes radiometer
+    description: >-
+      In a partially evacuated glass bulb a vane wheel turns whose vanes are blackened on
+      one side and light on the other. The dark sides warm up more in light; gas molecules
+      striking the warm surfaces, and especially their edges, transfer more momentum, and
+      the wheel turns with the dark sides moving away from the light. The radiation pressure
+      of the light is far too weak for this and would act in the opposite direction.
+    example: >-
+      Physics demonstration device, decoration, indicator of light and thermal radiation
+    conditions: >-
+      Residual gas at low pressure in the bulb, and light or thermal radiation.
+    limits: >-
+      At atmospheric pressure gas friction brakes the wheel and in high vacuum there are too
+      few gas molecules, so it turns only in a narrow pressure range and indicates radiation
+      only roughly.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

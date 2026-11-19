@@ -1,0 +1,66 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: viscoelasticity
+kind: effect
+home: stop|solid
+functions:
+  - stop|solid
+  - deform|solid
+parameters:
+  - decrease|vibration
+uses: []
+domain:
+  id: Rheologie
+  de: Rheologie
+  en: Rheology
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Viskoelastizit%C3%A4t
+  - https://en.wikipedia.org/wiki/Viscoelasticity
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Viskoelastizität
+    description: >-
+      Viskoelastische Stoffe verhalten sich teils wie eine elastische Feder und teils wie
+      eine zähe Flüssigkeit. Unter konstanter Last verformen sie sich langsam weiter (Kriechen),
+      bei konstanter Dehnung baut sich die Spannung ab (Relaxation), und auf schnelle Belastung
+      reagieren sie steifer als auf langsame. In jedem Lastzyklus wandeln sie einen Teil der
+      Energie in Wärme um und dämpfen so Schwingungen und Stöße.
+    example: >-
+      Schwingungsdämpfer aus Elastomeren, viskoelastische Dämpfer in Hochhäusern, Memory-Schaum
+      in Matratzen, Gehörschutzstöpsel aus Schaumstoff, hüpfender Kitt
+    conditions: ''
+    limits: >-
+      Steifigkeit und Dämpfung hängen stark von Temperatur und Belastungsfrequenz ab.
+    sideEffects: >-
+      Kriechen lässt Vorspannungen in Kunststoffverbindungen nachlassen; Dämpfungsverluste
+      erwärmen Reifen und erhöhen den Rollwiderstand.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Viscoelasticity
+    description: >-
+      Viscoelastic materials behave partly like an elastic spring and partly like a viscous
+      liquid. Under constant load they continue to deform slowly (creep), at constant strain
+      the stress decays (relaxation), and they respond more stiffly to fast loading than to
+      slow loading. In each load cycle they convert part of the energy into heat, thus damping
+      vibrations and impacts.
+    example: >-
+      Elastomer vibration dampers, viscoelastic dampers in tall buildings, memory foam in
+      mattresses, foam earplugs, bouncing putty
+    conditions: ''
+    limits: >-
+      Stiffness and damping depend strongly on temperature and loading frequency.
+    sideEffects: >-
+      Creep relaxes preload in plastic joints; damping losses heat tyres and increase rolling
+      resistance.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

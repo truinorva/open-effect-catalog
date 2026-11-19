@@ -1,0 +1,71 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: photodissociation
+kind: effect
+home: destroy|gas
+functions:
+  - destroy|gas
+  - destroy|liquid
+  - produce|gas
+parameters:
+  - decrease|concentration
+uses: []
+domain:
+  id: Chemie
+  de: Chemie
+  en: Chemistry
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Photolyse
+  - https://en.wikipedia.org/wiki/Photodissociation
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Photodissoziation (Photolyse)
+    description: >-
+      Absorbiert ein Molekül ein Photon, dessen Energie die Bindungsenergie übersteigt, kann
+      eine chemische Bindung brechen, und das Molekül zerfällt in Atome, Radikale oder Ionen.
+      Je nach Bindung genügt dafür sichtbares Licht, oder es braucht UV- oder noch kurzwelligere
+      Strahlung. Die entstehenden reaktiven Bruchstücke lösen oft weitere Reaktionen aus.
+    example: >-
+      Bildung und Abbau von Ozon in der Stratosphäre, Photoinitiatoren für UV-härtende Lacke,
+      UV-Behandlung von Wasser zum Abbau von Spurenstoffen, photochemischer Smog
+    conditions: >-
+      Strahlung einer Wellenlänge, die das Molekül absorbiert und deren Photonenenergie für
+      den Bindungsbruch ausreicht.
+    limits: >-
+      Nur absorbiertes Licht wirkt; in trüben oder stark absorbierenden Medien dringt die
+      Strahlung kaum ein.
+    sideEffects: >-
+      Lichtempfindliche Stoffe wie manche Arzneimittel, Farbstoffe und Lebensmittelinhaltsstoffe
+      zersetzen sich, wenn sie nicht vor Licht geschützt werden.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Photodissociation (photolysis)
+    description: >-
+      When a molecule absorbs a photon whose energy exceeds the bond energy, a chemical bond
+      can break and the molecule falls apart into atoms, radicals or ions. Depending on the
+      bond, visible light suffices or UV or even shorter-wavelength radiation is needed. The
+      reactive fragments formed often trigger further reactions.
+    example: >-
+      Formation and destruction of ozone in the stratosphere, photoinitiators for UV-curing
+      coatings, UV treatment of water to break down trace contaminants, photochemical smog
+    conditions: >-
+      Radiation of a wavelength that the molecule absorbs and whose photon energy is sufficient
+      to break the bond.
+    limits: >-
+      Only absorbed light acts; in turbid or strongly absorbing media the radiation hardly
+      penetrates.
+    sideEffects: >-
+      Light-sensitive substances such as some drugs, dyes and food components decompose unless
+      protected from light.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

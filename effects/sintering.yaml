@@ -1,0 +1,69 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: sintering
+kind: effect
+home: join|particles
+functions:
+  - join|particles
+  - compress|particles
+parameters:
+  - increase|density
+  - decrease|porosity
+  - increase|strength
+uses: []
+domain:
+  id: Materialwissenschaft
+  de: Materialwissenschaft
+  en: Materials science
+maturity: verbreitet
+sources:
+  - https://de.wikipedia.org/wiki/Sintern
+  - https://en.wikipedia.org/wiki/Sintering
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Sintern
+    description: >-
+      Ein Pulverpressling wird auf eine Temperatur unterhalb des Schmelzpunkts erhitzt, und
+      die Körner verwachsen an ihren Kontaktstellen zu festen Brücken. Treibende Kraft ist
+      die Verringerung der großen Oberflächenenergie des Pulvers; der Stofftransport erfolgt
+      vor allem durch Diffusion von Atomen. Dabei schrumpft das Teil, Poren schließen sich,
+      und Dichte und Festigkeit nehmen zu.
+    example: >-
+      Pulvermetallurgische Zahnräder und Lagerbuchsen, technische Keramik und Porzellan, Hartmetall-Schneidplatten,
+      Sinterfilter, Lasersintern im 3D-Druck
+    conditions: >-
+      Hohe Temperatur, meist deutlich über der Hälfte der absoluten Schmelztemperatur, aber
+      unterhalb des Schmelzpunkts der Hauptphase; feines Pulver mit großer Oberfläche.
+    limits: Ohne zusätzlichen Druck bleibt meist eine Restporosität im Bauteil.
+    sideEffects: >-
+      Das Bauteil schrumpft beim Verdichten, was die Maßhaltigkeit erschwert; zu lange Haltezeiten
+      lassen die Körner wachsen.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Sintering
+    description: >-
+      A compacted powder is heated to a temperature below its melting point, and the grains
+      grow together at their contact points, forming solid bridges. The driving force is the
+      reduction of the powder's large surface energy; material is transported mainly by atomic
+      diffusion. The part shrinks, pores close, and density and strength increase.
+    example: >-
+      Powder-metallurgy gears and bearing bushes, technical ceramics and porcelain, cemented-carbide
+      cutting inserts, sintered filters, laser sintering in 3D printing
+    conditions: >-
+      High temperature, usually well above half the absolute melting temperature but below
+      the melting point of the main phase; fine powder with a large surface area.
+    limits: Without additional pressure some residual porosity usually remains.
+    sideEffects: >-
+      The part shrinks during densification, which makes dimensional accuracy difficult; excessive
+      holding times cause grain growth.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

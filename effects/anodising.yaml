@@ -1,0 +1,71 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: anodising
+kind: application
+home: preserve|solid
+functions:
+  - preserve|solid
+  - produce|solid
+parameters:
+  - increase|hardness
+  - change|colour
+  - decrease|conductivity
+uses: []
+domain:
+  id: Chemie
+  de: Chemie
+  en: Chemistry
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Anodisieren
+  - https://en.wikipedia.org/wiki/Anodizing
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Anodisieren (Eloxieren)
+    description: >-
+      Das Werkstück wird als Anode in ein meist saures Elektrolytbad gehängt, und der Strom
+      wandelt seine Oberfläche in eine feste Oxidschicht um. Bei Aluminium wächst so eine
+      harte, poröse Schicht von einigen bis über hundert Mikrometern Dicke, deren Poren eingefärbt
+      und anschließend durch Verdichten verschlossen werden können.
+    example: >-
+      Eloxierte Fensterprofile und Fassadenteile, Gehäuse von Smartphones und Laptops, Kochgeschirr,
+      Harteloxal für Kolben und Hydraulikteile, farbig anodisiertes Titan für Implantate und
+      Schmuck
+    conditions: >-
+      Passivierbare Metalle wie Aluminium, Titan oder Magnesium und eine saubere, entfettete
+      Oberfläche.
+    limits: >-
+      Die Oxidschicht ist spröde und kann beim Biegen reißen, und scharfe Kanten werden schlechter
+      bedeckt.
+    sideEffects: >-
+      Die Schicht isoliert elektrisch und kann die Dauerfestigkeit des Bauteils verringern.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Anodising
+    description: >-
+      The workpiece is made the anode in a usually acidic electrolyte bath, and the current
+      converts its surface into a solid oxide layer. On aluminium this produces a hard, porous
+      layer from a few to over a hundred micrometres thick, whose pores can be dyed and then
+      closed by sealing.
+    example: >-
+      Anodised window frames and facade parts, smartphone and laptop housings, cookware, hard
+      anodising of pistons and hydraulic parts, colour-anodised titanium for implants and
+      jewellery
+    conditions: >-
+      Passivating metals such as aluminium, titanium or magnesium and a clean, degreased surface.
+    limits: >-
+      The oxide layer is brittle and can crack when bent, and sharp edges are covered less
+      well.
+    sideEffects: >-
+      The layer insulates electrically and can reduce the fatigue strength of the part.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

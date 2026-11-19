@@ -1,0 +1,71 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: thermoresistive-effect
+kind: effect
+home: measure|liquid
+functions:
+  - measure|liquid
+  - measure|gas
+  - measure|solid
+  - keep-temp|solid
+parameters:
+  - measure|temperature
+  - measure|speed
+  - stabilise|temperature
+  - change|conductivity
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: verbreitet
+sources:
+  - https://en.wikipedia.org/wiki/Electrical_resistivity_and_conductivity
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Thermoresistiver Effekt
+    description: >-
+      Der elektrische Widerstand eines Stoffes ändert sich mit seiner Temperatur. In Metallen
+      steigt er, weil stärkere Gitterschwingungen die Elektronen häufiger streuen; in Halbleitern
+      und vielen Oxiden sinkt er meist, weil mehr Ladungsträger frei werden. Aus dem gemessenen
+      Widerstand lässt sich daher die Temperatur bestimmen.
+    example: >-
+      Platin-Widerstandsthermometer (Pt100), NTC- und PTC-Thermistoren, Hitzdrahtanemometer,
+      selbstregelnde PTC-Heizelemente, Bolometer
+    conditions: >-
+      Ein Messstrom durch den Sensor und guter thermischer Kontakt zum Messobjekt.
+    limits: >-
+      NTC-Thermistoren haben eine stark nichtlineare Kennlinie, Platinsensoren dagegen nur
+      einen kleinen Temperaturkoeffizienten von etwa 0,4 % pro Kelvin.
+    sideEffects: >-
+      Der Messstrom erwärmt den Sensor selbst (Eigenerwärmung) und verfälscht so die Messung.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Thermoresistive effect
+    description: >-
+      The electrical resistance of a material changes with its temperature. In metals it rises
+      because stronger lattice vibrations scatter the electrons more often; in semiconductors
+      and many oxides it usually falls because more charge carriers are freed. The temperature
+      can therefore be determined from the measured resistance.
+    example: >-
+      Platinum resistance thermometers (Pt100), NTC and PTC thermistors, hot-wire anemometers,
+      self-regulating PTC heaters, bolometers
+    conditions: >-
+      A measuring current through the sensor and good thermal contact with the object being
+      measured.
+    limits: >-
+      NTC thermistors have a strongly non-linear characteristic, while platinum sensors have
+      only a small temperature coefficient of about 0.4 % per kelvin.
+    sideEffects: >-
+      The measuring current heats the sensor itself (self-heating) and so distorts the reading.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

@@ -1,0 +1,74 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: radar
+kind: application
+home: detect|solid
+functions:
+  - detect|solid
+  - measure|solid
+  - measure|liquid
+parameters:
+  - measure|position
+  - measure|speed
+uses:
+  - reflection
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Radar
+  - https://en.wikipedia.org/wiki/Radar
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Radar
+    description: >-
+      Ein Radargerät sendet elektromagnetische Wellen im Funk- oder Mikrowellenbereich aus
+      und empfängt die an Objekten reflektierten Echos. Aus der Laufzeit des Echos ergibt
+      sich die Entfernung, aus der Richtung der Antenne die Lage und aus der Frequenzverschiebung
+      durch den Doppler-Effekt die Radialgeschwindigkeit des Ziels.
+    example: >-
+      Flugsicherung und Schiffsnavigation, Wetterradar, Abstandsregeltempomat und Notbremsassistent
+      im Auto, Geschwindigkeitsüberwachung, Füllstandmessung in Tanks, Bodenradar
+    conditions: >-
+      Ein Ziel, das die Wellen ausreichend zurückwirft, und eine freie Ausbreitung zwischen
+      Antenne und Ziel.
+    limits: >-
+      Die Winkelauflösung ist durch die Antennengröße im Verhältnis zur Wellenlänge begrenzt;
+      Objekte mit kleiner Radarrückstrahlfläche oder hinter Hindernissen werden schlecht erkannt.
+    sideEffects: >-
+      Hochleistungsradar kann Gewebe erwärmen und andere Funkdienste stören; Störechos von
+      Boden, Regen oder Meer erschweren die Zielerkennung.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Radar
+    description: >-
+      A radar transmits electromagnetic waves in the radio or microwave range and receives
+      the echoes reflected from objects. The echo's travel time gives the distance, the antenna
+      direction the bearing, and the frequency shift due to the Doppler effect the radial
+      velocity of the target.
+    example: >-
+      Air traffic control and ship navigation, weather radar, adaptive cruise control and
+      emergency braking in cars, speed enforcement, level measurement in tanks, ground-penetrating
+      radar
+    conditions: >-
+      A target that reflects the waves sufficiently, and unobstructed propagation between
+      antenna and target.
+    limits: >-
+      Angular resolution is limited by antenna size relative to wavelength; objects with a
+      small radar cross-section or behind obstacles are poorly detected.
+    sideEffects: >-
+      High-power radar can heat tissue and interfere with other radio services; clutter from
+      ground, rain or sea makes target detection harder.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

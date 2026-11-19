@@ -1,0 +1,65 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: thermoacoustic-heat-engine
+kind: application
+home: vibrate|gas
+functions:
+  - vibrate|gas
+  - cool|gas
+  - produce|field
+parameters:
+  - increase|vibration
+  - decrease|temperature
+uses:
+  - thermoacoustics
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: kindheit
+sources:
+  - https://en.wikipedia.org/wiki/Thermoacoustic_heat_engine
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Thermoakustischer Motor
+    description: >-
+      Eine thermoakustische Maschine wandelt Wärme ohne bewegte Teile in Schallleistung um:
+      Ein Temperaturgefälle über einem Regenerator oder Stapel in einem gasgefüllten Resonator
+      facht eine starke Druckschwingung an. Diese Schwingung treibt einen Lineargenerator
+      zur Stromerzeugung oder einen Pulsröhren- bzw. thermoakustischen Kühler an.
+    example: >-
+      Thermoakustische Stirlingmaschine, Erdgasverflüssigung im Versuchsmaßstab, Prototypen
+      zur Stromerzeugung aus Abwärme, Antrieb von Pulsröhrenkühlern
+    conditions: >-
+      Hohe Temperaturdifferenz am Regenerator; meist unter Druck stehendes Helium als Arbeitsgas.
+    limits: >-
+      Leistungsdichte und Wirkungsgrad liegen bisher unter denen etablierter Wärmekraftmaschinen.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Thermoacoustic heat engine
+    description: >-
+      A thermoacoustic engine converts heat into acoustic power without moving parts: a temperature
+      gradient across a regenerator or stack inside a gas-filled resonator excites a strong
+      pressure oscillation. This oscillation drives a linear alternator for power generation
+      or a pulse-tube or thermoacoustic cooler.
+    example: >-
+      Thermoacoustic Stirling engine, pilot-scale natural gas liquefaction, prototypes generating
+      power from waste heat, driving pulse-tube coolers
+    conditions: >-
+      Large temperature difference across the regenerator; usually pressurised helium as the
+      working gas.
+    limits: >-
+      Power density and efficiency are so far below those of established heat engines.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

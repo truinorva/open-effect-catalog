@@ -1,0 +1,75 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: pendulum
+kind: effect
+home: vibrate|solid
+functions:
+  - vibrate|solid
+  - measure|field
+  - stop|solid
+  - measure|solid
+parameters:
+  - stabilise|vibration
+  - decrease|vibration
+  - measure|speed
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Pendel
+  - https://en.wikipedia.org/wiki/Pendulum
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Pendel
+    description: >-
+      Ein Pendel ist ein Körper, der so aufgehängt ist, dass ihn die Schwerkraft nach jeder
+      Auslenkung wieder in die Ruhelage zurückzieht; er schwingt dann periodisch hin und her.
+      Bei kleinen Ausschlägen hängt die Schwingungsdauer nur von der Pendellänge und der Fallbeschleunigung
+      ab, nicht von der Masse und kaum von der Amplitude. Deshalb dient das Pendel als Taktgeber,
+      als Messinstrument für die Schwerebeschleunigung und, auf eine Eigenfrequenz abgestimmt,
+      als Schwingungstilger.
+    example: >-
+      Pendeluhr und Metronom, Foucaultsches Pendel, Schwingungstilger in Hochhäusern, ballistisches
+      Pendel zur Messung von Geschossgeschwindigkeiten, frühe Schweremesser und Seismografen
+    conditions: Ein Schwerefeld und eine möglichst reibungsarme Aufhängung.
+    limits: >-
+      Bei großen Ausschlägen nimmt die Schwingungsdauer zu, und Temperaturänderungen verändern
+      über die Pendellänge den Takt.
+    sideEffects: >-
+      Reibung und Luftwiderstand dämpfen die Schwingung, sodass Uhren ständig Energie nachliefern
+      müssen.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Pendulum
+    description: >-
+      A pendulum is a body suspended so that gravity pulls it back to its rest position after
+      every displacement; it then swings back and forth periodically. For small amplitudes
+      the period depends only on the pendulum length and the gravitational acceleration, not
+      on the mass and hardly on the amplitude. The pendulum therefore serves as a timekeeper,
+      as an instrument for measuring gravity and, tuned to a natural frequency, as a vibration
+      absorber.
+    example: >-
+      Pendulum clock and metronome, Foucault pendulum, tuned mass dampers in skyscrapers,
+      ballistic pendulum for measuring projectile speed, early gravimeters and seismographs
+    conditions: >-
+      A gravitational field and a suspension with as little friction as possible.
+    limits: >-
+      At large amplitudes the period increases, and temperature changes alter the rate through
+      the pendulum length.
+    sideEffects: >-
+      Friction and air resistance damp the oscillation, so clocks must continually replenish
+      energy.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

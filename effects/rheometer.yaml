@@ -1,0 +1,72 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: rheometer
+kind: application
+home: measure|liquid
+functions:
+  - measure|liquid
+  - measure|solid
+parameters:
+  - measure|viscosity
+  - measure|rigidity
+uses:
+  - viscosity
+domain:
+  id: Rheologie
+  de: Rheologie
+  en: Rheology
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Scherrheometer
+  - https://en.wikipedia.org/wiki/Rheometer
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Rheometer
+    description: >-
+      Ein Rheometer misst das Fließ- und Verformungsverhalten von Flüssigkeiten, Pasten, Schmelzen
+      und weichen Feststoffen. Die Probe wird zwischen Kegel und Platte, zwei parallelen Platten
+      oder koaxialen Zylindern geschert, während das Gerät Drehmoment, Auslenkung und Drehzahl
+      genau erfasst; daraus ergeben sich die Viskosität in Abhängigkeit von der Scherrate,
+      die Fließgrenze und in Oszillationsversuchen die elastischen und viskosen Anteile.
+    example: >-
+      Qualitätskontrolle von Lacken, Klebstoffen und Kosmetika, Auslegung von Kunststoffverarbeitungsprozessen,
+      Prüfung von Lebensmitteln wie Joghurt oder Schokolade, Kapillarrheometer für Polymerschmelzen,
+      Aushärteverlauf von Harzen
+    conditions: >-
+      Eine temperierte Probe definierter Geometrie und ein Messsystem, das zu Viskosität und
+      Partikelgröße der Probe passt.
+    limits: >-
+      Wandgleiten, Austrocknen am Rand und Strömungsinstabilitäten bei hohen Scherraten können
+      die Messung verfälschen.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Rheometer
+    description: >-
+      A rheometer measures the flow and deformation behaviour of liquids, pastes, melts and
+      soft solids. The sample is sheared between cone and plate, two parallel plates or coaxial
+      cylinders while the instrument precisely records torque, deflection and rotational speed;
+      from this follow viscosity as a function of shear rate, yield stress and, in oscillation
+      tests, the elastic and viscous components.
+    example: >-
+      Quality control of paints, adhesives and cosmetics, design of plastics processing, testing
+      of foods such as yoghurt or chocolate, capillary rheometers for polymer melts, curing
+      behaviour of resins
+    conditions: >-
+      A temperature-controlled sample of defined geometry and a measuring system suited to
+      the sample's viscosity and particle size.
+    limits: >-
+      Wall slip, drying at the edge and flow instabilities at high shear rates can distort
+      the measurement.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

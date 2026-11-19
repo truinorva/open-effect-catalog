@@ -1,0 +1,68 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: ultrasonic-heating
+kind: effect
+home: heat|solid
+functions:
+  - heat|solid
+  - heat|liquid
+  - join|solid
+parameters:
+  - increase|temperature
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: verbreitet
+sources:
+  - https://de.wikipedia.org/wiki/Ultraschall
+  - https://en.wikipedia.org/wiki/Ultrasound
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Ultraschallerwärmung
+    description: >-
+      Ein Material, das Ultraschall durchläuft, wandelt einen Teil der Schallenergie durch
+      innere Reibung, Relaxationsvorgänge und Reibung an Grenzflächen in Wärme um. Gebündelter
+      Ultraschall erwärmt so gezielt ein kleines Volumen tief im Inneren, ohne die Oberfläche
+      stark zu belasten; an der Kontaktfläche zweier Kunststoffteile schmilzt er das Material
+      in Sekundenbruchteilen auf.
+    example: >-
+      Ultraschallschweißen von Thermoplasten, Siegeln von Verpackungen, hochintensiver fokussierter
+      Ultraschall (HIFU) zur Tumorbehandlung, Ultraschall-Tiefenwärme in der Physiotherapie
+    conditions: >-
+      Material mit merklicher Schallabsorption; beim Schweißen Anpressdruck und Kontakt zur
+      Sonotrode.
+    limits: >-
+      Mit steigender Frequenz nimmt die Absorption zu und die Eindringtiefe ab.
+    sideEffects: >-
+      In Flüssigkeiten und Gewebe kann zusätzlich Kavitation auftreten und Schäden verursachen.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Ultrasonic heating
+    description: >-
+      A material through which ultrasound passes converts part of the sound energy into heat
+      through internal friction, relaxation processes and friction at interfaces. Focused
+      ultrasound can thus heat a small volume deep inside without placing much load on the
+      surface; at the contact face of two plastic parts it melts the material within fractions
+      of a second.
+    example: >-
+      Ultrasonic welding of thermoplastics, sealing of packaging, high-intensity focused ultrasound
+      (HIFU) for tumour treatment, ultrasound deep heating in physiotherapy
+    conditions: >-
+      Material with appreciable sound absorption; for welding, contact pressure and contact
+      with the sonotrode.
+    limits: >-
+      As frequency rises, absorption increases and penetration depth decreases.
+    sideEffects: In liquids and tissue, cavitation can also occur and cause damage.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

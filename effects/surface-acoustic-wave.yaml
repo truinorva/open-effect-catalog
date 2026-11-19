@@ -1,0 +1,74 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: surface-acoustic-wave
+kind: effect
+home: separate|field
+functions:
+  - separate|field
+  - measure|gas
+  - move|liquid
+  - mix|liquid
+parameters:
+  - measure|mass
+  - measure|temperature
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: verbreitet
+sources:
+  - https://de.wikipedia.org/wiki/Akustische_Oberfl%C3%A4chenwelle
+  - https://en.wikipedia.org/wiki/Surface_acoustic_wave
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Akustische Oberflächenwelle
+    description: >-
+      Akustische Oberflächenwellen sind elastische Wellen, die sich nur entlang der Oberfläche
+      eines Festkörpers ausbreiten und deren Amplitude mit der Tiefe rasch abklingt. Auf piezoelektrischen
+      Kristallen lassen sie sich mit kammartig ineinandergreifenden Elektroden elektrisch
+      anregen und wieder abnehmen; weil sie rund hunderttausendmal langsamer laufen als elektromagnetische
+      Wellen, legen kleine Elektrodenabstände die Frequenz sehr genau fest. Änderungen an
+      der Oberfläche, etwa eine aufgelagerte Masse oder eine Temperaturänderung, verschieben
+      Laufzeit und Frequenz messbar.
+    example: >-
+      Hochfrequenzfilter in Mobiltelefonen, drahtlos abfragbare Temperatur- und Drucksensoren,
+      Gassensoren, Bewegen und Mischen von Tropfen in der Mikrofluidik, Rayleigh-Wellen bei
+      Erdbeben
+    conditions: >-
+      Glatte Oberfläche eines elastischen Festkörpers; zur elektrischen Anregung ein piezoelektrisches
+      Substrat.
+    limits: >-
+      Die Feinheit der Elektrodenstrukturen begrenzt die erreichbare Frequenz auf einige Gigahertz.
+    sideEffects: >-
+      Wegen ihrer Temperaturempfindlichkeit müssen Filter temperaturkompensiert werden.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Surface acoustic wave
+    description: >-
+      Surface acoustic waves are elastic waves that travel only along the surface of a solid,
+      their amplitude decaying rapidly with depth. On piezoelectric crystals they can be excited
+      and picked up electrically by interlocking comb-shaped electrodes; because they travel
+      about a hundred thousand times slower than electromagnetic waves, small electrode spacings
+      set the frequency very precisely. Changes at the surface, such as an added mass or a
+      change in temperature, measurably shift travel time and frequency.
+    example: >-
+      RF filters in mobile phones, wirelessly interrogated temperature and pressure sensors,
+      gas sensors, moving and mixing droplets in microfluidics, Rayleigh waves in earthquakes
+    conditions: >-
+      Smooth surface of an elastic solid; a piezoelectric substrate for electrical excitation.
+    limits: >-
+      The fineness of the electrode structures limits the achievable frequency to a few gigahertz.
+    sideEffects: >-
+      Because of their temperature sensitivity, filters have to be temperature-compensated.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

@@ -1,0 +1,72 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: sound
+kind: effect
+home: vibrate|gas
+functions:
+  - vibrate|gas
+  - vibrate|liquid
+  - vibrate|solid
+  - detect|solid
+  - measure|solid
+parameters:
+  - measure|position
+  - measure|size
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Schall
+  - https://en.wikipedia.org/wiki/Sound
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Schall (akustische Wellen)
+    description: >-
+      Schall ist eine mechanische Welle: Druck- und Dichteschwankungen bzw. Schwingungen der
+      Teilchen pflanzen sich durch Gase, Flüssigkeiten und Festkörper fort, ohne dass das
+      Medium selbst mitwandert. Die Welle transportiert Energie und Information, wird an Grenzflächen
+      reflektiert und kann Gegenstände zum Mitschwingen anregen; aus Laufzeit und Echo lassen
+      sich Abstände, Wanddicken und innere Fehler bestimmen.
+    example: >-
+      Sprache und Musik, Echolot und Sonar, Ultraschallprüfung von Schweißnähten, Ultraschallreinigung,
+      medizinische Ultraschallbildgebung
+    conditions: Ein elastisches Medium; im Vakuum breitet sich Schall nicht aus.
+    limits: >-
+      Schall wird mit steigender Frequenz stärker gedämpft, und an Grenzen zwischen sehr unterschiedlichen
+      Medien wie Luft und Stahl wird fast alles reflektiert.
+    sideEffects: >-
+      Hohe Pegel stören, schädigen das Gehör und können Bauteile zu Schwingungen anregen,
+      die zu Ermüdung führen.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Sound (acoustic waves)
+    description: >-
+      Sound is a mechanical wave: fluctuations of pressure and density, or vibrations of the
+      particles, travel through gases, liquids and solids without the medium itself moving
+      along. The wave carries energy and information, is reflected at interfaces and can set
+      objects vibrating; from travel time and echoes, distances, wall thicknesses and internal
+      flaws can be determined.
+    example: >-
+      Speech and music, echo sounders and sonar, ultrasonic testing of welds, ultrasonic cleaning,
+      medical ultrasound imaging
+    conditions: An elastic medium; sound does not travel through a vacuum.
+    limits: >-
+      Attenuation increases with frequency, and at boundaries between very different media
+      such as air and steel almost everything is reflected.
+    sideEffects: >-
+      High levels are a nuisance, damage hearing and can excite vibrations in components that
+      lead to fatigue.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

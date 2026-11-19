@@ -1,0 +1,65 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: biot-savart-law
+kind: effect
+home: produce|field
+functions:
+  - produce|field
+  - measure|field
+parameters: []
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Biot-Savart-Gesetz
+  - https://en.wikipedia.org/wiki/Biot%E2%80%93Savart_law
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Biot-Savart-Gesetz
+    description: >-
+      Jeder stromdurchflossene Leiter erzeugt in seiner Umgebung ein Magnetfeld. Das Biot-Savart-Gesetz
+      gibt an, wie viel jedes Leiterstück zum Feld an einem Punkt beiträgt: proportional zur
+      Stromstärke, senkrecht zu Stromrichtung und Verbindungslinie und mit dem Quadrat des
+      Abstands abnehmend. Durch Aufsummieren lässt sich das Feld beliebig geformter Leiter
+      wie Spulen oder Schleifen berechnen.
+    example: >-
+      Auslegung von Spulen und Elektromagneten, Helmholtz-Spulen, Stromzangen, Feldberechnung
+      von Leiterbahnen, Magnetauslegung in der Magnetresonanztomografie
+    conditions: Gilt exakt für zeitlich konstante Ströme (Magnetostatik).
+    limits: >-
+      Bei schnell veränderlichen Strömen müssen Laufzeiteffekte berücksichtigt werden; dann
+      gelten die vollständigen Maxwell-Gleichungen.
+    sideEffects: >-
+      Benachbarte Leiter üben über die erzeugten Felder Kräfte aufeinander aus.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Biot-Savart law
+    description: >-
+      Every current-carrying conductor creates a magnetic field around it. The Biot-Savart
+      law states how much each piece of conductor contributes to the field at a point: proportional
+      to the current, perpendicular to both the current and the connecting line, and falling
+      off with the square of the distance. Summing up these contributions gives the field
+      of conductors of any shape, such as coils or loops.
+    example: >-
+      Design of coils and electromagnets, Helmholtz coils, clamp-on current meters, field
+      calculation for conductor tracks, magnet design in magnetic resonance imaging
+    conditions: Holds exactly for steady currents (magnetostatics).
+    limits: >-
+      For rapidly changing currents, propagation delays must be taken into account; the full
+      Maxwell equations then apply.
+    sideEffects: >-
+      Neighbouring conductors exert forces on each other through the fields they create.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

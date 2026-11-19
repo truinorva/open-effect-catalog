@@ -1,0 +1,65 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: tensegrity
+kind: application
+home: hold|solid
+functions:
+  - hold|solid
+  - stabilise|solid
+parameters:
+  - decrease|mass
+  - increase|rigidity
+uses: []
+domain:
+  id: ''
+  de: ''
+  en: ''
+maturity: ''
+sources:
+  - https://de.wikipedia.org/wiki/Tensegrity_(Architektur)
+  - https://en.wikipedia.org/wiki/Tensegrity
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Tensegrity
+    description: >-
+      Tensegrity-Strukturen bestehen aus Druckstäben, die einander nicht berühren, und einem
+      durchgehenden Netz aus Zugseilen, das sie in ihrer Lage hält. Durch Vorspannen der Seile
+      entsteht ein in sich stabiles Gleichgewicht, in dem jedes Element nur auf Zug oder Druck
+      und nicht auf Biegung beansprucht wird. Die Struktur ist dadurch sehr leicht, und ihre
+      Steifigkeit lässt sich über die Vorspannung einstellen.
+    example: >-
+      Skulpturen und Ausstellungsbauten, Dachtragwerke wie Seilkuppeln, Fußgängerbrücken,
+      entfaltbare Masten und bewegliche Roboter in der Forschung
+    conditions: Ausreichende Vorspannung in allen Seilen.
+    limits: >-
+      Unter Last können große Verformungen auftreten; erschlafft ein Seil, verliert die Struktur
+      ihre Stabilität.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Tensegrity
+    description: >-
+      Tensegrity structures consist of compression struts that do not touch each other and
+      a continuous network of tension cables that holds them in place. Prestressing the cables
+      creates a self-stable equilibrium in which every element carries only tension or compression
+      and no bending. The structure is therefore very light, and its stiffness can be adjusted
+      through the prestress.
+    example: >-
+      Sculptures and exhibition structures, roof structures such as cable domes, footbridges,
+      deployable masts and mobile robots in research
+    conditions: Sufficient prestress in all cables.
+    limits: >-
+      Large deformations can occur under load; if a cable goes slack, the structure loses
+      its stability.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

@@ -1,0 +1,65 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: viscous-damping
+kind: effect
+home: stop|solid
+functions:
+  - stop|solid
+parameters:
+  - decrease|vibration
+  - decrease|speed
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: verbreitet
+sources:
+  - https://en.wikipedia.org/wiki/Damping
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Viskose Dämpfung
+    description: >-
+      Bei der viskosen Dämpfung wirkt auf ein bewegtes Teil eine Gegenkraft, die näherungsweise
+      proportional zu seiner Geschwindigkeit ist, typischerweise weil eine zähe Flüssigkeit
+      durch enge Spalte oder Bohrungen gedrückt oder geschert wird. Die Bewegungsenergie wird
+      dabei in Wärme umgewandelt, und Schwingungen klingen exponentiell ab. Schnelle Stöße
+      werden stark gebremst, langsame Bewegungen kaum.
+    example: >-
+      Stoßdämpfer im Fahrzeug, Türschließer, Flüssigkeitsdämpfer in Gebäuden und Brücken,
+      viskose Torsionsschwingungsdämpfer an Kurbelwellen, Dämpfung von Zeigermessgeräten und
+      Waagen
+    conditions: >-
+      Eine Relativbewegung zwischen Teilen, die über ein viskoses Medium gekoppelt sind.
+    limits: >-
+      Die Dämpferkraft hängt von der Temperatur ab, weil sich die Viskosität ändert, und bei
+      hohen Geschwindigkeiten wird die Strömung turbulent und die Kraft nichtlinear.
+    sideEffects: Erwärmung des Dämpfungsmediums und mögliche Undichtigkeiten.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Viscous damping
+    description: >-
+      In viscous damping a moving part experiences a counterforce that is roughly proportional
+      to its velocity, typically because a viscous liquid is forced through narrow gaps or
+      orifices or is sheared. The kinetic energy is converted into heat, and oscillations
+      decay exponentially. Fast impacts are braked strongly, slow movements hardly at all.
+    example: >-
+      Vehicle shock absorbers, door closers, fluid viscous dampers in buildings and bridges,
+      viscous torsional vibration dampers on crankshafts, damping of pointer instruments and
+      balances
+    conditions: Relative motion between parts coupled by a viscous medium.
+    limits: >-
+      The damping force depends on temperature because the viscosity changes, and at high
+      velocities the flow becomes turbulent and the force non-linear.
+    sideEffects: Heating of the damping medium and possible leaks.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

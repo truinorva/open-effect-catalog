@@ -1,0 +1,70 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: stirling-cycle
+kind: application
+home: move|solid
+functions:
+  - move|solid
+  - cool|solid
+parameters:
+  - decrease|temperature
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Stirling-Kreisprozess
+  - https://en.wikipedia.org/wiki/Stirling_cycle
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Stirling-Kreisprozess
+    description: >-
+      Ein eingeschlossenes Arbeitsgas wird abwechselnd bei niedriger Temperatur verdichtet
+      und bei hoher Temperatur entspannt und dazwischen zwischen einem heißen und einem kalten
+      Raum hin- und hergeschoben. Weil das heiße Gas einen höheren Druck hat, gibt es beim
+      Entspannen mehr Arbeit ab, als das Verdichten kostet; ein Regenerator speichert beim
+      Durchströmen Wärme zwischen und gibt sie beim Rückströmen zurück. Mechanisch angetrieben
+      läuft der Prozess umgekehrt und pumpt Wärme, arbeitet also als Kältemaschine.
+    example: >-
+      Stirlingmotoren mit äußerer Wärmequelle wie Sonne oder Biomasse, Stirling-Kryokühler
+      für Infrarotdetektoren, Freikolben-Stirling-Kühlgeräte, Mikro-Blockheizkraftwerke
+    conditions: >-
+      Temperaturunterschied zwischen einer Wärmequelle und einer Wärmesenke; dicht eingeschlossenes
+      Arbeitsgas, meist Helium, Wasserstoff oder Luft.
+    limits: >-
+      Die Wärme muss durch Wände übertragen werden, was die Leistungsdichte begrenzt und große
+      Wärmetauscher erfordert.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Stirling cycle
+    description: >-
+      A sealed working gas is compressed at low temperature and expanded at high temperature,
+      being shuttled between a hot and a cold space in between. Because the hot gas has a
+      higher pressure, it delivers more work on expansion than compression costs; a regenerator
+      stores heat as the gas passes through and returns it on the way back. When driven mechanically,
+      the cycle runs in reverse and pumps heat, so it works as a refrigerator.
+    example: >-
+      Stirling engines with an external heat source such as solar or biomass, Stirling cryocoolers
+      for infrared detectors, free-piston Stirling coolers, micro combined heat and power
+      units
+    conditions: >-
+      A temperature difference between a heat source and a heat sink; a sealed working gas,
+      usually helium, hydrogen or air.
+    limits: >-
+      Heat must be transferred through walls, which limits power density and requires large
+      heat exchangers.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

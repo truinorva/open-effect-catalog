@@ -1,0 +1,74 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: physisorption
+kind: effect
+home: absorb|gas
+functions:
+  - absorb|gas
+  - remove|gas
+  - separate|gas
+  - measure|solid
+parameters:
+  - measure|surface-area
+  - increase|purity
+uses: []
+domain:
+  id: Chemie
+  de: Chemie
+  en: Chemistry
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Physisorption
+  - https://en.wikipedia.org/wiki/Physisorption
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Physisorption
+    description: >-
+      Bei der Physisorption lagern sich Gasmoleküle oder gelöste Moleküle allein durch schwache
+      Van-der-Waals-Kräfte an einer Festkörperoberfläche an, ohne dass chemische Bindungen
+      entstehen. Die frei werdende Wärme ist gering, der Vorgang ist umkehrbar, und bei tiefer
+      Temperatur oder hohem Druck können sich mehrere Molekülschichten übereinander bilden.
+      Durch Erwärmen oder Druckabsenkung lösen sich die angelagerten Moleküle wieder ab.
+    example: >-
+      Aktivkohlefilter, Druckwechseladsorption zur Gastrennung, Trocknung mit Silicagel, Bestimmung
+      der spezifischen Oberfläche nach BET mit Stickstoff, Adsorptionskältemaschinen
+    conditions: >-
+      Eine große, zugängliche Oberfläche, meist poröse Adsorbentien, und ausreichend niedrige
+      Temperatur bzw. hoher Partialdruck.
+    limits: >-
+      Die Bindung ist schwach, sodass die Aufnahmefähigkeit mit steigender Temperatur stark
+      abnimmt.
+    sideEffects: >-
+      Die Adsorptionswärme erwärmt das Adsorbens, was die Aufnahme mindert und bei brennbaren
+      Stoffen in Aktivkohle zu Bränden führen kann.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Physisorption
+    description: >-
+      In physisorption, gas molecules or dissolved molecules attach to a solid surface solely
+      through weak van der Waals forces, without forming chemical bonds. Little heat is released,
+      the process is reversible, and at low temperature or high pressure several molecular
+      layers can build up on top of each other. Heating or lowering the pressure releases
+      the attached molecules again.
+    example: >-
+      Activated carbon filters, pressure swing adsorption for gas separation, drying with
+      silica gel, BET specific surface area measurement with nitrogen, adsorption chillers
+    conditions: >-
+      A large, accessible surface, usually porous adsorbents, and sufficiently low temperature
+      or high partial pressure.
+    limits: >-
+      The bond is weak, so the uptake capacity falls sharply as temperature rises.
+    sideEffects: >-
+      The heat of adsorption warms the adsorbent, which reduces uptake and with flammable
+      substances in activated carbon can cause fires.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

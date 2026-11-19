@@ -1,0 +1,63 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: funnel
+kind: application
+home: move|liquid
+functions:
+  - move|liquid
+  - move|particles
+parameters:
+  - change|position
+uses: []
+domain:
+  id: Geometrie
+  de: Geometrie
+  en: Geometry
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Trichter
+  - https://en.wikipedia.org/wiki/Funnel
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Trichter
+    description: >-
+      Ein Trichter verengt einen Querschnitt kegelförmig von einer weiten Öffnung auf einen
+      engen Auslauf. Was oben auf die große Fläche fällt oder gegossen wird, gleitet an der
+      schrägen Wand hinab und wird gezielt in eine kleine Öffnung geleitet.
+    example: >-
+      Einfülltrichter, Silo- und Bunkerausläufe, Filtertrichter im Labor, Trichterfallen von
+      Ameisenlöwen
+    conditions: Wandneigung steiler als der Reibungs- bzw. Böschungswinkel des Füllguts.
+    limits: >-
+      Schüttgüter können über dem Auslauf Brücken bilden oder nur in einem Kern abfließen,
+      wenn der Konus zu flach oder der Auslauf zu klein ist.
+    sideEffects: >-
+      Sitzt der Trichter dicht im Gefäßhals, staut sich die verdrängte Luft, und der Flüssigkeitsstrom
+      stockt.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Funnel
+    description: >-
+      A funnel narrows a cross-section conically from a wide opening to a narrow outlet. Whatever
+      falls or is poured onto the large area at the top slides down the inclined wall and
+      is guided precisely into a small opening.
+    example: >-
+      Filling funnels, silo and hopper outlets, laboratory filter funnels, antlion pit traps
+    conditions: Wall slope steeper than the friction or repose angle of the material.
+    limits: >-
+      Bulk solids can form bridges above the outlet or flow only through a central core if
+      the cone is too flat or the outlet too small.
+    sideEffects: >-
+      If the funnel seals the neck of the container, displaced air is trapped and the liquid
+      flow falters.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

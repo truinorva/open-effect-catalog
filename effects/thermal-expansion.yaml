@@ -1,0 +1,77 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: thermal-expansion
+kind: effect
+home: expand|solid
+functions:
+  - expand|solid
+  - expand|gas
+  - move|solid
+  - join|solid
+  - measure|gas
+parameters:
+  - increase|volume
+  - increase|size
+  - measure|temperature
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: verbreitet
+sources:
+  - https://de.wikipedia.org/wiki/W%C3%A4rmeausdehnung
+  - https://en.wikipedia.org/wiki/Thermal_expansion
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Wärmeausdehnung
+    description: >-
+      Die meisten Stoffe dehnen sich beim Erwärmen aus und ziehen sich beim Abkühlen zusammen.
+      In Festkörpern schwingen die Atome mit steigender Temperatur stärker, und weil die Abstoßung
+      beim Zusammenrücken steiler ansteigt als die Anziehung beim Auseinanderrücken, wächst
+      ihr mittlerer Abstand; in Gasen steigt bei gleichem Druck das Volumen proportional zur
+      absoluten Temperatur. Verschiedene Werkstoffe dehnen sich unterschiedlich stark aus,
+      was sich für Stell- und Messzwecke nutzen lässt.
+    example: >-
+      Bimetallschalter und -thermometer, Schrumpfverbindungen, Dehnungsfugen an Brücken und
+      Schienen, Heißluftballon, Gasthermometer
+    conditions: >-
+      Eine Temperaturänderung; bei Gasen zusätzlich die Möglichkeit, sich bei konstantem Druck
+      auszudehnen.
+    limits: >-
+      Nicht alle Stoffe dehnen sich aus: Manche Keramiken und Kristalle ziehen sich in bestimmten
+      Temperaturbereichen beim Erwärmen zusammen.
+    sideEffects: >-
+      Behinderte Ausdehnung erzeugt Wärmespannungen, die Bauteile verbiegen, Verbindungen
+      lockern oder Risse verursachen.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Thermal expansion
+    description: >-
+      Most substances expand when heated and contract when cooled. In solids the atoms vibrate
+      more strongly as temperature rises, and because repulsion rises more steeply when they
+      approach than attraction does when they separate, their average spacing grows; in gases
+      at constant pressure the volume rises in proportion to absolute temperature. Different
+      materials expand by different amounts, which can be exploited for actuation and measurement.
+    example: >-
+      Bimetallic switches and thermometers, shrink fits, expansion joints on bridges and rails,
+      hot-air balloon, gas thermometer
+    conditions: >-
+      A change in temperature; for gases, also freedom to expand at constant pressure.
+    limits: >-
+      Not all substances expand: some ceramics and crystals contract on heating in certain
+      temperature ranges.
+    sideEffects: >-
+      Restrained expansion creates thermal stresses that bend components, loosen joints or
+      cause cracks.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

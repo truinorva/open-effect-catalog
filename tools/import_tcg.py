@@ -29,6 +29,7 @@ import yamlio  # noqa: E402
 ROOT = Path(__file__).resolve().parent.parent
 BASE_URL = "https://www.triz-consulting.de/EffectsDatabase/data/"
 ORIGIN = "triz-consulting"
+REVIEWER = "TRIZ Consulting Group"
 ENTRY_KEYS = [
     "id", "kind", "home", "functions", "parameters", "uses",
     "domain", "maturity", "sources", "authors",
@@ -49,12 +50,15 @@ def fetch(source: str | None, name: str) -> Any:
         return json.loads(resp.read().decode("utf-8"))
 
 
-def to_entry(raw: dict[str, Any]) -> dict[str, Any]:
+def to_entry(raw: dict[str, Any], version: str) -> dict[str, Any]:
     unknown = set(raw) - set(ENTRY_KEYS) - {"text"}
     if unknown:
         raise SystemExit(f"{raw.get('id')}: unknown upstream fields {sorted(unknown)} - extend the schema first")
     entry = {key: raw[key] for key in ENTRY_KEYS}
     entry["origin"] = ORIGIN
+    # Entries are written by practitioners and released by a reviewer at TRIZ
+    # Consulting Group before they are published there, so they count as reviewed.
+    entry["review"] = {"status": "geprueft", "by": [REVIEWER], "date": version}
     entry["text"] = raw["text"]
     return entry
 
@@ -75,7 +79,7 @@ def main() -> int:
     out_dir.mkdir(exist_ok=True)
     created = updated = unchanged = skipped = 0
     for raw in effects["effects"]:
-        entry = to_entry(raw)
+        entry = to_entry(raw, meta.get("version", ""))
         path = out_dir / f"{entry['id']}.yaml"
         new_text = yamlio.SCHEMA_HEADER + yamlio.dumps(entry)
         if path.exists():

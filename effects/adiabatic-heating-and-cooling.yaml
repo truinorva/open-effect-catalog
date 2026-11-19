@@ -1,0 +1,72 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: adiabatic-heating-and-cooling
+kind: effect
+home: heat|gas
+functions:
+  - heat|gas
+  - cool|gas
+  - change-phase|gas
+parameters:
+  - increase|temperature
+  - decrease|temperature
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Adiabatische_Zustands%C3%A4nderung
+  - https://en.wikipedia.org/wiki/Adiabatic_process
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Adiabatische Erwärmung und Abkühlung
+    description: >-
+      Wird ein Gas so schnell oder so gut wärmegedämmt verdichtet, dass es keine Wärme mit
+      der Umgebung austauscht, geht die zugeführte Arbeit vollständig in seine innere Energie
+      über, und es wird heiß. Umgekehrt verrichtet ein Gas, das sich ausdehnt, Arbeit auf
+      Kosten seiner inneren Energie und kühlt dabei ab, ohne dass Wärme abgeführt werden muss.
+    example: >-
+      Selbstzündung im Dieselmotor, pneumatisches Feuerzeug, Erwärmung einer Luftpumpe beim
+      Aufpumpen, Wolkenbildung in aufsteigender Luft, Föhnwind, Expansionsturbinen in der
+      Luftverflüssigung
+    conditions: >-
+      Die Zustandsänderung muss schneller ablaufen als der Wärmeaustausch mit der Umgebung,
+      oder das System muss gut wärmegedämmt sein.
+    limits: >-
+      In der Praxis fließt immer etwas Wärme ab oder zu, sodass die Temperaturänderung kleiner
+      ausfällt als im Idealfall.
+    sideEffects: >-
+      Beim Entspannen feuchter Gase kann Wasser kondensieren oder Eis entstehen, das Ventile
+      und Leitungen blockiert.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Adiabatic heating and cooling
+    description: >-
+      If a gas is compressed so quickly or so well insulated that it exchanges no heat with
+      its surroundings, the work done on it goes entirely into its internal energy and it
+      gets hot. Conversely, an expanding gas does work at the expense of its internal energy
+      and cools down without any heat having to be removed.
+    example: >-
+      Compression ignition in diesel engines, fire piston, a bicycle pump warming up during
+      pumping, cloud formation in rising air, foehn wind, expansion turbines in air liquefaction
+    conditions: >-
+      The change of state must happen faster than heat exchange with the surroundings, or
+      the system must be well insulated.
+    limits: >-
+      In practice some heat always flows in or out, so the temperature change is smaller than
+      in the ideal case.
+    sideEffects: >-
+      When moist gases expand, water can condense or ice can form and block valves and lines.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

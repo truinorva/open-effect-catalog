@@ -1,0 +1,71 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: retroreflector
+kind: application
+home: orient|field
+functions:
+  - orient|field
+  - detect|solid
+  - measure|solid
+parameters:
+  - measure|position
+uses:
+  - reflection
+  - refraction
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Retroreflektor
+  - https://en.wikipedia.org/wiki/Retroreflector
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Retroreflektor
+    description: >-
+      Ein Retroreflektor wirft einfallendes Licht innerhalb eines gewissen Winkelbereichs
+      unabhängig vom Einfallswinkel genau in die Richtung zurück, aus der es kam. Tripelspiegel
+      und Tripelprismen erreichen das mit drei senkrecht zueinander stehenden Spiegelflächen,
+      an denen der Strahl nacheinander reflektiert wird; Glaskugeln brechen das Licht auf
+      ihre Rückseite und schicken es von dort zurück.
+    example: >-
+      Rückstrahler an Fahrrädern und Fahrzeugen, reflektierende Verkehrszeichen und Warnwesten,
+      Reflektoren auf dem Mond für die Laser-Entfernungsmessung, Zielreflektoren für Tachymeter
+      und Lasertracker, Reflexions-Lichtschranken
+    conditions: >-
+      Ein Einfallswinkel innerhalb des Akzeptanzbereichs des Reflektors und eine saubere Oberfläche.
+    limits: >-
+      Bei sehr schrägem Einfall sinkt die zurückgeworfene Lichtmenge stark; Schmutz, Kratzer
+      und Feuchtigkeit verringern die Wirkung.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Retroreflector
+    description: >-
+      A retroreflector sends incident light back exactly in the direction it came from, independent
+      of the angle of incidence within a certain range. Corner-cube mirrors and prisms achieve
+      this with three mutually perpendicular reflecting faces at which the beam is reflected
+      in turn; glass beads refract the light onto their rear surface and send it back from
+      there.
+    example: >-
+      Reflectors on bicycles and vehicles, reflective traffic signs and high-visibility vests,
+      lunar retroreflectors for laser ranging, target reflectors for total stations and laser
+      trackers, retroreflective light barriers
+    conditions: >-
+      An angle of incidence within the reflector's acceptance range, and a clean surface.
+    limits: >-
+      At very oblique incidence the amount of returned light drops sharply; dirt, scratches
+      and moisture reduce the effect.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

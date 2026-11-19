@@ -1,0 +1,67 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: endothermic-reaction
+kind: effect
+home: cool|liquid
+functions:
+  - cool|liquid
+  - cool|solid
+  - cool|gas
+parameters:
+  - decrease|temperature
+uses: []
+domain:
+  id: Chemie
+  de: Chemie
+  en: Chemistry
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Endothermer_Prozess
+  - https://en.wikipedia.org/wiki/Endothermic_process
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Endotherme Reaktion
+    description: >-
+      Bei einer endothermen Reaktion oder einem endothermen Vorgang nimmt das System Wärme
+      aus der Umgebung auf, weil die Produkte eine höhere Enthalpie haben als die Ausgangsstoffe.
+      Ohne Wärmezufuhr kühlt sich das Gemisch dabei ab; dass solche Vorgänge dennoch von selbst
+      ablaufen können, liegt an der zunehmenden Entropie, etwa beim Lösen bestimmter Salze
+      in Wasser.
+    example: >-
+      Sofort-Kältekompressen mit Ammoniumnitrat oder Harnstoff, Kältemischungen, Flammschutz
+      durch Zersetzung von Aluminiumhydroxid, Kalkbrennen, Dampfreformierung
+    conditions: >-
+      Bei freiwillig ablaufenden Vorgängen ein ausreichender Entropiegewinn, sonst ständige
+      Wärmezufuhr.
+    limits: >-
+      Die erreichbare Abkühlung ist durch die Reaktionsenthalpie und die Wärmekapazität des
+      Gemischs begrenzt.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Endothermic reaction
+    description: >-
+      In an endothermic reaction or process, the system takes up heat from its surroundings
+      because the products have a higher enthalpy than the starting materials. Without heat
+      input the mixture cools down; such processes can still run spontaneously because of
+      the increase in entropy, for example when certain salts dissolve in water.
+    example: >-
+      Instant cold packs with ammonium nitrate or urea, freezing mixtures, flame retardancy
+      through decomposition of aluminium hydroxide, lime burning, steam reforming
+    conditions: >-
+      For spontaneous processes, a sufficient gain in entropy; otherwise continuous heat input.
+    limits: >-
+      The achievable cooling is limited by the reaction enthalpy and the heat capacity of
+      the mixture.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

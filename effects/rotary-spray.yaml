@@ -1,0 +1,71 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: rotary-spray
+kind: application
+home: disassemble|liquid
+functions:
+  - disassemble|liquid
+  - move|liquid
+parameters:
+  - change|colour
+uses:
+  - centrifugal-force
+domain:
+  id: Verfahrenstechnik
+  de: Verfahrenstechnik
+  en: Process engineering
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Spritzlackieren
+  - https://en.wikipedia.org/wiki/Spray_painting
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Rotationszerstäubung (Hochrotationsglocke)
+    description: >-
+      Der Lack wird in die Mitte einer schnell drehenden Glocke oder Scheibe geleitet, von
+      der Fliehkraft als dünner Film zur Kante getrieben und dort in sehr feine, gleichmäßige
+      Tröpfchen zerrissen. Meist werden die Tröpfchen zusätzlich elektrostatisch aufgeladen
+      und von Lenkluft zum geerdeten Werkstück geführt, was den Lackverlust gering hält.
+    example: >-
+      Serienlackierung von Autokarosserien, Lackierung von Haushaltsgeräten und Felgen, Beschichtung
+      von Metallprofilen
+    conditions: >-
+      Sehr hohe Drehzahlen, typischerweise zehntausende Umdrehungen pro Minute, und ein gleichmäßiger
+      Lackzufluss.
+    limits: >-
+      In enge Innenecken und Hohlräume gelangt der elektrostatisch geführte Sprühnebel schlecht,
+      sodass dort oft mit anderen Verfahren nachgearbeitet werden muss.
+    sideEffects: >-
+      Die Hochspannung der elektrostatischen Aufladung erfordert bei lösemittelhaltigen Lacken
+      besonderen Explosions- und Personenschutz.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Rotary atomisation (rotary bell spraying)
+    description: >-
+      Paint is fed to the centre of a fast-spinning bell or disc, driven outwards by centrifugal
+      force as a thin film and torn at the rim into very fine, uniform droplets. The droplets
+      are usually also charged electrostatically and guided to the earthed workpiece by shaping
+      air, which keeps paint losses low.
+    example: >-
+      Series painting of car bodies, painting of household appliances and wheel rims, coating
+      of metal profiles
+    conditions: >-
+      Very high rotational speeds, typically tens of thousands of revolutions per minute,
+      and an even paint supply.
+    limits: >-
+      The electrostatically guided spray reaches tight inside corners and cavities poorly,
+      so these areas often need touching up with other methods.
+    sideEffects: >-
+      The high voltage used for electrostatic charging calls for special explosion and personnel
+      protection with solvent-borne paints.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

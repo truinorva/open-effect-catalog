@@ -1,0 +1,65 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: hydrogel
+kind: application
+home: absorb|liquid
+functions:
+  - absorb|liquid
+  - expand|solid
+  - hold|liquid
+parameters:
+  - increase|volume
+uses:
+  - gelation
+  - osmosis
+domain:
+  id: Materialwissenschaft
+  de: Materialwissenschaft
+  en: Materials science
+maturity: wachstum
+sources:
+  - https://de.wikipedia.org/wiki/Hydrogel
+  - https://en.wikipedia.org/wiki/Hydrogel
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Hydrogel
+    description: >-
+      Ein Hydrogel ist ein vernetztes, wasserliebendes Polymernetzwerk, das große Mengen Wasser
+      aufnimmt und dabei quillt, ohne sich aufzulösen. Manche Hydrogele nehmen ein Vielfaches
+      ihres Eigengewichts auf; sogenannte intelligente Hydrogele quellen oder schrumpfen deutlich,
+      wenn sich Temperatur, pH-Wert oder Salzgehalt ändern.
+    example: >-
+      Superabsorber in Windeln, weiche Kontaktlinsen, Wundauflagen, Wirkstofffreisetzung,
+      Wasserspeicher im Boden, Aktoren in der Soft-Robotik
+    conditions: Wasser oder eine wässrige Lösung; ausreichende Vernetzung.
+    limits: >-
+      Gequollene Gele sind mechanisch weich; Salze im Wasser verringern die Aufnahmefähigkeit
+      stark, und große Teile quellen nur langsam.
+    sideEffects: Trocknet ein Gel aus, schrumpft es und wird spröde.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Hydrogel
+    description: >-
+      A hydrogel is a cross-linked, water-loving polymer network that takes up large amounts
+      of water and swells without dissolving. Some hydrogels absorb many times their own weight;
+      so-called smart hydrogels swell or shrink markedly when temperature, pH or salt content
+      change.
+    example: >-
+      Superabsorbents in nappies, soft contact lenses, wound dressings, drug release, water
+      storage in soil, actuators in soft robotics
+    conditions: Water or an aqueous solution; sufficient cross-linking.
+    limits: >-
+      Swollen gels are mechanically weak; salts in the water greatly reduce absorption capacity,
+      and large parts swell only slowly.
+    sideEffects: When a gel dries out, it shrinks and becomes brittle.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

@@ -1,0 +1,69 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: thermal-shock
+kind: effect
+home: disassemble|solid
+functions:
+  - disassemble|solid
+parameters: []
+uses: []
+domain:
+  id: Materialwissenschaft
+  de: Materialwissenschaft
+  en: Materials science
+maturity: lehrbuch
+sources:
+  - https://en.wikipedia.org/wiki/Thermal_shock
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Thermoschock
+    description: >-
+      Ändert sich die Temperatur eines Körpers sehr schnell, etwa beim Abschrecken, erwärmt
+      oder kühlt sich zunächst nur die Oberfläche, während das Innere seine Temperatur behält.
+      Die Randschicht will sich ausdehnen oder zusammenziehen, wird aber vom Kern daran gehindert,
+      und es entstehen hohe Wärmespannungen. Spröde Werkstoffe, die diese Spannungen nicht
+      durch plastisches Fließen abbauen können, reißen dabei.
+    example: >-
+      Feuersetzen im historischen Bergbau, Trennen von Glas durch gezielte örtliche Erwärmung
+      und Abkühlung, Thermoschockprüfung von Keramik und Elektronik; als Schaden an Gläsern,
+      Kochgeschirr und feuerfesten Auskleidungen
+    conditions: >-
+      Schneller Temperaturwechsel; spröder Werkstoff mit hoher Wärmeausdehnung, hoher Steifigkeit,
+      geringer Wärmeleitfähigkeit und geringer Zugfestigkeit.
+    limits: >-
+      Zähe Metalle reißen selten, weil sie die Spannungen durch plastische Verformung abbauen.
+    sideEffects: >-
+      Wiederholte Temperaturwechsel können auch dann zu Ermüdungsrissen führen, wenn jeder
+      einzelne Schock unkritisch ist.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Thermal shock
+    description: >-
+      When the temperature of a body changes very rapidly, for example during quenching, at
+      first only the surface heats up or cools down while the interior keeps its temperature.
+      The surface layer tries to expand or contract but is restrained by the core, and high
+      thermal stresses arise. Brittle materials, which cannot relieve these stresses by plastic
+      flow, crack as a result.
+    example: >-
+      Fire-setting in historical mining, cutting glass by controlled local heating and cooling,
+      thermal shock testing of ceramics and electronics; as damage to glassware, cookware
+      and refractory linings
+    conditions: >-
+      A rapid change in temperature; a brittle material with high thermal expansion, high
+      stiffness, low thermal conductivity and low tensile strength.
+    limits: >-
+      Tough metals rarely crack because they relieve the stresses by plastic deformation.
+    sideEffects: >-
+      Repeated temperature cycles can cause fatigue cracks even when each single shock is
+      not critical.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

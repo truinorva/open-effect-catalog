@@ -1,0 +1,69 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: deflagration
+kind: effect
+home: heat|gas
+functions:
+  - heat|gas
+  - move|solid
+  - produce|gas
+parameters:
+  - increase|pressure
+  - increase|temperature
+uses: []
+domain:
+  id: Chemie
+  de: Chemie
+  en: Chemistry
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Deflagration
+  - https://en.wikipedia.org/wiki/Deflagration
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Deflagration
+    description: >-
+      Bei einer Deflagration breitet sich eine Verbrennungszone mit Unterschallgeschwindigkeit
+      durch ein brennbares Gemisch oder einen Explosivstoff aus. Die Reaktion schreitet fort,
+      weil Wärme und reaktive Teilchen durch Wärmeleitung und Diffusion in das noch unverbrannte
+      Material gelangen. Im eingeschlossenen Raum steigt der Druck dabei stark an und kann
+      Kolben oder Geschosse antreiben.
+    example: >-
+      Verbrennung im Ottomotor, Treibladungspulver in Patronen, Feuerwerk, Raketentreibstoffe,
+      Staub- und Gasexplosionen in Anlagen
+    conditions: Ein brennbares Gemisch innerhalb der Zündgrenzen und eine Zündquelle.
+    limits: >-
+      In langen Rohren oder bei starker Turbulenz kann eine Deflagration in eine Detonation
+      umschlagen.
+    sideEffects: >-
+      Hitze, Abgase und Druckwellen, die unbeabsichtigt ausgelöst Brände und Explosionsschäden
+      verursachen.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Deflagration
+    description: >-
+      In a deflagration a combustion zone spreads through a flammable mixture or an explosive
+      at subsonic speed. The reaction advances because heat and reactive species reach the
+      unburnt material by heat conduction and diffusion. In a confined space the pressure
+      rises sharply and can drive pistons or projectiles.
+    example: >-
+      Combustion in petrol engines, propellant powder in cartridges, fireworks, rocket propellants,
+      dust and gas explosions in plants
+    conditions: >-
+      A flammable mixture within the flammability limits and an ignition source.
+    limits: >-
+      In long pipes or with strong turbulence a deflagration can turn into a detonation.
+    sideEffects: >-
+      Heat, exhaust gases and pressure waves which, when triggered unintentionally, cause
+      fires and explosion damage.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

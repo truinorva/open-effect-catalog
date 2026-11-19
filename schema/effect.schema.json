@@ -16,6 +16,7 @@
     "maturity",
     "sources",
     "authors",
+    "review",
     "text"
   ],
   "properties": {
@@ -71,11 +72,31 @@
       "uniqueItems": true
     },
     "authors": {
-      "description": "People who wrote the entry. Kept as data; downstream attribution happens centrally via NOTICE.md.",
+      "description": "People who wrote the entry. Empty only for a machine draft (every text kind: maschinell, with model). Kept as data; downstream attribution happens centrally via NOTICE.md.",
       "type": "array",
       "items": { "type": "string", "minLength": 1 },
-      "minItems": 1,
       "uniqueItems": true
+    },
+    "review": {
+      "description": "Human review. Only entries with status geprueft go into a release. A reviewer has checked the facts against the sources, that the wording is not copied, and the cells.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "by", "date"],
+      "properties": {
+        "status": { "enum": ["geprueft", "ungeprueft"] },
+        "by": {
+          "description": "Who reviewed the entry (people, or the publishing organisation for imported collections).",
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "uniqueItems": true
+        },
+        "date": {
+          "anyOf": [
+            { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+            { "const": "" }
+          ]
+        }
+      }
     },
     "origin": {
       "description": "Key of the upstream collection this entry was taken over from (see dataset.yaml -> origins). Omit for entries written for this project.",

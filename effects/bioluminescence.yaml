@@ -1,0 +1,67 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: bioluminescence
+kind: effect
+home: produce|field
+functions:
+  - produce|field
+  - detect|solid
+  - measure|liquid
+parameters:
+  - increase|brightness
+  - measure|concentration
+uses: []
+domain:
+  id: Biologie
+  de: Biologie
+  en: Biology
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Biolumineszenz
+  - https://en.wikipedia.org/wiki/Bioluminescence
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Biolumineszenz
+    description: >-
+      Lebewesen erzeugen Licht, indem ein Enzym (eine Luciferase) einen Leuchtstoff (ein Luciferin)
+      mit Sauerstoff oxidiert; das Produkt entsteht in einem angeregten Zustand und gibt seine
+      Energie als Licht ab. Dabei wird kaum Wärme frei. Technisch genutzt werden vor allem
+      das Glühwürmchen-System, dessen Lichtausbeute von ATP abhängt, sowie Leuchtgene als
+      Reporter.
+    example: >-
+      Glühwürmchen, Meeresleuchten durch Plankton, Tiefseefische, ATP-Abstrichtests zur Hygienekontrolle,
+      Luciferase-Reportergen-Assays, Biosensoren für Schadstoffe
+    conditions: >-
+      Luciferin, Luciferase und Sauerstoff müssen vorhanden sein, beim Glühwürmchen-System
+      zusätzlich ATP.
+    limits: >-
+      Die Lichtstärke ist gering und reicht für Beleuchtungszwecke praktisch nicht aus.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Bioluminescence
+    description: >-
+      Living organisms produce light when an enzyme (a luciferase) oxidises a substrate (a
+      luciferin) with oxygen; the product is formed in an excited state and releases its energy
+      as light. Hardly any heat is produced. Technical uses rely mainly on the firefly system,
+      whose light output depends on ATP, and on light-producing genes used as reporters.
+    example: >-
+      Fireflies, glowing plankton in the sea, deep-sea fish, ATP swab tests for hygiene monitoring,
+      luciferase reporter-gene assays, biosensors for pollutants
+    conditions: >-
+      Luciferin, luciferase and oxygen must be present; the firefly system additionally needs
+      ATP.
+    limits: >-
+      The light intensity is low and practically insufficient for illumination.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

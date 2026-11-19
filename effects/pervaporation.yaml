@@ -1,0 +1,75 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: pervaporation
+kind: application
+home: separate|liquid
+functions:
+  - separate|liquid
+  - remove|liquid
+  - concentrate|liquid
+parameters:
+  - increase|purity
+  - decrease|humidity
+uses:
+  - permeation
+domain:
+  id: Verfahrenstechnik
+  de: Verfahrenstechnik
+  en: Process engineering
+maturity: ''
+sources:
+  - https://de.wikipedia.org/wiki/Pervaporation
+  - https://en.wikipedia.org/wiki/Pervaporation
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Pervaporation
+    description: >-
+      Bei der Pervaporation strömt ein flüssiges Gemisch an einer dichten Membran entlang,
+      deren Rückseite unter Vakuum steht oder mit einem Trägergas gespült wird. Eine Komponente
+      löst sich bevorzugt in der Membran, diffundiert hindurch und verdampft auf der Rückseite;
+      der Dampf wird abgezogen und kondensiert. Weil die Trennung von der Membran und nicht
+      vom Dampf-Flüssig-Gleichgewicht bestimmt wird, lassen sich auch Azeotrope wie Ethanol
+      und Wasser trennen.
+    example: >-
+      Entwässerung von Ethanol, Isopropanol und anderen Lösungsmitteln, Abtrennung von Aromastoffen
+      oder organischen Spuren aus Wasser, Gleichgewichtsverschiebung bei Veresterungen
+    conditions: >-
+      Eine selektive Membran, ein Partialdruckgefälle durch Vakuum oder Spülgas und die Zufuhr
+      der Verdampfungswärme.
+    limits: >-
+      Die Durchflüsse sind klein, und viele Membranen sind gegenüber aggressiven Lösungsmitteln
+      und hohen Temperaturen nur begrenzt beständig.
+    sideEffects: >-
+      Die Verdampfung entzieht dem Zulauf Wärme, sodass er zwischen den Modulen nachgeheizt
+      werden muss.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Pervaporation
+    description: >-
+      In pervaporation, a liquid mixture flows along a dense membrane whose back side is kept
+      under vacuum or swept with a carrier gas. One component dissolves preferentially in
+      the membrane, diffuses through and evaporates on the back side; the vapour is drawn
+      off and condensed. Because the separation is governed by the membrane rather than by
+      vapour-liquid equilibrium, azeotropes such as ethanol and water can also be separated.
+    example: >-
+      Dehydration of ethanol, isopropanol and other solvents, removal of aroma compounds or
+      organic traces from water, shifting the equilibrium in esterifications
+    conditions: >-
+      A selective membrane, a partial pressure gradient from vacuum or sweep gas, and a supply
+      of the heat of evaporation.
+    limits: >-
+      Fluxes are small, and many membranes have limited resistance to aggressive solvents
+      and high temperatures.
+    sideEffects: >-
+      Evaporation draws heat from the feed, so it has to be reheated between modules.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

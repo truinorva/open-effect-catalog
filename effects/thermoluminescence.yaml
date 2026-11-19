@@ -1,0 +1,69 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: thermoluminescence
+kind: effect
+home: measure|field
+functions:
+  - measure|field
+  - produce|field
+  - measure|solid
+parameters: []
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: verbreitet
+sources:
+  - https://en.wikipedia.org/wiki/Thermoluminescence
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Thermolumineszenz
+    description: >-
+      In manchen Kristallen hebt ionisierende Strahlung Elektronen in Fallen, also Gitterstörstellen,
+      in denen sie bei Raumtemperatur lange gefangen bleiben. Beim späteren Erhitzen werden
+      sie frei, rekombinieren an Leuchtzentren und senden Licht aus. Die Lichtmenge ist ein
+      Maß für die Strahlendosis, die der Kristall seit dem letzten Erhitzen aufgenommen hat.
+    example: >-
+      Personendosimeter mit Lithiumfluorid, Altersbestimmung von Keramik und gebranntem Feuerstein,
+      Nachweis bestrahlter Lebensmittel
+    conditions: >-
+      Kristalliner Stoff mit geeigneten Fallen; vorherige Bestrahlung; kontrolliertes Aufheizen
+      unter Lichtabschluss.
+    limits: >-
+      Das Auslesen löscht die gespeicherte Information, jede Probe lässt sich also nur einmal
+      messen.
+    sideEffects: >-
+      Das Signal schwindet langsam mit der Zeit und unter Lichteinfluss (Fading) und muss
+      korrigiert werden.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Thermoluminescence
+    description: >-
+      In some crystals, ionising radiation lifts electrons into traps, lattice defects in
+      which they stay captured for a long time at room temperature. When the crystal is heated
+      later, they are released, recombine at luminescence centres and emit light. The amount
+      of light is a measure of the radiation dose the crystal has absorbed since it was last
+      heated.
+    example: >-
+      Personal dosimeters with lithium fluoride, dating of pottery and burnt flint, detection
+      of irradiated food
+    conditions: >-
+      Crystalline material with suitable traps; prior irradiation; controlled heating in the
+      dark.
+    limits: >-
+      Reading out erases the stored information, so each sample can be measured only once.
+    sideEffects: >-
+      The signal slowly fades with time and on exposure to light (fading) and must be corrected
+      for.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

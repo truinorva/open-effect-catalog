@@ -1,0 +1,65 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: golf-ball-dimples
+kind: effect
+home: move|solid
+functions:
+  - move|solid
+parameters:
+  - decrease|drag
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: verbreitet
+sources:
+  - https://de.wikipedia.org/wiki/Golfball
+  - https://en.wikipedia.org/wiki/Golf_ball
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Golfball-Dimples (Oberflächendellen)
+    description: >-
+      Die Dellen auf einem Golfball machen die Grenzschicht der umströmenden Luft frühzeitig
+      turbulent. Eine turbulente Grenzschicht haftet länger an der Kugel, löst erst weiter
+      hinten ab und hinterlässt einen schmaleren Nachlauf, sodass der Druckwiderstand deutlich
+      sinkt; zusammen mit dem Rückwärtsdrall verstärken die Dellen außerdem den Auftrieb.
+    example: >-
+      Golfbälle, Turbulatoren (Stolperdrähte und Zackenbänder) an Segelflugzeugflügeln, strukturierte
+      Rennanzüge im Radsport und Eisschnelllauf
+    conditions: >-
+      Ein Bereich von Geschwindigkeit und Größe, in dem die Grenzschicht sonst laminar bliebe
+      und früh ablösen würde.
+    limits: >-
+      Der Vorteil besteht nur in einem bestimmten Reynoldszahl-Bereich; bei niedrigen Geschwindigkeiten
+      erhöht die raue Oberfläche eher den Reibungswiderstand.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Golf ball dimples
+    description: >-
+      The dimples on a golf ball make the boundary layer of the passing air turbulent early.
+      A turbulent boundary layer stays attached to the ball longer, separates further back
+      and leaves a narrower wake, so the pressure drag drops considerably; together with backspin,
+      the dimples also enhance lift.
+    example: >-
+      Golf balls, turbulators (trip wires and zigzag tapes) on glider wings, textured racing
+      suits in cycling and speed skating
+    conditions: >-
+      A range of speed and size in which the boundary layer would otherwise stay laminar and
+      separate early.
+    limits: >-
+      The benefit only exists within a certain Reynolds number range; at low speeds the rough
+      surface tends to add friction drag.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

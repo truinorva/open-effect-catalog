@@ -1,0 +1,81 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: eddy-currents
+kind: effect
+home: stop|solid
+functions:
+  - stop|solid
+  - separate|particles
+  - detect|solid
+  - measure|solid
+parameters:
+  - decrease|speed
+  - decrease|vibration
+  - measure|position
+  - measure|conductivity
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: verbreitet
+sources:
+  - https://de.wikipedia.org/wiki/Wirbelstrom
+  - https://en.wikipedia.org/wiki/Eddy_current
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Wirbelströme
+    description: >-
+      Ändert sich das Magnetfeld in einem elektrisch leitenden Körper oder bewegt sich der
+      Körper durch ein Magnetfeld, werden in ihm kreisförmige Ströme induziert. Nach der Lenzschen
+      Regel erzeugen diese Wirbelströme ein Gegenfeld, das die Bewegung berührungslos bremst,
+      und sie setzen ihre Energie in Wärme um. Weil Stärke und Verteilung der Wirbelströme
+      von Leitfähigkeit, Abstand und Fehlern im Material abhängen, eignen sie sich auch zum
+      Prüfen und Messen.
+    example: >-
+      Wirbelstrombremsen in Zügen, Achterbahnen und Lkw (Retarder), Dämpfung von Waagen und
+      Zeigerinstrumenten, Wirbelstromscheider für Nichteisenmetalle im Recycling, Wirbelstrom-Rissprüfung,
+      Abstands- und Schichtdickensensoren, Metalldetektoren
+    conditions: >-
+      Ein elektrisch leitender Körper und ein Magnetfeld, das sich zeitlich ändert oder relativ
+      zum Körper bewegt.
+    limits: >-
+      Die Bremskraft verschwindet im Stillstand, so dass eine Wirbelstrombremse nicht festhalten
+      kann, und bei hohen Frequenzen bleiben die Ströme auf eine dünne Oberflächenschicht
+      beschränkt.
+    sideEffects: >-
+      Erwärmung und Verluste in Transformatorkernen und Motoren, die man mit geblechten Kernen
+      verringert.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Eddy currents
+    description: >-
+      If the magnetic field in an electrically conducting body changes, or the body moves
+      through a magnetic field, circulating currents are induced in it. According to Lenz's
+      law these eddy currents produce a counter-field that brakes the motion without contact,
+      and they convert their energy into heat. Because the strength and distribution of the
+      eddy currents depend on conductivity, distance and flaws in the material, they are also
+      suitable for testing and measuring.
+    example: >-
+      Eddy current brakes in trains, roller coasters and trucks (retarders), damping of balances
+      and pointer instruments, eddy current separators for non-ferrous metals in recycling,
+      eddy current crack testing, distance and coating-thickness sensors, metal detectors
+    conditions: >-
+      An electrically conducting body and a magnetic field that changes over time or moves
+      relative to the body.
+    limits: >-
+      The braking force vanishes at standstill, so an eddy current brake cannot hold a load,
+      and at high frequencies the currents are confined to a thin surface layer.
+    sideEffects: >-
+      Heating and losses in transformer cores and motors, which are reduced by laminated cores.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

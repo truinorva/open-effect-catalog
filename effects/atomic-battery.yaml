@@ -1,0 +1,71 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: atomic-battery
+kind: application
+home: produce|field
+functions:
+  - produce|field
+parameters: []
+uses:
+  - seebeck-effect
+  - betavoltaics
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Radionuklidbatterie
+  - https://en.wikipedia.org/wiki/Atomic_battery
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Radionuklidbatterie
+    description: >-
+      Eine Radionuklidbatterie gewinnt elektrische Energie aus dem Zerfall radioaktiver Stoffe.
+      Entweder wird die Zerfallswärme, etwa von Plutonium-238, über Thermoelemente in Strom
+      umgewandelt, oder die Zerfallsteilchen erzeugen direkt in einem Halbleiter Ladungsträger,
+      wie bei Betavoltaikzellen. So liefert sie über Jahre bis Jahrzehnte wartungsfrei Strom,
+      allerdings mit geringer Leistung.
+    example: >-
+      Radioisotopengeneratoren in Raumsonden wie Voyager und in Mars-Rovern, frühere Herzschrittmacher
+      mit Plutoniumbatterie, abgelegene Leuchtfeuer und Messstationen, Tritium-Betavoltaikzellen
+      für Sensoren
+    conditions: >-
+      Ein Radionuklid mit passender Halbwertszeit und Strahlungsart sowie eine sichere Abschirmung.
+    limits: >-
+      Die Leistung sinkt mit dem Zerfall des Nuklids, und thermoelektrische Wandler erreichen
+      nur wenige Prozent Wirkungsgrad.
+    sideEffects: >-
+      Das radioaktive Material verlangt strenge Sicherheits- und Entsorgungsauflagen, besonders
+      im Hinblick auf Unfälle und Fehlstarts.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Atomic battery (radioisotope power source)
+    description: >-
+      An atomic battery draws electrical energy from the decay of radioactive material. Either
+      the decay heat, for example from plutonium-238, is turned into electricity by thermocouples,
+      or the decay particles create charge carriers directly in a semiconductor, as in betavoltaic
+      cells. It supplies power without maintenance for years to decades, but at low output.
+    example: >-
+      Radioisotope thermoelectric generators in space probes such as Voyager and in Mars rovers,
+      early pacemakers with plutonium batteries, remote lighthouses and monitoring stations,
+      tritium betavoltaic cells for sensors
+    conditions: >-
+      A radionuclide with suitable half-life and type of radiation, and safe shielding.
+    limits: >-
+      Output falls as the nuclide decays, and thermoelectric converters reach only a few percent
+      efficiency.
+    sideEffects: >-
+      The radioactive material calls for strict safety and disposal rules, especially with
+      regard to accidents and launch failures.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

@@ -1,0 +1,67 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: railgun
+kind: application
+home: move|solid
+functions:
+  - move|solid
+parameters:
+  - increase|speed
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: kindheit
+sources:
+  - https://de.wikipedia.org/wiki/Railgun
+  - https://en.wikipedia.org/wiki/Railgun
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Railgun (Schienenkanone)
+    description: >-
+      Eine Railgun beschleunigt ein leitfähiges Geschoss oder einen Anker zwischen zwei parallelen
+      Stromschienen. Ein sehr hoher Strompuls fließt durch die eine Schiene, über den Anker
+      und durch die andere Schiene zurück; das Magnetfeld des Stroms übt auf den stromdurchflossenen
+      Anker eine Lorentzkraft aus, die ihn entlang der Schienen auf Geschwindigkeiten von
+      mehreren Kilometern pro Sekunde treibt.
+    example: >-
+      Militärische Versuchsanlagen für Schiffsgeschütze, Forschung zu Hochgeschwindigkeitseinschlägen,
+      Vorschläge für Startanlagen in der Raumfahrt
+    conditions: >-
+      Eine Pulsstromquelle mit Strömen im Megaampere-Bereich und Energiespeicher wie Kondensatorbänke.
+    limits: >-
+      Lichtbögen, Abbrand und enorme Kräfte verschleißen die Schienen schon nach wenigen Schüssen
+      stark; Energiespeicher und Stromversorgung sind groß und schwer.
+    sideEffects: >-
+      Starke Wärmeentwicklung, Mündungsblitz durch Lichtbögen und elektromagnetische Störungen.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Railgun
+    description: >-
+      A railgun accelerates a conductive projectile or armature between two parallel conducting
+      rails. A very large current pulse flows along one rail, through the armature and back
+      along the other; the magnetic field of the current exerts a Lorentz force on the current-carrying
+      armature, which drives it along the rails to speeds of several kilometres per second.
+    example: >-
+      Military test facilities for naval guns, hypervelocity impact research, proposals for
+      space launch systems
+    conditions: >-
+      A pulsed power supply with currents in the megaampere range and energy stores such as
+      capacitor banks.
+    limits: >-
+      Arcing, erosion and enormous forces wear the rails heavily after only a few shots; energy
+      storage and power supply are large and heavy.
+    sideEffects: >-
+      Strong heat generation, muzzle flash from arcing and electromagnetic interference.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

@@ -1,0 +1,66 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: tribocorrosion
+kind: effect
+home: remove|solid
+functions:
+  - remove|solid
+  - deform|solid
+parameters:
+  - decrease|mass
+  - change|surface-finish
+uses: []
+domain:
+  id: Materialwissenschaft
+  de: Materialwissenschaft
+  en: Materials science
+maturity: nische
+sources:
+  - https://de.wikipedia.org/wiki/Tribokorrosion
+  - https://en.wikipedia.org/wiki/Tribocorrosion
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Tribokorrosion
+    description: >-
+      Reiben Oberflächen in einem korrosiven Medium aufeinander, verstärken sich Verschleiß
+      und Korrosion gegenseitig. Die Reibung trägt die schützende Passivschicht etwa von Edelstahl
+      oder Titan ab, das blanke Metall korrodiert schnell, bis sich die Schicht neu gebildet
+      hat, und Korrosionsprodukte wirken ihrerseits als Schleifmittel. Der Materialverlust
+      ist dadurch oft größer als die Summe beider Vorgänge für sich; gezielt eingesetzt, glättet
+      derselbe Mechanismus beim chemisch-mechanischen Polieren Oberflächen.
+    example: >-
+      Chemisch-mechanisches Polieren von Wafern, Verschleiß an Hüftgelenkimplantaten, Pumpen
+      und Armaturen in Meerwasser, Bergbau- und Lebensmittelmaschinen
+    conditions: Relative Bewegung unter Last in einem korrosiven Elektrolyten.
+    limits: ''
+    sideEffects: >-
+      Freigesetzte Metallionen und Abriebpartikel können bei Implantaten Gewebereaktionen
+      auslösen.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Tribocorrosion
+    description: >-
+      When surfaces rub against each other in a corrosive medium, wear and corrosion reinforce
+      each other. Friction strips off the protective passive layer of, for example, stainless
+      steel or titanium, the bare metal corrodes rapidly until the layer has reformed, and
+      corrosion products in turn act as abrasives. The material loss is therefore often greater
+      than the sum of both processes on their own; used deliberately, the same mechanism smooths
+      surfaces in chemical-mechanical polishing.
+    example: >-
+      Chemical-mechanical polishing of wafers, wear of hip joint implants, pumps and valves
+      in seawater, mining and food processing machinery
+    conditions: Relative motion under load in a corrosive electrolyte.
+    limits: ''
+    sideEffects: >-
+      Released metal ions and wear particles can trigger tissue reactions around implants.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

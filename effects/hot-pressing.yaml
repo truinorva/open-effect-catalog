@@ -1,0 +1,67 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: hot-pressing
+kind: application
+home: compress|particles
+functions:
+  - compress|particles
+  - join|particles
+parameters:
+  - increase|density
+  - decrease|porosity
+uses: []
+domain:
+  id: Materialwissenschaft
+  de: Materialwissenschaft
+  en: Materials science
+maturity: reife
+sources:
+  - https://en.wikipedia.org/wiki/Hot_pressing
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Heißpressen
+    description: >-
+      Pulver wird in einer Matrize, meist aus Graphit, erhitzt und gleichzeitig einachsig
+      gepresst. Der Druck beschleunigt das Sintern, sodass auch schwer sinterbare Werkstoffe
+      bei niedrigeren Temperaturen und in kürzerer Zeit nahezu dicht werden.
+    example: >-
+      Panzerplatten aus Borcarbid, Diamantwerkzeugsegmente mit Metallbindung, Sputtertargets,
+      Bauteile aus Siliciumnitrid
+    conditions: >-
+      Ein Matrizenwerkstoff, der Temperatur und Druck aushält; meist unter Vakuum oder Schutzgas.
+    limits: >-
+      Es lassen sich nur einfache Formen wie Platten und Scheiben herstellen; das Verfahren
+      arbeitet chargenweise und ist teuer.
+    sideEffects: >-
+      Das Gefüge kann richtungsabhängig werden, und Graphitmatrizen können Kohlenstoff in
+      das Pulver eintragen.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Hot pressing
+    description: >-
+      Powder is heated in a die, usually made of graphite, and pressed uniaxially at the same
+      time. The pressure accelerates sintering, so that even materials that are hard to sinter
+      become almost fully dense at lower temperatures and in shorter times.
+    example: >-
+      Boron carbide armour plates, metal-bonded diamond tool segments, sputtering targets,
+      silicon nitride components
+    conditions: >-
+      A die material that withstands temperature and pressure; usually under vacuum or inert
+      gas.
+    limits: >-
+      Only simple shapes such as plates and discs can be made; the process works in batches
+      and is expensive.
+    sideEffects: >-
+      The microstructure can become direction-dependent, and graphite dies can introduce carbon
+      into the powder.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

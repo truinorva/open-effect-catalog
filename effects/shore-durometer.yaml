@@ -1,0 +1,68 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: shore-durometer
+kind: application
+home: measure|solid
+functions:
+  - measure|solid
+parameters:
+  - measure|hardness
+uses:
+  - spring
+domain:
+  id: Materialwissenschaft
+  de: Materialwissenschaft
+  en: Materials science
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Shore-Durometer
+  - https://en.wikipedia.org/wiki/Shore_durometer
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Shore-Härteprüfer (Durometer)
+    description: >-
+      Ein federbelasteter Eindringkörper, je nach Skala ein Kegelstumpf oder eine Kegelspitze,
+      wird mit dem Gerät auf die Probe gedrückt. Je weicher der Werkstoff, desto tiefer dringt
+      er ein; die Eindringtiefe wird auf eine Skala von 0 bis 100 umgerechnet, wobei 100 für
+      keine messbare Eindringung steht.
+    example: >-
+      Qualitätsprüfung von Gummi und Elastomeren (Shore A) und von Hartkunststoffen (Shore
+      D), Dichtungen, Schuhsohlen, Rollen
+    conditions: >-
+      Ebene Probe ausreichender Dicke; festgelegte Andruckkraft und Ablesezeit.
+    limits: >-
+      Die Werte sind empirisch und lassen sich weder exakt in andere Härteskalen noch zwischen
+      den Shore-Skalen umrechnen.
+    sideEffects: >-
+      Weil viskoelastische Werkstoffe unter dem Eindringkörper nachgeben, sinkt der angezeigte
+      Wert mit der Haltezeit.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Shore durometer
+    description: >-
+      A spring-loaded indenter, a truncated cone or a sharp cone depending on the scale, is
+      pressed onto the sample by the instrument. The softer the material, the deeper it penetrates;
+      the penetration depth is converted to a scale from 0 to 100, where 100 means no measurable
+      indentation.
+    example: >-
+      Quality testing of rubber and elastomers (Shore A) and of rigid plastics (Shore D),
+      seals, shoe soles, rollers
+    conditions: >-
+      Flat sample of sufficient thickness; defined contact force and reading time.
+    limits: >-
+      The values are empirical and cannot be converted exactly into other hardness scales
+      or between Shore scales.
+    sideEffects: >-
+      Because viscoelastic materials creep under the indenter, the reading falls with dwell
+      time.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

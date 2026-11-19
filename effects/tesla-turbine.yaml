@@ -1,0 +1,64 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: tesla-turbine
+kind: application
+home: rotate|solid
+functions:
+  - rotate|solid
+  - move|liquid
+  - move|gas
+parameters: []
+uses:
+  - viscosity
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: ''
+sources:
+  - https://de.wikipedia.org/wiki/Tesla-Turbine
+  - https://en.wikipedia.org/wiki/Tesla_turbine
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Tesla-Turbine
+    description: >-
+      Die Tesla-Turbine besitzt statt Schaufeln einen Stapel glatter, dicht beabstandeter
+      Scheiben auf einer Welle. Das Arbeitsfluid tritt am Rand tangential ein und strömt spiralförmig
+      nach innen zu Austrittsöffnungen nahe der Welle; durch Haftung und Viskosität in der
+      Grenzschicht nimmt es die Scheiben mit und versetzt sie in Drehung. Umgekehrt angetrieben
+      arbeitet dieselbe Anordnung als Pumpe.
+    example: >-
+      Scheibenpumpen für abrasive, zähe oder scherempfindliche Medien, Versuchs- und Lehrturbinen
+    conditions: Scheibenabstand in der Größenordnung der Grenzschichtdicke des Fluids.
+    limits: >-
+      Der Wirkungsgrad großer Tesla-Turbinen blieb bislang hinter dem herkömmlicher Schaufelturbinen
+      zurück.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Tesla turbine
+    description: >-
+      Instead of blades, the Tesla turbine has a stack of smooth, closely spaced discs on
+      a shaft. The working fluid enters tangentially at the rim and spirals inwards to exhaust
+      openings near the shaft; through adhesion and viscosity in the boundary layer it drags
+      the discs along and sets them turning. Driven the other way round, the same arrangement
+      works as a pump.
+    example: >-
+      Disc pumps for abrasive, viscous or shear-sensitive media, experimental and teaching
+      turbines
+    conditions: Disc spacing of the order of the fluid's boundary-layer thickness.
+    limits: >-
+      The efficiency of large Tesla turbines has so far fallen short of that of conventional
+      bladed turbines.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

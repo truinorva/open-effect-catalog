@@ -1,0 +1,72 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: corona-discharge
+kind: effect
+home: remove|gas
+functions:
+  - remove|gas
+  - move|particles
+  - produce|gas
+  - move|gas
+parameters:
+  - increase|charge
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: verbreitet
+sources:
+  - https://de.wikipedia.org/wiki/Koronaentladung
+  - https://en.wikipedia.org/wiki/Corona_discharge
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Koronaentladung
+    description: >-
+      An Spitzen oder dünnen Drähten unter Hochspannung ist das elektrische Feld so stark,
+      dass die umgebende Luft in einem schmalen Saum ionisiert wird, ohne dass ein Funke zur
+      Gegenelektrode überspringt. Die entstehenden Ionen wandern im Feld nach außen, laden
+      Staubteilchen und Oberflächen auf und erzeugen dabei einen schwachen Luftstrom. Gleichzeitig
+      bilden sich in der Entladung reaktive Stoffe wie Ozon.
+    example: >-
+      Elektrofilter in Kraftwerken, Aufladen der Bildtrommel in Laserdruckern und Kopierern,
+      Koronavorbehandlung von Kunststofffolien vor dem Bedrucken, Ozonerzeuger, Ionisatoren
+    conditions: >-
+      Ein stark inhomogenes Feld an kleinen Krümmungsradien und eine Spannung oberhalb der
+      Einsatz-, aber unterhalb der Durchschlagspannung.
+    limits: >-
+      Wird die Spannung zu hoch, geht die Korona in eine Funken- oder Bogenentladung über.
+    sideEffects: >-
+      Ozon- und Stickoxidbildung, Energieverluste und Funkstörungen an Hochspannungsleitungen
+      sowie Knistergeräusche.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Corona discharge
+    description: >-
+      At sharp points or thin wires at high voltage the electric field is so strong that the
+      surrounding air is ionised in a thin sheath, without a spark jumping to the counter-electrode.
+      The ions drift outwards in the field, charge dust particles and surfaces and create
+      a weak air flow in the process. At the same time reactive species such as ozone form
+      in the discharge.
+    example: >-
+      Electrostatic precipitators in power plants, charging the drum in laser printers and
+      copiers, corona treatment of plastic films before printing, ozone generators, ionisers
+    conditions: >-
+      A strongly non-uniform field at small radii of curvature and a voltage above the inception
+      voltage but below the breakdown voltage.
+    limits: >-
+      If the voltage is too high, the corona turns into a spark or arc discharge.
+    sideEffects: >-
+      Formation of ozone and nitrogen oxides, energy losses and radio interference on high-voltage
+      lines, and crackling noise.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

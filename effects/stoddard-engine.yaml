@@ -1,0 +1,52 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: stoddard-engine
+kind: application
+home: move|solid
+functions:
+  - move|solid
+parameters: []
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: ''
+sources:
+  - https://en.wikipedia.org/wiki/Stoddard_engine
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Stoddard-Motor
+    description: >-
+      Der Stoddard-Motor ist ein Heißgasmotor mit äußerer Wärmezufuhr, den Elliott J. Stoddard
+      1919 vorstellte. Anders als beim Stirlingmotor steuern Ventile den Gasstrom zwischen
+      den Zylindern und den Wärmetauschern, so dass Erhitzer und Kühler nicht ständig mit
+      dem Arbeitsraum verbunden sind; das soll den schädlichen Totraum der Wärmetauscher verringern.
+    example: Versuchs- und Demonstrationsmotoren mit äußerer Wärmequelle
+    conditions: ''
+    limits: ''
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Stoddard engine
+    description: >-
+      The Stoddard engine is a hot-gas engine with external heat supply, introduced by Elliott
+      J. Stoddard in 1919. Unlike the Stirling engine, valves control the gas flow between
+      the cylinders and the heat exchangers, so the heater and cooler are not permanently
+      connected to the working space; this is intended to reduce the dead volume of the heat
+      exchangers.
+    example: Experimental and demonstration engines with an external heat source
+    conditions: ''
+    limits: ''
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

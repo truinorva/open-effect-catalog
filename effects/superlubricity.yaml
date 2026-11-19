@@ -1,0 +1,66 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: superlubricity
+kind: effect
+home: move|solid
+functions:
+  - move|solid
+parameters:
+  - decrease|friction
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: nische
+sources:
+  - https://de.wikipedia.org/wiki/Supraschmierf%C3%A4higkeit
+  - https://en.wikipedia.org/wiki/Superlubricity
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Supraschmierfähigkeit (Superlubrizität)
+    description: >-
+      Zwei kristalline Oberflächen, deren Atomgitter nicht zueinander passen, etwa weil sie
+      gegeneinander verdreht sind, können fast reibungsfrei aufeinander gleiten. Die Atome
+      der einen Fläche können sich dann nicht alle gleichzeitig in die Mulden der anderen
+      setzen; die Kräfte an den einzelnen Kontaktstellen heben sich weitgehend auf, so dass
+      kaum Widerstand gegen das Gleiten bleibt.
+    example: >-
+      Graphitflocken auf Graphit, Graphen- und Molybdändisulfid-Schichten in der Forschung
+      zu reibungsarmen Mikro- und Nanosystemen
+    conditions: >-
+      Atomar glatte, saubere, nicht zueinander passende Kristallflächen; meist im Vakuum oder
+      unter trockenen Bedingungen.
+    limits: >-
+      Bisher vor allem im Mikro- und Nanomaßstab nachgewiesen; Verunreinigungen, Kanten und
+      Gitterfehler heben den Effekt auf.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Superlubricity
+    description: >-
+      Two crystalline surfaces whose atomic lattices do not match, for example because they
+      are rotated relative to each other, can slide over one another almost without friction.
+      The atoms of one surface cannot all settle into the hollows of the other at the same
+      time; the forces at the individual contact points largely cancel, leaving hardly any
+      resistance to sliding.
+    example: >-
+      Graphite flakes on graphite, graphene and molybdenum disulphide layers in research on
+      low-friction micro- and nanosystems
+    conditions: >-
+      Atomically smooth, clean, mismatched crystal faces; usually in vacuum or dry conditions.
+    limits: >-
+      So far demonstrated mainly at micro- and nanoscale; contamination, edges and lattice
+      defects cancel the effect.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

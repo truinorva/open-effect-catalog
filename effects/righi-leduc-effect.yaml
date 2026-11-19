@@ -1,0 +1,71 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: righi-leduc-effect
+kind: effect
+home: heat|solid
+functions:
+  - heat|solid
+  - cool|solid
+parameters:
+  - change|heat-conduction
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: nische
+sources:
+  - https://de.wikipedia.org/wiki/Righi-Leduc-Effekt
+  - https://en.wikipedia.org/wiki/Thermal_Hall_effect
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Righi-Leduc-Effekt (thermischer Hall-Effekt)
+    description: >-
+      Fließt in einem Leiter ein Wärmestrom und steht senkrecht dazu ein Magnetfeld, werden
+      die wärmetragenden Ladungsträger wie beim Hall-Effekt seitlich abgelenkt. Dadurch entsteht
+      quer zum Wärmestrom und quer zum Feld ein Temperaturunterschied, eine Seite wird also
+      wärmer und die gegenüberliegende kälter. Es ist das thermische Gegenstück zum Hall-Effekt
+      und tritt auch in Isolatoren auf, in denen Phononen oder Magnonen die Wärme tragen.
+    example: >-
+      Untersuchung von Ladungsträgern, Phononen und Magnonen in der Festkörperphysik, Charakterisierung
+      von Halbmetallen wie Bismut
+    conditions: >-
+      Ein Wärmestrom durch einen Leiter, ein Halbmetall oder einen Halbleiter und ein starkes
+      Magnetfeld senkrecht dazu.
+    limits: >-
+      In gewöhnlichen Metallen ist der Effekt bei Raumtemperatur sehr klein und nur mit empfindlicher
+      Temperaturmessung nachweisbar; deutlich wird er in Halbmetallen, bei tiefen Temperaturen
+      und in starken Feldern.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Righi-Leduc effect (thermal Hall effect)
+    description: >-
+      When a heat current flows in a conductor and a magnetic field is applied perpendicular
+      to it, the heat-carrying charge carriers are deflected sideways, as in the Hall effect.
+      This produces a temperature difference across both the heat current and the field, so
+      one side becomes warmer and the opposite side cooler. It is the thermal counterpart
+      of the Hall effect and also occurs in insulators, where phonons or magnons carry the
+      heat.
+    example: >-
+      Studying charge carriers, phonons and magnons in solid-state physics, characterising
+      semimetals such as bismuth
+    conditions: >-
+      A heat current through a conductor, semimetal or semiconductor and a strong magnetic
+      field perpendicular to it.
+    limits: >-
+      In ordinary metals at room temperature the effect is very small and detectable only
+      with sensitive temperature measurement; it becomes pronounced in semimetals, at low
+      temperatures and in strong fields.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

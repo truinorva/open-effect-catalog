@@ -1,0 +1,73 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: permeation
+kind: effect
+home: separate|gas
+functions:
+  - separate|gas
+  - separate|liquid
+  - move|gas
+parameters:
+  - increase|concentration
+  - increase|purity
+uses: []
+domain:
+  id: Verfahrenstechnik
+  de: Verfahrenstechnik
+  en: Process engineering
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Permeation
+  - https://en.wikipedia.org/wiki/Permeation
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Permeation
+    description: >-
+      Bei der Permeation durchdringt ein Gas, ein Dampf oder eine Flüssigkeit einen porenfreien
+      Festkörper wie eine Kunststofffolie oder Membran. Die Moleküle lösen sich an der einen
+      Oberfläche im Material, diffundieren entlang des Konzentrationsgefälles hindurch und
+      treten auf der anderen Seite wieder aus. Weil Löslichkeit und Diffusionsgeschwindigkeit
+      für jeden Stoff verschieden sind, lassen Membranen manche Komponenten viel schneller
+      passieren als andere und trennen so Gemische.
+    example: >-
+      Membranverfahren zur Stickstoffgewinnung aus Luft und zur Wasserstoffabtrennung, Biogasaufbereitung,
+      Sperrschichten in Verpackungen und Kraftstofftanks, Messung der Wasserdampf- und Sauerstoffdurchlässigkeit
+      von Folien
+    conditions: Ein Konzentrations- oder Partialdruckunterschied über dem Material.
+    limits: >-
+      Membranen mit hoher Durchlässigkeit trennen meist schlechter und umgekehrt, und die
+      flächenbezogenen Durchflüsse sind klein.
+    sideEffects: >-
+      Ungewollte Permeation lässt Gase aus Behältern, Schläuchen und Reifen entweichen, und
+      eindringender Wasserstoff kann Stahl verspröden.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Permeation
+    description: >-
+      In permeation, a gas, vapour or liquid passes through a non-porous solid such as a plastic
+      film or membrane. The molecules dissolve in the material at one surface, diffuse through
+      it along the concentration gradient and leave again on the other side. Because solubility
+      and diffusion rate differ for every substance, membranes let some components pass much
+      faster than others and thus separate mixtures.
+    example: >-
+      Membrane processes for nitrogen generation from air and hydrogen recovery, biogas upgrading,
+      barrier layers in packaging and fuel tanks, measuring the water vapour and oxygen transmission
+      of films
+    conditions: A difference in concentration or partial pressure across the material.
+    limits: >-
+      Highly permeable membranes usually separate less well and vice versa, and fluxes per
+      unit area are small.
+    sideEffects: >-
+      Unwanted permeation lets gases escape from containers, hoses and tyres, and hydrogen
+      entering steel can embrittle it.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

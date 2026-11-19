@@ -1,0 +1,66 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: leidenfrost-effect
+kind: effect
+home: move|liquid
+functions:
+  - move|liquid
+  - hold|liquid
+parameters:
+  - decrease|friction
+  - decrease|heat-conduction
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Leidenfrost-Effekt
+  - https://en.wikipedia.org/wiki/Leidenfrost_effect
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Leidenfrost-Effekt
+    description: >-
+      Ein Flüssigkeitstropfen auf einer Fläche, die weit heißer ist als sein Siedepunkt, verdampft
+      an der Unterseite sofort und schwebt dann auf einem dünnen Dampfpolster. Der Dampf trägt
+      den Tropfen fast reibungsfrei und isoliert ihn gleichzeitig gegen die heiße Fläche.
+    example: >-
+      Wassertropfen tanzen auf der heißen Herdplatte; Tropfen, die auf geriffelten heißen
+      Flächen von selbst wandern
+    conditions: >-
+      Oberflächentemperatur deutlich über dem Siedepunkt der Flüssigkeit (für Wasser rund
+      200 °C).
+    limits: >-
+      Unterhalb der Leidenfrost-Temperatur bricht das Dampfpolster zusammen und der Tropfen
+      siedet heftig.
+    sideEffects: >-
+      Beim Abschrecken und Kühlen heißer Teile verschlechtert das Dampfpolster den Wärmeübergang.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Leidenfrost effect
+    description: >-
+      A liquid droplet on a surface far hotter than its boiling point evaporates at its underside
+      at once and then floats on a thin cushion of vapour. The vapour carries the droplet
+      almost without friction and at the same time insulates it from the hot surface.
+    example: >-
+      Water droplets dancing on a hot stove; droplets that travel by themselves on ridged
+      hot surfaces
+    conditions: >-
+      Surface temperature well above the liquid's boiling point (around 200 °C for water).
+    limits: >-
+      Below the Leidenfrost temperature the vapour cushion collapses and the droplet boils
+      violently.
+    sideEffects: >-
+      In quenching and cooling of hot parts, the vapour cushion impairs heat transfer.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

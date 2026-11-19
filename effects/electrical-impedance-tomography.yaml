@@ -1,0 +1,64 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: electrical-impedance-tomography
+kind: application
+home: measure|solid
+functions:
+  - measure|solid
+  - measure|liquid
+parameters:
+  - measure|conductivity
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: wachstum
+sources:
+  - https://de.wikipedia.org/wiki/Elektrische_Impedanz-Tomografie
+  - https://en.wikipedia.org/wiki/Electrical_impedance_tomography
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Elektrische Impedanztomographie (EIT)
+    description: >-
+      Über einen Ring von Oberflächenelektroden werden nacheinander kleine Wechselströme in
+      einen Körper eingespeist und die entstehenden Spannungen an den übrigen Elektroden gemessen.
+      Aus vielen solchen Messungen berechnet ein Rekonstruktionsalgorithmus ein Bild der Leitfähigkeitsverteilung
+      im Inneren; da sich Luft, Gewebe und Flüssigkeiten in ihrer Leitfähigkeit unterscheiden,
+      werden etwa die Lungenbelüftung oder Phasenverteilungen sichtbar.
+    example: >-
+      Überwachung der Lungenbelüftung auf der Intensivstation, Prozesstomographie von Mehrphasenströmungen
+      und Rührbehältern
+    conditions: >-
+      Leitfähigkeitsunterschiede im untersuchten Volumen; guter Elektrodenkontakt.
+    limits: >-
+      Geringe räumliche Auflösung im Vergleich zu CT oder MRT, dafür hohe zeitliche Auflösung.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Electrical impedance tomography (EIT)
+    description: >-
+      Small alternating currents are injected one after another through a ring of surface
+      electrodes, and the resulting voltages are measured at the other electrodes. From many
+      such measurements, a reconstruction algorithm computes an image of the conductivity
+      distribution inside; since air, tissue and liquids differ in conductivity, lung ventilation
+      or phase distributions, for example, become visible.
+    example: >-
+      Monitoring lung ventilation in intensive care, process tomography of multiphase flows
+      and stirred tanks
+    conditions: >-
+      Conductivity differences within the volume examined; good electrode contact.
+    limits: >-
+      Low spatial resolution compared with CT or MRI, but high temporal resolution.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

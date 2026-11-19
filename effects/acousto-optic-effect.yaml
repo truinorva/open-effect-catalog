@@ -1,0 +1,74 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: acousto-optic-effect
+kind: effect
+home: orient|field
+functions:
+  - orient|field
+  - separate|field
+parameters:
+  - change|refraction
+  - change|colour
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: verbreitet
+sources:
+  - https://de.wikipedia.org/wiki/Debye-Sears-Effekt
+  - https://en.wikipedia.org/wiki/Acousto-optics
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Akustooptischer Effekt (Debye-Sears-Effekt)
+    description: >-
+      Eine Schallwelle in einem durchsichtigen Medium erzeugt periodische Dichteschwankungen
+      und damit ein wanderndes Gitter aus wechselndem Brechungsindex. Licht, das dieses Gitter
+      durchquert, wird daran gebeugt; Ablenkwinkel, Intensität und über den Doppler-Effekt
+      auch die Frequenz des gebeugten Strahls lassen sich über Frequenz und Leistung des Schalls
+      elektronisch steuern.
+    example: >-
+      Akustooptische Modulatoren zum Schalten von Laserstrahlen, Strahlablenker in Laserscannern,
+      durchstimmbare akustooptische Filter, Güteschaltung von Lasern, Frequenzverschiebung
+      in der Laser-Doppler-Anemometrie
+    conditions: >-
+      Ein für das Licht durchsichtiger Kristall oder ein Glas mit hoher akustooptischer Güte,
+      angeregt durch einen Piezowandler mit Frequenzen im Megahertzbereich.
+    limits: >-
+      Die Schaltzeit ist durch die Laufzeit des Schalls quer durch den Lichtstrahl begrenzt,
+      und die erreichbaren Ablenkwinkel sind klein.
+    sideEffects: >-
+      Die eingekoppelte Schallleistung erwärmt den Kristall, was den Lichtstrahl verzerren
+      kann.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Acousto-optic effect
+    description: >-
+      A sound wave in a transparent medium creates periodic density changes and thus a travelling
+      grating of varying refractive index. Light crossing this grating is diffracted by it;
+      the deflection angle, the intensity and, through the Doppler effect, the frequency of
+      the diffracted beam can be controlled electronically via the frequency and power of
+      the sound.
+    example: >-
+      Acousto-optic modulators for switching laser beams, beam deflectors in laser scanners,
+      acousto-optic tunable filters, Q-switching of lasers, frequency shifting in laser Doppler
+      anemometry
+    conditions: >-
+      A crystal or glass that is transparent to the light and has a high acousto-optic figure
+      of merit, driven by a piezoelectric transducer at megahertz frequencies.
+    limits: >-
+      Switching time is limited by the time the sound needs to cross the light beam, and the
+      achievable deflection angles are small.
+    sideEffects: >-
+      The acoustic power coupled in heats the crystal, which can distort the light beam.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

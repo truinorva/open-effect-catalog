@@ -1,0 +1,79 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: latent-heat
+kind: effect
+home: keep-temp|solid
+functions:
+  - keep-temp|solid
+  - keep-temp|liquid
+  - cool|solid
+  - cool|gas
+  - heat|solid
+  - heat|liquid
+parameters:
+  - increase|heat-capacity
+  - stabilise|temperature
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: verbreitet
+sources:
+  - https://de.wikipedia.org/wiki/Latente_W%C3%A4rme
+  - https://en.wikipedia.org/wiki/Latent_heat
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Latente Wärme
+    description: >-
+      Beim Schmelzen, Verdampfen oder Sublimieren nimmt ein Stoff Wärme auf, ohne dass seine
+      Temperatur steigt; beim Erstarren, Kondensieren oder Resublimieren gibt er dieselbe
+      Wärmemenge wieder ab. Die Energie dient nicht der Erwärmung, sondern dem Lösen oder
+      Knüpfen der Bindungen zwischen den Teilchen. Weil diese Umwandlungswärme oft viel größer
+      ist als die Wärme für eine Temperaturänderung um einige Grad, eignen sich Phasenübergänge
+      besonders zum Speichern, Puffern und Übertragen von Wärme.
+    example: >-
+      Kühlakkus und Eiswürfel, Verdunstungskühlung durch Schweiß, Latentwärmespeicher mit
+      Paraffin oder Salzhydraten, Dampfheizung, Wärmerohre, Kältemaschinen
+    conditions: >-
+      Ein Phasenübergang bei der gewünschten Temperatur, also ein Stoff, dessen Schmelz- oder
+      Siedepunkt im Arbeitsbereich liegt.
+    limits: >-
+      Die Temperatur bleibt nur so lange konstant, bis der Phasenübergang vollständig abgelaufen
+      ist; viele Speicherstoffe leiten Wärme schlecht.
+    sideEffects: >-
+      Manche Speicherstoffe unterkühlen, entmischen sich oder ändern beim Phasenwechsel stark
+      ihr Volumen.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Latent heat
+    description: >-
+      When a substance melts, evaporates or sublimates, it takes up heat without its temperature
+      rising; when it solidifies, condenses or deposits, it releases the same amount of heat
+      again. The energy is used not to raise the temperature but to break or form the bonds
+      between the particles. Because this heat of transformation is often much larger than
+      the heat needed to change the temperature by a few degrees, phase changes are particularly
+      suited for storing, buffering and transferring heat.
+    example: >-
+      Cool packs and ice cubes, evaporative cooling by sweat, latent heat storage with paraffin
+      or salt hydrates, steam heating, heat pipes, refrigeration machines
+    conditions: >-
+      A phase change at the desired temperature, i.e. a substance whose melting or boiling
+      point lies in the working range.
+    limits: >-
+      The temperature stays constant only until the phase change is complete; many storage
+      materials are poor heat conductors.
+    sideEffects: >-
+      Some storage materials supercool, separate or change their volume considerably during
+      the phase change.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

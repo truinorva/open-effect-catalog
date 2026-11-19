@@ -1,0 +1,66 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: shot-peening
+kind: application
+home: stabilise|solid
+functions:
+  - stabilise|solid
+  - deform|solid
+parameters:
+  - increase|strength
+  - increase|hardness
+  - change|surface-finish
+uses: []
+domain:
+  id: Materialwissenschaft
+  de: Materialwissenschaft
+  en: Materials science
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Kugelstrahlen
+  - https://en.wikipedia.org/wiki/Shot_peening
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Kugelstrahlen
+    description: >-
+      Kleine runde Strahlmittelkörner aus Stahl, Glas oder Keramik werden mit hoher Geschwindigkeit
+      auf die Bauteiloberfläche geschossen. Jeder Aufprall verformt die Randschicht plastisch;
+      weil das Material darunter elastisch bleibt, entstehen in der Oberfläche Druckeigenspannungen,
+      die das Entstehen und Wachsen von Ermüdungsrissen hemmen. Gezielt einseitig angewandt,
+      lassen sich damit auch dünne Bleche biegen (Kugelstrahlumformen).
+    example: >-
+      Zahnräder, Federn, Kurbelwellen, Turbinenschaufeln, Umformen von Flugzeug-Flügelbeplankungen
+    conditions: >-
+      Metallische Bauteile; kontrollierte Strahlintensität und Bedeckung der Oberfläche.
+    limits: >-
+      Die Druckeigenspannungen reichen nur einige Zehntelmillimeter tief und bauen sich bei
+      hohen Betriebstemperaturen ab.
+    sideEffects: >-
+      Die Oberfläche wird rauer, und dünne Teile können sich ungewollt verziehen.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Shot peening
+    description: >-
+      Small round shot of steel, glass or ceramic is fired at high speed onto the surface
+      of a part. Each impact plastically deforms the surface layer; because the material underneath
+      stays elastic, compressive residual stresses form in the surface, which inhibit the
+      initiation and growth of fatigue cracks. Applied deliberately on one side, the process
+      can also bend thin sheets (peen forming).
+    example: >-
+      Gears, springs, crankshafts, turbine blades, forming of aircraft wing skins
+    conditions: Metallic parts; controlled peening intensity and surface coverage.
+    limits: >-
+      The compressive residual stresses reach only a few tenths of a millimetre deep and relax
+      at high service temperatures.
+    sideEffects: The surface becomes rougher, and thin parts may distort unintentionally.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

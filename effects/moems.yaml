@@ -1,0 +1,67 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: moems
+kind: application
+home: orient|field
+functions:
+  - orient|field
+  - separate|field
+  - dilute|field
+parameters:
+  - change|orientation
+uses: []
+domain:
+  id: ''
+  de: ''
+  en: ''
+maturity: wachstum
+sources:
+  - https://en.wikipedia.org/wiki/Microoptoelectromechanical_systems
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: MOEMS (mikro-opto-elektromechanische Systeme)
+    description: >-
+      MOEMS verbinden mikromechanische Bauteile mit optischen Elementen auf einem Chip. Winzige
+      Spiegel, Gitter, Blenden oder Membranen werden elektrostatisch, piezoelektrisch, magnetisch
+      oder thermisch bewegt und lenken, filtern oder dämpfen dadurch Licht. Weil die bewegten
+      Massen sehr klein sind, schalten sie schnell und lassen sich zu großen Feldern zusammenfassen.
+    example: >-
+      Mikrospiegel-Arrays in DLP-Projektoren, Scanspiegel für Lidar und Laserprojektion, optische
+      Schalter und Dämpfungsglieder in Glasfasernetzen, durchstimmbare Filter in Miniaturspektrometern
+    conditions: >-
+      Reinraumfertigung mit Verfahren der Halbleitertechnik und Schutz der beweglichen Strukturen
+      vor Staub und Feuchte.
+    limits: >-
+      Stellwege und Kräfte sind klein, und Spiegelgröße sowie Kippwinkel begrenzen die nutzbare
+      Apertur.
+    sideEffects: >-
+      Bewegliche Mikrostrukturen können durch Haftkräfte aneinander kleben bleiben (Stiction).
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: MOEMS (micro-opto-electromechanical systems)
+    description: >-
+      MOEMS combine micromechanical parts with optical elements on a single chip. Tiny mirrors,
+      gratings, shutters or membranes are moved electrostatically, piezoelectrically, magnetically
+      or thermally and thereby steer, filter or attenuate light. Because the moving masses
+      are very small, they switch quickly and can be packed into large arrays.
+    example: >-
+      Micromirror arrays in DLP projectors, scanning mirrors for lidar and laser projection,
+      optical switches and attenuators in fibre networks, tunable filters in miniature spectrometers
+    conditions: >-
+      Clean-room fabrication with semiconductor processes and protection of the moving structures
+      against dust and moisture.
+    limits: >-
+      Strokes and forces are small, and mirror size and tilt angle limit the usable aperture.
+    sideEffects: >-
+      Moving microstructures can stick together through adhesion forces (stiction).
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

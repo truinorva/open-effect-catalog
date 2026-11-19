@@ -1,0 +1,74 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: chemical-vapour-deposition
+kind: application
+home: produce|solid
+functions:
+  - produce|solid
+  - preserve|solid
+parameters: []
+uses: []
+domain:
+  id: Materialwissenschaft
+  de: Materialwissenschaft
+  en: Materials science
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Chemische_Gasphasenabscheidung
+  - https://en.wikipedia.org/wiki/Chemical_vapor_deposition
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Chemische Gasphasenabscheidung (CVD)
+    description: >-
+      Gasförmige Ausgangsstoffe werden über ein Substrat geleitet und reagieren an seiner
+      Oberfläche oder knapp darüber zu einem Feststoff, der sich als dünne Schicht abscheidet;
+      die gasförmigen Nebenprodukte werden abgeführt. Die nötige Energie liefert meist Wärme,
+      sie kann aber auch aus einem Plasma oder – bei der photochemischen Abscheidung – aus
+      Licht stammen, etwa von einem Laser oder einer UV-Lampe. Lichtgestützte Varianten erlauben
+      niedrigere Substrattemperaturen und das Abscheiden nur an belichteten Stellen.
+    example: >-
+      Silizium- und Isolierschichten in der Halbleiterfertigung, Hartstoffschichten (TiN,
+      TiC) auf Wendeschneidplatten, synthetischer Diamant, Graphen, Laser-Direktschreiben
+      zur Reparatur von Fotomasken
+    conditions: >-
+      Flüchtige Ausgangsverbindungen, eine kontrollierte Atmosphäre oder Vakuum und eine Energiequelle,
+      die die Reaktion am Substrat auslöst.
+    limits: >-
+      Thermische CVD erfordert oft hohe Substrattemperaturen, die empfindliche Werkstoffe
+      nicht vertragen.
+    sideEffects: >-
+      Viele Ausgangsstoffe und Nebenprodukte sind giftig, brennbar oder korrosiv und müssen
+      aufwendig entsorgt werden.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Chemical vapour deposition (CVD)
+    description: >-
+      Gaseous precursors are passed over a substrate and react on or just above its surface
+      to form a solid that deposits as a thin film; the gaseous by-products are carried away.
+      The energy required usually comes from heat, but can also come from a plasma or – in
+      photochemical deposition – from light, such as a laser or a UV lamp. Light-assisted
+      variants allow lower substrate temperatures and deposition only at illuminated spots.
+    example: >-
+      Silicon and insulating layers in semiconductor manufacturing, hard coatings (TiN, TiC)
+      on indexable inserts, synthetic diamond, graphene, laser direct writing for photomask
+      repair
+    conditions: >-
+      Volatile precursor compounds, a controlled atmosphere or vacuum, and an energy source
+      that triggers the reaction at the substrate.
+    limits: >-
+      Thermal CVD often requires high substrate temperatures that sensitive materials cannot
+      tolerate.
+    sideEffects: >-
+      Many precursors and by-products are toxic, flammable or corrosive and require elaborate
+      disposal.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

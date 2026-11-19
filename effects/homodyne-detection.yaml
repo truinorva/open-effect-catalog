@@ -1,0 +1,61 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: homodyne-detection
+kind: effect
+home: measure|field
+functions:
+  - measure|field
+  - detect|field
+parameters: []
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: nische
+sources:
+  - https://de.wikipedia.org/wiki/Homodyne_Detektion
+  - https://en.wikipedia.org/wiki/Homodyne_detection
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Homodyne Detektion
+    description: >-
+      Bei der homodynen Detektion wird ein Signal mit einer Referenzschwingung derselben Frequenz
+      überlagert, die meist aus derselben Quelle stammt. Das Mischprodukt liegt bei der Frequenz
+      null und ist ein Gleichsignal, dessen Größe von Amplitude und Phasenlage des Signals
+      relativ zur Referenz abhängt; so lassen sich beide Größen sehr empfindlich messen.
+    example: >-
+      Lock-in-Verstärker, Messung von gequetschtem Licht in der Quantenoptik, kohärente optische
+      Empfänger, Direktmischempfänger im Mobilfunk
+    conditions: Eine Referenz mit stabiler, bekannter Phasenbeziehung zum Signal.
+    limits: >-
+      Phasendrift zwischen Signal und Referenz verfälscht das Ergebnis; Gleichspannungsoffsets
+      und niederfrequentes Rauschen fallen direkt ins Messband.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Homodyne detection
+    description: >-
+      In homodyne detection, a signal is superimposed on a reference oscillation of the same
+      frequency, usually derived from the same source. The mixing product lies at zero frequency
+      and is a DC signal whose magnitude depends on the amplitude and phase of the signal
+      relative to the reference; this allows both quantities to be measured with high sensitivity.
+    example: >-
+      Lock-in amplifiers, measurement of squeezed light in quantum optics, coherent optical
+      receivers, direct-conversion receivers in mobile radio
+    conditions: A reference with a stable, known phase relationship to the signal.
+    limits: >-
+      Phase drift between signal and reference falsifies the result; DC offsets and low-frequency
+      noise fall directly into the measurement band.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

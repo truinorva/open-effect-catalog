@@ -1,0 +1,72 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: polarisation-of-light
+kind: effect
+home: orient|field
+functions:
+  - orient|field
+  - separate|field
+parameters:
+  - change|polarisation
+  - decrease|brightness
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Polarisation
+  - https://en.wikipedia.org/wiki/Polarization_(waves)
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Polarisation des Lichts
+    description: >-
+      Bei einer transversalen Welle wie Licht schwingt das elektrische Feld quer zur Ausbreitungsrichtung;
+      ist diese Schwingungsrichtung geordnet statt zufällig verteilt, ist das Licht linear,
+      zirkular oder elliptisch polarisiert. Polarisiertes Licht entsteht durch Filter mit
+      richtungsabhängiger Absorption, durch Reflexion unter dem Brewster-Winkel, durch Streuung
+      oder durch Doppelbrechung, und ein zweiter Filter lässt es je nach Drehwinkel durch
+      oder sperrt es.
+    example: >-
+      Polarisationsfilter in Sonnenbrillen und Kameras gegen Spiegelungen, Flüssigkristallbildschirme,
+      3D-Kinobrillen, Spannungsoptik, polarisierende Strahlteiler, Polarimetrie zur Zuckerbestimmung
+    conditions: >-
+      Eine transversale Welle wie Licht oder Radiowellen und ein polarisierendes Element wie
+      Filter, Kristall oder reflektierende Fläche.
+    limits: >-
+      Ein idealer Linearpolarisator lässt höchstens die Hälfte von unpolarisiertem Licht durch.
+    sideEffects: >-
+      Polarisationsfilter schwächen das Licht und können das Bild polarisierter Displays unter
+      bestimmten Winkeln verdunkeln.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Polarisation of light
+    description: >-
+      In a transverse wave such as light, the electric field oscillates across the direction
+      of travel; when this direction of oscillation is ordered rather than random, the light
+      is linearly, circularly or elliptically polarised. Polarised light is produced by filters
+      with direction-dependent absorption, by reflection at Brewster's angle, by scattering
+      or by birefringence, and a second filter passes or blocks it depending on its angle.
+    example: >-
+      Polarising filters in sunglasses and cameras against reflections, liquid crystal displays,
+      3D cinema glasses, photoelastic stress analysis, polarising beam splitters, polarimetry
+      for sugar content
+    conditions: >-
+      A transverse wave such as light or radio waves, and a polarising element such as a filter,
+      crystal or reflecting surface.
+    limits: An ideal linear polariser transmits at most half of unpolarised light.
+    sideEffects: >-
+      Polarising filters attenuate the light and can black out the image of polarised displays
+      at certain angles.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

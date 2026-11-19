@@ -1,0 +1,65 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: hydrogen-peroxide
+kind: application
+home: preserve|solid
+functions:
+  - preserve|solid
+  - produce|gas
+parameters:
+  - change|colour
+uses: []
+domain:
+  id: Chemie
+  de: Chemie
+  en: Chemistry
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Wasserstoffperoxid
+  - https://en.wikipedia.org/wiki/Hydrogen_peroxide
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Wasserstoffperoxid
+    description: >-
+      Wasserstoffperoxid (H2O2) ist ein starkes Oxidationsmittel, das zu Wasser und Sauerstoff
+      zerfällt und dabei Wärme freisetzt, besonders schnell in Gegenwart von Katalysatoren
+      wie Braunstein, Silber oder dem Enzym Katalase. Es oxidiert Farbstoffe und tötet Mikroorganismen
+      ab, ohne schädliche Rückstände zu hinterlassen.
+    example: >-
+      Bleichen von Zellstoff, Textilien und Haaren, Sterilisieren von Getränkekartons bei
+      der aseptischen Abfüllung, Desinfektion, Abwasserbehandlung, Monergol-Antrieb in Raketen
+      und Torpedos
+    conditions: ''
+    limits: >-
+      Lösungen zersetzen sich bei Wärme, Licht und Verunreinigungen langsam und verlieren
+      an Wirkung.
+    sideEffects: >-
+      Konzentrierte Lösungen verätzen Haut und Augen und können mit organischen Stoffen heftig
+      reagieren.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Hydrogen peroxide
+    description: >-
+      Hydrogen peroxide (H2O2) is a strong oxidising agent that decomposes into water and
+      oxygen while releasing heat, particularly fast in the presence of catalysts such as
+      manganese dioxide, silver or the enzyme catalase. It oxidises dyes and kills microorganisms
+      without leaving harmful residues.
+    example: >-
+      Bleaching pulp, textiles and hair, sterilising beverage cartons in aseptic filling,
+      disinfection, wastewater treatment, monopropellant propulsion in rockets and torpedoes
+    conditions: ''
+    limits: >-
+      Solutions slowly decompose with heat, light and contamination and lose their effectiveness.
+    sideEffects: >-
+      Concentrated solutions burn skin and eyes and can react violently with organic substances.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

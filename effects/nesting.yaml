@@ -1,0 +1,69 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: nesting
+kind: application
+home: disassemble|solid
+functions:
+  - disassemble|solid
+parameters:
+  - decrease|quantity
+uses: []
+domain:
+  id: Geometrie
+  de: Geometrie
+  en: Geometry
+maturity: reife
+sources:
+  - https://en.wikipedia.org/wiki/Nesting_(process)
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Nesting (Verschachtelung von Zuschnitten)
+    description: >-
+      Beim Nesting werden die Umrisse der auszuschneidenden Teile so dicht wie möglich auf
+      einer Tafel, einer Bahn oder einem Rohteil angeordnet, dabei gedreht, gespiegelt oder
+      ineinandergeschoben. Rechenverfahren suchen eine Anordnung mit möglichst wenig Verschnitt
+      und berücksichtigen Mindestabstände, Faser- oder Walzrichtung und Schnittreihenfolge.
+      So sinken Materialverbrauch und Abfall, ohne dass sich das Trennverfahren selbst ändert.
+    example: >-
+      Laser-, Plasma- und Wasserstrahlschneiden von Blechtafeln, Stanzen, Zuschnitt von Stoffen
+      und Leder, Plattenaufteilung in der Holzbearbeitung
+    conditions: >-
+      Bekannte Teilegeometrien und Stückzahlen sowie ein Trennverfahren, das die gewählte
+      Anordnung schneiden kann.
+    limits: >-
+      Wegen der enormen Zahl möglicher Anordnungen lässt sich die beste Lösung meist nur näherungsweise
+      finden.
+    sideEffects: >-
+      Sehr dicht gepackte Teile können sich beim thermischen Schneiden gegenseitig erwärmen
+      und verziehen.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Nesting (cutting layout)
+    description: >-
+      In nesting, the outlines of the parts to be cut are arranged as tightly as possible
+      on a sheet, web or blank, being rotated, mirrored or fitted into one another. Algorithms
+      search for a layout with as little scrap as possible, taking into account minimum spacing,
+      grain or rolling direction and cutting sequence. Material use and waste drop without
+      changing the cutting process itself.
+    example: >-
+      Laser, plasma and waterjet cutting of sheet metal, punching, cutting of fabrics and
+      leather, panel cutting in woodworking
+    conditions: >-
+      Known part geometries and quantities and a cutting process that can follow the chosen
+      layout.
+    limits: >-
+      Because of the enormous number of possible layouts, the best solution can usually only
+      be approximated.
+    sideEffects: >-
+      Very tightly packed parts can heat each other during thermal cutting and distort.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

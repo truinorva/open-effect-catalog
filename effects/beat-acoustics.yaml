@@ -1,0 +1,62 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: beat-acoustics
+kind: effect
+home: measure|field
+functions:
+  - measure|field
+  - vibrate|gas
+parameters:
+  - measure|vibration
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Schwebung
+  - https://en.wikipedia.org/wiki/Beat_(acoustics)
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Schwebung
+    description: >-
+      Überlagern sich zwei Schwingungen mit leicht unterschiedlichen Frequenzen, verstärken
+      und schwächen sie sich im Wechsel. Die Amplitude der Summe schwankt dadurch periodisch
+      mit der Differenzfrequenz, was man bei Tönen als langsames An- und Abschwellen hört;
+      so lassen sich kleine Frequenzunterschiede sehr genau erkennen.
+    example: >-
+      Stimmen von Musikinstrumenten, Frequenzvergleich mit einer Referenzschwingung, Theremin,
+      Laser-Heterodyn-Messtechnik
+    conditions: Zwei Schwingungen ähnlicher Amplitude mit kleinem Frequenzunterschied.
+    limits: >-
+      Ist der Frequenzunterschied groß, hört man keine Schwebung mehr, sondern einen rauen
+      Klang oder zwei getrennte Töne.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Beat (acoustics)
+    description: >-
+      When two oscillations of slightly different frequency are superimposed, they alternately
+      reinforce and weaken each other. The amplitude of the sum therefore varies periodically
+      at the difference frequency, which for tones is heard as a slow swelling and fading;
+      small frequency differences can thus be detected very precisely.
+    example: >-
+      Tuning musical instruments, frequency comparison with a reference oscillation, theremin,
+      laser heterodyne measurement
+    conditions: Two oscillations of similar amplitude with a small frequency difference.
+    limits: >-
+      If the frequency difference is large, no beat is heard any more, but a rough sound or
+      two separate tones.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

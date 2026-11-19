@@ -1,0 +1,76 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: karman-vortex-street
+kind: effect
+home: measure|liquid
+functions:
+  - measure|liquid
+  - measure|gas
+  - vibrate|solid
+  - produce|field
+parameters:
+  - measure|speed
+  - increase|vibration
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: verbreitet
+sources:
+  - https://de.wikipedia.org/wiki/K%C3%A1rm%C3%A1nsche_Wirbelstra%C3%9Fe
+  - https://en.wikipedia.org/wiki/K%C3%A1rm%C3%A1n_vortex_street
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Kármánsche Wirbelstraße
+    description: >-
+      Hinter einem umströmten stumpfen Körper wie einem Zylinder lösen sich Wirbel abwechselnd
+      von der einen und der anderen Seite ab und bilden zwei gegeneinander versetzte Wirbelreihen.
+      Die Ablösefrequenz ist über einen weiten Bereich proportional zur Strömungsgeschwindigkeit
+      und umgekehrt proportional zur Körperbreite; für Kreiszylinder liegt die Strouhal-Zahl
+      bei etwa 0,2. Jede Ablösung erzeugt eine wechselnde Querkraft auf den Körper.
+    example: >-
+      Wirbelzähler zur Durchflussmessung, Singen von Freileitungen und Drähten im Wind, Schwingungen
+      von Schornsteinen und Brückenseilen, Wolkenmuster hinter Inseln
+    conditions: >-
+      Umströmung eines stumpfen Körpers oberhalb einer Reynolds-Zahl von etwa 50; darunter
+      bleibt der Nachlauf stationär.
+    limits: >-
+      Bei sehr kleinen Strömungsgeschwindigkeiten bildet sich keine regelmäßige Wirbelstraße,
+      weshalb Wirbelzähler eine Mindestgeschwindigkeit benötigen.
+    sideEffects: >-
+      Trifft die Ablösefrequenz eine Eigenfrequenz des Bauteils, entstehen Resonanzschwingungen,
+      die Schornsteine, Kabel oder Wärmetauscherrohre schädigen können; abhelfen lässt sich
+      etwa mit wendelförmigen Störleisten.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Kármán vortex street
+    description: >-
+      Behind a bluff body such as a cylinder in a flow, vortices separate alternately from
+      one side and the other, forming two staggered rows of vortices. Over a wide range, the
+      shedding frequency is proportional to the flow velocity and inversely proportional to
+      the width of the body; for a circular cylinder the Strouhal number is about 0.2. Each
+      shedding produces an alternating transverse force on the body.
+    example: >-
+      Vortex flow meters, singing of overhead lines and wires in the wind, vibration of chimneys
+      and bridge cables, cloud patterns downstream of islands
+    conditions: >-
+      Flow around a bluff body above a Reynolds number of about 50; below that, the wake stays
+      steady.
+    limits: >-
+      At very low flow velocities no regular vortex street forms, which is why vortex flow
+      meters need a minimum velocity.
+    sideEffects: >-
+      If the shedding frequency matches a natural frequency of the structure, resonant vibrations
+      can damage chimneys, cables or heat-exchanger tubes; helical strakes are one remedy.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

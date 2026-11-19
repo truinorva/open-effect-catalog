@@ -1,0 +1,74 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: shape-memory-effect
+kind: effect
+home: deform|solid
+functions:
+  - deform|solid
+  - move|solid
+  - join|solid
+  - expand|solid
+parameters:
+  - change|shape
+uses: []
+domain:
+  id: Materialwissenschaft
+  de: Materialwissenschaft
+  en: Materials science
+maturity: verbreitet
+sources:
+  - https://de.wikipedia.org/wiki/Formged%C3%A4chtnislegierung
+  - https://en.wikipedia.org/wiki/Shape-memory_alloy
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Formgedächtniseffekt
+    description: >-
+      Bestimmte Legierungen, vor allem Nickel-Titan, lassen sich im kalten Zustand scheinbar
+      bleibend verformen und nehmen beim Erwärmen über eine Umwandlungstemperatur ihre zuvor
+      eingeprägte Form wieder an. Ursache ist eine umkehrbare martensitische Umwandlung: Im
+      kalten Martensit verschiebt die Verformung nur Zwillingsbereiche, beim Rückwandeln in
+      den Austenit kehrt das Gitter in die Ausgangsgeometrie zurück und kann dabei erhebliche
+      Kräfte aufbringen.
+    example: >-
+      Rohrverbinder, die beim Erwärmen aufschrumpfen, selbstexpandierende Gefäßstützen (Stents),
+      thermische Stellglieder in Ventilen und Klappen, Aktordrähte in Kleinantrieben
+    conditions: >-
+      Legierung mit thermoelastischer martensitischer Umwandlung (z. B. NiTi, CuZnAl, CuAlNi);
+      Erwärmen über die Austenit-Endtemperatur.
+    limits: >-
+      Bei NiTi lassen sich nur Dehnungen bis etwa 8 % vollständig zurückgewinnen; stärkere
+      Verformung bleibt bestehen.
+    sideEffects: >-
+      Über viele Zyklen nimmt der nutzbare Formwechsel ab; Stellbewegungen sind langsam, weil
+      das Abkühlen Zeit braucht.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Shape-memory effect
+    description: >-
+      Certain alloys, above all nickel–titanium, can be deformed apparently permanently while
+      cold and return to a previously set shape when heated above a transformation temperature.
+      The cause is a reversible martensitic transformation: in the cold martensite, deformation
+      only shifts twin domains, and on transforming back to austenite the lattice returns
+      to its original geometry, exerting considerable force in the process.
+    example: >-
+      Pipe couplings that shrink on when warmed, self-expanding stents, thermal actuators
+      in valves and flaps, actuator wires in small drives
+    conditions: >-
+      Alloy with a thermoelastic martensitic transformation (e.g. NiTi, CuZnAl, CuAlNi); heating
+      above the austenite finish temperature.
+    limits: >-
+      In NiTi only strains up to about 8 % are fully recovered; larger deformation remains.
+    sideEffects: >-
+      The usable shape change declines over many cycles; actuation is slow because cooling
+      takes time.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

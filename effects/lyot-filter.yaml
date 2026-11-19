@@ -1,0 +1,68 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: lyot-filter
+kind: application
+home: separate|field
+functions:
+  - separate|field
+parameters:
+  - change|colour
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: ''
+sources:
+  - https://de.wikipedia.org/wiki/Lyot-Filter
+  - https://en.wikipedia.org/wiki/Lyot_filter
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Lyot-Filter
+    description: >-
+      Ein Lyot-Filter besteht aus einer Folge doppelbrechender Kristallplatten, deren Dicke
+      sich von Stufe zu Stufe verdoppelt und die jeweils durch Polarisatoren voneinander getrennt
+      sind. Jede Stufe lässt Licht nur in periodisch wiederkehrenden Wellenlängenbändern durch;
+      in der Kombination aller Stufen bleibt ein einziges, sehr schmales Durchlassband übrig.
+      Mit zusätzlichen drehbaren Verzögerungsplatten, Flüssigkristallelementen oder über die
+      Temperatur lässt sich die Durchlasswellenlänge verschieben.
+    example: >-
+      Sonnenbeobachtung im Licht der H-alpha-Linie, Koronografen, abstimmbare Filter für Spektral-
+      und Fluoreszenzbildgebung, Abstimmung von Laserwellenlängen
+    conditions: >-
+      Polarisiertes Licht und präzise geschliffene, temperaturstabilisierte Kristallplatten,
+      etwa aus Quarz oder Kalkspat.
+    limits: >-
+      Wegen der Polarisatoren geht mindestens die Hälfte unpolarisierten Lichts verloren;
+      das schmale Band gilt nur für kleine Einfallswinkel.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Lyot filter
+    description: >-
+      A Lyot filter consists of a series of birefringent crystal plates whose thickness doubles
+      from stage to stage, each separated from the next by polarisers. Each stage transmits
+      light only in periodically recurring wavelength bands; combining all the stages leaves
+      a single, very narrow passband. The transmitted wavelength can be shifted with additional
+      rotatable retarder plates, liquid crystal elements or by changing the temperature.
+    example: >-
+      Solar observation in H-alpha light, coronagraphs, tunable filters for spectral and fluorescence
+      imaging, wavelength tuning of lasers
+    conditions: >-
+      Polarised light and precisely ground, temperature-stabilised crystal plates, for example
+      of quartz or calcite.
+    limits: >-
+      Because of the polarisers, at least half of unpolarised light is lost; the narrow band
+      applies only to small angles of incidence.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

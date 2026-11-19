@@ -1,0 +1,70 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: freeze-drying
+kind: application
+home: remove|solid
+functions:
+  - remove|solid
+  - preserve|solid
+  - change-phase|solid
+parameters:
+  - decrease|humidity
+  - increase|porosity
+uses:
+  - freezing
+  - deposition-phase-transition
+domain:
+  id: Verfahrenstechnik
+  de: Verfahrenstechnik
+  en: Process engineering
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Gefriertrocknung
+  - https://en.wikipedia.org/wiki/Freeze_drying
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Gefriertrocknung
+    description: >-
+      Das Gut wird zunächst eingefroren und dann in eine Kammer mit so niedrigem Druck gebracht,
+      dass das Eis direkt in Dampf übergeht, ohne zu schmelzen. Der Dampf schlägt sich an
+      einem kalten Kondensator als Eis nieder; zurück bleibt ein poröser, trockener Körper,
+      der seine Form und viele empfindliche Inhaltsstoffe behält.
+    example: >-
+      Instantkaffee, Astronauten- und Trekkingnahrung, Impfstoffe und Antibiotika, Konservierung
+      biologischer Proben, Rettung durchnässter Archivalien
+    conditions: >-
+      Das Gut muss vollständig gefroren bleiben; der Druck liegt unter dem Tripelpunkt des
+      Wassers (etwa 6 mbar).
+    limits: >-
+      Das Verfahren ist langsam (Stunden bis Tage) und energieaufwendig, daher teuer.
+    sideEffects: >-
+      Das getrocknete Gut ist porös und stark hygroskopisch und muss feuchtedicht verpackt
+      werden.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Freeze drying
+    description: >-
+      The product is first frozen and then placed in a chamber at such low pressure that the
+      ice turns directly into vapour without melting. The vapour freezes out on a cold condenser;
+      what remains is a porous, dry body that keeps its shape and many sensitive ingredients.
+    example: >-
+      Instant coffee, astronaut and trekking food, vaccines and antibiotics, preserving biological
+      samples, saving water-damaged archive documents
+    conditions: >-
+      The product must stay completely frozen; the pressure is below the triple point of water
+      (about 6 mbar).
+    limits: >-
+      The process is slow (hours to days) and energy-intensive, hence expensive.
+    sideEffects: >-
+      The dried product is porous and highly hygroscopic and must be packed moisture-tight.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

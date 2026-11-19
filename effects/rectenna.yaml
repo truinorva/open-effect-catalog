@@ -1,0 +1,67 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: rectenna
+kind: application
+home: absorb|field
+functions:
+  - absorb|field
+  - detect|field
+parameters: []
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: wachstum
+sources:
+  - https://de.wikipedia.org/wiki/Rectenna
+  - https://en.wikipedia.org/wiki/Rectenna
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Rectenna (Gleichrichterantenne)
+    description: >-
+      Eine Rectenna verbindet eine Antenne mit einer Gleichrichterdiode, meist einer schnellen
+      Schottky-Diode, und wandelt so empfangene Mikrowellen oder Funkwellen direkt in Gleichstrom
+      um. Viele solcher Elemente zu einem Feld zusammengeschaltet können auch größere Leistungen
+      aus einem gebündelten Strahl aufnehmen.
+    example: >-
+      Drahtlose Energieübertragung mit Mikrowellen, batterielose Funksensoren und RFID-Etiketten,
+      Energiegewinnung aus Umgebungsfunk, Konzepte für Solarkraftwerke im Weltraum
+    conditions: >-
+      Antenne und Gleichrichter sind auf die Frequenz abgestimmt, und am Empfangsort herrscht
+      eine ausreichende Leistungsdichte.
+    limits: >-
+      Bei geringer Leistung sinkt der Wirkungsgrad stark, weil die Diode eine Schwellspannung
+      braucht; für Lichtfrequenzen (optische Rectennas) fehlen bisher ausreichend schnelle
+      Dioden.
+    sideEffects: >-
+      Der Gleichrichter erzeugt Oberwellen, die als Störstrahlung abgestrahlt werden können.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Rectenna
+    description: >-
+      A rectenna combines an antenna with a rectifying diode, usually a fast Schottky diode,
+      and thus converts received microwaves or radio waves directly into direct current. Many
+      such elements connected into an array can also collect larger amounts of power from
+      a focused beam.
+    example: >-
+      Wireless power transmission by microwaves, battery-free wireless sensors and RFID tags,
+      energy harvesting from ambient radio signals, concepts for space-based solar power
+    conditions: >-
+      Antenna and rectifier are matched to the frequency, and the power density at the receiver
+      is sufficient.
+    limits: >-
+      At low power the efficiency drops sharply because the diode needs a threshold voltage;
+      for optical frequencies (optical rectennas) sufficiently fast diodes are still lacking.
+    sideEffects: The rectifier generates harmonics that can be radiated as interference.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

@@ -1,0 +1,69 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: bourdon-tube
+kind: application
+home: measure|gas
+functions:
+  - measure|gas
+  - measure|liquid
+parameters:
+  - measure|pressure
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Manometrie
+  - https://en.wikipedia.org/wiki/Pressure_measurement
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Rohrfeder (Bourdonrohr)
+    description: >-
+      Eine Rohrfeder ist ein zum Kreisbogen oder zur Schraube gebogenes Rohr mit flachovalem
+      Querschnitt, das an einem Ende verschlossen ist. Steigt der Innendruck, strebt der Querschnitt
+      zur Kreisform, und das Rohr biegt sich auf; die Bewegung des freien Endes wird über
+      ein Zeigerwerk angezeigt. Im elastischen Bereich ist die Auslenkung nahezu proportional
+      zum Überdruck.
+    example: >-
+      Zeigermanometer für Druckluft, Hydraulik und Dampf, Reifendruckprüfer, Druckminderer
+      an Gasflaschen, Federthermometer mit Gas- oder Flüssigkeitsfüllung
+    conditions: >-
+      Elastisches Rohrmaterial und Drücke in dem Bereich, in dem es sich nicht bleibend verformt.
+    limits: >-
+      Überlast oder Druckstöße verformen das Rohr bleibend; schnellen Druckschwankungen kann
+      das Zeigerwerk nicht folgen.
+    sideEffects: >-
+      Pulsierender Druck lässt den Zeiger zittern und verschleißt das Zeigerwerk; Manometer
+      werden deshalb oft mit Glycerin gefüllt oder gedämpft.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Bourdon tube
+    description: >-
+      A Bourdon tube is a tube of flat-oval cross-section bent into an arc or helix and closed
+      at one end. When the internal pressure rises, the cross-section tends towards a circle
+      and the tube uncoils; the movement of its free end is shown by a pointer mechanism.
+      Within the elastic range the deflection is nearly proportional to the gauge pressure.
+    example: >-
+      Dial pressure gauges for compressed air, hydraulics and steam, tyre pressure gauges,
+      gas cylinder regulators, gas- or liquid-filled pressure-spring thermometers
+    conditions: >-
+      Elastic tube material and pressures within the range in which it does not deform permanently.
+    limits: >-
+      Overload or pressure surges deform the tube permanently; the pointer mechanism cannot
+      follow rapid pressure fluctuations.
+    sideEffects: >-
+      Pulsating pressure makes the pointer flutter and wears the movement; gauges are therefore
+      often filled with glycerine or damped.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

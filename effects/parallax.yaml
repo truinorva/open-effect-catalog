@@ -1,0 +1,68 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: parallax
+kind: effect
+home: measure|solid
+functions:
+  - measure|solid
+parameters:
+  - measure|position
+  - measure|size
+uses: []
+domain:
+  id: Geometrie
+  de: Geometrie
+  en: Geometry
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Parallaxe
+  - https://en.wikipedia.org/wiki/Parallax
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Parallaxe
+    description: >-
+      Betrachtet man einen Gegenstand von zwei verschiedenen Standorten aus, scheint er sich
+      vor dem Hintergrund zu verschieben. Der Winkel dieser scheinbaren Verschiebung ist umso
+      kleiner, je weiter der Gegenstand entfernt ist. Aus dem Abstand der beiden Beobachtungsorte,
+      der Basis, und dem gemessenen Winkel lässt sich die Entfernung durch Triangulation berechnen.
+    example: >-
+      Entfernungsmessung zu Sternen, räumliches Sehen mit zwei Augen, Stereokameras und 3D-Scanner,
+      Mischbild-Entfernungsmesser in Kameras, Spiegelskalen an Zeigerinstrumenten gegen Ablesefehler
+    conditions: >-
+      Zwei Beobachtungspunkte mit bekanntem Abstand und ein Hintergrund oder eine Bezugsrichtung.
+    limits: >-
+      Die Genauigkeit sinkt mit der Entfernung, weil der Winkel bei kurzer Basis sehr klein
+      wird.
+    sideEffects: >-
+      Schräges Ablesen von Skalen führt zu Parallaxenfehlern, und bei Sucherkameras weicht
+      der Sucherausschnitt vom aufgenommenen Bild ab.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Parallax
+    description: >-
+      Viewed from two different positions, an object appears to shift against the background.
+      The angle of this apparent shift becomes smaller the farther away the object is. From
+      the distance between the two viewpoints, the baseline, and the measured angle, the distance
+      can be calculated by triangulation.
+    example: >-
+      Measuring distances to stars, binocular depth perception, stereo cameras and 3D scanners,
+      coincidence rangefinders in cameras, mirror scales on pointer instruments against reading
+      errors
+    conditions: >-
+      Two viewpoints a known distance apart and a background or reference direction.
+    limits: >-
+      Accuracy falls with distance, because the angle becomes very small for a short baseline.
+    sideEffects: >-
+      Reading scales at an angle causes parallax errors, and in viewfinder cameras the framed
+      view differs from the recorded image.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

@@ -1,0 +1,65 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: halbach-array
+kind: application
+home: produce|field
+functions:
+  - produce|field
+  - hold|solid
+  - move|solid
+parameters:
+  - increase|magnetism
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Halbach-Array
+  - https://en.wikipedia.org/wiki/Halbach_array
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Halbach-Array
+    description: >-
+      In einem Halbach-Array sind Permanentmagnete so aneinandergereiht, dass ihre Magnetisierungsrichtung
+      von Magnet zu Magnet schrittweise weiterdreht. Die Felder der Einzelmagnete verstärken
+      sich dadurch auf einer Seite des Arrays und heben sich auf der anderen Seite weitgehend
+      auf.
+    example: >-
+      Elektromotoren und Generatoren, Magnetschwebebahnen nach dem Inductrack-Prinzip, Undulatoren
+      und Fokussiermagnete in Teilchenbeschleunigern, flexible Kühlschrankmagnete, Halbach-Zylinder
+      in tragbaren NMR-Geräten
+    conditions: ''
+    limits: >-
+      Die Montage ist aufwendig, weil sich die Magnete beim Zusammenbau stark abstoßen; die
+      ideale stetige Drehung lässt sich nur stufenweise annähern.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Halbach array
+    description: >-
+      In a Halbach array, permanent magnets are lined up so that their direction of magnetisation
+      rotates step by step from magnet to magnet. As a result, the fields of the individual
+      magnets reinforce each other on one side of the array and largely cancel on the other
+      side.
+    example: >-
+      Electric motors and generators, maglev systems based on the Inductrack principle, undulators
+      and focusing magnets in particle accelerators, flexible fridge magnets, Halbach cylinders
+      in portable NMR devices
+    conditions: ''
+    limits: >-
+      Assembly is laborious because the magnets repel each other strongly; the ideal continuous
+      rotation can only be approximated in steps.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

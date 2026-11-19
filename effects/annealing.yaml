@@ -1,0 +1,68 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: annealing
+kind: application
+home: heat|solid
+functions:
+  - heat|solid
+  - stabilise|solid
+parameters:
+  - decrease|hardness
+  - stabilise|shape
+uses: []
+domain:
+  id: Materialwissenschaft
+  de: Materialwissenschaft
+  en: Materials science
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Gl%C3%BChen
+  - https://en.wikipedia.org/wiki/Annealing_(materials_science)
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Glühen
+    description: >-
+      Beim Glühen wird ein Werkstück auf eine werkstoffabhängige Temperatur erwärmt, dort
+      gehalten und anschließend meist langsam abgekühlt. Die Wärme erlaubt den Atomen, sich
+      umzulagern: Eigenspannungen bauen sich ab, verformte Körner rekristallisieren, und Härte
+      und Sprödigkeit gehen zugunsten von Zähigkeit und Umformbarkeit zurück.
+    example: >-
+      Weichglühen von Stahl vor dem Umformen, Spannungsarmglühen von Schweißkonstruktionen,
+      Rekristallisationsglühen von kaltgewalztem Blech, Kühlen von Glas im Kühlofen, Ausheilen
+      von Halbleiterscheiben
+    conditions: >-
+      Temperatur und Haltezeit müssen zum Werkstoff und zum Ziel passen, und viele Metalle
+      brauchen Schutzgas, damit sie nicht verzundern.
+    limits: >-
+      Zu hohe Temperatur oder zu lange Haltezeit führt zu Grobkornbildung und verschlechtert
+      die Eigenschaften.
+    sideEffects: An Luft oxidiert die Oberfläche von Stahl, und sie kann entkohlen.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Annealing
+    description: >-
+      In annealing, a workpiece is heated to a temperature that depends on the material, held
+      there and then usually cooled slowly. The heat lets atoms rearrange: residual stresses
+      relax, deformed grains recrystallise, and hardness and brittleness give way to toughness
+      and formability.
+    example: >-
+      Soft annealing of steel before forming, stress-relief annealing of welded structures,
+      recrystallisation annealing of cold-rolled sheet, annealing of glass in a lehr, annealing
+      of semiconductor wafers
+    conditions: >-
+      Temperature and holding time must suit the material and the goal, and many metals need
+      a protective atmosphere so that they do not scale.
+    limits: >-
+      Too high a temperature or too long a hold causes grain coarsening and degrades the properties.
+    sideEffects: In air, the surface of steel oxidises and can decarburise.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

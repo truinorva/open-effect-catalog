@@ -1,0 +1,77 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: thermocouple
+kind: application
+home: measure|gas
+functions:
+  - measure|gas
+  - measure|solid
+  - measure|liquid
+  - detect|gas
+parameters:
+  - measure|temperature
+uses:
+  - seebeck-effect
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Thermoelement
+  - https://en.wikipedia.org/wiki/Thermocouple
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Thermoelement
+    description: >-
+      Ein Thermoelement besteht aus zwei Drähten verschiedener Metalle, die an der Messstelle
+      verbunden sind. Wegen des Seebeck-Effekts entsteht an den freien Enden eine Spannung,
+      die vom Temperaturunterschied zwischen Messstelle und Vergleichsstelle abhängt; bei
+      bekannter Vergleichstemperatur ergibt sich daraus die Temperatur der Messstelle. Thermoelemente
+      sind robust, klein und schnell und decken je nach Metallpaarung Temperaturen bis weit
+      über 1000 °C ab.
+    example: >-
+      Ofen- und Abgastemperaturmessung, Tauchfühler für Metallschmelzen, thermoelektrische
+      Zündsicherung in Gasgeräten, Temperaturmessung in Triebwerken
+    conditions: >-
+      Die Temperatur der Vergleichsstelle muss bekannt sein oder elektronisch ausgeglichen
+      werden.
+    limits: >-
+      Die Messunsicherheit liegt typischerweise bei ein bis wenigen Kelvin und damit über
+      der von Platin-Widerstandsthermometern.
+    sideEffects: >-
+      Bei hohen Temperaturen altern die Drähte und ihre Kennlinie verschiebt sich (Drift);
+      Ausgleichsleitungen müssen zum Typ passen.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Thermocouple
+    description: >-
+      A thermocouple consists of two wires of different metals joined at the measuring point.
+      Because of the Seebeck effect, a voltage appears at the free ends that depends on the
+      temperature difference between the measuring junction and the reference junction; with
+      the reference temperature known, the temperature of the measuring point follows. Thermocouples
+      are robust, small and fast and, depending on the metal pair, cover temperatures far
+      above 1000 °C.
+    example: >-
+      Furnace and exhaust gas temperature measurement, immersion probes for molten metal,
+      thermoelectric flame failure devices in gas appliances, temperature measurement in jet
+      engines
+    conditions: >-
+      The temperature of the reference junction must be known or compensated electronically.
+    limits: >-
+      The measurement uncertainty is typically one to a few kelvin, higher than that of platinum
+      resistance thermometers.
+    sideEffects: >-
+      At high temperatures the wires age and their characteristic shifts (drift); extension
+      cables must match the type.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

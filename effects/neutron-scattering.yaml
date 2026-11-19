@@ -1,0 +1,74 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: neutron-scattering
+kind: effect
+home: measure|solid
+functions:
+  - measure|solid
+  - measure|liquid
+  - detect|solid
+parameters:
+  - measure|position
+  - measure|magnetism
+  - measure|pressure
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: nische
+sources:
+  - https://de.wikipedia.org/wiki/Neutronenstreuung
+  - https://en.wikipedia.org/wiki/Neutron_scattering
+  - https://en.wikipedia.org/wiki/Neutron_diffraction
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Neutronenstreuung und Neutronenbeugung
+    description: >-
+      Neutronen tragen keine elektrische Ladung und dringen deshalb tief in Materie ein; gestreut
+      werden sie an den Atomkernen und an magnetischen Momenten. Trifft ein Neutronenstrahl
+      auf ein Kristallgitter, überlagern sich die gestreuten Wellen zu Beugungsreflexen, aus
+      deren Lage und Stärke sich Kristall- und Magnetstruktur ablesen lassen. Weil Neutronen
+      auch leichte Atome wie Wasserstoff gut erfassen und benachbarte Elemente oder Isotope
+      unterscheiden, ergänzen sie die Röntgenbeugung.
+    example: >-
+      Messung von Eigenspannungen tief in Schweißnähten und Bauteilen, Lage von Wasserstoff
+      in Werkstoffen und Biomolekülen, Bestimmung magnetischer Strukturen, Neutronenradiografie
+      von Turbinenschaufeln und Batterien
+    conditions: >-
+      Eine starke Neutronenquelle wie ein Forschungsreaktor oder eine Spallationsquelle.
+    limits: >-
+      Neutronenquellen sind groß und teuer, und selbst dort ist der Neutronenfluss gering,
+      sodass Messungen lange dauern und oft große Proben brauchen.
+    sideEffects: Die Probe kann durch Neutroneneinfang radioaktiv aktiviert werden.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Neutron scattering and diffraction
+    description: >-
+      Neutrons carry no electric charge and therefore penetrate deep into matter; they are
+      scattered by atomic nuclei and by magnetic moments. When a neutron beam strikes a crystal
+      lattice, the scattered waves combine into diffraction peaks whose positions and intensities
+      reveal the crystal and magnetic structure. Because neutrons also see light atoms such
+      as hydrogen well and distinguish neighbouring elements or isotopes, they complement
+      X-ray diffraction.
+    example: >-
+      Measuring residual stresses deep inside welds and components, locating hydrogen in materials
+      and biomolecules, determining magnetic structures, neutron radiography of turbine blades
+      and batteries
+    conditions: >-
+      A strong neutron source such as a research reactor or a spallation source.
+    limits: >-
+      Neutron sources are large and expensive, and even there the neutron flux is low, so
+      measurements take long and often need large samples.
+    sideEffects: The sample can become radioactive through neutron capture.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

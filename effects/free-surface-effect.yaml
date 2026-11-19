@@ -1,0 +1,63 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: free-surface-effect
+kind: effect
+home: move|liquid
+functions:
+  - move|liquid
+  - rotate|solid
+parameters:
+  - change|position
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Freie_Oberfl%C3%A4che_(Schifffahrt)
+  - https://en.wikipedia.org/wiki/Free_surface_effect
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Effekt der freien Oberfläche
+    description: >-
+      Ist ein Tank oder Raum nur teilweise mit Flüssigkeit gefüllt, fließt diese bei Schräglage
+      zur tieferen Seite und verlagert den Schwerpunkt dorthin. Das wirkt wie ein höher liegender
+      Schwerpunkt und verringert die Stabilität eines Schiffs oder Fahrzeugs, weil das aufrichtende
+      Moment kleiner wird.
+    example: >-
+      Stabilitätsrechnung für Schiffe mit teilgefüllten Tanks, Schlingertanks, Schwallwände
+      in Tankwagen, Wassereinbruch auf Autodecks von Fähren
+    conditions: >-
+      Teilweise gefüllter Behälter, in dem die Flüssigkeit seitlich frei fließen kann.
+    limits: >-
+      Der Effekt hängt vor allem von der Breite der freien Oberfläche ab (mit der dritten
+      Potenz), kaum von der Flüssigkeitsmenge; volle oder leere Tanks zeigen ihn nicht.
+    sideEffects: Schwappende Flüssigkeit belastet Tankwände und Schotten mit Stoßkräften.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Free surface effect
+    description: >-
+      When a tank or compartment is only partly filled with liquid, the liquid flows to the
+      lower side as the vessel heels and shifts the centre of gravity there. This acts like
+      a raised centre of gravity and reduces the stability of a ship or vehicle, because the
+      righting moment becomes smaller.
+    example: >-
+      Stability calculations for ships with partly filled tanks, anti-roll tanks, baffles
+      in road tankers, water ingress on the car decks of ferries
+    conditions: A partly filled container in which the liquid can flow sideways freely.
+    limits: >-
+      The effect depends mainly on the width of the free surface (to the third power), hardly
+      on the amount of liquid; full or empty tanks do not show it.
+    sideEffects: Sloshing liquid subjects tank walls and bulkheads to impact loads.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

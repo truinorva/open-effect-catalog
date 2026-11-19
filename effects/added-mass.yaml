@@ -1,0 +1,67 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: added-mass
+kind: effect
+home: vibrate|solid
+functions:
+  - vibrate|solid
+  - move|liquid
+parameters:
+  - increase|mass
+  - decrease|vibration
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Zus%C3%A4tzliche_Masse
+  - https://en.wikipedia.org/wiki/Added_mass
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Zusätzliche Masse (hydrodynamische Masse)
+    description: >-
+      Wird ein Körper in einem Fluid beschleunigt oder abgebremst, muss er einen Teil des
+      umgebenden Fluids mitbeschleunigen. Nach außen wirkt das, als wäre der Körper schwerer:
+      Er reagiert träger auf Kräfte, und die Eigenfrequenzen von Bauteilen, die in Wasser
+      schwingen, liegen deutlich tiefer als an Luft.
+    example: >-
+      Auslegung von Schiffen, Offshore-Bauwerken und Unterwasserfahrzeugen, Schwingungsberechnung
+      von Rohrbündeln in Wärmetauschern, Bewegung von Gasblasen und Ballonen
+    conditions: >-
+      Instationäre Bewegung, also Beschleunigen, Bremsen oder Schwingen, in einem Fluid, dessen
+      Dichte nicht vernachlässigbar ist.
+    limits: >-
+      Für dichte Körper in Luft ist der Effekt meist vernachlässigbar; bedeutsam wird er,
+      wenn die Dichte des Fluids mit der des Körpers vergleichbar ist.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Added mass (virtual mass)
+    description: >-
+      When a body accelerates or decelerates in a fluid, it has to accelerate part of the
+      surrounding fluid along with it. To the outside it behaves as if it were heavier: it
+      responds more sluggishly to forces, and the natural frequencies of components vibrating
+      in water are markedly lower than in air.
+    example: >-
+      Design of ships, offshore structures and underwater vehicles, vibration analysis of
+      tube bundles in heat exchangers, motion of gas bubbles and balloons
+    conditions: >-
+      Unsteady motion, that is accelerating, braking or vibrating, in a fluid whose density
+      is not negligible.
+    limits: >-
+      For dense bodies in air the effect is usually negligible; it becomes important when
+      the fluid density is comparable to that of the body.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

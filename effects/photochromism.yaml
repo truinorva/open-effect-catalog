@@ -1,0 +1,69 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: photochromism
+kind: effect
+home: dilute|field
+functions:
+  - dilute|field
+  - detect|field
+parameters:
+  - change|colour
+  - decrease|translucency
+uses: []
+domain:
+  id: Chemie
+  de: Chemie
+  en: Chemistry
+maturity: verbreitet
+sources:
+  - https://de.wikipedia.org/wiki/Photochromie
+  - https://en.wikipedia.org/wiki/Photochromism
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Photochromie
+    description: >-
+      Photochrome Stoffe ändern ihre Farbe bzw. Lichtdurchlässigkeit umkehrbar, wenn sie Licht
+      einer bestimmten Wellenlänge ausgesetzt werden, meist UV-Licht. Dabei wandelt sich ein
+      Molekül oder Kristallbaustein in eine andere Form mit anderem Absorptionsspektrum um,
+      etwa durch Ringöffnung in Spiropyranen und Naphthopyranen oder durch Bildung von Silberclustern
+      in silberhalogenidhaltigen Gläsern. Im Dunkeln oder unter Licht einer anderen Wellenlänge
+      kehrt der Stoff in den Ausgangszustand zurück.
+    example: >-
+      Selbsttönende Brillengläser, UV-Indikatoren auf Textilien und Verpackungen, Sicherheitsmerkmale,
+      optische Schalter und Datenspeicher in der Forschung
+    conditions: UV- oder kurzwelliges sichtbares Licht zur Aktivierung.
+    limits: >-
+      Bei Wärme dunkeln viele photochrome Gläser weniger stark ab, bei Kälte hellen sie langsamer
+      auf, und die Farbstoffe ermüden über viele Zyklen.
+    sideEffects: >-
+      Hinter Autoscheiben, die UV-Licht zurückhalten, tönen photochrome Brillen kaum ein.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Photochromism
+    description: >-
+      Photochromic substances change their colour or light transmission reversibly when exposed
+      to light of a certain wavelength, usually UV. A molecule or crystal unit converts into
+      another form with a different absorption spectrum, for example by ring opening in spiropyrans
+      and naphthopyrans or by the formation of silver clusters in glasses containing silver
+      halide. In the dark or under light of another wavelength the substance returns to its
+      initial state.
+    example: >-
+      Self-tinting spectacle lenses, UV indicators on textiles and packaging, security features,
+      optical switches and data storage in research
+    conditions: UV or short-wavelength visible light for activation.
+    limits: >-
+      Many photochromic lenses darken less in warm conditions and clear more slowly in the
+      cold, and the dyes fatigue over many cycles.
+    sideEffects: >-
+      Behind car windscreens that block UV light, photochromic glasses hardly tint.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

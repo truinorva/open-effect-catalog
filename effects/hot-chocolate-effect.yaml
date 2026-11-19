@@ -1,0 +1,63 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: hot-chocolate-effect
+kind: effect
+home: detect|gas
+functions:
+  - detect|gas
+  - measure|liquid
+parameters:
+  - measure|concentration
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: nische
+sources:
+  - https://de.wikipedia.org/wiki/Cappuccino-Effekt
+  - https://en.wikipedia.org/wiki/Hot_chocolate_effect
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Cappuccino-Effekt
+    description: >-
+      Klopft man mit einem Löffel an eine Tasse, in die gerade Kakaopulver oder Instantkaffee
+      eingerührt wurde, steigt der Ton in den folgenden Sekunden deutlich an. Beim Einrühren
+      entstehen viele kleine Gasblasen, die die Flüssigkeit stark kompressibel machen und
+      die Schallgeschwindigkeit darin drastisch senken; während die Blasen aufsteigen und
+      entweichen, steigt die Schallgeschwindigkeit wieder und mit ihr die Tonhöhe der Resonanz.
+    example: >-
+      Anklopfen an Tassen mit frisch eingerührtem Kakao oder Instantkaffee, frisch eingeschenkte
+      kohlensäurehaltige Getränke, Anschauungsversuch zur Schallgeschwindigkeit in blasenhaltigen
+      Flüssigkeiten
+    conditions: >-
+      Fein verteilte Gasblasen in einer Flüssigkeit; schon ein geringer Gasanteil genügt.
+    limits: Der Effekt verschwindet, sobald die Blasen aufgestiegen sind.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Hot chocolate effect
+    description: >-
+      Tapping a spoon on a cup into which cocoa powder or instant coffee has just been stirred,
+      the tone rises noticeably over the following seconds. Stirring creates many small gas
+      bubbles that make the liquid much more compressible and drastically lower the speed
+      of sound in it; as the bubbles rise and escape, the speed of sound recovers and with
+      it the pitch of the resonance.
+    example: >-
+      Tapping cups of freshly stirred cocoa or instant coffee, freshly poured carbonated drinks,
+      demonstration of the speed of sound in bubbly liquids
+    conditions: >-
+      Finely dispersed gas bubbles in a liquid; even a small gas fraction is enough.
+    limits: The effect disappears once the bubbles have risen out.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

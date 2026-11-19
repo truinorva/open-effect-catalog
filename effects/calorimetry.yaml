@@ -1,0 +1,66 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: calorimetry
+kind: application
+home: measure|solid
+functions:
+  - measure|solid
+  - measure|liquid
+  - measure|gas
+parameters:
+  - measure|heat-capacity
+  - measure|temperature
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Kalorimetrie
+  - https://en.wikipedia.org/wiki/Calorimetry
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Kalorimetrie
+    description: >-
+      Die Kalorimetrie bestimmt Wärmemengen, die bei chemischen Reaktionen, Phasenübergängen
+      oder beim Erwärmen eines Stoffes umgesetzt werden. Dazu wird die Probe in einer gut
+      isolierten Umgebung mit bekannter Wärmekapazität untersucht und die dabei auftretende
+      Temperaturänderung oder der zum Temperaturausgleich nötige Wärmestrom gemessen.
+    example: >-
+      Brennwertbestimmung von Brennstoffen und Lebensmitteln (Bombenkalorimeter), Dynamische
+      Differenzkalorimetrie (DSC) für Schmelzpunkte und Glasübergänge, Reaktionskalorimetrie
+      für die Prozesssicherheit
+    conditions: >-
+      Gute Wärmeisolierung oder genau bekannte Wärmeverluste sowie eine präzise Temperaturmessung.
+    limits: >-
+      Langsame Vorgänge mit sehr kleinem Wärmeumsatz lassen sich nur schwer von Wärmeverlusten
+      unterscheiden.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Calorimetry
+    description: >-
+      Calorimetry determines the amounts of heat released or absorbed in chemical reactions,
+      phase transitions or when a substance is heated. The sample is examined in a well-insulated
+      environment of known heat capacity, and the resulting temperature change or the heat
+      flow needed to balance the temperature is measured.
+    example: >-
+      Calorific value of fuels and foods (bomb calorimeter), differential scanning calorimetry
+      (DSC) for melting points and glass transitions, reaction calorimetry for process safety
+    conditions: >-
+      Good thermal insulation or precisely known heat losses, and accurate temperature measurement.
+    limits: >-
+      Slow processes with very small heat release are hard to distinguish from heat losses.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

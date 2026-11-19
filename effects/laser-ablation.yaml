@@ -1,0 +1,79 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: laser-ablation
+kind: application
+home: remove|solid
+functions:
+  - remove|solid
+  - produce|particles
+  - produce|solid
+  - measure|solid
+parameters: []
+uses:
+  - laser
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Laserablation
+  - https://en.wikipedia.org/wiki/Laser_ablation
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Laserablation
+    description: >-
+      Bei der Laserablation trifft ein meist gepulster, stark fokussierter Laserstrahl auf
+      eine Oberfläche, deren oberste Schicht das Licht absorbiert und schlagartig verdampft
+      oder als Plasma abgesprengt wird. Je kürzer und intensiver die Pulse sind, desto weniger
+      Wärme dringt in das darunterliegende Material, so dass sich sehr fein und präzise abtragen
+      lässt. Der abgetragene Dampf lässt sich auch nutzen, etwa um dünne Schichten auf einem
+      Substrat abzuscheiden, Nanopartikel zu erzeugen oder die Zusammensetzung des Materials
+      zu analysieren.
+    example: >-
+      Laserreinigung von Formen und Denkmälern, Entfernen von Lack und Rost, refraktive Augenchirurgie
+      (LASIK), Strukturieren von Dünnschichtsolarzellen, gepulste Laserdeposition, Laserablation
+      mit ICP-Massenspektrometrie
+    conditions: >-
+      Ausreichende Absorption der Laserwellenlänge im Material und eine Pulsenergiedichte
+      oberhalb der Abtragsschwelle.
+    limits: >-
+      Die Abtragsrate pro Puls ist gering, so dass großflächiger Abtrag viel Zeit braucht;
+      stark reflektierende Werkstoffe sind schwer zu bearbeiten.
+    sideEffects: >-
+      Abgetragenes Material schlägt sich in der Umgebung nieder und kann gesundheitsschädliche
+      Dämpfe und Feinstäube bilden; längere Pulse erzeugen eine Wärmeeinflusszone.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Laser ablation
+    description: >-
+      In laser ablation, a usually pulsed, tightly focused laser beam hits a surface whose
+      top layer absorbs the light and abruptly evaporates or is blasted off as plasma. The
+      shorter and more intense the pulses, the less heat penetrates into the material underneath,
+      so material can be removed very finely and precisely. The ablated vapour can also be
+      put to use, for example to deposit thin films on a substrate, to produce nanoparticles
+      or to analyse the composition of the material.
+    example: >-
+      Laser cleaning of moulds and monuments, removing paint and rust, refractive eye surgery
+      (LASIK), scribing of thin-film solar cells, pulsed laser deposition, laser ablation
+      ICP mass spectrometry
+    conditions: >-
+      Sufficient absorption of the laser wavelength in the material and a pulse fluence above
+      the ablation threshold.
+    limits: >-
+      The removal rate per pulse is small, so removing material over large areas takes a long
+      time; highly reflective materials are hard to process.
+    sideEffects: >-
+      Ablated material deposits in the surroundings and can form harmful fumes and fine dust;
+      longer pulses create a heat-affected zone.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

@@ -20,6 +20,11 @@ sources:
 authors:
   - Eric Dirk Pryputsch
 origin: triz-consulting
+review:
+  status: geprueft
+  by:
+    - TRIZ Consulting Group
+  date: '2026-11-11'
 text:
   de:
     name: Sichtklassierung (Luftstrom)

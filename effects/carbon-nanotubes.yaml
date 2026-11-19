@@ -1,0 +1,75 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: carbon-nanotubes
+kind: application
+home: stabilise|solid
+functions:
+  - stabilise|solid
+  - detect|gas
+  - produce|field
+parameters:
+  - increase|strength
+  - increase|rigidity
+  - increase|conductivity
+  - increase|heat-conduction
+uses: []
+domain:
+  id: Materialwissenschaft
+  de: Materialwissenschaft
+  en: Materials science
+maturity: wachstum
+sources:
+  - https://de.wikipedia.org/wiki/Kohlenstoffnanor%C3%B6hre
+  - https://en.wikipedia.org/wiki/Carbon_nanotube
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Kohlenstoffnanoröhren
+    description: >-
+      Kohlenstoffnanoröhren sind zu nahtlosen Zylindern aufgerollte Graphenlagen mit Durchmessern
+      von etwa einem bis zu einigen zehn Nanometern. Dank der sehr festen Kohlenstoffbindungen
+      erreichen sie bei geringer Dichte extrem hohe Zugfestigkeit und Steifigkeit; je nach
+      Aufrollwinkel sind sie metallisch oder halbleitend und leiten Wärme entlang ihrer Achse
+      sehr gut.
+    example: >-
+      Leitzusätze in Elektroden von Lithium-Ionen-Batterien, verstärkte und antistatische
+      Kunststoffe, Sportgeräte aus Verbundwerkstoff, Gassensoren, Feldemissionsquellen, Buckypaper
+    conditions: >-
+      Gute Dispersion und Anbindung an die Matrix, wenn die Röhren in Verbundwerkstoffen wirken
+      sollen.
+    limits: >-
+      Die Eigenschaften einzelner Röhren lassen sich im Bauteil nur teilweise nutzen, weil
+      sie verklumpen und schlecht an die Matrix ankoppeln.
+    sideEffects: >-
+      Lange, starre Nanoröhren stehen im Verdacht, beim Einatmen ähnlich wie Asbestfasern
+      die Lunge zu schädigen.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Carbon nanotubes
+    description: >-
+      Carbon nanotubes are graphene sheets rolled into seamless cylinders with diameters from
+      about one to several tens of nanometres. Thanks to the very strong carbon bonds they
+      reach extremely high tensile strength and stiffness at low density; depending on the
+      rolling angle they are metallic or semiconducting, and they conduct heat very well along
+      their axis.
+    example: >-
+      Conductive additives in lithium-ion battery electrodes, reinforced and antistatic plastics,
+      composite sports equipment, gas sensors, field emission sources, buckypaper
+    conditions: >-
+      Good dispersion and bonding to the matrix if the tubes are to work in composites.
+    limits: >-
+      The properties of individual tubes can only partly be exploited in a component because
+      they agglomerate and couple poorly to the matrix.
+    sideEffects: >-
+      Long, rigid nanotubes are suspected of harming the lungs in a similar way to asbestos
+      fibres when inhaled.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

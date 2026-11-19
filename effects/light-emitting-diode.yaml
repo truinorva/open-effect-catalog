@@ -1,0 +1,71 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: light-emitting-diode
+kind: application
+home: produce|field
+functions:
+  - produce|field
+parameters:
+  - increase|brightness
+  - change|colour
+uses:
+  - luminescence
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Leuchtdiode
+  - https://en.wikipedia.org/wiki/Light-emitting_diode
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Leuchtdiode (LED)
+    description: >-
+      Eine Leuchtdiode ist ein Halbleiterbauelement mit einem p-n-Übergang, an dem bei angelegter
+      Durchlassspannung Elektronen und Löcher zusammentreffen und rekombinieren. Dabei wird
+      die Energie als Licht abgegeben, dessen Wellenlänge durch die Bandlücke des Halbleiters
+      festgelegt ist. Weißes Licht entsteht meist, indem ein Leuchtstoff einen Teil des blauen
+      Lichts in längere Wellenlängen umwandelt.
+    example: >-
+      Allgemeinbeleuchtung, Autoscheinwerfer, Displays und Hintergrundbeleuchtung, Anzeige-
+      und Signalleuchten, Optokoppler, UV-Härtung und UV-Entkeimung, Pflanzenbeleuchtung
+    conditions: >-
+      Gleichstrom in Durchlassrichtung oberhalb der Schwellenspannung, die von der Bandlücke
+      abhängt.
+    limits: >-
+      Die Lichtausbeute sinkt mit steigender Temperatur und bei sehr hohen Stromdichten; die
+      Wärme muss deshalb über einen Kühlkörper abgeführt werden.
+    sideEffects: >-
+      Hohe Blauanteile können blenden, und gepulst gedimmte LEDs flimmern unter Umständen
+      sichtbar.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Light-emitting diode (LED)
+    description: >-
+      A light-emitting diode is a semiconductor device with a p-n junction at which, under
+      forward voltage, electrons and holes meet and recombine. The energy is released as light
+      whose wavelength is set by the band gap of the semiconductor. White light is usually
+      produced by a phosphor that converts part of the blue light into longer wavelengths.
+    example: >-
+      General lighting, car headlights, displays and backlighting, indicator and signal lights,
+      optocouplers, UV curing and UV disinfection, plant lighting
+    conditions: >-
+      Forward direct current above the threshold voltage, which depends on the band gap.
+    limits: >-
+      Luminous efficacy falls with rising temperature and at very high current densities;
+      heat therefore has to be removed via a heat sink.
+    sideEffects: >-
+      High proportions of blue light can cause glare, and LEDs dimmed by pulsing may flicker
+      visibly.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

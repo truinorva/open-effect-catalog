@@ -1,0 +1,73 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: vitrification
+kind: effect
+home: change-phase|liquid
+functions:
+  - change-phase|liquid
+  - preserve|solid
+  - hold|liquid
+  - compress|solid
+parameters:
+  - change|state
+  - decrease|porosity
+uses: []
+domain:
+  id: Materialwissenschaft
+  de: Materialwissenschaft
+  en: Materials science
+maturity: verbreitet
+sources:
+  - https://de.wikipedia.org/wiki/Vitrifizierung
+  - https://en.wikipedia.org/wiki/Vitrification
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Vitrifizierung (Verglasung)
+    description: >-
+      Wird eine Schmelze oder Lösung so schnell abgekühlt, dass sich keine Kristalle bilden
+      können, erstarrt sie zu einem amorphen Glas. Die Teilchen behalten die ungeordnete Struktur
+      der Flüssigkeit, werden aber unbeweglich; Glasbildner wie Siliciumdioxid oder hohe Konzentrationen
+      von Schutzstoffen erleichtern das. So lassen sich Stoffe dicht und dauerhaft einschließen,
+      Zellen ohne schädliche Eiskristalle einfrieren und keramische Scherben durch eine Glasphase
+      porenfrei machen.
+    example: >-
+      Verglasung hochradioaktiver Abfälle in Borosilikatglas, Kryokonservierung von Eizellen
+      und Embryonen, Brennen von Porzellan und Steinzeug, Einschmelzen von Asbest und Filterstäuben
+    conditions: >-
+      Abkühlung schneller als die Kristallisation oder ausreichend Glasbildner bzw. Schutzstoffe.
+    limits: >-
+      Bei erhöhter Temperatur kann das Glas mit der Zeit doch kristallisieren (Entglasung).
+    sideEffects: >-
+      Das Einschmelzen erfordert viel Energie; bei der Kryokonservierung können die Schutzstoffe
+      für Zellen giftig sein.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Vitrification
+    description: >-
+      If a melt or solution is cooled so quickly that no crystals can form, it solidifies
+      into an amorphous glass. The particles retain the disordered structure of the liquid
+      but become immobile; glass formers such as silica or high concentrations of protective
+      agents make this easier. Substances can thus be enclosed tightly and permanently, cells
+      frozen without harmful ice crystals, and ceramic bodies made pore-free by a glassy phase.
+    example: >-
+      Vitrification of high-level radioactive waste in borosilicate glass, cryopreservation
+      of oocytes and embryos, firing of porcelain and stoneware, melting down asbestos and
+      filter dust
+    conditions: >-
+      Cooling faster than crystallisation, or sufficient glass formers or protective agents.
+    limits: >-
+      At elevated temperature the glass may eventually crystallise after all (devitrification).
+    sideEffects: >-
+      Melting requires a lot of energy; in cryopreservation the protective agents can be toxic
+      to cells.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

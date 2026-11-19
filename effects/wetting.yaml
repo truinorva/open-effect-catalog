@@ -1,0 +1,62 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: wetting
+kind: effect
+home: move|liquid
+functions:
+  - move|liquid
+  - join|solid
+  - separate|particles
+  - remove|solid
+parameters:
+  - change|shape
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Benetzung
+  - https://en.wikipedia.org/wiki/Wetting
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Benetzung
+    description: >-
+      Ob sich eine Flüssigkeit auf einem Festkörper ausbreitet oder zu Tropfen zusammenzieht,
+      hängt vom Gleichgewicht der Grenzflächenenergien zwischen Festkörper, Flüssigkeit und
+      Gas ab; es zeigt sich im Kontaktwinkel. Unter 90° gilt eine Fläche als benetzbar, darüber
+      als nicht benetzbar, und eine raue Oberflächenstruktur verstärkt beide Tendenzen. Über
+      Reinigung, Beschichtung oder Plasmabehandlung lässt sich die Benetzung gezielt einstellen.
+    example: >-
+      Löten mit Flussmittel, Kleben und Lackieren nach Plasmavorbehandlung, Flotation von
+      Erzen, wasserabweisende Textilien, selbstreinigende Oberflächen, Tintenstrahldruck
+    conditions: ''
+    limits: Schon dünne Verunreinigungen verändern den Kontaktwinkel stark.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Wetting
+    description: >-
+      Whether a liquid spreads out on a solid or contracts into droplets depends on the balance
+      of interfacial energies between solid, liquid and gas; it shows in the contact angle.
+      Below 90° a surface is considered wettable, above it non-wettable, and a rough surface
+      texture amplifies both tendencies. Wetting can be adjusted deliberately by cleaning,
+      coating or plasma treatment.
+    example: >-
+      Soldering with flux, bonding and painting after plasma pretreatment, flotation of ores,
+      water-repellent textiles, self-cleaning surfaces, inkjet printing
+    conditions: ''
+    limits: Even thin contamination changes the contact angle considerably.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

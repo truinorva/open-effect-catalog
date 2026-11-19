@@ -1,0 +1,63 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: air-lubrication
+kind: application
+home: move|solid
+functions:
+  - move|solid
+parameters:
+  - decrease|drag
+  - decrease|friction
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: wachstum
+sources:
+  - https://de.wikipedia.org/wiki/Luftschmierung_f%C3%BCr_Schiffe
+  - https://en.wikipedia.org/wiki/Mitsubishi_Air_Lubrication_System
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Luftschmierung für Schiffe
+    description: >-
+      Am flachen Schiffsboden wird Druckluft ausgeblasen, die einen Teppich aus Blasen oder
+      eine dünne Luftschicht zwischen Rumpf und Wasser bildet. Weil Luft eine viel geringere
+      Dichte und Viskosität hat als Wasser, sinkt der Reibungswiderstand des benetzten Rumpfes
+      und damit der Kraftstoffverbrauch.
+    example: >-
+      Massengutfrachter, Tanker, Kreuzfahrtschiffe und Flüssiggastanker mit Luftschmiersystemen
+    conditions: Ein großer, flacher Schiffsboden, unter dem sich die Luft halten kann.
+    limits: >-
+      Die Einsparung von einigen Prozent wird teilweise durch die Leistung der Gebläse aufgezehrt,
+      und bei Seegang entweicht die Luft leichter seitlich.
+    sideEffects: >-
+      Luftblasen, die in den Propeller gelangen, können dessen Wirkungsgrad mindern und Vibrationen
+      verursachen.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Air lubrication for ships
+    description: >-
+      Compressed air is released along the flat bottom of a ship, forming a carpet of bubbles
+      or a thin air layer between hull and water. Because air has a much lower density and
+      viscosity than water, the frictional resistance of the wetted hull falls, and with it
+      fuel consumption.
+    example: >-
+      Bulk carriers, tankers, cruise ships and LNG carriers fitted with air lubrication systems
+    conditions: A large, flat bottom under which the air can stay.
+    limits: >-
+      Savings of a few percent are partly eaten up by the blower power, and in a seaway the
+      air escapes sideways more easily.
+    sideEffects: >-
+      Air bubbles drawn into the propeller can reduce its efficiency and cause vibration.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

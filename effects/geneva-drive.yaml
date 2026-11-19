@@ -1,0 +1,62 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: geneva-drive
+kind: application
+home: rotate|solid
+functions:
+  - rotate|solid
+  - hold|solid
+parameters:
+  - change|orientation
+uses: []
+domain:
+  id: ''
+  de: ''
+  en: ''
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Malteserkreuzgetriebe
+  - https://en.wikipedia.org/wiki/Geneva_drive
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Malteserkreuzgetriebe
+    description: >-
+      Ein ständig umlaufendes Antriebsrad greift mit einem Stift in die radialen Schlitze
+      eines Sternrads (Malteserkreuz) und dreht es bei jeder Umdrehung um genau einen Schritt
+      weiter. Zwischen den Schritten liegt ein Sperrbogen des Antriebsrads in einer Aussparung
+      des Sternrads und hält es in seiner Lage fest.
+    example: >-
+      Filmtransport in Filmprojektoren, Rundschalttische in Montageautomaten, Werkzeugwechsler,
+      Aufzugsbegrenzung in Uhren
+    conditions: ''
+    limits: >-
+      Die Schrittzahl pro Umdrehung ist durch die Schlitzzahl fest vorgegeben; bei hohen Drehzahlen
+      werden die Ruckspitzen zu groß.
+    sideEffects: Stöße beim Eintritt des Stifts verursachen Verschleiß und Geräusche.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Geneva drive
+    description: >-
+      A continuously rotating drive wheel engages with a pin in the radial slots of a star
+      wheel (Maltese cross) and advances it by exactly one step per revolution. Between steps,
+      a locking arc on the drive wheel sits in a recess of the star wheel and holds it in
+      position.
+    example: >-
+      Film advance in film projectors, rotary indexing tables in assembly machines, tool changers,
+      stopwork in watches
+    conditions: ''
+    limits: >-
+      The number of steps per revolution is fixed by the number of slots; at high speeds the
+      jerk peaks become too large.
+    sideEffects: Impacts as the pin enters cause wear and noise.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

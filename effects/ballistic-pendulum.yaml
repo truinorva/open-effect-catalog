@@ -1,0 +1,66 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: ballistic-pendulum
+kind: application
+home: measure|solid
+functions:
+  - measure|solid
+  - stop|solid
+parameters:
+  - measure|speed
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: niedergang
+sources:
+  - https://de.wikipedia.org/wiki/Ballistisches_Pendel
+  - https://en.wikipedia.org/wiki/Ballistic_pendulum
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Ballistisches Pendel
+    description: >-
+      Ein Geschoss wird in einen schweren, pendelnd aufgehängten Klotz geschossen und bleibt
+      darin stecken. Aus der Impulserhaltung beim Einschlag und der Höhe, um die das Pendel
+      danach ausschwingt, lässt sich die Geschossgeschwindigkeit berechnen, ohne sie direkt
+      zu messen; der Energiesatz gilt dabei nur für das Ausschwingen, weil beim Einschlag
+      viel Energie in Verformung und Wärme übergeht.
+    example: >-
+      Historische Messung von Mündungsgeschwindigkeiten, Physikunterricht, ballistischer Mörser
+      zum Vergleich der Stärke von Sprengstoffen
+    conditions: >-
+      Eine Pendelmasse, die viel größer ist als die Geschossmasse, und ein vollständiges Steckenbleiben
+      des Geschosses.
+    limits: >-
+      Das Verfahren ist umständlich und ungenauer als elektronische Lichtschranken oder Radarmessgeräte.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Ballistic pendulum
+    description: >-
+      A projectile is fired into a heavy block suspended as a pendulum and stays embedded
+      in it. From conservation of momentum at impact and the height to which the pendulum
+      then swings, the projectile's velocity can be calculated without measuring it directly;
+      energy conservation applies only to the swing, because much energy goes into deformation
+      and heat at impact.
+    example: >-
+      Historical measurement of muzzle velocities, physics teaching, ballistic mortar for
+      comparing the strength of explosives
+    conditions: >-
+      A pendulum mass much larger than the projectile mass, and the projectile staying fully
+      embedded.
+    limits: >-
+      The method is cumbersome and less accurate than electronic light gates or radar chronographs.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

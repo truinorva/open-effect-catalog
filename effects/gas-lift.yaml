@@ -1,0 +1,64 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: gas-lift
+kind: application
+home: move|liquid
+functions:
+  - move|liquid
+  - move|particles
+parameters:
+  - decrease|density
+uses:
+  - hydrostatic-pressure
+domain:
+  id: Verfahrenstechnik
+  de: Verfahrenstechnik
+  en: Process engineering
+maturity: reife
+sources:
+  - https://en.wikipedia.org/wiki/Gas_lift
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Gaslift (Mammutpumpe)
+    description: >-
+      Gas wird unten in ein Steigrohr eingeblasen, das in eine Flüssigkeit eintaucht oder
+      aus einer Lagerstätte gespeist wird. Das Gas-Flüssigkeits-Gemisch im Rohr ist leichter
+      als reine Flüssigkeit, sodass der vorhandene Druck, in der Mammutpumpe der der umgebenden
+      Flüssigkeitssäule, im Bohrloch der Lagerstättendruck, ausreicht, um es nach oben zu
+      drücken; im Rohr selbst gibt es keine bewegten Teile.
+    example: >-
+      Erdölförderung aus Bohrungen mit nachlassendem Lagerstättendruck, Mammutpumpen in Aquarien
+      und Kläranlagen, Absaugen von Sediment bei Unterwasserarchäologie und Baggerarbeiten
+    conditions: >-
+      Die Einblasstelle muss ausreichend tief unter dem Flüssigkeitsspiegel liegen.
+    limits: >-
+      Der Wirkungsgrad ist gering, und die Förderhöhe hängt stark von der Eintauchtiefe ab.
+    sideEffects: >-
+      Die geförderte Flüssigkeit wird belüftet, und das Gas muss oben wieder abgetrennt werden.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Gas lift (airlift pump)
+    description: >-
+      Gas is injected at the bottom of a riser that dips into a liquid or is fed from a reservoir.
+      The gas-liquid mixture in the pipe is lighter than pure liquid, so the available pressure,
+      from the surrounding liquid column in an airlift pump or from the reservoir in a well,
+      is enough to push it upwards; there are no moving parts in the pipe itself.
+    example: >-
+      Oil production from wells with declining reservoir pressure, airlift pumps in aquariums
+      and sewage plants, removing sediment in underwater archaeology and dredging
+    conditions: The injection point must be sufficiently deep below the liquid level.
+    limits: >-
+      Efficiency is low, and the delivery head depends strongly on the submergence depth.
+    sideEffects: >-
+      The conveyed liquid is aerated, and the gas has to be separated again at the top.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

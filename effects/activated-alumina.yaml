@@ -1,0 +1,67 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: activated-alumina
+kind: application
+home: remove|gas
+functions:
+  - remove|gas
+  - remove|liquid
+parameters:
+  - decrease|humidity
+  - decrease|concentration
+uses:
+  - adsorption
+domain:
+  id: Chemie
+  de: Chemie
+  en: Chemistry
+maturity: reife
+sources:
+  - https://en.wikipedia.org/wiki/Activated_alumina
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Aktiviertes Aluminiumoxid
+    description: >-
+      Aktiviertes Aluminiumoxid ist eine hochporöse Form von Al2O3 mit einer inneren Oberfläche
+      von einigen hundert Quadratmetern pro Gramm. Wassermoleküle sowie manche gelöste Stoffe
+      wie Fluorid oder Arsen lagern sich an dieser Oberfläche an; das aufgenommene Wasser
+      lässt sich durch Erhitzen wieder austreiben, sodass das Material erneut verwendet werden
+      kann.
+    example: >-
+      Trocknung von Druckluft und Gasen, Entfluoridierung von Trinkwasser, Trockenmittel in
+      Verpackungen, Katalysatorträger
+    conditions: >-
+      Für die Gastrocknung muss das Material regelmäßig durch Erwärmen oder Druckwechsel regeneriert
+      werden.
+    limits: >-
+      Die Aufnahmekapazität ist begrenzt; ist die Oberfläche belegt, bricht der zu entfernende
+      Stoff durch.
+    sideEffects: Abrieb des Granulats erzeugt Staub, der nachgeschaltete Filter belastet.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Activated alumina
+    description: >-
+      Activated alumina is a highly porous form of Al2O3 with an internal surface area of
+      several hundred square metres per gram. Water molecules and certain dissolved species
+      such as fluoride or arsenic attach to this surface; the adsorbed water can be driven
+      off again by heating, so the material can be reused.
+    example: >-
+      Drying of compressed air and gases, defluoridation of drinking water, desiccant in packaging,
+      catalyst support
+    conditions: >-
+      For gas drying the material must be regenerated regularly by heating or pressure swing.
+    limits: >-
+      Capacity is limited; once the surface is loaded, the substance to be removed breaks
+      through.
+    sideEffects: Attrition of the granules produces dust that loads downstream filters.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

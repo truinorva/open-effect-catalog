@@ -1,0 +1,75 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: catalysis
+kind: effect
+home: produce|gas
+functions:
+  - produce|gas
+  - produce|liquid
+  - produce|solid
+  - destroy|gas
+parameters:
+  - decrease|concentration
+uses: []
+domain:
+  id: Chemie
+  de: Chemie
+  en: Chemistry
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Katalyse
+  - https://en.wikipedia.org/wiki/Catalysis
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Katalyse
+    description: >-
+      Ein Katalysator beschleunigt eine chemische Reaktion, indem er einen anderen Reaktionsweg
+      mit niedrigerer Aktivierungsenergie eröffnet, ohne dabei selbst verbraucht zu werden.
+      Er verschiebt nicht das chemische Gleichgewicht, sondern lässt es schneller erreichen,
+      und kann unter mehreren möglichen Reaktionen gezielt eine bevorzugen. Man unterscheidet
+      homogene Katalyse (Katalysator gelöst) und heterogene Katalyse an Feststoffoberflächen;
+      in Lebewesen wirken Enzyme als Katalysatoren.
+    example: >-
+      Abgaskatalysator im Auto, Ammoniaksynthese (Haber-Bosch-Verfahren), Cracken in der Erdölraffination,
+      Polymerisation von Polyethylen, Enzyme in Waschmitteln, Brennstoffzellen
+    conditions: >-
+      Kontakt der Reaktionspartner mit dem Katalysator; heterogene Katalysatoren brauchen
+      eine große aktive Oberfläche und oft eine Mindesttemperatur.
+    limits: >-
+      Katalysatoren verlieren mit der Zeit durch Vergiftung (z. B. durch Schwefel oder Blei),
+      Verkokung oder Sintern ihre Wirksamkeit.
+    sideEffects: >-
+      Viele Katalysatoren enthalten teure oder seltene Metalle wie Platin, Palladium oder
+      Rhodium.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Catalysis
+    description: >-
+      A catalyst speeds up a chemical reaction by opening up a different reaction pathway
+      with lower activation energy, without being consumed itself. It does not shift the chemical
+      equilibrium but lets it be reached faster, and where several reactions are possible
+      it can selectively favour one. A distinction is made between homogeneous catalysis (catalyst
+      dissolved) and heterogeneous catalysis on solid surfaces; in living organisms enzymes
+      act as catalysts.
+    example: >-
+      Catalytic converter in cars, ammonia synthesis (Haber-Bosch process), cracking in petroleum
+      refining, polymerisation of polyethylene, enzymes in detergents, fuel cells
+    conditions: >-
+      Contact between the reactants and the catalyst; heterogeneous catalysts need a large
+      active surface and often a minimum temperature.
+    limits: >-
+      Catalysts lose their activity over time through poisoning (e.g. by sulphur or lead),
+      coking or sintering.
+    sideEffects: >-
+      Many catalysts contain expensive or scarce metals such as platinum, palladium or rhodium.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

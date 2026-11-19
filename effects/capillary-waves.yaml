@@ -1,0 +1,68 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: capillary-waves
+kind: effect
+home: disassemble|liquid
+functions:
+  - disassemble|liquid
+  - measure|liquid
+parameters:
+  - measure|viscosity
+  - decrease|size
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Kapillarwelle
+  - https://en.wikipedia.org/wiki/Capillary_wave
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Kapillarwellen
+    description: >-
+      Kapillarwellen sind kurze Wellen auf einer Flüssigkeitsoberfläche, bei denen vor allem
+      die Oberflächenspannung und nicht die Schwerkraft die ausgelenkte Oberfläche zurückstellt;
+      bei Wasser gilt das für Wellenlängen unter etwa 1,7 Zentimetern. Anders als Schwerewellen
+      laufen sie umso schneller, je kürzer ihre Wellenlänge ist. Wird eine dünne Flüssigkeitsschicht
+      stark genug angeregt, reißen von den Wellenbergen feine Tröpfchen ab, deren Größe sich
+      nach der Wellenlänge richtet.
+    example: >-
+      Ultraschall-Vernebler und Ultraschall-Zerstäuberdüsen, Raumluftbefeuchter, Messung von
+      Oberflächenspannung und Viskosität über die Wellendämpfung, Kräuselwellen auf Wasser
+      bei Wind
+    conditions: >-
+      Wellenlängen, bei denen die Oberflächenspannung gegenüber der Schwerkraft überwiegt;
+      zum Zerstäuben eine hochfrequente Anregung mit ausreichender Amplitude.
+    limits: >-
+      Zähe Flüssigkeiten dämpfen die Wellen stark und lassen sich nur schwer zerstäuben.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Capillary waves
+    description: >-
+      Capillary waves are short waves on a liquid surface in which surface tension rather
+      than gravity restores the displaced surface; for water this applies to wavelengths below
+      about 1.7 centimetres. Unlike gravity waves, they travel faster the shorter their wavelength.
+      If a thin liquid film is excited strongly enough, fine droplets break off the crests,
+      with a size that scales with the wavelength.
+    example: >-
+      Ultrasonic nebulisers and ultrasonic atomising nozzles, room humidifiers, measuring
+      surface tension and viscosity from wave damping, ripples on water in wind
+    conditions: >-
+      Wavelengths at which surface tension dominates over gravity; for atomisation, high-frequency
+      excitation with sufficient amplitude.
+    limits: Viscous liquids damp the waves strongly and are hard to atomise.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

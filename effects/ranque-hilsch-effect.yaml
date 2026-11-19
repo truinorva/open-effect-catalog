@@ -1,0 +1,71 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: ranque-hilsch-effect
+kind: effect
+home: cool|gas
+functions:
+  - cool|gas
+  - heat|gas
+  - cool|solid
+parameters:
+  - decrease|temperature
+  - increase|temperature
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: nische
+sources:
+  - https://de.wikipedia.org/wiki/Wirbelrohr
+  - https://en.wikipedia.org/wiki/Vortex_tube
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Ranque-Hilsch-Effekt (Wirbelrohr)
+    description: >-
+      Druckluft wird tangential in ein Rohr eingeblasen und bildet dort einen schnell rotierenden
+      Wirbel. Das Gas am Außenrand wird wärmer und strömt an einem Ende hinaus, wo ein Ventil
+      den Austritt drosselt, während ein kälterer Kernstrom zurückläuft und am anderen Ende
+      durch eine zentrale Öffnung austritt; so entstehen aus einem Gasstrom ohne bewegte Teile
+      ein heißer und ein kalter Teilstrom. Erklärt wird die Trennung meist mit Energieübertragung
+      zwischen den Wirbelschichten durch Scherung und Turbulenz, die genaue Theorie ist aber
+      bis heute umstritten.
+    example: >-
+      Punktkühlung von Werkzeugen und Schneiden, Kühlung von Schaltschränken, Kühlwesten für
+      Arbeitskräfte, Kühlung von Proben und Bauteilen bei Prüfungen
+    conditions: >-
+      Druckluft oder ein anderes Gas mit ausreichendem Vordruck, typischerweise einige bar.
+    limits: >-
+      Der energetische Wirkungsgrad ist im Vergleich zu Kältemaschinen niedrig; die erreichbare
+      Temperaturabsenkung hängt stark vom Eingangsdruck und vom Kaltluftanteil ab.
+    sideEffects: Hoher Druckluftverbrauch und laute Strömungsgeräusche.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Ranque–Hilsch effect (vortex tube)
+    description: >-
+      Compressed air is blown tangentially into a tube, where it forms a rapidly rotating
+      vortex. The gas at the periphery becomes warmer and leaves at one end, where a valve
+      throttles the outlet, while a colder core flow returns and exits through a central opening
+      at the other end; one gas stream is thus split into a hot and a cold stream without
+      moving parts. The separation is usually attributed to energy transfer between vortex
+      layers by shear and turbulence, but the exact theory is still debated.
+    example: >-
+      Spot cooling of tools and cutting edges, cooling of control cabinets, personal cooling
+      vests for workers, cooling of samples and components during testing
+    conditions: >-
+      Compressed air or another gas at sufficient supply pressure, typically several bar.
+    limits: >-
+      Energy efficiency is low compared with refrigeration machines; the achievable temperature
+      drop depends strongly on inlet pressure and cold fraction.
+    sideEffects: High compressed-air consumption and loud flow noise.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

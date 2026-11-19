@@ -1,0 +1,67 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: vacuum-packing
+kind: application
+home: preserve|solid
+functions:
+  - preserve|solid
+  - preserve|particles
+  - compress|solid
+parameters:
+  - decrease|volume
+uses:
+  - vacuum
+domain:
+  id: Verfahrenstechnik
+  de: Verfahrenstechnik
+  en: Process engineering
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Vakuumverpackung
+  - https://en.wikipedia.org/wiki/Vacuum_packing
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Vakuumverpackung
+    description: >-
+      Vor dem Verschließen wird die Luft aus der Verpackung abgesaugt, sodass sich die Folie
+      eng an das Gut legt. Ohne Sauerstoff verlangsamen sich Oxidation und das Wachstum sauerstoffbedürftiger
+      Mikroorganismen, und Lebensmittel bleiben länger haltbar; weiche Güter wie Textilien
+      werden zugleich auf einen Bruchteil ihres Volumens zusammengedrückt.
+    example: >-
+      Wurst, Käse und Fleisch in Vakuumbeuteln, vakuumverpackter Kaffee, Sous-vide-Garen,
+      Vakuumbeutel für Bettwaren und Kleidung
+    conditions: Folie mit geringer Gasdurchlässigkeit und eine dichte Siegelnaht.
+    limits: >-
+      Anaerobe Keime wie Clostridium botulinum wachsen weiter, viele Produkte müssen daher
+      trotzdem gekühlt werden.
+    sideEffects: >-
+      Druckempfindliche Lebensmittel werden gequetscht, und scharfkantiges Gut kann die Folie
+      durchstoßen.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Vacuum packing
+    description: >-
+      Before sealing, the air is drawn out of the package so that the film fits tightly around
+      the contents. Without oxygen, oxidation and the growth of aerobic microorganisms slow
+      down, so food keeps longer; soft goods such as textiles are at the same time compressed
+      to a fraction of their volume.
+    example: >-
+      Sausage, cheese and meat in vacuum bags, vacuum-packed coffee, sous-vide cooking, vacuum
+      storage bags for bedding and clothes
+    conditions: Film with low gas permeability and a tight seal.
+    limits: >-
+      Anaerobic bacteria such as Clostridium botulinum continue to grow, so many products
+      still need refrigeration.
+    sideEffects: >-
+      Delicate foods get squashed, and sharp-edged contents can puncture the film.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

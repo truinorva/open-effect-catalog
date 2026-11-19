@@ -1,0 +1,69 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: plenoptic-camera
+kind: application
+home: measure|field
+functions:
+  - measure|field
+  - measure|solid
+parameters:
+  - measure|position
+  - measure|shape
+uses:
+  - refraction
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: wachstum
+sources:
+  - https://de.wikipedia.org/wiki/Plenoptische_Kamera
+  - https://en.wikipedia.org/wiki/Light_field_camera
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Plenoptische Kamera (Lichtfeldkamera)
+    description: >-
+      Vor dem Bildsensor sitzt ein Raster aus vielen Mikrolinsen, sodass jede Mikrolinse das
+      einfallende Licht auf mehrere Pixel verteilt. Der Sensor zeichnet dadurch nicht nur
+      die Helligkeit, sondern auch die Richtung der Lichtstrahlen auf; daraus lassen sich
+      nachträglich die Schärfeebene verschieben, die Perspektive leicht verändern und Entfernungen
+      berechnen.
+    example: >-
+      Nachträglich fokussierbare Fotos (Lytro), 3D-Vermessung in der industriellen Bildverarbeitung,
+      Lichtfeldmikroskopie, Strömungsmessung mit Lichtfeld-PIV
+    conditions: >-
+      Ein Mikrolinsenraster in genau definiertem Abstand vor einem hochauflösenden Sensor
+      und eine kalibrierte Optik.
+    limits: >-
+      Die Richtungsinformation geht auf Kosten der räumlichen Auflösung des Endbildes, und
+      die Tiefenauflösung nimmt mit der Entfernung ab.
+    sideEffects: Große Datenmengen und hoher Rechenaufwand für die Bildrekonstruktion.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Plenoptic camera (light-field camera)
+    description: >-
+      An array of many microlenses sits in front of the image sensor, so that each microlens
+      spreads the incoming light over several pixels. The sensor therefore records not only
+      brightness but also the direction of the light rays; from this the focal plane can be
+      shifted after the shot, the perspective changed slightly and distances calculated.
+    example: >-
+      Photos that can be refocused after capture (Lytro), 3D measurement in machine vision,
+      light-field microscopy, flow measurement with light-field PIV
+    conditions: >-
+      A microlens array at a precisely defined distance in front of a high-resolution sensor,
+      and calibrated optics.
+    limits: >-
+      The directional information is gained at the cost of spatial resolution of the final
+      image, and depth resolution decreases with distance.
+    sideEffects: Large amounts of data and heavy computation for image reconstruction.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

@@ -1,0 +1,73 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: bernoulli-effect
+kind: effect
+home: measure|gas
+functions:
+  - measure|gas
+  - measure|liquid
+  - move|solid
+  - hold|solid
+parameters:
+  - decrease|pressure
+  - measure|speed
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Bernoulli-Gleichung
+  - https://en.wikipedia.org/wiki/Bernoulli%27s_principle
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Bernoulli-Effekt
+    description: >-
+      Entlang einer reibungsfreien Stromlinie bleibt die Summe aus statischem Druck, Staudruck
+      und Schweredruck konstant. Wo ein Fluid schneller strömt, ist sein statischer Druck
+      daher niedriger, und wird es abgebremst, steigt der Druck an; aus solchen Druckunterschieden
+      lassen sich Geschwindigkeiten messen oder Kräfte auf Körper erzeugen.
+    example: >-
+      Prandtlsches Staurohr zur Fahrtmessung bei Flugzeugen, Bernoulli-Greifer zum berührungsarmen
+      Greifen von Wafern, abgehobene Dächer bei Sturm, Ausflussgeschwindigkeit aus Behältern
+      nach Torricelli
+    conditions: >-
+      Streng gilt der Zusammenhang für stationäre, reibungsfreie und inkompressible Strömung
+      entlang einer Stromlinie, für Gase näherungsweise bei kleinen Machzahlen.
+    limits: >-
+      Reibungsverluste, Wirbel und bei hohen Geschwindigkeiten die Kompressibilität erfordern
+      Korrekturen.
+    sideEffects: >-
+      Der Unterdruck an schnell überströmten Flächen kann Bauteile ansaugen und in Flüssigkeiten
+      Kavitation auslösen.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Bernoulli's principle
+    description: >-
+      Along a frictionless streamline, the sum of static pressure, dynamic pressure and hydrostatic
+      pressure stays constant. Where a fluid flows faster, its static pressure is therefore
+      lower, and where it is slowed down, the pressure rises; such pressure differences can
+      be used to measure velocities or to generate forces on bodies.
+    example: >-
+      Pitot-static tube for aircraft airspeed, Bernoulli grippers for near-contactless wafer
+      handling, roofs lifted off in storms, outflow velocity from tanks according to Torricelli
+    conditions: >-
+      Strictly valid for steady, frictionless, incompressible flow along a streamline, and
+      approximately for gases at low Mach numbers.
+    limits: >-
+      Friction losses, vortices and, at high speeds, compressibility require corrections.
+    sideEffects: >-
+      The low pressure on surfaces with fast flow over them can suck in components and trigger
+      cavitation in liquids.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

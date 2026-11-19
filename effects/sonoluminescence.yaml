@@ -1,0 +1,65 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: sonoluminescence
+kind: effect
+home: produce|field
+functions:
+  - produce|field
+  - detect|liquid
+parameters:
+  - increase|brightness
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: nische
+sources:
+  - https://de.wikipedia.org/wiki/Sonolumineszenz
+  - https://en.wikipedia.org/wiki/Sonoluminescence
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Sonolumineszenz
+    description: >-
+      In einer mit Ultraschall beschallten Flüssigkeit senden zusammenfallende Gasbläschen
+      kurze Lichtblitze aus. Beim Kollaps wird das Gas in der Blase so schnell und stark verdichtet,
+      dass es sich auf mehrere tausend Kelvin erhitzt und teilweise ionisiert; die Blitze
+      dauern nur Bruchteile einer Nanosekunde. Eine einzelne Blase, die in einer stehenden
+      Schallwelle gefangen ist, leuchtet periodisch und sehr gleichmäßig.
+    example: >-
+      Sichtbarmachen von Kavitationszonen in Ultraschallbädern und Reaktoren, Grundlagenforschung
+      zu extremen Zuständen in Blasen
+    conditions: >-
+      Flüssigkeit mit gelöstem Gas, bevorzugt einem Edelgas; ausreichend starkes Ultraschallfeld.
+    limits: >-
+      Das Licht ist sehr schwach und nur in abgedunkelter Umgebung oder mit empfindlichen
+      Detektoren zu sehen.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Sonoluminescence
+    description: >-
+      In a liquid exposed to ultrasound, collapsing gas bubbles emit short flashes of light.
+      During the collapse the gas in the bubble is compressed so quickly and strongly that
+      it heats up to several thousand kelvin and partly ionises; the flashes last only a fraction
+      of a nanosecond. A single bubble trapped in a standing sound wave glows periodically
+      and very steadily.
+    example: >-
+      Visualising cavitation zones in ultrasonic baths and reactors, basic research on extreme
+      states inside bubbles
+    conditions: >-
+      Liquid with dissolved gas, preferably a noble gas; sufficiently strong ultrasonic field.
+    limits: >-
+      The light is very faint and can only be seen in darkness or with sensitive detectors.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

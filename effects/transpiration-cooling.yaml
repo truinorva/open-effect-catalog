@@ -1,0 +1,62 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: transpiration-cooling
+kind: application
+home: cool|solid
+functions:
+  - cool|solid
+  - keep-temp|solid
+parameters:
+  - decrease|temperature
+uses: []
+domain:
+  id: ''
+  de: ''
+  en: ''
+maturity: ''
+sources:
+  - https://en.wikipedia.org/wiki/Transpiration_cooling
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Transpirationskühlung (Schwitzkühlung)
+    description: >-
+      Ein Kühlmittel, Gas oder Flüssigkeit, wird durch eine poröse Wand in die heiße Strömung
+      gedrückt. Es nimmt beim Durchströmen der Poren Wärme aus der Wand auf und bildet an
+      der Oberfläche einen kühlen Film, der die heißen Gase von der Wand fernhält; verdampft
+      eine Flüssigkeit dabei, nimmt sie zusätzlich ihre Verdampfungswärme auf. So halten Wände
+      Gastemperaturen stand, die weit über ihrer Schmelztemperatur liegen.
+    example: >-
+      Poröse Einspritzplatten von Raketentriebwerken, Hitzeschutz für Vorderkanten von Hyperschallflugkörpern
+      (Forschung), Schwitzen der Haut als natürliches Vorbild
+    conditions: >-
+      Poröser, durchströmbarer Wandwerkstoff und ein Kühlmitteldruck über dem Druck der heißen
+      Strömung.
+    limits: Die Poren können verstopfen, und das Kühlmittel wird laufend verbraucht.
+    sideEffects: Poröse Wände sind mechanisch weniger belastbar als massive.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Transpiration cooling
+    description: >-
+      A coolant, gas or liquid, is forced through a porous wall into the hot flow. It absorbs
+      heat from the wall as it passes through the pores and forms a cool film on the surface
+      that keeps the hot gases away from the wall; if a liquid evaporates in the process,
+      it also absorbs its heat of vaporisation. Walls can thus withstand gas temperatures
+      far above their melting point.
+    example: >-
+      Porous injector faces of rocket engines, thermal protection for leading edges of hypersonic
+      vehicles (research), sweating of the skin as a natural model
+    conditions: >-
+      Porous, permeable wall material and a coolant pressure above that of the hot flow.
+    limits: The pores can clog, and the coolant is consumed continuously.
+    sideEffects: Porous walls are mechanically weaker than solid ones.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

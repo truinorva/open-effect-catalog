@@ -25,6 +25,11 @@ authors:
   - Tabitha Adunka
   - Robert Adunka
 origin: triz-consulting
+review:
+  status: geprueft
+  by:
+    - TRIZ Consulting Group
+  date: '2026-11-11'
 text:
   de:
     name: Elektrophorese

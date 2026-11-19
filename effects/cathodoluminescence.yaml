@@ -1,0 +1,66 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: cathodoluminescence
+kind: effect
+home: produce|field
+functions:
+  - produce|field
+  - detect|solid
+  - measure|solid
+parameters:
+  - increase|brightness
+  - measure|purity
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Kathodolumineszenz
+  - https://en.wikipedia.org/wiki/Cathodoluminescence
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Kathodolumineszenz
+    description: >-
+      Treffen schnelle Elektronen auf einen lumineszierenden Stoff, regen sie dessen Elektronen
+      in höhere Energiezustände an; fallen diese zurück, wird Licht ausgesandt. Farbe und
+      Intensität hängen vom Material, von Dotierungen und von Kristalldefekten ab.
+    example: >-
+      Bildschirme von Kathodenstrahlröhren und Oszilloskopen, Kathodolumineszenz-Mikroskopie
+      im Rasterelektronenmikroskop zur Untersuchung von Mineralen und Halbleitern, Leuchtschirme
+      in Elektronenmikroskopen, Feldemissionsdisplays
+    conditions: >-
+      Ein Elektronenstrahl im Vakuum und ein Leuchtstoff oder Halbleiter mit geeigneten Energiezuständen.
+    limits: >-
+      Leuchtstoffe altern unter Elektronenbeschuss und verlieren an Helligkeit (Einbrennen).
+    sideEffects: >-
+      Beim Auftreffen der Elektronen entsteht auch Röntgenstrahlung, und die Probe erwärmt
+      sich und lädt sich auf.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Cathodoluminescence
+    description: >-
+      When fast electrons strike a luminescent material, they excite its electrons into higher
+      energy states; light is emitted as these fall back. Colour and intensity depend on the
+      material, its dopants and its crystal defects.
+    example: >-
+      Screens of cathode ray tubes and oscilloscopes, cathodoluminescence microscopy in the
+      scanning electron microscope for examining minerals and semiconductors, fluorescent
+      screens in electron microscopes, field emission displays
+    conditions: >-
+      An electron beam in vacuum and a phosphor or semiconductor with suitable energy states.
+    limits: Phosphors age under electron bombardment and lose brightness (burn-in).
+    sideEffects: >-
+      The impinging electrons also generate X-rays, and the sample heats up and becomes charged.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

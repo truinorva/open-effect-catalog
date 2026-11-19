@@ -1,0 +1,61 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: creeping-wave
+kind: effect
+home: move|field
+functions:
+  - move|field
+parameters: []
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: nische
+sources:
+  - https://en.wikipedia.org/wiki/Creeping_wave
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Kriechwelle
+    description: >-
+      Trifft eine elektromagnetische oder akustische Welle auf einen glatt gekrümmten Körper,
+      wird ein Teil von ihr an der Oberfläche entlang in den geometrischen Schatten gebeugt.
+      Diese Kriechwelle läuft um den Körper herum und strahlt dabei fortlaufend Energie tangential
+      ab, so dass sie rasch abklingt.
+    example: >-
+      Radarrückstreuung von Kugeln, Zylindern und Flugkörpern, Kopplung zwischen Antennen
+      an gekrümmten Flugzeugrümpfen, Schallstreuung an getauchten Körpern
+    conditions: >-
+      Eine glatte, konvex gekrümmte Oberfläche und Körperabmessungen in der Größenordnung
+      weniger Wellenlängen.
+    limits: >-
+      Je größer der Körper im Vergleich zur Wellenlänge ist, desto stärker wird die Kriechwelle
+      gedämpft, so dass ihr Beitrag bei elektrisch großen Körpern gering ist.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Creeping wave
+    description: >-
+      When an electromagnetic or acoustic wave strikes a smoothly curved body, part of it
+      is diffracted along the surface into the geometric shadow. This creeping wave travels
+      around the body while continuously shedding energy tangentially, so it decays quickly.
+    example: >-
+      Radar backscatter from spheres, cylinders and missiles, coupling between antennas on
+      curved aircraft fuselages, sound scattering by submerged bodies
+    conditions: >-
+      A smooth, convexly curved surface and body dimensions of the order of a few wavelengths.
+    limits: >-
+      The larger the body compared with the wavelength, the more strongly the creeping wave
+      is attenuated, so its contribution is small for electrically large bodies.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

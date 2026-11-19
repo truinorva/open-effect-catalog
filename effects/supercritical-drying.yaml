@@ -1,0 +1,69 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: supercritical-drying
+kind: application
+home: remove|solid
+functions:
+  - remove|solid
+  - stabilise|solid
+parameters:
+  - decrease|humidity
+  - stabilise|porosity
+uses:
+  - supercritical-fluid
+  - surface-tension
+domain:
+  id: Verfahrenstechnik
+  de: Verfahrenstechnik
+  en: Process engineering
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/%C3%9Cberkritische_Trocknung
+  - https://en.wikipedia.org/wiki/Supercritical_drying
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Überkritische Trocknung
+    description: >-
+      Beim gewöhnlichen Trocknen zieht die zurückweichende Flüssigkeitsoberfläche in feinen
+      Poren mit großen Kapillarkräften an den Wänden und kann zarte Strukturen zusammenfallen
+      lassen. Bei der überkritischen Trocknung wird die Porenflüssigkeit, meist nach Austausch
+      gegen flüssiges Kohlendioxid, über ihren kritischen Punkt gebracht; dort gibt es keine
+      Grenzfläche zwischen Flüssigkeit und Gas und damit keine Oberflächenspannung. Anschließend
+      wird das Fluid als Gas abgelassen, ohne dass je ein Meniskus durch die Poren wandert.
+    example: >-
+      Herstellung von Aerogelen, Probenvorbereitung für die Rasterelektronenmikroskopie (Kritisch-Punkt-Trocknung),
+      Trocknen mikromechanischer Bauteile ohne Verkleben
+    conditions: Druckbehälter; für Kohlendioxid oberhalb von etwa 31 °C und 74 bar.
+    limits: >-
+      Das Verfahren arbeitet chargenweise mit Hochdruckanlagen; Wasser in der Probe muss vorher
+      gegen ein mit CO2 mischbares Lösungsmittel ausgetauscht werden.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Supercritical drying
+    description: >-
+      In ordinary drying, the receding liquid surface in fine pores pulls on the walls with
+      large capillary forces and can collapse delicate structures. In supercritical drying,
+      the pore liquid, usually after being exchanged for liquid carbon dioxide, is taken above
+      its critical point, where there is no interface between liquid and gas and hence no
+      surface tension. The fluid is then vented as a gas without a meniscus ever passing through
+      the pores.
+    example: >-
+      Production of aerogels, sample preparation for scanning electron microscopy (critical
+      point drying), drying micromechanical devices without stiction
+    conditions: Pressure vessel; for carbon dioxide above about 31 °C and 74 bar.
+    limits: >-
+      The process runs in batches with high-pressure equipment; water in the sample must first
+      be exchanged for a solvent miscible with CO2.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

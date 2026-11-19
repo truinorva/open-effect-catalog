@@ -1,0 +1,69 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: anaerobic-digestion
+kind: application
+home: produce|gas
+functions:
+  - produce|gas
+  - destroy|liquid
+parameters:
+  - decrease|quantity
+uses: []
+domain:
+  id: Biologie
+  de: Biologie
+  en: Biology
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/G%C3%A4rung
+  - https://en.wikipedia.org/wiki/Anaerobic_digestion
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Anaerobe Vergärung (Faulung)
+    description: >-
+      Unter Luftabschluss zerlegen mehrere Gruppen von Mikroorganismen organische Stoffe Schritt
+      für Schritt: Große Moleküle werden zu Zuckern, Fettsäuren und Aminosäuren gespalten,
+      daraus entstehen organische Säuren, Wasserstoff und Essigsäure, und methanbildende Archaeen
+      erzeugen schließlich ein Gemisch aus Methan und Kohlendioxid. Zurück bleibt ein stabilisierter
+      Gärrest.
+    example: >-
+      Biogasanlagen für Gülle und Energiepflanzen, Faultürme in Kläranlagen, Vergärung von
+      Bioabfall, Deponiegas
+    conditions: >-
+      Eine sauerstofffreie Umgebung, eine gleichmäßige Temperatur, meist um 35 bis 40 °C oder
+      50 bis 55 °C, und ein pH-Wert nahe dem Neutralpunkt.
+    limits: >-
+      Holzige Bestandteile wie Lignin werden kaum abgebaut, und der Prozess reagiert empfindlich
+      auf Überlastung und Hemmstoffe.
+    sideEffects: >-
+      Es entsteht auch Schwefelwasserstoff, und entweichendes Methan ist ein starkes Treibhausgas.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Anaerobic digestion
+    description: >-
+      In the absence of air, several groups of microorganisms break down organic matter step
+      by step: large molecules are split into sugars, fatty acids and amino acids, these are
+      converted into organic acids, hydrogen and acetic acid, and methane-forming archaea
+      finally produce a mixture of methane and carbon dioxide. A stabilised digestate remains.
+    example: >-
+      Biogas plants for manure and energy crops, sludge digesters in sewage plants, digestion
+      of biowaste, landfill gas
+    conditions: >-
+      An oxygen-free environment, a steady temperature, usually around 35 to 40 °C or 50 to
+      55 °C, and a pH close to neutral.
+    limits: >-
+      Woody components such as lignin are hardly degraded, and the process is sensitive to
+      overloading and inhibitors.
+    sideEffects: >-
+      Hydrogen sulphide is formed as well, and escaping methane is a potent greenhouse gas.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

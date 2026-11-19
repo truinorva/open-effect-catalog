@@ -1,0 +1,72 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: relay
+kind: application
+home: move|solid
+functions:
+  - move|solid
+  - detect|field
+parameters:
+  - change|conductivity
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Relais
+  - https://en.wikipedia.org/wiki/Relay
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Relais
+    description: >-
+      Ein Relais ist ein elektrisch betätigter Schalter: Fließt ein kleiner Steuerstrom durch
+      die Spule eines Elektromagneten, zieht dieser einen beweglichen Anker an, der Kontakte
+      schließt oder öffnet. So kann ein schwacher Steuerstromkreis einen galvanisch davon
+      getrennten Laststromkreis mit viel höherer Spannung oder Stromstärke schalten.
+    example: >-
+      Schalten von Lasten in Autos und Haushaltsgeräten, Steuerungen und Sicherheitsschaltungen,
+      Schutzrelais in Stromnetzen, historische Telefonvermittlungen und Relaisrechner wie
+      die Zuse Z3
+    conditions: >-
+      Ein Steuerstrom oberhalb des Ansprechwerts der Spule und Kontakte, die für Spannung
+      und Strom der Last ausgelegt sind.
+    limits: >-
+      Elektromechanische Relais schalten vergleichsweise langsam, im Bereich von Millisekunden,
+      und haben eine begrenzte Zahl von Schaltspielen.
+    sideEffects: >-
+      Kontaktabbrand durch Schaltlichtbögen, Kontaktprellen, Schaltgeräusche und Induktionsspannungen
+      beim Abschalten der Spule.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Relay
+    description: >-
+      A relay is an electrically operated switch: when a small control current flows through
+      the coil of an electromagnet, it attracts a movable armature that closes or opens contacts.
+      A weak control circuit can thus switch a galvanically isolated load circuit at much
+      higher voltage or current.
+    example: >-
+      Switching loads in cars and household appliances, control and safety circuits, protection
+      relays in power grids, historic telephone exchanges and relay computers such as the
+      Zuse Z3
+    conditions: >-
+      A control current above the pick-up value of the coil, and contacts rated for the voltage
+      and current of the load.
+    limits: >-
+      Electromechanical relays switch comparatively slowly, in the millisecond range, and
+      have a limited number of switching cycles.
+    sideEffects: >-
+      Contact erosion from switching arcs, contact bounce, switching noise and induced voltage
+      spikes when the coil is switched off.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

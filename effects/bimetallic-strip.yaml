@@ -1,0 +1,65 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: bimetallic-strip
+kind: application
+home: deform|solid
+functions:
+  - deform|solid
+  - move|solid
+  - measure|gas
+parameters:
+  - measure|temperature
+  - change|shape
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: reife
+sources:
+  - https://en.wikipedia.org/wiki/Bimetallic_strip
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Bimetallstreifen
+    description: >-
+      Zwei fest miteinander verbundene Metallstreifen mit unterschiedlicher Wärmeausdehnung
+      krümmen sich bei Erwärmung zur Seite des Metalls, das sich weniger ausdehnt. Die Auslenkung
+      ist der Temperaturänderung annähernd proportional und kann einen Zeiger bewegen oder
+      einen Kontakt schalten.
+    example: >-
+      Thermostate in Bügeleisen und Wasserkochern, Zeigerthermometer, thermische Überstromauslöser,
+      Temperaturkompensation in mechanischen Uhren
+    conditions: >-
+      Zwei Metalle mit deutlich unterschiedlichem Wärmeausdehnungskoeffizienten, etwa Invar
+      und Messing oder Stahl.
+    limits: >-
+      Die Stellkraft ist gering, und die Reaktion ist wegen der Wärmekapazität des Streifens
+      träge.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Bimetallic strip
+    description: >-
+      Two metal strips with different thermal expansion, firmly bonded together, bend on heating
+      towards the side of the metal that expands less. The deflection is roughly proportional
+      to the temperature change and can move a pointer or operate a switch contact.
+    example: >-
+      Thermostats in irons and kettles, dial thermometers, thermal overload trips, temperature
+      compensation in mechanical clocks
+    conditions: >-
+      Two metals with clearly different coefficients of thermal expansion, such as Invar and
+      brass or steel.
+    limits: >-
+      The actuating force is small, and the response is slow because of the strip's heat capacity.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

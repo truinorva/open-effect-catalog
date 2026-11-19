@@ -1,0 +1,62 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: angle-of-repose
+kind: effect
+home: stabilise|particles
+functions:
+  - stabilise|particles
+  - measure|particles
+parameters:
+  - measure|friction
+uses: []
+domain:
+  id: Verfahrenstechnik
+  de: Verfahrenstechnik
+  en: Process engineering
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Reibungswinkel
+  - https://en.wikipedia.org/wiki/Angle_of_repose
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Schüttwinkel (Böschungswinkel)
+    description: >-
+      Wird ein Schüttgut aufgehäuft, bildet es einen Kegel, dessen Flanken nicht steiler werden
+      als ein für das Material typischer Winkel. Steilere Hänge rutschen ab, bis die Hangabtriebskraft
+      der Körner wieder von Reibung und Verzahnung zwischen ihnen aufgenommen wird; der Winkel
+      ist daher auch ein einfaches Maß für die Fließfähigkeit eines Pulvers.
+    example: >-
+      Bemessung von Halden und Lagerhallen, Auslegung von Trichtern und Rutschen, Prüfung
+      der Fließfähigkeit von Pulvern, Böschungen im Erdbau, Sanddünen
+    conditions: Trockenes oder gleichmäßig feuchtes Schüttgut unter Schwerkraft.
+    limits: >-
+      Der gemessene Winkel hängt von Messverfahren, Art des Aufschüttens und Feuchte ab und
+      ist deshalb nur bedingt vergleichbar.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Angle of repose
+    description: >-
+      When a bulk material is heaped up, it forms a cone whose flanks get no steeper than
+      an angle typical of the material. Steeper slopes slide until the downhill pull on the
+      grains is again taken up by friction and interlocking between them; the angle is therefore
+      also a simple measure of a powder's flowability.
+    example: >-
+      Sizing stockpiles and storage halls, design of hoppers and chutes, flowability testing
+      of powders, embankments in earthworks, sand dunes
+    conditions: Dry or uniformly moist bulk material under gravity.
+    limits: >-
+      The measured angle depends on the test method, the way the heap is formed and the moisture,
+      so values are only partly comparable.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

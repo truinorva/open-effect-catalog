@@ -1,0 +1,71 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: preservative
+kind: application
+home: preserve|solid
+functions:
+  - preserve|solid
+  - preserve|liquid
+parameters:
+  - stabilise|purity
+uses: []
+domain:
+  id: Chemie
+  de: Chemie
+  en: Chemistry
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Konservierungsmittel
+  - https://en.wikipedia.org/wiki/Preservative
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Konservierungsmittel
+    description: >-
+      Konservierungsmittel sind Stoffe, die Lebensmitteln, Kosmetika, Arzneimitteln, Farben
+      oder Holz zugesetzt werden, um deren Verderb zu verzögern. Antimikrobielle Stoffe wie
+      Sorbinsäure, Benzoesäure oder Sulfite hemmen das Wachstum von Bakterien, Hefen und Schimmelpilzen,
+      während Antioxidantien wie Ascorbinsäure oder Tocopherole die Oxidation von Fetten und
+      Farbstoffen bremsen.
+    example: >-
+      Sorbate in Backwaren und Käse, Nitritpökelsalz in Wurstwaren, Schwefeldioxid im Wein,
+      Parabene und Phenoxyethanol in Kosmetika, Holzschutzmittel, Topfkonservierer in Dispersionsfarben
+    conditions: >-
+      Eine wirksame Konzentration im Produkt; viele organische Säuren wirken nur bei niedrigem
+      pH-Wert.
+    limits: >-
+      Konservierungsmittel verlangsamen den Verderb, machen ein Produkt aber nicht keimfrei;
+      die zulässigen Mengen sind gesetzlich begrenzt.
+    sideEffects: >-
+      Einige Stoffe können Allergien oder Unverträglichkeiten auslösen, und aus Nitrit können
+      krebserregende Nitrosamine entstehen.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Preservative
+    description: >-
+      Preservatives are substances added to food, cosmetics, pharmaceuticals, paints or wood
+      to delay spoilage. Antimicrobial agents such as sorbic acid, benzoic acid or sulphites
+      inhibit the growth of bacteria, yeasts and moulds, while antioxidants such as ascorbic
+      acid or tocopherols slow the oxidation of fats and colourings.
+    example: >-
+      Sorbates in baked goods and cheese, nitrite curing salt in cured meats, sulphur dioxide
+      in wine, parabens and phenoxyethanol in cosmetics, wood preservatives, in-can preservatives
+      in water-based paints
+    conditions: >-
+      An effective concentration in the product; many organic acids work only at low pH.
+    limits: >-
+      Preservatives slow spoilage but do not make a product sterile; permitted amounts are
+      limited by law.
+    sideEffects: >-
+      Some substances can cause allergies or intolerances, and nitrite can form carcinogenic
+      nitrosamines.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

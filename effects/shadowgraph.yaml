@@ -1,0 +1,68 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: shadowgraph
+kind: application
+home: detect|gas
+functions:
+  - detect|gas
+  - detect|liquid
+parameters:
+  - measure|density
+  - measure|refraction
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: reife
+sources:
+  - https://en.wikipedia.org/wiki/Shadowgraph
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Schattenverfahren (Shadowgraphie)
+    description: >-
+      Ein paralleles oder von einem Punkt ausgehendes Lichtbündel durchstrahlt ein durchsichtiges
+      Medium, in dem sich Dichte und damit Brechungsindex örtlich ändern. Wo sich die Brechzahl
+      ungleichmäßig ändert, wird das Licht abgelenkt und auf einem Schirm dahinter gebündelt
+      oder zerstreut; die hellen und dunklen Muster machen Verdichtungsstöße, Flammen, Wärmeschlieren
+      oder Mischzonen sichtbar. Das Verfahren spricht auf die zweite Ableitung des Brechungsindex
+      an und kommt anders als das Schlierenverfahren ohne Schneide aus.
+    example: >-
+      Sichtbarmachen von Verdichtungsstößen an Geschossen und im Windkanal, Untersuchung von
+      Flammen und Strahlen, Konvektion über heißen Oberflächen
+    conditions: >-
+      Durchsichtiges Medium mit Dichte- oder Temperaturunterschieden; gerichtete Lichtquelle.
+    limits: >-
+      Liefert vor allem ein qualitatives Bild; schwache, gleichmäßige Dichtegradienten erzeugen
+      kaum Kontrast.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Shadowgraph
+    description: >-
+      A collimated or point-source light beam passes through a transparent medium in which
+      density, and therefore refractive index, varies locally. Where the refractive index
+      changes non-uniformly, the rays are deflected and concentrated or spread out on a screen
+      behind, and the light and dark patterns reveal shock waves, flames, thermal plumes or
+      mixing zones. The method responds to the second derivative of the refractive index and,
+      unlike the schlieren method, needs no knife edge.
+    example: >-
+      Visualising shock waves around projectiles and in wind tunnels, studies of flames and
+      jets, convection above hot surfaces
+    conditions: >-
+      Transparent medium with differences in density or temperature; directed light source.
+    limits: >-
+      Mainly gives a qualitative picture; weak, uniform density gradients produce hardly any
+      contrast.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

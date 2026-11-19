@@ -1,0 +1,67 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: townsend-discharge
+kind: effect
+home: detect|field
+functions:
+  - detect|field
+  - measure|field
+parameters:
+  - increase|charge
+  - increase|conductivity
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: lehrbuch
+sources:
+  - https://en.wikipedia.org/wiki/Townsend_discharge
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Townsend-Entladung
+    description: >-
+      In einem Gas mit starkem elektrischem Feld gewinnen freie Elektronen zwischen zwei Stößen
+      so viel Energie, dass sie weitere Gasmoleküle ionisieren. Jedes neue Elektron wird ebenfalls
+      beschleunigt, sodass sich die Ladungsträger lawinenartig vervielfachen. Unterhalb der
+      Durchbruchspannung erlischt die Entladung, sobald keine äußere Ionisation mehr Startelektronen
+      liefert; die Lawine verstärkt so ein schwaches Ionisationssignal um viele Größenordnungen.
+    example: >-
+      Geiger-Müller-Zählrohr, Proportionalzählrohr, gasgefüllte Teilchendetektoren, Beginn
+      von Teilentladungen in Hochspannungsisolierungen
+    conditions: >-
+      Gas bei geeignetem Druck, hohe Feldstärke und einige freie Startelektronen.
+    limits: >-
+      Oberhalb der Durchbruchspannung geht sie in eine selbständige Glimm-, Funken- oder Bogenentladung
+      über.
+    sideEffects: >-
+      In Hochspannungsanlagen können Elektronenlawinen Isolierstoffe allmählich schädigen.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Townsend discharge
+    description: >-
+      In a gas with a strong electric field, free electrons gain enough energy between collisions
+      to ionise further gas molecules. Each new electron is accelerated as well, so the charge
+      carriers multiply in an avalanche. Below the breakdown voltage the discharge dies out
+      as soon as no external ionisation supplies seed electrons; the avalanche thus amplifies
+      a weak ionisation signal by many orders of magnitude.
+    example: >-
+      Geiger-Müller tube, proportional counter, gas-filled particle detectors, onset of partial
+      discharges in high-voltage insulation
+    conditions: >-
+      Gas at suitable pressure, high field strength and a few free seed electrons.
+    limits: >-
+      Above the breakdown voltage it turns into a self-sustaining glow, spark or arc discharge.
+    sideEffects: >-
+      In high-voltage equipment, electron avalanches can gradually damage insulating materials.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

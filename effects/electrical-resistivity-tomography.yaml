@@ -1,0 +1,64 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: electrical-resistivity-tomography
+kind: application
+home: measure|solid
+functions:
+  - measure|solid
+  - detect|liquid
+  - detect|solid
+parameters:
+  - measure|conductivity
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: reife
+sources:
+  - https://en.wikipedia.org/wiki/Electrical_resistivity_tomography
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Geoelektrische Widerstandstomographie (ERT)
+    description: >-
+      Entlang eines Profils oder Rasters werden viele Elektroden in den Boden gesteckt; über
+      jeweils zwei Elektroden wird Strom eingespeist und an zwei anderen die Spannung gemessen.
+      Aus zahlreichen Elektrodenkombinationen mit unterschiedlicher Eindringtiefe wird durch
+      Inversion ein zwei- oder dreidimensionales Bild des spezifischen elektrischen Widerstands
+      im Untergrund berechnet, der von Gesteinsart, Porosität und Wassergehalt abhängt.
+    example: >-
+      Grundwassererkundung, Kartierung von Altlasten und Deponien, Hohlraumsuche, Archäologie,
+      Überwachung von Deichen
+    conditions: Galvanische Ankopplung der Elektroden an den Boden.
+    limits: >-
+      Die Auflösung nimmt mit der Tiefe ab, und verschiedene Untergrundmodelle können dieselben
+      Messwerte erklären.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Electrical resistivity tomography (ERT)
+    description: >-
+      Many electrodes are placed in the ground along a profile or grid; current is injected
+      through two electrodes at a time and the voltage measured across two others. From numerous
+      electrode combinations with different penetration depths, inversion yields a two- or
+      three-dimensional image of subsurface resistivity, which depends on rock type, porosity
+      and water content.
+    example: >-
+      Groundwater exploration, mapping contaminated sites and landfills, cavity detection,
+      archaeology, dike monitoring
+    conditions: Galvanic coupling of the electrodes to the ground.
+    limits: >-
+      Resolution decreases with depth, and different subsurface models can explain the same
+      data.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

@@ -1,0 +1,73 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: curie-temperature-piezoelectric
+kind: effect
+home: keep-temp|solid
+functions:
+  - keep-temp|solid
+  - orient|solid
+parameters:
+  - change|polarisation
+  - stabilise|temperature
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Curie-Temperatur
+  - https://en.wikipedia.org/wiki/Curie_temperature
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Curie-Temperatur (piezoelektrisch)
+    description: >-
+      Ferroelektrische Piezokeramiken wie Bariumtitanat oder Blei-Zirkonat-Titanat (PZT) besitzen
+      nur unterhalb ihrer Curie-Temperatur eine spontane elektrische Polarisation. Darüber
+      wird ihr Kristallgitter symmetrisch, Polarisation und Piezoeffekt verschwinden, und
+      eine gepolte Keramik verliert ihre Ausrichtung dauerhaft; die Dielektrizitätszahl zeigt
+      am Übergang ein ausgeprägtes Maximum.
+    example: >-
+      Festlegen der Einsatzgrenze von Piezoaktoren und -sensoren, Polen von Piezokeramik bei
+      erhöhter Temperatur im elektrischen Feld, PTC-Kaltleiter aus dotiertem Bariumtitanat
+      für selbstregelnde Heizer und Überstromschutz
+    conditions: >-
+      Ein ferroelektrischer Werkstoff, dessen Curie-Temperatur bei Bariumtitanat um 120 °C
+      und bei PZT-Keramiken meist deutlich höher liegt.
+    limits: >-
+      Schon unterhalb der Curie-Temperatur depolarisiert die Keramik allmählich, weshalb man
+      sie als Faustregel höchstens bis etwa zur halben Curie-Temperatur betreibt.
+    sideEffects: >-
+      Überhitzung beim Löten oder im Betrieb kann Piezobauteile dauerhaft unbrauchbar machen.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Curie temperature (piezoelectric)
+    description: >-
+      Ferroelectric piezoceramics such as barium titanate or lead zirconate titanate (PZT)
+      have a spontaneous electric polarisation only below their Curie temperature. Above it
+      their crystal lattice becomes symmetric, polarisation and the piezoelectric effect vanish,
+      and a poled ceramic permanently loses its alignment; the permittivity shows a pronounced
+      peak at the transition.
+    example: >-
+      Setting the operating limit of piezo actuators and sensors, poling of piezoceramics
+      at elevated temperature in an electric field, PTC thermistors made of doped barium titanate
+      for self-regulating heaters and overcurrent protection
+    conditions: >-
+      A ferroelectric material whose Curie temperature is around 120 °C for barium titanate
+      and usually considerably higher for PZT ceramics.
+    limits: >-
+      The ceramic gradually depolarises even below the Curie temperature, so as a rule of
+      thumb it is operated up to about half the Curie temperature at most.
+    sideEffects: >-
+      Overheating during soldering or operation can permanently ruin piezo components.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

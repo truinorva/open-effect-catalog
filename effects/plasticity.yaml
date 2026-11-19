@@ -1,0 +1,73 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: plasticity
+kind: effect
+home: deform|solid
+functions:
+  - deform|solid
+  - stop|solid
+  - join|solid
+parameters:
+  - change|shape
+  - increase|strength
+uses: []
+domain:
+  id: Materialwissenschaft
+  de: Materialwissenschaft
+  en: Materials science
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Plastizit%C3%A4t_(Physik)
+  - https://en.wikipedia.org/wiki/Plasticity_(physics)
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Plastizität
+    description: >-
+      Wird ein Werkstoff über seine Fließgrenze hinaus belastet, verformt er sich bleibend:
+      Nach dem Entlasten geht nur der kleine elastische Anteil zurück. In Metallen beruht
+      das auf dem Wandern von Versetzungen durch das Kristallgitter, in Polymeren auf dem
+      Abgleiten von Molekülketten; die Verformung verbraucht Arbeit, die überwiegend als Wärme
+      frei wird.
+    example: >-
+      Schmieden, Tiefziehen, Walzen, Biegen von Blechen, Crimpen und Clinchen, Knautschzone
+      im Auto
+    conditions: >-
+      Spannung oberhalb der Fließgrenze und ein duktiler Werkstoff; höhere Temperaturen erleichtern
+      die Verformung meist.
+    limits: >-
+      Das Umformvermögen ist begrenzt: Bei zu großer Verformung reißt der Werkstoff, und spröde
+      Werkstoffe wie Glas oder Keramik verformen sich bei Raumtemperatur kaum plastisch.
+    sideEffects: >-
+      Kaltverfestigung erhöht Festigkeit und Härte und senkt die Duktilität; außerdem bleiben
+      Eigenspannungen und eine Rückfederung zurück.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Plasticity
+    description: >-
+      When a material is loaded beyond its yield point, it deforms permanently: on unloading
+      only the small elastic part recovers. In metals this is due to dislocations moving through
+      the crystal lattice, in polymers to molecular chains sliding past each other; the deformation
+      consumes work, most of which is released as heat.
+    example: >-
+      Forging, deep drawing, rolling, sheet-metal bending, crimping and clinching, crumple
+      zones in cars
+    conditions: >-
+      Stress above the yield strength and a ductile material; elevated temperatures usually
+      make deformation easier.
+    limits: >-
+      Formability is limited: excessive deformation leads to fracture, and brittle materials
+      such as glass or ceramics hardly deform plastically at room temperature.
+    sideEffects: >-
+      Work hardening raises strength and hardness and lowers ductility; residual stresses
+      and springback remain.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

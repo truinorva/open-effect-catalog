@@ -1,0 +1,67 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: coating
+kind: application
+home: preserve|solid
+functions:
+  - preserve|solid
+parameters:
+  - increase|hardness
+  - decrease|friction
+  - change|colour
+  - change|reflectivity
+uses: []
+domain:
+  id: Materialwissenschaft
+  de: Materialwissenschaft
+  en: Materials science
+maturity: reife
+sources:
+  - https://en.wikipedia.org/wiki/Coating
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Beschichtung
+    description: >-
+      Eine Beschichtung ist eine fest haftende Schicht aus einem anderen Stoff, die auf die
+      Oberfläche eines Bauteils aufgebracht wird. Sie übernimmt Aufgaben, die der Grundwerkstoff
+      nicht oder nur schlecht erfüllt – etwa Schutz vor Korrosion und Verschleiß, geringere
+      Reibung, elektrische Isolation, bestimmte optische Eigenschaften oder Farbe –, während
+      der Grundkörper Form und Festigkeit liefert. Aufgebracht wird sie z. B. durch Lackieren,
+      galvanisch, durch Tauchen, Spritzen oder Abscheiden aus der Gasphase.
+    example: >-
+      Autolack, Feuerverzinkung, Hartstoffschichten auf Werkzeugen, Antihaftbeschichtung von
+      Pfannen, Entspiegelung von Brillengläsern, Pulverbeschichtung
+    conditions: Eine saubere, vorbehandelte Oberfläche, damit die Schicht haftet.
+    limits: >-
+      Die Wirkung endet, sobald die Schicht beschädigt, abgenutzt oder abgeplatzt ist; unterschiedliche
+      Wärmedehnung kann Risse verursachen.
+    sideEffects: >-
+      Lösemittelhaltige Beschichtungsstoffe setzen flüchtige organische Verbindungen frei.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Coating
+    description: >-
+      A coating is a firmly adhering layer of another material applied to the surface of a
+      part. It takes on tasks the base material cannot fulfil, or fulfils poorly – such as
+      protection against corrosion and wear, lower friction, electrical insulation, particular
+      optical properties or colour – while the base body provides shape and strength. It is
+      applied, for example, by painting, electroplating, dipping, spraying or vapour deposition.
+    example: >-
+      Car paint, hot-dip galvanising, hard coatings on tools, non-stick coating of pans, anti-reflective
+      coating of spectacle lenses, powder coating
+    conditions: A clean, pretreated surface so that the coating adheres.
+    limits: >-
+      The effect ends once the layer is damaged, worn or spalled; differences in thermal expansion
+      can cause cracks.
+    sideEffects: Solvent-based coating materials release volatile organic compounds.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

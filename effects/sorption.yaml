@@ -1,0 +1,72 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: sorption
+kind: effect
+home: absorb|gas
+functions:
+  - absorb|gas
+  - absorb|liquid
+  - separate|gas
+  - remove|gas
+  - remove|liquid
+parameters:
+  - decrease|concentration
+  - decrease|humidity
+uses: []
+domain:
+  id: Chemie
+  de: Chemie
+  en: Chemistry
+maturity: verbreitet
+sources:
+  - https://de.wikipedia.org/wiki/Sorption
+  - https://en.wikipedia.org/wiki/Sorption
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Sorption
+    description: >-
+      Sorption ist der Oberbegriff für Vorgänge, bei denen ein Stoff von einem anderen aufgenommen
+      und gebunden wird. Bei der Adsorption lagern sich Moleküle an einer Oberfläche an, bei
+      der Absorption dringen sie in das Innere einer Flüssigkeit oder eines Festkörpers ein.
+      Wie viel aufgenommen wird, hängt von Konzentration, Druck und Temperatur ab; durch Erwärmen
+      oder Druckabsenkung lässt sich der gebundene Stoff meist wieder freisetzen (Desorption).
+    example: >-
+      Trockenmittel wie Silicagel, Aktivkohlefilter, Gaswäsche zur CO2-Abtrennung, Druckwechseladsorption
+      zur Gewinnung von Sauerstoff und Stickstoff, Sorptionskältemaschinen
+    conditions: >-
+      Ein Sorbens mit großer Oberfläche oder hoher Aufnahmefähigkeit für den Zielstoff.
+    limits: >-
+      Ist das Sorbens gesättigt, nimmt es nichts mehr auf und muss regeneriert oder ersetzt
+      werden.
+    sideEffects: >-
+      Bei der Aufnahme wird meist Wärme frei, die das Sorbens erwärmt und seine Kapazität
+      mindert.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Sorption
+    description: >-
+      Sorption is the umbrella term for processes in which one substance is taken up and bound
+      by another. In adsorption, molecules attach to a surface; in absorption, they penetrate
+      into the bulk of a liquid or solid. How much is taken up depends on concentration, pressure
+      and temperature; heating or lowering the pressure usually releases the bound substance
+      again (desorption).
+    example: >-
+      Desiccants such as silica gel, activated-carbon filters, gas scrubbing for CO2 capture,
+      pressure swing adsorption for oxygen and nitrogen production, sorption chillers
+    conditions: >-
+      A sorbent with a large surface area or high capacity for the target substance.
+    limits: >-
+      Once the sorbent is saturated it takes up nothing more and must be regenerated or replaced.
+    sideEffects: >-
+      Uptake usually releases heat, which warms the sorbent and reduces its capacity.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

@@ -1,0 +1,65 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: electrohydrogenesis
+kind: application
+home: produce|gas
+functions:
+  - produce|gas
+  - remove|liquid
+parameters: []
+uses:
+  - electrolysis
+domain:
+  id: Biologie
+  de: Biologie
+  en: Biology
+maturity: kindheit
+sources:
+  - https://en.wikipedia.org/wiki/Electrohydrogenesis
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Elektrohydrogenese (mikrobielle Elektrolysezelle)
+    description: >-
+      Elektroaktive Bakterien an der Anode einer mikrobiellen Elektrolysezelle bauen organische
+      Stoffe, etwa aus Abwasser, ab und geben die dabei frei werdenden Elektronen an die Elektrode
+      ab. Mit einer kleinen zusätzlichen Spannung, deutlich unter der für die Wasserelektrolyse
+      nötigen, entsteht an der Kathode aus Protonen Wasserstoff.
+    example: >-
+      Wasserstofferzeugung aus Abwasser und Biomasse in Labor- und Pilotanlagen
+    conditions: >-
+      Anaerobe Bedingungen an der Anode; biologisch abbaubares Substrat; zusätzliche Spannung
+      von einigen Zehntel Volt.
+    limits: >-
+      Die Wasserstoffbildungsraten sind bislang gering, und teure Kathodenkatalysatoren oder
+      Membranen erschweren die Maßstabsvergrößerung.
+    sideEffects: >-
+      Methanbildende Mikroorganismen können einen Teil des Wasserstoffs zu Methan umsetzen.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Electrohydrogenesis (microbial electrolysis cell)
+    description: >-
+      Electroactive bacteria on the anode of a microbial electrolysis cell break down organic
+      matter, for example from wastewater, and pass the released electrons to the electrode.
+      With a small additional voltage, well below that needed for water electrolysis, hydrogen
+      is formed from protons at the cathode.
+    example: >-
+      Hydrogen production from wastewater and biomass in laboratory and pilot plants
+    conditions: >-
+      Anaerobic conditions at the anode; biodegradable substrate; additional voltage of a
+      few tenths of a volt.
+    limits: >-
+      Hydrogen production rates are still low, and costly cathode catalysts or membranes hinder
+      scale-up.
+    sideEffects: >-
+      Methanogenic microorganisms can convert part of the hydrogen into methane.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

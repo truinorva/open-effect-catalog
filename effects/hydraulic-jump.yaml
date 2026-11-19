@@ -1,0 +1,69 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: hydraulic-jump
+kind: effect
+home: stop|liquid
+functions:
+  - stop|liquid
+  - mix|liquid
+parameters:
+  - decrease|speed
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Wechselsprung
+  - https://en.wikipedia.org/wiki/Hydraulic_jump
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Wechselsprung
+    description: >-
+      Trifft eine schnelle, flache Strömung (schießender Abfluss) auf langsameres, tieferes
+      Wasser, steigt der Wasserspiegel auf kurzer Strecke sprunghaft an, und die Strömung
+      geht in ruhigen, strömenden Abfluss über. In der stark verwirbelten Deckwalze wird dabei
+      ein großer Teil der Bewegungsenergie in Wärme umgewandelt.
+    example: >-
+      Tosbecken unterhalb von Wehren und Überläufen, schnelles Einmischen von Chemikalien
+      in der Wasseraufbereitung, kreisförmiger Sprung im Spülbecken unter dem Wasserstrahl,
+      Gezeitenbrandung (Bore) in Flussmündungen
+    conditions: >-
+      Schießender Zufluss mit einer Froude-Zahl größer als 1 und ausreichende Wassertiefe
+      unterstrom.
+    limits: >-
+      Lage und Stärke des Sprungs hängen vom Unterwasserstand ab und können bei schwankendem
+      Abfluss wandern.
+    sideEffects: >-
+      Die starke Turbulenz greift Sohle und Ufer an, trägt Luft ein und verursacht Lärm.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Hydraulic jump
+    description: >-
+      When a fast, shallow flow (supercritical flow) meets slower, deeper water, the water
+      level rises abruptly over a short distance and the flow becomes tranquil (subcritical).
+      A large part of the kinetic energy is converted into heat in the strongly turbulent
+      roller.
+    example: >-
+      Stilling basins below weirs and spillways, flash mixing of chemicals in water treatment,
+      circular jump in a kitchen sink under the tap, tidal bores in estuaries
+    conditions: >-
+      Supercritical inflow with a Froude number greater than 1 and sufficient downstream water
+      depth.
+    limits: >-
+      The position and strength of the jump depend on the tailwater level and can shift when
+      the discharge varies.
+    sideEffects: >-
+      The strong turbulence attacks the bed and banks, entrains air and causes noise.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

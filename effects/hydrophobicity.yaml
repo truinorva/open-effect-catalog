@@ -1,0 +1,70 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: hydrophobicity
+kind: effect
+home: remove|liquid
+functions:
+  - remove|liquid
+  - separate|liquid
+  - separate|particles
+  - preserve|solid
+parameters:
+  - decrease|humidity
+uses: []
+domain:
+  id: Chemie
+  de: Chemie
+  en: Chemistry
+maturity: verbreitet
+sources:
+  - https://de.wikipedia.org/wiki/Hydrophobie
+  - https://en.wikipedia.org/wiki/Hydrophobe
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Hydrophobie
+    description: >-
+      Hydrophobe Stoffe und Oberflächen sind unpolar und gehen mit Wasser kaum Wechselwirkungen
+      ein; Wasser zieht sich darauf zu Tropfen zusammen (Kontaktwinkel über 90°). Kommt eine
+      feine Mikro- und Nanostruktur hinzu, liegen die Tropfen nur noch auf Spitzen und Luftpolstern
+      auf und rollen schon bei leichter Neigung ab (Superhydrophobie, Lotus-Effekt).
+    example: >-
+      Imprägnierung von Textilien und Fassaden, wasserabweisende Glasbeschichtungen, selbstreinigende
+      Oberflächen, Flotation von Erzen, Öl-Wasser-Trennung mit hydrophoben Membranen, atmungsaktive
+      Membranen in Funktionskleidung
+    conditions: ''
+    limits: >-
+      Superhydrophobe Strukturen sind mechanisch empfindlich und verlieren ihre Wirkung durch
+      Abrieb, Öle oder Tenside.
+    sideEffects: >-
+      Viele leistungsfähige Imprägnierungen beruhen auf langlebigen fluorierten Verbindungen
+      (PFAS).
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Hydrophobicity
+    description: >-
+      Hydrophobic substances and surfaces are non-polar and hardly interact with water; water
+      contracts into droplets on them (contact angle above 90°). If a fine micro- and nanostructure
+      is added, the droplets rest only on tips and air cushions and roll off at a slight tilt
+      (superhydrophobicity, lotus effect).
+    example: >-
+      Waterproofing of textiles and facades, water-repellent glass coatings, self-cleaning
+      surfaces, flotation of ores, oil-water separation with hydrophobic membranes, breathable
+      membranes in outdoor clothing
+    conditions: ''
+    limits: >-
+      Superhydrophobic structures are mechanically delicate and lose their effect through
+      abrasion, oils or surfactants.
+    sideEffects: >-
+      Many high-performance water repellents are based on persistent fluorinated compounds
+      (PFAS).
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

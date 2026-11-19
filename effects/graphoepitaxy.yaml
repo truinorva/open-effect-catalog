@@ -1,0 +1,62 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: graphoepitaxy
+kind: effect
+home: orient|solid
+functions:
+  - orient|solid
+parameters:
+  - change|orientation
+  - increase|homogeneity
+uses: []
+domain:
+  id: Materialwissenschaft
+  de: Materialwissenschaft
+  en: Materials science
+maturity: nische
+sources: []
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Graphoepitaxie
+    description: >-
+      Bei der Graphoepitaxie wird die Ausrichtung wachsender Kristalle oder sich selbst ordnender
+      Strukturen nicht durch ein passendes Kristallgitter der Unterlage vorgegeben, sondern
+      durch ein künstliches Oberflächenrelief wie Gräben oder Stufen. Die Wände des Reliefs
+      legen eine Vorzugsrichtung fest, an der sich Kristallite oder die Domänen von Blockcopolymeren
+      über größere Flächen einheitlich ausrichten.
+    example: >-
+      Gerichtete Selbstorganisation von Blockcopolymeren für die Halbleiterlithografie, orientiertes
+      Wachstum dünner Schichten auf amorphen Unterlagen
+    conditions: Reliefstrukturen in der Größenordnung der zu ordnenden Strukturen.
+    limits: >-
+      Die Ordnung reicht nur so weit, wie die Führung durch das Relief wirkt; Fehlstellen
+      in der Selbstorganisation bleiben eine Herausforderung.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Graphoepitaxy
+    description: >-
+      In graphoepitaxy, the orientation of growing crystals or self-assembling structures
+      is set not by a matching crystal lattice in the substrate but by an artificial surface
+      relief such as trenches or steps. The walls of the relief define a preferred direction
+      along which crystallites or the domains of block copolymers align uniformly over larger
+      areas.
+    example: >-
+      Directed self-assembly of block copolymers for semiconductor lithography, oriented growth
+      of thin films on amorphous substrates
+    conditions: Relief structures on the scale of the structures to be ordered.
+    limits: >-
+      The order extends only as far as the relief's guidance reaches; defects in self-assembly
+      remain a challenge.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

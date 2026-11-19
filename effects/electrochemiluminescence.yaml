@@ -1,0 +1,66 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: electrochemiluminescence
+kind: effect
+home: produce|field
+functions:
+  - produce|field
+  - detect|liquid
+  - measure|liquid
+parameters:
+  - increase|brightness
+  - measure|concentration
+uses: []
+domain:
+  id: Chemie
+  de: Chemie
+  en: Chemistry
+maturity: nische
+sources:
+  - https://de.wikipedia.org/wiki/Elektrochemilumineszenz
+  - https://en.wikipedia.org/wiki/Electrochemiluminescence
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Elektrochemilumineszenz (ECL)
+    description: >-
+      An einer Elektrode entstehen durch Elektronenübertragung reaktive Zwischenprodukte,
+      die miteinander oder mit einem Coreaktanten so energiereich reagieren, dass ein Molekül
+      in einem angeregten Zustand gebildet wird. Dieses gibt seine Energie als Licht ab; da
+      die Reaktion erst durch das Elektrodenpotential ausgelöst wird, lassen sich Beginn und
+      Ort der Lichtemission elektrisch steuern.
+    example: >-
+      Immunoassays in der Labordiagnostik mit Rutheniumkomplexen als Markern, Nachweis von
+      Biomolekülen, analytische Detektoren
+    conditions: >-
+      Geeigneter Luminophor, z. B. Tris(bipyridin)ruthenium, und meist ein Coreaktant wie
+      Tripropylamin.
+    limits: ''
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Electrochemiluminescence (ECL)
+    description: >-
+      Electron transfer at an electrode forms reactive intermediates that react with each
+      other or with a co-reactant energetically enough to produce a molecule in an excited
+      state. This molecule releases its energy as light; since the reaction is triggered only
+      by the electrode potential, the onset and location of light emission can be controlled
+      electrically.
+    example: >-
+      Immunoassays in clinical diagnostics using ruthenium complexes as labels, detection
+      of biomolecules, analytical detectors
+    conditions: >-
+      Suitable luminophore, e.g. tris(bipyridine)ruthenium, and usually a co-reactant such
+      as tripropylamine.
+    limits: ''
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

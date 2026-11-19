@@ -1,0 +1,69 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: free-convection
+kind: effect
+home: cool|solid
+functions:
+  - cool|solid
+  - heat|gas
+  - heat|liquid
+  - move|gas
+  - move|liquid
+  - mix|liquid
+parameters:
+  - decrease|temperature
+  - increase|heat-conduction
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Konvektion_(W%C3%A4rme%C3%BCbertragung)
+  - https://en.wikipedia.org/wiki/Convection_(heat_transfer)
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Freie Konvektion
+    description: >-
+      Erwärmt sich ein Gas oder eine Flüssigkeit an einer warmen Fläche, dehnt es sich aus,
+      wird leichter und steigt auf, während abgekühltes Fluid absinkt. So entsteht ohne Pumpe
+      oder Lüfter eine Strömung, die Wärme von warmen zu kalten Stellen trägt.
+    example: >-
+      Passive Kühlkörper, Heizkörper, Kaminzug, Schwerkraft-Warmwasserheizung, Wolkenbildung,
+      Thermik
+    conditions: >-
+      Schwerkraft und ein Temperaturunterschied, der Dichteunterschiede im Fluid erzeugt.
+    limits: >-
+      Der Wärmeübergang ist deutlich schwächer als bei erzwungener Konvektion; in Schwerelosigkeit
+      entfällt der Effekt.
+    sideEffects: >-
+      Es bildet sich eine Temperaturschichtung, bei der sich warme Luft unter der Decke sammelt.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Free convection
+    description: >-
+      When a gas or liquid is warmed at a hot surface, it expands, becomes lighter and rises,
+      while cooled fluid sinks. This sets up a flow without any pump or fan that carries heat
+      from warm to cold places.
+    example: >-
+      Passive heat sinks, radiators, chimney draught, gravity-fed hot-water heating, cloud
+      formation, thermals
+    conditions: >-
+      Gravity and a temperature difference that creates density differences in the fluid.
+    limits: >-
+      Heat transfer is much weaker than with forced convection; under weightlessness the effect
+      disappears.
+    sideEffects: >-
+      Temperature stratification develops, with warm air collecting under the ceiling.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

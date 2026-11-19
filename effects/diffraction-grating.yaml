@@ -1,0 +1,66 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: diffraction-grating
+kind: application
+home: separate|field
+functions:
+  - separate|field
+  - measure|field
+parameters:
+  - measure|colour
+uses: []
+domain:
+  id: ''
+  de: ''
+  en: ''
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Optisches_Gitter
+  - https://en.wikipedia.org/wiki/Diffraction_grating
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Beugungsgitter (optisches Gitter)
+    description: >-
+      Ein optisches Gitter trägt sehr viele feine, parallele Linien oder Furchen in gleichem
+      Abstand. Das an jeder Linie gebeugte Licht überlagert sich nur in bestimmten Richtungen
+      konstruktiv, und diese Richtungen hängen von der Wellenlänge ab. Dadurch wird Licht
+      in sein Spektrum zerlegt – deutlich stärker und gleichmäßiger als mit einem Prisma.
+    example: >-
+      Spektrometer und Monochromatoren, Wellenlängenmultiplexer in der Glasfasertechnik, Pulskompression
+      in Ultrakurzpulslasern, Farbenspiel auf CDs, Sicherheitshologramme
+    conditions: >-
+      Eine Gitterkonstante in der Größenordnung der Lichtwellenlänge und paralleles Licht
+      für hohe Auflösung.
+    limits: >-
+      Die Energie verteilt sich auf mehrere Beugungsordnungen, die sich überlappen können,
+      und das Auflösungsvermögen ist durch die Zahl der beleuchteten Linien begrenzt.
+    sideEffects: Streulicht und Geisterlinien durch Fertigungsfehler.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Diffraction grating
+    description: >-
+      An optical grating carries a very large number of fine, parallel lines or grooves at
+      equal spacing. The light diffracted at each line interferes constructively only in certain
+      directions, and these directions depend on the wavelength. As a result light is split
+      into its spectrum – much more strongly and more uniformly than with a prism.
+    example: >-
+      Spectrometers and monochromators, wavelength multiplexers in fibre-optic communication,
+      pulse compression in ultrashort-pulse lasers, iridescence on CDs, security holograms
+    conditions: >-
+      A grating period of the order of the light wavelength and collimated light for high
+      resolution.
+    limits: >-
+      The energy is distributed over several diffraction orders, which can overlap, and the
+      resolving power is limited by the number of illuminated lines.
+    sideEffects: Stray light and ghost lines caused by manufacturing errors.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

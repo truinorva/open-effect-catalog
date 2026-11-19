@@ -1,0 +1,73 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: doping
+kind: application
+home: mix|solid
+functions:
+  - mix|solid
+parameters:
+  - increase|conductivity
+  - change|colour
+uses:
+  - diffusion
+domain:
+  id: Materialwissenschaft
+  de: Materialwissenschaft
+  en: Materials science
+maturity: reife
+sources:
+  - https://en.wikipedia.org/wiki/Dopant
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Dotierung
+    description: >-
+      Beim Dotieren werden gezielt geringe Mengen fremder Atome in einen Kristall eingebaut,
+      um seine elektrischen oder optischen Eigenschaften zu verändern. In Silizium liefern
+      fünfwertige Atome wie Phosphor zusätzliche Elektronen (n-Leitung), dreiwertige wie Bor
+      Löcher (p-Leitung); schon ein Fremdatom auf eine Million Siliziumatome steigert die
+      Leitfähigkeit um Größenordnungen. In isolierenden Kristallen und Gläsern erzeugen eingebaute
+      Ionen Farben, Lumineszenz und Laserübergänge.
+    example: >-
+      Halbleiterbauelemente und Solarzellen, Neodym-dotierte Laserkristalle (Nd:YAG), Erbium-dotierte
+      Faserverstärker, Rubin (Chrom in Korund), Leuchtstoffe
+    conditions: >-
+      Ein sehr reines Grundmaterial und Dotierstoffe, die sich auf Gitterplätzen einbauen,
+      eingebracht durch Diffusion, Ionenimplantation oder Zugabe zur Schmelze.
+    limits: >-
+      Jeder Dotierstoff hat eine Löslichkeitsgrenze im Wirtskristall, und sehr hohe Dotierung
+      verringert die Beweglichkeit der Ladungsträger.
+    sideEffects: >-
+      Unerwünschte Fremdatome wirken als Störstellen und verkürzen etwa die Lebensdauer der
+      Ladungsträger.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Doping
+    description: >-
+      In doping, small amounts of foreign atoms are deliberately incorporated into a crystal
+      to change its electrical or optical properties. In silicon, pentavalent atoms such as
+      phosphorus provide extra electrons (n-type) and trivalent ones such as boron provide
+      holes (p-type); even one foreign atom per million silicon atoms raises the conductivity
+      by orders of magnitude. In insulating crystals and glasses, incorporated ions create
+      colours, luminescence and laser transitions.
+    example: >-
+      Semiconductor devices and solar cells, neodymium-doped laser crystals (Nd:YAG), erbium-doped
+      fibre amplifiers, ruby (chromium in corundum), phosphors
+    conditions: >-
+      A very pure host material and dopants that occupy lattice sites, introduced by diffusion,
+      ion implantation or addition to the melt.
+    limits: >-
+      Every dopant has a solubility limit in the host crystal, and very high doping reduces
+      the mobility of the charge carriers.
+    sideEffects: >-
+      Unwanted foreign atoms act as defects and, for example, shorten the carrier lifetime.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

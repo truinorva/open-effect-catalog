@@ -1,0 +1,68 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: franz-keldysh-effect
+kind: effect
+home: stop|field
+functions:
+  - stop|field
+  - measure|field
+parameters:
+  - decrease|translucency
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: nische
+sources:
+  - https://de.wikipedia.org/wiki/Franz-Keldysh-Effekt
+  - https://en.wikipedia.org/wiki/Franz%E2%80%93Keldysh_effect
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Franz-Keldysh-Effekt
+    description: >-
+      Ein starkes elektrisches Feld in einem Halbleiter lässt die Absorptionskante verschwimmen:
+      Photonen mit etwas weniger Energie als der Bandlücke werden nun absorbiert, weil die
+      Wellenfunktionen von Elektronen und Löchern im Feld in die verbotene Zone hineinreichen
+      (photonenunterstütztes Tunneln). Über die angelegte Spannung lässt sich so die Lichtdurchlässigkeit
+      nahe der Bandkante schnell schalten.
+    example: >-
+      Elektroabsorptionsmodulatoren aus Germanium auf Silizium, Elektroreflexions- und Photoreflexionsspektroskopie
+      zur Bestimmung innerer Felder in Halbleitern
+    conditions: >-
+      Halbleiter oder Isolator in einem starken elektrischen Feld; Lichtwellenlänge nahe der
+      Bandkante.
+    limits: >-
+      Die Absorptionsänderung ist nur in einem schmalen Spektralbereich unterhalb der Bandkante
+      nennenswert und erfordert hohe Feldstärken.
+    sideEffects: Das absorbierte Licht erzeugt im Modulator einen Photostrom und Wärme.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Franz-Keldysh effect
+    description: >-
+      A strong electric field in a semiconductor smears out the absorption edge: photons with
+      slightly less energy than the band gap are now absorbed, because in the field the electron
+      and hole wave functions extend into the forbidden gap (photon-assisted tunnelling).
+      The applied voltage can therefore rapidly switch the transmission of light near the
+      band edge.
+    example: >-
+      Germanium-on-silicon electroabsorption modulators, electroreflectance and photoreflectance
+      spectroscopy for determining internal fields in semiconductors
+    conditions: >-
+      Semiconductor or insulator in a strong electric field; light wavelength close to the
+      band edge.
+    limits: >-
+      The change in absorption is significant only in a narrow spectral range below the band
+      edge and requires high field strengths.
+    sideEffects: The absorbed light generates a photocurrent and heat in the modulator.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

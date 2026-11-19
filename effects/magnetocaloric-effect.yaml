@@ -1,0 +1,69 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: magnetocaloric-effect
+kind: effect
+home: cool|solid
+functions:
+  - cool|solid
+  - heat|solid
+parameters:
+  - decrease|temperature
+  - increase|temperature
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Magnetische_K%C3%BChlung
+  - https://en.wikipedia.org/wiki/Magnetocaloric_effect
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Magnetokalorischer Effekt
+    description: >-
+      Wird ein magnetisches Material einem Magnetfeld ausgesetzt, richten sich seine magnetischen
+      Momente aus, die magnetische Entropie sinkt, und bei Wärmeisolation steigt die Temperatur
+      des Materials. Wird das Feld wieder entfernt, geraten die Momente in Unordnung und entziehen
+      dabei dem Gitter Wärme, so dass sich das Material abkühlt. Besonders groß ist der Effekt
+      in der Nähe eines magnetischen Phasenübergangs wie der Curie-Temperatur.
+    example: >-
+      Adiabatische Entmagnetisierung zur Kühlung in den Millikelvinbereich, Kühlung von Weltraumdetektoren,
+      Prototypen magnetischer Kühlschränke mit Gadolinium oder La-Fe-Si-Legierungen
+    conditions: >-
+      Ein paramagnetischer oder ferromagnetischer Stoff nahe seiner Ordnungstemperatur und
+      ein starkes, veränderliches Magnetfeld.
+    limits: >-
+      In der Nähe der Raumtemperatur ändern selbst die besten Materialien in Feldern von 1
+      bis 2 Tesla ihre Temperatur pro Magnetisierungsschritt nur um wenige Kelvin.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Magnetocaloric effect
+    description: >-
+      When a magnetic material is exposed to a magnetic field, its magnetic moments align,
+      the magnetic entropy falls and, under thermal insulation, the temperature of the material
+      rises. When the field is removed again, the moments become disordered and draw heat
+      from the lattice, so the material cools down. The effect is particularly large near
+      a magnetic phase transition such as the Curie temperature.
+    example: >-
+      Adiabatic demagnetisation for cooling into the millikelvin range, cooling of space-borne
+      detectors, prototype magnetic refrigerators with gadolinium or La-Fe-Si alloys
+    conditions: >-
+      A paramagnetic or ferromagnetic substance close to its ordering temperature and a strong,
+      varying magnetic field.
+    limits: >-
+      Near room temperature, even the best materials in fields of 1 to 2 tesla change temperature
+      by only a few kelvin per magnetisation step.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

@@ -1,0 +1,69 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: fabry-perot-interferometer
+kind: application
+home: separate|field
+functions:
+  - separate|field
+  - measure|field
+  - measure|solid
+parameters:
+  - measure|colour
+  - measure|size
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Fabry-P%C3%A9rot-Interferometer
+  - https://en.wikipedia.org/wiki/Fabry%E2%80%93P%C3%A9rot_interferometer
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Fabry-Pérot-Interferometer
+    description: >-
+      Zwei parallele, teildurchlässige Spiegel bilden einen Resonator, in dem Licht vielfach
+      hin und her reflektiert wird. Nur Wellenlängen, von denen der doppelte Spiegelabstand
+      ein ganzzahliges Vielfaches ist, überlagern sich konstruktiv und werden durchgelassen;
+      alle anderen löschen sich weitgehend aus. Je höher das Reflexionsvermögen der Spiegel,
+      desto schmaler sind die Durchlasslinien.
+    example: >-
+      Schmalbandige Interferenzfilter, Laserresonatoren, hochauflösende Spektroskopie, faseroptische
+      Druck- und Temperatursensoren, Wellenlängenmesser
+    conditions: >-
+      Planparallele, hochreflektierende Spiegel und ein stabiler Spiegelabstand.
+    limits: >-
+      Die Durchlasslinien wiederholen sich periodisch (freier Spektralbereich), so dass Messungen
+      mehrdeutig werden können.
+    sideEffects: >-
+      Temperaturänderungen und Erschütterungen, die den Spiegelabstand verändern, verfälschen
+      das Ergebnis.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Fabry–Pérot interferometer
+    description: >-
+      Two parallel, partially transmitting mirrors form a resonator in which light is reflected
+      back and forth many times. Only wavelengths of which twice the mirror spacing is a whole
+      multiple interfere constructively and are transmitted; all others largely cancel out.
+      The higher the mirror reflectivity, the narrower the transmission lines.
+    example: >-
+      Narrow-band interference filters, laser resonators, high-resolution spectroscopy, fibre-optic
+      pressure and temperature sensors, wavemeters
+    conditions: Plane-parallel, highly reflective mirrors and a stable mirror spacing.
+    limits: >-
+      The transmission lines repeat periodically (free spectral range), so measurements can
+      become ambiguous.
+    sideEffects: >-
+      Temperature changes and vibrations that alter the mirror spacing distort the result.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

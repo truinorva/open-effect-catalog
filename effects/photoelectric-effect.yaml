@@ -1,0 +1,72 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: photoelectric-effect
+kind: effect
+home: detect|field
+functions:
+  - detect|field
+  - measure|field
+  - measure|solid
+parameters:
+  - measure|brightness
+  - increase|charge
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Photoelektrischer_Effekt
+  - https://en.wikipedia.org/wiki/Photoelectric_effect
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Photoelektrischer Effekt (äußerer Photoeffekt)
+    description: >-
+      Trifft Licht oder andere elektromagnetische Strahlung auf eine Oberfläche, kann ein
+      Photon seine gesamte Energie an ein Elektron abgeben und es aus dem Material herauslösen.
+      Das gelingt nur, wenn die Photonenenergie, also die Frequenz des Lichts, die Austrittsarbeit
+      des Materials übersteigt; die Lichtstärke bestimmt nur die Zahl der Elektronen, nicht
+      ihre Energie. Die freigesetzten Elektronen lassen sich als Strom messen oder vervielfachen.
+    example: >-
+      Photomultiplier, Fotozellen, Bildverstärker in Nachtsichtgeräten, Photoelektronenspektroskopie
+      (XPS) zur Oberflächenanalyse
+    conditions: >-
+      Eine Photonenenergie oberhalb der Austrittsarbeit und meist Vakuum, damit die Elektronen
+      nicht abgebremst werden.
+    limits: >-
+      Für die meisten Metalle reicht sichtbares Licht nicht aus; im Sichtbaren arbeiten nur
+      Schichten mit niedriger Austrittsarbeit, etwa aus Alkalimetallverbindungen.
+    sideEffects: >-
+      Sonnenlicht lädt Satelliten und Raumsonden durch Elektronenemission elektrisch auf.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Photoelectric effect
+    description: >-
+      When light or other electromagnetic radiation strikes a surface, a photon can transfer
+      its entire energy to an electron and eject it from the material. This only works if
+      the photon energy, that is the frequency of the light, exceeds the work function of
+      the material; the light intensity determines only the number of electrons, not their
+      energy. The released electrons can be measured as a current or multiplied.
+    example: >-
+      Photomultipliers, phototubes, image intensifiers in night-vision devices, photoelectron
+      spectroscopy (XPS) for surface analysis
+    conditions: >-
+      A photon energy above the work function and usually a vacuum so that the electrons are
+      not stopped.
+    limits: >-
+      For most metals visible light is not enough; in the visible range only low-work-function
+      layers, for example of alkali metal compounds, work.
+    sideEffects: >-
+      Sunlight charges satellites and space probes electrically through electron emission.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

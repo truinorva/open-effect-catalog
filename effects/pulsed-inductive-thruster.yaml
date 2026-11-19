@@ -1,0 +1,66 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: pulsed-inductive-thruster
+kind: application
+home: move|solid
+functions:
+  - move|solid
+  - move|gas
+parameters:
+  - increase|speed
+uses:
+  - reaction-force
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: kindheit
+sources:
+  - https://en.wikipedia.org/wiki/Pulsed_inductive_thruster
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Gepulstes induktives Triebwerk
+    description: >-
+      Ein gepulstes induktives Triebwerk ist ein elektrischer Raumfahrtantrieb ohne Elektroden.
+      Ein Gasstoß, etwa aus Ammoniak oder Argon, wird vor einer flachen Spiralspule verteilt;
+      dann entlädt sich eine Kondensatorbank schlagartig über die Spule, deren rasch anwachsendes
+      Magnetfeld im Gas ein elektrisches Feld induziert, es ionisiert und im Plasma einen
+      Gegenstrom antreibt. Spulen- und Plasmastrom stoßen sich ab, sodass das Plasma mit hoher
+      Geschwindigkeit ausgestoßen wird.
+    example: >-
+      Versuchstriebwerke von TRW und NASA für Bahnmanöver von Raumsonden, Forschung an elektrodenlosen
+      Plasmaantrieben
+    conditions: >-
+      Vakuum, eine Hochspannungs-Kondensatorbank mit schnellem Schalter und genau dosierte
+      Gaspulse.
+    limits: Bisher nur in Labor- und Bodenversuchen erprobt.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Pulsed inductive thruster
+    description: >-
+      A pulsed inductive thruster is an electrodeless electric propulsion system for spacecraft.
+      A puff of gas such as ammonia or argon is spread over a flat spiral coil; a capacitor
+      bank then discharges abruptly through the coil, whose rapidly rising magnetic field
+      induces an electric field in the gas, ionises it and drives an opposing current in the
+      plasma. Coil current and plasma current repel each other, so the plasma is expelled
+      at high speed.
+    example: >-
+      Experimental thrusters by TRW and NASA for spacecraft orbit manoeuvres, research on
+      electrodeless plasma propulsion
+    conditions: >-
+      Vacuum, a high-voltage capacitor bank with a fast switch, and precisely metered gas
+      pulses.
+    limits: So far tested only in laboratory and ground experiments.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

@@ -1,0 +1,72 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: knurling
+kind: application
+home: deform|solid
+functions:
+  - deform|solid
+  - hold|solid
+  - join|solid
+parameters:
+  - increase|friction
+  - change|surface-finish
+uses:
+  - friction
+domain:
+  id: ''
+  de: ''
+  en: ''
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/R%C3%A4ndeln
+  - https://en.wikipedia.org/wiki/Knurling
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Rändeln
+    description: >-
+      Beim Rändeln wird ein hartes, profiliertes Rad gegen ein rotierendes, meist zylindrisches
+      Werkstück gedrückt und prägt ein gerades, schräges oder gekreuztes Rillenmuster in dessen
+      Oberfläche. Beim verbreiteten Rändeldrücken wird das Material dabei spanlos plastisch
+      verdrängt, so dass der Durchmesser leicht wächst; beim Rändelfräsen wird es dagegen
+      zerspant. Die aufgeraute Fläche bietet Fingern sicheren Griff und verkrallt sich bei
+      Pressverbindungen im Gegenstück.
+    example: >-
+      Griffflächen an Rändelschrauben, Muttern und Messschrauben, Werkzeuggriffe, Gewindeeinsätze
+      für Kunststoffteile, Presssitze von Achsen in Kunststoff- oder Aluminiumnaben
+    conditions: >-
+      Ein ausreichend verformbarer Werkstoff und eine Radteilung, die zum Werkstückumfang
+      passt.
+    limits: >-
+      Sehr harte oder spröde Werkstoffe lassen sich kaum rändeln; bei unpassendem Durchmesser
+      entstehen Doppelspuren.
+    sideEffects: >-
+      Die raue Oberfläche kann Haut, Handschuhe oder Dichtungen beschädigen und sammelt Schmutz.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Knurling
+    description: >-
+      In knurling, a hard profiled wheel is pressed against a rotating, usually cylindrical
+      workpiece and impresses a straight, diagonal or crossed pattern of ridges into its surface.
+      In the common form-knurling process the material is displaced plastically without chips,
+      so the diameter grows slightly; cut knurling removes material instead. The roughened
+      surface gives fingers a secure grip and digs into the mating part in press fits.
+    example: >-
+      Grip surfaces on thumb screws, nuts and micrometers, tool handles, threaded inserts
+      for plastic parts, press fits of shafts in plastic or aluminium hubs
+    conditions: >-
+      A sufficiently ductile material and a wheel pitch that matches the workpiece circumference.
+    limits: >-
+      Very hard or brittle materials can hardly be knurled; an unsuitable diameter leads to
+      double tracking.
+    sideEffects: The rough surface can damage skin, gloves or seals and collects dirt.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

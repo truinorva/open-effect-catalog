@@ -1,0 +1,59 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: reaction-force
+kind: effect
+home: move|solid
+functions:
+  - move|solid
+  - rotate|solid
+parameters: []
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: lehrbuch
+sources:
+  - https://en.wikipedia.org/wiki/Reaction_(physics)
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Reaktionskraft (Wechselwirkungsprinzip)
+    description: >-
+      Nach dem dritten Newtonschen Gesetz erfährt jeder Körper, der auf einen anderen eine
+      Kraft ausübt, von diesem eine gleich große, entgegengesetzt gerichtete Kraft. Wer Masse
+      in eine Richtung beschleunigt, erhält deshalb einen Schub in die Gegenrichtung, und
+      jede Abstützung erzeugt am Auflager eine Gegenkraft.
+    example: >-
+      Raketen- und Strahlantriebe, Rückstoß von Feuerwaffen, Rasensprenger und Segnersches
+      Wasserrad, Schiffsschrauben und Propeller, Auflagerkräfte in Tragwerken
+    conditions: ''
+    limits: ''
+    sideEffects: >-
+      Rückstoßkräfte müssen von der Struktur aufgenommen werden und können ungewollte Bewegungen
+      oder Belastungen verursachen.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Reaction force (Newton's third law)
+    description: >-
+      According to Newton's third law, any body that exerts a force on another experiences
+      an equal and opposite force from it. Anything that accelerates mass in one direction
+      therefore receives a thrust in the opposite direction, and every support produces a
+      counterforce at the bearing.
+    example: >-
+      Rocket and jet propulsion, recoil of firearms, lawn sprinklers and Segner wheel, ship
+      and aircraft propellers, support reactions in structures
+    conditions: ''
+    limits: ''
+    sideEffects: >-
+      Recoil forces must be absorbed by the structure and can cause unwanted motion or loads.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

@@ -1,0 +1,74 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: rolling-metalworking
+kind: application
+home: deform|solid
+functions:
+  - deform|solid
+parameters:
+  - decrease|size
+  - change|shape
+  - increase|strength
+  - change|surface-finish
+uses:
+  - plasticity
+  - friction
+domain:
+  id: ''
+  de: ''
+  en: ''
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Walzen
+  - https://en.wikipedia.org/wiki/Rolling_(metalworking)
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Walzen
+    description: >-
+      Beim Walzen läuft ein Werkstück zwischen zwei oder mehr sich drehenden Walzen hindurch,
+      deren Spalt kleiner ist als seine Dicke. Die Walzen ziehen das Material durch Reibung
+      in den Spalt und drücken es plastisch zusammen, sodass es dünner und länger wird; profilierte
+      Walzen formen Schienen, Träger oder Gewinde.
+    example: >-
+      Bleche und Bänder aus Stahl und Aluminium, Folien, Schienen und Doppel-T-Träger, Drahtherstellung,
+      Gewindewalzen, nahtlose Rohre
+    conditions: >-
+      Ein umformbarer Werkstoff; Warmwalzen oberhalb der Rekristallisationstemperatur für
+      große Umformgrade, Kaltwalzen für Maßgenauigkeit und glatte Oberflächen.
+    limits: >-
+      Die Dickenabnahme je Durchgang ist durch Greifwinkel und Reibung begrenzt, und sehr
+      dünne Folien werden doppelt gewalzt.
+    sideEffects: >-
+      Kaltwalzen verfestigt den Werkstoff und erzeugt eine Walztextur mit richtungsabhängigen
+      Eigenschaften; beim Warmwalzen bildet sich Zunder an der Oberfläche.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Rolling (metalworking)
+    description: >-
+      In rolling, a workpiece passes between two or more rotating rolls whose gap is smaller
+      than its thickness. The rolls draw the material into the gap by friction and squeeze
+      it plastically, so that it becomes thinner and longer; profiled rolls shape rails, beams
+      or threads.
+    example: >-
+      Steel and aluminium sheet and strip, foil, rails and I-beams, wire production, thread
+      rolling, seamless tubes
+    conditions: >-
+      A formable material; hot rolling above the recrystallisation temperature for large reductions,
+      cold rolling for dimensional accuracy and smooth surfaces.
+    limits: >-
+      The reduction per pass is limited by the bite angle and friction, and very thin foil
+      is rolled as a double layer.
+    sideEffects: >-
+      Cold rolling work-hardens the material and creates a rolling texture with direction-dependent
+      properties; hot rolling forms scale on the surface.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

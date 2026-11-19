@@ -1,0 +1,67 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: pyrophoricity
+kind: effect
+home: produce|field
+functions:
+  - produce|field
+parameters:
+  - increase|temperature
+uses: []
+domain:
+  id: Chemie
+  de: Chemie
+  en: Chemistry
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Pyrophor
+  - https://en.wikipedia.org/wiki/Pyrophoricity
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Pyrophorie
+    description: >-
+      Pyrophore Stoffe entzünden sich an Luft schon bei Raumtemperatur von selbst, ohne Zündquelle.
+      Ursache ist eine sehr schnelle, exotherme Reaktion mit Sauerstoff oder Luftfeuchte,
+      deren Wärme nicht schnell genug abgeführt wird; feinste Metallpulver mit großer Oberfläche,
+      Alkylaluminium-Verbindungen, weißer Phosphor oder Silan sind typische Beispiele.
+    example: >-
+      Zündgemisch aus Triethylaluminium und Triethylboran in Raketentriebwerken, Cereisen-Zündsteine
+      in Feuerzeugen, pyrophore Infrarot-Täuschkörper, Selbstentzündung von Eisenpulver und
+      Eisensulfid-Ablagerungen
+    conditions: >-
+      Kontakt mit Luft; bei Metallen eine sehr feine Verteilung mit großer spezifischer Oberfläche.
+    limits: >-
+      Kompakte Stücke desselben Metalls sind meist nicht pyrophor, weil eine dünne Oxidschicht
+      die Reaktion bremst.
+    sideEffects: >-
+      Erhebliche Brand- und Explosionsgefahr; Lagerung und Handhabung erfordern Schutzgas
+      oder Lösungsmittel.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Pyrophoricity
+    description: >-
+      Pyrophoric substances ignite spontaneously in air at room temperature without an ignition
+      source. The cause is a very fast, exothermic reaction with oxygen or atmospheric moisture
+      whose heat is not removed fast enough; very fine metal powders with a large surface
+      area, alkylaluminium compounds, white phosphorus or silane are typical examples.
+    example: >-
+      Triethylaluminium-triethylborane igniter in rocket engines, ferrocerium flints in lighters,
+      pyrophoric infrared decoy flares, self-ignition of iron powder and iron sulphide deposits
+    conditions: >-
+      Contact with air; for metals, a very fine division with a large specific surface area.
+    limits: >-
+      Compact pieces of the same metal are usually not pyrophoric because a thin oxide layer
+      slows the reaction.
+    sideEffects: >-
+      Considerable fire and explosion hazard; storage and handling require inert gas or solvents.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

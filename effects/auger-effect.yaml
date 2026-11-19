@@ -1,0 +1,66 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: auger-effect
+kind: effect
+home: measure|solid
+functions:
+  - measure|solid
+parameters:
+  - measure|concentration
+  - measure|purity
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Auger-Meitner-Effekt
+  - https://en.wikipedia.org/wiki/Auger_effect
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Auger-Effekt (Auger-Meitner-Effekt)
+    description: >-
+      Wird aus einer inneren Schale eines Atoms ein Elektron entfernt, füllt ein Elektron
+      aus einer höheren Schale die Lücke. Die dabei frei werdende Energie wird nicht als Röntgenquant
+      abgestrahlt, sondern auf ein weiteres Elektron übertragen, das das Atom mit einer für
+      das Element charakteristischen Energie verlässt.
+    example: >-
+      Auger-Elektronenspektroskopie zur Analyse der Elementzusammensetzung von Oberflächen,
+      Untersuchung von Korngrenzen und Verunreinigungen, Forschung zur Strahlentherapie mit
+      Auger-Emittern
+    conditions: >-
+      Anregung durch einen Elektronen-, Röntgen- oder Ionenstrahl; für die Analyse ist Ultrahochvakuum
+      nötig.
+    limits: >-
+      Die Auger-Elektronen haben wenig Energie und stammen daher nur aus den obersten wenigen
+      Nanometern der Probe, und Wasserstoff und Helium lassen sich nicht nachweisen.
+    sideEffects: >-
+      Der anregende Elektronenstrahl kann empfindliche Proben aufladen oder schädigen.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Auger effect (Auger-Meitner effect)
+    description: >-
+      When an electron is removed from an inner shell of an atom, an electron from a higher
+      shell fills the vacancy. The energy released is not emitted as an X-ray photon but transferred
+      to another electron, which leaves the atom with an energy characteristic of the element.
+    example: >-
+      Auger electron spectroscopy for analysing the elemental composition of surfaces, study
+      of grain boundaries and impurities, research on radiotherapy with Auger emitters
+    conditions: >-
+      Excitation by an electron, X-ray or ion beam; analysis requires ultra-high vacuum.
+    limits: >-
+      Auger electrons have low energy and so come only from the top few nanometres of the
+      sample, and hydrogen and helium cannot be detected.
+    sideEffects: The exciting electron beam can charge up or damage sensitive samples.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

@@ -1,0 +1,68 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: acoustic-emission
+kind: effect
+home: detect|solid
+functions:
+  - detect|solid
+  - measure|solid
+  - produce|field
+parameters:
+  - measure|position
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: verbreitet
+sources:
+  - https://de.wikipedia.org/wiki/Schallemission
+  - https://en.wikipedia.org/wiki/Acoustic_emission
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Schallemission
+    description: >-
+      Wächst in einem belasteten Werkstoff ein Riss, brechen Fasern oder ordnen sich Gefügebereiche
+      plötzlich um, wird schlagartig gespeicherte elastische Energie frei und läuft als kurzer
+      Ultraschallimpuls durch das Bauteil. Mehrere Sensoren auf der Oberfläche zeichnen diese
+      Impulse auf, und aus den Laufzeitunterschieden lässt sich die Quelle orten.
+    example: >-
+      Druckprüfung von Behältern und Rohrleitungen, Überwachung von Brücken und Rotorblättern
+      von Windkraftanlagen, Prüfung von Faserverbundbauteilen, Werkzeugbruchüberwachung beim
+      Zerspanen
+    conditions: >-
+      Das Bauteil muss während der Prüfung belastet werden, denn nur aktiv wachsende Schäden
+      senden Signale aus.
+    limits: >-
+      Ruhende Fehler bleiben stumm, und meist entstehen erst wieder Signale, wenn die frühere
+      Höchstlast überschritten wird (Kaiser-Effekt).
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Acoustic emission
+    description: >-
+      When a crack grows in a loaded material, fibres break or regions of the microstructure
+      suddenly rearrange, stored elastic energy is released abruptly and travels through the
+      part as a short ultrasonic pulse. Several sensors on the surface record these pulses,
+      and the source can be located from the differences in arrival time.
+    example: >-
+      Pressure testing of vessels and pipelines, monitoring of bridges and wind turbine blades,
+      inspection of fibre composite parts, tool breakage monitoring in machining
+    conditions: >-
+      The part has to be loaded during the test, because only actively growing damage emits
+      signals.
+    limits: >-
+      Dormant flaws stay silent, and signals usually reappear only once the previous maximum
+      load is exceeded (Kaiser effect).
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

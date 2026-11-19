@@ -1,0 +1,74 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: x-rays
+kind: effect
+home: detect|solid
+functions:
+  - detect|solid
+  - measure|solid
+  - measure|particles
+  - detect|liquid
+parameters:
+  - measure|density
+  - measure|size
+  - measure|concentration
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: verbreitet
+sources:
+  - https://de.wikipedia.org/wiki/R%C3%B6ntgenstrahlung
+  - https://en.wikipedia.org/wiki/X-ray
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Röntgenstrahlung
+    description: >-
+      Röntgenstrahlung ist kurzwellige elektromagnetische Strahlung, die entsteht, wenn schnelle
+      Elektronen in einem Material abgebremst werden oder Elektronen in innere Schalen von
+      Atomen zurückfallen. Sie durchdringt Materie und wird umso stärker geschwächt, je dichter
+      das Material und je höher seine Ordnungszahl ist; an Kristallgittern wird sie gebeugt,
+      und jedes Element sendet bei Anregung charakteristische Linien aus. So lassen sich das
+      Innere von Körpern abbilden, Kristallstrukturen bestimmen und Elemente analysieren.
+    example: >-
+      Röntgenaufnahmen in der Medizin, Gepäckkontrolle, Durchstrahlungsprüfung von Schweißnähten,
+      Röntgendiffraktometrie, Röntgenfluoreszenzanalyse, Dickenmessung in Walzwerken, Fremdkörperkontrolle
+      in Lebensmitteln
+    conditions: Röntgenröhre mit Hochspannung oder Synchrotron als Quelle; Abschirmung.
+    limits: >-
+      Leichte Elemente sind mit Röntgenfluoreszenz schwer nachzuweisen, und Stoffe ähnlicher
+      Dichte geben wenig Kontrast.
+    sideEffects: >-
+      Ionisierende Strahlung schädigt Gewebe und manche Werkstoffe; Strahlenschutz ist erforderlich.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: X-rays
+    description: >-
+      X-rays are short-wavelength electromagnetic radiation produced when fast electrons are
+      decelerated in a material or when electrons drop back into inner shells of atoms. They
+      penetrate matter and are attenuated more strongly the denser the material and the higher
+      its atomic number; they are diffracted by crystal lattices, and every element emits
+      characteristic lines when excited. This makes it possible to image the interior of bodies,
+      determine crystal structures and analyse elements.
+    example: >-
+      Medical radiographs, baggage screening, radiographic testing of welds, X-ray diffraction,
+      X-ray fluorescence analysis, thickness gauging in rolling mills, foreign body inspection
+      in food
+    conditions: X-ray tube with high voltage or synchrotron as the source; shielding.
+    limits: >-
+      Light elements are hard to detect by X-ray fluorescence, and materials of similar density
+      give little contrast.
+    sideEffects: >-
+      Ionising radiation damages tissue and some materials; radiation protection is required.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

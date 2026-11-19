@@ -1,0 +1,67 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: cam
+kind: application
+home: move|solid
+functions:
+  - move|solid
+  - vibrate|solid
+parameters:
+  - change|position
+uses: []
+domain:
+  id: ''
+  de: ''
+  en: ''
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Kurvenscheibe
+  - https://en.wikipedia.org/wiki/Cam_(mechanism)
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Nocken (Kurvenscheibe)
+    description: >-
+      Ein Nocken oder eine Kurvenscheibe ist ein Bauteil mit gezielt geformter Kontur, auf
+      der ein Abtaster (Stößel, Rolle oder Hebel) gleitet oder abrollt. Dreht oder verschiebt
+      sich die Kurve, folgt der Abtaster ihrer Kontur und führt eine genau vorgegebene, meist
+      hin- und hergehende Bewegung aus. So wird eine gleichmäßige Drehung in einen beliebigen
+      Bewegungsablauf aus Hub, Rast und Rücklauf umgesetzt.
+    example: >-
+      Nockenwelle zur Ventilsteuerung im Verbrennungsmotor, Kurvengetriebe in Verpackungs-
+      und Textilmaschinen, kurvengesteuerte Drehautomaten
+    conditions: >-
+      Ständiger Kontakt zwischen Abtaster und Kurve, meist durch Federkraft oder Formschluss
+      (Führungsnut).
+    limits: >-
+      Bei hohen Drehzahlen kann der Abtaster abheben, und steile Konturen erzeugen hohe Kontaktkräfte
+      und Beschleunigungen.
+    sideEffects: Reibung, Verschleiß und Geräusche an der Kontaktstelle.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Cam
+    description: >-
+      A cam is a part with a deliberately shaped contour on which a follower (tappet, roller
+      or lever) slides or rolls. As the cam rotates or slides, the follower traces its contour
+      and performs a precisely defined, usually reciprocating motion. This converts a uniform
+      rotation into any desired motion sequence of stroke, dwell and return.
+    example: >-
+      Camshaft for valve timing in combustion engines, cam mechanisms in packaging and textile
+      machines, cam-controlled automatic lathes
+    conditions: >-
+      Constant contact between follower and cam, usually by spring force or a positive guide
+      (groove).
+    limits: >-
+      At high speeds the follower can lift off, and steep contours cause high contact forces
+      and accelerations.
+    sideEffects: Friction, wear and noise at the contact point.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

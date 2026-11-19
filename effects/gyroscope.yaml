@@ -1,0 +1,70 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: gyroscope
+kind: application
+home: measure|solid
+functions:
+  - measure|solid
+  - hold|solid
+  - rotate|solid
+parameters:
+  - stabilise|orientation
+  - measure|orientation
+  - measure|speed
+uses:
+  - coriolis-effect
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Kreiselinstrument
+  - https://en.wikipedia.org/wiki/Gyroscope
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Kreisel (Gyroskop)
+    description: >-
+      Ein schnell rotierender Kreisel hat einen großen Drehimpuls und behält deshalb die Richtung
+      seiner Achse im Raum bei; ein äußeres Drehmoment kippt ihn nicht, sondern lässt ihn
+      senkrecht dazu ausweichen (Präzession). Daraus lassen sich Lage und Drehrate eines Fahrzeugs
+      bestimmen oder Drehungen stabilisieren. Mikrokreisel (MEMS) messen die Drehrate stattdessen
+      über die Corioliskraft auf schwingende Massen, Faser- und Laserkreisel über den Sagnac-Effekt.
+    example: >-
+      Kreiselkompass, künstlicher Horizont, Trägheitsnavigation, Drehratensensoren in Smartphones
+      und Fahrdynamikregelungen, Lageregelung von Satelliten, Schiffsstabilisatoren
+    conditions: ''
+    limits: >-
+      Mechanische Kreisel driften durch Lagerreibung und Unwucht und müssen nachgeführt werden.
+    sideEffects: >-
+      Der Kreisel setzt jeder Schwenkbewegung Kreiselmomente entgegen, die die Lagerung belasten.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Gyroscope
+    description: >-
+      A fast-spinning gyroscope has a large angular momentum and therefore keeps the direction
+      of its axis in space; an external torque does not tip it over but makes it swerve at
+      right angles (precession). This allows the attitude and rotation rate of a vehicle to
+      be determined or rotations to be stabilised. Micro gyroscopes (MEMS) instead measure
+      rotation rate via the Coriolis force on vibrating masses, fibre-optic and ring laser
+      gyroscopes via the Sagnac effect.
+    example: >-
+      Gyrocompass, artificial horizon, inertial navigation, rotation-rate sensors in smartphones
+      and electronic stability control, satellite attitude control, ship stabilisers
+    conditions: ''
+    limits: >-
+      Mechanical gyroscopes drift due to bearing friction and imbalance and must be corrected.
+    sideEffects: >-
+      The gyroscope opposes every swivelling motion with gyroscopic torques that load the
+      bearings.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

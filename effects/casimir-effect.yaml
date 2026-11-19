@@ -1,0 +1,67 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: casimir-effect
+kind: effect
+home: move|solid
+functions:
+  - move|solid
+  - join|solid
+parameters:
+  - increase|force
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: nische
+sources:
+  - https://de.wikipedia.org/wiki/Casimir-Effekt
+  - https://en.wikipedia.org/wiki/Casimir_effect
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Casimir-Effekt
+    description: >-
+      Zwei ungeladene, leitende Platten in sehr geringem Abstand ziehen sich im Vakuum gegenseitig
+      an. Ursache sind die quantenmechanischen Nullpunktschwankungen des elektromagnetischen
+      Feldes: Vereinfacht gesagt passen zwischen die Platten nur bestimmte Wellenlängen, außerhalb
+      alle, sodass ein Nettodruck die Platten zusammenschiebt. Bei parallelen Platten ist
+      die Kraft umgekehrt proportional zur vierten Potenz des Abstands und wird erst unterhalb
+      von etwa einem Mikrometer merklich.
+    example: >-
+      Aneinanderhaften beweglicher Teile in mikro- und nanoelektromechanischen Systemen (Stiction),
+      Präzisionsexperimente zu Oberflächenkräften, Grundlagenforschung zur Quantenelektrodynamik
+    conditions: >-
+      Oberflächen in Abständen von wenigen Nanometern bis etwa einem Mikrometer.
+    limits: >-
+      Schon bei Abständen im Mikrometerbereich ist die Kraft äußerst klein und wird leicht
+      von elektrostatischen Kräften überdeckt.
+    sideEffects: >-
+      Bewegliche Strukturen in MEMS können dadurch aneinanderkleben und ausfallen.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Casimir effect
+    description: >-
+      Two uncharged conducting plates very close together attract each other in a vacuum.
+      The cause is the quantum zero-point fluctuations of the electromagnetic field: simply
+      put, only certain wavelengths fit between the plates while all fit outside, so a net
+      pressure pushes the plates together. For parallel plates the force is inversely proportional
+      to the fourth power of the distance and only becomes noticeable below about one micrometre.
+    example: >-
+      Sticking of moving parts in micro- and nanoelectromechanical systems (stiction), precision
+      experiments on surface forces, fundamental research in quantum electrodynamics
+    conditions: Surfaces at distances from a few nanometres to about one micrometre.
+    limits: >-
+      Even at micrometre distances the force is extremely small and easily masked by electrostatic
+      forces.
+    sideEffects: Movable structures in MEMS can stick together and fail.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

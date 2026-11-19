@@ -1,0 +1,73 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: nucleation
+kind: effect
+home: change-phase|liquid
+functions:
+  - change-phase|liquid
+  - change-phase|gas
+  - produce|particles
+parameters:
+  - change|state
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Keimbildung
+  - https://en.wikipedia.org/wiki/Nucleation
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Keimbildung (Nukleation)
+    description: >-
+      Eine neue Phase entsteht nicht gleichmäßig im ganzen Stoff, sondern beginnt an winzigen
+      Keimen, etwa Kristallkeimen in einer Schmelze, Tröpfchen in einem Dampf oder Dampfblasen
+      in einer Flüssigkeit. Weil kleine Keime im Verhältnis zu ihrem Volumen viel Oberfläche
+      haben, sind sie zunächst instabil und wachsen erst oberhalb einer kritischen Größe weiter.
+      Deshalb lassen sich Flüssigkeiten unterkühlen oder überhitzen und Lösungen übersättigen,
+      bis Fremdpartikel, raue Wände oder Erschütterungen die Umwandlung auslösen.
+    example: >-
+      Wolkenimpfen mit Silberiodid, Siedesteine gegen Siedeverzug, Nukleierungsmittel für
+      Kunststoffe, Taschenwärmer mit Natriumacetat, Nebelkammer
+    conditions: >-
+      Übersättigung, Unterkühlung oder Überhitzung; Fremdoberflächen senken die Energieschwelle
+      deutlich (heterogene Keimbildung).
+    limits: >-
+      Ohne geeignete Keime kann die Umwandlung stark verzögert oder ganz unterdrückt sein.
+    sideEffects: >-
+      Verzögerte Keimbildung kann zu plötzlichem Siedeverzug, unerwünschter Kristallisation
+      in Leitungen oder grobem Gefüge führen.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Nucleation
+    description: >-
+      A new phase does not form uniformly throughout a substance but starts at tiny nuclei,
+      such as crystal nuclei in a melt, droplets in a vapour or vapour bubbles in a liquid.
+      Because small nuclei have a lot of surface relative to their volume, they are initially
+      unstable and only keep growing above a critical size. This is why liquids can be supercooled
+      or superheated and solutions supersaturated until foreign particles, rough walls or
+      shocks trigger the transformation.
+    example: >-
+      Cloud seeding with silver iodide, boiling chips against bumping, nucleating agents for
+      plastics, sodium acetate hand warmers, cloud chamber
+    conditions: >-
+      Supersaturation, supercooling or superheating; foreign surfaces lower the energy barrier
+      considerably (heterogeneous nucleation).
+    limits: >-
+      Without suitable nuclei the transformation can be strongly delayed or suppressed altogether.
+    sideEffects: >-
+      Delayed nucleation can lead to sudden violent boiling, unwanted crystallisation in pipes
+      or a coarse microstructure.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

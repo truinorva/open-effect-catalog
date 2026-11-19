@@ -1,0 +1,63 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: wind-power
+kind: application
+home: produce|field
+functions:
+  - produce|field
+  - move|liquid
+  - disassemble|particles
+parameters: []
+uses:
+  - wind
+domain:
+  id: ''
+  de: ''
+  en: ''
+maturity: wachstum
+sources:
+  - https://de.wikipedia.org/wiki/Windenergie
+  - https://en.wikipedia.org/wiki/Wind_power
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Windenergie (Windkraftanlage)
+    description: >-
+      Windkraftanlagen entziehen dem Wind Bewegungsenergie, indem der Auftrieb an ihren Rotorblättern
+      den Rotor dreht und einen Generator antreibt. Die Leistung wächst mit der dritten Potenz
+      der Windgeschwindigkeit und mit der überstrichenen Fläche; physikalisch lassen sich
+      höchstens knapp 60 % der Windenergie entnehmen (Betz-Grenze). Früher trieben Windmühlen
+      Mahlwerke und Pumpen direkt an.
+    example: >-
+      Windparks an Land und auf See, Kleinwindanlagen, historische Getreidemühlen, Windpumpen
+      auf Weiden
+    conditions: Standorte mit hoher, beständiger mittlerer Windgeschwindigkeit.
+    limits: >-
+      Die Erzeugung schwankt mit dem Wetter und braucht Speicher oder Ausgleich im Netz.
+    sideEffects: >-
+      Geräusche, Schattenwurf, Gefahr für Vögel und Fledermäuse, Eingriff ins Landschaftsbild.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Wind power
+    description: >-
+      Wind turbines extract kinetic energy from the wind as lift on their blades turns the
+      rotor and drives a generator. Power grows with the cube of the wind speed and with the
+      swept area; physics allows at most just under 60 % of the wind energy to be extracted
+      (Betz limit). In the past, windmills drove grinding mills and pumps directly.
+    example: >-
+      Onshore and offshore wind farms, small wind turbines, historical grain mills, wind pumps
+      on pastures
+    conditions: Sites with high, steady average wind speed.
+    limits: >-
+      Output fluctuates with the weather and requires storage or balancing in the grid.
+    sideEffects: Noise, shadow flicker, risk to birds and bats, impact on the landscape.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

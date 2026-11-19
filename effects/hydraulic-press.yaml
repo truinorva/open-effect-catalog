@@ -1,0 +1,67 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: hydraulic-press
+kind: application
+home: deform|solid
+functions:
+  - deform|solid
+  - compress|solid
+  - compress|particles
+parameters:
+  - increase|force
+  - increase|pressure
+uses:
+  - hydrostatic-pressure
+domain:
+  id: ''
+  de: ''
+  en: ''
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Hydraulische_Presse
+  - https://en.wikipedia.org/wiki/Hydraulic_press
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Hydraulische Presse
+    description: >-
+      Eine kleine Kraft auf einen kleinen Kolben erzeugt in einer eingeschlossenen Flüssigkeit
+      einen Druck, der sich nach allen Seiten gleich fortpflanzt. Auf einen großen Kolben
+      wirkt dieser Druck über eine entsprechend größere Fläche und erzeugt eine vielfach größere
+      Kraft, allerdings bei entsprechend kleinerem Weg.
+    example: >-
+      Schmiede- und Tiefziehpressen, Pulverpressen, Ballenpressen, Wagenheber, Hebebühnen,
+      Werkstattpressen zum Auspressen von Lagern
+    conditions: >-
+      Ein geschlossenes, möglichst luftfreies Hydrauliksystem mit dichten Kolben.
+    limits: >-
+      Hohe Kräfte gehen mit langsamen Bewegungen einher; Leckagen und Ölerwärmung begrenzen
+      Dauerbetrieb und Genauigkeit.
+    sideEffects: Undichtigkeiten können Öl in die Umgebung freisetzen.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Hydraulic press
+    description: >-
+      A small force on a small piston creates a pressure in an enclosed liquid that is transmitted
+      equally in all directions. On a large piston this pressure acts over a correspondingly
+      larger area and produces a much greater force, though over a correspondingly shorter
+      stroke.
+    example: >-
+      Forging and deep-drawing presses, powder presses, baling presses, hydraulic jacks, vehicle
+      lifts, workshop presses for pressing out bearings
+    conditions: >-
+      A closed hydraulic system, as free of air as possible, with sealed pistons.
+    limits: >-
+      High forces come with slow movements; leakage and oil heating limit continuous operation
+      and accuracy.
+    sideEffects: Leaks can release oil into the environment.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

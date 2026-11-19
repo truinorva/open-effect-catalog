@@ -1,0 +1,63 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: zahn-cup
+kind: application
+home: measure|liquid
+functions:
+  - measure|liquid
+parameters:
+  - measure|viscosity
+uses:
+  - viscosity
+domain:
+  id: Rheologie
+  de: Rheologie
+  en: Rheology
+maturity: reife
+sources:
+  - https://en.wikipedia.org/wiki/Zahn_cup
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Zahn-Becher (Auslaufbecher)
+    description: >-
+      Ein kleiner Becher mit kalibrierter Bohrung im Boden und langem Griff wird in die Flüssigkeit
+      getaucht und herausgehoben. Gemessen wird die Zeit, bis der auslaufende Strahl abreißt;
+      da zähere Flüssigkeiten langsamer durch die Öffnung fließen, entspricht die Auslaufzeit
+      über eine Tabelle oder Formel einer kinematischen Viskosität. Mehrere Bechergrößen decken
+      unterschiedliche Viskositätsbereiche ab.
+    example: >-
+      Viskositätskontrolle von Lacken und Farben an der Spritzkabine, Druckfarben, Beschichtungsflüssigkeiten
+    conditions: >-
+      Newtonsche oder nahezu newtonsche Flüssigkeit bei festgelegter Temperatur.
+    limits: >-
+      Das Ergebnis ist nur eine Näherung und für stark strukturviskose oder thixotrope Flüssigkeiten
+      ungeeignet.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Zahn cup
+    description: >-
+      A small cup with a calibrated hole in its bottom and a long handle is dipped into the
+      liquid and lifted out. The time until the outflowing stream breaks is measured; since
+      more viscous liquids flow through the opening more slowly, the efflux time corresponds
+      to a kinematic viscosity via a table or formula. Several cup sizes cover different viscosity
+      ranges.
+    example: >-
+      Viscosity control of paints and coatings at the spray booth, printing inks, coating
+      liquids
+    conditions: Newtonian or nearly Newtonian liquid at a defined temperature.
+    limits: >-
+      The result is only an approximation and unsuitable for strongly shear-thinning or thixotropic
+      liquids.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

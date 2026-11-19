@@ -1,0 +1,68 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: birds-beak-effect
+kind: effect
+home: deform|solid
+functions:
+  - deform|solid
+  - produce|solid
+parameters:
+  - change|shape
+uses: []
+domain:
+  id: Materialwissenschaft
+  de: Materialwissenschaft
+  en: Materials science
+maturity: nische
+sources:
+  - https://de.wikipedia.org/wiki/LOCOS-Prozess
+  - https://en.wikipedia.org/wiki/LOCOS
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Vogelschnabel-Effekt
+    description: >-
+      Bei der lokalen Oxidation von Silizium (LOCOS) schützt eine Siliziumnitrid-Maske die
+      späteren aktiven Bereiche vor der Oxidation. Sauerstoff diffundiert jedoch durch das
+      dünne Polsteroxid seitlich unter den Maskenrand, sodass das Oxid dort keilförmig unter
+      die Maske wächst und deren Kante anhebt. Im Querschnitt ähnelt der auslaufende Oxidkeil
+      einem Vogelschnabel.
+    example: >-
+      Isolation von Transistoren in integrierten Schaltungen (LOCOS), Prozessvarianten wie
+      Poly-Buffered LOCOS zur Verkürzung des Schnabels
+    conditions: >-
+      Thermische Oxidation von Silizium mit einer Nitridmaske über einem dünnen Polsteroxid.
+    limits: >-
+      Der Effekt verkleinert die nutzbare aktive Fläche und begrenzt so die Packungsdichte;
+      bei kleinen Strukturbreiten wurde LOCOS deshalb weitgehend durch die Grabenisolation
+      (STI) ersetzt.
+    sideEffects: >-
+      Am Maskenrand entstehen mechanische Spannungen, die Kristalldefekte im Silizium verursachen
+      können.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Bird's beak effect
+    description: >-
+      In local oxidation of silicon (LOCOS), a silicon nitride mask protects the future active
+      areas from oxidation. Oxygen, however, diffuses sideways through the thin pad oxide
+      under the mask edge, so the oxide grows as a wedge beneath the mask and lifts its edge.
+      In cross-section the tapering oxide wedge resembles a bird's beak.
+    example: >-
+      Transistor isolation in integrated circuits (LOCOS), process variants such as poly-buffered
+      LOCOS to shorten the beak
+    conditions: Thermal oxidation of silicon with a nitride mask over a thin pad oxide.
+    limits: >-
+      The effect shrinks the usable active area and thus limits packing density; for small
+      feature sizes LOCOS was therefore largely replaced by shallow trench isolation (STI).
+    sideEffects: >-
+      Mechanical stress at the mask edge can cause crystal defects in the silicon.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

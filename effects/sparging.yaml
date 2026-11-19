@@ -1,0 +1,69 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: sparging
+kind: application
+home: remove|liquid
+functions:
+  - remove|liquid
+  - mix|liquid
+parameters:
+  - decrease|concentration
+uses: []
+domain:
+  id: Verfahrenstechnik
+  de: Verfahrenstechnik
+  en: Process engineering
+maturity: reife
+sources:
+  - https://en.wikipedia.org/wiki/Sparging_(chemistry)
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Barbotage (Einperlen von Gas)
+    description: >-
+      Ein Gas wird über ein poröses Rohr, eine Fritte oder Düsen in feinen Blasen durch eine
+      Flüssigkeit geleitet. Die aufsteigenden Blasen nehmen gelöste Gase oder flüchtige Stoffe
+      auf und tragen sie aus, weil deren Partialdruck im Spülgas nahezu null ist; mit einem
+      passenden Gas lässt sich umgekehrt auch ein Stoff wie Sauerstoff eintragen, und nebenbei
+      wird die Flüssigkeit durchmischt.
+    example: >-
+      Entgasen von Lösungsmitteln mit Stickstoff oder Argon, Entfernen von Wasserstoff aus
+      Aluminiumschmelzen mit Spülgas, Sauerstoffeintrag in Bioreaktoren, Grundwassersanierung
+      durch Lufteinpressung, Strippen von Ammoniak
+    conditions: >-
+      Feine Blasen mit großer Oberfläche und ein Spülgas, das den zu entfernenden Stoff nicht
+      enthält.
+    limits: >-
+      Ein Rest des gelösten Stoffes bleibt immer zurück, und schwer flüchtige Stoffe lassen
+      sich kaum austreiben.
+    sideEffects: Das Spülgas trägt auch Lösungsmitteldampf aus und kann Schaum bilden.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Sparging (gas bubbling)
+    description: >-
+      A gas is passed through a liquid in fine bubbles via a porous pipe, a frit or nozzles.
+      The rising bubbles pick up dissolved gases or volatile substances and carry them out,
+      because their partial pressure in the sparge gas is close to zero; with a suitable gas,
+      a substance such as oxygen can conversely be introduced, and the liquid is mixed as
+      a side benefit.
+    example: >-
+      Degassing solvents with nitrogen or argon, removing hydrogen from aluminium melts with
+      purge gas, oxygen supply in bioreactors, groundwater remediation by air sparging, ammonia
+      stripping
+    conditions: >-
+      Fine bubbles with a large surface area and a sparge gas that does not contain the substance
+      to be removed.
+    limits: >-
+      Some of the dissolved substance always remains, and low-volatility substances can hardly
+      be driven out.
+    sideEffects: The sparge gas also carries off solvent vapour and can cause foaming.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

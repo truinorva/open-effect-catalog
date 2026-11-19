@@ -1,0 +1,73 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: acoustic-radiation-pressure
+kind: effect
+home: move|particles
+functions:
+  - move|particles
+  - hold|particles
+  - separate|particles
+  - move|liquid
+  - measure|field
+parameters:
+  - change|position
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: lehrbuch
+sources:
+  - https://en.wikipedia.org/wiki/Acoustic_tweezers
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Akustischer Strahlungsdruck
+    description: >-
+      Eine Schallwelle transportiert Impuls; wird sie an einem Hindernis gestreut, reflektiert
+      oder absorbiert, übt sie im zeitlichen Mittel eine kleine, gleichgerichtete Kraft auf
+      das Hindernis aus. In stehenden Wellen sammeln sich Partikel, Zellen oder Tropfen dadurch
+      je nach ihrer Dichte und Kompressibilität in den Druckknoten oder den Druckbäuchen.
+    example: >-
+      Akustophorese zur Trennung von Blutzellen, akustische Levitation, akustische Pinzetten,
+      Strahlungskraftwaage zur Messung der Ultraschallleistung
+    conditions: >-
+      Hohe Schallintensität, meist Ultraschall, und ein Unterschied in Dichte oder Kompressibilität
+      zwischen Objekt und umgebendem Medium.
+    limits: >-
+      Die Kräfte sind klein, sodass sich nur kleine oder leichte Objekte bewegen lassen, und
+      bei Partikeln unter etwa einem Mikrometer überwiegen akustische Strömung und Brownsche
+      Bewegung.
+    sideEffects: >-
+      Gleichzeitig auftretende akustische Strömung und Erwärmung können die gewünschte Anordnung
+      stören.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Acoustic radiation pressure
+    description: >-
+      A sound wave carries momentum; when it is scattered, reflected or absorbed by an obstacle,
+      it exerts a small, time-averaged steady force on it. In standing waves, particles, cells
+      or droplets therefore gather at the pressure nodes or antinodes, depending on their
+      density and compressibility.
+    example: >-
+      Acoustophoresis for separating blood cells, acoustic levitation, acoustic tweezers,
+      radiation force balances for measuring ultrasound power
+    conditions: >-
+      High sound intensity, usually ultrasound, and a difference in density or compressibility
+      between the object and the surrounding medium.
+    limits: >-
+      The forces are small, so only small or light objects can be moved, and for particles
+      below about one micrometre acoustic streaming and Brownian motion dominate.
+    sideEffects: >-
+      Acoustic streaming and heating that occur at the same time can disturb the intended
+      arrangement.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
