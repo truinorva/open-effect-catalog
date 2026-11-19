@@ -1,0 +1,75 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: ozone
+kind: application
+home: preserve|liquid
+functions:
+  - preserve|liquid
+  - remove|liquid
+  - remove|gas
+parameters:
+  - increase|purity
+  - change|colour
+uses:
+  - redox-reaction
+domain:
+  id: Chemie
+  de: Chemie
+  en: Chemistry
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Ozon
+  - https://en.wikipedia.org/wiki/Ozone
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Ozon als Oxidations- und Desinfektionsmittel
+    description: >-
+      Ozon (O₃) ist eine energiereiche, instabile Form des Sauerstoffs und eines der stärksten
+      gebräuchlichen Oxidationsmittel. Es wird meist vor Ort durch stille elektrische Entladung
+      oder UV-Licht aus Luft oder Sauerstoff erzeugt und in Wasser oder Luft eingeleitet.
+      Dort tötet es Mikroorganismen ab, oxidiert Geruchs-, Farb- und Spurenstoffe und zerfällt
+      anschließend wieder zu Sauerstoff, ohne Chlorverbindungen zu hinterlassen.
+    example: >-
+      Trinkwasser- und Schwimmbadaufbereitung, Spurenstoffentfernung in Kläranlagen, Geruchsbeseitigung,
+      Bleichen von Zellstoff, Desinfektion von Lebensmittellagern
+    conditions: >-
+      Erzeugung unmittelbar vor dem Einsatz, da Ozon nicht lagerfähig ist und rasch zu Sauerstoff
+      zerfällt.
+    limits: >-
+      Ozon wirkt nicht lange nach, sodass Trinkwassernetze meist zusätzlich ein Desinfektionsmittel
+      mit Depotwirkung brauchen.
+    sideEffects: >-
+      Ozon reizt schon in geringer Konzentration die Atemwege, greift Gummi und manche Kunststoffe
+      an und kann in bromidhaltigem Wasser Bromat bilden.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Ozone as oxidant and disinfectant
+    description: >-
+      Ozone (O₃) is an energy-rich, unstable form of oxygen and one of the strongest oxidants
+      in common use. It is usually generated on site from air or oxygen by silent electric
+      discharge or UV light and fed into water or air. There it kills microorganisms, oxidises
+      odour, colour and trace substances, and then decays back to oxygen without leaving chlorine
+      compounds behind.
+    example: >-
+      Drinking water and swimming pool treatment, micropollutant removal in sewage plants,
+      odour control, pulp bleaching, disinfection of food stores
+    conditions: >-
+      Generation immediately before use, because ozone cannot be stored and quickly decays
+      to oxygen.
+    limits: >-
+      Ozone has no lasting residual effect, so drinking water networks usually need an additional
+      disinfectant with residual action.
+    sideEffects: >-
+      Even at low concentrations ozone irritates the airways, attacks rubber and some plastics,
+      and can form bromate in bromide-containing water.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

@@ -1,0 +1,75 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: ohmmeter
+kind: application
+home: measure|solid
+functions:
+  - measure|solid
+  - detect|solid
+parameters:
+  - measure|conductivity
+uses:
+  - ohms-law
+domain:
+  id: ''
+  de: ''
+  en: ''
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Widerstandsmessger%C3%A4t
+  - https://en.wikipedia.org/wiki/Ohmmeter
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Ohmmeter (Widerstandsmessgerät)
+    description: >-
+      Ein Ohmmeter schickt einen bekannten Strom durch das Messobjekt und misst die abfallende
+      Spannung, oder es legt eine bekannte Spannung an und misst den Strom; der Quotient ergibt
+      den Widerstand. Für sehr kleine Widerstände trennt die Vierleitermessung Strom- und
+      Spannungsleitungen, damit Zuleitungs- und Kontaktwiderstände das Ergebnis nicht verfälschen.
+      Sehr große Widerstände, etwa von Isolierungen, prüfen Isolationsmessgeräte mit Prüfspannungen
+      von einigen hundert bis einigen tausend Volt.
+    example: >-
+      Durchgangsprüfung von Leitungen und Sicherungen, Prüfung von Heizelementen und Sensoren,
+      Isolationsmessung an Motoren und Kabeln, Kontaktwiderstandsmessung an Schaltern
+    conditions: >-
+      Das Messobjekt muss spannungsfrei und möglichst von parallelen Strompfaden getrennt
+      sein.
+    limits: >-
+      Parallel geschaltete Bauteile im eingebauten Zustand, Thermospannungen und Zuleitungswiderstände
+      verfälschen die Messung.
+    sideEffects: >-
+      Der Messstrom kann empfindliche Bauteile erwärmen, und die hohe Prüfspannung einer Isolationsmessung
+      kann Elektronik beschädigen.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Ohmmeter
+    description: >-
+      An ohmmeter passes a known current through the object under test and measures the voltage
+      drop, or applies a known voltage and measures the current; the ratio gives the resistance.
+      For very low resistances, four-wire measurement separates current and sense leads so
+      that lead and contact resistances do not distort the result. Very high resistances,
+      such as those of insulation, are checked with insulation testers using test voltages
+      of a few hundred to several thousand volts.
+    example: >-
+      Continuity testing of wiring and fuses, checking heating elements and sensors, insulation
+      testing on motors and cables, contact resistance measurement on switches
+    conditions: >-
+      The object under test must be de-energised and preferably disconnected from parallel
+      current paths.
+    limits: >-
+      Parallel components in an assembled circuit, thermoelectric voltages and lead resistances
+      distort the measurement.
+    sideEffects: >-
+      The test current can heat sensitive components, and the high test voltage of an insulation
+      test can damage electronics.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

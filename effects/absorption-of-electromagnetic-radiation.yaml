@@ -1,0 +1,80 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: absorption-of-electromagnetic-radiation
+kind: effect
+home: absorb|field
+functions:
+  - absorb|field
+  - heat|solid
+  - heat|liquid
+  - heat|gas
+  - measure|liquid
+  - measure|gas
+parameters:
+  - decrease|translucency
+  - change|colour
+  - increase|temperature
+  - measure|concentration
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Lichtabsorption
+  - https://en.wikipedia.org/wiki/Absorption_(electromagnetic_radiation)
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Absorption elektromagnetischer Strahlung (Lichtabsorption)
+    description: >-
+      Trifft Licht oder andere elektromagnetische Strahlung auf Materie, nehmen Elektronen,
+      Molekülschwingungen oder freie Ladungsträger einen Teil der Energie auf, während der
+      Rest reflektiert oder durchgelassen wird. Die aufgenommene Energie wird meist in Wärme
+      umgewandelt, kann aber auch Fluoreszenz oder chemische Reaktionen auslösen. Weil jeder
+      Stoff bestimmte Wellenlängen bevorzugt schluckt, bestimmt die Absorption seine Farbe
+      und lässt sich zur Stoffanalyse nutzen.
+    example: >-
+      Solarkollektoren, Sonnenschutzglas, Farbstoffe und Pigmente, Photometer, Laserschweißen
+      von Kunststoffen, Strahlenschutz
+    conditions: >-
+      Die Energie der Strahlung muss zu einem Anregungsvorgang im Material passen, etwa einem
+      Elektronenübergang, einer Molekülschwingung oder der Bewegung freier Ladungsträger.
+    limits: >-
+      Die durchgelassene Intensität nimmt mit der Schichtdicke exponentiell ab (Lambert-Beer-Gesetz),
+      und bei sehr hohen Intensitäten kann die Absorption sättigen.
+    sideEffects: >-
+      Der absorbierende Körper erwärmt sich, und energiereiche Strahlung wie UV- oder Röntgenlicht
+      kann Werkstoffe chemisch schädigen oder ausbleichen.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Absorption of electromagnetic radiation (light absorption)
+    description: >-
+      When light or other electromagnetic radiation strikes matter, electrons, molecular vibrations
+      or free charge carriers take up part of its energy, while the rest is reflected or transmitted.
+      The absorbed energy usually ends up as heat, but it can also trigger fluorescence or
+      chemical reactions. Because every substance prefers to absorb particular wavelengths,
+      absorption determines its colour and can be used for chemical analysis.
+    example: >-
+      Solar thermal collectors, solar control glass, dyes and pigments, photometers, laser
+      welding of plastics, radiation shielding
+    conditions: >-
+      The photon energy must match an excitation process in the material, such as an electronic
+      transition, a molecular vibration or the motion of free charge carriers.
+    limits: >-
+      Transmitted intensity falls exponentially with thickness (Beer-Lambert law), and at
+      very high intensities absorption can saturate.
+    sideEffects: >-
+      The absorbing body heats up, and high-energy radiation such as UV or X-rays can chemically
+      damage or bleach materials.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

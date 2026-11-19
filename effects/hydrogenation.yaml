@@ -1,0 +1,65 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: hydrogenation
+kind: effect
+home: produce|liquid
+functions:
+  - produce|liquid
+  - change-phase|liquid
+parameters:
+  - change|state
+uses: []
+domain:
+  id: Chemie
+  de: Chemie
+  en: Chemistry
+maturity: verbreitet
+sources:
+  - https://de.wikipedia.org/wiki/Hydrierung
+  - https://en.wikipedia.org/wiki/Hydrogenation
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Hydrierung
+    description: >-
+      Bei der Hydrierung wird Wasserstoff an Mehrfachbindungen oder andere ungesättigte Gruppen
+      eines Moleküls angelagert. Ohne Katalysator verläuft die Reaktion kaum; Metalle wie
+      Nickel, Palladium oder Platin spalten den Wasserstoff an ihrer Oberfläche und übertragen
+      die Atome auf das Substrat.
+    example: >-
+      Fetthärtung für Margarine, Herstellung von Sorbit aus Glucose, Hydrotreating von Erdölfraktionen,
+      Synthese von Feinchemikalien und Arzneistoffen
+    conditions: Katalysator und Wasserstoff, oft erhöhter Druck und erhöhte Temperatur.
+    limits: >-
+      Edelmetall- und Nickelkatalysatoren werden durch Schwefelverbindungen und andere Gifte
+      deaktiviert.
+    sideEffects: >-
+      Bei der teilweisen Hydrierung von Pflanzenölen entstehen gesundheitlich bedenkliche
+      Transfettsäuren.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Hydrogenation
+    description: >-
+      In hydrogenation, hydrogen is added to multiple bonds or other unsaturated groups of
+      a molecule. Without a catalyst the reaction hardly proceeds; metals such as nickel,
+      palladium or platinum split the hydrogen on their surface and transfer the atoms to
+      the substrate.
+    example: >-
+      Fat hardening for margarine, production of sorbitol from glucose, hydrotreating of petroleum
+      fractions, synthesis of fine chemicals and pharmaceuticals
+    conditions: A catalyst and hydrogen, often at elevated pressure and temperature.
+    limits: >-
+      Noble-metal and nickel catalysts are deactivated by sulfur compounds and other poisons.
+    sideEffects: >-
+      Partial hydrogenation of vegetable oils produces trans fatty acids, which are harmful
+      to health.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

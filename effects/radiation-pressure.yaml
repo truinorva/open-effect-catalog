@@ -1,0 +1,72 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: radiation-pressure
+kind: effect
+home: move|solid
+functions:
+  - move|solid
+  - move|particles
+  - cool|gas
+parameters:
+  - change|position
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Strahlungsdruck
+  - https://en.wikipedia.org/wiki/Radiation_pressure
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Strahlungsdruck
+    description: >-
+      Licht und andere elektromagnetische Strahlung tragen Impuls; wird sie von einer Fläche
+      absorbiert oder reflektiert, überträgt sie diesen Impuls und übt einen Druck aus, der
+      bei Reflexion doppelt so groß ist wie bei Absorption. Der Druck ist sehr klein, Sonnenlicht
+      erzeugt in Erdentfernung nur einige Mikronewton je Quadratmeter, er wirkt aber dauerhaft
+      und ohne Treibstoff.
+    example: >-
+      Sonnensegel wie IKAROS, Bahnstörungen von Satelliten, Staubschweife von Kometen, optische
+      Pinzette, Laserkühlung von Atomen, Nichols-Radiometer
+    conditions: >-
+      Eine intensive Strahlungsquelle wie Sonne oder Laser; im Labor ein gutes Vakuum, damit
+      thermische Gaseffekte nicht überwiegen.
+    limits: >-
+      Wegen des geringen Drucks sind große, sehr leichte Flächen oder sehr kleine Teilchen
+      nötig, damit merkliche Beschleunigungen entstehen.
+    sideEffects: >-
+      Bei Satelliten verursacht der Strahlungsdruck Bahn- und Lagestörungen, die ausgeglichen
+      werden müssen.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Radiation pressure
+    description: >-
+      Light and other electromagnetic radiation carry momentum; when it is absorbed or reflected
+      by a surface it transfers this momentum and exerts a pressure, twice as large for reflection
+      as for absorption. The pressure is very small, sunlight at the Earth's distance produces
+      only a few micronewtons per square metre, but it acts continuously and without propellant.
+    example: >-
+      Solar sails such as IKAROS, orbit perturbations of satellites, dust tails of comets,
+      optical tweezers, laser cooling of atoms, Nichols radiometer
+    conditions: >-
+      An intense radiation source such as the Sun or a laser; in the laboratory a good vacuum
+      so that thermal gas effects do not dominate.
+    limits: >-
+      Because the pressure is so low, large, very light surfaces or very small particles are
+      needed for noticeable acceleration.
+    sideEffects: >-
+      On satellites radiation pressure causes orbit and attitude disturbances that must be
+      compensated.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

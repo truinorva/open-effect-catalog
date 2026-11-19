@@ -1,0 +1,75 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: magnetic-reluctance
+kind: effect
+home: move|solid
+functions:
+  - move|solid
+  - rotate|solid
+  - hold|solid
+  - measure|solid
+parameters:
+  - measure|speed
+  - measure|position
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: verbreitet
+sources:
+  - https://de.wikipedia.org/wiki/Magnetischer_Widerstand
+  - https://en.wikipedia.org/wiki/Magnetic_reluctance
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Reluktanzkraft (magnetischer Widerstand)
+    description: >-
+      Der magnetische Widerstand oder die Reluktanz gibt an, wie stark ein Abschnitt eines
+      Magnetkreises dem magnetischen Fluss entgegensteht; ein Luftspalt hat einen vielfach
+      höheren Widerstand als Eisen. Ein beweglicher weichmagnetischer Körper wird deshalb
+      in die Lage gezogen, in der der Gesamtwiderstand des Kreises am kleinsten ist, in der
+      sich also der Luftspalt schließt. Umgekehrt ändert ein vorbeilaufendes Eisenteil den
+      Fluss durch eine Spule, was sich zur berührungslosen Erfassung von Lage und Drehzahl
+      nutzen lässt.
+    example: >-
+      Hubmagnete und Magnetventile, Reluktanz- und Schrittmotoren, induktive Drehzahlsensoren
+      an Zahnrädern, passive ABS-Raddrehzahlfühler, Haftmagnete
+    conditions: >-
+      Ein Magnetkreis mit weichmagnetischen Teilen, deren Lage den Luftspalt und damit die
+      Reluktanz verändert.
+    limits: >-
+      Die Kraft nimmt mit wachsendem Luftspalt stark ab, so dass große Hübe nur mit kleiner
+      Kraft möglich sind; ist das Eisen gesättigt, steigt sie nicht weiter.
+    sideEffects: >-
+      Wechselnde Reluktanz führt in Motoren zu Rastmomenten, Geräuschen und Vibrationen.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Reluctance force (magnetic reluctance)
+    description: >-
+      Magnetic reluctance expresses how strongly a section of a magnetic circuit opposes the
+      magnetic flux; an air gap has a reluctance many times higher than iron. A movable soft
+      magnetic body is therefore pulled into the position in which the total reluctance of
+      the circuit is smallest, i.e. where the air gap closes. Conversely, an iron part passing
+      by changes the flux through a coil, which can be used for contactless detection of position
+      and speed.
+    example: >-
+      Lifting solenoids and solenoid valves, reluctance and stepper motors, inductive speed
+      sensors on gear wheels, passive ABS wheel speed sensors, holding magnets
+    conditions: >-
+      A magnetic circuit with soft magnetic parts whose position changes the air gap and thus
+      the reluctance.
+    limits: >-
+      The force drops sharply as the air gap widens, so long strokes are possible only with
+      small force; once the iron saturates, the force does not increase further.
+    sideEffects: Varying reluctance causes cogging torque, noise and vibration in motors.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

@@ -1,0 +1,69 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: case-hardening
+kind: application
+home: stabilise|solid
+functions:
+  - stabilise|solid
+parameters:
+  - increase|hardness
+  - increase|strength
+uses: []
+domain:
+  id: Materialwissenschaft
+  de: Materialwissenschaft
+  en: Materials science
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Einsatzh%C3%A4rten
+  - https://en.wikipedia.org/wiki/Case-hardening
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Einsatzhärten
+    description: >-
+      Beim Einsatzhärten wird ein kohlenstoffarmes Stahlbauteil zunächst in der Randschicht
+      aufgekohlt (oft auch carbonitriert), dann abgeschreckt und angelassen, sodass die kohlenstoffreiche
+      Randzone zu hartem Martensit umwandelt, während der kohlenstoffarme Kern zäh bleibt.
+      Das Bauteil ist dadurch an der Oberfläche verschleißfest und verträgt zugleich Stöße
+      und Biegewechsel; Druckeigenspannungen im Rand erhöhen zusätzlich die Dauerfestigkeit.
+      Im weiteren Sinn umfasst der englische Begriff case hardening alle Verfahren, die nur
+      die Randschicht härten, etwa auch Nitrieren oder Induktionshärten.
+    example: Getriebezahnräder, Kolbenbolzen, Wellen, Kettenbolzen, Werkzeugteile
+    conditions: >-
+      Einsatzstahl mit niedrigem Kohlenstoffgehalt (etwa 0,1 bis 0,25 Prozent) und eine Wärmebehandlungsanlage
+      zum Aufkohlen und Abschrecken.
+    limits: >-
+      Der Härteverzug erfordert oft ein Nachschleifen, das wiederum einen Teil der Härtetiefe
+      kostet.
+    sideEffects: >-
+      Maß- und Formänderungen durch das Abschrecken sowie Restaustenit in der Randschicht.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Case hardening
+    description: >-
+      In case hardening, a low-carbon steel part is first carburised (often also carbonitrided)
+      in its surface layer, then quenched and tempered, so that the carbon-rich case turns
+      into hard martensite while the low-carbon core stays tough. The part thus has a wear-resistant
+      surface but still withstands impacts and alternating bending; compressive residual stresses
+      in the case also raise fatigue strength. In a broader sense the term covers all processes
+      that harden only the surface layer, such as nitriding or induction hardening.
+    example: Transmission gears, piston pins, shafts, chain pins, tool components
+    conditions: >-
+      Case-hardening steel with a low carbon content (about 0.1 to 0.25 per cent) and a heat-treatment
+      line for carburising and quenching.
+    limits: >-
+      Hardening distortion often requires finish grinding, which in turn removes part of the
+      case.
+    sideEffects: >-
+      Dimensional and shape changes from quenching, and retained austenite in the case.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

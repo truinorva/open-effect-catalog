@@ -1,0 +1,66 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: synthetic-setae
+kind: application
+home: hold|solid
+functions:
+  - hold|solid
+  - join|solid
+parameters:
+  - increase|friction
+uses: []
+domain:
+  id: Materialwissenschaft
+  de: Materialwissenschaft
+  en: Materials science
+maturity: kindheit
+sources:
+  - https://en.wikipedia.org/wiki/Synthetic_setae
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Synthetische Setae (Gecko-Haftstrukturen)
+    description: >-
+      Synthetische Setae ahmen die Haftlamellen am Gecko-Fuß nach: einen dichten Teppich aus
+      Mikro- oder Nanofasern, oft mit verbreiterten oder schräg gestellten Spitzen. Die vielen
+      nachgiebigen Faserenden schmiegen sich eng an die Gegenfläche an, sodass sich die schwachen
+      Van-der-Waals-Kräfte unzähliger Kontaktstellen zu einer merklichen Haftung summieren.
+      Ohne Klebstoff und ohne Unterdruck haften sie trocken und rückstandsfrei und lassen
+      sich durch Abziehen in einem bestimmten Winkel leicht wieder lösen.
+    example: >-
+      Robotergreifer für glatte oder empfindliche Bauteile, wiederverwendbare Haftpads, Kletterroboter,
+      Greifer für Objekte im Weltraum
+    conditions: >-
+      Saubere, möglichst glatte Gegenflächen und Fasern, die fein und nachgiebig genug sind,
+      um sich der Oberfläche anzupassen.
+    limits: >-
+      Staub, starke Rauheit und Verschleiß der feinen Faserspitzen mindern die Haftung deutlich.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Synthetic setae (gecko-inspired dry adhesive)
+    description: >-
+      Synthetic setae imitate the adhesive lamellae of a gecko's foot: a dense carpet of micro-
+      or nanofibres, often with widened or slanted tips. The many compliant fibre ends conform
+      closely to the opposing surface, so the weak van der Waals forces of countless contact
+      points add up to noticeable adhesion. They stick dry and leave no residue, without glue
+      or suction, and can be released easily by peeling at a particular angle.
+    example: >-
+      Robot grippers for smooth or delicate parts, reusable adhesive pads, climbing robots,
+      grippers for objects in space
+    conditions: >-
+      Clean, preferably smooth counter-surfaces and fibres fine and compliant enough to conform
+      to the surface.
+    limits: >-
+      Dust, high roughness and wear of the fine fibre tips reduce adhesion considerably.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

@@ -1,0 +1,77 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: dissolution
+kind: effect
+home: mix|liquid
+functions:
+  - mix|liquid
+  - remove|solid
+  - separate|particles
+  - cool|liquid
+parameters:
+  - increase|concentration
+uses: []
+domain:
+  id: Chemie
+  de: Chemie
+  en: Chemistry
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Solvatisierung
+  - https://de.wikipedia.org/wiki/L%C3%B6slichkeit
+  - https://en.wikipedia.org/wiki/Solvation
+  - https://en.wikipedia.org/wiki/Solubility
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Lösen (Auflösung und Solvatation)
+    description: >-
+      Beim Lösen verlassen Moleküle oder Ionen eines Feststoffs, einer Flüssigkeit oder eines
+      Gases ihren Verband und verteilen sich einzeln im Lösungsmittel. Möglich macht das die
+      Solvatation: Lösungsmittelmoleküle lagern sich an die Teilchen an – in Wasser als Hydrathülle
+      – und gleichen die Bindungsenergie aus. Je nach Bilanz aus aufzubrechender Gitterenergie
+      und freiwerdender Solvatationsenergie kühlt sich die Lösung ab oder erwärmt sich.
+    example: >-
+      Zucker und Salz in Wasser, Kältekompressen mit Ammoniumnitrat, Laugung von Erzen, Entfernen
+      von Lacken mit Lösemitteln, wasserlösliche Stützstrukturen im 3D-Druck, Kohlensäure
+      in Getränken
+    conditions: >-
+      Ein Lösungsmittel, in dem der Stoff löslich ist (Ähnliches löst Ähnliches), wobei große
+      Kontaktfläche und Bewegung den Vorgang beschleunigen.
+    limits: >-
+      Ist die Sättigung erreicht, löst sich nichts mehr, und die Löslichkeit hängt stark von
+      der Temperatur und bei Gasen vom Druck ab.
+    sideEffects: >-
+      Wärmetönung (Erwärmen oder Abkühlen), Volumenänderung sowie Korrosion und Auswaschung
+      von Werkstoffen.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Dissolution (solvation)
+    description: >-
+      In dissolution, molecules or ions of a solid, liquid or gas leave their bonded structure
+      and spread individually through the solvent. This is made possible by solvation: solvent
+      molecules attach to the particles – in water as a hydration shell – and compensate the
+      binding energy. Depending on the balance between the lattice energy to be overcome and
+      the solvation energy released, the solution cools down or warms up.
+    example: >-
+      Sugar and salt in water, cold packs with ammonium nitrate, leaching of ores, removing
+      paint with solvents, water-soluble support structures in 3D printing, carbon dioxide
+      in drinks
+    conditions: >-
+      A solvent in which the substance is soluble (like dissolves like), with a large contact
+      area and agitation speeding up the process.
+    limits: >-
+      Once saturation is reached nothing more dissolves, and solubility depends strongly on
+      temperature and, for gases, on pressure.
+    sideEffects: >-
+      Heat effects (warming or cooling), volume change, and corrosion and leaching of materials.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

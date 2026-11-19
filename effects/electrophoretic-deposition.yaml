@@ -1,0 +1,65 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: electrophoretic-deposition
+kind: application
+home: join|particles
+functions:
+  - join|particles
+  - move|particles
+  - preserve|solid
+parameters: []
+uses:
+  - electrophoresis
+domain:
+  id: Chemie
+  de: Chemie
+  en: Chemistry
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Elektrophoretische_Abscheidung
+  - https://en.wikipedia.org/wiki/Electrophoretic_deposition
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Elektrophoretische Abscheidung (Elektrotauchlackierung)
+    description: >-
+      Die Partikel einer Suspension tragen eine Oberflächenladung; im elektrischen Feld zwischen
+      zwei Elektroden wandern sie daher zur entgegengesetzt geladenen Elektrode und lagern
+      sich dort als dichte Schicht ab. Bei Lacken isoliert die abgeschiedene Schicht, so dass
+      die Abscheidung zu noch unbeschichteten Stellen wandert und auch Hohlräume gleichmäßig
+      bedeckt werden.
+    example: >-
+      Kathodische Tauchlackierung von Autokarosserien, Herstellung keramischer Schichten und
+      Verbundwerkstoffe, Beschichtung mit Glas- oder Keramikpartikeln
+    conditions: Stabile Suspension geladener Partikel; elektrisch leitfähiges Werkstück.
+    limits: ''
+    sideEffects: >-
+      In wässrigen Bädern entstehen an den Elektroden Gasblasen, die Poren verursachen können;
+      die Schicht muss meist noch eingebrannt oder gesintert werden.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Electrophoretic deposition (electrocoating)
+    description: >-
+      Particles in a suspension carry a surface charge, so in the electric field between two
+      electrodes they migrate to the oppositely charged electrode and deposit there as a dense
+      layer. With paints, the deposited film insulates, so deposition moves on to areas not
+      yet coated and even cavities are covered evenly.
+    example: >-
+      Cathodic dip painting of car bodies, production of ceramic layers and composites, coating
+      with glass or ceramic particles
+    conditions: >-
+      Stable suspension of charged particles; electrically conductive workpiece.
+    limits: ''
+    sideEffects: >-
+      In aqueous baths, gas bubbles form at the electrodes and can cause pores; the layer
+      usually still has to be baked or sintered.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

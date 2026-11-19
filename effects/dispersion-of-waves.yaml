@@ -1,0 +1,67 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: dispersion-of-waves
+kind: effect
+home: separate|field
+functions:
+  - separate|field
+parameters:
+  - measure|colour
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Dispersion_(Physik)
+  - https://en.wikipedia.org/wiki/Dispersion_(optics)
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Dispersion (Wellen)
+    description: >-
+      Hängt die Ausbreitungsgeschwindigkeit einer Welle von ihrer Frequenz ab, spricht man
+      von Dispersion. In Glas läuft blaues Licht langsamer als rotes und wird daher stärker
+      gebrochen, so dass ein Prisma weißes Licht in Farben zerlegt; ein kurzer Puls aus vielen
+      Frequenzen läuft beim Durchgang durch ein dispersives Medium auseinander. Dispersion
+      tritt bei Licht ebenso auf wie bei Wasser-, Schall- oder Biegewellen.
+    example: >-
+      Prismenspektrometer, Regenbogen, Dispersionskompensation in Glasfaserstrecken, Pulsformung
+      in Ultrakurzpulslasern, Farbsäume bei einfachen Linsen
+    conditions: >-
+      Ein Medium oder eine Struktur mit frequenzabhängiger Wellengeschwindigkeit und Wellen,
+      die aus mehreren Frequenzen bestehen.
+    limits: ''
+    sideEffects: >-
+      Farbfehler (chromatische Aberration) in Linsen und Verbreiterung von Signalpulsen in
+      Glasfasern, die die Datenrate begrenzt.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Dispersion (waves)
+    description: >-
+      Dispersion means that the propagation speed of a wave depends on its frequency. In glass,
+      blue light travels more slowly than red and is therefore refracted more strongly, so
+      a prism splits white light into colours; a short pulse made up of many frequencies spreads
+      out as it passes through a dispersive medium. Dispersion occurs with light as well as
+      with water, sound or bending waves.
+    example: >-
+      Prism spectrometers, rainbows, dispersion compensation in fibre-optic links, pulse shaping
+      in ultrashort-pulse lasers, colour fringes in simple lenses
+    conditions: >-
+      A medium or structure in which wave speed depends on frequency, and waves composed of
+      several frequencies.
+    limits: ''
+    sideEffects: >-
+      Chromatic aberration in lenses and broadening of signal pulses in optical fibres, which
+      limits the data rate.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

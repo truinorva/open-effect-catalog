@@ -1,0 +1,76 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: nanocomposite
+kind: application
+home: stabilise|solid
+functions:
+  - stabilise|solid
+  - hold|gas
+parameters:
+  - increase|strength
+  - increase|rigidity
+  - increase|tightness
+  - increase|conductivity
+uses: []
+domain:
+  id: Materialwissenschaft
+  de: Materialwissenschaft
+  en: Materials science
+maturity: wachstum
+sources:
+  - https://en.wikipedia.org/wiki/Nanocomposite
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Nanokomposit
+    description: >-
+      In einem Nanokomposit enthält ein Matrixwerkstoff, meist ein Polymer, Füllstoffe, die
+      mindestens in einer Dimension kleiner als 100 nm sind, etwa Schichtsilikat-Plättchen,
+      Kohlenstoffnanoröhren oder Nanopartikel. Wegen der riesigen Grenzfläche zwischen Füllstoff
+      und Matrix verändern schon wenige Gewichtsprozent die Eigenschaften deutlich. Je nach
+      Füllstoff wird der Werkstoff steifer und fester, sperrt Gase besser ab, leitet elektrischen
+      Strom oder brennt schlechter.
+    example: >-
+      Gasdichte Verpackungsfolien und Tennisbälle mit Nanoton-Barriere, leitfähige Kunststoffe
+      mit Kohlenstoffnanoröhren, kratzfeste Lacke, Fahrzeugteile aus Polyamid mit Nanoton
+    conditions: >-
+      Die Nanofüllstoffe müssen fein und gleichmäßig verteilt und gut an die Matrix angebunden
+      sein.
+    limits: >-
+      Nanopartikel neigen zum Verklumpen; schlecht verteilte Füllstoffe bringen kaum Vorteile
+      und können die Zähigkeit senken.
+    sideEffects: >-
+      Nanopartikel, die bei Bearbeitung, Abrieb oder Entsorgung freigesetzt werden, werfen
+      Fragen zu Gesundheit und Umwelt auf.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Nanocomposite
+    description: >-
+      In a nanocomposite, a matrix material, usually a polymer, contains fillers smaller than
+      100 nm in at least one dimension, such as layered silicate platelets, carbon nanotubes
+      or nanoparticles. Because of the huge interface between filler and matrix, just a few
+      percent by weight change the properties markedly. Depending on the filler, the material
+      becomes stiffer and stronger, blocks gases better, conducts electricity or burns less
+      readily.
+    example: >-
+      Gas-tight packaging films and tennis balls with a nanoclay barrier, conductive plastics
+      with carbon nanotubes, scratch-resistant coatings, vehicle parts made of polyamide with
+      nanoclay
+    conditions: >-
+      The nanofillers must be finely and evenly dispersed and well bonded to the matrix.
+    limits: >-
+      Nanoparticles tend to agglomerate; poorly dispersed fillers bring little benefit and
+      can reduce toughness.
+    sideEffects: >-
+      Nanoparticles released during machining, abrasion or disposal raise health and environmental
+      questions.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

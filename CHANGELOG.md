@@ -17,7 +17,9 @@ changed or removed.
 - AI may draft entries; machine text is marked `kind: maschinell` with the
   model, and a pure draft names no author. A person reviews before release.
 - Duplicate check: no two entries may share a name in any language.
-- 10 AI drafts (not reviewed, not released): magnetostriction,
-  piezoelectric-effect, seebeck-effect, peltier-effect, leidenfrost-effect,
-  venturi-effect, triboelectric-effect, hall-effect, ferrofluid,
-  brazil-nut-effect.
+- 895 AI drafts (489 effects, 406 applications), not reviewed and therefore
+  not released. Names and Wikipedia links come from Truinorva's candidate
+  list; descriptions, examples, limits and cell allocations are newly
+  written. Candidates that duplicate a TRIZ Effects Database entry were left
+  out (the curated entry takes precedence), and duplicates among the drafts
+  were merged.

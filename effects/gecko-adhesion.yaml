@@ -1,0 +1,63 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: gecko-adhesion
+kind: effect
+home: hold|solid
+functions:
+  - hold|solid
+  - join|solid
+  - move|solid
+parameters:
+  - increase|force
+uses: []
+domain:
+  id: Biologie
+  de: Biologie
+  en: Biology
+maturity: nische
+sources:
+  - https://en.wikipedia.org/wiki/Gecko
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Gecko-Effekt (Trockenhaftung)
+    description: >-
+      Die Zehen von Geckos tragen Millionen feiner Härchen (Setae), die sich in noch feinere
+      Spatel verzweigen und sich so eng an eine Oberfläche schmiegen, dass sich die schwachen
+      Van-der-Waals-Kräfte zu einer großen Haftkraft summieren. Die Haftung ist richtungsabhängig:
+      Unter Zug parallel zur Fläche hält sie, beim Abschälen in einem steileren Winkel löst
+      sie sich fast ohne Kraft.
+    example: >-
+      Gecko-inspirierte Greifer für glatte Bauteile, Kletterroboter, Greifer für Weltraumanwendungen,
+      wiederverwendbare Trockenklebebänder
+    conditions: Glatte bis mäßig raue, saubere und trockene Oberflächen.
+    limits: >-
+      Staub, Nässe und starke Rauheit mindern die Haftung; künstliche Strukturen reinigen
+      sich schlechter als die natürlichen.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Gecko adhesion
+    description: >-
+      Gecko toes carry millions of fine hairs (setae) that branch into even finer spatulae
+      and conform so closely to a surface that the weak van der Waals forces add up to a large
+      adhesive force. Adhesion is directional: it holds under pull parallel to the surface
+      and releases almost effortlessly when peeled off at a steeper angle.
+    example: >-
+      Gecko-inspired grippers for smooth parts, climbing robots, grippers for space applications,
+      reusable dry adhesive tapes
+    conditions: Smooth to moderately rough, clean and dry surfaces.
+    limits: >-
+      Dust, wetness and high roughness reduce adhesion; artificial structures clean themselves
+      less well than natural ones.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

@@ -1,0 +1,65 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: salt-fingering
+kind: effect
+home: mix|liquid
+functions:
+  - mix|liquid
+  - move|liquid
+parameters: []
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: nische
+sources:
+  - https://en.wikipedia.org/wiki/Salt_fingering
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Salzfinger (doppeldiffusive Konvektion)
+    description: >-
+      Liegt warmes, salzreiches Wasser über kühlerem, salzärmerem Wasser, kann die Schichtung
+      insgesamt stabil sein und trotzdem zerfallen, weil Wärme etwa hundertmal schneller diffundiert
+      als Salz. Ein nach unten ausgelenktes Wasserpaket kühlt rasch ab, behält aber sein Salz,
+      wird schwerer als seine Umgebung und sinkt weiter; so bilden sich schmale, abwechselnd
+      auf- und absteigende Finger, die Salz und Wärme senkrecht transportieren.
+    example: >-
+      Vermischung im subtropischen Ozean und unterhalb des Mittelmeerausstroms im Atlantik,
+      treppenartige Temperatur- und Salzgehaltsprofile (thermohaline Staircases), Laborversuche
+      mit Zucker- und Salzlösungen, Vorgänge in Sternen und Magmakammern
+    conditions: >-
+      Zwei Größen, die die Dichte entgegengesetzt beeinflussen und unterschiedlich schnell
+      diffundieren, wobei die schneller diffundierende Größe (Wärme) stabilisiert und die
+      langsamere (Salz) destabilisiert.
+    limits: ''
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Salt fingering
+    description: >-
+      When warm, salty water lies above cooler, fresher water, the stratification can be stable
+      overall and still break down, because heat diffuses about a hundred times faster than
+      salt. A parcel of water displaced downwards quickly cools but keeps its salt, becomes
+      heavier than its surroundings and keeps sinking; narrow, alternately rising and sinking
+      fingers form that carry salt and heat vertically.
+    example: >-
+      Mixing in the subtropical ocean and beneath the Mediterranean outflow in the Atlantic,
+      staircase-like temperature and salinity profiles (thermohaline staircases), laboratory
+      experiments with sugar and salt solutions, processes in stars and magma chambers
+    conditions: >-
+      Two quantities that affect density in opposite ways and diffuse at different rates,
+      with the faster-diffusing one (heat) stabilising and the slower one (salt) destabilising.
+    limits: ''
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

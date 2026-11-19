@@ -1,0 +1,65 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: photophoresis
+kind: effect
+home: move|particles
+functions:
+  - move|particles
+  - hold|particles
+parameters:
+  - change|position
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: nische
+sources:
+  - https://en.wikipedia.org/wiki/Photophoresis
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Photophorese
+    description: >-
+      Ein kleines Teilchen in einem Gas, das einseitig beleuchtet wird, erwärmt sich ungleichmäßig.
+      Gasmoleküle, die von der wärmeren Seite abprallen, nehmen mehr Impuls mit als die von
+      der kälteren, und es entsteht eine Kraft, die das Teilchen meist vom Licht weg, in manchen
+      Fällen auch zum Licht hin schiebt. Bei absorbierenden Teilchen kann diese Kraft den
+      reinen Strahlungsdruck um Größenordnungen übertreffen.
+    example: >-
+      Volumetrische Displays mit optisch gefangenen Partikeln (Forschung), Transport von Aerosolen
+      und Ruß in der Atmosphäre, berührungsloses Bewegen von Mikropartikeln
+    conditions: >-
+      Licht absorbierende Teilchen in einem Gas; am stärksten, wenn die mittlere freie Weglänge
+      der Gasmoleküle etwa der Teilchengröße entspricht.
+    limits: >-
+      Im Vakuum tritt der Effekt nicht auf, und die Kräfte sind insgesamt sehr klein.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Photophoresis
+    description: >-
+      A small particle in a gas that is illuminated from one side heats up unevenly. Gas molecules
+      rebounding from the warmer side carry away more momentum than those from the colder
+      side, creating a force that usually pushes the particle away from the light and in some
+      cases towards it. For absorbing particles this force can exceed plain radiation pressure
+      by orders of magnitude.
+    example: >-
+      Volumetric displays with optically trapped particles (research), transport of aerosols
+      and soot in the atmosphere, contactless movement of microparticles
+    conditions: >-
+      Light-absorbing particles in a gas; strongest when the mean free path of the gas molecules
+      is about the size of the particle.
+    limits: >-
+      The effect does not occur in vacuum, and the forces are very small overall.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

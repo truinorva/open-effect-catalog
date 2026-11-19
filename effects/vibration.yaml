@@ -1,0 +1,69 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: vibration
+kind: effect
+home: move|particles
+functions:
+  - move|particles
+  - compress|particles
+  - separate|particles
+  - deform|solid
+parameters:
+  - increase|density
+  - decrease|friction
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: verbreitet
+sources:
+  - https://de.wikipedia.org/wiki/Vibration
+  - https://en.wikipedia.org/wiki/Vibration
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Vibration (mechanische Schwingung)
+    description: >-
+      Wird ein Körper oder Behälter periodisch hin- und herbewegt, übertragen sich Beschleunigungen
+      auf das Gut, die kurzzeitig größer als die Schwerkraft sein können. Schüttgut hebt dabei
+      kurz ab, wird bei schräger Schwingrichtung in kleinen Sprüngen gefördert und lagert
+      sich dichter, und die Haftreibung zwischen Teilen wird überwunden. Diese Wirkungen nutzt
+      man zum Fördern, Verdichten, Sieben, Entleeren und Gleitschleifen.
+    example: >-
+      Schwingförderer und Wendelförderer, Betonrüttler, Rüttelplatten, Schwingsiebe, Austragshilfen
+      an Silos, Gleitschleifmaschinen
+    conditions: >-
+      Schwingbeschleunigung in der Größenordnung der Erdbeschleunigung oder darüber.
+    limits: >-
+      Bei Resonanz kann sich die Amplitude unkontrolliert aufschaukeln und Bauteile zerstören.
+    sideEffects: >-
+      Lärm, Materialermüdung, sich lösende Schrauben und Entmischung von Schüttgut.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Vibration (mechanical oscillation)
+    description: >-
+      When a body or container is moved back and forth periodically, accelerations are transmitted
+      to the material that can briefly exceed gravity. Bulk material lifts off momentarily,
+      is conveyed in small hops when the vibration is inclined and settles into a denser packing,
+      and static friction between parts is overcome. These effects are used for conveying,
+      compacting, screening, discharging and vibratory finishing.
+    example: >-
+      Vibratory and spiral conveyors, concrete vibrators, plate compactors, vibrating screens,
+      silo discharge aids, vibratory finishing machines
+    conditions: >-
+      Vibration acceleration of the order of gravitational acceleration or above.
+    limits: >-
+      At resonance the amplitude can build up uncontrollably and destroy components.
+    sideEffects: >-
+      Noise, material fatigue, loosening screws and segregation of bulk material.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

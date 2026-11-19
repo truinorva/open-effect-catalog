@@ -1,0 +1,63 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: electronic-filter
+kind: application
+home: separate|field
+functions:
+  - separate|field
+  - remove|field
+parameters: []
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Filter_(Elektrotechnik)
+  - https://en.wikipedia.org/wiki/Electronic_filter
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Elektronisches Filter
+    description: >-
+      Ein elektronisches Filter lässt Signalanteile in bestimmten Frequenzbereichen durch
+      und schwächt andere ab. Passive Filter nutzen dafür, dass die Impedanz von Kondensatoren
+      mit der Frequenz sinkt und die von Spulen steigt; aktive Filter enthalten zusätzlich
+      Verstärker, digitale Filter berechnen das Ergebnis aus abgetasteten Werten. Nach dem
+      Frequenzgang unterscheidet man Tiefpass, Hochpass, Bandpass und Bandsperre.
+    example: >-
+      Frequenzweiche im Lautsprecher, Netzfilter gegen Störungen, Senderwahl im Radio, Anti-Aliasing-Filter
+      vor Analog-Digital-Wandlern
+    conditions: ''
+    limits: >-
+      Reale Filter haben keinen idealen Übergang zwischen Durchlass- und Sperrbereich und
+      verschieben die Phase frequenzabhängig.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Electronic filter
+    description: >-
+      An electronic filter passes signal components in certain frequency ranges and attenuates
+      others. Passive filters exploit the fact that the impedance of capacitors falls with
+      frequency while that of inductors rises; active filters also contain amplifiers, and
+      digital filters compute the result from sampled values. By frequency response, they
+      are classed as low-pass, high-pass, band-pass and band-stop filters.
+    example: >-
+      Loudspeaker crossover, mains filter against interference, station tuning in radios,
+      anti-aliasing filter ahead of analogue-to-digital converters
+    conditions: ''
+    limits: >-
+      Real filters have no ideal transition between passband and stopband and shift the phase
+      depending on frequency.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

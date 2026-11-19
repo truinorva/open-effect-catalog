@@ -1,0 +1,69 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: tuned-mass-damper
+kind: application
+home: stop|solid
+functions:
+  - stop|solid
+  - vibrate|solid
+parameters:
+  - decrease|vibration
+uses:
+  - inertia
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Schwingungstilger
+  - https://en.wikipedia.org/wiki/Tuned_mass_damper
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Schwingungstilger (Tilgerpendel)
+    description: >-
+      Ein Schwingungstilger ist eine zusätzliche Masse, die über eine Feder und meist einen
+      Dämpfer an ein schwingendes Bauwerk oder Maschinenteil gekoppelt und auf dessen Eigenfrequenz
+      abgestimmt ist. Gerät die Struktur in Schwingung, schwingt die Tilgermasse gegenphasig
+      mit, entzieht ihr Energie und verringert so die Amplitude deutlich.
+    example: >-
+      Pendeltilger im Hochhaus Taipei 101, Tilger an Fußgängerbrücken und Schornsteinen, Stockbridge-Dämpfer
+      an Freileitungen, Tilger in Windenergieanlagen, Drehschwingungstilger an Kurbelwellen
+    conditions: >-
+      Die Eigenfrequenz des Tilgers muss auf die zu bekämpfende Schwingung abgestimmt sein.
+    limits: >-
+      Der Tilger wirkt nur in einem schmalen Frequenzbereich; bei Verstimmung lässt die Wirkung
+      stark nach.
+    sideEffects: >-
+      Er bringt zusätzliche Masse, und statt einer Resonanzspitze entstehen zwei neue, die
+      nicht angeregt werden dürfen.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Tuned mass damper
+    description: >-
+      A tuned mass damper is an additional mass attached to a vibrating structure or machine
+      part via a spring and usually a damper, and tuned to its natural frequency. When the
+      structure starts to vibrate, the damper mass swings out of phase, draws energy from
+      it and so markedly reduces the amplitude.
+    example: >-
+      Pendulum damper in the Taipei 101 skyscraper, dampers on footbridges and chimneys, Stockbridge
+      dampers on overhead power lines, dampers in wind turbines, torsional vibration absorbers
+      on crankshafts
+    conditions: >-
+      The natural frequency of the damper must be tuned to the vibration to be suppressed.
+    limits: >-
+      It works only in a narrow frequency range; if detuned, its effectiveness drops sharply.
+    sideEffects: >-
+      It adds mass, and instead of one resonance peak, two new ones appear that must not be
+      excited.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

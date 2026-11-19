@@ -1,0 +1,62 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: tensairity
+kind: application
+home: hold|solid
+functions:
+  - hold|solid
+  - stabilise|solid
+parameters:
+  - decrease|mass
+uses: []
+domain:
+  id: ''
+  de: ''
+  en: ''
+maturity: kindheit
+sources:
+  - https://en.wikipedia.org/wiki/Tensairity
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Tensairity
+    description: >-
+      Tensairity-Träger kombinieren einen mit geringem Überdruck aufgeblasenen, länglichen
+      Luftschlauch mit einem schlanken Druckstab an der Oberseite und Zugelementen an der
+      Unterseite, die an den Enden mit dem Druckstab verbunden sind. Die Luft trägt selbst
+      kaum Last, stützt aber den Druckstab auf ganzer Länge gegen Ausknicken und hält die
+      Zugelemente auf Abstand; so übernimmt jedes Element nur die Beanspruchung, für die es
+      am besten geeignet ist. Die Träger sind sehr leicht und lassen sich zusammengelegt transportieren.
+    example: Leichte Dachtragwerke und Fußgängerbrücken, temporäre und mobile Bauten
+    conditions: Dauerhaft dichte Membran und Aufrechterhalten des Innendrucks.
+    limits: >-
+      Fällt der Innendruck ab, verliert der Druckstab seine Stütze und knickt schon bei geringerer
+      Last aus.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Tensairity
+    description: >-
+      Tensairity beams combine an elongated airbeam inflated to low pressure with a slender
+      compression strut on top and tension elements along the underside that are connected
+      to the strut at the ends. The air carries little load itself but supports the strut
+      along its entire length against buckling and keeps the tension elements at a distance;
+      each element thus takes only the load it is best suited for. The beams are very light
+      and can be transported folded.
+    example: >-
+      Lightweight roof structures and footbridges, temporary and mobile buildings
+    conditions: >-
+      A permanently airtight membrane and maintenance of the internal pressure.
+    limits: >-
+      If the internal pressure drops, the strut loses its support and buckles at a lower load.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

@@ -1,0 +1,67 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: concentrator-photovoltaics
+kind: application
+home: produce|field
+functions:
+  - produce|field
+parameters:
+  - increase|brightness
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: niedergang
+sources:
+  - https://en.wikipedia.org/wiki/Concentrator_photovoltaics
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Konzentrator-Photovoltaik
+    description: >-
+      Linsen oder Spiegel bündeln das Sonnenlicht auf kleine, hocheffiziente Solarzellen,
+      oft Mehrfachsolarzellen aus III-V-Halbleitern, mit dem Hundert- bis über Tausendfachen
+      der normalen Einstrahlung. So wird teures Zellmaterial durch preiswerte Optik ersetzt,
+      und Mehrfachzellen erreichen unter konzentriertem Licht Wirkungsgrade von über 40 Prozent.
+    example: >-
+      Hochkonzentrierende Solarkraftwerke mit Fresnel-Linsen in Wüstenregionen, Testanlagen
+      für Mehrfachsolarzellen
+    conditions: >-
+      Ein hoher Anteil direkter Sonnenstrahlung und eine zweiachsige Nachführung, die die
+      Module genau auf die Sonne ausrichtet.
+    limits: >-
+      Diffuses Licht bei Bewölkung lässt sich kaum bündeln, sodass der Ertrag in Gegenden
+      mit viel Streulicht gering ist.
+    sideEffects: >-
+      Die Zellen erwärmen sich stark und müssen gekühlt werden; die Nachführung erfordert
+      Wartung.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Concentrator photovoltaics
+    description: >-
+      Lenses or mirrors focus sunlight onto small, highly efficient solar cells, often multi-junction
+      cells made of III-V semiconductors, at a hundred to more than a thousand times normal
+      irradiance. Expensive cell material is thus replaced by cheap optics, and under concentrated
+      light multi-junction cells reach efficiencies of over 40 per cent.
+    example: >-
+      Highly concentrating solar power plants with Fresnel lenses in desert regions, test
+      facilities for multi-junction solar cells
+    conditions: >-
+      A high share of direct sunlight and two-axis tracking that points the modules precisely
+      at the sun.
+    limits: >-
+      Diffuse light under cloud can hardly be concentrated, so yield is low in regions with
+      much scattered light.
+    sideEffects: >-
+      The cells heat up strongly and must be cooled; the tracking requires maintenance.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

@@ -1,0 +1,72 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: photonic-crystal
+kind: application
+home: separate|field
+functions:
+  - separate|field
+  - hold|field
+  - orient|field
+parameters:
+  - change|colour
+  - increase|reflectivity
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: wachstum
+sources:
+  - https://de.wikipedia.org/wiki/Photonischer_Kristall
+  - https://en.wikipedia.org/wiki/Photonic_crystal
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Photonischer Kristall
+    description: >-
+      Ein photonischer Kristall ist ein Material, dessen Brechungsindex sich in einer, zwei
+      oder drei Raumrichtungen periodisch im Abstand von etwa einer Lichtwellenlänge ändert.
+      Die an den Grenzflächen gestreuten Wellen überlagern sich so, dass sich Licht bestimmter
+      Wellenlängen im Kristall nicht ausbreiten kann und reflektiert wird (photonische Bandlücke).
+      Mit gezielt eingebauten Fehlstellen lässt sich Licht in solchen Strukturen auf engstem
+      Raum führen, speichern oder um scharfe Ecken lenken.
+    example: >-
+      Strukturfarben von Opalen und Schmetterlingsflügeln, dielektrische Bragg-Spiegel, photonische
+      Kristallfasern, Laserresonatoren und optische Filter, farbige Sicherheitsmerkmale
+    conditions: >-
+      Ein hoher Brechungsindexkontrast und eine sehr regelmäßige Struktur mit einer Periode
+      in der Größenordnung der Wellenlänge.
+    limits: >-
+      Dreidimensionale Kristalle für sichtbares Licht sind schwer fehlerarm herzustellen,
+      und Fertigungsfehler streuen Licht.
+    sideEffects: Die Strukturfarbe hängt vom Betrachtungswinkel ab.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Photonic crystal
+    description: >-
+      A photonic crystal is a material whose refractive index varies periodically in one,
+      two or three dimensions, with a period of about one wavelength of light. The waves scattered
+      at the interfaces interfere in such a way that light of certain wavelengths cannot propagate
+      in the crystal and is reflected (photonic band gap). With deliberately introduced defects,
+      light can be guided, stored or steered around sharp corners within very small spaces
+      in such structures.
+    example: >-
+      Structural colours of opals and butterfly wings, dielectric Bragg mirrors, photonic
+      crystal fibres, laser cavities and optical filters, coloured security features
+    conditions: >-
+      A high refractive index contrast and a very regular structure with a period on the order
+      of the wavelength.
+    limits: >-
+      Three-dimensional crystals for visible light are hard to make with few defects, and
+      fabrication errors scatter light.
+    sideEffects: The structural colour depends on the viewing angle.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

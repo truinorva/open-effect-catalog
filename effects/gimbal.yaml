@@ -1,0 +1,59 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: gimbal
+kind: application
+home: hold|solid
+functions:
+  - hold|solid
+  - orient|solid
+parameters:
+  - stabilise|orientation
+uses: []
+domain:
+  id: ''
+  de: ''
+  en: ''
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Kardanische_Aufh%C3%A4ngung
+  - https://en.wikipedia.org/wiki/Gimbal
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Kardanische Aufhängung
+    description: >-
+      Zwei oder drei ineinander gelagerte Ringe, deren Drehachsen jeweils senkrecht aufeinander
+      stehen, entkoppeln ein Objekt von den Drehbewegungen seines Trägers. Das Objekt behält
+      dadurch seine Lage, etwa durch die Schwerkraft oder einen Kreisel, oder es wird über
+      Motoren in den Achsen aktiv ausgerichtet und stabilisiert.
+    example: >-
+      Schiffskompass, Kamerastabilisatoren, Kreiselinstrumente, schwenkbare Raketentriebwerke,
+      Schiffschronometer, Schiffslaternen
+    conditions: ''
+    limits: >-
+      Fallen zwei Achsen zusammen (Gimbal Lock), geht ein Freiheitsgrad verloren.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Gimbal
+    description: >-
+      Two or three nested rings, each with its pivot axis perpendicular to the next, decouple
+      an object from the rotations of its carrier. The object thus keeps its attitude, for
+      example through gravity or a gyroscope, or it is actively aimed and stabilised by motors
+      in the axes.
+    example: >-
+      Ship's compass, camera stabilisers, gyroscopic instruments, gimballed rocket engines,
+      marine chronometers, ship lanterns
+    conditions: ''
+    limits: When two axes line up (gimbal lock), one degree of freedom is lost.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

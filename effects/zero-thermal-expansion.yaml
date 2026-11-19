@@ -1,0 +1,67 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: zero-thermal-expansion
+kind: effect
+home: stabilise|solid
+functions:
+  - stabilise|solid
+  - hold|solid
+parameters:
+  - stabilise|size
+  - stabilise|volume
+uses: []
+domain:
+  id: Materialwissenschaft
+  de: Materialwissenschaft
+  en: Materials science
+maturity: nische
+sources:
+  - https://de.wikipedia.org/wiki/W%C3%A4rmeausdehnung
+  - https://en.wikipedia.org/wiki/Thermal_expansion
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Nullausdehnung (Werkstoffe ohne Wärmeausdehnung)
+    description: >-
+      Einige Werkstoffe ändern ihre Abmessungen bei Temperaturwechseln in einem bestimmten
+      Bereich fast gar nicht. Bei Glaskeramiken wie Zerodur gleichen Kristallphasen mit negativer
+      Wärmeausdehnung die normale Ausdehnung der Glasphase aus; bei der Eisen-Nickel-Legierung
+      Invar wirkt ein magnetischer Volumeneffekt der Gitterausdehnung entgegen. So bleiben
+      Längen und Abstände auch bei schwankender Temperatur stabil.
+    example: >-
+      Spiegelträger für Teleskope, Maßstäbe und Messgeräte, Uhrpendel, Membranen von Flüssiggastanks
+      aus Invar, Glaskeramik-Kochfelder
+    conditions: >-
+      Betrieb innerhalb des Temperaturbereichs, für den der Werkstoff ausgelegt ist.
+    limits: >-
+      Die geringe Ausdehnung gilt nur in einem begrenzten Temperaturbereich; bei Invar endet
+      sie oberhalb der Curie-Temperatur.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Zero thermal expansion
+    description: >-
+      Some materials hardly change their dimensions with temperature over a certain range.
+      In glass ceramics such as Zerodur, crystal phases with negative thermal expansion compensate
+      the normal expansion of the glass phase; in the iron–nickel alloy Invar, a magnetic
+      volume effect counteracts the lattice expansion. Lengths and distances thus remain stable
+      even when the temperature fluctuates.
+    example: >-
+      Telescope mirror substrates, scales and measuring instruments, clock pendulums, Invar
+      membranes in liquefied natural gas tanks, glass-ceramic cooktops
+    conditions: >-
+      Operation within the temperature range for which the material is designed.
+    limits: >-
+      The low expansion holds only within a limited temperature range; for Invar it ends above
+      the Curie temperature.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

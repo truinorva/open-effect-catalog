@@ -1,0 +1,73 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: vacuum
+kind: effect
+home: keep-temp|liquid
+functions:
+  - keep-temp|liquid
+  - preserve|solid
+  - change-phase|liquid
+  - remove|gas
+  - stop|field
+parameters:
+  - decrease|pressure
+  - decrease|heat-conduction
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: verbreitet
+sources:
+  - https://de.wikipedia.org/wiki/Vakuum
+  - https://en.wikipedia.org/wiki/Vacuum
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Vakuum
+    description: >-
+      Ein Raum, aus dem das Gas weitgehend entfernt ist, hat nur noch einen Bruchteil des
+      Atmosphärendrucks. Ohne Gasmoleküle gibt es dort keine Wärmeleitung und Konvektion durch
+      Gas, keine Schallübertragung und kaum Oxidation, und Flüssigkeiten sieden schon bei
+      niedriger Temperatur. Zugleich drückt der äußere Luftdruck auf alle Wände, die das Vakuum
+      umschließen.
+    example: >-
+      Thermosflasche und Vakuumisolierglas, Vakuumwärmebehandlung von Metallen, Elektronen-
+      und Röntgenröhren, Beschichtungsanlagen, Vakuumspannplatten
+    conditions: >-
+      Dichter Behälter und Pumpen, die eindringendes und ausgasendes Gas laufend entfernen.
+    limits: >-
+      Ein vollkommenes Vakuum ist nicht erreichbar; Wände und Werkstoffe geben ständig Gas
+      ab, und Wärmestrahlung wird nicht unterdrückt.
+    sideEffects: >-
+      Der Außendruck von rund 10 Tonnen je Quadratmeter belastet die Behälterwände und kann
+      sie implodieren lassen.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Vacuum
+    description: >-
+      A space from which gas has largely been removed has only a fraction of atmospheric pressure.
+      Without gas molecules there is no heat conduction or convection through gas, no sound
+      transmission and hardly any oxidation, and liquids boil at low temperatures. At the
+      same time the outside air pressure presses on all walls enclosing the vacuum.
+    example: >-
+      Vacuum flask and vacuum insulating glazing, vacuum heat treatment of metals, electron
+      and X-ray tubes, coating plants, vacuum clamping plates
+    conditions: >-
+      Tight vessel and pumps that continuously remove gas leaking in or outgassing.
+    limits: >-
+      A perfect vacuum cannot be reached; walls and materials continuously release gas, and
+      thermal radiation is not suppressed.
+    sideEffects: >-
+      The external pressure of about 10 tonnes per square metre loads the vessel walls and
+      can make them implode.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

@@ -1,0 +1,68 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: potential-well
+kind: effect
+home: hold|particles
+functions:
+  - hold|particles
+  - hold|solid
+parameters:
+  - stabilise|position
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Potentialtopf
+  - https://en.wikipedia.org/wiki/Potential_well
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Potentialtopf
+    description: >-
+      Ein Potentialtopf ist ein Bereich, in dem die potentielle Energie eines Teilchens oder
+      Körpers niedriger ist als in seiner Umgebung. Fehlt die Energie, um den Rand zu überwinden,
+      bleibt das Objekt darin gefangen und pendelt um den Tiefpunkt, der eine stabile Gleichgewichtslage
+      bildet; in der Quantenmechanik führt diese Einschränkung zusätzlich zu diskreten Energieniveaus.
+    example: >-
+      Kugel in einer Mulde, Selbstzentrierung in V-Nuten und Kegelsitzen, Ionen- und Magnetfallen,
+      optische Pinzette, Quantentopf-Laser und -Leuchtdioden
+    conditions: >-
+      Ein Kraftfeld, etwa gravitativ, elektrisch, magnetisch, optisch oder atomar, dessen
+      Potential ein lokales Minimum hat.
+    limits: >-
+      Ein Objekt mit genügend Energie verlässt den Topf; quantenmechanisch kann es die Barriere
+      auch durchtunneln.
+    sideEffects: >-
+      Ohne Dämpfung schwingt ein gestörtes Objekt dauerhaft um die Gleichgewichtslage.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Potential well
+    description: >-
+      A potential well is a region in which the potential energy of a particle or body is
+      lower than in its surroundings. Without enough energy to get over the rim, the object
+      stays trapped and oscillates about the bottom, which is a stable equilibrium position;
+      in quantum mechanics this confinement additionally leads to discrete energy levels.
+    example: >-
+      Ball in a hollow, self-centring in V-grooves and conical seats, ion and magnetic traps,
+      optical tweezers, quantum-well lasers and LEDs
+    conditions: >-
+      A force field, for example gravitational, electric, magnetic, optical or atomic, whose
+      potential has a local minimum.
+    limits: >-
+      An object with enough energy escapes the well; in quantum mechanics it can also tunnel
+      through the barrier.
+    sideEffects: >-
+      Without damping a disturbed object keeps oscillating about the equilibrium position.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

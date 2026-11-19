@@ -1,0 +1,77 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: radioactive-decay
+kind: effect
+home: produce|field
+functions:
+  - produce|field
+  - heat|solid
+  - preserve|solid
+  - detect|particles
+  - measure|solid
+parameters:
+  - measure|size
+  - measure|density
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Radioaktiver_Zerfall
+  - https://en.wikipedia.org/wiki/Radioactive_decay
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Radioaktiver Zerfall
+    description: >-
+      Instabile Atomkerne wandeln sich spontan in andere Kerne um und senden dabei Alpha-,
+      Beta- oder Gammastrahlung aus. Der Zeitpunkt des einzelnen Zerfalls ist zufällig, doch
+      von einer großen Zahl gleicher Kerne zerfällt in jeder Halbwertszeit im Mittel die Hälfte,
+      praktisch unabhängig von Temperatur, Druck oder chemischer Bindung; die frei werdende
+      Energie erscheint als Strahlung und Wärme.
+    example: >-
+      Radionuklidbatterien in Raumsonden, Radiokarbondatierung, Rauchmelder mit Americium-241,
+      Sterilisation mit Cobalt-60-Gammastrahlung, radiometrische Dicken-, Dichte- und Füllstandmessung,
+      Strahlentherapie
+    conditions: >-
+      Instabile Nuklide; jedes Nuklid hat seine eigene, feste Halbwertszeit zwischen Sekundenbruchteilen
+      und Milliarden Jahren.
+    limits: >-
+      Die Zerfallsrate lässt sich praktisch nicht beeinflussen, also weder beschleunigen noch
+      abschalten.
+    sideEffects: >-
+      Ionisierende Strahlung schädigt lebendes Gewebe und Werkstoffe, und radioaktive Abfälle
+      müssen über lange Zeit sicher gelagert werden.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Radioactive decay
+    description: >-
+      Unstable atomic nuclei spontaneously transform into other nuclei and emit alpha, beta
+      or gamma radiation in the process. The moment of an individual decay is random, but
+      of a large number of identical nuclei, on average half decay in each half-life, practically
+      independent of temperature, pressure or chemical bonding; the released energy appears
+      as radiation and heat.
+    example: >-
+      Radioisotope thermoelectric generators in space probes, radiocarbon dating, smoke detectors
+      with americium-241, sterilisation with cobalt-60 gamma rays, radiometric thickness,
+      density and level gauges, radiotherapy
+    conditions: >-
+      Unstable nuclides; each nuclide has its own fixed half-life ranging from fractions of
+      a second to billions of years.
+    limits: >-
+      The decay rate can practically not be influenced, neither accelerated nor switched off.
+    sideEffects: >-
+      Ionising radiation damages living tissue and materials, and radioactive waste must be
+      stored safely for long periods.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

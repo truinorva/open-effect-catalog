@@ -1,0 +1,67 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: stress-relaxation
+kind: effect
+home: deform|solid
+functions:
+  - deform|solid
+parameters:
+  - decrease|force
+  - decrease|pressure
+uses: []
+domain:
+  id: Materialwissenschaft
+  de: Materialwissenschaft
+  en: Materials science
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Spannungsrelaxation
+  - https://en.wikipedia.org/wiki/Stress_relaxation
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Spannungsrelaxation
+    description: >-
+      Wird ein Werkstoff auf eine feste Dehnung gebracht und dort gehalten, nimmt die zum
+      Halten nötige Spannung mit der Zeit ab. Ein Teil der elastischen Dehnung wandelt sich
+      durch Kriechvorgänge allmählich in bleibende Verformung um, bei Polymeren durch Umlagern
+      und Abgleiten der Molekülketten, bei Metallen durch Versetzungsbewegung und Diffusion.
+      Bei viskoelastischen Werkstoffen geschieht das schon bei Raumtemperatur, bei Metallen
+      vor allem bei erhöhter Temperatur.
+    example: >-
+      Kriech- und Warmauslagerungsumformen von Flugzeugbauteilen, Spannungsarmglühen, Ermittlung
+      viskoelastischer Kennwerte von Kunststoffen und Gummi
+    conditions: >-
+      Konstant gehaltene Verformung; viskoelastische Werkstoffe oder Metalle bei erhöhter
+      Temperatur.
+    limits: ''
+    sideEffects: >-
+      Vorgespannte Verbindungen verlieren an Klemmkraft: Schrauben lockern sich, Dichtungen
+      und O-Ringe dichten schlechter.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Stress relaxation
+    description: >-
+      If a material is brought to a fixed strain and held there, the stress needed to hold
+      it decreases over time. Part of the elastic strain is gradually converted into permanent
+      deformation by creep processes, in polymers by rearranging and sliding molecular chains,
+      in metals by dislocation motion and diffusion. In viscoelastic materials this happens
+      even at room temperature, in metals mainly at elevated temperature.
+    example: >-
+      Creep age forming of aircraft components, stress-relief annealing, determining viscoelastic
+      properties of plastics and rubber
+    conditions: >-
+      Deformation held constant; viscoelastic materials, or metals at elevated temperature.
+    limits: ''
+    sideEffects: >-
+      Preloaded joints lose clamping force: bolts loosen, gaskets and O-rings seal less well.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

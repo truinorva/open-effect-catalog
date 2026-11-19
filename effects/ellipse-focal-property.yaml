@@ -1,0 +1,65 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: ellipse-focal-property
+kind: effect
+home: orient|field
+functions:
+  - orient|field
+  - heat|solid
+  - disassemble|solid
+parameters:
+  - increase|brightness
+  - increase|sound
+uses: []
+domain:
+  id: Geometrie
+  de: Geometrie
+  en: Geometry
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Ellipse
+  - https://en.wikipedia.org/wiki/Ellipse
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Ellipse (Brennpunkteigenschaft)
+    description: >-
+      Bei einer Ellipse ist die Summe der Abstände jedes Kurvenpunkts zu den beiden Brennpunkten
+      konstant. Daraus folgt, dass jeder Strahl, der von einem Brennpunkt ausgeht und an der
+      Ellipse oder an einem Rotationsellipsoid gespiegelt wird, durch den anderen Brennpunkt
+      läuft, und zwar alle Strahlen mit gleicher Weglänge. Licht, Schall oder Stoßwellen aus
+      dem einen Brennpunkt werden so im anderen gebündelt.
+    example: >-
+      Stoßwellen-Lithotripsie zum Zertrümmern von Nierensteinen, Spiegelöfen für das Zonenschmelzen,
+      Flüstergewölbe, Ellipsoidreflektoren in Bühnenscheinwerfern und Projektoren
+    conditions: >-
+      Quelle genau im einen Brennpunkt; Reflektor als Rotationsellipsoid ausgeführt.
+    limits: >-
+      Ausgedehnte Quellen werden nicht punktförmig, sondern vergrößert und unscharf abgebildet.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Ellipse (focal property)
+    description: >-
+      For an ellipse, the sum of the distances from any point on the curve to the two foci
+      is constant. It follows that every ray leaving one focus and reflected by the ellipse,
+      or by an ellipsoid of revolution, passes through the other focus, and all rays travel
+      the same path length. Light, sound or shock waves from one focus are thus concentrated
+      at the other.
+    example: >-
+      Shock-wave lithotripsy for breaking up kidney stones, mirror furnaces for zone melting,
+      whispering galleries, ellipsoidal reflectors in stage spotlights and projectors
+    conditions: >-
+      Source exactly at one focus; reflector shaped as an ellipsoid of revolution.
+    limits: Extended sources are not imaged as a point but enlarged and blurred.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

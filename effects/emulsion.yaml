@@ -1,0 +1,68 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: emulsion
+kind: effect
+home: mix|liquid
+functions:
+  - mix|liquid
+  - stabilise|liquid
+parameters:
+  - increase|homogeneity
+  - increase|surface-area
+uses: []
+domain:
+  id: Chemie
+  de: Chemie
+  en: Chemistry
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Emulsion
+  - https://en.wikipedia.org/wiki/Emulsion
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Emulsion
+    description: >-
+      Eine Emulsion ist eine feine Verteilung von Tröpfchen einer Flüssigkeit in einer zweiten,
+      mit ihr nicht mischbaren Flüssigkeit, etwa Öl in Wasser oder Wasser in Öl. Sie entsteht
+      durch Energieeintrag wie Rühren, Hochdruckhomogenisieren oder Ultraschall, der die Tropfen
+      zerteilt; Emulgatoren lagern sich an der Grenzfläche an, senken die Grenzflächenspannung
+      und verhindern, dass die Tröpfchen wieder zusammenfließen.
+    example: >-
+      Milch, Mayonnaise, Cremes und Salben, Kühlschmierstoffe, Bitumenemulsion im Straßenbau,
+      Emulsionspolymerisation
+    conditions: >-
+      Zwei nicht mischbare Flüssigkeiten, Energieeintrag zum Zerteilen und meist ein Emulgator.
+    limits: >-
+      Emulsionen sind thermodynamisch instabil und entmischen sich mit der Zeit durch Aufrahmen,
+      Sedimentation und Koaleszenz.
+    sideEffects: >-
+      Die Viskosität kann sich stark von der der Ausgangsflüssigkeiten unterscheiden.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Emulsion
+    description: >-
+      An emulsion is a fine dispersion of droplets of one liquid in a second liquid with which
+      it does not mix, such as oil in water or water in oil. It is formed by energy input
+      such as stirring, high-pressure homogenisation or ultrasound, which breaks up the drops;
+      emulsifiers accumulate at the interface, lower the interfacial tension and prevent the
+      droplets from merging again.
+    example: >-
+      Milk, mayonnaise, creams and ointments, metalworking fluids, bitumen emulsion in road
+      building, emulsion polymerisation
+    conditions: >-
+      Two immiscible liquids, energy input for break-up and usually an emulsifier.
+    limits: >-
+      Emulsions are thermodynamically unstable and separate over time by creaming, sedimentation
+      and coalescence.
+    sideEffects: Viscosity can differ greatly from that of the starting liquids.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

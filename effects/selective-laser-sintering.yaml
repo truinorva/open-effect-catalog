@@ -1,0 +1,75 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: selective-laser-sintering
+kind: application
+home: join|particles
+functions:
+  - join|particles
+  - produce|solid
+  - change-phase|particles
+parameters:
+  - change|shape
+uses: []
+domain:
+  id: ''
+  de: ''
+  en: ''
+maturity: wachstum
+sources:
+  - https://de.wikipedia.org/wiki/Selektives_Lasersintern
+  - https://en.wikipedia.org/wiki/Selective_laser_sintering
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Selektives Lasersintern
+    description: >-
+      Beim selektiven Lasersintern wird ein Pulverbett aus Kunststoff, seltener aus Metall
+      oder Keramik, Schicht für Schicht aufgetragen, und ein Laserstrahl verschmilzt in jeder
+      Schicht nur die Bereiche, die zum Bauteil gehören. Danach senkt sich die Bauplattform
+      um eine Schichtdicke, neues Pulver wird aufgezogen, und so wächst das Teil aus vielen
+      verschmolzenen Querschnitten; bei Kunststoffen stützt das umgebende lose Pulver Überhänge,
+      sodass keine Stützstrukturen nötig sind.
+    example: >-
+      Prototypen und Kleinserien aus Polyamid, Gehäuse und Halterungen mit integrierten Funktionen,
+      Orthesen und Prothesenteile, Ersatzteile, Leichtbau-Gitterstrukturen
+    conditions: >-
+      Ein Pulver mit geeigneter Korngröße und Rieselfähigkeit, ein knapp unter die Schmelz-
+      oder Erweichungstemperatur vorgeheizter Bauraum und Schutzgas bei oxidationsempfindlichen
+      Pulvern.
+    limits: >-
+      Die Oberflächen sind rau und die Teile leicht porös; Bauteilgröße und Baugeschwindigkeit
+      sind durch den Bauraum begrenzt.
+    sideEffects: >-
+      Nicht verschmolzenes Pulver altert durch die Wärme und lässt sich nur teilweise wiederverwenden;
+      feine Pulver erfordern Staub- und Explosionsschutz.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Selective laser sintering
+    description: >-
+      In selective laser sintering a powder bed of plastic, less often of metal or ceramic,
+      is spread layer by layer, and a laser beam fuses in each layer only the areas that belong
+      to the part. The build platform then drops by one layer thickness, fresh powder is spread,
+      and the part grows from many fused cross-sections; with polymers the surrounding loose
+      powder supports overhangs, so no support structures are needed.
+    example: >-
+      Prototypes and small series in polyamide, housings and brackets with integrated functions,
+      orthoses and prosthetic parts, spare parts, lightweight lattice structures
+    conditions: >-
+      Powder with suitable particle size and flowability, a build chamber preheated just below
+      the melting or softening temperature, and inert gas for powders sensitive to oxidation.
+    limits: >-
+      Surfaces are rough and parts slightly porous; part size and build speed are limited
+      by the build chamber.
+    sideEffects: >-
+      Unfused powder ages from the heat and can only partly be reused; fine powders require
+      dust and explosion protection.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

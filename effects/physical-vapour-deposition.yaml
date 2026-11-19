@@ -1,0 +1,74 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: physical-vapour-deposition
+kind: application
+home: produce|solid
+functions:
+  - produce|solid
+  - preserve|solid
+parameters:
+  - increase|hardness
+  - increase|reflectivity
+  - decrease|friction
+uses:
+  - deposition-phase-transition
+  - plasma
+domain:
+  id: Materialwissenschaft
+  de: Materialwissenschaft
+  en: Materials science
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Physikalische_Gasphasenabscheidung
+  - https://en.wikipedia.org/wiki/Physical_vapor_deposition
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Physikalische Gasphasenabscheidung (PVD)
+    description: >-
+      Bei der PVD wird das Beschichtungsmaterial im Vakuum durch Verdampfen, durch Zerstäuben
+      mit Ionen (Sputtern) oder mit einem Lichtbogen in die Gasphase gebracht. Die Atome fliegen
+      zum Werkstück und kondensieren dort zu einer dünnen, festen Schicht, meist nur Nanometer
+      bis wenige Mikrometer dick. Durch Zugabe reaktiver Gase wie Stickstoff entstehen auch
+      Hartstoffschichten wie Titannitrid.
+    example: >-
+      Hartstoffschichten auf Bohrern und Fräsern, Spiegel- und Entspiegelungsschichten, Metallisierung
+      von Halbleitern und Folien, dekorative Schichten auf Armaturen und Uhren
+    conditions: >-
+      Hochvakuum, saubere Substratoberflächen und meist eine Sichtlinie zwischen Quelle und
+      Substrat.
+    limits: >-
+      Wegen der gerichteten Teilchenbewegung werden Hinterschneidungen und tiefe Bohrungen
+      kaum gleichmäßig beschichtet.
+    sideEffects: >-
+      Hohe Eigenspannungen in den Schichten können zu Rissen oder Abplatzungen führen.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Physical vapour deposition (PVD)
+    description: >-
+      In PVD the coating material is brought into the vapour phase in a vacuum by evaporation,
+      by sputtering with ions or by an electric arc. The atoms travel to the workpiece and
+      condense there into a thin solid layer, usually from nanometres to a few micrometres
+      thick. Adding reactive gases such as nitrogen also produces hard coatings such as titanium
+      nitride.
+    example: >-
+      Hard coatings on drills and milling cutters, mirror and anti-reflection coatings, metallisation
+      of semiconductors and films, decorative coatings on taps and watches
+    conditions: >-
+      High vacuum, clean substrate surfaces and usually a line of sight between source and
+      substrate.
+    limits: >-
+      Because the particles travel in straight lines, undercuts and deep holes are hardly
+      coated evenly.
+    sideEffects: >-
+      High residual stresses in the coatings can lead to cracking or delamination.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

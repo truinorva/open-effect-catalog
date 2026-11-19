@@ -1,0 +1,67 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: synchrotron-radiation
+kind: effect
+home: produce|field
+functions:
+  - produce|field
+  - measure|solid
+parameters:
+  - increase|brightness
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Synchrotronstrahlung
+  - https://en.wikipedia.org/wiki/Synchrotron_radiation
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Synchrotronstrahlung
+    description: >-
+      Werden geladene Teilchen, die sich nahezu mit Lichtgeschwindigkeit bewegen, von einem
+      Magnetfeld auf eine gekrümmte Bahn gezwungen, strahlen sie elektromagnetische Wellen
+      ab. Durch relativistische Effekte ist die Strahlung eng in Bewegungsrichtung gebündelt
+      und reicht über ein breites Spektrum vom Infrarot bis in den harten Röntgenbereich.
+      In Speicherringen und Freie-Elektronen-Lasern wird sie gezielt mit Ablenkmagneten, Wigglern
+      und Undulatoren erzeugt.
+    example: >-
+      Röntgenstrukturanalyse von Proteinen und Werkstoffen, Spektroskopie und Röntgenlithographie
+      an Synchrotronquellen, Strahlung astrophysikalischer Quellen wie des Krebsnebels
+    conditions: >-
+      Geladene Teilchen, meist Elektronen, mit sehr hoher Energie in einem starken Magnetfeld.
+    limits: ''
+    sideEffects: >-
+      Der Energieverlust durch die Abstrahlung wächst stark mit der Teilchenenergie und begrenzt
+      die Energie, die Elektronen in Kreisbeschleunigern erreichen können.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Synchrotron radiation
+    description: >-
+      When charged particles moving at nearly the speed of light are forced onto a curved
+      path by a magnetic field, they emit electromagnetic waves. Relativistic effects concentrate
+      the radiation in a narrow cone in the direction of motion, and it spans a broad spectrum
+      from the infrared to hard X-rays. In storage rings and free-electron lasers it is generated
+      deliberately with bending magnets, wigglers and undulators.
+    example: >-
+      X-ray structure analysis of proteins and materials, spectroscopy and X-ray lithography
+      at synchrotron sources, radiation from astrophysical sources such as the Crab Nebula
+    conditions: >-
+      Charged particles, usually electrons, at very high energy in a strong magnetic field.
+    limits: ''
+    sideEffects: >-
+      The energy lost to radiation rises steeply with particle energy and limits the energy
+      electrons can reach in circular accelerators.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

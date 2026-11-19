@@ -1,0 +1,65 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: hysteresis
+kind: effect
+home: stop|solid
+functions:
+  - stop|solid
+  - heat|solid
+parameters:
+  - decrease|vibration
+  - increase|magnetism
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Hysterese
+  - https://en.wikipedia.org/wiki/Hysteresis
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Hysterese
+    description: >-
+      Bei Hysterese hängt der Zustand eines Systems nicht nur von der aktuellen Einwirkung
+      ab, sondern auch von seiner Vorgeschichte; Hin- und Rückweg verlaufen auf verschiedenen
+      Kurven und bilden eine Schleife. Die Fläche dieser Schleife entspricht der Energie,
+      die je Zyklus in Wärme umgesetzt wird, und der Abstand der beiden Äste lässt einen Zustand
+      bestehen, auch wenn die Ursache weggenommen wird.
+    example: >-
+      Dauermagnete und magnetische Datenspeicher (Remanenz), Hysteresebremsen und -kupplungen,
+      Schwingungsdämpfung durch Elastomerlager, Schaltschwellen in Schmitt-Triggern und Thermostaten
+    conditions: ''
+    limits: ''
+    sideEffects: >-
+      Ummagnetisierungsverluste erwärmen Transformatorkerne, und die Hysterese von Gummi verursacht
+      einen großen Teil des Rollwiderstands von Reifen.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Hysteresis
+    description: >-
+      With hysteresis, the state of a system depends not only on the current input but also
+      on its history; the forward and return paths follow different curves and form a loop.
+      The area of this loop equals the energy converted into heat per cycle, and the gap between
+      the two branches lets a state persist even after the cause has been removed.
+    example: >-
+      Permanent magnets and magnetic data storage (remanence), hysteresis brakes and clutches,
+      vibration damping by elastomer mounts, switching thresholds in Schmitt triggers and
+      thermostats
+    conditions: ''
+    limits: ''
+    sideEffects: >-
+      Magnetic reversal losses heat transformer cores, and the hysteresis of rubber accounts
+      for a large part of tyre rolling resistance.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

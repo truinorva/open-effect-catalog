@@ -1,0 +1,66 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: zone-plate
+kind: application
+home: orient|field
+functions:
+  - orient|field
+parameters:
+  - increase|brightness
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: ''
+sources:
+  - https://de.wikipedia.org/wiki/Fresnel-Zonenplatte
+  - https://en.wikipedia.org/wiki/Zone_plate
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Fresnel-Zonenplatte
+    description: >-
+      Eine Zonenplatte besteht aus konzentrischen Ringen, die abwechselnd durchlässig und
+      undurchlässig oder phasenschiebend sind. Die Ringradien sind so gewählt, dass die Wellen
+      aus allen durchlässigen Zonen im Brennpunkt mit gleicher Phase ankommen und sich verstärken;
+      die Platte bündelt Strahlung also durch Beugung statt durch Brechung. Das funktioniert
+      auch dort, wo es keine brauchbaren Linsenwerkstoffe gibt, etwa bei Röntgenstrahlen.
+    example: >-
+      Röntgenmikroskope an Synchrotronen, Fokussierung von extremem Ultraviolett, Fresnel-Zonenantennen
+      für Mikrowellen, Fotografie mit Zonenplatten statt Lochblende
+    conditions: >-
+      Weitgehend einfarbige Strahlung, da die Brennweite von der Wellenlänge abhängt.
+    limits: >-
+      Starke Farbfehler und geringer Wirkungsgrad: Eine Amplituden-Zonenplatte lenkt nur rund
+      10 % der Strahlung in den Hauptbrennpunkt.
+    sideEffects: >-
+      Brennpunkte höherer Ordnung und ungebeugtes Licht erzeugen einen Untergrund.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Zone plate
+    description: >-
+      A zone plate consists of concentric rings that are alternately transparent and opaque,
+      or phase-shifting. The ring radii are chosen so that waves from all transparent zones
+      arrive at the focal point in phase and reinforce each other; the plate thus focuses
+      radiation by diffraction rather than refraction. This also works where no usable lens
+      materials exist, for example for X-rays.
+    example: >-
+      X-ray microscopes at synchrotrons, focusing of extreme ultraviolet, Fresnel zone antennas
+      for microwaves, photography with zone plates instead of a pinhole
+    conditions: >-
+      Largely monochromatic radiation, since the focal length depends on the wavelength.
+    limits: >-
+      Strong chromatic aberration and low efficiency: an amplitude zone plate directs only
+      about 10 % of the radiation into the primary focus.
+    sideEffects: Higher-order foci and undiffracted light create a background.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

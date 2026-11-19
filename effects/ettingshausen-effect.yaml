@@ -1,0 +1,62 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: ettingshausen-effect
+kind: effect
+home: cool|solid
+functions:
+  - cool|solid
+  - heat|solid
+parameters:
+  - decrease|temperature
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: nische
+sources:
+  - https://de.wikipedia.org/wiki/Ettingshausen-Effekt
+  - https://en.wikipedia.org/wiki/Ettingshausen_effect
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Ettingshausen-Effekt
+    description: >-
+      Fließt ein elektrischer Strom durch einen Leiter oder Halbleiter in einem senkrecht
+      dazu stehenden Magnetfeld, entsteht quer zu Strom und Feld ein Temperaturgefälle. Die
+      Lorentzkraft lenkt die Ladungsträger seitlich ab, und weil schnelle, energiereiche Träger
+      anders abgelenkt werden als langsame, wird Wärme zu einer Seite transportiert: Die eine
+      Seite erwärmt sich, die andere kühlt ab.
+    example: >-
+      Thermomagnetische Kühler im Forschungsmaßstab, z. B. mit Bismut-Antimon-Legierungen
+      bei tiefen Temperaturen
+    conditions: >-
+      Starkes Magnetfeld und Materialien mit hoher Ladungsträgerbeweglichkeit wie Bismut oder
+      Bismut-Antimon.
+    limits: Bei Raumtemperatur ist der Effekt in den meisten Materialien sehr klein.
+    sideEffects: Die Joulesche Wärme des Stroms wirkt der Kühlung entgegen.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Ettingshausen effect
+    description: >-
+      When an electric current flows through a conductor or semiconductor in a magnetic field
+      perpendicular to it, a temperature gradient develops at right angles to both current
+      and field. The Lorentz force deflects the charge carriers sideways, and because fast,
+      energetic carriers are deflected differently from slow ones, heat is carried towards
+      one side: one side warms up and the other cools down.
+    example: >-
+      Research-scale thermomagnetic coolers, e.g. with bismuth–antimony alloys at low temperatures
+    conditions: >-
+      Strong magnetic field and materials with high carrier mobility such as bismuth or bismuth–antimony.
+    limits: At room temperature the effect is very small in most materials.
+    sideEffects: Joule heating by the current counteracts the cooling.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

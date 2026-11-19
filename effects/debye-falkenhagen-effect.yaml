@@ -1,0 +1,64 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: debye-falkenhagen-effect
+kind: effect
+home: measure|liquid
+functions:
+  - measure|liquid
+parameters:
+  - increase|conductivity
+uses: []
+domain:
+  id: Chemie
+  de: Chemie
+  en: Chemistry
+maturity: nische
+sources:
+  - https://en.wikipedia.org/wiki/Debye%E2%80%93Falkenhagen_effect
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Debye-Falkenhagen-Effekt
+    description: >-
+      In einer Elektrolytlösung ist jedes Ion von einer Wolke entgegengesetzt geladener Ionen
+      umgeben, die es bei seiner Wanderung im elektrischen Feld abbremst. In Wechselfeldern
+      hoher Frequenz kann sich diese Ionenwolke nicht mehr schnell genug umordnen, ihre bremsende
+      Wirkung entfällt teilweise, und die Leitfähigkeit der Lösung steigt an.
+    example: >-
+      Untersuchung der Ionenwolke und ihrer Relaxationszeit in der Elektrochemie, frequenzabhängige
+      Leitfähigkeitsmessung an Elektrolyten
+    conditions: >-
+      Ein Wechselfeld, dessen Periode kürzer ist als die Relaxationszeit der Ionenwolke, bei
+      verdünnten Lösungen typischerweise im Megahertzbereich und darüber.
+    limits: >-
+      Der Anstieg der Leitfähigkeit ist klein und nur mit empfindlichen Hochfrequenzmethoden
+      messbar.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Debye-Falkenhagen effect
+    description: >-
+      In an electrolyte solution every ion is surrounded by a cloud of oppositely charged
+      ions that slows it down as it migrates in an electric field. In alternating fields of
+      high frequency this ionic atmosphere can no longer rearrange quickly enough, its braking
+      effect partly disappears, and the conductivity of the solution increases.
+    example: >-
+      Studying the ionic atmosphere and its relaxation time in electrochemistry, frequency-dependent
+      conductivity measurements on electrolytes
+    conditions: >-
+      An alternating field whose period is shorter than the relaxation time of the ionic atmosphere,
+      typically in the megahertz range and above for dilute solutions.
+    limits: >-
+      The increase in conductivity is small and measurable only with sensitive high-frequency
+      methods.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

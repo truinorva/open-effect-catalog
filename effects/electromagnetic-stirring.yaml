@@ -1,0 +1,62 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: electromagnetic-stirring
+kind: application
+home: mix|liquid
+functions:
+  - mix|liquid
+  - move|liquid
+parameters:
+  - increase|homogeneity
+uses:
+  - electromagnetic-induction
+  - magnetohydrodynamics-mhd
+domain:
+  id: Verfahrenstechnik
+  de: Verfahrenstechnik
+  en: Process engineering
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Induktionsofen
+  - https://en.wikipedia.org/wiki/Induction_furnace
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Elektromagnetisches Rühren
+    description: >-
+      Ein wanderndes oder rotierendes Magnetfeld induziert in einer Metallschmelze Ströme;
+      deren Wechselwirkung mit dem Magnetfeld erzeugt Lorentzkräfte, die die Schmelze berührungslos
+      in Bewegung setzen. Im Induktionstiegelofen entsteht diese Badbewegung neben der Erwärmung
+      von selbst, beim Stranggießen werden eigene Rührspulen eingesetzt, um die Erstarrung
+      zu beeinflussen.
+    example: >-
+      Induktionstiegelofen, Stranggießen von Stahl, Homogenisieren von Aluminiumschmelzen
+      im Warmhalteofen
+    conditions: Elektrisch leitfähige Schmelze.
+    limits: ''
+    sideEffects: >-
+      Eine zu starke Badbewegung kann Schlacke oder Oxide in die Schmelze einmischen.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Electromagnetic stirring
+    description: >-
+      A travelling or rotating magnetic field induces currents in a molten metal; their interaction
+      with the field produces Lorentz forces that set the melt in motion without contact.
+      In the coreless induction furnace this bath motion arises on its own alongside heating;
+      in continuous casting, dedicated stirring coils are used to influence solidification.
+    example: >-
+      Coreless induction furnace, continuous casting of steel, homogenising aluminium melts
+      in holding furnaces
+    conditions: Electrically conductive melt.
+    limits: ''
+    sideEffects: Excessive bath motion can entrain slag or oxides into the melt.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

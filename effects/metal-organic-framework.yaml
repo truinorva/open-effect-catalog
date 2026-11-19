@@ -1,0 +1,76 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: metal-organic-framework
+kind: application
+home: absorb|gas
+functions:
+  - absorb|gas
+  - separate|gas
+  - remove|gas
+parameters:
+  - decrease|concentration
+  - decrease|humidity
+uses: []
+domain:
+  id: Chemie
+  de: Chemie
+  en: Chemistry
+maturity: kindheit
+sources: []
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Metallorganische Gerüstverbindung (MOF)
+    description: >-
+      Metallorganische Gerüstverbindungen sind kristalline Materialien, in denen Metallionen
+      oder Metallcluster über organische Brückenmoleküle zu einem regelmäßigen, porösen Gerüst
+      verknüpft sind. Ihre Poren sind molekular klein und gleichmäßig, und ihre innere Oberfläche
+      kann mehrere tausend Quadratmeter pro Gramm erreichen. Über die Wahl von Metall und
+      Brückenmolekül lassen sich Porengröße und chemische Eigenschaften gezielt einstellen,
+      so dass bestimmte Gasmoleküle bevorzugt adsorbiert werden.
+    example: >-
+      Abscheidung von Kohlendioxid aus Rauchgas, Speicherung von Gasen wie Methan oder Wasserstoff,
+      Wassergewinnung aus trockener Luft, Gasflaschen für giftige Prozessgase in der Halbleiterfertigung,
+      Katalyse
+    conditions: >-
+      Ein auf das Zielmolekül abgestimmtes Gerüst und Bedingungen, unter denen es chemisch
+      stabil bleibt.
+    limits: >-
+      Viele MOFs sind empfindlich gegenüber Feuchte, Säuren oder Hitze, und die Herstellung
+      in großem Maßstab ist noch teuer.
+    sideEffects: >-
+      Zur Regeneration müssen die adsorbierten Gase durch Erwärmen oder Druckabsenkung wieder
+      ausgetrieben werden, was Energie kostet.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Metal-organic framework (MOF)
+    description: >-
+      Metal-organic frameworks are crystalline materials in which metal ions or metal clusters
+      are linked by organic bridging molecules into a regular porous framework. Their pores
+      are molecularly small and uniform, and their internal surface area can reach several
+      thousand square metres per gram. By choosing the metal and the bridging molecule, pore
+      size and chemical properties can be tailored so that certain gas molecules are adsorbed
+      preferentially.
+    example: >-
+      Capturing carbon dioxide from flue gas, storing gases such as methane or hydrogen, harvesting
+      water from dry air, gas cylinders for toxic process gases in semiconductor manufacturing,
+      catalysis
+    conditions: >-
+      A framework matched to the target molecule and conditions under which it remains chemically
+      stable.
+    limits: >-
+      Many MOFs are sensitive to moisture, acids or heat, and large-scale production is still
+      expensive.
+    sideEffects: >-
+      For regeneration, the adsorbed gases have to be driven off again by heating or lowering
+      the pressure, which costs energy.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

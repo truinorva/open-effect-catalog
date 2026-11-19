@@ -1,0 +1,72 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: shaped-charge
+kind: application
+home: disassemble|solid
+functions:
+  - disassemble|solid
+parameters:
+  - increase|speed
+  - increase|pressure
+uses:
+  - shock-wave
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Hohlladung
+  - https://en.wikipedia.org/wiki/Shaped_charge
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Hohlladung
+    description: >-
+      Ein Sprengstoffkörper besitzt auf der Zielseite eine kegel- oder rinnenförmige Aussparung,
+      die mit einer dünnen Metallauskleidung belegt ist. Die Detonationswelle presst die Auskleidung
+      zur Achse hin zusammen, wobei sich ein sehr schneller, dünner Metallstrahl bildet, der
+      unter enormem Druck auch dicken Stahl durchdringt. Weil die Energie in eine Richtung
+      gebündelt wird, dringt der Strahl weit tiefer ein als die Wirkung einer massiven Ladung
+      gleicher Größe.
+    example: >-
+      Perforieren von Bohrlochverrohrungen in der Erdölförderung, Schneidladungen beim Abbruch
+      von Stahlbauten, panzerbrechende Munition
+    conditions: >-
+      Präzise geformte, symmetrische Auskleidung; Zündung auf der Achse und ein gewisser Abstand
+      zum Ziel, damit sich der Strahl ausbilden kann.
+    limits: >-
+      Bei zu großem Abstand zerfällt der Strahl in Teilstücke und verliert an Durchschlagskraft.
+    sideEffects: >-
+      Druckwelle, Splitter und Lärm erfordern Sicherheitsabstände; der Umgang unterliegt dem
+      Sprengstoffrecht.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Shaped charge
+    description: >-
+      An explosive charge has a conical or groove-shaped recess on the target side, lined
+      with a thin metal liner. The detonation wave collapses the liner towards the axis, forming
+      a very fast, thin metal jet that penetrates even thick steel under enormous pressure.
+      Because the energy is focused in one direction, the jet penetrates far deeper than a
+      solid charge of the same size.
+    example: >-
+      Perforating oil-well casings, linear cutting charges for demolishing steel structures,
+      armour-piercing munitions
+    conditions: >-
+      Precisely shaped, symmetrical liner; initiation on the axis and some stand-off from
+      the target so the jet can form.
+    limits: >-
+      At too great a stand-off the jet breaks up into fragments and loses penetrating power.
+    sideEffects: >-
+      Blast, fragments and noise require safety distances; handling is subject to explosives
+      regulations.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

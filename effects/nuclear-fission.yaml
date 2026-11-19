@@ -1,0 +1,74 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: nuclear-fission
+kind: effect
+home: heat|solid
+functions:
+  - heat|solid
+  - heat|liquid
+  - produce|field
+parameters:
+  - increase|temperature
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Kernspaltung
+  - https://en.wikipedia.org/wiki/Nuclear_fission
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Kernspaltung
+    description: >-
+      Ein schwerer Atomkern wie Uran-235 oder Plutonium-239 zerfällt nach dem Einfang eines
+      Neutrons in zwei mittelschwere Kerne und setzt dabei zwei bis drei neue Neutronen sowie
+      rund 200 MeV Energie frei. Der größte Teil dieser Energie steckt in der Bewegung der
+      Bruchstücke und wird im umgebenden Material zu Wärme. Lösen die freigesetzten Neutronen
+      weitere Spaltungen aus, entsteht eine Kettenreaktion, die sich mit Moderator und Regelstäben
+      steuern lässt.
+    example: >-
+      Kernkraftwerke, Antriebe von U-Booten und Eisbrechern, Forschungsreaktoren als Neutronenquelle,
+      Herstellung medizinischer Radionuklide wie Molybdän-99
+    conditions: >-
+      Spaltbares Material in ausreichender Menge und Anordnung (kritische Masse); in thermischen
+      Reaktoren zusätzlich ein Moderator, der die Neutronen abbremst.
+    limits: >-
+      Die Kettenreaktion muss ständig geregelt und gekühlt werden, auch nach dem Abschalten,
+      weil die Spaltprodukte weiter Nachzerfallswärme abgeben.
+    sideEffects: >-
+      Es entstehen stark radioaktive Spaltprodukte und aktivierte Bauteile, die sehr lange
+      sicher gelagert werden müssen.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Nuclear fission
+    description: >-
+      A heavy nucleus such as uranium-235 or plutonium-239 splits after capturing a neutron
+      into two medium-weight nuclei, releasing two to three new neutrons and about 200 MeV
+      of energy. Most of this energy is carried by the motion of the fragments and turns into
+      heat in the surrounding material. If the released neutrons trigger further fissions,
+      a chain reaction arises that can be controlled with a moderator and control rods.
+    example: >-
+      Nuclear power plants, propulsion of submarines and icebreakers, research reactors as
+      neutron sources, production of medical radionuclides such as molybdenum-99
+    conditions: >-
+      Fissile material in sufficient quantity and arrangement (critical mass); in thermal
+      reactors also a moderator that slows the neutrons down.
+    limits: >-
+      The chain reaction must be controlled and cooled continuously, even after shutdown,
+      because the fission products keep releasing decay heat.
+    sideEffects: >-
+      Highly radioactive fission products and activated components arise that must be stored
+      safely for very long periods.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

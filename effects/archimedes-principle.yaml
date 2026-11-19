@@ -1,0 +1,66 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: archimedes-principle
+kind: effect
+home: move|solid
+functions:
+  - move|solid
+  - hold|solid
+  - separate|particles
+  - measure|solid
+  - measure|liquid
+parameters:
+  - measure|density
+  - increase|force
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Statischer_Auftrieb
+  - https://en.wikipedia.org/wiki/Buoyancy
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Statischer Auftrieb (Archimedisches Prinzip)
+    description: >-
+      Ein ganz oder teilweise in eine Flüssigkeit oder ein Gas eingetauchter Körper erfährt
+      eine nach oben gerichtete Kraft, die so groß ist wie die Gewichtskraft des verdrängten
+      Fluids. Ist der Körper im Mittel weniger dicht als das Fluid, schwimmt oder steigt er;
+      ist er dichter, sinkt er, wird aber scheinbar leichter.
+    example: >-
+      Schiffe und U-Boote, Heißluft- und Gasballone, Aräometer zur Dichtemessung von Flüssigkeiten,
+      Schwimm-Sink-Trennung im Recycling, Dichtebestimmung durch Wägung unter Wasser, Schwimmerschalter
+    conditions: Ein Schwerefeld und ein Dichteunterschied zwischen Körper und Fluid.
+    limits: >-
+      In Gasen ist der Auftrieb wegen der geringen Dichte klein, sodass große Volumina nötig
+      sind, und in Schwerelosigkeit entfällt er.
+    sideEffects: Beim Wägen an Luft verfälscht der Luftauftrieb das Ergebnis geringfügig.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Archimedes' principle (buoyancy)
+    description: >-
+      A body wholly or partly immersed in a liquid or gas experiences an upward force equal
+      to the weight of the fluid it displaces. If the body is on average less dense than the
+      fluid, it floats or rises; if it is denser, it sinks but seems lighter.
+    example: >-
+      Ships and submarines, hot-air and gas balloons, hydrometers for measuring liquid density,
+      sink-float separation in recycling, density determination by weighing under water, float
+      switches
+    conditions: A gravitational field and a density difference between body and fluid.
+    limits: >-
+      In gases buoyancy is small because of the low density, so large volumes are needed,
+      and it vanishes in weightlessness.
+    sideEffects: When weighing in air, air buoyancy slightly falsifies the result.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

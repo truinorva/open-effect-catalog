@@ -1,0 +1,71 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: scattering
+kind: effect
+home: measure|particles
+functions:
+  - measure|particles
+  - detect|particles
+  - measure|solid
+parameters:
+  - decrease|translucency
+  - measure|size
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Streuung_(Physik)
+  - https://en.wikipedia.org/wiki/Scattering
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Streuung
+    description: >-
+      Treffen Wellen oder Teilchen auf Hindernisse, Inhomogenitäten oder andere Teilchen,
+      werden sie aus ihrer ursprünglichen Richtung abgelenkt und in viele Richtungen verteilt.
+      Wie stark und in welche Richtungen gestreut wird, hängt vom Verhältnis der Teilchengröße
+      zur Wellenlänge, vom Brechzahlunterschied und von der Form der Streuer ab; deshalb verrät
+      die gestreute Strahlung Größe, Struktur und Konzentration der streuenden Teilchen.
+    example: >-
+      Optische Rauchmelder, Trübungsmessung von Wasser, Laserbeugung und dynamische Lichtstreuung
+      zur Partikelgrößenmessung, Röntgen- und Neutronenstreuung zur Strukturanalyse, Streuscheiben
+      und Weißpigmente, Lidar
+    conditions: >-
+      Unterschiede in Brechzahl, Dichte oder Ladung innerhalb des durchstrahlten Mediums.
+    limits: ''
+    sideEffects: >-
+      Streuung schwächt gerichtete Strahlen, mindert Sichtweite und Bildkontrast und begrenzt
+      die Reichweite von Signalen.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Scattering
+    description: >-
+      When waves or particles meet obstacles, inhomogeneities or other particles, they are
+      deflected from their original direction and spread out in many directions. How strongly
+      and in which directions scattering occurs depends on the ratio of particle size to wavelength,
+      on the difference in refractive index and on the shape of the scatterers; the scattered
+      radiation therefore reveals the size, structure and concentration of the scattering
+      particles.
+    example: >-
+      Optical smoke detectors, turbidity measurement of water, laser diffraction and dynamic
+      light scattering for particle sizing, X-ray and neutron scattering for structure analysis,
+      diffusers and white pigments, lidar
+    conditions: >-
+      Differences in refractive index, density or charge within the medium being traversed.
+    limits: ''
+    sideEffects: >-
+      Scattering weakens directed beams, reduces visibility and image contrast, and limits
+      the range of signals.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

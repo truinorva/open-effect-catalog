@@ -1,0 +1,72 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: rankine-cycle
+kind: application
+home: rotate|solid
+functions:
+  - rotate|solid
+  - change-phase|liquid
+  - change-phase|gas
+parameters: []
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Clausius-Rankine-Kreisprozess
+  - https://en.wikipedia.org/wiki/Rankine_cycle
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Clausius-Rankine-Kreisprozess
+    description: >-
+      Der Clausius-Rankine-Prozess ist der Vergleichsprozess der Dampfkraftwerke. Eine Pumpe
+      bringt Wasser auf hohen Druck, im Kessel verdampft es und wird meist überhitzt, in einer
+      Turbine entspannt sich der Dampf und gibt Arbeit ab, und im Kondensator wird er wieder
+      verflüssigt; weil die Flüssigkeit nur wenig Pumparbeit braucht, bleibt ein großer Teil
+      der Turbinenarbeit als Nutzarbeit übrig.
+    example: >-
+      Kohle-, Kern- und Solarthermiekraftwerke, Dampfteil von Gas-und-Dampf-Kraftwerken, ORC-Anlagen
+      für Geothermie und Abwärmenutzung
+    conditions: >-
+      Eine Wärmequelle mit ausreichend hoher Temperatur, eine Wärmesenke zur Kondensation
+      und ein geeignetes Arbeitsmedium.
+    limits: >-
+      Der Wirkungsgrad ist durch die Temperaturen von Wärmezufuhr und Kondensation begrenzt
+      und liegt bei großen Dampfkraftwerken etwa zwischen 33 und 47 %.
+    sideEffects: >-
+      Ein großer Teil der Wärme muss am Kondensator über Kühltürme oder Gewässer abgegeben
+      werden.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Rankine cycle
+    description: >-
+      The Rankine cycle is the reference cycle of steam power plants. A pump raises water
+      to high pressure, in the boiler it evaporates and is usually superheated, the steam
+      expands in a turbine and delivers work, and in the condenser it is liquefied again;
+      because the liquid requires little pumping work, a large share of the turbine work remains
+      as net output.
+    example: >-
+      Coal, nuclear and solar thermal power plants, the steam part of combined-cycle plants,
+      organic Rankine cycle units for geothermal energy and waste heat recovery
+    conditions: >-
+      A heat source at sufficiently high temperature, a heat sink for condensation and a suitable
+      working fluid.
+    limits: >-
+      Efficiency is limited by the temperatures of heat input and condensation and is roughly
+      33 to 47 % in large steam power plants.
+    sideEffects: >-
+      A large part of the heat must be rejected at the condenser via cooling towers or bodies
+      of water.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

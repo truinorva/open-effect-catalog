@@ -1,0 +1,70 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: metal-foam
+kind: application
+home: stop|solid
+functions:
+  - stop|solid
+  - stabilise|solid
+  - cool|solid
+parameters:
+  - decrease|density
+  - increase|porosity
+uses: []
+domain:
+  id: Materialwissenschaft
+  de: Materialwissenschaft
+  en: Materials science
+maturity: wachstum
+sources:
+  - https://de.wikipedia.org/wiki/Metallschaum
+  - https://en.wikipedia.org/wiki/Metal_foam
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Metallschaum
+    description: >-
+      Metallschäume sind zellulare Werkstoffe aus einem Metall, meist Aluminium, mit einem
+      Porenanteil von meist 75 bis 95 Prozent. Sie entstehen etwa, indem man Gas in eine Schmelze
+      einbringt oder ein Treibmittel in einem gepressten Metallpulver zersetzt; offenporige
+      Schäume werden auch durch Gießen um Platzhalter hergestellt. Beim Zusammendrücken knicken
+      die Zellwände nacheinander ein, so dass der Schaum über einen langen Weg bei nahezu
+      gleichbleibender Kraft viel Energie aufnimmt.
+    example: >-
+      Crashabsorber in Fahrzeugen, leichte Sandwichbauteile mit Schaumkern, offenporige Wärmetauscher
+      und Kühlkörper, Schalldämpfer, Filter und Flammensperren
+    conditions: >-
+      Belastung vorwiegend auf Druck; für Wärmetausch und Filtern eine offenporige Struktur.
+    limits: >-
+      Schwankende Porengrößen führen zu streuenden Eigenschaften; auf Zug und bei Ermüdung
+      sind Metallschäume deutlich schwächer als massives Metall.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Metal foam
+    description: >-
+      Metal foams are cellular materials made of a metal, usually aluminium, with a pore fraction
+      of typically 75 to 95 per cent. They are produced, for example, by injecting gas into
+      a melt or by decomposing a blowing agent in a compacted metal powder; open-cell foams
+      are also made by casting around space holders. When compressed, the cell walls buckle
+      one after another, so the foam absorbs a lot of energy over a long stroke at almost
+      constant force.
+    example: >-
+      Crash absorbers in vehicles, lightweight sandwich parts with a foam core, open-cell
+      heat exchangers and heat sinks, silencers, filters and flame arresters
+    conditions: >-
+      Loading mainly in compression; for heat exchange and filtering, an open-cell structure.
+    limits: >-
+      Varying pore sizes lead to scattered properties; in tension and fatigue, metal foams
+      are much weaker than solid metal.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

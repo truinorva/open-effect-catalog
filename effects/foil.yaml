@@ -1,0 +1,67 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: foil
+kind: application
+home: move|solid
+functions:
+  - move|solid
+  - hold|solid
+  - move|gas
+  - rotate|solid
+parameters:
+  - increase|force
+  - decrease|drag
+uses:
+  - bernoulli-effect
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: reife
+sources:
+  - https://en.wikipedia.org/wiki/Foil_(fluid_mechanics)
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Flügelprofil (Tragflügel, Hydrofoil)
+    description: >-
+      Ein Flügelprofil ist ein schlanker, meist gewölbter Querschnitt mit gerundeter Vorder-
+      und spitzer Hinterkante, der in einer Strömung eine große Kraft quer zur Anströmung,
+      den Auftrieb, bei geringem Widerstand erzeugt. Profilform und Anstellwinkel lenken die
+      Strömung um, so dass auf der Oberseite ein Unterdruck und auf der Unterseite ein Überdruck
+      entsteht; in Luft spricht man vom Tragflügel, in Wasser vom Hydrofoil.
+    example: >-
+      Flugzeugflügel, Propeller- und Turbinenschaufeln, Rotorblätter von Windkraftanlagen
+      und Hubschraubern, Tragflächenboote, Segel und Kiele
+    conditions: Relativbewegung zum Fluid; Anstellwinkel unterhalb des Abrisswinkels.
+    limits: >-
+      Bei zu großem Anstellwinkel löst die Strömung ab und der Auftrieb bricht ein; an Hydrofoils
+      kann Kavitation auftreten.
+    sideEffects: Induzierter Widerstand und Randwirbel an den Flügelenden.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Foil (airfoil, hydrofoil)
+    description: >-
+      A foil is a slender, usually cambered cross-section with a rounded leading edge and
+      a sharp trailing edge that, in a flow, generates a large force perpendicular to the
+      oncoming stream, the lift, with little drag. Shape and angle of attack deflect the flow,
+      producing suction on the upper side and overpressure on the lower side; in air it is
+      called an airfoil, in water a hydrofoil.
+    example: >-
+      Aircraft wings, propeller and turbine blades, wind turbine and helicopter rotor blades,
+      hydrofoil boats, sails and keels
+    conditions: Relative motion to the fluid; angle of attack below the stall angle.
+    limits: >-
+      At too high an angle of attack the flow separates and lift collapses; cavitation can
+      occur on hydrofoils.
+    sideEffects: Induced drag and tip vortices at the wing ends.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

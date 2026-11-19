@@ -1,0 +1,71 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: cryoablation
+kind: application
+home: destroy|solid
+functions:
+  - destroy|solid
+  - cool|solid
+parameters:
+  - decrease|temperature
+uses:
+  - freezing
+  - joule-thomson-effect
+domain:
+  id: ''
+  de: ''
+  en: ''
+maturity: wachstum
+sources:
+  - https://de.wikipedia.org/wiki/Kryoablation
+  - https://en.wikipedia.org/wiki/Cryoablation
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Kryoablation
+    description: >-
+      Eine Kältesonde, ein Ballonkatheter oder ein Sprühstrahl kühlt das zu behandelnde Gewebe
+      weit unter den Gefrierpunkt, meist durch Entspannung von Argon oder Lachgas oder mit
+      flüssigem Stickstoff. Im Gewebe bilden sich Eiskristalle, die die Zellmembranen zerreißen;
+      Austrocknung der Zellen und gestörte Durchblutung nach dem Auftauen töten das Gewebe
+      zusätzlich ab.
+    example: >-
+      Behandlung von Vorhofflimmern mit dem Kryoballon, Vereisung von Nieren-, Prostata- und
+      Lebertumoren, Entfernung von Warzen mit flüssigem Stickstoff
+    conditions: >-
+      Eine ausreichend tiefe Temperatur im Zielgewebe, oft in mehreren Gefrier-Auftau-Zyklen.
+    limits: >-
+      Die Größe der abgetöteten Zone ist begrenzt, und am Rand der Eiskugel überlebt Gewebe,
+      das nicht kalt genug wurde.
+    sideEffects: >-
+      Kälteschäden an benachbarten Organen und Nerven, etwa am Zwerchfellnerv bei der Behandlung
+      am Herzen.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Cryoablation
+    description: >-
+      A cryoprobe, a balloon catheter or a spray cools the tissue to be treated far below
+      freezing, usually by expanding argon or nitrous oxide or with liquid nitrogen. Ice crystals
+      form in the tissue and rupture the cell membranes; dehydration of the cells and impaired
+      blood flow after thawing kill the tissue as well.
+    example: >-
+      Treatment of atrial fibrillation with the cryoballoon, freezing of kidney, prostate
+      and liver tumours, removal of warts with liquid nitrogen
+    conditions: >-
+      A sufficiently low temperature in the target tissue, often in several freeze-thaw cycles.
+    limits: >-
+      The size of the destroyed zone is limited, and at the edge of the ice ball tissue that
+      did not get cold enough survives.
+    sideEffects: >-
+      Cold injury to neighbouring organs and nerves, for example the phrenic nerve in cardiac
+      treatment.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

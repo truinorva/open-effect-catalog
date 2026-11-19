@@ -1,0 +1,70 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: electric-spark
+kind: effect
+home: heat|gas
+functions:
+  - heat|gas
+  - remove|solid
+  - produce|field
+  - measure|solid
+parameters:
+  - increase|temperature
+  - measure|concentration
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Funke_(Entladung)
+  - https://en.wikipedia.org/wiki/Electric_spark
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Elektrischer Funke (Funkenentladung)
+    description: >-
+      Übersteigt die Feldstärke zwischen zwei Leitern die Durchschlagfestigkeit des Gases,
+      bildet sich in Sekundenbruchteilen ein leitfähiger Plasmakanal, über den sich die gespeicherte
+      Ladung schlagartig ausgleicht. Der kurze, sehr heiße Funke erhitzt das Gas örtlich,
+      sendet Licht, einen Knall und elektromagnetische Störungen aus und trägt an seinen Fußpunkten
+      etwas Elektrodenmaterial ab.
+    example: >-
+      Zündkerze, Piezo-Feuerzeug, Funkenstrecke als Überspannungsschutz, Funkenerosion, Funkenspektrometrie
+      zur Metallanalyse
+    conditions: >-
+      Spannung hoch genug für den Durchschlag; die Zündspannung hängt nach dem Paschen-Gesetz
+      von Gasdruck und Elektrodenabstand ab.
+    limits: ''
+    sideEffects: >-
+      Elektromagnetische Störungen, Elektrodenverschleiß und Zündgefahr in explosionsfähiger
+      Atmosphäre.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Electric spark (spark discharge)
+    description: >-
+      When the field strength between two conductors exceeds the dielectric strength of the
+      gas, a conductive plasma channel forms within a fraction of a second, through which
+      the stored charge equalises abruptly. The short, very hot spark heats the gas locally,
+      emits light, a crack and electromagnetic interference, and erodes a little electrode
+      material at its roots.
+    example: >-
+      Spark plug, piezo lighter, spark gap for surge protection, spark erosion, spark emission
+      spectrometry for metal analysis
+    conditions: >-
+      Voltage high enough for breakdown; according to Paschen's law, the breakdown voltage
+      depends on gas pressure and electrode gap.
+    limits: ''
+    sideEffects: >-
+      Electromagnetic interference, electrode wear and ignition hazard in explosive atmospheres.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

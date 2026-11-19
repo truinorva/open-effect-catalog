@@ -1,0 +1,76 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: mirage
+kind: effect
+home: orient|field
+functions:
+  - orient|field
+  - measure|solid
+parameters:
+  - measure|heat-conduction
+  - measure|translucency
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Luftspiegelung
+  - https://en.wikipedia.org/wiki/Mirage
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Luftspiegelung (Mirage-Effekt)
+    description: >-
+      Liegt über einer Fläche eine Luftschicht mit starkem Temperaturgefälle, ändert sich
+      mit der Dichte auch der Brechungsindex der Luft von Schicht zu Schicht. Lichtstrahlen,
+      die flach durch diese Schichten laufen, werden stetig gekrümmt, sodass Gegenstände verschoben,
+      gespiegelt oder verzerrt erscheinen. In der photothermischen Ablenkungsspektroskopie
+      heizt ein modulierter Lichtstrahl eine Probe auf, und die Ablenkung eines dicht über
+      der Oberfläche verlaufenden Messstrahls zeigt, wie viel Licht die Probe absorbiert und
+      wie sie Wärme leitet.
+    example: >-
+      Scheinbare Wasserflächen auf heißen Straßen, Fata Morgana über kaltem Meer, photothermische
+      Ablenkungsspektroskopie, Messung der Temperaturleitfähigkeit dünner Schichten
+    conditions: >-
+      Ein ausgeprägter Temperatur- oder Dichtegradient im Medium quer zur Ausbreitungsrichtung
+      des Lichts.
+    limits: >-
+      Die Ablenkung ist sehr klein und wird erst über lange Lichtwege oder mit empfindlicher
+      Positionsmessung deutlich.
+    sideEffects: >-
+      Flimmernde Luft über warmen Flächen stört optische Messungen, Vermessungsarbeiten und
+      Teleskopaufnahmen.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Mirage (mirage effect)
+    description: >-
+      When a layer of air above a surface has a steep temperature gradient, its density and
+      therefore its refractive index vary from layer to layer. Light rays travelling at a
+      shallow angle through these layers are bent continuously, so objects appear displaced,
+      mirrored or distorted. In photothermal deflection spectroscopy a modulated light beam
+      heats a sample, and the deflection of a probe beam skimming the surface reveals how
+      much light the sample absorbs and how it conducts heat.
+    example: >-
+      Apparent pools of water on hot roads, Fata Morgana over cold sea, photothermal deflection
+      spectroscopy, measuring the thermal diffusivity of thin films
+    conditions: >-
+      A pronounced temperature or density gradient in the medium, transverse to the direction
+      of the light.
+    limits: >-
+      The deflection is very small and only becomes noticeable over long light paths or with
+      sensitive position detection.
+    sideEffects: >-
+      Shimmering air above warm surfaces disturbs optical measurements, surveying and telescope
+      imaging.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

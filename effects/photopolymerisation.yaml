@@ -1,0 +1,72 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: photopolymerisation
+kind: effect
+home: change-phase|liquid
+functions:
+  - change-phase|liquid
+  - join|solid
+  - produce|solid
+parameters:
+  - increase|viscosity
+  - increase|hardness
+uses: []
+domain:
+  id: Chemie
+  de: Chemie
+  en: Chemistry
+maturity: verbreitet
+sources:
+  - https://de.wikipedia.org/wiki/Photopolymer
+  - https://en.wikipedia.org/wiki/Photopolymer
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Photopolymerisation
+    description: >-
+      Bei der Photopolymerisation zerfällt ein Photoinitiator unter UV- oder sichtbarem Licht
+      in Radikale oder bildet eine Säure, die eine Kettenreaktion von Monomeren und Oligomeren
+      startet. Das flüssige Harz vernetzt dadurch innerhalb von Sekunden zu einem festen Kunststoff,
+      und zwar nur dort, wo das Licht hinkommt. So lassen sich Schichten ohne Ofen aushärten
+      und Strukturen mit Licht genau abbilden.
+    example: >-
+      UV-härtende Lacke, Druckfarben und Klebstoffe, lichthärtende Zahnfüllungen, Stereolithografie
+      und DLP-3D-Druck, Negativ-Fotolacke in der Mikrofertigung
+    conditions: >-
+      Ein Photoinitiator, dessen Absorption zur Lichtquelle passt, und ausreichend Licht in
+      der ganzen zu härtenden Schicht.
+    limits: >-
+      In dicken, gefüllten oder stark pigmentierten Schichten dringt das Licht nur begrenzt
+      ein, und Luftsauerstoff hemmt die radikalische Härtung an der Oberfläche.
+    sideEffects: >-
+      Das Harz schrumpft beim Aushärten, und nicht ausgehärtete Monomere können Haut und Atemwege
+      sensibilisieren.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Photopolymerisation
+    description: >-
+      In photopolymerisation a photoinitiator breaks down under UV or visible light into radicals
+      or forms an acid that starts a chain reaction of monomers and oligomers. Within seconds
+      the liquid resin cross-links into a solid plastic, but only where the light reaches.
+      Layers can thus be cured without an oven and structures reproduced precisely with light.
+    example: >-
+      UV-curing coatings, inks and adhesives, light-cured dental fillings, stereolithography
+      and DLP 3D printing, negative photoresists in microfabrication
+    conditions: >-
+      A photoinitiator whose absorption matches the light source, and enough light throughout
+      the layer to be cured.
+    limits: >-
+      In thick, filled or heavily pigmented layers light penetrates only partly, and atmospheric
+      oxygen inhibits radical curing at the surface.
+    sideEffects: >-
+      The resin shrinks during curing, and uncured monomers can sensitise skin and airways.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

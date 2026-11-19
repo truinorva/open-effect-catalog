@@ -1,0 +1,67 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: conical-capillary-effect
+kind: effect
+home: move|liquid
+functions:
+  - move|liquid
+  - separate|gas
+parameters:
+  - change|position
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: nische
+sources:
+  - https://de.wikipedia.org/wiki/Kapillareffekt
+  - https://en.wikipedia.org/wiki/Capillary_action
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Konischer Kapillareffekt
+    description: >-
+      In einer sich verjüngenden Kapillare oder einem keilförmigen Spalt bewegt sich eine
+      benetzende Flüssigkeit von selbst zum engen Ende, weil der Kapillardruck dort wegen
+      der stärkeren Krümmung des Meniskus größer ist. Bei Tropfen außen auf einem kegelförmigen
+      Draht oder einer Faser ist es umgekehrt: Sie wandern zum dickeren Ende, wo ihre Oberflächenkrümmung
+      und damit ihr Laplace-Druck kleiner ist. So lässt sich Flüssigkeit ohne Pumpe in eine
+      Vorzugsrichtung befördern.
+    example: >-
+      Wassersammlung an Kaktusstacheln, Nebelkollektoren mit kegelförmigen Fasern, gerichteter
+      Tropfentransport in der Mikrofluidik
+    conditions: >-
+      Eine benetzende Flüssigkeit und eine Geometrie mit stetig sich änderndem Querschnitt.
+    limits: >-
+      Die treibende Kraft ist klein und wird durch Kontaktwinkelhysterese und Schwerkraft
+      leicht aufgehoben.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Conical capillary effect
+    description: >-
+      In a tapering capillary or a wedge-shaped gap, a wetting liquid moves on its own towards
+      the narrow end, because the capillary pressure is higher there due to the stronger curvature
+      of the meniscus. For droplets sitting on the outside of a conical wire or fibre it is
+      the other way round: they move towards the thicker end, where their surface curvature
+      and hence their Laplace pressure is lower. This allows liquid to be transported in a
+      preferred direction without a pump.
+    example: >-
+      Water collection on cactus spines, fog collectors with conical fibres, directional droplet
+      transport in microfluidics
+    conditions: >-
+      A wetting liquid and a geometry with a continuously changing cross-section.
+    limits: >-
+      The driving force is small and is easily cancelled by contact angle hysteresis and gravity.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

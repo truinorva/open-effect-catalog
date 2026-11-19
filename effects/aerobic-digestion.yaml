@@ -1,0 +1,70 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: aerobic-digestion
+kind: application
+home: destroy|liquid
+functions:
+  - destroy|liquid
+  - heat|liquid
+parameters:
+  - decrease|quantity
+  - increase|purity
+uses:
+  - aeration
+domain:
+  id: Biologie
+  de: Biologie
+  en: Biology
+maturity: reife
+sources:
+  - https://en.wikipedia.org/wiki/Aerobic_digestion
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Aerobe Schlammstabilisierung
+    description: >-
+      Mikroorganismen bauen organische Stoffe in Klärschlamm oder anderen Abfällen bei ständiger
+      Sauerstoffzufuhr zu Kohlendioxid, Wasser und neuer Biomasse ab. Fehlt Nachschub an Nährstoffen,
+      zehren die Bakterien schließlich ihre eigene Zellmasse auf, sodass Schlammmenge, Geruch
+      und Krankheitserreger abnehmen.
+    example: >-
+      Schlammstabilisierung in kleinen und mittleren Kläranlagen, autotherme aerobe Schlammbehandlung,
+      Behandlung von Abwässern der Lebensmittelindustrie
+    conditions: >-
+      Ausreichend gelöster Sauerstoff durch Belüftung, eine geeignete Temperatur und eine
+      lange Verweilzeit.
+    limits: >-
+      Die Belüftung macht das Verfahren energieintensiv, und anders als beim anaeroben Abbau
+      entsteht kein nutzbares Biogas.
+    sideEffects: >-
+      Der Abbau setzt Wärme frei; in gut gedämmten Reaktoren erreicht der Schlamm dadurch
+      Temperaturen, bei denen Krankheitserreger absterben.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Aerobic digestion
+    description: >-
+      Microorganisms break down organic matter in sewage sludge or other wastes into carbon
+      dioxide, water and new biomass while oxygen is supplied continuously. When the supply
+      of nutrients runs out, the bacteria end up consuming their own cell mass, so that sludge
+      volume, odour and pathogens decrease.
+    example: >-
+      Sludge stabilisation in small and medium sewage plants, autothermal thermophilic aerobic
+      digestion, treatment of food industry wastewater
+    conditions: >-
+      Enough dissolved oxygen from aeration, a suitable temperature and a long residence time.
+    limits: >-
+      Aeration makes the process energy-intensive, and unlike anaerobic digestion it produces
+      no usable biogas.
+    sideEffects: >-
+      Decomposition releases heat; in well-insulated reactors the sludge thereby reaches temperatures
+      at which pathogens die.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

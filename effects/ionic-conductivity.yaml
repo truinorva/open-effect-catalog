@@ -1,0 +1,69 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: ionic-conductivity
+kind: effect
+home: measure|liquid
+functions:
+  - measure|liquid
+  - measure|gas
+parameters:
+  - measure|concentration
+  - measure|purity
+  - measure|conductivity
+uses: []
+domain:
+  id: Chemie
+  de: Chemie
+  en: Chemistry
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Elektrolytische_Leitf%C3%A4higkeit
+  - https://en.wikipedia.org/wiki/Conductivity_(electrolytic)
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Ionenleitfähigkeit (elektrolytische Leitfähigkeit)
+    description: >-
+      In Elektrolytlösungen, Salzschmelzen und bestimmten Festkörpern wird elektrischer Strom
+      nicht von Elektronen, sondern von wandernden Ionen getragen. Die Leitfähigkeit steigt
+      mit Konzentration, Ladung und Beweglichkeit der Ionen sowie mit der Temperatur, sodass
+      sich aus ihr auf den Gehalt gelöster Salze schließen lässt.
+    example: >-
+      Leitfähigkeitsmessung zur Prüfung von Reinstwasser und Salzgehalt, Festelektrolyt aus
+      Zirconiumdioxid in der Lambdasonde, Elektrolyte in Batterien und Brennstoffzellen, Elektrolyse
+    conditions: >-
+      Frei bewegliche Ionen; Festelektrolyte leiten meist erst bei erhöhter Temperatur ausreichend.
+    limits: >-
+      Gleichstrom zersetzt den Elektrolyten an den Elektroden, deshalb misst man mit Wechselstrom;
+      die Messung unterscheidet nicht, welche Ionen vorliegen.
+    sideEffects: >-
+      Stromfluss durch Elektrolyte führt zu Elektrolyse und Korrosion an den Elektroden.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Ionic conductivity
+    description: >-
+      In electrolyte solutions, molten salts and certain solids, electric current is carried
+      not by electrons but by migrating ions. Conductivity rises with the concentration, charge
+      and mobility of the ions and with temperature, so it can be used to infer the content
+      of dissolved salts.
+    example: >-
+      Conductivity measurement for checking ultrapure water and salinity, zirconia solid electrolyte
+      in lambda sensors, electrolytes in batteries and fuel cells, electrolysis
+    conditions: >-
+      Freely mobile ions; solid electrolytes usually conduct sufficiently only at elevated
+      temperature.
+    limits: >-
+      Direct current decomposes the electrolyte at the electrodes, so measurement uses alternating
+      current; the measurement does not distinguish which ions are present.
+    sideEffects: >-
+      Current through electrolytes leads to electrolysis and corrosion at the electrodes.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

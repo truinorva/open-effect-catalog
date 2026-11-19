@@ -1,0 +1,67 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: distillation
+kind: application
+home: separate|liquid
+functions:
+  - separate|liquid
+  - concentrate|liquid
+parameters:
+  - increase|purity
+  - increase|concentration
+uses:
+  - condensation
+domain:
+  id: Verfahrenstechnik
+  de: Verfahrenstechnik
+  en: Process engineering
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Destillation
+  - https://en.wikipedia.org/wiki/Distillation
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Destillation
+    description: >-
+      Ein flüssiges Gemisch wird zum Sieden erhitzt; der Dampf enthält mehr von den leichter
+      flüchtigen Bestandteilen und wird abgeleitet und wieder kondensiert. In Kolonnen mit
+      vielen Böden oder Packungen wiederholen sich Verdampfen und Kondensieren vielfach hintereinander
+      (Rektifikation), so dass sich auch Stoffe mit nahe beieinanderliegenden Siedepunkten
+      sehr rein trennen lassen.
+    example: >-
+      Erdölraffination, Herstellung von Spirituosen, Luftzerlegung, Lösemittelrückgewinnung,
+      Gewinnung von destilliertem Wasser, Meerwasserentsalzung
+    conditions: >-
+      Unterschiedliche Flüchtigkeit der Komponenten sowie Wärmezufuhr und Kühlung.
+    limits: >-
+      Azeotrope Gemische lassen sich durch einfache Destillation nicht über die azeotrope
+      Zusammensetzung hinaus trennen, und temperaturempfindliche Stoffe zersetzen sich, wenn
+      man nicht unter vermindertem Druck arbeitet.
+    sideEffects: Hoher Energiebedarf.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Distillation
+    description: >-
+      A liquid mixture is heated to boiling; the vapour contains more of the more volatile
+      components and is drawn off and condensed again. In columns with many trays or packings,
+      evaporation and condensation are repeated many times in succession (rectification),
+      so that even substances with close boiling points can be separated to high purity.
+    example: >-
+      Crude oil refining, production of spirits, air separation, solvent recovery, production
+      of distilled water, seawater desalination
+    conditions: Different volatility of the components, and heat supply and cooling.
+    limits: >-
+      Azeotropic mixtures cannot be separated beyond the azeotropic composition by simple
+      distillation, and heat-sensitive substances decompose unless the pressure is reduced.
+    sideEffects: High energy consumption.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

@@ -1,0 +1,79 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: magnetic-refrigeration
+kind: application
+home: cool|solid
+functions:
+  - cool|solid
+  - cool|liquid
+  - cool|gas
+parameters:
+  - decrease|temperature
+uses:
+  - magnetocaloric-effect
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: ''
+sources:
+  - https://de.wikipedia.org/wiki/Magnetische_K%C3%BChlung
+  - https://en.wikipedia.org/wiki/Magnetocaloric_effect
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Magnetische Kühlung
+    description: >-
+      Die magnetische Kühlung nutzt den magnetokalorischen Effekt in einem Kreisprozess: Ein
+      Arbeitsmaterial wird magnetisiert und erwärmt sich, gibt die Wärme an die Umgebung ab,
+      wird dann entmagnetisiert und kühlt unter seine Ausgangstemperatur ab, so dass es Wärme
+      aus dem Kühlraum aufnehmen kann. Geräte für Raumtemperatur arbeiten mit einem aktiven
+      magnetischen Regenerator, durch den ein Wärmeträgerfluid hin- und herströmt, um aus
+      kleinen Temperaturschritten einen größeren Temperaturhub zu machen. In der Tieftemperaturphysik
+      erreicht die adiabatische Entmagnetisierung paramagnetischer Salze Temperaturen im Millikelvinbereich.
+    example: >-
+      Kryostaten für Weltraum- und Labordetektoren, Prototypen von Haushaltskühlschränken
+      und Klimageräten ohne Kältemittelgase, Kühlung auf tiefste Temperaturen in der Forschung
+    conditions: >-
+      Ein magnetokalorisches Material mit Übergangstemperatur im Arbeitsbereich, ein starkes
+      veränderliches Magnetfeld und ein guter Wärmeaustausch.
+    limits: >-
+      Starke Permanentmagnete und Seltene Erden machen die Geräte teuer und schwer; die Kühlleistung
+      pro Gerätevolumen ist bei Raumtemperatur bisher gering.
+    sideEffects: >-
+      Die starken Magnetfelder müssen abgeschirmt werden, damit sie Geräte oder Datenträger
+      in der Umgebung nicht stören.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Magnetic refrigeration
+    description: >-
+      Magnetic refrigeration uses the magnetocaloric effect in a thermodynamic cycle: a working
+      material is magnetised and heats up, gives the heat off to the surroundings, is then
+      demagnetised and cools below its starting temperature, so it can absorb heat from the
+      cold space. Devices for room temperature use an active magnetic regenerator through
+      which a heat-transfer fluid flows back and forth to turn small temperature steps into
+      a larger temperature lift. In low-temperature physics, adiabatic demagnetisation of
+      paramagnetic salts reaches temperatures in the millikelvin range.
+    example: >-
+      Cryostats for space-borne and laboratory detectors, prototypes of household refrigerators
+      and air-conditioners without refrigerant gases, cooling to the lowest temperatures in
+      research
+    conditions: >-
+      A magnetocaloric material with its transition temperature in the working range, a strong
+      varying magnetic field and good heat exchange.
+    limits: >-
+      Strong permanent magnets and rare earths make the devices expensive and heavy; at room
+      temperature the cooling power per device volume has so far been low.
+    sideEffects: >-
+      The strong magnetic fields have to be shielded so that they do not disturb nearby devices
+      or data carriers.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

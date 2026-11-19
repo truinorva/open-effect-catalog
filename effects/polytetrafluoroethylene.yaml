@@ -1,0 +1,78 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: polytetrafluoroethylene
+kind: application
+home: move|solid
+functions:
+  - move|solid
+  - hold|liquid
+  - preserve|solid
+parameters:
+  - decrease|friction
+  - decrease|conductivity
+uses: []
+domain:
+  id: Materialwissenschaft
+  de: Materialwissenschaft
+  en: Materials science
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Polytetrafluorethylen
+  - https://en.wikipedia.org/wiki/Polytetrafluoroethylene
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Polytetrafluorethylen (PTFE)
+    description: >-
+      PTFE ist ein vollständig fluoriertes Polymer, dessen Kohlenstoffkette von einer dichten
+      Hülle aus Fluoratomen umschlossen ist. Die sehr starken Kohlenstoff-Fluor-Bindungen
+      und die geringe Oberflächenenergie machen es nahezu chemisch unangreifbar, wasser- und
+      ölabweisend und extrem reibungsarm; zugleich ist es ein sehr guter elektrischer Isolator
+      und bis etwa 260 °C dauerhaft einsetzbar.
+    example: >-
+      Antihaftbeschichtung von Pfannen, Gewindedichtband, Dichtungen und Auskleidungen in
+      der Chemietechnik, Gleitlager und Gleitfolien, Kabelisolation in der Hochfrequenztechnik,
+      Membranen aus gerecktem PTFE in Funktionstextilien
+    conditions: >-
+      Verarbeitung meist durch Pressen und Sintern von Pulver, weil die Schmelze für den Spritzguss
+      zu zäh ist.
+    limits: >-
+      PTFE kriecht unter Dauerlast (Kaltfluss), ist relativ weich und verschleißanfällig und
+      lässt sich ohne Oberflächenvorbehandlung kaum kleben.
+    sideEffects: >-
+      Bei Überhitzung über etwa 350 °C entstehen giftige Zersetzungsprodukte (Polymerdampffieber);
+      Herstellung und Entsorgung sind wegen fluorierter Hilfsstoffe aus der Gruppe der PFAS
+      umstritten.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Polytetrafluoroethylene (PTFE)
+    description: >-
+      PTFE is a fully fluorinated polymer whose carbon backbone is wrapped in a dense sheath
+      of fluorine atoms. The very strong carbon-fluorine bonds and low surface energy make
+      it almost chemically inert, water- and oil-repellent and extremely low in friction;
+      it is also an excellent electrical insulator and can be used continuously up to about
+      260 °C.
+    example: >-
+      Non-stick coatings on pans, thread seal tape, seals and linings in chemical plants,
+      plain bearings and slide pads, insulation of high-frequency cables, expanded PTFE membranes
+      in functional textiles
+    conditions: >-
+      Usually processed by pressing and sintering powder, because the melt is too viscous
+      for injection moulding.
+    limits: >-
+      PTFE creeps under sustained load (cold flow), is relatively soft with poor wear resistance,
+      and can hardly be bonded without surface treatment.
+    sideEffects: >-
+      Overheated above about 350 °C it releases toxic decomposition products (polymer fume
+      fever); its production and disposal are controversial because of fluorinated processing
+      aids from the PFAS group.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

@@ -1,0 +1,71 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: boyles-law
+kind: effect
+home: compress|gas
+functions:
+  - compress|gas
+  - expand|gas
+  - measure|solid
+parameters:
+  - increase|pressure
+  - decrease|volume
+  - measure|volume
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: lehrbuch
+sources:
+  - >-
+    https://de.wikipedia.org/wiki/Thermische_Zustandsgleichung_idealer_Gase%23Gesetz_von_Boyle-Mariotte
+  - https://en.wikipedia.org/wiki/Boyle%27s_law
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Gesetz von Boyle-Mariotte
+    description: >-
+      Bei konstanter Temperatur ist das Produkt aus Druck und Volumen einer abgeschlossenen
+      Gasmenge konstant: Halbiert man das Volumen, verdoppelt sich der Druck. Ursache ist,
+      dass in einem kleineren Volumen mehr Gasteilchen je Zeit und Fläche auf die Wände treffen,
+      während ihre mittlere Geschwindigkeit gleich bleibt.
+    example: >-
+      Luftpumpe, Gasdruckfeder, Tauchphysik (Lungenvolumen und Tarierung), Gaspyknometer zur
+      Volumenbestimmung, Spritzen, Druckluftspeicher
+    conditions: >-
+      Eine abgeschlossene Gasmenge bei konstanter Temperatur (isotherme Zustandsänderung).
+    limits: >-
+      Streng gilt das Gesetz nur für ideale Gase; reale Gase weichen bei hohen Drücken und
+      bei tiefen Temperaturen nahe der Verflüssigung deutlich ab.
+    sideEffects: >-
+      Schnelles Verdichten erwärmt das Gas, schnelles Entspannen kühlt es ab; ohne Wärmeausgleich
+      gilt das Gesetz dann nicht mehr.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Boyle's law
+    description: >-
+      At constant temperature, the product of pressure and volume of an enclosed amount of
+      gas is constant: halving the volume doubles the pressure. The reason is that in a smaller
+      volume more gas molecules hit each unit of wall area per unit time, while their mean
+      speed stays the same.
+    example: >-
+      Bicycle pump, gas springs, diving physics (lung volume and buoyancy control), gas pycnometers
+      for volume measurement, syringes, compressed air storage
+    conditions: An enclosed amount of gas at constant temperature (isothermal change).
+    limits: >-
+      Strictly valid only for ideal gases; real gases deviate markedly at high pressures and
+      at low temperatures close to liquefaction.
+    sideEffects: >-
+      Rapid compression heats a gas and rapid expansion cools it; without heat exchange the
+      law then no longer holds.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

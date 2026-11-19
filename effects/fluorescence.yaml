@@ -1,0 +1,70 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: fluorescence
+kind: effect
+home: produce|field
+functions:
+  - produce|field
+  - detect|liquid
+  - detect|solid
+  - measure|liquid
+parameters:
+  - change|colour
+  - measure|concentration
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Fluoreszenz
+  - https://en.wikipedia.org/wiki/Fluorescence
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Fluoreszenz
+    description: >-
+      Ein Stoff absorbiert Licht oder andere Strahlung und sendet innerhalb von Nanosekunden
+      Licht meist größerer Wellenlänge wieder aus. Die absorbierte Energie hebt Elektronen
+      in einen angeregten Zustand; ein Teil geht als Schwingungsenergie verloren, der Rest
+      wird beim Rückfall in den Grundzustand als Photon abgegeben. Endet die Anregung, erlischt
+      die Fluoreszenz fast sofort – anders als die Phosphoreszenz.
+    example: >-
+      Leuchtstofflampen und weiße LEDs, optische Aufheller in Waschmitteln, Fluoreszenzmikroskopie,
+      Farbeindringprüfung auf Risse, Lecksuche mit Fluoreszenzfarbstoff, Sicherheitsmerkmale
+      auf Banknoten
+    conditions: >-
+      Anregende Strahlung, meist mit kürzerer Wellenlänge als das ausgesandte Licht.
+    limits: >-
+      Ausbleichen durch Photozerstörung; Löschung durch Sauerstoff, Schwermetallionen oder
+      zu hohe Konzentration.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Fluorescence
+    description: >-
+      A substance absorbs light or other radiation and re-emits light, usually of longer wavelength,
+      within nanoseconds. The absorbed energy lifts electrons into an excited state; part
+      of it is lost as vibrational energy, and the rest is released as a photon on return
+      to the ground state. When excitation stops, fluorescence fades almost immediately –
+      unlike phosphorescence.
+    example: >-
+      Fluorescent lamps and white LEDs, optical brighteners in detergents, fluorescence microscopy,
+      dye penetrant crack testing, leak detection with fluorescent dye, security features
+      on banknotes
+    conditions: >-
+      Exciting radiation, usually of shorter wavelength than the emitted light.
+    limits: >-
+      Photobleaching; quenching by oxygen, heavy metal ions or excessive concentration.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

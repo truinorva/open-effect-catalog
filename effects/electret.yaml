@@ -1,0 +1,60 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: electret
+kind: application
+home: produce|field
+functions:
+  - produce|field
+  - measure|field
+  - remove|gas
+parameters:
+  - stabilise|charge
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Elektret
+  - https://en.wikipedia.org/wiki/Electret
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Elektret
+    description: >-
+      Ein Elektret ist ein Dielektrikum, das eine eingeprägte elektrische Ladung oder Polarisation
+      über Jahre behält und deshalb ein dauerhaftes elektrisches Feld erzeugt – das elektrische
+      Gegenstück zum Dauermagneten. Hergestellt wird es zum Beispiel durch Aufladen von Polymerfolien
+      mit einer Koronaentladung oder durch Abkühlen eines polarisierten Materials im elektrischen
+      Feld.
+    example: >-
+      Elektret-Kondensatormikrofon, Elektret-Filtervlies in Atemschutzmasken und Luftfiltern
+    conditions: >-
+      Material mit sehr hohem elektrischem Widerstand, z. B. Fluorpolymere oder Polypropylen.
+    limits: Hohe Temperatur und Feuchte beschleunigen den Ladungsverlust.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Electret
+    description: >-
+      An electret is a dielectric that retains an imprinted electric charge or polarisation
+      for years and therefore produces a permanent electric field – the electrical counterpart
+      of a permanent magnet. It is made, for example, by charging polymer films with a corona
+      discharge or by cooling a polarised material in an electric field.
+    example: >-
+      Electret condenser microphone, electret filter media in respirators and air filters
+    conditions: >-
+      Material with very high electrical resistance, e.g. fluoropolymers or polypropylene.
+    limits: High temperature and humidity accelerate the loss of charge.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

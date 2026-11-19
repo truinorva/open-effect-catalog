@@ -1,0 +1,64 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: intumescent-materials
+kind: application
+home: expand|solid
+functions:
+  - expand|solid
+  - keep-temp|solid
+  - hold|gas
+parameters:
+  - increase|volume
+  - decrease|heat-conduction
+uses: []
+domain:
+  id: Materialwissenschaft
+  de: Materialwissenschaft
+  en: Materials science
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Intumeszenz
+  - https://en.wikipedia.org/wiki/Intumescent
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Intumeszierende Stoffe (Dämmschichtbildner)
+    description: >-
+      Intumeszierende Stoffe schäumen bei Hitze stark auf und bilden eine dicke, kohlenstoffreiche
+      oder mineralische Schaumschicht, die ein Vielfaches des ursprünglichen Volumens einnimmt.
+      Diese Schicht leitet Wärme schlecht und schützt das darunterliegende Bauteil, oder sie
+      füllt Fugen und Öffnungen aus und verschließt sie gegen Feuer und Rauch.
+    example: >-
+      Brandschutzanstriche für Stahlträger, Brandschutzmanschetten an Kunststoffrohrdurchführungen,
+      Dichtungsstreifen an Brandschutztüren, Blähgraphit in Brandschutzprodukten
+    conditions: Auslösung durch die Temperaturen, die im Brandfall auftreten.
+    limits: >-
+      Die Schaumschicht schützt nur für eine begrenzte Zeit und kann durch mechanische Einwirkung
+      abfallen.
+    sideEffects: >-
+      Manche Beschichtungen sind feuchteempfindlich und brauchen im Außenbereich einen Decklack.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Intumescent materials
+    description: >-
+      Intumescent materials foam up strongly when heated and form a thick, carbon-rich or
+      mineral foam layer many times their original volume. This layer conducts heat poorly
+      and protects the component underneath, or it fills joints and openings and seals them
+      against fire and smoke.
+    example: >-
+      Fire-protection coatings for steel beams, fire collars on plastic pipe penetrations,
+      seals on fire doors, expandable graphite in fire-protection products
+    conditions: Triggered by the temperatures that occur in a fire.
+    limits: >-
+      The foam layer protects only for a limited time and can fall off under mechanical impact.
+    sideEffects: Some coatings are sensitive to moisture and need a top coat outdoors.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

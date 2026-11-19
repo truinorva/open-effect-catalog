@@ -1,0 +1,65 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: superhydrophilicity
+kind: effect
+home: move|liquid
+functions:
+  - move|liquid
+  - remove|solid
+parameters:
+  - increase|translucency
+uses: []
+domain:
+  id: Materialwissenschaft
+  de: Materialwissenschaft
+  en: Materials science
+maturity: nische
+sources:
+  - https://en.wikipedia.org/wiki/Superhydrophilicity
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Superhydrophilie
+    description: >-
+      Auf superhydrophilen Oberflächen bildet Wasser keine Tropfen, sondern breitet sich fast
+      vollständig zu einem dünnen, geschlossenen Film aus; der Kontaktwinkel liegt nahe null.
+      Erreicht wird das durch stark polare Oberflächengruppen, oft verstärkt durch eine feine
+      Rauheit, die das Benetzen begünstigt; bei Titandioxid wird der Zustand durch UV-Licht
+      ausgelöst. Der Wasserfilm streut kaum Licht und kann Schmutz unterspülen und abwaschen.
+    example: >-
+      Beschlagfreie Spiegel und Brillengläser, selbstreinigendes Fensterglas mit Titandioxidschicht,
+      Beschichtungen von Wärmetauscherlamellen
+    conditions: >-
+      Saubere, hochenergetische Oberfläche; bei photokatalytischen Schichten regelmäßige UV-Bestrahlung.
+    limits: >-
+      Organische Verunreinigungen aus der Luft lagern sich allmählich an und heben die Wirkung
+      auf, wenn sie nicht abgebaut werden.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Superhydrophilicity
+    description: >-
+      On superhydrophilic surfaces water does not form droplets but spreads almost completely
+      into a thin, continuous film; the contact angle is close to zero. This is achieved with
+      highly polar surface groups, often enhanced by fine roughness that promotes wetting;
+      on titanium dioxide the state is triggered by UV light. The water film hardly scatters
+      light and can get underneath dirt and wash it away.
+    example: >-
+      Anti-fog mirrors and spectacle lenses, self-cleaning window glass with a titanium dioxide
+      coating, coatings on heat-exchanger fins
+    conditions: >-
+      A clean, high-energy surface; for photocatalytic coatings, regular UV exposure.
+    limits: >-
+      Airborne organic contaminants gradually accumulate and cancel the effect unless they
+      are broken down.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

@@ -1,0 +1,66 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: fermentation
+kind: effect
+home: produce|liquid
+functions:
+  - produce|liquid
+  - produce|gas
+  - expand|solid
+  - preserve|solid
+parameters: []
+uses: []
+domain:
+  id: Biologie
+  de: Biologie
+  en: Biology
+maturity: verbreitet
+sources:
+  - https://en.wikipedia.org/wiki/Industrial_fermentation
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Fermentation (Gärung)
+    description: >-
+      Mikroorganismen wie Hefen, Bakterien oder Pilze wandeln in ihrem Stoffwechsel organische
+      Stoffe, meist Zucker, in andere Stoffe um. Bei der Gärung im engeren Sinn geschieht
+      dies ohne Sauerstoff, wobei etwa Ethanol und Kohlendioxid oder Milchsäure entstehen;
+      in der Biotechnik bezeichnet Fermentation allgemein die gezielte Herstellung von Stoffen
+      mit Mikroorganismen oder Zellkulturen im Bioreaktor.
+    example: >-
+      Bier und Wein, Brotteig, Joghurt und Sauerkraut, Bioethanol, Zitronensäure, Antibiotika,
+      Enzyme und Insulin aus Bioreaktoren
+    conditions: >-
+      Geeignete Temperatur, geeigneter pH-Wert und Nährstoffe; Fernhalten unerwünschter Keime.
+    limits: >-
+      Hohe Produktkonzentrationen, etwa an Ethanol, hemmen die Mikroorganismen selbst.
+    sideEffects: >-
+      Es entstehen Wärme und Kohlendioxid; Fremdkeime können Fehlgärungen verursachen.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Fermentation
+    description: >-
+      Microorganisms such as yeasts, bacteria or fungi convert organic substances, usually
+      sugars, into other substances through their metabolism. In fermentation in the strict
+      sense this happens without oxygen, producing for example ethanol and carbon dioxide
+      or lactic acid; in biotechnology, fermentation more generally means the controlled production
+      of substances by microorganisms or cell cultures in a bioreactor.
+    example: >-
+      Beer and wine, bread dough, yoghurt and sauerkraut, bioethanol, citric acid, antibiotics,
+      enzymes and insulin from bioreactors
+    conditions: >-
+      Suitable temperature, suitable pH and nutrients; exclusion of unwanted microbes.
+    limits: >-
+      High product concentrations, such as of ethanol, inhibit the microorganisms themselves.
+    sideEffects: >-
+      Heat and carbon dioxide are released; contaminating microbes can cause spoilage.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

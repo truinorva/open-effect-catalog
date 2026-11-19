@@ -1,0 +1,70 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: thermochromism
+kind: effect
+home: detect|solid
+functions:
+  - detect|solid
+  - measure|solid
+  - measure|liquid
+parameters:
+  - change|colour
+  - measure|temperature
+  - change|translucency
+uses: []
+domain:
+  id: Chemie
+  de: Chemie
+  en: Chemistry
+maturity: verbreitet
+sources:
+  - https://de.wikipedia.org/wiki/Thermochromie
+  - https://en.wikipedia.org/wiki/Thermochromism
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Thermochromie
+    description: >-
+      Thermochrome Stoffe ändern ihre Farbe mit der Temperatur, umkehrbar oder bleibend. Bei
+      cholesterischen Flüssigkristallen ändert sich mit der Temperatur die Ganghöhe der schraubenförmigen
+      Molekülanordnung und damit die Wellenlänge des reflektierten Lichts; Leukofarbstoffe
+      schlagen um, wenn ein beigemischter Stoff schmilzt, und manche anorganischen Pigmente
+      ändern ihre Kristallstruktur. In Farben, Folien oder Kunststoffe eingearbeitet, zeigen
+      sie Temperaturen oder Überhitzung ohne Strom an.
+    example: >-
+      Thermochrome Farben und Temperaturmessstreifen, Stirnthermometer, Tassen mit Farbumschlag,
+      Temperaturindikatoren an Maschinenteilen, Thermopapier, schaltbare Fensterschichten
+      aus Vanadiumdioxid
+    conditions: Der Umschlagbereich des Farbstoffs muss zur Anwendungstemperatur passen.
+    limits: >-
+      Organische Farbstoffe vertragen nur mäßige Temperaturen und altern unter UV-Licht.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Thermochromism
+    description: >-
+      Thermochromic substances change colour with temperature, reversibly or permanently.
+      In cholesteric liquid crystals the pitch of the helical molecular arrangement changes
+      with temperature, and with it the wavelength of the reflected light; leuco dyes switch
+      when an admixed substance melts, and some inorganic pigments change their crystal structure.
+      Built into paints, films or plastics, they indicate temperatures or overheating without
+      power.
+    example: >-
+      Thermochromic paints and temperature strips, forehead thermometers, colour-changing
+      mugs, temperature indicators on machine parts, thermal paper, switchable vanadium dioxide
+      window coatings
+    conditions: >-
+      The switching range of the colorant must match the application temperature.
+    limits: >-
+      Organic colorants tolerate only moderate temperatures and degrade under UV light.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

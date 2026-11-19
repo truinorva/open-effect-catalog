@@ -1,0 +1,64 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: spirit-level
+kind: application
+home: measure|solid
+functions:
+  - measure|solid
+  - detect|solid
+parameters:
+  - measure|orientation
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Wasserwaage
+  - https://en.wikipedia.org/wiki/Spirit_level
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Wasserwaage (Libelle)
+    description: >-
+      In einem leicht gebogenen, fast vollständig mit Flüssigkeit gefüllten Glasröhrchen steigt
+      die verbleibende Luftblase durch den Auftrieb stets an die höchste Stelle. Liegt die
+      Waage waagerecht, steht die Blase genau zwischen den Markierungen; schon eine kleine
+      Neigung verschiebt sie sichtbar zur Seite, weil das Röhrchen nur sehr schwach gekrümmt
+      ist. Als Füllung dient meist gefärbter Alkohol, der nicht gefriert und wenig zäh ist.
+    example: >-
+      Wasserwaage auf dem Bau, Dosenlibellen an Kameras und Stativen, Maschinenwasserwaagen
+      zum Ausrichten von Werkzeugmaschinen, Libellen an Vermessungsinstrumenten
+    conditions: Ruhige Lage und eine gerade Anlagefläche am Messgerät.
+    limits: >-
+      Die Genauigkeit hängt von der Krümmung des Röhrchens ab; feine Libellen reagieren auch
+      auf Temperaturunterschiede und Erschütterungen.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Spirit level
+    description: >-
+      In a slightly curved glass vial almost completely filled with liquid, the remaining
+      air bubble always rises to the highest point by buoyancy. When the level is horizontal,
+      the bubble sits exactly between the marks; even a small tilt shifts it visibly to one
+      side because the vial is curved only very slightly. The filling is usually coloured
+      alcohol, which does not freeze and has a low viscosity.
+    example: >-
+      Builder's level, circular bubble levels on cameras and tripods, precision machinist's
+      levels for aligning machine tools, vials on surveying instruments
+    conditions: A steady position and a straight reference face on the instrument.
+    limits: >-
+      Accuracy depends on the curvature of the vial; sensitive vials also react to temperature
+      differences and vibration.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

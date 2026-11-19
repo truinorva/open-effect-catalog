@@ -1,0 +1,69 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: two-phase-flow
+kind: effect
+home: move|liquid
+functions:
+  - move|liquid
+  - cool|solid
+  - mix|liquid
+parameters:
+  - decrease|density
+  - increase|heat-conduction
+  - increase|drag
+uses: []
+domain:
+  id: Verfahrenstechnik
+  de: Verfahrenstechnik
+  en: Process engineering
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Zweiphasenstr%C3%B6mung
+  - https://en.wikipedia.org/wiki/Two-phase_flow
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Zweiphasenströmung
+    description: >-
+      Strömen Gas und Flüssigkeit gemeinsam durch ein Rohr, ordnen sie sich je nach Mengenverhältnis
+      und Geschwindigkeit als Blasen-, Pfropfen-, Schwall- oder Ringströmung an. Das Gemisch
+      ist leichter als die reine Flüssigkeit, was Mammutpumpen nutzen, die mit eingeblasener
+      Luft Flüssigkeit anheben; beim Strömungssieden übertragen Verdampfung und Durchmischung
+      sehr große Wärmeströme.
+    example: >-
+      Mammutpumpe (Druckluftheber), Gasliftverfahren in Ölquellen, Verdampfer und Dampferzeuger,
+      Wärmerohre, Blasensäulenreaktoren
+    conditions: Zwei nicht ineinander gelöste Phasen, die gemeinsam strömen.
+    limits: >-
+      Bei zu hohem Wärmestrom trocknet die Wand aus (kritische Wärmestromdichte), und der
+      Wärmeübergang bricht ein.
+    sideEffects: >-
+      Schwallströmung erzeugt Druckstöße und Rohrschwingungen; der Druckverlust ist höher
+      als bei einphasiger Strömung.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Two-phase flow
+    description: >-
+      When gas and liquid flow together through a pipe, they arrange themselves into bubbly,
+      plug, slug or annular flow depending on their proportions and velocities. The mixture
+      is lighter than the pure liquid, which airlift pumps exploit by injecting air to raise
+      liquid; in flow boiling, evaporation and mixing transfer very high heat fluxes.
+    example: >-
+      Airlift pump, gas lift in oil wells, evaporators and steam generators, heat pipes, bubble
+      column reactors
+    conditions: Two phases, not dissolved in each other, flowing together.
+    limits: >-
+      At too high a heat flux the wall dries out (critical heat flux) and heat transfer collapses.
+    sideEffects: >-
+      Slug flow causes pressure surges and pipe vibration; the pressure drop is higher than
+      in single-phase flow.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

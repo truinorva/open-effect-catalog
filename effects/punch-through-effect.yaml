@@ -1,0 +1,66 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: punch-through-effect
+kind: effect
+home: stabilise|field
+functions:
+  - stabilise|field
+parameters:
+  - increase|conductivity
+  - stabilise|charge
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: nische
+sources: []
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Punch-Through-Effekt
+    description: >-
+      In einem Halbleiterbauelement mit zwei pn-Übergängen dehnt sich die Raumladungszone
+      eines in Sperrrichtung gepolten Übergangs mit steigender Spannung aus. Erreicht sie
+      die Raumladungszone des anderen Übergangs, etwa quer durch die Basis eines Bipolartransistors
+      oder zwischen Source und Drain eines MOSFETs, verschwindet die trennende Potentialbarriere,
+      und ein großer, nicht mehr steuerbarer Strom fließt.
+    example: >-
+      Punch-Through-Dioden als Überspannungsschutz bei niedrigen Spannungen, Kurzkanaleffekte
+      in MOSFETs, Auslegung von Punch-Through-IGBTs mit Pufferschicht
+    conditions: >-
+      Eine schmale Basis oder ein kurzer Kanal mit geringer Dotierung, sodass die Raumladungszone
+      das Gebiet vor dem Lawinendurchbruch durchqueren kann.
+    limits: ''
+    sideEffects: >-
+      In Transistoren ist der Effekt meist unerwünscht: Er begrenzt die Sperrspannung, und
+      der unkontrollierte Strom kann das Bauelement überhitzen.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Punch-through effect
+    description: >-
+      In a semiconductor device with two p-n junctions, the depletion region of a reverse-biased
+      junction widens as the voltage rises. When it reaches the depletion region of the other
+      junction, for example across the base of a bipolar transistor or between source and
+      drain of a MOSFET, the separating potential barrier disappears and a large current flows
+      that can no longer be controlled.
+    example: >-
+      Punch-through diodes for low-voltage surge protection, short-channel effects in MOSFETs,
+      design of punch-through IGBTs with buffer layer
+    conditions: >-
+      A narrow base or short channel with low doping, so that the depletion region can cross
+      it before avalanche breakdown.
+    limits: ''
+    sideEffects: >-
+      In transistors the effect is usually unwanted: it limits the blocking voltage, and the
+      uncontrolled current can overheat the device.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

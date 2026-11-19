@@ -1,0 +1,70 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: corrugation
+kind: effect
+home: stabilise|solid
+functions:
+  - stabilise|solid
+  - expand|solid
+parameters:
+  - increase|rigidity
+  - increase|surface-area
+uses: []
+domain:
+  id: Geometrie
+  de: Geometrie
+  en: Geometry
+maturity: verbreitet
+sources:
+  - https://de.wikipedia.org/wiki/Wellblech
+  - https://en.wikipedia.org/wiki/Corrugated_galvanised_iron
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Wellung (Wellprofil)
+    description: >-
+      Wird ein dünnes Blech oder eine Platte in parallele Wellen oder Falten geformt, rückt
+      viel Material von der neutralen Faser weg. Dadurch steigt das Flächenträgheitsmoment,
+      und das Blech wird für Lasten, die es in Richtung der Wellen überspannt, um ein Vielfaches
+      biegesteifer, ohne dass zusätzliches Material nötig ist. Quer zu den Wellen bleibt das
+      Profil dagegen biegsam und lässt sich wie ein Faltenbalg dehnen.
+    example: >-
+      Wellblechdächer, Wellpappe, Wellrohre und Metallbälge, Trapezbleche im Hallenbau
+    conditions: >-
+      Dünnwandiges, umformbares Material und eine Last, die in Richtung der Wellen überspannt
+      wird.
+    limits: >-
+      Quer zu den Wellen bringt die Wellung keine Versteifung, und unter hoher Last können
+      die dünnen Wellenflanken örtlich einbeulen.
+    sideEffects: >-
+      Größere Oberfläche (mehr Fläche für Korrosion und Wärmeaustausch) und größere Bauhöhe.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Corrugation
+    description: >-
+      If a thin sheet or plate is formed into parallel waves or folds, much of the material
+      moves away from the neutral axis. This multiplies the second moment of area, so the
+      sheet becomes many times stiffer in bending when it spans in the direction of the corrugations,
+      without any extra material. Across the corrugations, however, the profile remains flexible
+      and can stretch like a bellows.
+    example: >-
+      Corrugated iron roofs, corrugated cardboard, corrugated pipes and metal bellows, trapezoidal
+      sheeting in hall construction
+    conditions: >-
+      Thin-walled, formable material and a load spanned in the direction of the corrugations.
+    limits: >-
+      Across the corrugations there is no stiffening, and under high loads the thin flanks
+      of the waves can buckle locally.
+    sideEffects: >-
+      Larger surface area (more area for corrosion and heat exchange) and greater overall
+      depth.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

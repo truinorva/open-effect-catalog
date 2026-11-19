@@ -1,0 +1,63 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: electrostatic-spray-assisted-vapour-deposition
+kind: application
+home: produce|solid
+functions:
+  - produce|solid
+  - move|liquid
+parameters: []
+uses: []
+domain:
+  id: Materialwissenschaft
+  de: Materialwissenschaft
+  en: Materials science
+maturity: ''
+sources:
+  - >-
+    https://en.wikipedia.org/wiki/Electrostatic_spray-assisted_vapour_deposition
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Elektrostatisch unterstützte Sprüh-Gasphasenabscheidung (ESAVD)
+    description: >-
+      Eine Vorläuferlösung wird an einer Düse unter Hochspannung zu feinen, elektrisch geladenen
+      Tröpfchen zerstäubt, die das elektrische Feld zu einem beheizten Substrat lenkt. Kurz
+      vor der Oberfläche verdampfen die Tröpfchen, und die Vorläufer zersetzen sich oder reagieren
+      in der Gasphase bzw. an der Oberfläche zu einer dünnen festen Schicht. Das Verfahren
+      kommt ohne Vakuum aus und nutzt das Ausgangsmaterial gut aus, weil das Feld es gezielt
+      zum Substrat führt.
+    example: >-
+      Keramische und oxidische Dünnschichten, z. B. Wärmedämmschichten und Schichten für Dünnschicht-Solarzellen
+    conditions: >-
+      Beheiztes, geerdetes oder leitfähiges Substrat; Vorläufer, die sich bei der Substrattemperatur
+      zersetzen.
+    limits: ''
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Electrostatic spray-assisted vapour deposition (ESAVD)
+    description: >-
+      A precursor solution is atomised at a nozzle under high voltage into fine, electrically
+      charged droplets, which the electric field guides to a heated substrate. Just before
+      reaching the surface the droplets evaporate, and the precursors decompose or react in
+      the vapour phase or at the surface to form a thin solid film. The process needs no vacuum
+      and makes good use of the starting material because the field guides it to the substrate.
+    example: >-
+      Ceramic and oxide thin films, e.g. thermal barrier coatings and layers for thin-film
+      solar cells
+    conditions: >-
+      Heated substrate that is earthed or conductive; precursors that decompose at the substrate
+      temperature.
+    limits: ''
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

@@ -1,0 +1,66 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: diamagnetism
+kind: effect
+home: hold|solid
+functions:
+  - hold|solid
+  - separate|particles
+parameters: []
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Diamagnetismus
+  - https://en.wikipedia.org/wiki/Diamagnetism
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Diamagnetismus
+    description: >-
+      Jeder Stoff reagiert auf ein äußeres Magnetfeld mit einer schwachen, entgegengesetzt
+      gerichteten Magnetisierung, weil das Feld die Bewegung der Elektronen in den Atomen
+      so verändert, dass ein Gegenfeld entsteht. Diamagnetische Stoffe werden deshalb aus
+      Bereichen hoher Feldstärke herausgedrängt. Bei Stoffen ohne überlagerten Para- oder
+      Ferromagnetismus, etwa Wasser, Kupfer, Bismut oder pyrolytischem Graphit, ist das die
+      einzige magnetische Wirkung.
+    example: >-
+      Schwebende Plättchen aus pyrolytischem Graphit über Neodym-Magneten, magnetisches Schweben
+      von Wassertropfen und kleinen Lebewesen in sehr starken Feldern, Trennung von Teilchen
+      nach ihrer magnetischen Suszeptibilität in der Forschung
+    conditions: Starke Magnetfelder mit großem Feldgradienten und leichte Körper.
+    limits: >-
+      Die Kraft ist sehr klein, so dass ohne extrem starke Felder nur dünne, leichte Körper
+      aus stark diamagnetischen Stoffen wie Graphit oder Bismut schweben.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Diamagnetism
+    description: >-
+      Every material responds to an external magnetic field with a weak magnetisation in the
+      opposite direction, because the field changes the motion of the electrons in the atoms
+      so that a counter-field arises. Diamagnetic materials are therefore pushed out of regions
+      of high field strength. In materials without superimposed para- or ferromagnetism, such
+      as water, copper, bismuth or pyrolytic graphite, this is the only magnetic effect.
+    example: >-
+      Floating platelets of pyrolytic graphite above neodymium magnets, magnetic levitation
+      of water droplets and small living creatures in very strong fields, separation of particles
+      by magnetic susceptibility in research
+    conditions: Strong magnetic fields with large field gradients, and light bodies.
+    limits: >-
+      The force is very small, so without extremely strong fields only thin, light bodies
+      made of strongly diamagnetic materials such as graphite or bismuth float.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

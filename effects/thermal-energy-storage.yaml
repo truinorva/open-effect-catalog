@@ -1,0 +1,72 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: thermal-energy-storage
+kind: application
+home: keep-temp|liquid
+functions:
+  - keep-temp|liquid
+  - keep-temp|gas
+  - heat|liquid
+  - cool|gas
+parameters:
+  - increase|heat-capacity
+  - stabilise|temperature
+uses: []
+domain:
+  id: ''
+  de: ''
+  en: ''
+maturity: wachstum
+sources:
+  - https://de.wikipedia.org/wiki/W%C3%A4rmespeicher
+  - https://en.wikipedia.org/wiki/Thermal_energy_storage
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Wärmespeicher
+    description: >-
+      Wärmespeicher nehmen Wärme oder Kälte auf, wenn sie im Überfluss vorhanden ist, und
+      geben sie später wieder ab. Sensible Speicher erwärmen ein Medium wie Wasser, Gestein
+      oder Salzschmelze; Latentwärmespeicher nutzen die Schmelz- und Erstarrungswärme eines
+      Phasenwechselmaterials bei nahezu gleichbleibender Temperatur; thermochemische Speicher
+      binden die Energie in umkehrbaren Reaktionen oder Sorptionsvorgängen. So lassen sich
+      Erzeugung und Verbrauch zeitlich entkoppeln.
+    example: >-
+      Pufferspeicher in Heizungsanlagen, Salzschmelzespeicher in Solarthermie-Kraftwerken,
+      Eisspeicher für Klimaanlagen, Fernwärmespeicher, Nachtspeicheröfen
+    conditions: >-
+      Speichermedium mit hoher Wärmekapazität oder einem Phasenwechsel im passenden Temperaturbereich;
+      gute Wärmedämmung.
+    limits: >-
+      Sensible und latente Speicher verlieren über ihre Oberfläche ständig Wärme, so dass
+      Langzeitspeicherung große, gut gedämmte Volumen erfordert.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Thermal energy storage
+    description: >-
+      Thermal stores take up heat or cold when it is plentiful and release it later. Sensible
+      stores heat a medium such as water, rock or molten salt; latent heat stores use the
+      heat of melting and solidification of a phase-change material at an almost constant
+      temperature; thermochemical stores bind the energy in reversible reactions or sorption
+      processes. Generation and consumption can thus be decoupled in time.
+    example: >-
+      Buffer tanks in heating systems, molten-salt storage in concentrated solar power plants,
+      ice storage for air conditioning, district heating stores, storage heaters
+    conditions: >-
+      A storage medium with high heat capacity or a phase change in the right temperature
+      range; good thermal insulation.
+    limits: >-
+      Sensible and latent stores constantly lose heat through their surface, so long-term
+      storage requires large, well-insulated volumes.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

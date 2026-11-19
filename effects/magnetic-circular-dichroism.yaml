@@ -1,0 +1,69 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: magnetic-circular-dichroism
+kind: effect
+home: measure|solid
+functions:
+  - measure|solid
+  - measure|liquid
+parameters:
+  - measure|magnetism
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: nische
+sources:
+  - https://en.wikipedia.org/wiki/Magnetic_circular_dichroism
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Magnetischer Zirkulardichroismus
+    description: >-
+      Ein Stoff in einem Magnetfeld, das parallel zur Lichtrichtung steht, absorbiert links-
+      und rechtszirkular polarisiertes Licht unterschiedlich stark. Das Feld spaltet und verschiebt
+      die Energieniveaus der beteiligten Elektronenzustände, so dass die Übergänge für die
+      beiden Drehrichtungen bei etwas verschiedenen Wellenlängen oder mit verschiedener Stärke
+      auftreten. Aus dem Differenzspektrum lassen sich elektronische Struktur und Magnetisierung
+      bestimmen, mit Röntgenlicht sogar getrennt für jedes Element.
+    example: >-
+      Untersuchung von Metallzentren in Proteinen, Charakterisierung magnetischer Dünnschichten
+      mit Röntgen-MCD (XMCD) am Synchrotron, Spektroskopie von Übergangsmetallkomplexen
+    conditions: >-
+      Ein absorbierender Stoff, ein Magnetfeld oder eine Magnetisierung parallel zum Lichtstrahl
+      und zirkular polarisiertes Licht.
+    limits: >-
+      Die Absorptionsunterschiede sind klein und erfordern empfindliche Modulationstechnik;
+      XMCD benötigt Synchrotronstrahlung.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Magnetic circular dichroism
+    description: >-
+      A substance in a magnetic field parallel to the direction of light absorbs left- and
+      right-circularly polarised light to different extents. The field splits and shifts the
+      energy levels of the electronic states involved, so the transitions for the two senses
+      of rotation occur at slightly different wavelengths or with different strengths. The
+      difference spectrum reveals electronic structure and magnetisation; with X-rays this
+      can even be done element by element.
+    example: >-
+      Studying metal centres in proteins, characterising magnetic thin films with X-ray MCD
+      (XMCD) at synchrotrons, spectroscopy of transition-metal complexes
+    conditions: >-
+      An absorbing substance, a magnetic field or magnetisation parallel to the light beam,
+      and circularly polarised light.
+    limits: >-
+      The absorption differences are small and require sensitive modulation techniques; XMCD
+      needs synchrotron radiation.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

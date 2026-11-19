@@ -1,0 +1,66 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: cherenkov-radiation
+kind: effect
+home: detect|field
+functions:
+  - detect|field
+  - measure|field
+  - produce|field
+parameters:
+  - measure|speed
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Tscherenkow-Strahlung
+  - https://en.wikipedia.org/wiki/Cherenkov_radiation
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Tscherenkow-Strahlung
+    description: >-
+      Bewegt sich ein elektrisch geladenes Teilchen durch ein Medium schneller, als sich Licht
+      in diesem Medium ausbreitet, sendet es Licht aus – ähnlich dem Überschallknall eines
+      Flugzeugs. Das Licht wird kegelförmig unter einem Winkel abgestrahlt, der von der Teilchengeschwindigkeit
+      abhängt, und liegt überwiegend im blauen bis ultravioletten Bereich.
+    example: >-
+      Bläuliches Leuchten im Wasser von Forschungsreaktoren und Abklingbecken, Tscherenkow-Detektoren
+      zur Teilchenidentifizierung, Neutrinodetektoren wie Super-Kamiokande, Tscherenkow-Teleskope
+      für Gammastrahlung
+    conditions: >-
+      Geladene Teilchen, die schneller sind als das Licht im Medium (c/n), in einem durchsichtigen
+      Medium.
+    limits: >-
+      Die Lichtausbeute ist gering, sodass empfindliche Photomultiplier nötig sind.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Cherenkov radiation
+    description: >-
+      When an electrically charged particle moves through a medium faster than light travels
+      in that medium, it emits light – similar to the sonic boom of an aircraft. The light
+      is emitted in a cone at an angle that depends on the particle's speed and lies mainly
+      in the blue to ultraviolet range.
+    example: >-
+      Blue glow in the water of research reactors and spent-fuel pools, Cherenkov detectors
+      for particle identification, neutrino detectors such as Super-Kamiokande, Cherenkov
+      telescopes for gamma rays
+    conditions: >-
+      Charged particles faster than light in the medium (c/n), travelling through a transparent
+      medium.
+    limits: The light yield is low, so sensitive photomultipliers are needed.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

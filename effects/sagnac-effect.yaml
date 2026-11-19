@@ -1,0 +1,70 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: sagnac-effect
+kind: effect
+home: measure|solid
+functions:
+  - measure|solid
+parameters:
+  - measure|speed
+  - measure|orientation
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: verbreitet
+sources:
+  - https://de.wikipedia.org/wiki/Sagnac-Effekt
+  - https://en.wikipedia.org/wiki/Sagnac_effect
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Sagnac-Effekt
+    description: >-
+      Laufen zwei Lichtstrahlen in entgegengesetzter Richtung durch eine geschlossene Schleife,
+      die sich dreht, braucht der mit der Drehung laufende Strahl etwas länger als der Gegenstrahl.
+      Der Laufzeitunterschied ist proportional zur Drehrate und zur umschlossenen Fläche und
+      zeigt sich als Verschiebung des Interferenzmusters oder, im Ringlaser, als Frequenzdifferenz.
+    example: >-
+      Faserkreisel und Ringlaserkreisel in Flugzeugen, Raketen, U-Booten und Satelliten, Großringlaser
+      zur Messung von Schwankungen der Erdrotation, Laufzeitkorrekturen beim GPS
+    conditions: >-
+      Ein geschlossener Lichtweg, in dem zwei Strahlen gegenläufig umlaufen, etwa eine Glasfaserspule
+      oder ein Ringlaser.
+    limits: >-
+      Der Effekt ist sehr klein, deshalb braucht man lange Faserspulen oder große umschlossene
+      Flächen; Ringlaser verlieren bei sehr langsamer Drehung durch Lock-in ihre Empfindlichkeit,
+      was man durch mechanisches Rütteln (Dithering) umgeht.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Sagnac effect
+    description: >-
+      When two light beams travel in opposite directions around a closed loop that is rotating,
+      the beam travelling with the rotation takes slightly longer than the counter-propagating
+      one. The time difference is proportional to the rotation rate and the enclosed area,
+      and appears as a shift of the interference pattern or, in a ring laser, as a frequency
+      difference.
+    example: >-
+      Fibre-optic and ring laser gyroscopes in aircraft, missiles, submarines and satellites,
+      large ring lasers for measuring fluctuations in the Earth's rotation, signal timing
+      corrections in GPS
+    conditions: >-
+      A closed light path in which two beams circulate in opposite directions, such as a fibre
+      coil or a ring laser.
+    limits: >-
+      The effect is very small, so long fibre coils or large enclosed areas are needed; at
+      very slow rotation ring lasers lose sensitivity through lock-in, which is avoided by
+      mechanical dithering.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

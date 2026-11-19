@@ -1,0 +1,68 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: ion-implantation
+kind: application
+home: absorb|solid
+functions:
+  - absorb|solid
+  - stabilise|solid
+parameters:
+  - increase|conductivity
+  - increase|hardness
+uses: []
+domain:
+  id: Materialwissenschaft
+  de: Materialwissenschaft
+  en: Materials science
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Ionenimplantation
+  - https://en.wikipedia.org/wiki/Ion_implantation
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Ionenimplantation
+    description: >-
+      Bei der Ionenimplantation werden Ionen eines gewünschten Elements beschleunigt und in
+      die Oberfläche eines Festkörpers geschossen, wo sie in einer durch ihre Energie festgelegten
+      Tiefe stecken bleiben. So lassen sich Menge und Tiefenverteilung von Fremdatomen sehr
+      genau einstellen; anschließendes Ausheilen bei hoher Temperatur repariert das Gitter
+      und baut die Atome elektrisch aktiv ein.
+    example: >-
+      Dotieren von Siliziumwafern in der Chipfertigung, Abspalten dünner Siliziumschichten
+      für SOI-Wafer, Verschleißschutz von Werkzeugen und Implantaten durch Stickstoffimplantation
+    conditions: Hochvakuum und eine Ionenquelle mit Massentrennung.
+    limits: >-
+      Die Eindringtiefe beträgt meist nur Bruchteile eines Mikrometers bis wenige Mikrometer,
+      und nur direkt angestrahlte Flächen werden behandelt.
+    sideEffects: >-
+      Die Ionen schädigen das Kristallgitter oder machen es amorph, sodass ausgeheilt werden
+      muss.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Ion implantation
+    description: >-
+      In ion implantation, ions of a chosen element are accelerated and shot into the surface
+      of a solid, where they come to rest at a depth set by their energy. This allows the
+      quantity and depth distribution of foreign atoms to be set very precisely; subsequent
+      annealing at high temperature repairs the lattice and incorporates the atoms in an electrically
+      active way.
+    example: >-
+      Doping silicon wafers in chip manufacturing, splitting off thin silicon layers for SOI
+      wafers, wear protection of tools and implants by nitrogen implantation
+    conditions: High vacuum and an ion source with mass separation.
+    limits: >-
+      Penetration depth is usually only fractions of a micrometre up to a few micrometres,
+      and only directly irradiated surfaces are treated.
+    sideEffects: >-
+      The ions damage the crystal lattice or make it amorphous, so it must be annealed.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

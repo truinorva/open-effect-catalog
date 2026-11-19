@@ -1,0 +1,70 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: van-der-waals-forces
+kind: effect
+home: join|solid
+functions:
+  - join|solid
+  - hold|solid
+  - join|particles
+  - absorb|gas
+parameters:
+  - increase|force
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Van-der-Waals-Kr%C3%A4fte
+  - https://en.wikipedia.org/wiki/Van_der_Waals_force
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Van-der-Waals-Kräfte
+    description: >-
+      Zwischen allen Atomen und Molekülen wirken schwache Anziehungskräfte, die von schwankenden
+      und induzierten elektrischen Dipolen herrühren, auch bei unpolaren Teilchen. Einzeln
+      sind sie winzig und reichen nur wenige Nanometer weit; bei engem Kontakt großer Flächen
+      summieren sie sich aber zu einer deutlichen Haftung. Sie halten Molekülkristalle zusammen,
+      lassen Gase kondensieren und binden Gasmoleküle physikalisch an Oberflächen.
+    example: >-
+      Haftung von Geckofüßen, Trockenklebstoffe und Greifer nach dem Vorbild des Geckos, Physisorption
+      an Aktivkohle, Agglomeration feiner Pulver
+    conditions: >-
+      Abstände im Bereich weniger Nanometer und eine große wahre Kontaktfläche.
+    limits: >-
+      Die Kraft fällt mit dem Abstand steil ab; schon geringe Rauheit oder Verschmutzung verringert
+      die Haftung stark.
+    sideEffects: >-
+      Feine Pulver verklumpen und haften an Wänden; bewegliche Mikrostrukturen kleben aneinander
+      fest (Stiction).
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Van der Waals forces
+    description: >-
+      Weak attractive forces act between all atoms and molecules, arising from fluctuating
+      and induced electric dipoles, even in non-polar particles. Individually they are tiny
+      and reach only a few nanometres; with close contact over large areas, however, they
+      add up to considerable adhesion. They hold molecular crystals together, allow gases
+      to condense and bind gas molecules physically to surfaces.
+    example: >-
+      Adhesion of gecko feet, gecko-inspired dry adhesives and grippers, physisorption on
+      activated carbon, agglomeration of fine powders
+    conditions: Distances of a few nanometres and a large true contact area.
+    limits: >-
+      The force falls off steeply with distance; even slight roughness or contamination greatly
+      reduces adhesion.
+    sideEffects: >-
+      Fine powders clump and stick to walls; movable microstructures stick together (stiction).
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

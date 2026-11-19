@@ -1,0 +1,63 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: impact-force
+kind: effect
+home: deform|solid
+functions:
+  - deform|solid
+  - disassemble|solid
+  - move|solid
+  - stop|solid
+parameters:
+  - increase|force
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: lehrbuch
+sources:
+  - https://en.wikipedia.org/wiki/Impact_(mechanics)
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Stoßkraft
+    description: >-
+      Prallen zwei Körper aufeinander, ändert sich ihr Impuls in sehr kurzer Zeit; die dabei
+      wirkende Kraft ist umso größer, je kürzer der Stoß dauert. Schon eine geringe Masse
+      kann so kurzzeitig Kräfte erzeugen, die ein Vielfaches einer statischen Last betragen,
+      und umgekehrt verringert ein längerer Bremsweg die Stoßkraft.
+    example: >-
+      Hammer und Fallhammer, Schlagschrauber und Schlagbohrmaschine, Rammen von Pfählen, Prallmühlen,
+      Knautschzonen und Airbags zur Verringerung der Stoßkraft
+    conditions: ''
+    limits: >-
+      Die Kraftspitze ist schwer genau vorherzusagen, weil sie stark von der Nachgiebigkeit
+      der Stoßpartner abhängt.
+    sideEffects: Stöße erzeugen Lärm, Erschütterungen und Materialermüdung.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Impact force
+    description: >-
+      When two bodies collide, their momentum changes in a very short time; the shorter the
+      impact, the greater the force involved. Even a small mass can thus briefly produce forces
+      many times larger than a static load, and conversely a longer stopping distance reduces
+      the impact force.
+    example: >-
+      Hammers and drop hammers, impact wrenches and hammer drills, pile driving, impact mills,
+      crumple zones and airbags to reduce impact force
+    conditions: ''
+    limits: >-
+      The peak force is hard to predict accurately because it depends strongly on the compliance
+      of the colliding bodies.
+    sideEffects: Impacts generate noise, vibration and material fatigue.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

@@ -1,0 +1,64 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: electroluminescence
+kind: effect
+home: produce|field
+functions:
+  - produce|field
+parameters:
+  - increase|brightness
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: verbreitet
+sources:
+  - https://de.wikipedia.org/wiki/Elektrolumineszenz
+  - https://en.wikipedia.org/wiki/Electroluminescence
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Elektrolumineszenz
+    description: >-
+      Ein Material sendet Licht aus, wenn ein elektrischer Strom hindurchfließt oder ein starkes
+      elektrisches Feld anliegt, ohne dass es dafür heiß werden muss. In Leuchtdioden rekombinieren
+      Elektronen und Löcher am pn-Übergang und geben die Energie als Photonen ab, deren Wellenlänge
+      der Bandlücke entspricht; in Pulver-Leuchtfolien regen beschleunigte Elektronen Leuchtzentren
+      an.
+    example: >-
+      Leuchtdioden (LED), OLED-Bildschirme, Elektrolumineszenzfolien zur Hinterleuchtung,
+      Halbleiterlaser
+    conditions: >-
+      Halbleiter mit geeigneter, meist direkter Bandlücke oder Leuchtstoffe mit Aktivatoren.
+    limits: >-
+      Ein Teil der elektrischen Energie wird in Wärme umgesetzt, und die Effizienz sinkt bei
+      hoher Temperatur.
+    sideEffects: Organische Leuchtstoffe altern und verlieren mit der Zeit an Helligkeit.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Electroluminescence
+    description: >-
+      A material emits light when an electric current flows through it or a strong electric
+      field is applied, without having to become hot. In light-emitting diodes, electrons
+      and holes recombine at the p–n junction and release the energy as photons whose wavelength
+      corresponds to the band gap; in powder electroluminescent films, accelerated electrons
+      excite luminescent centres.
+    example: >-
+      Light-emitting diodes (LEDs), OLED displays, electroluminescent films for backlighting,
+      semiconductor lasers
+    conditions: >-
+      Semiconductors with a suitable, usually direct band gap, or phosphors with activators.
+    limits: >-
+      Part of the electrical energy is converted into heat, and efficiency drops at high temperature.
+    sideEffects: Organic emitters age and lose brightness over time.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

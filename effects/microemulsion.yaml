@@ -1,0 +1,76 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: microemulsion
+kind: effect
+home: mix|liquid
+functions:
+  - mix|liquid
+  - stabilise|liquid
+  - remove|solid
+parameters:
+  - increase|homogeneity
+  - increase|solubility
+uses: []
+domain:
+  id: Chemie
+  de: Chemie
+  en: Chemistry
+maturity: verbreitet
+sources:
+  - https://de.wikipedia.org/wiki/Mikroemulsion
+  - https://en.wikipedia.org/wiki/Microemulsion
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Mikroemulsion
+    description: >-
+      Öl und Wasser bilden mit ausreichend Tensid, oft zusammen mit einem Cotensid wie einem
+      mittelkettigen Alkohol, von selbst eine klare, thermodynamisch stabile Mischung. Die
+      Tenside senken die Grenzflächenspannung fast auf null, sodass Tröpfchen oder ineinander
+      verschlungene Kanäle von nur etwa 10 bis 100 nm entstehen, die Licht kaum streuen. Anders
+      als eine gewöhnliche Emulsion entmischt sie sich nicht mit der Zeit und braucht zur
+      Herstellung keine Scherenergie.
+    example: >-
+      Kühlschmierstoffe, Tensidfluten in der Erdölförderung, Arzneiformen für schlecht wasserlösliche
+      Wirkstoffe, Reinigungs- und Entfettungsmittel
+    conditions: >-
+      Ein passendes Tensidsystem und eine Zusammensetzung im Existenzbereich des Phasendiagramms;
+      bei nichtionischen Tensiden zusätzlich ein bestimmtes Temperaturfenster.
+    limits: >-
+      Meist wird deutlich mehr Tensid gebraucht als für eine gewöhnliche Emulsion, und schon
+      kleine Änderungen von Temperatur oder Salzgehalt können die Mikroemulsion zerfallen
+      lassen.
+    sideEffects: >-
+      Der hohe Tensidanteil kann Haut und Schleimhäute reizen und erschwert die spätere Trennung
+      von Öl und Wasser.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Microemulsion
+    description: >-
+      With enough surfactant, often combined with a co-surfactant such as a medium-chain alcohol,
+      oil and water spontaneously form a clear, thermodynamically stable mixture. The surfactants
+      lower the interfacial tension almost to zero, so droplets or interwoven channels only
+      about 10 to 100 nm across form, too small to scatter much light. Unlike an ordinary
+      emulsion, it does not separate over time and needs no shear energy to make.
+    example: >-
+      Metalworking fluids, surfactant flooding in oil recovery, formulations for poorly water-soluble
+      drugs, cleaners and degreasers
+    conditions: >-
+      A suitable surfactant system and a composition inside the microemulsion region of the
+      phase diagram; with non-ionic surfactants also a specific temperature window.
+    limits: >-
+      Much more surfactant is usually needed than for an ordinary emulsion, and small shifts
+      in temperature or salinity can break the microemulsion.
+    sideEffects: >-
+      The high surfactant content can irritate skin and mucous membranes and makes later separation
+      of oil and water harder.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

@@ -1,0 +1,63 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: brownian-motor
+kind: effect
+home: move|particles
+functions:
+  - move|particles
+  - separate|particles
+parameters: []
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: nische
+sources:
+  - https://en.wikipedia.org/wiki/Brownian_motor
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Brownscher Motor (Brownsche Ratsche)
+    description: >-
+      Ein Brownscher Motor gewinnt gerichtete Bewegung aus der zufälligen Wärmebewegung kleiner
+      Teilchen. Dazu braucht er ein räumlich asymmetrisches Potential, etwa ein Sägezahnprofil,
+      und eine Energiezufuhr, die das System aus dem Gleichgewicht bringt, z. B. ein periodisch
+      an- und abgeschaltetes Feld. Die Teilchen diffundieren dann bevorzugt in eine Richtung;
+      im thermischen Gleichgewicht allein ist das nach dem zweiten Hauptsatz der Thermodynamik
+      nicht möglich.
+    example: >-
+      Modell für molekulare Motoren wie Kinesin, Teilchentrennung in mikrostrukturierten Kanälen,
+      Transport in Nanostrukturen, Feynmans Ratsche als Gedankenexperiment
+    conditions: >-
+      Ein asymmetrisches Potential, Teilchen mit ausgeprägter Brownscher Bewegung und eine
+      Energiequelle außerhalb des Gleichgewichts.
+    limits: ''
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Brownian motor (Brownian ratchet)
+    description: >-
+      A Brownian motor extracts directed motion from the random thermal motion of small particles.
+      It needs a spatially asymmetric potential, such as a sawtooth profile, and an energy
+      input that drives the system out of equilibrium, e.g. a field switched on and off periodically.
+      The particles then diffuse preferentially in one direction; in thermal equilibrium alone
+      this is impossible according to the second law of thermodynamics.
+    example: >-
+      Model for molecular motors such as kinesin, particle separation in microstructured channels,
+      transport in nanostructures, Feynman's ratchet as a thought experiment
+    conditions: >-
+      An asymmetric potential, particles with pronounced Brownian motion and an energy source
+      out of equilibrium.
+    limits: ''
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

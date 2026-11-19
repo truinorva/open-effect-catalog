@@ -1,0 +1,66 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: electrostriction
+kind: effect
+home: deform|solid
+functions:
+  - deform|solid
+  - vibrate|solid
+  - move|solid
+parameters:
+  - change|shape
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Elektrostriktion
+  - https://en.wikipedia.org/wiki/Electrostriction
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Elektrostriktion
+    description: >-
+      Jedes Dielektrikum verformt sich in einem elektrischen Feld, weil das Feld die Ladungsschwerpunkte
+      im Material verschiebt und die Bindungen dadurch dehnt oder staucht. Die Dehnung ist
+      proportional zum Quadrat der Feldstärke und damit unabhängig von deren Vorzeichen –
+      anders als beim Piezoeffekt, der linear ist und nur in Kristallen ohne Symmetriezentrum
+      auftritt.
+    example: >-
+      Präzisionsstellglieder aus Relaxor-Keramik wie Bleimagnesiumniobat (PMN), Ultraschallwandler,
+      verformbare Spiegel der adaptiven Optik
+    conditions: >-
+      Starkes elektrisches Feld; nutzbare Dehnungen nur in Materialien mit sehr hoher Dielektrizitätszahl.
+    limits: >-
+      In gewöhnlichen Dielektrika ist die Verformung sehr klein; selbst Relaxor-Keramiken
+      erreichen nur Dehnungen in der Größenordnung von einem Promille.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Electrostriction
+    description: >-
+      Every dielectric deforms in an electric field because the field displaces the centres
+      of charge in the material, stretching or compressing its bonds. The strain is proportional
+      to the square of the field strength and thus independent of its sign – unlike the piezoelectric
+      effect, which is linear and occurs only in crystals without a centre of symmetry.
+    example: >-
+      Precision actuators made of relaxor ceramics such as lead magnesium niobate (PMN), ultrasonic
+      transducers, deformable mirrors for adaptive optics
+    conditions: >-
+      Strong electric field; useful strains only in materials with very high permittivity.
+    limits: >-
+      In ordinary dielectrics the deformation is very small; even relaxor ceramics only reach
+      strains of the order of one part per thousand.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

@@ -1,0 +1,65 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: siemens-cycle
+kind: application
+home: cool|gas
+functions:
+  - cool|gas
+  - change-phase|gas
+parameters:
+  - decrease|temperature
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: ''
+sources:
+  - https://de.wikipedia.org/wiki/Siemens-Kreisprozess
+  - https://en.wikipedia.org/wiki/Siemens_cycle
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Siemens-Kreisprozess
+    description: >-
+      Ein Gas wird verdichtet, die Verdichtungswärme abgeführt und das Gas anschließend in
+      einer Expansionsmaschine entspannt, wobei es Arbeit abgibt und sich stark abkühlt. Das
+      kalte Gas strömt im Gegenstrom-Wärmetauscher an dem nachkommenden verdichteten Gas vorbei
+      und kühlt es vor, so dass jeder Durchlauf kälter beginnt; die Temperatur sinkt schrittweise
+      bis zur Verflüssigung. Anders als beim Linde-Verfahren beruht die Abkühlung auf arbeitsleistender
+      Entspannung und nicht auf dem Joule-Thomson-Effekt.
+    example: >-
+      Luftverflüssigung mit Expansionsmaschine (Claude-Verfahren), Helium-Verflüssiger mit
+      Expansionsmaschinen
+    conditions: >-
+      Gut isolierter Gegenstrom-Wärmetauscher; eine Expansionsmaschine, die auch bei tiefen
+      Temperaturen arbeitet.
+    limits: ''
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Siemens cycle
+    description: >-
+      A gas is compressed, the heat of compression is removed, and the gas is then expanded
+      in an expansion engine, doing work and cooling strongly. The cold gas flows back through
+      a counterflow heat exchanger past the incoming compressed gas and precools it, so that
+      each pass starts colder; the temperature drops step by step until the gas liquefies.
+      Unlike the Linde process, the cooling relies on work-producing expansion rather than
+      on the Joule–Thomson effect.
+    example: >-
+      Air liquefaction with an expansion engine (Claude process), helium liquefiers with expansion
+      engines
+    conditions: >-
+      A well-insulated counterflow heat exchanger; an expansion engine that works at low temperatures.
+    limits: ''
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

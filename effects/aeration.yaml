@@ -1,0 +1,69 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: aeration
+kind: application
+home: mix|liquid
+functions:
+  - mix|liquid
+  - remove|liquid
+parameters:
+  - increase|concentration
+uses:
+  - sparging
+domain:
+  id: Verfahrenstechnik
+  de: Verfahrenstechnik
+  en: Process engineering
+maturity: reife
+sources:
+  - https://en.wikipedia.org/wiki/Aeration
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Belüftung (Aeration)
+    description: >-
+      Bei der Belüftung wird Luft in eine Flüssigkeit oder ein poröses Material wie Boden
+      eingebracht oder in engen Kontakt mit ihm gebracht, etwa durch Einblasen feiner Blasen,
+      Versprühen oder Umwälzen an der Oberfläche. Dabei löst sich Sauerstoff in der Flüssigkeit,
+      während gelöste flüchtige Gase wie Kohlendioxid oder Schwefelwasserstoff ausgetrieben
+      werden.
+    example: >-
+      Belebungsbecken in Kläranlagen, Aquarien und Fischteiche, Enteisenung von Grundwasser,
+      Aerifizieren von Rasen, Bioreaktoren
+    conditions: >-
+      Eine große Kontaktfläche zwischen Luft und Flüssigkeit, etwa durch feine Blasen oder
+      Tropfen.
+    limits: >-
+      Wie viel Sauerstoff sich lösen kann, ist durch die Sättigungskonzentration begrenzt,
+      die mit steigender Temperatur sinkt.
+    sideEffects: >-
+      Belüftung kostet viel Energie, kann Schaum bilden und flüchtige Stoffe in die Luft freisetzen.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Aeration
+    description: >-
+      In aeration, air is introduced into a liquid or a porous material such as soil, or brought
+      into close contact with it, for example by blowing in fine bubbles, spraying or surface
+      agitation. Oxygen dissolves in the liquid, while dissolved volatile gases such as carbon
+      dioxide or hydrogen sulphide are driven out.
+    example: >-
+      Activated sludge tanks in sewage plants, aquariums and fish ponds, iron removal from
+      groundwater, lawn aeration, bioreactors
+    conditions: >-
+      A large contact area between air and liquid, for instance through fine bubbles or droplets.
+    limits: >-
+      The amount of oxygen that can dissolve is capped by the saturation concentration, which
+      falls as temperature rises.
+    sideEffects: >-
+      Aeration consumes a lot of energy, can cause foaming and releases volatile substances
+      into the air.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

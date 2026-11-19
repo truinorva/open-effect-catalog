@@ -1,0 +1,74 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: phosphor-thermometry
+kind: application
+home: measure|solid
+functions:
+  - measure|solid
+  - measure|gas
+  - measure|liquid
+parameters:
+  - measure|temperature
+uses:
+  - phosphorescence
+  - photoluminescence
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: wachstum
+sources:
+  - https://en.wikipedia.org/wiki/Phosphor_thermometry
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Phosphorthermometrie
+    description: >-
+      Bestimmte Leuchtstoffe, meist mit Seltenen Erden oder Übergangsmetallen dotierte Keramiken,
+      leuchten nach Anregung mit UV- oder Laserlicht nach, und ihre Abklingzeit sowie ihr
+      Spektrum hängen stark von der Temperatur ab. Der Leuchtstoff wird als dünne Schicht
+      auf ein Bauteil aufgebracht oder als feines Pulver einer Strömung beigegeben. Aus der
+      gemessenen Abklingzeit oder dem Intensitätsverhältnis zweier Wellenlängen ergibt sich
+      die Temperatur berührungslos und weitgehend unabhängig von Emissionsgrad und Verschmutzung.
+    example: >-
+      Temperaturmessung an Turbinenschaufeln und in Brennkammern, Kolben- und Ventiltemperaturen
+      in Motoren, Temperaturfelder in Sprays und Gasströmungen, faseroptische Temperatursensoren
+    conditions: >-
+      Optischer Zugang zum Messort, ein auf den Temperaturbereich abgestimmter Leuchtstoff
+      und gepulste Anregung.
+    limits: >-
+      Jeder Leuchtstoff deckt nur einen begrenzten Temperaturbereich ab und muss kalibriert
+      werden.
+    sideEffects: >-
+      Die Beschichtung kann Wärmeübergang und Oberfläche des Bauteils geringfügig verändern.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Phosphor thermometry
+    description: >-
+      Certain phosphors, mostly ceramics doped with rare earths or transition metals, glow
+      after excitation with UV or laser light, and their decay time and spectrum depend strongly
+      on temperature. The phosphor is applied as a thin coating to a component or added to
+      a flow as a fine powder. The temperature follows from the measured decay time or the
+      intensity ratio of two wavelengths, without contact and largely independent of emissivity
+      and contamination.
+    example: >-
+      Temperature measurement on turbine blades and in combustion chambers, piston and valve
+      temperatures in engines, temperature fields in sprays and gas flows, fibre-optic temperature
+      sensors
+    conditions: >-
+      Optical access to the measuring point, a phosphor matched to the temperature range,
+      and pulsed excitation.
+    limits: >-
+      Each phosphor covers only a limited temperature range and has to be calibrated.
+    sideEffects: >-
+      The coating can slightly change the heat transfer and surface of the component.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

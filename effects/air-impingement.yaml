@@ -1,0 +1,71 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: air-impingement
+kind: effect
+home: cool|solid
+functions:
+  - cool|solid
+  - heat|solid
+  - remove|liquid
+parameters:
+  - increase|heat-conduction
+  - decrease|temperature
+uses: []
+domain:
+  id: Verfahrenstechnik
+  de: Verfahrenstechnik
+  en: Process engineering
+maturity: verbreitet
+sources: []
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Prallstrahl (Luftprallströmung)
+    description: >-
+      Ein Gasstrahl, der senkrecht oder schräg auf eine Oberfläche trifft, wird im Staupunkt
+      abgebremst und seitlich umgelenkt. Weil die Grenzschicht dort sehr dünn ist, sind Wärme-
+      und Stoffübergang besonders hoch, deutlich höher als bei einer parallelen Überströmung.
+      Mit vielen Düsen oder Schlitzen lassen sich Flächen so gleichmäßig und schnell kühlen,
+      heizen, trocknen oder abblasen.
+    example: >-
+      Kühlung von Turbinenschaufeln, Vorspannen von Glas, Kühlen von Stahlblech, Luftmesser
+      zum Abblasen von Wasser, Trocknung von Papier und Folien, Prallstrahlöfen für Lebensmittel
+    conditions: >-
+      Ein kleiner Abstand zwischen Düse und Oberfläche im Verhältnis zum Düsendurchmesser
+      und eine ausreichende Strahlgeschwindigkeit.
+    limits: >-
+      Die Wirkung konzentriert sich auf die Umgebung des Staupunkts, und bei großen Flächen
+      stört die abströmende Luft die benachbarten Strahlen.
+    sideEffects: >-
+      Hoher Luft- und Energieverbrauch und Lärm; die Strahlen können leichte Teile oder Staub
+      aufwirbeln.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Jet impingement (impinging air jets)
+    description: >-
+      A gas jet striking a surface head-on or at an angle is brought to rest at the stagnation
+      point and turned sideways. Because the boundary layer there is very thin, heat and mass
+      transfer are particularly high, much higher than in flow parallel to the surface. With
+      many nozzles or slots, surfaces can thus be cooled, heated, dried or blown off evenly
+      and quickly.
+    example: >-
+      Cooling of turbine blades, tempering of glass, cooling of steel strip, air knives for
+      blowing off water, drying of paper and films, impingement ovens for food
+    conditions: >-
+      A short distance between nozzle and surface relative to the nozzle diameter, and sufficient
+      jet velocity.
+    limits: >-
+      The effect is concentrated around the stagnation point, and on large surfaces the outflowing
+      air interferes with neighbouring jets.
+    sideEffects: >-
+      High air and energy consumption and noise; the jets can stir up light parts or dust.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

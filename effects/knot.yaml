@@ -1,0 +1,67 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: knot
+kind: application
+home: join|solid
+functions:
+  - join|solid
+  - hold|solid
+parameters: []
+uses:
+  - friction
+domain:
+  id: ''
+  de: ''
+  en: ''
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Knoten_(Kn%C3%BCpfen)
+  - https://en.wikipedia.org/wiki/Knot
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Knoten
+    description: >-
+      Ein Knoten verschlingt ein Seil, eine Schnur oder ein Band mit sich selbst oder mit
+      einem anderen Strang so, dass sich die Teile unter Zug gegenseitig einklemmen. Die Haltekraft
+      entsteht durch Reibung in den Umschlingungen, die nach dem Prinzip der Seilreibung mit
+      jeder Windung stark zunimmt, sowie durch das Verkeilen der Schlingen ineinander. Je
+      nach Bauart hält ein Knoten fest, gleitet kontrolliert oder lässt sich durch Ziehen
+      am losen Ende schnell wieder lösen.
+    example: >-
+      Seemanns- und Kletterknoten, Schnürsenkel, chirurgische Knoten, Fischernetze, Knüpfteppiche,
+      Verzurren von Ladung
+    conditions: Ein biegsamer Strang mit ausreichender Reibung an sich selbst.
+    limits: >-
+      Ein Knoten schwächt das Seil deutlich, oft um ein Viertel bis die Hälfte seiner Bruchkraft;
+      glatte Kunstfasern können aus manchen Knoten herausrutschen.
+    sideEffects: >-
+      Unter hoher Last ziehen sich viele Knoten so fest zusammen, dass sie sich kaum noch
+      lösen lassen.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Knot
+    description: >-
+      A knot interlaces a rope, cord or strap with itself or with another strand so that the
+      parts clamp one another under tension. The holding force comes from friction in the
+      turns, which increases sharply with each wrap according to the capstan principle, and
+      from the loops wedging into each other. Depending on its design, a knot holds fast,
+      slips in a controlled way or can be released quickly by pulling the free end.
+    example: >-
+      Sailing and climbing knots, shoelaces, surgical knots, fishing nets, knotted carpets,
+      lashing down loads
+    conditions: A flexible strand with sufficient friction against itself.
+    limits: >-
+      A knot weakens the rope considerably, often by a quarter to a half of its breaking strength;
+      slippery synthetic fibres can slip out of some knots.
+    sideEffects: Under high load many knots tighten so much that they are hard to undo.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

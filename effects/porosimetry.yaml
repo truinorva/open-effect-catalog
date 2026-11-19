@@ -1,0 +1,73 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: porosimetry
+kind: application
+home: measure|solid
+functions:
+  - measure|solid
+  - measure|particles
+parameters:
+  - measure|porosity
+  - measure|surface-area
+  - measure|size
+uses:
+  - surface-tension
+domain:
+  id: Materialwissenschaft
+  de: Materialwissenschaft
+  en: Materials science
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Quecksilberporosimetrie
+  - https://en.wikipedia.org/wiki/Porosimetry
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Porosimetrie
+    description: >-
+      Porosimetrie bestimmt Porenvolumen, Porengrößenverteilung und spezifische Oberfläche
+      poröser Stoffe. Bei der Quecksilberporosimetrie wird das nicht benetzende Quecksilber
+      mit schrittweise steigendem Druck in die Probe gepresst; je kleiner die Poren, desto
+      höher der nötige Druck, und aus dem eingedrungenen Volumen je Druckstufe ergibt sich
+      über die Washburn-Gleichung die Porengrößenverteilung.
+    example: >-
+      Charakterisierung von Katalysatorträgern, Baustoffen wie Beton und Ziegel, Filtermedien,
+      Sinterwerkstoffen, Speichergesteinen in der Erdölgeologie, pharmazeutischen Tabletten
+    conditions: >-
+      Eine trockene Probe und Drücke bis zu mehreren hundert Megapascal für Poren im Nanometerbereich.
+    limits: >-
+      Erfasst werden nur offene, zugängliche Poren; die Annahme zylindrischer Poren verzerrt
+      das Ergebnis bei Flaschenhalsporen, und der hohe Druck kann empfindliche Proben verformen.
+    sideEffects: >-
+      Der Umgang mit giftigem Quecksilber erfordert Schutzmaßnahmen, und die Probe ist danach
+      kontaminiert.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Porosimetry
+    description: >-
+      Porosimetry determines pore volume, pore size distribution and specific surface area
+      of porous materials. In mercury porosimetry the non-wetting mercury is forced into the
+      sample at stepwise increasing pressure; the smaller the pores, the higher the pressure
+      needed, and the volume intruded at each pressure step gives the pore size distribution
+      via the Washburn equation.
+    example: >-
+      Characterising catalyst supports, building materials such as concrete and brick, filter
+      media, sintered materials, reservoir rocks in petroleum geology, pharmaceutical tablets
+    conditions: >-
+      A dry sample and pressures up to several hundred megapascals for pores in the nanometre
+      range.
+    limits: >-
+      Only open, accessible pores are measured; assuming cylindrical pores distorts the result
+      for ink-bottle pores, and the high pressure can deform delicate samples.
+    sideEffects: >-
+      Handling toxic mercury requires safety measures, and the sample is contaminated afterwards.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

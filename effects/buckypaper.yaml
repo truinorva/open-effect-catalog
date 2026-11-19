@@ -1,0 +1,66 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: buckypaper
+kind: application
+home: stabilise|solid
+functions:
+  - stabilise|solid
+  - separate|liquid
+  - cool|solid
+parameters:
+  - increase|conductivity
+  - increase|heat-conduction
+  - decrease|mass
+uses: []
+domain:
+  id: Materialwissenschaft
+  de: Materialwissenschaft
+  en: Materials science
+maturity: kindheit
+sources:
+  - https://de.wikipedia.org/wiki/Buckypapier
+  - https://en.wikipedia.org/wiki/Buckypaper
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Buckypaper (Nanoröhrenpapier)
+    description: >-
+      Buckypaper ist eine dünne, papierartige Lage aus ineinander verfilzten Kohlenstoffnanoröhren,
+      die meist durch Abfiltrieren einer Nanoröhren-Dispersion hergestellt wird. Die Röhren
+      werden nur durch Van-der-Waals-Kräfte zusammengehalten; die Lage ist leicht, porös,
+      elektrisch und thermisch leitfähig und lässt sich in Verbundwerkstoffe einbetten.
+    example: >-
+      Blitzschutz- und Abschirmlagen in Faserverbundbauteilen, Elektroden für Batterien, Superkondensatoren
+      und Brennstoffzellen, Filtermembranen, Wärmeverteiler
+    conditions: Gut dispergierte Nanoröhren als Ausgangsmaterial.
+    limits: >-
+      Leitfähigkeit und Festigkeit bleiben weit unter den Werten einzelner Nanoröhren, weil
+      die Verbindungen zwischen den Röhren schwach sind.
+    sideEffects: >-
+      Freigesetzte Nanoröhren stehen im Verdacht, beim Einatmen gesundheitsschädlich zu sein.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Buckypaper
+    description: >-
+      Buckypaper is a thin, paper-like sheet of entangled carbon nanotubes, usually made by
+      filtering a nanotube dispersion. The tubes are held together only by van der Waals forces;
+      the sheet is light, porous, electrically and thermally conductive and can be embedded
+      in composites.
+    example: >-
+      Lightning-strike and shielding layers in fibre composite parts, electrodes for batteries,
+      supercapacitors and fuel cells, filter membranes, heat spreaders
+    conditions: Well-dispersed nanotubes as the starting material.
+    limits: >-
+      Conductivity and strength remain far below those of individual nanotubes because the
+      junctions between the tubes are weak.
+    sideEffects: Released nanotubes are suspected of being harmful when inhaled.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

@@ -1,0 +1,77 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: montmorillonite
+kind: application
+home: absorb|liquid
+functions:
+  - absorb|liquid
+  - hold|liquid
+  - stabilise|liquid
+  - remove|liquid
+  - join|particles
+parameters:
+  - increase|viscosity
+  - increase|tightness
+  - increase|volume
+uses:
+  - thixotropy
+domain:
+  id: Materialwissenschaft
+  de: Materialwissenschaft
+  en: Materials science
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Montmorillonit
+  - https://en.wikipedia.org/wiki/Montmorillonite
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Montmorillonit (Bentonit)
+    description: >-
+      Montmorillonit ist ein Tonmineral aus extrem dünnen Silikatschichten, zwischen denen
+      austauschbare Kationen und Wasser sitzen. Die Schichten lagern Wasser zwischen sich
+      ein, wodurch das Mineral stark quillt, und tauschen Kationen mit der Umgebung aus. In
+      Wasser verteilt bilden die Plättchen ein thixotropes Gel, das in Ruhe steif wird und
+      beim Rühren wieder fließt.
+    example: >-
+      Bentonit-Dichtungen in Deponien und Brunnen, Bohrspülungen, Katzenstreu, Formsandbinder
+      in Gießereien, Schönung von Wein und Bier, Nanoton-Füllstoff in Kunststoffen
+    conditions: >-
+      Natrium-Montmorillonit quillt deutlich stärker als die Calcium-Form; die Quellung braucht
+      Wasser mit nicht zu hohem Salzgehalt.
+    limits: >-
+      In salz- oder säurehaltigem Wasser quillt das Mineral weniger, und beim Austrocknen
+      schrumpft es unter Rissbildung.
+    sideEffects: >-
+      Quellender Ton kann Fundamente anheben und Hänge rutschen lassen, und das Feinmaterial
+      macht Böden schlecht durchlässig.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Montmorillonite (bentonite)
+    description: >-
+      Montmorillonite is a clay mineral made of extremely thin silicate layers with exchangeable
+      cations and water between them. The layers take up water between themselves, so the
+      mineral swells strongly, and they exchange cations with their surroundings. Dispersed
+      in water, the platelets form a thixotropic gel that stiffens at rest and flows again
+      when stirred.
+    example: >-
+      Bentonite seals in landfills and wells, drilling muds, cat litter, foundry sand binder,
+      fining of wine and beer, nanoclay filler in plastics
+    conditions: >-
+      Sodium montmorillonite swells much more than the calcium form; swelling needs water
+      that is not too saline.
+    limits: >-
+      In saline or acidic water the mineral swells less, and on drying it shrinks and cracks.
+    sideEffects: >-
+      Swelling clay can heave foundations and trigger landslides, and the fine material makes
+      soils poorly permeable.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

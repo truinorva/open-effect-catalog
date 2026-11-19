@@ -1,0 +1,68 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: abrasion
+kind: effect
+home: remove|solid
+functions:
+  - remove|solid
+  - deform|solid
+parameters:
+  - change|surface-finish
+  - decrease|size
+uses: []
+domain:
+  id: Materialwissenschaft
+  de: Materialwissenschaft
+  en: Materials science
+maturity: verbreitet
+sources:
+  - https://en.wikipedia.org/wiki/Abrasion_(mechanical)
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Abrasion (abrasiver Verschleiß)
+    description: >-
+      Harte Partikel oder die Rauheitsspitzen eines härteren Gegenkörpers dringen in eine
+      weichere Oberfläche ein und tragen beim Gleiten Material ab, indem sie es zerspanen,
+      zur Seite pflügen oder herausbrechen. Gezielt eingesetzt glättet oder formt dieser Abtrag
+      Werkstücke, ungewollt ist er eine der häufigsten Verschleißarten.
+    example: >-
+      Schleifen, Läppen und Polieren, Sandstrahlen, Wasserabrasivstrahlschneiden, Verschleiß
+      an Baggerzähnen, Förderrinnen und Pumpen für Schlämme
+    conditions: >-
+      Der abtragende Körper oder die Partikel müssen härter sein als die bearbeitete Oberfläche,
+      und es braucht eine Relativbewegung unter Last.
+    limits: >-
+      Ist das Abrasivmittel nicht deutlich härter als die Oberfläche, geht der Abtrag stark
+      zurück.
+    sideEffects: >-
+      Es entstehen Wärme, Staub oder Schleifschlamm, und das Schleifmittel nutzt sich selbst
+      ab.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Abrasion (abrasive wear)
+    description: >-
+      Hard particles or the asperities of a harder counterface press into a softer surface
+      and remove material during sliding by cutting, ploughing it aside or breaking it out.
+      Used deliberately, this removal smooths or shapes workpieces; unwanted, it is one of
+      the most common forms of wear.
+    example: >-
+      Grinding, lapping and polishing, sandblasting, abrasive waterjet cutting, wear of excavator
+      teeth, chutes and slurry pumps
+    conditions: >-
+      The abrading body or particles must be harder than the surface being worked, and there
+      must be relative motion under load.
+    limits: >-
+      If the abrasive is not clearly harder than the surface, removal drops sharply.
+    sideEffects: >-
+      Heat, dust or grinding sludge are produced, and the abrasive itself wears down.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

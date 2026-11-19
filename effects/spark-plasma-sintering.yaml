@@ -1,0 +1,72 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: spark-plasma-sintering
+kind: application
+home: compress|particles
+functions:
+  - compress|particles
+  - join|particles
+  - heat|particles
+parameters:
+  - increase|density
+  - decrease|porosity
+uses:
+  - sintering
+domain:
+  id: Materialwissenschaft
+  de: Materialwissenschaft
+  en: Materials science
+maturity: wachstum
+sources:
+  - https://de.wikipedia.org/wiki/Spark_Plasma_Sintering
+  - https://en.wikipedia.org/wiki/Spark_plasma_sintering
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Spark-Plasma-Sintern (feldunterstütztes Sintern)
+    description: >-
+      Das Pulver liegt in einer leitfähigen Graphitform und wird zwischen zwei Stempeln einachsig
+      gepresst, während ein gepulster Gleichstrom durch Form und Pulver fließt. Die Joulesche
+      Wärme entsteht direkt im Werkzeug und, bei leitfähigem Pulver, im Pulver selbst, so
+      dass Aufheizraten von mehreren hundert Kelvin pro Minute möglich sind; zusammen mit
+      dem Druck verdichtet sich das Pulver in wenigen Minuten. Ob dabei tatsächlich ein Plasma
+      zwischen den Körnern entsteht, wie der Name nahelegt, ist umstritten.
+    example: >-
+      Dichte technische Keramik, nanostrukturierte Werkstoffe, Thermoelektrika, Hartmetalle
+      und Verbundwerkstoffe, die bei langem Sintern ihr feines Gefüge verlieren würden
+    conditions: Leitfähige Pressform, meist aus Graphit; Vakuum oder Schutzgas.
+    limits: >-
+      Es lassen sich nur einfache Formen und begrenzte Bauteilgrößen herstellen, die in die
+      Pressform passen.
+    sideEffects: >-
+      Aus der Graphitform kann Kohlenstoff in die Probe eindiffundieren; bei großen Teilen
+      entstehen Temperaturgradienten.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Spark plasma sintering (field-assisted sintering)
+    description: >-
+      The powder sits in a conductive graphite die and is pressed uniaxially between two punches
+      while a pulsed direct current flows through the die and the powder. Joule heat is generated
+      directly in the tooling and, with conductive powders, in the powder itself, allowing
+      heating rates of several hundred kelvin per minute; together with the pressure, the
+      powder densifies within minutes. Whether a plasma actually forms between the grains,
+      as the name suggests, is disputed.
+    example: >-
+      Dense technical ceramics, nanostructured materials, thermoelectrics, cemented carbides
+      and composites that would lose their fine microstructure during long sintering
+    conditions: Conductive die, usually graphite; vacuum or protective gas.
+    limits: >-
+      Only simple shapes and limited part sizes that fit the die can be produced.
+    sideEffects: >-
+      Carbon from the graphite die can diffuse into the sample; large parts develop temperature
+      gradients.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

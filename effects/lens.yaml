@@ -1,0 +1,73 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: lens
+kind: application
+home: orient|field
+functions:
+  - orient|field
+  - heat|solid
+  - detect|solid
+parameters:
+  - increase|brightness
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Linse_(Optik)
+  - https://en.wikipedia.org/wiki/Lens
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Linse (Optik)
+    description: >-
+      Eine optische Linse ist ein durchsichtiger Körper mit mindestens einer gekrümmten Fläche,
+      an der Licht beim Ein- und Austritt gebrochen wird. Weil der Einfallswinkel über die
+      Fläche hinweg variiert, vereinigt eine Sammellinse parallele Strahlen in einem Brennpunkt,
+      während eine Zerstreuungslinse sie auseinanderlenkt. So lassen sich Bilder erzeugen
+      und vergrößern oder Licht auf eine kleine Fläche bündeln.
+    example: >-
+      Brillen und Kontaktlinsen, Kamera- und Mikroskopobjektive, Lupe, Brennglas, Fresnel-Linsen
+      in Leuchttürmen und Scheinwerfern, Kollimatoren für Laser- und LED-Licht
+    conditions: >-
+      Ein im genutzten Wellenlängenbereich durchsichtiger Werkstoff, dessen Brechzahl sich
+      von der Umgebung unterscheidet.
+    limits: >-
+      Brechzahl und damit Brennweite hängen von der Wellenlänge ab, was zu Farbfehlern führt;
+      dazu kommen sphärische Aberration und weitere Abbildungsfehler.
+    sideEffects: >-
+      Gebündeltes Sonnenlicht kann ungewollt Brände auslösen oder Sensoren und Augen schädigen;
+      ohne Entspiegelung geht an den Flächen ein Teil des Lichts durch Reflexion verloren.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Lens (optics)
+    description: >-
+      An optical lens is a transparent body with at least one curved surface at which light
+      is refracted as it enters and leaves. Because the angle of incidence varies across the
+      surface, a converging lens brings parallel rays together at a focal point, while a diverging
+      lens spreads them apart. Lenses can thus form and magnify images or concentrate light
+      onto a small area.
+    example: >-
+      Spectacles and contact lenses, camera and microscope objectives, magnifying glass, burning
+      glass, Fresnel lenses in lighthouses and headlights, collimators for laser and LED light
+    conditions: >-
+      A material that is transparent in the wavelength range used and whose refractive index
+      differs from that of the surroundings.
+    limits: >-
+      The refractive index, and hence the focal length, depends on wavelength, which causes
+      chromatic aberration; spherical aberration and other imaging errors add to this.
+    sideEffects: >-
+      Concentrated sunlight can start fires unintentionally or damage sensors and eyes; without
+      anti-reflection coating some light is lost by reflection at the surfaces.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

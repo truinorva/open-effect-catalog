@@ -1,0 +1,66 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: amperes-force-law
+kind: effect
+home: move|solid
+functions:
+  - move|solid
+  - measure|field
+parameters:
+  - increase|force
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Amp%C3%A8resches_Kraftgesetz
+  - https://en.wikipedia.org/wiki/Amp%C3%A8re%27s_force_law
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Ampèresches Kraftgesetz
+    description: >-
+      Zwei stromdurchflossene Leiter üben Kräfte aufeinander aus, weil jeder im Magnetfeld
+      des anderen liegt: Bei gleicher Stromrichtung ziehen sie sich an, bei entgegengesetzter
+      stoßen sie sich ab. Die Kraft ist proportional zum Produkt der beiden Ströme und nimmt
+      bei parallelen Leitern umgekehrt proportional zu ihrem Abstand ab.
+    example: >-
+      Frühere Definition der Einheit Ampere, Stromwaage, Kräfte auf Sammelschienen im Kurzschlussfall,
+      Schienenkanone
+    conditions: Zwei Ströme in geringem Abstand zueinander.
+    limits: >-
+      Bei üblichen Strömen und Abständen ist die Kraft klein und wird erst bei sehr hohen
+      Strömen technisch bedeutsam.
+    sideEffects: >-
+      Kurzschlussströme können Leiter und Wicklungen durch diese Kräfte verformen oder aus
+      ihren Halterungen reißen.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Ampère's force law
+    description: >-
+      Two current-carrying conductors exert forces on each other because each lies in the
+      magnetic field of the other: currents in the same direction attract, opposite currents
+      repel. The force is proportional to the product of the two currents and, for parallel
+      conductors, inversely proportional to their distance.
+    example: >-
+      Former definition of the ampere, current balance, forces on busbars during short circuits,
+      railgun
+    conditions: Two currents close to each other.
+    limits: >-
+      With ordinary currents and distances the force is small and becomes technically significant
+      only at very high currents.
+    sideEffects: >-
+      Short-circuit currents can use these forces to deform conductors and windings or tear
+      them out of their supports.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

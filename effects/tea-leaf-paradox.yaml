@@ -1,0 +1,66 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: tea-leaf-paradox
+kind: effect
+home: separate|particles
+functions:
+  - separate|particles
+  - concentrate|particles
+  - move|particles
+parameters: []
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Teetasseneffekt
+  - https://en.wikipedia.org/wiki/Tea_leaf_paradox
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Teetasseneffekt (Teeblattparadoxon)
+    description: >-
+      Rührt man Tee um, sammeln sich die Teeblätter danach nicht am Rand, sondern in der Mitte
+      des Tassenbodens, obwohl die Fliehkraft das Gegenteil erwarten ließe. Am Boden wird
+      die Drehströmung durch Reibung gebremst; dort reicht die Fliehkraft nicht mehr aus,
+      um dem nach innen gerichteten Druckgefälle der rotierenden Flüssigkeit standzuhalten,
+      und es entsteht eine Sekundärströmung, die am Boden nach innen, in der Mitte nach oben
+      und an der Oberfläche nach außen läuft. Die schweren Blätter werden am Boden zur Mitte
+      getragen, können aber nicht mit der Strömung aufsteigen.
+    example: >-
+      Whirlpool beim Bierbrauen zum Abscheiden des Trubs, Abtrennung von Partikeln und Blutzellen
+      in rotierenden Mikrofluidikkammern (Forschung), Erosion an Flussbiegungen
+    conditions: >-
+      Rotierende Flüssigkeit in einem Gefäß mit feststehendem Boden; Teilchen, die dichter
+      sind als die Flüssigkeit.
+    limits: ''
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Tea leaf paradox
+    description: >-
+      When tea is stirred, the leaves gather afterwards in the centre of the cup bottom rather
+      than at the edge, although centrifugal force would suggest the opposite. At the bottom,
+      friction slows the rotating flow; there centrifugal force is no longer sufficient to
+      balance the inward pressure gradient of the rotating liquid, and a secondary flow develops
+      that runs inwards along the bottom, up in the centre and outwards at the surface. The
+      heavy leaves are carried to the centre along the bottom but cannot rise with the flow.
+    example: >-
+      Whirlpool in beer brewing for separating trub, separating particles and blood cells
+      in rotating microfluidic chambers (research), erosion at river bends
+    conditions: >-
+      Rotating liquid in a vessel with a stationary bottom; particles denser than the liquid.
+    limits: ''
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

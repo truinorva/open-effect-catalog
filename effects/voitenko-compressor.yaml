@@ -1,0 +1,56 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: voitenko-compressor
+kind: application
+home: compress|gas
+functions:
+  - compress|gas
+  - move|gas
+parameters:
+  - increase|pressure
+  - increase|speed
+  - increase|temperature
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: ''
+sources:
+  - https://en.wikipedia.org/wiki/Voitenko_compressor
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Voitenko-Kompressor
+    description: >-
+      Eine Sprengladung schleudert eine Metallplatte in eine halbkugelförmige Kammer voller
+      Gas. Das Gas wird dabei extrem verdichtet und in einen engen Kanal am Scheitel der Kammer
+      gepresst, aus dem es als Stoßwelle mit sehr hoher Geschwindigkeit austritt. So lassen
+      sich im Labor Stoßwellen und Gasströme erzeugen, die mit anderen Mitteln kaum erreichbar
+      sind.
+    example: Stoßwellenexperimente in der Plasma- und Hochdruckforschung
+    conditions: Sprengstoff und ein dafür zugelassenes Versuchsgelände.
+    limits: Die Anordnung wird bei jedem Versuch zerstört.
+    sideEffects: Druckwelle und Splitter erfordern umfangreiche Schutzmaßnahmen.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Voitenko compressor
+    description: >-
+      An explosive charge drives a metal plate into a hemispherical chamber filled with gas.
+      The gas is compressed extremely and forced into a narrow channel at the apex of the
+      chamber, from which it emerges as a shock wave at very high velocity. This produces
+      laboratory shock waves and gas flows that can hardly be reached by other means.
+    example: Shock wave experiments in plasma and high-pressure research
+    conditions: High explosives and a test site approved for them.
+    limits: The setup is destroyed in every shot.
+    sideEffects: Blast and fragments require extensive safety measures.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

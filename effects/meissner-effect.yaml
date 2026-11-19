@@ -1,0 +1,72 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: meissner-effect
+kind: effect
+home: hold|solid
+functions:
+  - hold|solid
+  - remove|field
+parameters:
+  - change|magnetism
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Mei%C3%9Fner-Ochsenfeld-Effekt
+  - https://en.wikipedia.org/wiki/Meissner_effect
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Meißner-Ochsenfeld-Effekt
+    description: >-
+      Wird ein Supraleiter unter seine Sprungtemperatur abgekühlt, verdrängt er ein schwaches
+      äußeres Magnetfeld vollständig aus seinem Inneren und wird zum idealen Diamagneten;
+      anders als ein idealer Leiter tut er das auch dann, wenn das Feld schon vor dem Abkühlen
+      vorhanden war. An der Oberfläche fließen dazu Abschirmströme, die das Feld im Inneren
+      genau aufheben, so dass es nur in einer dünnen Randschicht, der Londonschen Eindringtiefe,
+      abklingt. Weil ein Magnet von einem solchen Supraleiter abgestoßen wird, kann er über
+      ihm schweben.
+    example: >-
+      Schwebende Magnete über Supraleitern, supraleitende Magnetlager, magnetische Abschirmungen
+      aus supraleitenden Hüllen
+    conditions: >-
+      Eine Temperatur unterhalb der Sprungtemperatur und ein Magnetfeld unterhalb des kritischen
+      Feldes.
+    limits: >-
+      Bei Supraleitern zweiter Art dringt das Feld oberhalb eines unteren kritischen Feldes
+      in Form von Flussschläuchen ein; oberhalb des oberen kritischen Feldes bricht die Supraleitung
+      zusammen.
+    sideEffects: Die Kühlung, meist mit flüssigem Stickstoff oder Helium, ist aufwendig.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Meissner effect
+    description: >-
+      When a superconductor is cooled below its critical temperature, it expels a weak external
+      magnetic field completely from its interior and becomes a perfect diamagnet; unlike
+      an ideal conductor, it does so even if the field was already present before cooling.
+      Screening currents flow at the surface that exactly cancel the field inside, so it decays
+      only within a thin surface layer, the London penetration depth. Because a magnet is
+      repelled by such a superconductor, it can float above it.
+    example: >-
+      Magnets floating above superconductors, superconducting magnetic bearings, magnetic
+      shields made of superconducting enclosures
+    conditions: >-
+      A temperature below the critical temperature and a magnetic field below the critical
+      field.
+    limits: >-
+      In type II superconductors, the field penetrates as flux tubes above a lower critical
+      field; above the upper critical field superconductivity breaks down.
+    sideEffects: Cooling, usually with liquid nitrogen or helium, is costly.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

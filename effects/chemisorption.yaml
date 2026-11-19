@@ -1,0 +1,70 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: chemisorption
+kind: effect
+home: absorb|gas
+functions:
+  - absorb|gas
+  - remove|gas
+  - absorb|liquid
+parameters:
+  - decrease|concentration
+  - increase|purity
+uses: []
+domain:
+  id: Chemie
+  de: Chemie
+  en: Chemistry
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Chemisorption
+  - https://en.wikipedia.org/wiki/Chemisorption
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Chemisorption
+    description: >-
+      Bei der Chemisorption gehen Moleküle aus einem Gas oder einer Flüssigkeit eine echte
+      chemische Bindung mit den Atomen einer Feststoffoberfläche ein. Die Bindung ist deutlich
+      stärker und spezifischer als bei der Physisorption, beschränkt sich auf eine einzige
+      Molekülschicht und erfordert oft eine Aktivierungsenergie, also eine erhöhte Temperatur.
+      Häufig werden die adsorbierten Moleküle dabei verändert oder gespalten; darauf beruht
+      die heterogene Katalyse.
+    example: >-
+      Getter in Vakuumröhren und Vakuumdämmungen, Katalysatoroberflächen, Gassensoren, selbstorganisierte
+      Monoschichten (Thiole auf Gold), Bestimmung der aktiven Metalloberfläche von Katalysatoren
+    conditions: >-
+      Eine reaktive Oberfläche und genug Energie, um die Aktivierungsbarriere zu überwinden.
+    limits: >-
+      Ist die Oberfläche mit einer Monolage bedeckt, kommt die Aufnahme zum Erliegen; die
+      Bindung lässt sich oft nur schwer wieder lösen.
+    sideEffects: >-
+      Unerwünschte Chemisorption von Fremdstoffen vergiftet Katalysatoren und Sensoren.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Chemisorption
+    description: >-
+      In chemisorption, molecules from a gas or liquid form a genuine chemical bond with the
+      atoms of a solid surface. The bond is much stronger and more specific than in physisorption,
+      is limited to a single molecular layer and often requires activation energy, i.e. an
+      elevated temperature. The adsorbed molecules are frequently altered or split in the
+      process, which is the basis of heterogeneous catalysis.
+    example: >-
+      Getters in vacuum tubes and vacuum insulation, catalyst surfaces, gas sensors, self-assembled
+      monolayers (thiols on gold), determining the active metal surface area of catalysts
+    conditions: A reactive surface and enough energy to overcome the activation barrier.
+    limits: >-
+      Uptake stops once the surface is covered by a monolayer; the bond is often hard to release
+      again.
+    sideEffects: >-
+      Unwanted chemisorption of foreign substances poisons catalysts and sensors.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

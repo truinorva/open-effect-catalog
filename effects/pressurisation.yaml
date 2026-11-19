@@ -1,0 +1,73 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: pressurisation
+kind: application
+home: compress|gas
+functions:
+  - compress|gas
+  - preserve|gas
+  - move|liquid
+parameters:
+  - increase|pressure
+  - stabilise|pressure
+uses: []
+domain:
+  id: ''
+  de: ''
+  en: ''
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Druckausgleich
+  - https://en.wikipedia.org/wiki/Pressurization
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Druckbeaufschlagung
+    description: >-
+      Ein geschlossener Raum oder Behälter wird durch Zufuhr von Gas auf einem Druck oberhalb
+      des Umgebungsdrucks gehalten, während ein Regelventil überschüssiges Gas kontrolliert
+      abführt. So bleiben in Flugzeugkabinen atembare Druckverhältnisse erhalten, und weil
+      Luft durch Undichtigkeiten nur nach außen strömt, gelangen Rauch, Staub oder Fremdgase
+      nicht hinein.
+    example: >-
+      Druckkabinen von Flugzeugen und Raumfahrzeugen, Überdruck in Reinräumen und Sicherheitstreppenhäusern,
+      Druckbeaufschlagung von Treibstofftanks zur Förderung, gasgefüllte Kabel mit Drucküberwachung,
+      Überdruckkapselung explosionsgeschützter Geräte
+    conditions: >-
+      Eine ausreichend dichte Hülle, kontinuierliche Gaszufuhr und eine Druckregelung.
+    limits: >-
+      Die Druckdifferenz belastet die Hülle; ihre Festigkeit und Ermüdung begrenzen den zulässigen
+      Überdruck.
+    sideEffects: >-
+      Die laufende Gaszufuhr kostet Energie, Druckwechsel beanspruchen die Struktur zyklisch,
+      und ein plötzlicher Druckverlust ist ein Sicherheitsrisiko.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Pressurisation
+    description: >-
+      An enclosed space or vessel is held at a pressure above ambient by supplying gas, while
+      a control valve releases surplus gas in a controlled way. This keeps breathable conditions
+      in aircraft cabins, and because air can only flow outwards through leaks, smoke, dust
+      or foreign gases cannot get in.
+    example: >-
+      Pressurised cabins of aircraft and spacecraft, positive pressure in clean rooms and
+      protected stairwells, pressurisation of propellant tanks to feed the liquid, gas-filled
+      cables with pressure monitoring, pressurised enclosures for explosion protection
+    conditions: >-
+      A sufficiently tight envelope, continuous gas supply and pressure control.
+    limits: >-
+      The pressure difference loads the envelope; its strength and fatigue limit the permissible
+      overpressure.
+    sideEffects: >-
+      Continuous gas supply costs energy, pressure cycles fatigue the structure, and sudden
+      loss of pressure is a safety hazard.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

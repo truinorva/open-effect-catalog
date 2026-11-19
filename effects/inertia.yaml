@@ -1,0 +1,64 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: inertia
+kind: effect
+home: move|solid
+functions:
+  - move|solid
+  - separate|particles
+  - remove|gas
+  - measure|solid
+parameters:
+  - stabilise|speed
+  - measure|speed
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Tr%C3%A4gheit
+  - https://en.wikipedia.org/wiki/Inertia
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Trägheit
+    description: >-
+      Jeder Körper behält seinen Bewegungszustand bei, solange keine Kraft auf ihn wirkt;
+      um ihn zu beschleunigen, abzubremsen oder umzulenken, ist eine Kraft nötig, die mit
+      seiner Masse wächst. Bewegte Massen speichern so Energie und widerstehen schnellen Änderungen,
+      und Teilchen in einem umgelenkten Gasstrom fliegen geradeaus weiter.
+    example: >-
+      Schwungräder, Trägheitsabscheider und Impaktoren zur Staubabscheidung, Gurtaufroller
+      mit Blockiersperre, Beschleunigungssensoren, Ausschütteln und Ausklopfen
+    conditions: ''
+    limits: ''
+    sideEffects: >-
+      Große bewegte Massen verlängern Brems- und Anfahrwege und belasten Bauteile beim Beschleunigen.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Inertia
+    description: >-
+      Every body keeps its state of motion as long as no force acts on it; accelerating, braking
+      or deflecting it requires a force that grows with its mass. Moving masses thus store
+      energy and resist rapid changes, and particles in a deflected gas stream carry straight
+      on.
+    example: >-
+      Flywheels, inertial separators and impactors for dust removal, seat-belt retractors
+      with locking mechanism, accelerometers, shaking and beating out dust
+    conditions: ''
+    limits: ''
+    sideEffects: >-
+      Large moving masses lengthen stopping and starting distances and load components during
+      acceleration.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

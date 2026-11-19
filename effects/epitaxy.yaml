@@ -1,0 +1,66 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: epitaxy
+kind: effect
+home: produce|solid
+functions:
+  - produce|solid
+  - orient|solid
+parameters:
+  - change|orientation
+uses: []
+domain:
+  id: Materialwissenschaft
+  de: Materialwissenschaft
+  en: Materials science
+maturity: verbreitet
+sources:
+  - https://de.wikipedia.org/wiki/Epitaxie
+  - https://en.wikipedia.org/wiki/Epitaxy
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Epitaxie
+    description: >-
+      Bei der Epitaxie wächst auf einem einkristallinen Substrat eine kristalline Schicht
+      auf, deren Gitter die Orientierung des Substrats übernimmt. Die ankommenden Atome lagern
+      sich bevorzugt auf den Gitterplätzen an, die das Substrat vorgibt, so dass eine einkristalline
+      Schicht mit definierter Dicke und Dotierung entsteht; bei gleichem Material spricht
+      man von Homo-, bei verschiedenem von Heteroepitaxie.
+    example: >-
+      Siliziumschichten für Halbleiterbauelemente, Galliumnitrid auf Saphir für LEDs, Quantentopf-Laser
+      durch Molekularstrahlepitaxie
+    conditions: >-
+      Saubere, einkristalline Substratoberfläche; ausreichende Temperatur für die Oberflächendiffusion
+      der Atome; ähnliche Gitterkonstanten von Schicht und Substrat.
+    limits: >-
+      Bei großer Gitterfehlanpassung entstehen ab einer kritischen Schichtdicke Versetzungen.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Epitaxy
+    description: >-
+      In epitaxy, a crystalline layer grows on a single-crystal substrate, and its lattice
+      adopts the orientation of the substrate. Arriving atoms preferentially settle on the
+      lattice sites dictated by the substrate, producing a single-crystal layer of defined
+      thickness and doping; if layer and substrate are the same material this is called homoepitaxy,
+      otherwise heteroepitaxy.
+    example: >-
+      Silicon layers for semiconductor devices, gallium nitride on sapphire for LEDs, quantum-well
+      lasers grown by molecular beam epitaxy
+    conditions: >-
+      Clean single-crystal substrate surface; sufficient temperature for surface diffusion
+      of atoms; similar lattice constants of layer and substrate.
+    limits: >-
+      With large lattice mismatch, dislocations form beyond a critical layer thickness.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

@@ -1,0 +1,70 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: evaporation
+kind: effect
+home: change-phase|liquid
+functions:
+  - change-phase|liquid
+  - cool|liquid
+  - concentrate|liquid
+  - remove|solid
+parameters:
+  - decrease|temperature
+  - increase|concentration
+  - decrease|humidity
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Verdunstung
+  - https://en.wikipedia.org/wiki/Evaporation
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Verdunstung
+    description: >-
+      An der Oberfläche einer Flüssigkeit gehen ständig die energiereichsten Moleküle in die
+      Gasphase über, auch weit unterhalb des Siedepunkts, solange die angrenzende Luft nicht
+      gesättigt ist. Weil gerade die schnellsten Moleküle entweichen, entzieht die Verdunstung
+      der Flüssigkeit Verdampfungswärme und kühlt sie ab; gelöste Stoffe bleiben zurück und
+      reichern sich an.
+    example: >-
+      Schwitzen, Verdunstungskühlung in Tonkrügen und Kühltürmen, Salzgewinnung in Salzgärten,
+      Trocknen von Wäsche und Lacken
+    conditions: >-
+      Umgebende Gasphase nicht mit dem Dampf gesättigt; Wärmenachschub für anhaltende Verdunstung.
+    limits: >-
+      Bei hoher Luftfeuchte und ruhender Luft kommt die Verdunstung fast zum Erliegen.
+    sideEffects: >-
+      Wasserverlust aus offenen Becken und Kühlkreisläufen; Ablagerungen der zurückbleibenden
+      Salze.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Evaporation
+    description: >-
+      At the surface of a liquid, the most energetic molecules continually escape into the
+      gas phase, even well below the boiling point, as long as the adjacent air is not saturated.
+      Since it is precisely the fastest molecules that leave, evaporation draws heat of vaporisation
+      from the liquid and cools it; dissolved substances stay behind and become more concentrated.
+    example: >-
+      Sweating, evaporative cooling in clay jars and cooling towers, salt production in salt
+      pans, drying of laundry and paints
+    conditions: >-
+      Surrounding gas not saturated with the vapour; heat supply for sustained evaporation.
+    limits: >-
+      With high humidity and still air, evaporation almost comes to a standstill.
+    sideEffects: >-
+      Water loss from open basins and cooling circuits; deposits of the salts left behind.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

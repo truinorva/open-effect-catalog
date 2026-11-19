@@ -1,0 +1,60 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: kaye-effect
+kind: effect
+home: move|liquid
+functions:
+  - move|liquid
+parameters:
+  - decrease|viscosity
+uses: []
+domain:
+  id: Rheologie
+  de: Rheologie
+  en: Rheology
+maturity: nische
+sources:
+  - https://de.wikipedia.org/wiki/Kaye-Effekt
+  - https://en.wikipedia.org/wiki/Kaye_effect
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Kaye-Effekt
+    description: >-
+      Wird eine scherverdünnende Flüssigkeit wie Shampoo in dünnem Strahl auf eine Fläche
+      gegossen, springt der Strahl gelegentlich aus dem entstehenden Häufchen wieder nach
+      oben oder zur Seite heraus. Ursache ist eine dünne Schicht stark gescherter und dadurch
+      dünnflüssig gewordener Flüssigkeit, auf der der auftreffende Strahl wie auf einem Schmierfilm
+      abgleitet und umgelenkt wird. Das Springen kann sich mehrfach wiederholen, bevor der
+      Strahl zusammenbricht.
+    example: >-
+      Gießen von Shampoo, Duschgel oder Flüssigseife, Demonstrationsversuche zur Rheologie
+    conditions: >-
+      Eine stark scherverdünnende Flüssigkeit, ein dünner Strahl und eine ausreichende Fallhöhe.
+    limits: Der springende Strahl ist instabil und bricht nach kurzer Zeit zusammen.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Kaye effect
+    description: >-
+      When a shear-thinning liquid such as shampoo is poured in a thin stream onto a surface,
+      the stream occasionally leaps back up or sideways out of the heap that forms. The cause
+      is a thin layer of strongly sheared liquid that has become runny, on which the incoming
+      stream glides and is deflected as if on a lubricating film. The leaping can repeat several
+      times before the stream collapses.
+    example: >-
+      Pouring shampoo, shower gel or liquid soap, demonstration experiments in rheology
+    conditions: >-
+      A strongly shear-thinning liquid, a thin stream and a sufficient fall height.
+    limits: The leaping stream is unstable and collapses after a short time.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

@@ -1,0 +1,67 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: jet-damping
+kind: effect
+home: stop|solid
+functions:
+  - stop|solid
+parameters:
+  - decrease|speed
+  - stabilise|orientation
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: nische
+sources:
+  - https://en.wikipedia.org/wiki/Jet_damping
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Strahldämpfung (Jet Damping)
+    description: >-
+      Dreht sich eine Rakete während der Brennphase um ihre Nick- oder Gierachse, erhält das
+      durch Brennkammer und Düse strömende Abgas eine seitliche Geschwindigkeitskomponente.
+      Das ausgestoßene Gas trägt dadurch Drehimpuls aus dem Fahrzeug, was wie ein Dämpfungsmoment
+      gegen die Drehbewegung wirkt. Nick- und Gierschwingungen klingen so ohne zusätzliche
+      Steuerung schneller ab.
+    example: >-
+      Lagestabilität von Raketen und Flugkörpern während der Antriebsphase, Fluglageberechnung
+      von Höhenforschungsraketen
+    conditions: >-
+      Ein brennendes Triebwerk mit ausreichendem Massenstrom und ein großer Abstand zwischen
+      Schwerpunkt und Düsenaustritt.
+    limits: >-
+      Das Dämpfungsmoment ist proportional zum Massenstrom des Abgases und verschwindet mit
+      Brennschluss.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Jet damping
+    description: >-
+      If a rocket rotates about its pitch or yaw axis while the engine is firing, the exhaust
+      gas flowing through the combustion chamber and nozzle acquires a sideways velocity component.
+      The expelled gas thereby carries angular momentum out of the vehicle, which acts like
+      a damping torque against the rotation. Pitch and yaw oscillations therefore die down
+      faster without any additional control.
+    example: >-
+      Attitude stability of rockets and missiles during powered flight, attitude analysis
+      of sounding rockets
+    conditions: >-
+      A burning engine with sufficient mass flow and a large distance between the centre of
+      mass and the nozzle exit.
+    limits: >-
+      The damping torque is proportional to the exhaust mass flow and disappears at engine
+      cut-off.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

@@ -1,0 +1,66 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: spheroid
+kind: effect
+home: heat|solid
+functions:
+  - heat|solid
+  - disassemble|solid
+parameters:
+  - increase|brightness
+uses: []
+domain:
+  id: Geometrie
+  de: Geometrie
+  en: Geometry
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Rotationsellipsoid
+  - https://en.wikipedia.org/wiki/Spheroid
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Rotationsellipsoid (Sphäroid)
+    description: >-
+      Ein Rotationsellipsoid entsteht, wenn eine Ellipse um eine ihrer Achsen rotiert; je
+      nach Achse ist es länglich (prolat) oder abgeplattet (oblat). Das längliche Ellipsoid
+      besitzt zwei Brennpunkte: Jede Strahlung oder Welle, die von einem Brennpunkt ausgeht
+      und an der Innenfläche reflektiert wird, läuft genau durch den anderen, und alle diese
+      Wege sind gleich lang. Ein Hohlspiegel dieser Form sammelt daher die Energie einer Quelle
+      im zweiten Brennpunkt.
+    example: >-
+      Ellipsoidreflektor in Stoßwellen-Lithotriptern, Spiegelöfen zum Schmelzen und Kristallzüchten,
+      Reflektoren von Profilscheinwerfern und Projektoren, abgeplattete Gestalt der rotierenden
+      Erde
+    conditions: >-
+      Quelle genau im einen Brennpunkt, Ziel im anderen; spiegelnde Innenfläche.
+    limits: >-
+      Ausgedehnte Quellen werden nicht in einen Punkt, sondern in einen unscharfen Fleck abgebildet.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Spheroid (ellipsoid of revolution)
+    description: >-
+      A spheroid is formed when an ellipse rotates about one of its axes; depending on the
+      axis it is elongated (prolate) or flattened (oblate). The prolate spheroid has two foci:
+      any radiation or wave that leaves one focus and is reflected at the inner surface passes
+      exactly through the other, and all these paths are equally long. A concave mirror of
+      this shape therefore collects the energy of a source at the second focus.
+    example: >-
+      Ellipsoidal reflector in shock wave lithotripters, mirror furnaces for melting and crystal
+      growth, reflectors of profile spotlights and projectors, the oblate shape of the rotating
+      Earth
+    conditions: >-
+      Source exactly at one focus, target at the other; reflective inner surface.
+    limits: Extended sources are imaged not to a point but to a blurred spot.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

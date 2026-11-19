@@ -1,0 +1,64 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: fuel-cell
+kind: application
+home: produce|field
+functions:
+  - produce|field
+  - heat|liquid
+parameters: []
+uses: []
+domain:
+  id: Chemie
+  de: Chemie
+  en: Chemistry
+maturity: wachstum
+sources:
+  - https://de.wikipedia.org/wiki/Brennstoffzelle
+  - https://en.wikipedia.org/wiki/Fuel_cell
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Brennstoffzelle
+    description: >-
+      In einer Brennstoffzelle reagieren ein Brennstoff, meist Wasserstoff, und Sauerstoff
+      an zwei getrennten Elektroden, zwischen denen ein Elektrolyt nur Ionen durchlässt. Die
+      Elektronen müssen deshalb über einen äußeren Stromkreis fließen, sodass chemische Energie
+      direkt in elektrischen Strom umgewandelt wird, ohne Umweg über eine Verbrennung.
+    example: >-
+      Brennstoffzellenfahrzeuge und -busse, Notstromversorgung von Mobilfunkmasten, Blockheizkraftwerke,
+      Raumfahrt, Gabelstapler
+    conditions: >-
+      Ständige Zufuhr von Brennstoff und Oxidationsmittel; ein Elektrolyt, der Ionen, aber
+      keine Elektronen leitet.
+    limits: >-
+      Niedertemperatur-Zellen (PEM) brauchen sehr reinen Wasserstoff und Platinkatalysatoren;
+      Kohlenmonoxid vergiftet den Katalysator.
+    sideEffects: Es entstehen Wasser und Abwärme, die abgeführt werden müssen.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Fuel cell
+    description: >-
+      In a fuel cell, a fuel, usually hydrogen, and oxygen react at two separate electrodes,
+      between which an electrolyte lets only ions pass. The electrons therefore have to flow
+      through an external circuit, so chemical energy is converted directly into electric
+      current without the detour of combustion.
+    example: >-
+      Fuel-cell cars and buses, backup power for mobile phone masts, combined heat and power
+      units, spacecraft, forklift trucks
+    conditions: >-
+      Continuous supply of fuel and oxidant; an electrolyte that conducts ions but not electrons.
+    limits: >-
+      Low-temperature cells (PEM) need very pure hydrogen and platinum catalysts; carbon monoxide
+      poisons the catalyst.
+    sideEffects: Water and waste heat are produced and have to be removed.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

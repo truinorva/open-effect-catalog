@@ -1,0 +1,77 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: negative-thermal-expansion
+kind: effect
+home: compress|solid
+functions:
+  - compress|solid
+  - stabilise|solid
+  - compress|liquid
+parameters:
+  - decrease|volume
+  - stabilise|size
+uses: []
+domain:
+  id: Materialwissenschaft
+  de: Materialwissenschaft
+  en: Materials science
+maturity: nische
+sources:
+  - https://de.wikipedia.org/wiki/Dichteanomalie
+  - https://en.wikipedia.org/wiki/Negative_thermal_expansion
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Negative Wärmeausdehnung
+    description: >-
+      Einige Stoffe ziehen sich beim Erwärmen zusammen, statt sich auszudehnen. In Kristallen
+      wie Zirconiumwolframat sorgen Querschwingungen von Brückenatomen zwischen starren Baugruppen
+      dafür, dass die Nachbarn mit steigender Temperatur näher zusammenrücken; in anderen
+      Stoffen bewirken magnetische oder strukturelle Umordnungen dasselbe. Kombiniert man
+      solche Stoffe mit normal dehnenden Werkstoffen, erhält man Verbunde, deren Abmessungen
+      über einen Temperaturbereich nahezu konstant bleiben.
+    example: >-
+      Zirconiumwolframat als Füllstoff, Glaskeramik für Kochfelder und Teleskopspiegelträger
+      mit nahezu null Ausdehnung, Kohlenstoff- und Aramidfasern in Faserrichtung, Wasser zwischen
+      0 und 4 °C
+    conditions: >-
+      Der Effekt tritt nur in bestimmten Stoffen und Temperaturbereichen auf, bei Wasser etwa
+      nur zwischen 0 und 4 °C.
+    limits: >-
+      Die negativen Ausdehnungskoeffizienten sind meist klein, und manche dieser Stoffe wandeln
+      sich unter Druck in andere Phasen um.
+    sideEffects: >-
+      Wegen der Dichteanomalie ist Wasser bei 4 °C am dichtesten, weshalb Seen von oben her
+      zufrieren.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Negative thermal expansion
+    description: >-
+      Some substances contract when heated instead of expanding. In crystals such as zirconium
+      tungstate, transverse vibrations of bridging atoms between rigid structural units pull
+      neighbouring atoms closer together as temperature rises; in other substances magnetic
+      or structural rearrangements do the same. Combining such substances with normally expanding
+      materials yields composites whose dimensions stay almost constant over a range of temperatures.
+    example: >-
+      Zirconium tungstate as filler, glass-ceramics for cooktops and telescope mirror blanks
+      with near-zero expansion, carbon and aramid fibres along the fibre axis, water between
+      0 and 4 °C
+    conditions: >-
+      The effect occurs only in particular substances and temperature ranges, for water only
+      between 0 and 4 °C.
+    limits: >-
+      The negative expansion coefficients are usually small, and some of these substances
+      transform into other phases under pressure.
+    sideEffects: >-
+      Because of the density anomaly, water is densest at 4 °C, which is why lakes freeze
+      from the top down.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

@@ -1,0 +1,64 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: atkinson-cycle
+kind: application
+home: rotate|solid
+functions:
+  - rotate|solid
+  - expand|gas
+parameters: []
+uses:
+  - adiabatic-heating-and-cooling
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Atkinson-Kreisprozess
+  - https://en.wikipedia.org/wiki/Atkinson_cycle
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Atkinson-Kreisprozess
+    description: >-
+      Beim Atkinson-Prozess ist der Expansionshub eines Verbrennungsmotors länger als der
+      wirksame Verdichtungshub, sodass die heißen Gase weiter entspannt werden und mehr Arbeit
+      abgeben, bevor sie den Zylinder verlassen. Heute wird er meist über spät schließende
+      Einlassventile verwirklicht, die einen Teil der angesaugten Ladung zurückschieben; das
+      verbessert den Wirkungsgrad, senkt aber die Leistung je Hubraum.
+    example: >-
+      Benzinmotoren in Hybridfahrzeugen, sparsame Saugmotoren mit variabler Ventilsteuerung,
+      historischer Atkinson-Motor mit Gelenkkurbeltrieb
+    conditions: ''
+    limits: >-
+      Das geringe Drehmoment bei niedriger Drehzahl muss oft durch einen Elektromotor oder
+      Aufladung ausgeglichen werden.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Atkinson cycle
+    description: >-
+      In the Atkinson cycle the expansion stroke of a combustion engine is longer than its
+      effective compression stroke, so the hot gases expand further and deliver more work
+      before they leave the cylinder. Today it is mostly realised with late-closing intake
+      valves that push part of the drawn-in charge back out; this improves efficiency but
+      lowers power per unit of displacement.
+    example: >-
+      Petrol engines in hybrid vehicles, economical naturally aspirated engines with variable
+      valve timing, Atkinson's original engine with its linkage crank mechanism
+    conditions: ''
+    limits: >-
+      The low torque at low engine speed often has to be compensated by an electric motor
+      or supercharging.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

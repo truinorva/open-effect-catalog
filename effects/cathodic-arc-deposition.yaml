@@ -1,0 +1,69 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: cathodic-arc-deposition
+kind: application
+home: produce|solid
+functions:
+  - produce|solid
+  - change-phase|solid
+parameters:
+  - increase|hardness
+uses: []
+domain:
+  id: Materialwissenschaft
+  de: Materialwissenschaft
+  en: Materials science
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Lichtbogenverdampfen
+  - https://en.wikipedia.org/wiki/Cathodic_arc_deposition
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Lichtbogenverdampfen (Arc-PVD)
+    description: >-
+      Im Vakuum brennt ein Lichtbogen auf einem Target aus dem Beschichtungswerkstoff, das
+      als Kathode geschaltet ist. Der Bogen wandert in winzigen, extrem heißen Brennflecken
+      über die Kathode und verdampft dort Material, das zum großen Teil ionisiert wird; die
+      Ionen werden durch eine negative Spannung zum Werkstück beschleunigt und bilden eine
+      sehr dichte, gut haftende Schicht. Mit reaktiven Gasen wie Stickstoff entstehen so Hartstoffschichten.
+    example: >-
+      Titannitrid- und Titanaluminiumnitridschichten auf Bohrern und Fräsern, Verschleißschutz
+      von Umformwerkzeugen, dekorative Schichten auf Armaturen, harte amorphe Kohlenstoffschichten
+    conditions: >-
+      Hochvakuum, ein elektrisch leitfähiges Targetmaterial und ein Werkstück, das die Beschichtungstemperatur
+      verträgt.
+    limits: >-
+      Aus den Brennflecken werden auch Mikrotröpfchen geschleudert, die die Schicht aufrauen;
+      sie lassen sich nur mit Filtern zurückhalten, was die Beschichtungsrate senkt.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Cathodic arc deposition (arc evaporation)
+    description: >-
+      In a vacuum, an electric arc runs on a target of the coating material connected as the
+      cathode. The arc moves over the cathode in tiny, extremely hot spots that evaporate
+      material, a large share of which is ionised; the ions are accelerated towards the workpiece
+      by a negative voltage and form a very dense, well-adhering coating. With reactive gases
+      such as nitrogen, hard coatings are produced.
+    example: >-
+      Titanium nitride and titanium aluminium nitride coatings on drills and milling cutters,
+      wear protection for forming tools, decorative coatings on taps and fittings, hard amorphous
+      carbon coatings
+    conditions: >-
+      High vacuum, an electrically conductive target material and a workpiece that tolerates
+      the coating temperature.
+    limits: >-
+      The cathode spots also eject microdroplets that roughen the coating; they can only be
+      held back with filters, which lowers the deposition rate.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

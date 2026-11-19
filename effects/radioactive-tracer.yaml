@@ -1,0 +1,77 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: radioactive-tracer
+kind: application
+home: detect|liquid
+functions:
+  - detect|liquid
+  - measure|liquid
+  - measure|solid
+parameters:
+  - measure|position
+  - measure|speed
+  - measure|concentration
+uses:
+  - radioactive-decay
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Tracer_(Nuklearmedizin)
+  - https://en.wikipedia.org/wiki/Radioactive_tracer
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Radioaktive Markierung (Tracer-Methode)
+    description: >-
+      Einem Stoff wird eine geringe Menge eines radioaktiven Nuklids beigemischt oder in seine
+      Moleküle eingebaut, das sich chemisch genauso verhält wie das stabile Element. Weil
+      seine Strahlung schon in winzigen Konzentrationen von außen messbar ist, lassen sich
+      Weg, Verteilung und Verbleib des markierten Stoffes verfolgen, ohne das System zu öffnen
+      oder zu stören.
+    example: >-
+      Positronen-Emissions-Tomographie mit Fluor-18-Glukose, Szintigrafie mit Technetium-99m,
+      Lecksuche an erdverlegten Leitungen, Durchfluss- und Verweilzeitmessung in Anlagen,
+      Verschleißmessung an aktivierten Motorenteilen, Aufklärung von Stoffwechselwegen
+    conditions: >-
+      Ein Nuklid mit geeigneter Halbwertszeit und Strahlungsart sowie Detektoren, die diese
+      Strahlung erfassen.
+    limits: >-
+      Kurzlebige Nuklide müssen nahe am Einsatzort erzeugt werden, und Strahlenschutzvorschriften
+      begrenzen Aktivität und Einsatzorte.
+    sideEffects: >-
+      Strahlenbelastung für Patienten, Personal und Umwelt sowie radioaktiv kontaminierte
+      Abfälle.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Radioactive tracer
+    description: >-
+      A small amount of a radioactive nuclide, which behaves chemically just like the stable
+      element, is mixed into a substance or built into its molecules. Because its radiation
+      can be measured from outside even at tiny concentrations, the path, distribution and
+      fate of the labelled substance can be followed without opening or disturbing the system.
+    example: >-
+      Positron emission tomography with fluorine-18 glucose, scintigraphy with technetium-99m,
+      leak detection in buried pipelines, flow and residence time measurement in plants, wear
+      measurement on activated engine parts, elucidation of metabolic pathways
+    conditions: >-
+      A nuclide with suitable half-life and type of radiation, and detectors that register
+      this radiation.
+    limits: >-
+      Short-lived nuclides must be produced close to where they are used, and radiation protection
+      rules limit activity and places of use.
+    sideEffects: >-
+      Radiation exposure of patients, staff and the environment, and radioactively contaminated
+      waste.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

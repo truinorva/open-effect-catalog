@@ -1,0 +1,71 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: photovoltaic-effect
+kind: effect
+home: produce|field
+functions:
+  - produce|field
+  - detect|field
+  - measure|field
+parameters:
+  - measure|brightness
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: verbreitet
+sources:
+  - https://de.wikipedia.org/wiki/Photovoltaischer_Effekt
+  - https://en.wikipedia.org/wiki/Photovoltaic_effect
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Photovoltaischer Effekt
+    description: >-
+      Absorbiert ein Halbleiter Licht, entstehen Elektron-Loch-Paare. Besitzt er ein eingebautes
+      elektrisches Feld, etwa an einem p-n-Übergang, trennt dieses die Ladungsträger, bevor
+      sie rekombinieren, und an den Kontakten baut sich eine Spannung auf. Schließt man einen
+      Verbraucher an, fließt Strom, und Licht wird unmittelbar in elektrische Energie umgewandelt.
+    example: >-
+      Solarzellen und Solarmodule, Photodioden, Belichtungsmesser, solarbetriebene Taschenrechner
+      und Sensoren, optische Datenübertragung
+    conditions: >-
+      Eine Photonenenergie mindestens so groß wie die Bandlücke und eine Struktur, die die
+      Ladungsträger trennt.
+    limits: >-
+      Eine Solarzelle mit nur einem Übergang kann grundsätzlich höchstens rund ein Drittel
+      des Sonnenlichts in Strom umwandeln (Shockley-Queisser-Grenze).
+    sideEffects: >-
+      Nicht umgewandelte Energie erwärmt die Zelle, und mit steigender Temperatur sinkt ihr
+      Wirkungsgrad.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Photovoltaic effect
+    description: >-
+      When a semiconductor absorbs light, electron-hole pairs are created. If it has a built-in
+      electric field, for example at a p-n junction, this field separates the carriers before
+      they recombine, and a voltage builds up across the contacts. Connecting a load lets
+      a current flow, converting light directly into electrical energy.
+    example: >-
+      Solar cells and modules, photodiodes, light meters, solar-powered calculators and sensors,
+      optical data transmission
+    conditions: >-
+      A photon energy at least as large as the band gap and a structure that separates the
+      charge carriers.
+    limits: >-
+      A single-junction solar cell can in principle convert at most about one third of sunlight
+      into electricity (Shockley–Queisser limit).
+    sideEffects: >-
+      Energy that is not converted heats the cell, and its efficiency drops as temperature
+      rises.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

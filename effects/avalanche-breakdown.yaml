@@ -1,0 +1,65 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: avalanche-breakdown
+kind: effect
+home: stabilise|field
+functions:
+  - stabilise|field
+  - detect|field
+parameters:
+  - increase|conductivity
+  - stabilise|charge
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Lawinendurchbruch
+  - https://en.wikipedia.org/wiki/Avalanche_breakdown
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Lawinendurchbruch
+    description: >-
+      In einem in Sperrrichtung gepolten Halbleiterübergang oder in einem Isolator beschleunigt
+      ein starkes elektrisches Feld freie Ladungsträger so sehr, dass sie beim Stoß mit dem
+      Kristallgitter weitere Elektron-Loch-Paare erzeugen. Diese werden ebenfalls beschleunigt
+      und ionisieren weiter, sodass der Strom lawinenartig ansteigt, während die Spannung
+      nahezu konstant bleibt.
+    example: >-
+      Z-Dioden mit höherer Durchbruchspannung zur Spannungsbegrenzung, Überspannungsschutzdioden,
+      Lawinenphotodioden für schwache Lichtsignale, Einzelphotonendetektoren, Lawinentransistoren
+      für schnelle Impulse
+    conditions: >-
+      Eine elektrische Feldstärke oberhalb der Durchbruchfeldstärke des Materials.
+    limits: Der Strom muss von außen begrenzt werden, sonst überhitzt das Bauteil.
+    sideEffects: >-
+      Der Lawinenvorgang erzeugt Rauschen, und die Durchbruchspannung steigt mit der Temperatur.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Avalanche breakdown
+    description: >-
+      In a reverse-biased semiconductor junction or in an insulator, a strong electric field
+      accelerates free charge carriers so much that they create further electron-hole pairs
+      on colliding with the crystal lattice. These are accelerated in turn and ionise further,
+      so the current rises like an avalanche while the voltage stays almost constant.
+    example: >-
+      Zener diodes with higher breakdown voltage for voltage limiting, surge protection diodes,
+      avalanche photodiodes for weak light signals, single-photon detectors, avalanche transistors
+      for fast pulses
+    conditions: An electric field strength above the breakdown field of the material.
+    limits: The current must be limited externally, otherwise the device overheats.
+    sideEffects: >-
+      The avalanche process generates noise, and the breakdown voltage rises with temperature.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

@@ -1,0 +1,70 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: ekman-layer
+kind: effect
+home: move|liquid
+functions:
+  - move|liquid
+  - move|gas
+parameters: []
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Ekman-Transport
+  - https://en.wikipedia.org/wiki/Ekman_transport
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Ekman-Schicht (Ekman-Transport)
+    description: >-
+      Weht Wind über das Meer, nimmt er das Oberflächenwasser durch Reibung mit, während die
+      Corioliskraft es ablenkt; in jeder tieferen Schicht wird die Strömung schwächer und
+      dreht weiter (Ekman-Spirale). Über die ganze Ekman-Schicht gemittelt fließt das Wasser
+      im rechten Winkel zur Windrichtung – auf der Nordhalbkugel nach rechts, auf der Südhalbkugel
+      nach links. Dieselbe Art Grenzschicht bildet sich in der Atmosphäre über dem Boden und
+      an der Wand jedes rotierenden Fluids.
+    example: >-
+      Auftrieb von nährstoffreichem Tiefenwasser vor Küsten wie Peru und Kalifornien, Ablenkung
+      des Bodenwinds gegenüber dem Höhenwind, Ekman-Pumpen beim Anlaufen rotierender Behälter
+    conditions: >-
+      Ein rotierendes System (die Erde oder ein rotierender Behälter), Reibung an einer Grenzfläche
+      und eine ausreichend lange Einwirkzeit.
+    limits: >-
+      In Äquatornähe verschwinden die Corioliskraft und damit die Ablenkung, und die Schicht
+      ist meist nur einige zehn bis hundert Meter dick.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Ekman layer (Ekman transport)
+    description: >-
+      When wind blows over the sea, friction drags the surface water along while the Coriolis
+      force deflects it; in each deeper layer the current becomes weaker and turns further
+      (Ekman spiral). Averaged over the entire Ekman layer, the water flows at right angles
+      to the wind direction – to the right in the northern hemisphere, to the left in the
+      southern hemisphere. The same kind of boundary layer forms in the atmosphere above the
+      ground and at the wall of any rotating fluid.
+    example: >-
+      Upwelling of nutrient-rich deep water off coasts such as Peru and California, deflection
+      of the surface wind relative to the wind aloft, Ekman pumping during spin-up of rotating
+      containers
+    conditions: >-
+      A rotating system (the Earth or a rotating container), friction at an interface and
+      a sufficiently long exposure time.
+    limits: >-
+      Near the equator the Coriolis force and thus the deflection vanish, and the layer is
+      usually only a few tens to a hundred metres thick.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

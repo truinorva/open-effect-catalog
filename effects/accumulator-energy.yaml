@@ -1,0 +1,68 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: accumulator-energy
+kind: application
+home: stabilise|liquid
+functions:
+  - stabilise|liquid
+  - move|liquid
+  - rotate|solid
+parameters:
+  - stabilise|pressure
+  - stabilise|speed
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: reife
+sources:
+  - https://en.wikipedia.org/wiki/Accumulator_(energy)
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Mechanischer Energiespeicher (Akkumulator)
+    description: >-
+      Ein Akkumulator nimmt Energie auf, wenn sie im Überschuss anfällt, und gibt sie später
+      wieder ab. Mechanische Ausführungen speichern sie in einer gespannten Feder, einem angehobenen
+      Gewicht, der Drehung eines Schwungrads oder, beim Hydrospeicher, in einem verdichteten
+      Gaspolster, das Flüssigkeit unter Druck hält. So lassen sich Lastspitzen decken, Druckstöße
+      dämpfen und ungleichmäßige Antriebe glätten.
+    example: >-
+      Hydrospeicher in Baumaschinen und Bremsanlagen, Schwungrad am Verbrennungsmotor, Federwerk
+      einer Uhr, Gewichtsantrieb von Turmuhren, Pumpspeicherkraftwerk
+    conditions: ''
+    limits: >-
+      Federn und Gewichte speichern je Masse nur wenig Energie, und Schwungräder verlieren
+      durch Lager- und Luftreibung nach und nach ihre Energie.
+    sideEffects: >-
+      Wird die gespeicherte Energie plötzlich frei, etwa beim Bersten eines Schwungrads oder
+      Druckbehälters, ist das sehr gefährlich.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Mechanical accumulator (energy storage)
+    description: >-
+      An accumulator takes up energy when there is a surplus and releases it later. Mechanical
+      versions store it in a tensioned spring, a raised weight, the rotation of a flywheel
+      or, in a hydraulic accumulator, a compressed gas cushion that keeps liquid under pressure.
+      This covers load peaks, damps pressure surges and smooths uneven drives.
+    example: >-
+      Hydraulic accumulators in construction machinery and brake systems, engine flywheels,
+      clock mainsprings, weight-driven tower clocks, pumped-storage power plants
+    conditions: ''
+    limits: >-
+      Springs and weights store little energy per unit mass, and flywheels gradually lose
+      their energy to bearing and air friction.
+    sideEffects: >-
+      A sudden release of the stored energy, for example when a flywheel or pressure vessel
+      bursts, is very dangerous.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

@@ -1,0 +1,67 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: supercavitation
+kind: effect
+home: move|solid
+functions:
+  - move|solid
+parameters:
+  - decrease|drag
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: nische
+sources:
+  - https://de.wikipedia.org/wiki/Superkavitation
+  - https://en.wikipedia.org/wiki/Supercavitation
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Superkavitation
+    description: >-
+      Bewegt sich ein Körper sehr schnell durch Wasser, sinkt der Druck hinter einer scharfkantigen
+      Nase (Kavitator) so stark, dass das Wasser verdampft und eine Dampfblase entsteht, die
+      den ganzen Körper umhüllt. Der Körper berührt das Wasser dann nur noch an der Nase und
+      gleitet im Übrigen durch Dampf, so dass der Reibungswiderstand drastisch sinkt. Bei
+      geringerer Geschwindigkeit lässt sich die Blase auch durch eingeblasenes Gas erzeugen.
+    example: >-
+      Superkavitierende Torpedos und Unterwassergeschosse, superkavitierende Propeller für
+      schnelle Boote
+    conditions: >-
+      Sehr hohe Geschwindigkeit oder Gaszufuhr in die Blase; geeignet geformter Kavitator
+      an der Spitze.
+    limits: >-
+      Steuern ist schwierig, weil Ruder und Rumpf kaum Wasserkontakt haben, und die Blase
+      wird bei Kursänderungen instabil.
+    sideEffects: >-
+      Der Antrieb muss eine große Leistung aufbringen, und die Fahrt ist sehr laut.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Supercavitation
+    description: >-
+      When a body moves very fast through water, the pressure behind a sharp-edged nose (cavitator)
+      drops so far that the water vaporises, forming a vapour cavity that envelops the entire
+      body. The body then touches the water only at the nose and otherwise slides through
+      vapour, so the skin-friction drag falls drastically. At lower speeds the cavity can
+      also be created by injecting gas.
+    example: >-
+      Supercavitating torpedoes and underwater projectiles, supercavitating propellers for
+      fast boats
+    conditions: >-
+      Very high speed or gas fed into the cavity; a suitably shaped cavitator at the tip.
+    limits: >-
+      Steering is difficult because control surfaces and hull hardly touch the water, and
+      the cavity becomes unstable during course changes.
+    sideEffects: Propulsion has to deliver high power, and the motion is very noisy.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

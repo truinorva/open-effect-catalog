@@ -1,0 +1,68 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: penning-effect
+kind: effect
+home: produce|field
+functions:
+  - produce|field
+  - detect|gas
+parameters:
+  - increase|conductivity
+  - increase|charge
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: nische
+sources:
+  - https://en.wikipedia.org/wiki/Penning_mixture
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Penning-Effekt (Penning-Ionisation)
+    description: >-
+      In manchen Gasgemischen ionisieren angeregte, langlebige (metastabile) Atome des Hauptgases
+      bei Stößen die Atome oder Moleküle einer Beimischung, deren Ionisierungsenergie niedriger
+      ist als ihre Anregungsenergie. Ein klassisches Beispiel ist Neon mit einer kleinen Beimischung
+      von Argon. Weil so Anregungsenergie, die sonst verloren ginge, zur Ionisation beiträgt,
+      zündet eine Gasentladung in einem solchen Penning-Gemisch bei deutlich niedrigerer Spannung.
+    example: >-
+      Glimmlampen und Neon-Anzeigen, Plasmabildschirme, Gasfüllungen von Proportionalzählrohren,
+      Helium-Ionisationsdetektoren in der Gaschromatographie
+    conditions: >-
+      Ein Hauptgas mit metastabilen Zuständen und eine geringe Beimischung eines Gases mit
+      niedrigerer Ionisierungsenergie.
+    limits: >-
+      Die Wirkung hängt stark vom Mischungsverhältnis ab; zu viel Beimischung hebt den Vorteil
+      wieder auf.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Penning effect (Penning ionisation)
+    description: >-
+      In certain gas mixtures, excited long-lived (metastable) atoms of the main gas ionise,
+      on collision, atoms or molecules of an admixture whose ionisation energy is lower than
+      their excitation energy. A classic example is neon with a small admixture of argon.
+      Because excitation energy that would otherwise be lost thus contributes to ionisation,
+      a gas discharge in such a Penning mixture ignites at a considerably lower voltage.
+    example: >-
+      Glow lamps and neon indicators, plasma display panels, gas fillings of proportional
+      counters, helium ionisation detectors in gas chromatography
+    conditions: >-
+      A main gas with metastable states and a small admixture of a gas with lower ionisation
+      energy.
+    limits: >-
+      The effect depends strongly on the mixing ratio; too much admixture cancels the benefit
+      again.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

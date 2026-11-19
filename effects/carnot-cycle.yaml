@@ -1,0 +1,70 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: carnot-cycle
+kind: effect
+home: produce|field
+functions:
+  - produce|field
+  - cool|gas
+  - compress|gas
+  - expand|gas
+parameters: []
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Carnot-Prozess
+  - https://en.wikipedia.org/wiki/Carnot_cycle
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Carnot-Prozess
+    description: >-
+      Der Carnot-Prozess ist ein idealisierter Kreisprozess aus zwei isothermen und zwei adiabaten
+      Zustandsänderungen, bei dem ein Arbeitsmedium Wärme bei hoher Temperatur aufnimmt und
+      bei niedriger abgibt. Er ist vollständig umkehrbar und erreicht den höchsten Wirkungsgrad,
+      den eine Wärmekraftmaschine zwischen zwei Temperaturen überhaupt haben kann: 1 − T_kalt/T_warm.
+      Rückwärts durchlaufen beschreibt er die ideale Kältemaschine bzw. Wärmepumpe.
+    example: >-
+      Bewertungsmaßstab für Kraftwerke, Motoren, Kältemaschinen und Wärmepumpen (Gütegrad),
+      Abschätzung der höchstmöglichen Leistungszahl von Wärmepumpen
+    conditions: >-
+      Zwei Wärmebehälter mit konstanter Temperatur und umkehrbare, also unendlich langsame
+      Zustandsänderungen.
+    limits: >-
+      Real nicht verwirklichbar: Ein vollständig umkehrbarer Prozess liefert keine endliche
+      Leistung, und Reibung sowie Wärmeübertragung über Temperaturdifferenzen verursachen
+      Verluste.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Carnot cycle
+    description: >-
+      The Carnot cycle is an idealised cycle of two isothermal and two adiabatic changes of
+      state in which a working fluid absorbs heat at a high temperature and rejects it at
+      a low one. It is fully reversible and achieves the highest efficiency any heat engine
+      can have between two temperatures: 1 − T_cold/T_hot. Run in reverse, it describes the
+      ideal refrigerator or heat pump.
+    example: >-
+      Benchmark for power plants, engines, refrigerators and heat pumps (second-law efficiency),
+      estimating the highest possible coefficient of performance of heat pumps
+    conditions: >-
+      Two heat reservoirs at constant temperature and reversible, i.e. infinitely slow, changes
+      of state.
+    limits: >-
+      Cannot be realised: a fully reversible process delivers no finite power, and friction
+      and heat transfer across temperature differences cause losses.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

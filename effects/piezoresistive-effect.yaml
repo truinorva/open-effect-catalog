@@ -1,0 +1,72 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: piezoresistive-effect
+kind: effect
+home: measure|solid
+functions:
+  - measure|solid
+  - measure|gas
+  - measure|liquid
+parameters:
+  - measure|pressure
+  - measure|force
+  - measure|size
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: verbreitet
+sources:
+  - https://de.wikipedia.org/wiki/Piezoresistiver_Effekt
+  - https://en.wikipedia.org/wiki/Piezoresistive_effect
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Piezoresistiver Effekt
+    description: >-
+      Wird ein elektrischer Leiter oder Halbleiter gedehnt oder gestaucht, ändert sich sein
+      elektrischer Widerstand. In Metallen liegt das vor allem an der Änderung von Länge und
+      Querschnitt, in Halbleitern wie Silizium zusätzlich an einer Verschiebung der Bandstruktur,
+      die die Beweglichkeit der Ladungsträger verändert, weshalb der Effekt dort viel stärker
+      ist. Die Widerstandsänderung wird meist in einer Brückenschaltung gemessen und ist ein
+      direktes Maß für Dehnung, Kraft oder Druck.
+    example: >-
+      Dehnungsmessstreifen in Wägezellen und Kraftaufnehmern, MEMS-Drucksensoren für Reifen,
+      Motoren und Medizintechnik, Beschleunigungssensoren, Cantilever in Rasterkraftmikroskopen
+    conditions: >-
+      Eine gute mechanische Kopplung des Widerstandselements an das verformte Bauteil oder
+      die Membran.
+    limits: >-
+      Halbleiter-Piezowiderstände sind stark temperaturabhängig und müssen kompensiert werden.
+    sideEffects: >-
+      Der Messstrom erwärmt den Widerstand und kann so die Messung verfälschen.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Piezoresistive effect
+    description: >-
+      When an electrical conductor or semiconductor is stretched or compressed, its electrical
+      resistance changes. In metals this is mainly due to the change in length and cross-section;
+      in semiconductors such as silicon there is also a shift in the band structure that alters
+      carrier mobility, which makes the effect much stronger there. The change in resistance
+      is usually measured in a bridge circuit and is a direct measure of strain, force or
+      pressure.
+    example: >-
+      Strain gauges in load cells and force transducers, MEMS pressure sensors for tyres,
+      engines and medical devices, accelerometers, cantilevers in atomic force microscopes
+    conditions: >-
+      Good mechanical coupling of the resistive element to the deformed component or diaphragm.
+    limits: >-
+      Semiconductor piezoresistors depend strongly on temperature and must be compensated.
+    sideEffects: >-
+      The measuring current heats the resistor and can thus distort the measurement.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

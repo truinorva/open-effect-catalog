@@ -1,0 +1,59 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: sun-and-planet-gear
+kind: application
+home: rotate|solid
+functions:
+  - rotate|solid
+parameters:
+  - increase|speed
+uses: []
+domain:
+  id: ''
+  de: ''
+  en: ''
+maturity: niedergang
+sources:
+  - https://de.wikipedia.org/wiki/R%C3%A4derkoppelgetriebe
+  - https://en.wikipedia.org/wiki/Sun_and_planet_gear
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Sonne-und-Planet-Getriebe
+    description: >-
+      Am Ende der Pleuelstange einer Kolbenmaschine ist ein Zahnrad fest angebracht, das um
+      ein gleich großes Zahnrad auf der Abtriebswelle herumgeführt wird. Das umlaufende Rad
+      dreht sich dabei nicht um seine eigene Achse, sondern nimmt das Sonnenrad über die Verzahnung
+      mit; so wird die Hin- und Herbewegung in eine Drehung umgewandelt, und bei gleich großen
+      Rädern macht die Welle zwei Umdrehungen je Doppelhub. James Watt setzte die Anordnung
+      ein, weil die einfache Kurbel damals durch ein Patent geschützt war.
+    example: Dampfmaschinen von Boulton & Watt im späten 18. Jahrhundert
+    conditions: >-
+      Ein Lenker oder Ring hält das Planetenrad auf seiner Kreisbahn um das Sonnenrad.
+    limits: ''
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Sun and planet gear
+    description: >-
+      A gear wheel is rigidly attached to the end of the connecting rod of a reciprocating
+      engine and is guided around an equally sized gear on the output shaft. The orbiting
+      wheel does not turn about its own axis but drives the sun gear through the teeth; reciprocating
+      motion is thus converted into rotation, and with equal gears the shaft makes two revolutions
+      per double stroke. James Watt used the arrangement because the simple crank was protected
+      by a patent at the time.
+    example: Boulton & Watt steam engines of the late 18th century
+    conditions: >-
+      A link or ring keeps the planet gear on its circular path around the sun gear.
+    limits: ''
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
