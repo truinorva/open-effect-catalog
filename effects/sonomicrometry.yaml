@@ -1,0 +1,66 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: sonomicrometry
+kind: application
+home: measure|solid
+functions:
+  - measure|solid
+parameters:
+  - measure|size
+  - measure|position
+uses:
+  - piezoelectric-effect
+  - speed-of-sound
+domain:
+  id: ''
+  de: ''
+  en: ''
+maturity: ''
+sources:
+  - https://en.wikipedia.org/wiki/Sonomicrometry
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Sonomikrometrie
+    description: >-
+      Kleine piezoelektrische Kristalle werden in oder auf Gewebe befestigt; einer sendet
+      einen Ultraschallimpuls, die anderen empfangen ihn. Aus der Laufzeit und der bekannten
+      Schallgeschwindigkeit im Gewebe ergibt sich der Abstand zwischen den Kristallen, und
+      weil sich die Messung hunderte Male pro Sekunde wiederholen lässt, werden Längen- und
+      Formänderungen in Echtzeit verfolgt.
+    example: >-
+      Messung von Wandbewegung und Kammergröße des Herzens im Tierversuch, Verformungsmessung
+      an Muskeln und Gefäßen
+    conditions: >-
+      Implantierte oder aufgenähte Kristalle mit direktem Schallweg durch das Gewebe.
+    limits: >-
+      Die Schallgeschwindigkeit im Gewebe muss bekannt sein und wird als konstant angenommen;
+      das Verfahren ist invasiv.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Sonomicrometry
+    description: >-
+      Small piezoelectric crystals are attached in or on tissue; one sends an ultrasound pulse
+      and the others receive it. The travel time and the known speed of sound in tissue give
+      the distance between the crystals, and because the measurement can be repeated hundreds
+      of times per second, changes in length and shape are tracked in real time.
+    example: >-
+      Measuring wall motion and chamber size of the heart in animal studies, strain measurement
+      in muscles and vessels
+    conditions: >-
+      Implanted or sutured crystals with a direct acoustic path through the tissue.
+    limits: >-
+      The speed of sound in the tissue must be known and is assumed constant; the method is
+      invasive.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

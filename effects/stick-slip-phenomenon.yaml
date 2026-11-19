@@ -1,0 +1,72 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: stick-slip-phenomenon
+kind: effect
+home: vibrate|solid
+functions:
+  - vibrate|solid
+  - move|solid
+parameters:
+  - increase|vibration
+  - increase|sound
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Stick-Slip-Effekt
+  - https://en.wikipedia.org/wiki/Stick%E2%80%93slip_phenomenon
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Stick-Slip-Effekt (Haftgleiteffekt)
+    description: >-
+      Gleiten zwei Flächen langsam aufeinander, kann die Bewegung ruckartig werden: Die Teile
+      haften, bis die in der elastischen Antriebskette gespeicherte Kraft die Haftreibung
+      übersteigt, rutschen dann schnell ein Stück, weil die Gleitreibung kleiner ist, und
+      bleiben wieder haften. Dieser Wechsel wiederholt sich periodisch und erzeugt Schwingungen
+      und oft Geräusche.
+    example: >-
+      Streichen einer Geige, Quietschen von Bremsen und Knarren von Türen, Piezo-Trägheitsantriebe
+      für die Nanopositionierung, Erdbeben an Verwerfungen
+    conditions: >-
+      Haftreibung größer als Gleitreibung oder mit steigender Geschwindigkeit sinkende Reibung;
+      elastische Nachgiebigkeit im Antrieb; geringe Gleitgeschwindigkeit.
+    limits: >-
+      Bei hohen Gleitgeschwindigkeiten, sehr steifen Antrieben oder geeigneter Schmierung
+      verschwindet der Effekt.
+    sideEffects: >-
+      Ruckeln an Werkzeugmaschinenschlitten mindert die Positioniergenauigkeit; Rattern und
+      Quietschen verursachen Lärm und Verschleiß.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Stick-slip phenomenon
+    description: >-
+      When two surfaces slide slowly over one another, the motion can become jerky: the parts
+      stick until the force stored in the elastic drive train exceeds static friction, then
+      slip quickly for a short distance because kinetic friction is lower, and stick again.
+      The cycle repeats periodically and produces vibrations and often noise.
+    example: >-
+      Bowing a violin, squealing brakes and creaking doors, piezo inertia drives for nanopositioning,
+      earthquakes on faults
+    conditions: >-
+      Static friction greater than kinetic friction, or friction that falls with rising speed;
+      elastic compliance in the drive; low sliding speed.
+    limits: >-
+      The effect disappears at high sliding speeds, with very stiff drives or with suitable
+      lubrication.
+    sideEffects: >-
+      Jerky motion of machine-tool slides reduces positioning accuracy; chatter and squeal
+      cause noise and wear.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

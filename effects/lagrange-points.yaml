@@ -1,0 +1,69 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: lagrange-points
+kind: effect
+home: hold|solid
+functions:
+  - hold|solid
+parameters:
+  - stabilise|position
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Lagrange-Punkte
+  - https://en.wikipedia.org/wiki/Lagrange_point
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Lagrange-Punkte
+    description: >-
+      In einem System aus zwei großen Körpern, die einander umkreisen, gibt es fünf Punkte,
+      an denen ein kleiner dritter Körper seine Lage relativ zu beiden beibehält. Dort gleichen
+      sich die Anziehungskräfte der beiden Massen und die Fliehkraft im mitrotierenden Bezugssystem
+      gerade aus. Drei Punkte liegen auf der Verbindungslinie der beiden Körper, die beiden
+      anderen bilden mit ihnen jeweils ein gleichseitiges Dreieck.
+    example: >-
+      Sonnenobservatorium SOHO am Punkt L1, Weltraumteleskope James Webb und Gaia im Umfeld
+      von L2, Trojaner-Asteroiden an L4 und L5 des Jupiter
+    conditions: >-
+      Zwei Körper auf nahezu kreisförmigen Bahnen um ihren gemeinsamen Schwerpunkt; der dritte
+      Körper ist vergleichsweise leicht.
+    limits: >-
+      L1, L2 und L3 sind instabil, so dass Raumsonden dort regelmäßig Bahnkorrekturen brauchen;
+      L4 und L5 sind nur stabil, wenn der schwerere Körper mindestens etwa 25-mal so massereich
+      ist wie der leichtere.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Lagrange points
+    description: >-
+      In a system of two large bodies orbiting each other, there are five points at which
+      a small third body keeps its position relative to both. There, the gravitational pulls
+      of the two masses and the centrifugal force in the co-rotating frame just balance. Three
+      points lie on the line joining the two bodies; each of the other two forms an equilateral
+      triangle with them.
+    example: >-
+      SOHO solar observatory at L1, James Webb and Gaia space telescopes around L2, Trojan
+      asteroids at Jupiter's L4 and L5
+    conditions: >-
+      Two bodies on nearly circular orbits around their common centre of mass; the third body
+      is comparatively light.
+    limits: >-
+      L1, L2 and L3 are unstable, so spacecraft there need regular orbit corrections; L4 and
+      L5 are only stable if the heavier body is at least about 25 times as massive as the
+      lighter one.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

@@ -1,0 +1,69 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: plasma
+kind: effect
+home: heat|solid
+functions:
+  - heat|solid
+  - remove|solid
+  - produce|field
+  - join|solid
+parameters:
+  - increase|temperature
+  - increase|conductivity
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Plasma_(Physik)
+  - https://en.wikipedia.org/wiki/Plasma_(physics)
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Plasma
+    description: >-
+      Ein Plasma ist ein Gas, in dem ein erheblicher Teil der Atome oder Moleküle ionisiert
+      ist, sodass freie Elektronen und Ionen nebeneinander vorliegen. Es entsteht durch hohe
+      Temperatur, starke elektrische Felder oder Strahlung, leitet elektrischen Strom, reagiert
+      auf Magnetfelder und sendet Licht aus. Heiße Plasmen übertragen sehr viel Wärme, während
+      kalte Niederdruck- oder Atmosphärendruckplasmen reaktive Teilchen enthalten, die Oberflächen
+      reinigen, ätzen oder chemisch aktivieren, ohne das Werkstück stark zu erwärmen.
+    example: >-
+      Plasmaschneiden und Plasmaschweißen, Plasmaätzen in der Chipfertigung, Plasmaaktivierung
+      von Kunststoffen vor dem Kleben, Leuchtstoff- und Neonröhren, thermisches Spritzen
+    conditions: >-
+      Eine Energiezufuhr, die mindestens so viele Ladungsträger erzeugt, wie durch Rekombination
+      verloren gehen.
+    limits: ''
+    sideEffects: >-
+      Plasmen senden UV-Strahlung aus und können in Luft Ozon und Stickoxide bilden.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Plasma
+    description: >-
+      A plasma is a gas in which a substantial fraction of the atoms or molecules is ionised,
+      so that free electrons and ions exist side by side. It arises from high temperature,
+      strong electric fields or radiation, conducts electric current, responds to magnetic
+      fields and emits light. Hot plasmas transfer large amounts of heat, while cold low-pressure
+      or atmospheric-pressure plasmas contain reactive species that clean, etch or chemically
+      activate surfaces without heating the workpiece much.
+    example: >-
+      Plasma cutting and plasma welding, plasma etching in chip manufacturing, plasma activation
+      of plastics before bonding, fluorescent and neon tubes, thermal spraying
+    conditions: >-
+      An energy input that creates at least as many charge carriers as are lost by recombination.
+    limits: ''
+    sideEffects: Plasmas emit UV radiation and can form ozone and nitrogen oxides in air.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

@@ -1,0 +1,68 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: diffusion-barrier
+kind: application
+home: preserve|solid
+functions:
+  - preserve|solid
+  - hold|gas
+parameters:
+  - increase|tightness
+uses:
+  - diffusion
+domain:
+  id: Materialwissenschaft
+  de: Materialwissenschaft
+  en: Materials science
+maturity: reife
+sources:
+  - https://en.wikipedia.org/wiki/Diffusion_barrier
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Diffusionssperre (Diffusionsbarriere)
+    description: >-
+      Eine Diffusionssperre ist eine dünne Schicht aus einem Stoff, in dem die betreffenden
+      Atome oder Moleküle kaum beweglich sind. Sie trennt zwei Materialien, die sich sonst
+      durch Diffusion vermischen oder miteinander reagieren würden, oder hält Gase und Feuchte
+      von einem empfindlichen Inhalt fern.
+    example: >-
+      Tantalnitrid- und Titannitridschichten unter Kupferleiterbahnen in Mikrochips, Nickelschicht
+      zwischen Kupfer und Gold auf Steckkontakten, EVOH-Sperrschicht in Lebensmittelverpackungen,
+      Dampfsperre in der Gebäudedämmung
+    conditions: >-
+      Eine dichte, rissfreie Schicht aus einem Stoff mit sehr geringer Löslichkeit und Beweglichkeit
+      für den abzusperrenden Stoff.
+    limits: >-
+      Keine Sperre ist vollkommen dicht, und bei hohen Temperaturen, Rissen oder Poren steigt
+      der Durchgang stark an.
+    sideEffects: >-
+      Die zusätzliche Schicht erhöht oft den elektrischen oder thermischen Widerstand.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Diffusion barrier
+    description: >-
+      A diffusion barrier is a thin layer of a material in which the atoms or molecules concerned
+      are hardly mobile. It separates two materials that would otherwise intermix or react
+      with each other by diffusion, or keeps gases and moisture away from sensitive contents.
+    example: >-
+      Tantalum nitride and titanium nitride layers under copper interconnects in microchips,
+      nickel layer between copper and gold on connector contacts, EVOH barrier layer in food
+      packaging, vapour barrier in building insulation
+    conditions: >-
+      A dense, crack-free layer of a material with very low solubility and mobility for the
+      substance to be blocked.
+    limits: >-
+      No barrier is perfectly tight, and at high temperatures or with cracks or pores the
+      transmission rises sharply.
+    sideEffects: The additional layer often increases electrical or thermal resistance.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

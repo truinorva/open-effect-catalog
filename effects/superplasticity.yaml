@@ -1,0 +1,68 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: superplasticity
+kind: effect
+home: deform|solid
+functions:
+  - deform|solid
+parameters:
+  - change|shape
+uses: []
+domain:
+  id: Materialwissenschaft
+  de: Materialwissenschaft
+  en: Materials science
+maturity: nische
+sources:
+  - https://de.wikipedia.org/wiki/Superplastizit%C3%A4t
+  - https://en.wikipedia.org/wiki/Superplasticity
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Superplastizität
+    description: >-
+      Manche feinkörnigen Werkstoffe lassen sich bei hoher Temperatur und langsamer Verformung
+      um mehrere hundert bis über tausend Prozent dehnen, ohne sich einzuschnüren oder zu
+      reißen. Die Verformung geschieht vor allem durch Abgleiten und Drehen der Körner an
+      ihren Grenzen, unterstützt durch Diffusion. Weil die Fließspannung stark von der Verformungsgeschwindigkeit
+      abhängt, setzen Stellen, die dünner werden und sich deshalb schneller verformen, mehr
+      Widerstand entgegen, so dass sich die Dehnung gleichmäßig verteilt.
+    example: >-
+      Superplastisches Umformen von Titan- und Aluminiumblechen im Flugzeugbau, oft kombiniert
+      mit Diffusionsschweißen; komplexe Karosserie- und Gehäuseteile in Kleinserien
+    conditions: >-
+      Feines, stabiles Korngefüge (meist unter etwa 10 µm), Temperatur über etwa der Hälfte
+      der absoluten Schmelztemperatur, geringe Umformgeschwindigkeit.
+    limits: >-
+      Die Umformung dauert pro Bauteil Minuten bis Stunden und eignet sich daher kaum für
+      Großserien.
+    sideEffects: >-
+      Bei manchen Legierungen bilden sich während der Verformung Poren an den Korngrenzen.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Superplasticity
+    description: >-
+      Some fine-grained materials can be stretched by several hundred to over a thousand percent
+      at high temperature and slow deformation without necking or tearing. Deformation occurs
+      mainly by grains sliding and rotating at their boundaries, assisted by diffusion. Because
+      the flow stress depends strongly on the strain rate, regions that thin and therefore
+      deform faster offer more resistance, so the strain spreads evenly.
+    example: >-
+      Superplastic forming of titanium and aluminium sheet in aircraft construction, often
+      combined with diffusion bonding; complex body and housing parts in small series
+    conditions: >-
+      Fine, stable grain structure (usually below about 10 µm), temperature above roughly
+      half the absolute melting temperature, low forming rate.
+    limits: >-
+      Forming takes minutes to hours per part and is therefore hardly suitable for mass production.
+    sideEffects: In some alloys cavities form at the grain boundaries during deformation.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

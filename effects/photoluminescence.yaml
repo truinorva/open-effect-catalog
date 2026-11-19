@@ -1,0 +1,75 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: photoluminescence
+kind: effect
+home: produce|field
+functions:
+  - produce|field
+  - measure|solid
+  - measure|liquid
+parameters:
+  - change|colour
+  - measure|concentration
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: verbreitet
+sources:
+  - https://de.wikipedia.org/wiki/Photolumineszenz-Spektroskopie
+  - https://en.wikipedia.org/wiki/Photoluminescence
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Photolumineszenz
+    description: >-
+      Ein Stoff absorbiert Photonen, gelangt dadurch in einen angeregten Zustand und gibt
+      die Energie anschließend wieder als Licht ab, meist mit größerer Wellenlänge als das
+      eingestrahlte Licht. Erfolgt die Abgabe sofort, innerhalb von Nanosekunden, spricht
+      man von Fluoreszenz, bei verzögerter Abgabe von Phosphoreszenz. Spektrum und Abklingzeit
+      des ausgesandten Lichts sind für den Stoff und seine Umgebung charakteristisch.
+    example: >-
+      Weiße LEDs mit Leuchtstoffschicht, Leuchtstofflampen, optische Aufheller, Fluoreszenzmarker
+      in der Biologie, Photolumineszenz-Spektroskopie zur Prüfung von Halbleitern und Solarzellen
+    conditions: >-
+      Anregendes Licht mit ausreichender Photonenenergie und ein Stoff, der die Energie nicht
+      überwiegend als Wärme abgibt.
+    limits: >-
+      Löschende Stoffe wie Sauerstoff, hohe Temperatur oder zu hohe Konzentration verringern
+      die Lichtausbeute.
+    sideEffects: >-
+      Ein Teil der Energie geht wegen der Stokes-Verschiebung als Wärme verloren, was die
+      Leuchtstoffe in leistungsstarken LEDs erwärmt.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Photoluminescence
+    description: >-
+      A substance absorbs photons, is raised to an excited state and then gives off the energy
+      again as light, usually at a longer wavelength than the incident light. If the emission
+      is immediate, within nanoseconds, it is called fluorescence; if delayed, phosphorescence.
+      Spectrum and decay time of the emitted light are characteristic of the substance and
+      its surroundings.
+    example: >-
+      White LEDs with a phosphor layer, fluorescent lamps, optical brighteners, fluorescent
+      labels in biology, photoluminescence spectroscopy for testing semiconductors and solar
+      cells
+    conditions: >-
+      Exciting light with sufficient photon energy and a substance that does not release the
+      energy mainly as heat.
+    limits: >-
+      Quenchers such as oxygen, high temperature or excessive concentration reduce the light
+      yield.
+    sideEffects: >-
+      Part of the energy is lost as heat because of the Stokes shift, which warms the phosphors
+      in high-power LEDs.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

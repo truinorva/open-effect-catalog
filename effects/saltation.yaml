@@ -1,0 +1,72 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: saltation
+kind: effect
+home: move|particles
+functions:
+  - move|particles
+  - separate|particles
+parameters:
+  - change|position
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Saltation
+  - https://en.wikipedia.org/wiki/Saltation_(geology)
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Saltation
+    description: >-
+      Wind oder fließendes Wasser hebt Sand- und Kieskörner kurz vom Boden ab und trägt sie
+      in flachen Sprüngen ein Stück weiter, bevor sie wieder aufschlagen. Beim Aufprall schleudern
+      sie weitere Körner hoch oder stoßen sie vorwärts, sodass sich der Transport selbst verstärkt;
+      feinere Teilchen gehen in Schwebe über, gröbere werden nur rollend und schiebend bewegt,
+      wodurch das Material nach Korngröße sortiert wird.
+    example: >-
+      Wanderdünen und Rippelmarken, Sandverwehungen und Sandstürme, Geschiebetransport in
+      Flüssen, Winderosion von Ackerböden, Windschliff an Gestein (Windkanter)
+    conditions: >-
+      Lose Körner etwa im Größenbereich von Sand und eine Strömung, deren Schubspannung am
+      Boden einen Schwellenwert überschreitet.
+    limits: >-
+      Feuchte, Bewuchs, Krusten oder Bindemittel erhöhen die Schwellengeschwindigkeit und
+      können die Saltation unterbinden.
+    sideEffects: >-
+      Verlust fruchtbaren Bodens, Abrieb an Bauwerken und Fahrzeugen, Versanden von Verkehrswegen;
+      aufprallende Körner setzen Feinstaub frei.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Saltation
+    description: >-
+      Wind or flowing water briefly lifts sand and gravel grains off the bed and carries them
+      forward in shallow hops before they land again. On impact they eject further grains
+      or push them along, so that the transport reinforces itself; finer particles pass into
+      suspension, coarser ones are only rolled and pushed, which sorts the material by grain
+      size.
+    example: >-
+      Migrating dunes and ripple marks, drifting sand and sandstorms, bedload transport in
+      rivers, wind erosion of farmland, wind-abraded rocks (ventifacts)
+    conditions: >-
+      Loose grains roughly in the sand size range and a flow whose shear stress at the bed
+      exceeds a threshold value.
+    limits: >-
+      Moisture, vegetation, crusts or binding agents raise the threshold velocity and can
+      suppress saltation.
+    sideEffects: >-
+      Loss of fertile soil, abrasion of buildings and vehicles, sanding-up of roads and railways;
+      impacting grains release fine dust.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

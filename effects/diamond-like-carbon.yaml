@@ -1,0 +1,65 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: diamond-like-carbon
+kind: application
+home: preserve|solid
+functions:
+  - preserve|solid
+parameters:
+  - decrease|friction
+  - increase|hardness
+uses: []
+domain:
+  id: Materialwissenschaft
+  de: Materialwissenschaft
+  en: Materials science
+maturity: reife
+sources:
+  - https://en.wikipedia.org/wiki/Diamond-like_carbon
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Diamantähnlicher Kohlenstoff (DLC)
+    description: >-
+      DLC-Schichten sind wenige Mikrometer dünne, amorphe Kohlenstoffschichten, die neben
+      grafitartigen auch viele diamantartige Bindungen enthalten und oft Wasserstoff einschließen.
+      Sie werden mit Plasma- oder Ionenstrahlverfahren bei niedriger Temperatur abgeschieden
+      und verbinden hohe Härte mit sehr geringer Reibung gegenüber Metallen.
+    example: >-
+      Beschichtung von Kolbenbolzen, Ventiltrieb- und Einspritzteilen im Motor, Rasierklingen,
+      Schneidwerkzeuge für Aluminium, Schutzschicht auf Festplatten, medizinische Implantate
+    conditions: >-
+      Ein gut haftender Untergrund, oft mit metallischer Zwischenschicht, wobei die niedrige
+      Beschichtungstemperatur auch gehärteten Stahl zulässt.
+    limits: >-
+      Hohe Eigenspannungen begrenzen die Schichtdicke, und oberhalb einiger hundert Grad Celsius
+      wandelt sich die Schicht in Grafit um und verliert ihre Eigenschaften.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Diamond-like carbon (DLC)
+    description: >-
+      DLC coatings are amorphous carbon layers a few micrometres thick that contain many diamond-like
+      bonds in addition to graphite-like ones and often incorporate hydrogen. They are deposited
+      by plasma or ion-beam processes at low temperature and combine high hardness with very
+      low friction against metals.
+    example: >-
+      Coating of piston pins, valve-train and injection parts in engines, razor blades, cutting
+      tools for aluminium, protective overcoat on hard disks, medical implants
+    conditions: >-
+      A well-adhering substrate, often with a metallic interlayer, and the low coating temperature
+      also allows hardened steel to be coated.
+    limits: >-
+      High internal stresses limit the layer thickness, and above a few hundred degrees Celsius
+      the layer converts to graphite and loses its properties.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

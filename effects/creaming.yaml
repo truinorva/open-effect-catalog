@@ -1,0 +1,71 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: creaming
+kind: effect
+home: separate|liquid
+functions:
+  - separate|liquid
+  - concentrate|liquid
+parameters:
+  - decrease|homogeneity
+  - increase|concentration
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: lehrbuch
+sources:
+  - https://en.wikipedia.org/wiki/Creaming_(chemistry)
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Aufrahmen
+    description: >-
+      In einer Emulsion oder Suspension steigen Tröpfchen oder Teilchen, die leichter sind
+      als die umgebende Flüssigkeit, durch Auftrieb nach oben und sammeln sich als Schicht
+      an der Oberfläche. Die Steiggeschwindigkeit wächst mit dem Dichteunterschied und dem
+      Quadrat des Tröpfchendurchmessers und sinkt mit der Viskosität der kontinuierlichen
+      Phase (Stokessches Gesetz). Das Aufrahmen ist das Gegenstück zur Sedimentation.
+    example: >-
+      Rahmbildung auf stehender Rohmilch, Entmischen von Salatdressings, Ölabscheidung aus
+      Abwasser, Stabilitätsprüfung von Kosmetik- und Lebensmittelemulsionen
+    conditions: >-
+      Eine disperse Phase mit geringerer Dichte als die kontinuierliche Phase, ausreichend
+      große Tröpfchen und Ruhezeit.
+    limits: >-
+      Sehr kleine Tröpfchen wie in homogenisierter Milch rahmen kaum auf, weil ihre Steiggeschwindigkeit
+      winzig ist und die Brownsche Bewegung sie verteilt hält.
+    sideEffects: >-
+      Aufgerahmte Tröpfchen liegen dicht beieinander und können zusammenfließen, so dass die
+      Emulsion bricht.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Creaming
+    description: >-
+      In an emulsion or suspension, droplets or particles that are lighter than the surrounding
+      liquid rise through buoyancy and collect as a layer at the top. The rising speed increases
+      with the density difference and the square of the droplet diameter and decreases with
+      the viscosity of the continuous phase (Stokes' law). Creaming is the counterpart of
+      sedimentation.
+    example: >-
+      Cream forming on standing raw milk, separation of salad dressings, oil separation from
+      wastewater, stability testing of cosmetic and food emulsions
+    conditions: >-
+      A dispersed phase less dense than the continuous phase, sufficiently large droplets
+      and resting time.
+    limits: >-
+      Very small droplets, as in homogenised milk, hardly cream because their rising speed
+      is tiny and Brownian motion keeps them distributed.
+    sideEffects: >-
+      Creamed droplets lie close together and may coalesce, so that the emulsion breaks.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

@@ -1,0 +1,73 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: bingham-plastic
+kind: effect
+home: hold|liquid
+functions:
+  - hold|liquid
+  - stabilise|liquid
+  - stabilise|particles
+parameters:
+  - change|viscosity
+  - stabilise|shape
+uses: []
+domain:
+  id: Rheologie
+  de: Rheologie
+  en: Rheology
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Bingham-Fluid
+  - https://en.wikipedia.org/wiki/Bingham_plastic
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Bingham-Fluid
+    description: >-
+      Ein Bingham-Fluid verhält sich unterhalb einer Fließgrenze wie ein fester Körper und
+      beginnt erst zu fließen, wenn die Schubspannung diese Grenze überschreitet; darüber
+      steigt die Schergeschwindigkeit annähernd linear mit der zusätzlichen Spannung. Ursache
+      ist meist ein schwaches Netzwerk aus Teilchen oder Molekülen, das kleine Belastungen
+      trägt und unter größeren aufbricht.
+    example: >-
+      Zahnpasta, Mayonnaise, Bohrspülung, Frischbeton, nicht ablaufende Farben und Lacke,
+      Klärschlamm
+    conditions: >-
+      Ein ausreichend hoher Anteil fein verteilter Teilchen oder vernetzender Bestandteile,
+      die eine Fließgrenze aufbauen.
+    limits: >-
+      Das ideale Bingham-Modell ist eine Näherung; viele reale Stoffe verhalten sich oberhalb
+      der Fließgrenze zusätzlich scherverdünnend.
+    sideEffects: >-
+      Um das Fließen in Rohrleitungen in Gang zu setzen, ist ein Mindestdruck nötig, und in
+      Behältern können ungemischte Totzonen stehen bleiben.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Bingham plastic
+    description: >-
+      A Bingham plastic behaves like a rigid solid below a yield stress and only starts to
+      flow once the shear stress exceeds that limit; beyond it, the shear rate rises roughly
+      linearly with the excess stress. The cause is usually a weak network of particles or
+      molecules that carries small loads but breaks up under larger ones.
+    example: >-
+      Toothpaste, mayonnaise, drilling mud, fresh concrete, sag-resistant paints and coatings,
+      sewage sludge
+    conditions: >-
+      A sufficiently high content of finely dispersed particles or network-forming components
+      that build up a yield stress.
+    limits: >-
+      The ideal Bingham model is an approximation; many real materials also shear-thin above
+      the yield stress.
+    sideEffects: >-
+      A minimum pressure is needed to start flow in pipes, and unmixed dead zones can remain
+      in vessels.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

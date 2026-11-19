@@ -1,0 +1,64 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: cat-righting-reflex
+kind: effect
+home: orient|solid
+functions:
+  - orient|solid
+  - rotate|solid
+parameters:
+  - change|orientation
+uses: []
+domain:
+  id: Biologie
+  de: Biologie
+  en: Biology
+maturity: nische
+sources:
+  - https://de.wikipedia.org/wiki/Stellreflex_der_Katze
+  - https://en.wikipedia.org/wiki/Cat_righting_reflex
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Stellreflex der Katze
+    description: >-
+      Eine fallende Katze dreht sich in der Luft so, dass sie auf den Füßen landet, obwohl
+      sie dabei keinen Drehimpuls aufnehmen kann. Sie knickt den Körper in der Mitte ab und
+      dreht Vorder- und Hinterkörper nacheinander gegeneinander; durch Anziehen und Ausstrecken
+      der Beine verändert sie dabei die Trägheitsmomente der beiden Hälften. Der Gesamtdrehimpuls
+      bleibt null, und doch ändert sich die Ausrichtung des Körpers.
+    example: >-
+      Fallende Katzen, Lageänderung von Astronauten in der Schwerelosigkeit, Lageregelung
+      von Robotern und Raumfahrzeugen durch Formänderung
+    conditions: >-
+      Eine ausreichende Fallhöhe und ein gelenkiger Körper, dessen Teile sich gegeneinander
+      bewegen lassen.
+    limits: ''
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Cat righting reflex
+    description: >-
+      A falling cat turns in mid-air so that it lands on its feet, even though it cannot acquire
+      any angular momentum. It bends its body in the middle and rotates the front and rear
+      halves against each other in turn, changing the moments of inertia of the two halves
+      by tucking in and stretching out its legs. Total angular momentum stays zero, yet the
+      orientation of the body changes.
+    example: >-
+      Falling cats, reorientation of astronauts in weightlessness, attitude control of robots
+      and spacecraft by shape change
+    conditions: >-
+      Sufficient falling height and an articulated body whose parts can move against each
+      other.
+    limits: ''
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

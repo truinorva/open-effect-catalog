@@ -1,0 +1,66 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: supercritical-fluid-extraction
+kind: application
+home: separate|solid
+functions:
+  - separate|solid
+  - separate|liquid
+  - remove|solid
+parameters:
+  - increase|purity
+uses:
+  - supercritical-fluid
+domain:
+  id: Verfahrenstechnik
+  de: Verfahrenstechnik
+  en: Process engineering
+maturity: reife
+sources:
+  - https://en.wikipedia.org/wiki/Supercritical_fluid_extraction
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Überkritische Fluidextraktion
+    description: >-
+      Ein überkritisches Fluid, fast immer Kohlendioxid, durchströmt ein Feststoffbett oder
+      eine Flüssigkeit und löst die gesuchten Inhaltsstoffe heraus. Danach wird der Druck
+      abgesenkt; das CO2 verliert sein Lösevermögen, wird gasförmig, und der Extrakt fällt
+      frei von Lösungsmittel aus. Das Gas wird wieder verdichtet und im Kreis geführt; über
+      Druck und Temperatur lässt sich steuern, welche Stoffe gelöst werden.
+    example: >-
+      Entkoffeinierung von Kaffee und Tee, Hopfenextrakt für Brauereien, ätherische Öle und
+      Aromen, Probenaufbereitung in der Analytik
+    conditions: >-
+      Kohlendioxid oberhalb von etwa 31 °C und 74 bar; zerkleinertes oder poröses Ausgangsmaterial.
+    limits: >-
+      Polare Stoffe lösen sich in reinem CO2 schlecht; dann wird ein Zusatzlösungsmittel wie
+      Ethanol beigemischt.
+    sideEffects: Hohe Investitionskosten für die Hochdrucktechnik.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Supercritical fluid extraction
+    description: >-
+      A supercritical fluid, almost always carbon dioxide, flows through a bed of solids or
+      a liquid and dissolves out the desired constituents. The pressure is then lowered; the
+      CO2 loses its solvent power, turns into gas, and the extract separates free of solvent.
+      The gas is recompressed and recycled; pressure and temperature control which substances
+      are dissolved.
+    example: >-
+      Decaffeination of coffee and tea, hop extract for breweries, essential oils and flavours,
+      sample preparation in analytical chemistry
+    conditions: >-
+      Carbon dioxide above about 31 °C and 74 bar; ground or porous feed material.
+    limits: >-
+      Polar substances dissolve poorly in pure CO2; a co-solvent such as ethanol is then added.
+    sideEffects: High capital costs for the high-pressure equipment.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

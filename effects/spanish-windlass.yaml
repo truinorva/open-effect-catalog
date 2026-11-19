@@ -1,0 +1,63 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: spanish-windlass
+kind: application
+home: move|solid
+functions:
+  - move|solid
+  - hold|solid
+  - stop|liquid
+parameters:
+  - increase|force
+uses: []
+domain:
+  id: ''
+  de: ''
+  en: ''
+maturity: reife
+sources: []
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Spanische Winde (Knebelspanner)
+    description: >-
+      Ein Seil wird als Schlaufe um zwei Gegenstände gelegt, ein Stab durch die Schlaufe gesteckt
+      und gedreht. Dabei verdrillen sich die beiden Seilstränge, die Schlaufe wird kürzer
+      und zieht die Gegenstände mit großer Kraft zusammen; der lange Stab wirkt als Hebel,
+      und weil die Verkürzung pro Umdrehung anfangs klein ist, entsteht eine hohe Übersetzung.
+      Ist die gewünschte Spannung erreicht, wird der Stab festgelegt.
+    example: >-
+      Knebel-Tourniquet zur Blutstillung, Zusammenziehen von Balken und Rahmen beim Verleimen,
+      Spannen des Blatts einer Gestellsäge mit verdrillter Schnur, Bergen festgefahrener Fahrzeuge
+    conditions: Ein zugfestes Seil oder Band und ein steifer Stab als Knebel.
+    limits: >-
+      Mit zunehmender Verdrillung steigt die Seilbeanspruchung stark an, bis das Seil reißt.
+    sideEffects: >-
+      Wird der Knebel losgelassen, dreht er sich schlagartig zurück und kann Verletzungen
+      verursachen.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Spanish windlass
+    description: >-
+      A rope is laid as a loop around two objects, and a stick is pushed through the loop
+      and turned. The two strands twist around each other, the loop shortens and pulls the
+      objects together with great force; the long stick acts as a lever, and because the shortening
+      per turn is small at first, the mechanical advantage is high. Once the desired tension
+      is reached, the stick is secured.
+    example: >-
+      Windlass tourniquet to stop bleeding, pulling beams and frames together while gluing,
+      tensioning the blade of a bow saw with a twisted cord, recovering stuck vehicles
+    conditions: A rope or strap with high tensile strength and a stiff stick as a lever.
+    limits: >-
+      As the twist increases, the load on the rope rises steeply until the rope breaks.
+    sideEffects: If the stick is released it spins back violently and can cause injuries.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

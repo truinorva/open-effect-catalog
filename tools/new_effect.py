@@ -68,6 +68,8 @@ def main() -> int:
         "maturity": "",
         "sources": args.source,
         "authors": [args.author],
+        # A second person reviews the entry before it goes into a release.
+        "review": {"status": "ungeprueft", "by": [], "date": ""},
         # Only the language you write in. The translation is added later, marked
         # kind: maschinell (with model) until a person has read it.
         "text": {args.lang: text_block(names[args.lang], args.author, "original")},

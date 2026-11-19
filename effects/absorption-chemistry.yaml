@@ -1,0 +1,73 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: absorption-chemistry
+kind: effect
+home: absorb|gas
+functions:
+  - absorb|gas
+  - remove|gas
+  - separate|gas
+  - absorb|liquid
+parameters:
+  - decrease|concentration
+  - increase|purity
+uses: []
+domain:
+  id: Verfahrenstechnik
+  de: Verfahrenstechnik
+  en: Process engineering
+maturity: verbreitet
+sources:
+  - https://de.wikipedia.org/wiki/Absorption_(Chemie)
+  - https://en.wikipedia.org/wiki/Absorption_(chemistry)
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Absorption (Stoffaufnahme in eine Phase)
+    description: >-
+      Ein Stoff dringt aus einem Gas oder einer Flüssigkeit in das Innere einer anderen Phase
+      ein und verteilt sich dort, statt wie bei der Adsorption nur an deren Oberfläche zu
+      haften. Bei der physikalischen Absorption löst sich etwa ein Gas in einer Waschflüssigkeit;
+      die aufgenommene Menge steigt mit dem Partialdruck und sinkt meist mit steigender Temperatur,
+      sodass sich das Gas durch Erwärmen oder Entspannen wieder austreiben lässt.
+    example: >-
+      Gaswäsche zur Abtrennung von CO2 und H2S, Rauchgaswäsche, Absorptionskältemaschine,
+      Kohlensäure in Getränken, Erdgastrocknung mit Glykol
+    conditions: >-
+      Der aufzunehmende Stoff muss im Absorptionsmittel gut löslich sein, und die Phasen brauchen
+      eine große Kontaktfläche, etwa über Füllkörper, Tropfen oder Blasen.
+    limits: >-
+      Die Aufnahme endet, wenn das Absorptionsmittel gesättigt ist; es muss dann regeneriert
+      oder ersetzt werden.
+    sideEffects: >-
+      Bei der Aufnahme wird Lösungswärme frei, die das Absorptionsmittel erwärmt und seine
+      Aufnahmefähigkeit senkt.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Absorption (uptake into a phase)
+    description: >-
+      A substance passes from a gas or liquid into the bulk of another phase and spreads out
+      there, instead of just sticking to its surface as in adsorption. In physical absorption
+      a gas dissolves, for example, in a scrubbing liquid; the amount taken up rises with
+      the partial pressure and usually falls with rising temperature, so the gas can be driven
+      out again by heating or depressurising.
+    example: >-
+      Gas scrubbing to remove CO2 and H2S, flue gas scrubbing, absorption refrigerators, carbonation
+      of drinks, natural gas drying with glycol
+    conditions: >-
+      The substance must be readily soluble in the absorbent, and the phases need a large
+      contact area, for instance via packing, droplets or bubbles.
+    limits: >-
+      Uptake stops once the absorbent is saturated; it then has to be regenerated or replaced.
+    sideEffects: >-
+      Heat of solution is released during uptake, warming the absorbent and reducing its capacity.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

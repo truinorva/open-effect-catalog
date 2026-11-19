@@ -1,0 +1,66 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: elasticity
+kind: effect
+home: deform|solid
+functions:
+  - deform|solid
+  - hold|solid
+  - stop|solid
+  - move|solid
+  - vibrate|solid
+parameters:
+  - stabilise|shape
+  - increase|force
+  - measure|force
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Elastizit%C3%A4t_(Physik)
+  - https://en.wikipedia.org/wiki/Elasticity_(physics)
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Elastizität (elastische Rückverformung)
+    description: >-
+      Ein elastischer Körper verformt sich unter Last und nimmt nach dem Entlasten seine ursprüngliche
+      Form wieder an. Ursache sind die Bindungskräfte zwischen den Atomen oder, bei Elastomeren,
+      das Bestreben der verknäuelten Polymerketten, in ihren ungeordneten Zustand zurückzukehren;
+      die Verformungsarbeit wird dabei gespeichert und wieder abgegeben. Im linearen Bereich
+      ist die Verformung proportional zur Kraft (Hookesches Gesetz).
+    example: Federn, Schnappverbindungen, Gummipuffer, Federwaage, Bogen
+    conditions: Belastung unterhalb der Elastizitätsgrenze des Werkstoffs.
+    limits: >-
+      Oberhalb der Elastizitätsgrenze verformt sich der Körper bleibend oder bricht.
+    sideEffects: >-
+      Bei wiederholter Belastung kann Werkstoffermüdung auftreten; Elastomere wandeln einen
+      Teil der Verformungsarbeit in Wärme um (Hysterese).
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Elasticity (elastic recovery)
+    description: >-
+      An elastic body deforms under load and returns to its original shape once the load is
+      removed. This is caused by the bonding forces between atoms or, in elastomers, by the
+      tendency of coiled polymer chains to return to their disordered state; the work of deformation
+      is stored and released again. In the linear range, deformation is proportional to the
+      force (Hooke's law).
+    example: Springs, snap-fit joints, rubber buffers, spring balance, bow
+    conditions: Load below the elastic limit of the material.
+    limits: Above the elastic limit the body deforms permanently or breaks.
+    sideEffects: >-
+      Repeated loading can cause material fatigue; elastomers convert part of the deformation
+      work into heat (hysteresis).
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

@@ -1,0 +1,68 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: tidal-force
+kind: effect
+home: move|liquid
+functions:
+  - move|liquid
+  - deform|solid
+  - orient|solid
+  - heat|solid
+parameters:
+  - change|orientation
+  - change|shape
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Gezeitenkraft
+  - https://en.wikipedia.org/wiki/Tidal_force
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Gezeitenkraft
+    description: >-
+      Die Anziehungskraft eines Himmelskörpers ist auf der ihm zugewandten Seite eines ausgedehnten
+      Körpers stärker als auf der abgewandten. Dieser Unterschied dehnt den Körper entlang
+      der Verbindungslinie und staucht ihn quer dazu; auf der Erde lässt er unter dem Einfluss
+      von Mond und Sonne den Meeresspiegel etwa zweimal täglich steigen und fallen. Längliche
+      Satelliten richten sich aus demselben Grund von selbst zum Erdmittelpunkt aus.
+    example: >-
+      Meeresgezeiten, Gezeitenkraftwerke, Lagestabilisierung von Satelliten durch den Gravitationsgradienten,
+      Gezeitenheizung des Jupitermonds Io, gebundene Rotation des Mondes
+    conditions: Ausgedehnter Körper im ungleichförmigen Schwerefeld einer großen Masse.
+    limits: >-
+      Die Kraft nimmt mit der dritten Potenz des Abstands ab und ist im technischen Maßstab
+      winzig.
+    sideEffects: >-
+      Gezeitenreibung bremst die Erdrotation und verlängert den Tag allmählich.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Tidal force
+    description: >-
+      The gravitational pull of a celestial body is stronger on the near side of an extended
+      body than on its far side. This difference stretches the body along the line joining
+      them and compresses it crosswise; on Earth, under the influence of the Moon and Sun,
+      it makes the sea level rise and fall about twice a day. Elongated satellites align themselves
+      with the Earth's centre for the same reason.
+    example: >-
+      Ocean tides, tidal power plants, gravity-gradient attitude stabilisation of satellites,
+      tidal heating of Jupiter's moon Io, the Moon's tidal locking
+    conditions: Extended body in the non-uniform gravitational field of a large mass.
+    limits: >-
+      The force falls off with the cube of the distance and is tiny on a technical scale.
+    sideEffects: >-
+      Tidal friction slows the Earth's rotation and gradually lengthens the day.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

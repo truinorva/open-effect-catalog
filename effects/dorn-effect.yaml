@@ -1,0 +1,61 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: dorn-effect
+kind: effect
+home: measure|particles
+functions:
+  - measure|particles
+parameters:
+  - measure|charge
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: nische
+sources:
+  - https://en.wikipedia.org/wiki/Sedimentation_potential
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Dorn-Effekt (Sedimentationspotential)
+    description: >-
+      Sinken elektrisch geladene Teilchen in einer Flüssigkeit ab, etwa unter der Schwerkraft
+      oder in einer Zentrifuge, bleibt ein Teil ihrer Ionenwolke hinter ihnen zurück. Dadurch
+      werden Ladungen getrennt, und zwischen oberem und unterem Ende der Suspension entsteht
+      eine messbare Spannung. Der Effekt ist die Umkehrung der Elektrophorese.
+    example: >-
+      Bestimmung des Zetapotentials von Suspensionen, Untersuchung der Stabilität kolloidaler
+      Systeme
+    conditions: >-
+      Geladene Teilchen in einer Elektrolytlösung, die sich relativ zur Flüssigkeit bewegen.
+    limits: >-
+      Die entstehende Spannung ist klein und schwer von anderen Störspannungen zu trennen,
+      weshalb das Zetapotential meist auf anderem Weg gemessen wird.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Dorn effect (sedimentation potential)
+    description: >-
+      When electrically charged particles settle in a liquid, for example under gravity or
+      in a centrifuge, part of their ionic cloud lags behind them. This separates charges,
+      and a measurable voltage develops between the top and bottom of the suspension. The
+      effect is the reverse of electrophoresis.
+    example: >-
+      Determining the zeta potential of suspensions, studying the stability of colloidal systems
+    conditions: >-
+      Charged particles in an electrolyte solution moving relative to the liquid.
+    limits: >-
+      The voltage produced is small and hard to separate from other interfering voltages,
+      which is why the zeta potential is usually measured by other methods.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

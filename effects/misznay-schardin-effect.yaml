@@ -1,0 +1,65 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: misznay-schardin-effect
+kind: effect
+home: move|solid
+functions:
+  - move|solid
+  - deform|solid
+parameters:
+  - increase|speed
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: nische
+sources:
+  - https://en.wikipedia.org/wiki/Misnay%E2%80%93Schardin_effect
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Misznay-Schardin-Effekt
+    description: >-
+      Liegt eine flache Metallplatte unmittelbar auf einer flächigen Sprengladung, wirkt die
+      Detonation überwiegend senkrecht zur Kontaktfläche. Die Platte wird dadurch als zusammenhängender
+      Körper mit einer Geschwindigkeit im Bereich von Kilometern pro Sekunde fortgeschleudert,
+      statt in viele Splitter zu zerfallen. Ist die Platte schüsselförmig gewölbt, formt sie
+      sich im Flug zu einem kompakten Projektil um.
+    example: >-
+      Projektilbildende Ladungen, Panzerabwehrminen mit Seitwärtswirkung, Plattenladungen
+    conditions: >-
+      Eine großflächige, im Verhältnis zu ihrer Dicke flache Sprengladung mit direkt aufliegender
+      Metallplatte.
+    limits: >-
+      Ein so erzeugtes Projektil durchschlägt weniger Material als der Stachel einer Hohlladung,
+      wirkt dafür aber noch über deutlich größere Abstände.
+    sideEffects: Druckwelle und Splitter der Detonation gefährden die Umgebung.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Misznay–Schardin effect
+    description: >-
+      When a flat metal plate lies directly on a broad, flat explosive charge, the detonation
+      acts mainly perpendicular to the contact surface. The plate is therefore thrown off
+      as a coherent body at a speed in the range of kilometres per second instead of breaking
+      into many fragments. If the plate is dish-shaped, it reforms in flight into a compact
+      projectile.
+    example: Explosively formed penetrators, off-route anti-tank mines, plate charges
+    conditions: >-
+      A broad explosive charge that is flat relative to its thickness, with a metal plate
+      in direct contact.
+    limits: >-
+      A projectile formed this way penetrates less material than a shaped-charge jet, but
+      remains effective over considerably larger distances.
+    sideEffects: >-
+      The blast wave and fragments of the detonation endanger the surroundings.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

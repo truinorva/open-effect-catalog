@@ -1,0 +1,72 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: crystallisation
+kind: effect
+home: separate|liquid
+functions:
+  - separate|liquid
+  - change-phase|liquid
+  - produce|particles
+parameters:
+  - increase|purity
+  - change|state
+uses: []
+domain:
+  id: Verfahrenstechnik
+  de: Verfahrenstechnik
+  en: Process engineering
+maturity: verbreitet
+sources:
+  - https://de.wikipedia.org/wiki/Kristallisation
+  - https://en.wikipedia.org/wiki/Crystallization
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Kristallisation
+    description: >-
+      Wird eine Lösung übersättigt oder eine Schmelze unterkühlt, ordnen sich gelöste Teilchen
+      oder Atome zu einem regelmäßigen Kristallgitter. Nach der Keimbildung wachsen die Kristalle,
+      wobei Fremdstoffe meist schlecht ins Gitter passen und in der Restlösung zurückbleiben.
+      Deshalb dient die Kristallisation sowohl zur Herstellung fester Stoffe als auch zu ihrer
+      Reinigung.
+    example: >-
+      Zuckergewinnung, Salzgewinnung aus Sole, Reinigung von Arzneiwirkstoffen, Umkristallisieren
+      im Labor, Züchtung von Silizium-Einkristallen
+    conditions: >-
+      Übersättigung durch Abkühlen, Verdampfen des Lösemittels oder Zugabe eines Fällungsmittels
+      sowie Kristallkeime.
+    limits: >-
+      Bei zu schneller Kristallisation werden Mutterlauge und Verunreinigungen eingeschlossen,
+      und manche Stoffe erstarren statt zu Kristallen zu einem Glas oder bilden ein Öl.
+    sideEffects: >-
+      Freiwerdende Kristallisationswärme sowie unerwünschte Krusten und Kesselstein auf Wärmeübertragerflächen.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Crystallisation
+    description: >-
+      When a solution becomes supersaturated or a melt is undercooled, dissolved particles
+      or atoms arrange themselves into a regular crystal lattice. After nucleation the crystals
+      grow, and foreign substances usually fit poorly into the lattice and remain in the residual
+      solution. Crystallisation therefore serves both to produce solids and to purify them.
+    example: >-
+      Sugar production, salt production from brine, purification of active pharmaceutical
+      ingredients, recrystallisation in the laboratory, growing silicon single crystals
+    conditions: >-
+      Supersaturation by cooling, evaporating the solvent or adding a precipitant, and crystal
+      nuclei.
+    limits: >-
+      If crystallisation is too fast, mother liquor and impurities are trapped, and some substances
+      solidify into a glass or form an oil instead of crystals.
+    sideEffects: >-
+      Release of heat of crystallisation, and unwanted crusts and scale on heat-exchanger
+      surfaces.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

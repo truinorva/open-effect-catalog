@@ -1,0 +1,63 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: electroviscous-effect
+kind: effect
+home: stop|liquid
+functions:
+  - stop|liquid
+parameters:
+  - increase|viscosity
+uses: []
+domain:
+  id: Rheologie
+  de: Rheologie
+  en: Rheology
+maturity: nische
+sources:
+  - https://en.wikipedia.org/wiki/Electroviscous_effects
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Elektroviskoser Effekt
+    description: >-
+      Geladene Partikel in einer Suspension oder geladene Kanalwände sind von einer elektrischen
+      Doppelschicht aus Gegenionen umgeben. Wird die Flüssigkeit geschert oder strömt sie
+      durch enge Kanäle, verzerrt die Strömung diese Ionenwolken, und die dabei auftretenden
+      elektrischen Kräfte erhöhen den Fließwiderstand – die scheinbare Viskosität ist größer
+      als ohne Ladungen.
+    example: >-
+      Fließverhalten von Tonsuspensionen, Latex und Proteinlösungen; Strömung von Elektrolyten
+      in Mikrokanälen und porösen Medien
+    conditions: >-
+      Geladene Grenzflächen und eine Doppelschichtdicke, die gegenüber Partikel- oder Kanalgröße
+      nicht vernachlässigbar ist, also eher geringe Ionenstärke.
+    limits: >-
+      Bei hoher Salzkonzentration wird die Doppelschicht so dünn, dass der Effekt verschwindet.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Electroviscous effect
+    description: >-
+      Charged particles in a suspension, or charged channel walls, are surrounded by an electrical
+      double layer of counter-ions. When the liquid is sheared or flows through narrow channels,
+      the flow distorts these ion clouds, and the resulting electrical forces increase the
+      flow resistance – the apparent viscosity is higher than without charges.
+    example: >-
+      Flow behaviour of clay suspensions, latex and protein solutions; flow of electrolytes
+      in microchannels and porous media
+    conditions: >-
+      Charged interfaces and a double-layer thickness that is not negligible compared with
+      particle or channel size, i.e. rather low ionic strength.
+    limits: >-
+      At high salt concentration the double layer becomes so thin that the effect disappears.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

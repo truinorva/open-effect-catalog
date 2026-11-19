@@ -1,0 +1,71 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: desiccation
+kind: effect
+home: remove|solid
+functions:
+  - remove|solid
+  - preserve|solid
+  - deform|solid
+parameters:
+  - decrease|humidity
+uses: []
+domain:
+  id: Verfahrenstechnik
+  de: Verfahrenstechnik
+  en: Process engineering
+maturity: lehrbuch
+sources:
+  - https://en.wikipedia.org/wiki/Desiccation
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Austrocknung
+    description: >-
+      Ein feuchter Stoff oder Organismus gibt durch Verdunstung Wasser an eine trockenere
+      Umgebung ab, bis er im Gleichgewicht mit der Umgebungsfeuchte ist. Mit dem Wasserentzug
+      kommen das Wachstum von Mikroorganismen und viele chemische Reaktionen zum Erliegen,
+      gleichzeitig schrumpft das Material. Austrocknung lässt sich gezielt zur Haltbarmachung
+      nutzen, ist aber auch eine häufige Schadensursache.
+    example: >-
+      Trockenobst, Trockenfleisch und getrocknete Kräuter, Lagerung von Saatgut, Exsikkator
+      im Labor, Trockenrisse in Lehmböden und Holz
+    conditions: >-
+      Eine Umgebung mit geringerer relativer Feuchte als das Gut sowie Luftaustausch oder
+      ein Trockenmittel.
+    limits: >-
+      Ohne Wärmezufuhr oder Trockenmittel verläuft sie langsam und endet bei der Gleichgewichtsfeuchte,
+      nicht bei völliger Trockenheit.
+    sideEffects: >-
+      Schwinden, Rissbildung und Verziehen von Holz, Ton und Beton sowie Absterben von Pflanzen
+      und Geweben.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Desiccation
+    description: >-
+      A moist material or organism gives off water by evaporation to drier surroundings until
+      it reaches equilibrium with the ambient humidity. With the loss of water, the growth
+      of microorganisms and many chemical reactions come to a halt, and at the same time the
+      material shrinks. Desiccation can be used deliberately for preservation but is also
+      a frequent cause of damage.
+    example: >-
+      Dried fruit, dried meat and herbs, seed storage, laboratory desiccators, drying cracks
+      in clay soils and wood
+    conditions: >-
+      Surroundings with lower relative humidity than the material, and air exchange or a desiccant.
+    limits: >-
+      Without heat or a desiccant it proceeds slowly and ends at the equilibrium moisture
+      content, not at complete dryness.
+    sideEffects: >-
+      Shrinkage, cracking and warping of wood, clay and concrete, and death of plants and
+      tissues.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

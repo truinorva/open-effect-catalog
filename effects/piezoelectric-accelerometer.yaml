@@ -1,0 +1,67 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: piezoelectric-accelerometer
+kind: application
+home: measure|solid
+functions:
+  - measure|solid
+  - detect|solid
+parameters:
+  - measure|vibration
+  - measure|speed
+uses:
+  - piezoelectric-effect
+domain:
+  id: ''
+  de: ''
+  en: ''
+maturity: reife
+sources:
+  - https://en.wikipedia.org/wiki/Piezoelectric_accelerometer
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Piezoelektrischer Beschleunigungsaufnehmer
+    description: >-
+      Im Gehäuse drückt eine kleine seismische Masse auf ein Piezoelement. Wird der Sensor
+      beschleunigt, übt die träge Masse eine dazu proportionale Kraft auf das Piezoelement
+      aus, das daraufhin eine elektrische Ladung abgibt. Ein Ladungsverstärker oder eine eingebaute
+      Elektronik wandelt diese Ladung in ein Spannungssignal um.
+    example: >-
+      Schwingungsüberwachung von Maschinen und Wälzlagern, Modalanalyse, Crashtests, Klopfsensoren
+      in Verbrennungsmotoren, Erschütterungsmessung im Bauwesen
+    conditions: >-
+      Eine feste, steife Ankopplung an das Messobjekt, etwa verschraubt oder geklebt.
+    limits: >-
+      Konstante oder sehr langsame Beschleunigungen lassen sich nicht messen, weil die Ladung
+      abfließt, und nach oben begrenzt die Eigenresonanz den Frequenzbereich.
+    sideEffects: >-
+      Die Masse des Sensors und Temperaturschwankungen können das Messergebnis verfälschen.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Piezoelectric accelerometer
+    description: >-
+      Inside the housing a small seismic mass presses on a piezoelectric element. When the
+      sensor is accelerated, the inertia of the mass exerts a proportional force on the piezo
+      element, which then releases an electric charge. A charge amplifier or built-in electronics
+      converts this charge into a voltage signal.
+    example: >-
+      Vibration monitoring of machines and rolling bearings, modal analysis, crash tests,
+      knock sensors in combustion engines, vibration measurement in construction
+    conditions: >-
+      Firm, stiff coupling to the object under test, for example screwed or bonded.
+    limits: >-
+      Constant or very slow accelerations cannot be measured because the charge leaks away,
+      and the resonance frequency limits the upper frequency range.
+    sideEffects: >-
+      The mass of the sensor and temperature fluctuations can distort the measurement.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

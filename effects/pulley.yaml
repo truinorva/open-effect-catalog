@@ -1,0 +1,69 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: pulley
+kind: application
+home: move|solid
+functions:
+  - move|solid
+  - rotate|solid
+parameters:
+  - increase|force
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Rolle_(Physik)
+  - https://en.wikipedia.org/wiki/Pulley
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Rolle und Flaschenzug
+    description: >-
+      Eine Rolle ist ein drehbar gelagertes Rad, über dessen Rille ein Seil, eine Kette oder
+      ein Riemen läuft. Eine feste Rolle ändert nur die Richtung der Kraft, eine lose Rolle
+      halbiert die nötige Zugkraft bei doppeltem Seilweg; im Flaschenzug teilen sich mehrere
+      tragende Seilstränge die Last, sodass die Kraft um ihre Anzahl sinkt, während die Arbeit
+      gleich bleibt.
+    example: >-
+      Flaschenzug und Kran, Aufzug, Fahnenmast, Taljen im Segelboot, Riemenscheiben in Riementrieben,
+      Umlenkrollen in Trainingsgeräten
+    conditions: Ein biegsames, zugfestes Zugmittel und leichtgängig gelagerte Rollen.
+    limits: >-
+      Lagerreibung und Biegewiderstand des Seils verringern den Wirkungsgrad, vor allem bei
+      vielen Rollen.
+    sideEffects: >-
+      Der Seilweg wächst im selben Verhältnis, in dem die Kraft sinkt, und Seile verschleißen
+      durch das wiederholte Biegen über die Rollen.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Pulley
+    description: >-
+      A pulley is a wheel turning on an axle, with a rope, chain or belt running in its groove.
+      A fixed pulley only changes the direction of the force, a movable pulley halves the
+      pulling force needed while doubling the rope travel; in a block and tackle several supporting
+      rope segments share the load, reducing the force by their number while the work stays
+      the same.
+    example: >-
+      Block and tackle and cranes, lifts, flagpoles, sailing-boat tackle, belt drive pulleys,
+      guide pulleys in fitness machines
+    conditions: >-
+      A flexible tension member with sufficient strength and freely running pulleys.
+    limits: >-
+      Friction in the bearings and the bending stiffness of the rope reduce efficiency, especially
+      with many pulleys.
+    sideEffects: >-
+      The rope travel increases in the same ratio as the force is reduced, and ropes wear
+      from repeated bending over the sheaves.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

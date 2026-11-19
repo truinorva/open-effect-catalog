@@ -1,0 +1,66 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: electrostatic-induction
+kind: effect
+home: measure|field
+functions:
+  - measure|field
+  - produce|field
+  - move|particles
+parameters:
+  - measure|charge
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Influenz
+  - https://en.wikipedia.org/wiki/Electrostatic_induction
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Influenz (elektrostatische Induktion)
+    description: >-
+      Bringt man einen elektrisch geladenen Körper in die Nähe eines Leiters, verschieben
+      sich dessen frei bewegliche Ladungsträger: Auf der zugewandten Seite sammelt sich Ladung
+      entgegengesetzten, auf der abgewandten Seite gleichen Vorzeichens, ohne dass Ladung
+      übertragen wird. Wird eine Seite währenddessen geerdet, bleibt der Leiter nach Entfernen
+      des Körpers geladen. Im Inneren des Leiters wird das äußere Feld dadurch vollständig
+      aufgehoben.
+    example: >-
+      Elektroskop, Influenzmaschine (Wimshurst), elektrische Feldmühle, kapazitive Sensoren,
+      Abschirmung durch einen Faradayschen Käfig
+    conditions: >-
+      Elektrisch leitfähiger Körper; Isolatoren zeigen nur eine schwächere Polarisation.
+    limits: ''
+    sideEffects: >-
+      Influenzierte Ladungen können empfindliche Bauteile schädigen, wenn sie sich plötzlich
+      entladen.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Electrostatic induction
+    description: >-
+      When a charged body is brought near a conductor, the conductor's mobile charge carriers
+      shift: charge of opposite sign gathers on the near side and charge of the same sign
+      on the far side, without any charge being transferred. If one side is earthed in the
+      meantime, the conductor remains charged after the body is removed. Inside the conductor,
+      the external field is thereby completely cancelled.
+    example: >-
+      Electroscope, influence machine (Wimshurst), electric field mill, capacitive sensors,
+      shielding by a Faraday cage
+    conditions: Electrically conductive body; insulators show only weaker polarisation.
+    limits: ''
+    sideEffects: >-
+      Induced charges can damage sensitive components if they discharge suddenly.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

@@ -1,0 +1,69 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: battery
+kind: application
+home: produce|field
+functions:
+  - produce|field
+parameters: []
+uses: []
+domain:
+  id: Chemie
+  de: Chemie
+  en: Chemistry
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Batterie_(Elektrotechnik)
+  - https://en.wikipedia.org/wiki/Electric_battery
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Batterie (elektrochemisch)
+    description: >-
+      Eine Batterie wandelt chemische Energie direkt in elektrische Energie um. In jeder Zelle
+      laufen an zwei verschiedenen Elektroden getrennte Redoxreaktionen ab: An der negativen
+      Elektrode werden Elektronen abgegeben, die über den äußeren Stromkreis zur positiven
+      Elektrode fließen, während Ionen durch den Elektrolyten wandern; wiederaufladbare Zellen
+      lassen sich durch Umkehr dieses Vorgangs erneut laden.
+    example: >-
+      Geräte- und Knopfzellen, Lithium-Ionen-Akkus in Smartphones und Elektroautos, Starterbatterien,
+      Notstromversorgung, stationäre Netzspeicher
+    conditions: >-
+      Zwei Elektrodenmaterialien mit unterschiedlichem elektrochemischem Potential und ein
+      Elektrolyt, der Ionen leitet, Elektronen aber nicht.
+    limits: >-
+      Die Energiedichte ist weit geringer als die von flüssigen Kraftstoffen, und bei Kälte
+      sinken Leistung und nutzbare Kapazität.
+    sideEffects: >-
+      Beim Laden und Entladen entsteht Wärme, und beschädigte Lithiumzellen können thermisch
+      durchgehen und brennen.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Battery (electrochemical)
+    description: >-
+      A battery converts chemical energy directly into electrical energy. In each cell separate
+      redox reactions take place at two different electrodes: electrons released at the negative
+      electrode flow through the external circuit to the positive electrode while ions migrate
+      through the electrolyte; rechargeable cells can be charged again by reversing this process.
+    example: >-
+      Household and coin cells, lithium-ion batteries in smartphones and electric cars, starter
+      batteries, emergency power supplies, stationary grid storage
+    conditions: >-
+      Two electrode materials with different electrochemical potentials and an electrolyte
+      that conducts ions but not electrons.
+    limits: >-
+      Energy density is far below that of liquid fuels, and in the cold both power and usable
+      capacity drop.
+    sideEffects: >-
+      Charging and discharging generate heat, and damaged lithium cells can go into thermal
+      runaway and catch fire.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

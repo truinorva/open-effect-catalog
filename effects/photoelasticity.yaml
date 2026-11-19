@@ -1,0 +1,75 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: photoelasticity
+kind: effect
+home: measure|solid
+functions:
+  - measure|solid
+  - detect|solid
+parameters:
+  - measure|pressure
+  - change|polarisation
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Spannungsoptik
+  - https://en.wikipedia.org/wiki/Photoelasticity
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Spannungsoptik (Photoelastizität)
+    description: >-
+      Viele durchsichtige Werkstoffe wie Glas, Epoxidharz oder Polycarbonat werden unter mechanischer
+      Spannung doppelbrechend: Ihr Brechungsindex hängt dann von der Polarisationsrichtung
+      des Lichts ab, und zwar proportional zur Differenz der Hauptspannungen. Zwischen gekreuzten
+      Polarisatoren zeigt ein belastetes Bauteil deshalb farbige oder hell-dunkle Streifen,
+      deren Dichte die Spannungsverteilung sichtbar macht. Dieselbe Kopplung von Dehnung und
+      Brechungsindex, auch elastooptischer Effekt genannt, nutzen akustooptische Bauteile.
+    example: >-
+      Spannungsanalyse an Kunststoffmodellen von Bauteilen, Prüfung von Eigenspannungen in
+      Glas und Spritzgussteilen, Qualitätskontrolle von vorgespanntem Glas, akustooptische
+      Modulatoren
+    conditions: >-
+      Ein durchsichtiger, spannungsoptisch empfindlicher Werkstoff und polarisiertes Licht
+      mit Analysator.
+    limits: >-
+      Unmittelbar beobachten lassen sich nur durchsichtige Körper; undurchsichtige Bauteile
+      brauchen Modelle oder aufgeklebte spannungsoptische Schichten.
+    sideEffects: >-
+      Spannungsdoppelbrechung verfälscht in Linsen, Displays und Glasfasern Polarisation und
+      Abbildung.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Photoelasticity
+    description: >-
+      Many transparent materials such as glass, epoxy or polycarbonate become birefringent
+      under mechanical stress: their refractive index then depends on the polarisation direction
+      of the light, in proportion to the difference of the principal stresses. Between crossed
+      polarisers a loaded part therefore shows coloured or light-and-dark fringes whose density
+      reveals the stress distribution. The same coupling of strain and refractive index, also
+      called the elasto-optic effect, is used in acousto-optic devices.
+    example: >-
+      Stress analysis on plastic models of components, checking residual stresses in glass
+      and injection mouldings, quality control of tempered glass, acousto-optic modulators
+    conditions: >-
+      A transparent, stress-sensitive material and polarised light with an analyser.
+    limits: >-
+      Only transparent bodies can be observed directly; opaque components require models or
+      bonded photoelastic coatings.
+    sideEffects: >-
+      Stress birefringence distorts polarisation and imaging in lenses, displays and optical
+      fibres.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

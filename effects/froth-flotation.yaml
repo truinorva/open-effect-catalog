@@ -1,0 +1,63 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: froth-flotation
+kind: application
+home: separate|particles
+functions:
+  - separate|particles
+  - concentrate|particles
+  - remove|liquid
+parameters:
+  - increase|concentration
+  - increase|purity
+uses:
+  - hydrophobicity
+domain:
+  id: Verfahrenstechnik
+  de: Verfahrenstechnik
+  en: Process engineering
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Flotation
+  - https://en.wikipedia.org/wiki/Froth_flotation
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Flotation (Schaumflotation)
+    description: >-
+      Fein gemahlene Feststoffe werden in Wasser aufgeschlämmt und mit Sammlerchemikalien
+      behandelt, die nur bestimmte Partikel wasserabweisend machen. Eingeblasene Luftblasen
+      haften an diesen hydrophoben Partikeln und tragen sie in einen Schaum an der Oberfläche,
+      der abgeschöpft wird, während die benetzbaren Partikel in der Trübe bleiben.
+    example: >-
+      Erzaufbereitung (Kupfer, Blei, Zink), Kohleaufbereitung, Deinking beim Altpapierrecycling
+    conditions: >-
+      Die Partikel müssen fein genug sein, damit Blasen sie tragen können, und sich in ihrer
+      Benetzbarkeit unterscheiden oder gezielt unterscheiden lassen.
+    limits: Sehr feine und sehr grobe Partikel werden schlecht ausgebracht.
+    sideEffects: Die Flotationsreagenzien gelangen in Abwasser und Rückstände.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Froth flotation
+    description: >-
+      Finely ground solids are slurried in water and treated with collector chemicals that
+      make only certain particles water-repellent. Air bubbles blown in attach to these hydrophobic
+      particles and carry them into a froth on the surface, which is skimmed off, while the
+      wettable particles stay in the slurry.
+    example: >-
+      Ore processing (copper, lead, zinc), coal preparation, de-inking in paper recycling
+    conditions: >-
+      Particles must be fine enough for bubbles to carry them and must differ in wettability
+      or be made to differ.
+    limits: Very fine and very coarse particles are recovered poorly.
+    sideEffects: The flotation reagents end up in wastewater and tailings.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

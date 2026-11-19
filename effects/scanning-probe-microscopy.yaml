@@ -1,0 +1,76 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: scanning-probe-microscopy
+kind: application
+home: measure|solid
+functions:
+  - measure|solid
+  - detect|solid
+parameters:
+  - measure|surface-finish
+  - measure|shape
+uses:
+  - piezoelectric-effect
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Rastersondenmikroskopie
+  - https://en.wikipedia.org/wiki/Scanning_probe_microscopy
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Rastersondenmikroskopie
+    description: >-
+      Eine sehr feine Spitze wird in geringem Abstand zeilenweise über eine Probenoberfläche
+      geführt, wobei piezoelektrische Stellglieder sie mit Genauigkeiten unter einem Nanometer
+      positionieren. Gemessen wird eine Wechselwirkung zwischen Spitze und Oberfläche, beim
+      Rastertunnelmikroskop der Tunnelstrom, beim Rasterkraftmikroskop die Kraft auf einen
+      Biegebalken; aus den Messwerten an jedem Punkt entsteht ein dreidimensionales Bild der
+      Oberfläche bis hin zu atomarer Auflösung.
+    example: >-
+      Rastertunnel- und Rasterkraftmikroskop, Rauheitsmessung an Halbleiterwafern und Festplattenoberflächen,
+      Abbildung von Biomolekülen in Flüssigkeit, Magnetkraftmikroskopie, Verschieben einzelner
+      Atome, Nanolithografie
+    conditions: >-
+      Eine schwingungsarme, thermisch stabile Umgebung; beim Rastertunnelmikroskop eine elektrisch
+      leitfähige Probe.
+    limits: >-
+      Der Bildausschnitt ist klein, typischerweise bis etwa 100 µm, die Messung ist langsam,
+      und die Form der Spitze verfälscht steile Strukturen.
+    sideEffects: >-
+      Die Spitze kann empfindliche Proben verformen oder beschädigen und nutzt sich dabei
+      selbst ab.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Scanning probe microscopy
+    description: >-
+      A very fine tip is scanned line by line over a sample surface at a small distance, positioned
+      with sub-nanometre precision by piezoelectric actuators. An interaction between tip
+      and surface is measured, the tunnelling current in a scanning tunnelling microscope
+      or the force on a cantilever in an atomic force microscope, and the values at each point
+      build a three-dimensional image of the surface, down to atomic resolution.
+    example: >-
+      Scanning tunnelling and atomic force microscopes, roughness measurement of semiconductor
+      wafers and hard disk surfaces, imaging biomolecules in liquid, magnetic force microscopy,
+      moving individual atoms, nanolithography
+    conditions: >-
+      A low-vibration, thermally stable environment; for the scanning tunnelling microscope,
+      an electrically conductive sample.
+    limits: >-
+      The field of view is small, typically up to about 100 µm, measurement is slow, and the
+      tip shape distorts steep structures.
+    sideEffects: >-
+      The tip can deform or damage delicate samples and wears itself in the process.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

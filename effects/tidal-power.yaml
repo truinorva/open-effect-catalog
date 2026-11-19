@@ -1,0 +1,64 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: tidal-power
+kind: application
+home: produce|field
+functions:
+  - produce|field
+  - hold|liquid
+parameters: []
+uses:
+  - tidal-force
+domain:
+  id: ''
+  de: ''
+  en: ''
+maturity: ''
+sources:
+  - https://de.wikipedia.org/wiki/Gezeitenkraftwerk
+  - https://en.wikipedia.org/wiki/Tidal_power
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Gezeitenkraftwerk
+    description: >-
+      Gezeitenkraftwerke nutzen den periodischen Wechsel von Wasserstand und Strömung, den
+      die Gezeiten verursachen. Ein Sperrwerk staut das Wasser in einer Bucht oder Flussmündung
+      und lässt es durch Turbinen zurückfließen, oder frei angeströmte Rotoren am Meeresgrund
+      nutzen die Gezeitenströmung ähnlich wie Windräder den Wind. Die Erzeugung schwankt,
+      lässt sich aber Jahre im Voraus berechnen.
+    example: >-
+      Gezeitenkraftwerk La Rance in Frankreich, Kraftwerk Sihwa in Südkorea, Strömungsturbinen
+      von MeyGen in Schottland
+    conditions: >-
+      Großer Tidenhub oder starke Gezeitenströmung, etwa in Buchten und Meerengen.
+    limits: >-
+      Nur an wenigen Küstenorten wirtschaftlich; beim Kentern der Tide ruht die Erzeugung.
+    sideEffects: >-
+      Sperrwerke verändern Strömung, Sedimenttransport und Lebensräume im Mündungsgebiet.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Tidal power
+    description: >-
+      Tidal power plants exploit the periodic changes in water level and currents caused by
+      the tides. A barrage holds water back in a bay or estuary and lets it flow back through
+      turbines, or free-standing rotors on the seabed use the tidal current much as wind turbines
+      use the wind. The output fluctuates but can be predicted years in advance.
+    example: >-
+      La Rance tidal power station in France, Sihwa plant in South Korea, MeyGen tidal stream
+      turbines in Scotland
+    conditions: >-
+      Large tidal range or strong tidal currents, for example in bays and straits.
+    limits: >-
+      Economical at only a few coastal sites; generation pauses at the turn of the tide.
+    sideEffects: Barrages alter currents, sediment transport and habitats in the estuary.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

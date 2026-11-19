@@ -1,0 +1,67 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: ion-exchange
+kind: effect
+home: remove|liquid
+functions:
+  - remove|liquid
+  - separate|liquid
+  - concentrate|liquid
+parameters:
+  - increase|purity
+  - decrease|concentration
+uses: []
+domain:
+  id: Chemie
+  de: Chemie
+  en: Chemistry
+maturity: verbreitet
+sources:
+  - https://de.wikipedia.org/wiki/Ionenaustauscher
+  - https://en.wikipedia.org/wiki/Ion_exchange
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Ionenaustausch
+    description: >-
+      Ionenaustauscher sind Harze oder Minerale wie Zeolithe mit fest gebundenen geladenen
+      Gruppen, an denen bewegliche Gegenionen sitzen. Strömt eine Lösung hindurch, werden
+      diese Gegenionen gegen Ionen aus der Lösung getauscht, die stärker gebunden werden;
+      mit einer konzentrierten Salz-, Säure- oder Laugenlösung lässt sich der Austauscher
+      anschließend wieder regenerieren.
+    example: >-
+      Wasserenthärtung im Haushalt und in Spülmaschinen, Vollentsalzung für Kesselspeisewasser
+      und Labor, Rückgewinnung von Metallen aus Abwässern, Ionenaustauschchromatografie von
+      Proteinen
+    conditions: Gelöste Ionen in einer wässrigen Lösung und regelmäßige Regeneration.
+    limits: >-
+      Die Kapazität ist begrenzt, und organische Stoffe, Öl oder Oxidationsmittel können das
+      Harz verblocken oder schädigen.
+    sideEffects: >-
+      Bei der Regeneration fällt salz-, säure- oder laugenhaltiges Abwasser an.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Ion exchange
+    description: >-
+      Ion exchangers are resins or minerals such as zeolites with fixed charged groups that
+      hold mobile counter-ions. When a solution flows through, these counter-ions are swapped
+      for ions from the solution that are bound more strongly; the exchanger can then be regenerated
+      with a concentrated salt, acid or alkali solution.
+    example: >-
+      Water softening at home and in dishwashers, demineralisation for boiler feed water and
+      laboratories, recovery of metals from wastewater, ion-exchange chromatography of proteins
+    conditions: Dissolved ions in an aqueous solution and regular regeneration.
+    limits: >-
+      Capacity is limited, and organic matter, oil or oxidising agents can foul or damage
+      the resin.
+    sideEffects: Regeneration produces wastewater containing salt, acid or alkali.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

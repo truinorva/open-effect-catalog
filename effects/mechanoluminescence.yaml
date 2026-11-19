@@ -1,0 +1,72 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: mechanoluminescence
+kind: effect
+home: produce|field
+functions:
+  - produce|field
+  - detect|solid
+  - measure|solid
+parameters:
+  - measure|pressure
+  - increase|brightness
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: nische
+sources:
+  - https://en.wikipedia.org/wiki/Mechanoluminescence
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Mechanolumineszenz
+    description: >-
+      Mechanolumineszenz ist die Lichtaussendung eines Festkörpers, die durch mechanische
+      Einwirkung wie Reiben, Zerbrechen, Zerkratzen oder elastische Verformung ausgelöst wird.
+      Beim Zerbrechen trennen sich an den neuen Bruchflächen Ladungen, deren Entladung Licht
+      erzeugt (Tribolumineszenz); in bestimmten dotierten Leuchtstoffen setzt schon elastische
+      Verformung gespeicherte Ladungsträger frei, die unter Lichtaussendung rekombinieren.
+      Die Helligkeit kann dabei der mechanischen Spannung folgen.
+    example: >-
+      Aufblitzen beim Zerbeißen von Wintergrün-Bonbons im Dunkeln, Leuchten beim Abziehen
+      von Klebeband, Leuchtbeschichtungen zur Sichtbarmachung von Spannungen und Rissen in
+      Bauteilen
+    conditions: >-
+      Geeignete Kristalle oder Leuchtstoffe wie Zucker, Quarz oder mit Europium dotiertes
+      Strontiumaluminat und eine ausreichend starke mechanische Beanspruchung.
+    limits: >-
+      Das Licht ist meist schwach und nur im Dunkeln oder mit empfindlichen Kameras sichtbar;
+      für elastische Mechanolumineszenz muss der Leuchtstoff oft vorher mit Licht aufgeladen
+      werden.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Mechanoluminescence
+    description: >-
+      Mechanoluminescence is the emission of light by a solid triggered by mechanical action
+      such as rubbing, fracturing, scratching or elastic deformation. When a crystal fractures,
+      charges separate on the new fracture surfaces and their discharge produces light (triboluminescence);
+      in certain doped phosphors even elastic deformation releases trapped charge carriers,
+      which recombine and emit light. The brightness can follow the mechanical stress.
+    example: >-
+      Flashes when crunching wintergreen sweets in the dark, glow when peeling adhesive tape,
+      luminescent coatings for visualising stresses and cracks in components
+    conditions: >-
+      Suitable crystals or phosphors, such as sugar, quartz or europium-doped strontium aluminate,
+      and sufficiently strong mechanical stress.
+    limits: >-
+      The light is usually faint and visible only in the dark or with sensitive cameras; for
+      elastic mechanoluminescence the phosphor often has to be charged with light beforehand.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

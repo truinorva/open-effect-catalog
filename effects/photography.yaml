@@ -1,0 +1,71 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: photography
+kind: application
+home: detect|solid
+functions:
+  - detect|solid
+  - measure|field
+parameters:
+  - measure|brightness
+  - measure|colour
+uses: []
+domain:
+  id: ''
+  de: ''
+  en: ''
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Fotografie
+  - https://en.wikipedia.org/wiki/Photography
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Fotografie
+    description: >-
+      In der Fotografie bildet ein Objektiv eine Szene auf eine lichtempfindliche Fläche ab,
+      die das Bild dauerhaft festhält. Im Film erzeugt das Licht in Silberhalogenidkristallen
+      winzige Silberkeime, ein latentes Bild, das chemisch entwickelt wird; ein Bildsensor
+      wandelt das Licht in jedem Bildpunkt in elektrische Ladung um, die ausgelesen und digital
+      gespeichert wird. Mit Belichtungszeit, Blende und Beleuchtung lassen sich auch sehr
+      schnelle, lichtschwache oder für das Auge unsichtbare Vorgänge festhalten.
+    example: >-
+      Dokumentation, Hochgeschwindigkeitsaufnahmen zur Bewegungsanalyse, Infrarot- und Röntgenaufnahmen,
+      Astrofotografie, Bildverarbeitung in der Qualitätskontrolle
+    conditions: >-
+      Ausreichend Licht oder eine lange Belichtungszeit und eine passende Optik.
+    limits: >-
+      Bewegungsunschärfe, begrenzter Dynamikumfang und die Auflösung von Sensor oder Film
+      begrenzen, was ein Bild wiedergeben kann.
+    sideEffects: >-
+      Starke Blitze oder Beleuchtung können lichtempfindliche Objekte wie alte Dokumente und
+      Gemälde schädigen.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Photography
+    description: >-
+      In photography a lens forms an image of a scene on a light-sensitive surface that records
+      it permanently. In film, light creates tiny silver specks in silver halide crystals,
+      a latent image that is developed chemically; an image sensor converts the light at each
+      pixel into electric charge that is read out and stored digitally. With exposure time,
+      aperture and lighting, even very fast, faint or invisible processes can be captured.
+    example: >-
+      Documentation, high-speed imaging for motion analysis, infrared and X-ray imaging, astrophotography,
+      machine vision in quality control
+    conditions: Sufficient light or a long exposure time and suitable optics.
+    limits: >-
+      Motion blur, limited dynamic range and the resolution of sensor or film limit what an
+      image can reproduce.
+    sideEffects: >-
+      Strong flashes or lighting can damage light-sensitive objects such as old documents
+      and paintings.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

@@ -1,0 +1,66 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: memory-foam
+kind: application
+home: stop|solid
+functions:
+  - stop|solid
+  - hold|solid
+parameters:
+  - decrease|pressure
+uses: []
+domain:
+  id: Materialwissenschaft
+  de: Materialwissenschaft
+  en: Materials science
+maturity: reife
+sources:
+  - https://en.wikipedia.org/wiki/Memory_foam
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Viskoelastischer Schaum (Memory-Schaum)
+    description: >-
+      Memory-Schaum ist ein viskoelastischer Polyurethanschaum, der unter Last langsam nachgibt,
+      sich der Form des aufliegenden Körpers anpasst und nach Entlastung erst verzögert in
+      seine Ausgangsform zurückkehrt. Ursache ist ein Polymer, dessen Glasübergang nahe der
+      Raum- und Körpertemperatur liegt, so dass es stark dämpft und in der Wärme weicher wird.
+      Weil die Last auf eine größere Fläche verteilt wird, sinken Druckspitzen, und Stöße
+      werden abgefedert.
+    example: >-
+      Matratzen und Kopfkissen, Sitz- und Rollstuhlkissen zur Dekubitusvorbeugung, Schutzpolster
+      in Helmen, Ohrstöpsel aus Schaumstoff
+    conditions: >-
+      Gebrauch nahe der Raum- oder Körpertemperatur, bei der der Schaum seine typische langsame
+      Rückstellung zeigt.
+    limits: In der Kälte wird der Schaum hart und träge, in der Wärme sehr weich.
+    sideEffects: >-
+      Der Schaum speichert Körperwärme und kann sich warm anfühlen; neue Produkte geben anfangs
+      Gerüche ab.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Memory foam
+    description: >-
+      Memory foam is a viscoelastic polyurethane foam that gives way slowly under load, conforms
+      to the shape of the body resting on it and returns to its original shape only with a
+      delay once unloaded. The cause is a polymer whose glass transition lies close to room
+      and body temperature, so it damps strongly and softens with warmth. Because the load
+      is spread over a larger area, pressure peaks fall and impacts are cushioned.
+    example: >-
+      Mattresses and pillows, seat and wheelchair cushions for pressure ulcer prevention,
+      protective padding in helmets, foam earplugs
+    conditions: >-
+      Use near room or body temperature, where the foam shows its typical slow recovery.
+    limits: In the cold the foam becomes hard and sluggish, in the heat very soft.
+    sideEffects: >-
+      The foam retains body heat and can feel warm; new products initially give off odours.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

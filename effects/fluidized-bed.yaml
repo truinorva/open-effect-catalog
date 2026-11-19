@@ -1,0 +1,70 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: fluidized-bed
+kind: application
+home: heat|particles
+functions:
+  - heat|particles
+  - remove|particles
+  - join|particles
+  - mix|particles
+parameters:
+  - stabilise|temperature
+  - increase|homogeneity
+uses:
+  - fluidisation
+domain:
+  id: Verfahrenstechnik
+  de: Verfahrenstechnik
+  en: Process engineering
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Wirbelschicht
+  - https://en.wikipedia.org/wiki/Fluidized_bed
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Wirbelschicht (Wirbelschichtverfahren)
+    description: >-
+      In einem Wirbelschichtapparat hält ein Gas, das von unten durch einen Anströmboden zugeführt
+      wird, eine Partikelschüttung im fluidisierten Zustand. Die ständig bewegten Teilchen
+      bieten eine große Oberfläche und kommen intensiv mit dem Gas in Kontakt, so dass Wärme-
+      und Stoffaustausch sehr schnell ablaufen und die Temperatur im ganzen Bett nahezu gleich
+      ist; das nutzt man zum Trocknen, Granulieren, Beschichten, Verbrennen und für katalytische
+      Reaktionen.
+    example: >-
+      Wirbelschichttrockner und -granulatoren in der Pharma- und Lebensmittelindustrie, Wirbelschichtfeuerung,
+      katalytisches Cracken in Raffinerien, Röstöfen
+    conditions: >-
+      Fluidisierbare Partikel geeigneter Größe und Dichte; gleichmäßige Gasverteilung.
+    limits: >-
+      Teilchen sehr unterschiedlicher Größe oder Dichte können sich entmischen.
+    sideEffects: >-
+      Partikelabrieb und Staubaustrag erfordern Abscheider wie Zyklone oder Filter.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Fluidized bed
+    description: >-
+      In a fluidized bed unit, gas supplied from below through a distributor plate keeps a
+      bed of particles in a fluidized state. The constantly moving particles offer a large
+      surface area and come into intensive contact with the gas, so heat and mass transfer
+      are very fast and the temperature is nearly uniform throughout the bed; this is used
+      for drying, granulating, coating, combustion and catalytic reactions.
+    example: >-
+      Fluid bed dryers and granulators in the pharmaceutical and food industries, fluidized
+      bed combustion, fluid catalytic cracking in refineries, roasting furnaces
+    conditions: >-
+      Fluidizable particles of suitable size and density; even gas distribution.
+    limits: Particles differing widely in size or density can segregate.
+    sideEffects: >-
+      Particle attrition and dust carry-over require separators such as cyclones or filters.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

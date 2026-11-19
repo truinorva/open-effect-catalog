@@ -1,0 +1,72 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: photoconductivity
+kind: effect
+home: detect|field
+functions:
+  - detect|field
+  - measure|field
+parameters:
+  - increase|conductivity
+  - measure|brightness
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: lehrbuch
+sources:
+  - https://en.wikipedia.org/wiki/Photoconductivity
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Photoleitung (Photoleitfähigkeit)
+    description: >-
+      Absorbiert ein Halbleiter oder Isolator Licht mit ausreichender Photonenenergie, hebt
+      es Elektronen in das Leitungsband und erzeugt bewegliche Ladungsträger. Dadurch steigt
+      seine elektrische Leitfähigkeit, solange er beleuchtet wird; im Dunkeln rekombinieren
+      die Ladungsträger, und der Widerstand steigt wieder. Dieser innere Photoeffekt ermöglicht
+      lichtabhängige Widerstände und viele Lichtsensoren.
+    example: >-
+      Fotowiderstände (LDR) in Dämmerungsschaltern, Bildtrommeln in Laserdruckern und Kopierern,
+      Infrarotdetektoren aus Bleisulfid, Belichtungsmesser
+    conditions: >-
+      Eine Photonenenergie mindestens so groß wie die Bandlücke des Materials oder wie die
+      Anregungsenergie von Störstellen.
+    limits: >-
+      Viele Photoleiter reagieren träge, weil Ladungsträger in Haftstellen verweilen, und
+      ihr Dunkelwiderstand hängt stark von der Temperatur ab.
+    sideEffects: >-
+      Cadmiumsulfid-Fotowiderstände enthalten giftiges Cadmium; ihre Verwendung ist in der
+      EU durch die RoHS-Richtlinie eingeschränkt.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Photoconductivity
+    description: >-
+      When a semiconductor or insulator absorbs light with sufficient photon energy, electrons
+      are raised into the conduction band and mobile charge carriers are created. Its electrical
+      conductivity therefore rises for as long as it is illuminated; in the dark the carriers
+      recombine and the resistance rises again. This internal photoeffect makes light-dependent
+      resistors and many light sensors possible.
+    example: >-
+      Photoresistors (LDRs) in twilight switches, photoreceptor drums in laser printers and
+      copiers, lead sulphide infrared detectors, light meters
+    conditions: >-
+      A photon energy at least as large as the band gap of the material or the excitation
+      energy of impurity levels.
+    limits: >-
+      Many photoconductors respond slowly because carriers linger in traps, and their dark
+      resistance depends strongly on temperature.
+    sideEffects: >-
+      Cadmium sulphide photoresistors contain toxic cadmium; their use is restricted in the
+      EU by the RoHS directive.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

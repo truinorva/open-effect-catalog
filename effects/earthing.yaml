@@ -1,0 +1,73 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: earthing
+kind: application
+home: move|field
+functions:
+  - move|field
+parameters:
+  - decrease|charge
+  - stabilise|charge
+uses:
+  - electrical-conduction
+domain:
+  id: ''
+  de: ''
+  en: ''
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Erder_(Elektroinstallation)
+  - https://en.wikipedia.org/wiki/Ground_(electricity)
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Erdung
+    description: >-
+      Bei der Erdung werden leitfähige Teile von Anlagen, Geräten oder Gebäuden über Leiter
+      und in den Boden eingebrachte Erder niederohmig mit dem Erdreich verbunden. Fehlerströme,
+      Blitzströme und elektrostatische Ladungen fließen so in den Boden ab statt über Menschen
+      oder empfindliche Bauteile, und berührbare Teile bleiben auf ungefährlichem Potential.
+    example: >-
+      Schutzleiter in der Hausinstallation, Fundamenterder, Blitzschutzanlagen, Erdung von
+      Tankwagen beim Befüllen, Antistatik-Armbänder in der Elektronikfertigung
+    conditions: >-
+      Ein niedriger Erdungswiderstand, der von Bodenfeuchte, Bodenart und Größe des Erders
+      abhängt.
+    limits: >-
+      In trockenem, steinigem oder gefrorenem Boden ist der Erdungswiderstand hoch, und bei
+      großen Strömen entstehen um den Erder trotzdem gefährliche Schrittspannungen.
+    sideEffects: >-
+      Erdschleifen können in Mess- und Audioanlagen Brummstörungen verursachen, und Erder
+      korrodieren im Boden.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Earthing (grounding)
+    description: >-
+      In earthing, conductive parts of installations, devices or buildings are connected with
+      low resistance to the ground via conductors and earth electrodes buried in the soil.
+      Fault currents, lightning currents and electrostatic charges thus flow into the ground
+      rather than through people or sensitive components, and touchable parts stay at a safe
+      potential.
+    example: >-
+      Protective earth conductors in building wiring, foundation earth electrodes, lightning
+      protection systems, earthing of tanker trucks during filling, antistatic wrist straps
+      in electronics manufacturing
+    conditions: >-
+      A low earth resistance, which depends on soil moisture, soil type and size of the earth
+      electrode.
+    limits: >-
+      In dry, rocky or frozen soil the earth resistance is high, and with large currents dangerous
+      step voltages still arise around the electrode.
+    sideEffects: >-
+      Ground loops can cause hum in measurement and audio systems, and earth electrodes corrode
+      in the soil.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

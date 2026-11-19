@@ -1,0 +1,69 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: lotus-effect
+kind: effect
+home: remove|solid
+functions:
+  - remove|solid
+  - move|liquid
+parameters:
+  - increase|purity
+uses: []
+domain:
+  id: Materialwissenschaft
+  de: Materialwissenschaft
+  en: Materials science
+maturity: verbreitet
+sources:
+  - https://de.wikipedia.org/wiki/Lotoseffekt
+  - https://en.wikipedia.org/wiki/Lotus_effect
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Lotoseffekt
+    description: >-
+      Auf stark wasserabweisenden Oberflächen mit einer Doppelstruktur aus Mikronoppen und
+      darauf sitzenden wachsartigen Nanostrukturen berührt ein Wassertropfen nur die Spitzen,
+      während darunter Luft eingeschlossen bleibt. Der Tropfen nimmt deshalb fast Kugelform
+      an, mit Kontaktwinkeln über 150 Grad, und rollt schon bei geringer Neigung ab. Dabei
+      nimmt er Schmutzpartikel mit, die an der kleinen Kontaktfläche schlechter haften als
+      am Wasser, so dass sich die Oberfläche selbst reinigt.
+    example: >-
+      Blätter der Lotuspflanze und der Kapuzinerkresse, selbstreinigende Fassadenfarben, wasserabweisende
+      Textilausrüstungen, Antihaftbeschichtungen für Verpackungen wie Joghurtdeckel
+    conditions: >-
+      Eine hydrophobe Oberflächenchemie in Kombination mit einer feinen, mehrstufigen Rauheit;
+      die Reinigung erfordert abrollende Wassertropfen, etwa durch Regen.
+    limits: >-
+      Die feinen Strukturen sind mechanisch empfindlich und verlieren durch Abrieb oder Ölverschmutzung
+      ihre Wirkung; Öle und Tenside benetzen die Oberfläche trotzdem.
+    sideEffects: Die Rauheit kann Oberflächen matt und weniger durchsichtig machen.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Lotus effect
+    description: >-
+      On strongly water-repellent surfaces with a dual structure of micro-bumps topped by
+      waxy nanostructures, a water drop touches only the tips while air remains trapped underneath.
+      The drop therefore becomes almost spherical, with contact angles above 150 degrees,
+      and rolls off at the slightest tilt. In doing so it picks up dirt particles, which adhere
+      less to the small contact area than to the water, so the surface cleans itself.
+    example: >-
+      Leaves of the lotus plant and nasturtium, self-cleaning facade paints, water-repellent
+      textile finishes, non-stick coatings for packaging such as yoghurt lids
+    conditions: >-
+      Hydrophobic surface chemistry combined with a fine, multi-level roughness; cleaning
+      requires rolling water drops, for instance from rain.
+    limits: >-
+      The fine structures are mechanically delicate and lose their effect through abrasion
+      or oil contamination; oils and surfactants still wet the surface.
+    sideEffects: The roughness can make surfaces matt and less transparent.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

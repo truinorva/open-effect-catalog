@@ -1,0 +1,68 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: chemiluminescence
+kind: effect
+home: produce|field
+functions:
+  - produce|field
+  - detect|liquid
+  - measure|liquid
+  - measure|gas
+parameters:
+  - increase|brightness
+  - measure|concentration
+uses: []
+domain:
+  id: Chemie
+  de: Chemie
+  en: Chemistry
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Chemilumineszenz
+  - https://en.wikipedia.org/wiki/Chemiluminescence
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Chemilumineszenz
+    description: >-
+      Bei manchen chemischen Reaktionen entsteht ein Produkt in einem elektronisch angeregten
+      Zustand, das seine überschüssige Energie als Licht statt als Wärme abgibt. Die Lichtausbeute
+      hängt von der Konzentration der Reaktionspartner ab, sodass sich aus der Helligkeit
+      sehr empfindlich auf Stoffmengen schließen lässt.
+    example: >-
+      Knicklichter, Luminol-Nachweis von Blutspuren, Chemilumineszenz-Immunoassays, Stickoxid-Analysatoren
+      mit Ozon, Detektion beim Western Blot
+    conditions: >-
+      Eine Reaktion, die genug Energie freisetzt, um ein Molekül elektronisch anzuregen, und
+      ein Produkt, das diese Energie als Licht abgibt.
+    limits: >-
+      Das Leuchten hält nur so lange an, wie die Reaktion läuft, und lässt mit dem Verbrauch
+      der Reaktionspartner nach.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Chemiluminescence
+    description: >-
+      In some chemical reactions a product is formed in an electronically excited state and
+      releases its excess energy as light instead of heat. The light output depends on the
+      concentration of the reactants, so the brightness allows very sensitive conclusions
+      about amounts of substance.
+    example: >-
+      Glow sticks, luminol test for blood traces, chemiluminescence immunoassays, nitrogen
+      oxide analysers using ozone, Western blot detection
+    conditions: >-
+      A reaction that releases enough energy to excite a molecule electronically, and a product
+      that gives off this energy as light.
+    limits: >-
+      The glow lasts only as long as the reaction runs and fades as the reactants are consumed.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

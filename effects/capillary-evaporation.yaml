@@ -1,0 +1,73 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: capillary-evaporation
+kind: effect
+home: change-phase|liquid
+functions:
+  - change-phase|liquid
+  - cool|solid
+  - move|liquid
+parameters:
+  - decrease|temperature
+  - increase|humidity
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: verbreitet
+sources:
+  - https://de.wikipedia.org/wiki/Kapillareffekt
+  - https://en.wikipedia.org/wiki/Capillary_action
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Kapillarverdampfung
+    description: >-
+      Eine Flüssigkeit verdampft aus den Poren oder Kapillaren eines Festkörpers, während
+      Kapillarkräfte ständig neue Flüssigkeit zur Verdampfungsfront nachziehen. So bleibt
+      die verdampfende Oberfläche auch ohne Pumpe benetzt, und Wärme kann über große Flächen
+      gleichmäßig abgeführt werden. In sehr feinen Poren senkt der gekrümmte Meniskus zudem
+      den Dampfdruck, sodass sie sich erst bei geringerer Umgebungsfeuchte entleeren.
+    example: >-
+      Verdampferzone von Wärmerohren und kapillargepumpten Kreisläufen, Dochtbefeuchter, Transpiration
+      der Blätter, Petroleumlampe, Trocknung poröser Stoffe, Tonkrug-Kühlung
+    conditions: >-
+      Ein benetzbares, offenporiges Material mit Verbindung zu einem Flüssigkeitsvorrat und
+      eine Wärmezufuhr.
+    limits: >-
+      Ist der Wärmestrom zu groß, können die Kapillarkräfte nicht genug Flüssigkeit nachliefern,
+      und die Poren trocknen aus (Kapillargrenze).
+    sideEffects: >-
+      Gelöste Stoffe reichern sich an der Verdampfungsfront an und können die Poren mit Salzen
+      oder Kalk zusetzen.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Capillary evaporation
+    description: >-
+      A liquid evaporates from the pores or capillaries of a solid while capillary forces
+      continuously draw fresh liquid to the evaporation front. The evaporating surface thus
+      stays wet without a pump, and heat can be removed evenly over large areas. In very fine
+      pores the curved meniscus also lowers the vapour pressure, so they only empty at lower
+      ambient humidity.
+    example: >-
+      Evaporator zone of heat pipes and capillary pumped loops, wick humidifiers, transpiration
+      of leaves, oil lamps, drying of porous materials, clay pot cooling
+    conditions: >-
+      A wettable, open-pored material connected to a liquid supply, and a heat input.
+    limits: >-
+      If the heat flux is too high, capillary forces cannot supply enough liquid and the pores
+      dry out (capillary limit).
+    sideEffects: >-
+      Dissolved substances accumulate at the evaporation front and can clog the pores with
+      salts or lime.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

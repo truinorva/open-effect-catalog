@@ -1,0 +1,66 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: stokes-drift
+kind: effect
+home: move|liquid
+functions:
+  - move|liquid
+  - move|solid
+  - move|particles
+parameters: []
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: lehrbuch
+sources:
+  - https://en.wikipedia.org/wiki/Stokes_drift
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Stokes-Drift
+    description: >-
+      In einer Oberflächenwelle bewegen sich die Wasserteilchen auf nahezu kreisförmigen Bahnen,
+      schließen diese aber nicht ganz. Am oberen Punkt ihrer Bahn, unter dem Wellenberg, bewegen
+      sie sich vorwärts und befinden sich dabei höher, wo die Wellenbewegung stärker ist;
+      am unteren Punkt, unter dem Wellental, bewegen sie sich rückwärts, aber tiefer und langsamer.
+      Über viele Perioden ergibt sich so eine langsame Nettoverschiebung in Laufrichtung der
+      Wellen, obwohl die zeitlich gemittelte Strömung an einem festen Ort null sein kann.
+    example: >-
+      Verdriften von Treibgut, Plastikmüll und Ölteppichen, Transport von Larven und Plankton,
+      Wellenanteil an der Drift von Meereis
+    conditions: >-
+      Periodische Wellen endlicher Amplitude in einer Flüssigkeit oder einem Gas.
+    limits: >-
+      Die Drift ist klein gegenüber der Teilchengeschwindigkeit in der Welle und nimmt mit
+      der Tiefe rasch ab.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Stokes drift
+    description: >-
+      In a surface wave, water particles move on nearly circular orbits but do not quite close
+      them. At the top of the orbit, under the crest, they move forward while sitting higher,
+      where the wave motion is stronger; at the bottom, under the trough, they move backward
+      but deeper and more slowly. Over many periods this produces a slow net displacement
+      in the direction of wave travel, even though the time-averaged flow at a fixed point
+      can be zero.
+    example: >-
+      Drift of flotsam, plastic litter and oil slicks, transport of larvae and plankton, the
+      wave contribution to sea-ice drift
+    conditions: Periodic waves of finite amplitude in a liquid or gas.
+    limits: >-
+      The drift is small compared with the particle velocity in the wave and decreases rapidly
+      with depth.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

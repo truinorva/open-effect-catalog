@@ -1,0 +1,71 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: magnetic-amplifier
+kind: application
+home: stabilise|field
+functions:
+  - stabilise|field
+  - measure|field
+parameters: []
+uses:
+  - magnetic-saturation
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: niedergang
+sources:
+  - https://de.wikipedia.org/wiki/Transduktor_(Elektrotechnik)
+  - https://en.wikipedia.org/wiki/Magnetic_amplifier
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Magnetverstärker (Transduktor)
+    description: >-
+      Ein Magnetverstärker steuert einen großen Wechselstrom mit einem kleinen Gleichstrom,
+      indem er einen Eisenkern gezielt in die magnetische Sättigung treibt. Der Steuerstrom
+      in einer Hilfswicklung verschiebt den Arbeitspunkt des Kerns; je stärker der Kern gesättigt
+      ist, desto geringer wird die Induktivität der Lastwicklung und desto mehr Strom lässt
+      sie durch. So entsteht ein robuster Verstärker oder Steller ohne bewegte Teile.
+    example: >-
+      Historische Bühnenlichtsteuerungen, Regelung von Generatoren und Schweißstromquellen,
+      Nachregler in Schaltnetzteilen, Gleichstromwandler zur Messung großer Gleichströme
+    conditions: >-
+      Ein Kern aus weichmagnetischem Werkstoff mit möglichst rechteckiger Magnetisierungskennlinie
+      und eine Wechselspannungsversorgung.
+    limits: >-
+      Die Ansprechzeit ist an die Periodendauer der Versorgungsspannung gebunden und daher
+      deutlich länger als bei Halbleiterschaltungen.
+    sideEffects: >-
+      Die Kerne sind groß und schwer, und das Ummagnetisieren verursacht Verluste und Brummen.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Magnetic amplifier (transductor)
+    description: >-
+      A magnetic amplifier controls a large alternating current with a small direct current
+      by deliberately driving an iron core into magnetic saturation. The control current in
+      an auxiliary winding shifts the operating point of the core; the more saturated the
+      core, the lower the inductance of the load winding and the more current it lets through.
+      The result is a robust amplifier or power controller with no moving parts.
+    example: >-
+      Historical stage lighting control, control of generators and welding power sources,
+      post-regulators in switched-mode power supplies, transductors for measuring large direct
+      currents
+    conditions: >-
+      A core of soft magnetic material with as rectangular a magnetisation curve as possible,
+      and an AC supply.
+    limits: >-
+      The response time is tied to the period of the supply voltage and is therefore much
+      longer than in semiconductor circuits.
+    sideEffects: >-
+      The cores are large and heavy, and remagnetisation causes losses and hum.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

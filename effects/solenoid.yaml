@@ -1,0 +1,70 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: solenoid
+kind: application
+home: produce|field
+functions:
+  - produce|field
+  - move|solid
+parameters: []
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Zylinderspule
+  - https://en.wikipedia.org/wiki/Solenoid
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Zylinderspule (Solenoid)
+    description: >-
+      Eine Zylinderspule besteht aus einem schraubenförmig gewickelten Draht; fließt Strom
+      hindurch, entsteht im Inneren ein nahezu homogenes Magnetfeld parallel zur Achse, dessen
+      Stärke mit Windungsdichte und Stromstärke wächst. Ein Eisenkern verstärkt das Feld,
+      und ein beweglicher Anker aus weichmagnetischem Werkstoff wird in die Spule hineingezogen;
+      so wird aus elektrischem Strom eine geradlinige Stellbewegung.
+    example: >-
+      Magnetventile, Hubmagnete in Türschlössern und Verriegelungen, Einrückrelais von Anlassern,
+      Spulen für homogene Magnetfelder in Labor und Kernspintomographie
+    conditions: >-
+      Elektrischer Strom durch die Wicklung; für Stellantriebe ein Anker aus weichmagnetischem
+      Werkstoff.
+    limits: >-
+      Die Zugkraft eines Hubmagneten fällt mit wachsendem Luftspalt stark ab, so dass nur
+      kurze Hübe möglich sind.
+    sideEffects: >-
+      Die Wicklung erwärmt sich durch ihren ohmschen Widerstand; beim Abschalten entsteht
+      eine Induktionsspannungsspitze, die Schaltelemente gefährden kann.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Solenoid
+    description: >-
+      A solenoid is a wire wound in a helix; when current flows through it, a nearly uniform
+      magnetic field forms inside, parallel to the axis, whose strength grows with the turn
+      density and the current. An iron core strengthens the field, and a movable plunger of
+      soft-magnetic material is pulled into the coil; electric current is thus turned into
+      a linear actuating motion.
+    example: >-
+      Solenoid valves, lifting magnets in door locks and latches, starter motor solenoids,
+      coils for uniform magnetic fields in laboratories and MRI scanners
+    conditions: >-
+      Electric current through the winding; for actuators, a plunger of soft-magnetic material.
+    limits: >-
+      The pull of a solenoid actuator falls sharply as the air gap widens, so only short strokes
+      are possible.
+    sideEffects: >-
+      The winding heats up through its resistance; switching off produces an induced voltage
+      spike that can damage switching components.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

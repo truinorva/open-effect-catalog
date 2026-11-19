@@ -1,0 +1,63 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: tessellation
+kind: effect
+home: disassemble|solid
+functions:
+  - disassemble|solid
+  - stabilise|solid
+parameters: []
+uses: []
+domain:
+  id: Geometrie
+  de: Geometrie
+  en: Geometry
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Parkettierung
+  - https://en.wikipedia.org/wiki/Tessellation
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Parkettierung
+    description: >-
+      Eine Parkettierung bedeckt eine Fläche lückenlos und ohne Überlappung mit Kacheln einer
+      oder weniger Formen. Mit einer einzigen Sorte regelmäßiger Vielecke gelingt das in der
+      Ebene nur mit gleichseitigen Dreiecken, Quadraten und Sechsecken, mit unregelmäßigen
+      Formen gibt es unzählige Möglichkeiten. Technisch heißt das: Gleiche Teile lassen sich
+      ohne Verschnitt aus Platten schneiden, und Flächen lassen sich mit Zellen gleicher Form
+      gleichmäßig ausfüllen.
+    example: >-
+      Verschnittarmes Stanzen und Zuschneiden von Blech, Stoff und Leder, Wabenkerne in Leichtbauplatten,
+      Pflaster und Fliesen, segmentierte Teleskopspiegel aus Sechseckelementen
+    conditions: >-
+      Kachelformen, deren Winkel und Kanten an jedem Eckpunkt lückenlos zusammenpassen.
+    limits: ''
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Tessellation
+    description: >-
+      A tessellation covers a surface without gaps or overlaps using tiles of one or a few
+      shapes. With a single kind of regular polygon this works in the plane only with equilateral
+      triangles, squares and hexagons; with irregular shapes there are countless possibilities.
+      In engineering terms, identical parts can be cut from sheets without waste, and areas
+      can be filled evenly with cells of the same shape.
+    example: >-
+      Low-waste punching and cutting of sheet metal, fabric and leather, honeycomb cores in
+      lightweight panels, paving and tiles, segmented telescope mirrors made of hexagonal
+      elements
+    conditions: >-
+      Tile shapes whose angles and edges fit together without gaps at every vertex.
+    limits: ''
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

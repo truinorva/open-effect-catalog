@@ -1,0 +1,68 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: capillary-pressure
+kind: effect
+home: hold|liquid
+functions:
+  - hold|liquid
+  - compress|particles
+  - measure|solid
+parameters:
+  - increase|pressure
+  - measure|porosity
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: lehrbuch
+sources:
+  - https://en.wikipedia.org/wiki/Capillary_pressure
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Kapillardruck
+    description: >-
+      An der gekrümmten Grenzfläche zweier nicht mischbarer Fluide in einer Pore herrscht
+      ein Druckunterschied, der Kapillardruck. Er ist umso größer, je enger die Pore und je
+      höher die Grenzflächenspannung ist, und hängt vom Benetzungswinkel ab (Young-Laplace-Gleichung).
+      Eine Flüssigkeit, die die Pore benetzt, wird von ihm hineingezogen und festgehalten;
+      eine nicht benetzende dringt erst ein, wenn ein äußerer Druck ihn überwindet.
+    example: >-
+      Quecksilberporosimetrie, Blasendrucktest (Bubble-Point-Test) von Filtermembranen, Erdöllagerstätten
+      und Grundwasserleiter, Schrumpfung und Rissbildung beim Trocknen von Gelen und Keramik,
+      Flüssigphasensintern
+    conditions: >-
+      Zwei nicht mischbare Fluide (z. B. Wasser und Luft oder Öl) in engen Poren oder Spalten.
+    limits: ''
+    sideEffects: >-
+      Beim Trocknen poröser Körper erzeugt der Kapillardruck hohe Spannungen, die feine Strukturen
+      zusammenziehen oder reißen lassen.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Capillary pressure
+    description: >-
+      Across the curved interface between two immiscible fluids in a pore there is a pressure
+      difference, the capillary pressure. It is the greater, the narrower the pore and the
+      higher the interfacial tension, and it depends on the wetting angle (Young-Laplace equation).
+      A liquid that wets the pore is pulled in and held by it; a non-wetting one only enters
+      once an external pressure overcomes it.
+    example: >-
+      Mercury intrusion porosimetry, bubble point test of filter membranes, oil reservoirs
+      and aquifers, shrinkage and cracking when drying gels and ceramics, liquid-phase sintering
+    conditions: >-
+      Two immiscible fluids (e.g. water and air, or oil) in narrow pores or gaps.
+    limits: ''
+    sideEffects: >-
+      When porous bodies dry, capillary pressure creates high stresses that pull fine structures
+      together or crack them.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

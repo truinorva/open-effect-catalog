@@ -1,0 +1,64 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: voigt-effect
+kind: effect
+home: orient|field
+functions:
+  - orient|field
+  - measure|field
+  - detect|solid
+parameters:
+  - change|polarisation
+  - measure|magnetism
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: nische
+sources:
+  - https://de.wikipedia.org/wiki/Voigt-Effekt
+  - https://en.wikipedia.org/wiki/Voigt_effect
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Voigt-Effekt
+    description: >-
+      Ein Magnetfeld quer zur Ausbreitungsrichtung des Lichts macht ein Medium doppelbrechend:
+      Licht, das parallel und senkrecht zum Feld polarisiert ist, läuft unterschiedlich schnell.
+      Linear polarisiertes Licht wird dadurch elliptisch, und die Stärke des Effekts wächst
+      mit dem Quadrat des Feldes bzw. der Magnetisierung. Anders als beim Faraday-Effekt steht
+      das Feld also senkrecht zum Lichtstrahl.
+    example: >-
+      Abbildung magnetischer Domänen in Schichten mit Magnetisierung in der Ebene, Untersuchung
+      von Atomdämpfen, magnetooptische Messungen an Halbleitern
+    conditions: Magnetfeld senkrecht zum Lichtweg; polarisiertes Licht.
+    limits: >-
+      Der Effekt ist meist sehr klein und wird erst nahe von Absorptionslinien stärker.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Voigt effect
+    description: >-
+      A magnetic field perpendicular to the direction of light propagation makes a medium
+      birefringent: light polarised parallel and perpendicular to the field travels at different
+      speeds. Linearly polarised light thus becomes elliptical, and the strength of the effect
+      grows with the square of the field or magnetisation. Unlike in the Faraday effect, the
+      field is therefore perpendicular to the light beam.
+    example: >-
+      Imaging magnetic domains in films magnetised in-plane, studies of atomic vapours, magneto-optical
+      measurements on semiconductors
+    conditions: Magnetic field perpendicular to the light path; polarised light.
+    limits: >-
+      The effect is usually very small and becomes stronger only near absorption lines.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

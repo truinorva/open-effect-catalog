@@ -1,0 +1,67 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: water-hammer
+kind: effect
+home: move|liquid
+functions:
+  - move|liquid
+parameters:
+  - increase|pressure
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Drucksto%C3%9F
+  - https://en.wikipedia.org/wiki/Hydraulic_shock
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Druckstoß (Wasserschlag)
+    description: >-
+      Wird eine strömende Flüssigkeitssäule in einer Rohrleitung plötzlich abgebremst, etwa
+      durch schnelles Schließen eines Ventils, wandelt sich ihre Bewegungsenergie in eine
+      Druckwelle um, die mit Schallgeschwindigkeit durch die Leitung läuft und an deren Enden
+      reflektiert wird. Der Druckanstieg ist proportional zur Geschwindigkeitsänderung, zur
+      Dichte und zur Wellengeschwindigkeit (Joukowsky-Gleichung) und kann ein Vielfaches des
+      Betriebsdrucks erreichen.
+    example: >-
+      Hydraulischer Widder zum Heben von Wasser ohne Fremdenergie, Schlaggeräusche in Wasserleitungen,
+      Druckstoßberechnung für Pipelines und Kraftwerksleitungen
+    conditions: >-
+      Schnelle Geschwindigkeitsänderung der Flüssigkeit, rascher als die Laufzeit der Druckwelle
+      hin und zurück durch die Leitung.
+    limits: ''
+    sideEffects: >-
+      Kann Rohre, Armaturen und Pumpen beschädigen; in den Unterdruckphasen tritt Kavitation
+      auf.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Water hammer (hydraulic shock)
+    description: >-
+      When a moving column of liquid in a pipe is suddenly stopped, for instance by a valve
+      closing quickly, its kinetic energy turns into a pressure wave that travels through
+      the pipe at the speed of sound and is reflected at its ends. The pressure rise is proportional
+      to the change in velocity, the density and the wave speed (Joukowsky equation) and can
+      reach several times the operating pressure.
+    example: >-
+      Hydraulic ram for lifting water without external power, banging noises in water pipes,
+      surge analysis for pipelines and penstocks
+    conditions: >-
+      Rapid change in fluid velocity, faster than the round-trip time of the pressure wave
+      through the pipe.
+    limits: ''
+    sideEffects: >-
+      Can damage pipes, fittings and pumps; cavitation occurs during the low-pressure phases.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

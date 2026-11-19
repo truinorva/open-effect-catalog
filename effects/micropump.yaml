@@ -1,0 +1,77 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: micropump
+kind: application
+home: move|liquid
+functions:
+  - move|liquid
+  - move|gas
+  - measure|liquid
+parameters:
+  - stabilise|speed
+  - increase|pressure
+uses:
+  - piezoelectric-effect
+  - electro-osmotic-flow
+  - electrohydrodynamic-ehd-flow
+  - magnetohydrodynamics-mhd
+domain:
+  id: ''
+  de: ''
+  en: ''
+maturity: wachstum
+sources:
+  - https://de.wikipedia.org/wiki/Mikropumpe
+  - https://en.wikipedia.org/wiki/Micropump
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Mikropumpe
+    description: >-
+      Mikropumpen fördern Flüssigkeiten oder Gase in Mengen von wenigen Nanolitern bis zu
+      einigen Millilitern pro Minute. Mechanische Bauformen bewegen eine Membran, meist mit
+      einem Piezoaktor, und richten den Fluss über passive Ventile oder Düsen-Diffusor-Strukturen
+      gleich. Nichtmechanische Bauformen treiben das Fluid ohne bewegte Teile an, etwa durch
+      Elektroosmose oder durch elektrohydrodynamische oder magnetohydrodynamische Kräfte.
+    example: >-
+      Implantierbare und tragbare Medikamentenpumpen, Lab-on-a-Chip-Systeme, Mikrodosierung
+      in der Analytik, Flüssigkeitskühlung von Mikroelektronik
+    conditions: >-
+      Saubere, partikelarme Medien, da enge Kanäle und Ventile leicht verstopfen; nichtmechanische
+      Prinzipien setzen zudem bestimmte elektrische oder magnetische Eigenschaften des Fluids
+      voraus.
+    limits: >-
+      Förderdruck und Durchfluss sind klein, und Gasblasen in der Pumpkammer können eine Membranpumpe
+      stark beeinträchtigen.
+    sideEffects: >-
+      Elektrokinetische Antriebe können das Fluid durch Elektrolyse und Joulesche Wärme verändern.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Micropump
+    description: >-
+      Micropumps deliver liquids or gases at rates from a few nanolitres to several millilitres
+      per minute. Mechanical designs move a diaphragm, usually with a piezo actuator, and
+      rectify the flow with passive valves or nozzle-diffuser elements. Non-mechanical designs
+      drive the fluid without moving parts, for example by electro-osmosis or by electrohydrodynamic
+      or magnetohydrodynamic forces.
+    example: >-
+      Implantable and wearable drug pumps, lab-on-a-chip systems, micro-dosing in analytics,
+      liquid cooling of microelectronics
+    conditions: >-
+      Clean, particle-free media, because narrow channels and valves clog easily; non-mechanical
+      principles also require particular electrical or magnetic properties of the fluid.
+    limits: >-
+      Delivery pressure and flow rate are small, and gas bubbles in the pump chamber can severely
+      impair a diaphragm pump.
+    sideEffects: >-
+      Electrokinetic drives can alter the fluid through electrolysis and Joule heating.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

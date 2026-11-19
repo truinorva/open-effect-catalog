@@ -1,0 +1,62 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: harts-inversor
+kind: application
+home: move|solid
+functions:
+  - move|solid
+parameters:
+  - change|position
+uses: []
+domain:
+  id: Geometrie
+  de: Geometrie
+  en: Geometry
+maturity: ''
+sources:
+  - https://de.wikipedia.org/wiki/Inversor_von_Hart
+  - https://en.wikipedia.org/wiki/Hart%27s_inversors
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Inversor von Hart
+    description: >-
+      Der Inversor von Hart ist ein ebenes Gelenkgetriebe, dessen Kern ein überschlagenes
+      Gelenkviereck (Antiparallelogramm) ist. Drei Punkte auf seinen Gliedern liegen stets
+      auf einer Geraden, und das Produkt ihrer Abstände bleibt konstant, sodass das Getriebe
+      eine geometrische Inversion ausführt: Wird ein Punkt auf einem Kreis durch den festen
+      Drehpunkt geführt, beschreibt ein anderer Punkt eine exakte Gerade.
+    example: >-
+      Exakte Geradführung mit weniger Gliedern als beim Inversor von Peaucellier, Lehrmodelle
+      der Getriebelehre
+    conditions: ''
+    limits: >-
+      Gelenkspiel und Fertigungstoleranzen verschlechtern die Geradheit; der Hub ist durch
+      die Gliedlängen begrenzt.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Hart's inversor
+    description: >-
+      Hart's inversor is a planar linkage built around a crossed four-bar linkage (antiparallelogram).
+      Three points on its links always lie on a straight line and the product of their distances
+      stays constant, so the linkage performs a geometric inversion: when one point is guided
+      on a circle through the fixed pivot, another point traces an exact straight line.
+    example: >-
+      Exact straight-line guidance with fewer links than the Peaucellier inversor, teaching
+      models in mechanism design
+    conditions: ''
+    limits: >-
+      Joint play and manufacturing tolerances impair straightness; the stroke is limited by
+      the link lengths.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

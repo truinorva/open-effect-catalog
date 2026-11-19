@@ -1,0 +1,71 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: pressure-sensitive-paint
+kind: application
+home: measure|gas
+functions:
+  - measure|gas
+  - measure|solid
+parameters:
+  - measure|pressure
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: wachstum
+sources:
+  - https://de.wikipedia.org/wiki/Drucksensitive_Farbe
+  - https://en.wikipedia.org/wiki/Pressure-sensitive_paint
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Drucksensitive Farbe
+    description: >-
+      Drucksensitive Farbe enthält lumineszierende Farbstoffmoleküle in einem sauerstoffdurchlässigen
+      Bindemittel. Unter Anregungslicht leuchten sie, doch Sauerstoffmoleküle löschen diese
+      Lumineszenz; weil der Sauerstoffpartialdruck mit dem Luftdruck steigt, leuchtet die
+      Farbe umso schwächer, je höher der Druck an der Oberfläche ist, und eine Kamera erfasst
+      so die flächige Druckverteilung.
+    example: >-
+      Druckverteilung auf Flugzeug- und Fahrzeugmodellen im Windkanal, Messungen an Turbomaschinenschaufeln,
+      optische Sauerstoffsensoren nach demselben Prinzip
+    conditions: >-
+      Ein sauerstoffhaltiges Gas wie Luft, eine Anregungslichtquelle, meist UV oder blau,
+      eine Kamera und eine Kalibrierung.
+    limits: >-
+      Die Lumineszenz hängt auch von der Temperatur ab, was korrigiert werden muss; bei kleinen
+      Druckunterschieden, etwa in langsamer Strömung, ist die Genauigkeit begrenzt.
+    sideEffects: >-
+      Die Farbschicht verändert die Oberflächenrauheit des Modells, und die Farbstoffe bleichen
+      unter Licht allmählich aus.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Pressure-sensitive paint
+    description: >-
+      Pressure-sensitive paint contains luminescent dye molecules in an oxygen-permeable binder.
+      Under excitation light they glow, but oxygen molecules quench this luminescence; since
+      the oxygen partial pressure rises with air pressure, the paint glows more weakly the
+      higher the pressure on the surface, so a camera captures the pressure distribution over
+      the whole area.
+    example: >-
+      Pressure distribution on aircraft and car models in wind tunnels, measurements on turbomachinery
+      blades, optical oxygen sensors based on the same principle
+    conditions: >-
+      An oxygen-containing gas such as air, an excitation light source, usually UV or blue,
+      a camera and calibration.
+    limits: >-
+      The luminescence also depends on temperature, which must be corrected; accuracy is limited
+      for small pressure differences, such as in low-speed flow.
+    sideEffects: >-
+      The paint layer changes the surface roughness of the model, and the dyes gradually photobleach.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

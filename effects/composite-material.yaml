@@ -1,0 +1,66 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: composite-material
+kind: application
+home: stabilise|solid
+functions:
+  - stabilise|solid
+parameters:
+  - increase|strength
+  - increase|rigidity
+  - decrease|mass
+uses: []
+domain:
+  id: Materialwissenschaft
+  de: Materialwissenschaft
+  en: Materials science
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Verbundwerkstoff
+  - https://en.wikipedia.org/wiki/Composite_material
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Verbundwerkstoff
+    description: >-
+      Ein Verbundwerkstoff besteht aus zwei oder mehr fest miteinander verbundenen Werkstoffen,
+      meist einer Matrix mit darin eingebetteten Fasern oder Teilchen. Die Verstärkung trägt
+      die Lasten, während die Matrix sie in Position hält, die Kräfte zwischen ihnen überträgt
+      und sie schützt; so entstehen Eigenschaftskombinationen, die keiner der Einzelstoffe
+      allein besitzt, etwa hohe Festigkeit und Steifigkeit bei geringem Gewicht.
+    example: >-
+      Kohlenstofffaser- und glasfaserverstärkte Kunststoffe in Flugzeugen, Windkraftanlagen
+      und Booten, Stahlbeton, Hartmetall, Sperrholz
+    conditions: Gute Haftung zwischen Verstärkung und Matrix.
+    limits: >-
+      Faserverbunde sind in Faserrichtung sehr fest, quer dazu deutlich schwächer; innere
+      Schäden wie Delaminationen sind von außen oft nicht zu sehen.
+    sideEffects: >-
+      Die Bestandteile lassen sich für das Recycling nur schwer voneinander trennen.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Composite material
+    description: >-
+      A composite consists of two or more firmly bonded materials, usually a matrix with fibres
+      or particles embedded in it. The reinforcement carries the loads, while the matrix holds
+      it in place, transfers forces between the reinforcing elements and protects them; this
+      produces combinations of properties that none of the constituents has alone, such as
+      high strength and stiffness at low weight.
+    example: >-
+      Carbon- and glass-fibre-reinforced plastics in aircraft, wind turbines and boats, reinforced
+      concrete, cemented carbide, plywood
+    conditions: Good adhesion between reinforcement and matrix.
+    limits: >-
+      Fibre composites are very strong along the fibres but much weaker across them; internal
+      damage such as delamination is often invisible from outside.
+    sideEffects: Separating the constituents for recycling is difficult.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

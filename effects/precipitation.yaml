@@ -1,0 +1,72 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: precipitation
+kind: effect
+home: separate|liquid
+functions:
+  - separate|liquid
+  - produce|particles
+  - remove|liquid
+  - measure|liquid
+parameters:
+  - decrease|concentration
+  - increase|purity
+uses: []
+domain:
+  id: Chemie
+  de: Chemie
+  en: Chemistry
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/F%C3%A4llung
+  - https://en.wikipedia.org/wiki/Precipitation_(chemistry)
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Fällung
+    description: >-
+      Wird in einer Lösung das Löslichkeitsprodukt eines Stoffes überschritten, etwa durch
+      Zugabe eines Fällungsmittels, Änderung des pH-Werts oder Abkühlen, bildet sich ein fester,
+      schwer löslicher Niederschlag. Er entsteht durch Keimbildung und Kristallwachstum und
+      lässt sich anschließend durch Absetzen, Filtrieren oder Zentrifugieren abtrennen.
+    example: >-
+      Phosphatfällung mit Eisen- oder Aluminiumsalzen in Kläranlagen, Ausfällen von Schwermetallen
+      als Hydroxide, gravimetrische Analyse, Herstellung von Pigmenten und Fällungskieselsäure,
+      Nachweisreaktionen wie die Bildung von Silberchlorid
+    conditions: Übersättigung der Lösung in Bezug auf das schwer lösliche Produkt.
+    limits: >-
+      Die Fällung ist nie ganz vollständig, weil ein dem Löslichkeitsprodukt entsprechender
+      Rest gelöst bleibt; sehr feine oder kolloidale Niederschläge lassen sich schwer abtrennen.
+    sideEffects: >-
+      Mitgefällte Fremdionen verunreinigen den Niederschlag, und es fallen Schlämme an, die
+      entsorgt werden müssen.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Precipitation (chemistry)
+    description: >-
+      When the solubility product of a substance in a solution is exceeded, for instance by
+      adding a precipitating agent, changing the pH or cooling, a solid, sparingly soluble
+      precipitate forms. It arises through nucleation and crystal growth and can then be separated
+      by settling, filtering or centrifuging.
+    example: >-
+      Phosphate removal with iron or aluminium salts in wastewater plants, precipitation of
+      heavy metals as hydroxides, gravimetric analysis, production of pigments and precipitated
+      silica, test reactions such as the formation of silver chloride
+    conditions: >-
+      Supersaturation of the solution with respect to the sparingly soluble product.
+    limits: >-
+      Precipitation is never quite complete because a residue corresponding to the solubility
+      product stays dissolved; very fine or colloidal precipitates are hard to separate.
+    sideEffects: >-
+      Co-precipitated foreign ions contaminate the precipitate, and the resulting sludge must
+      be disposed of.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

@@ -1,0 +1,63 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: erosion
+kind: effect
+home: remove|solid
+functions:
+  - remove|solid
+  - move|particles
+  - disassemble|solid
+parameters:
+  - change|shape
+  - change|surface-finish
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Erosion_(Geologie)
+  - https://en.wikipedia.org/wiki/Erosion
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Erosion (Abtrag durch Strömung)
+    description: >-
+      Strömendes Wasser, Wind oder ein Flüssigkeits- bzw. Gasstrahl lösen Material von einer
+      Oberfläche und tragen es fort. Der Abtrag entsteht durch die Schubspannung der Strömung
+      und durch den Aufprall mitgeführter Partikel oder Tropfen und nimmt mit der Strömungsgeschwindigkeit
+      stark zu. Ein gebündelter Strahl konzentriert diese Wirkung auf eine kleine Fläche und
+      kann so selbst harte Werkstoffe trennen.
+    example: >-
+      Talbildung durch Flüsse, Winderosion von Böden, Wasserstrahlschneiden, Abtragen von
+      Beton mit Hochdruckwasserstrahl, Strahlerosionsversuch zur Bodenstabilität
+    conditions: >-
+      Strömungsgeschwindigkeit bzw. Strahlenergie oberhalb einer vom Material abhängigen Schwelle.
+    limits: ''
+    sideEffects: >-
+      Unerwünschte Erosion verschleißt Rohrbögen, Pumpen, Turbinenschaufeln und Böden.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Erosion (removal by flow)
+    description: >-
+      Flowing water, wind or a jet of liquid or gas loosens material from a surface and carries
+      it away. Removal results from the shear stress of the flow and from the impact of entrained
+      particles or droplets, and it rises steeply with flow velocity. A focused jet concentrates
+      this action on a small area and can thus cut even hard materials.
+    example: >-
+      River valley formation, wind erosion of soils, water-jet cutting, hydrodemolition of
+      concrete, jet erosion test of soil erodibility
+    conditions: Flow velocity or jet energy above a material-dependent threshold.
+    limits: ''
+    sideEffects: Unwanted erosion wears pipe bends, pumps, turbine blades and soils.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

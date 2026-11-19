@@ -1,0 +1,75 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: kerr-effect
+kind: effect
+home: orient|field
+functions:
+  - orient|field
+  - measure|field
+parameters:
+  - change|polarisation
+  - change|refraction
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Kerr-Effekt
+  - https://en.wikipedia.org/wiki/Kerr_effect
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Kerr-Effekt
+    description: >-
+      Ein elektrisches Feld macht einen sonst optisch isotropen Stoff wie Nitrobenzol oder
+      Glas doppelbrechend: Licht, das parallel und senkrecht zum Feld polarisiert ist, breitet
+      sich unterschiedlich schnell aus. Der Brechzahlunterschied wächst mit dem Quadrat der
+      Feldstärke und folgt Feldänderungen innerhalb von Nanosekunden und schneller. Zwischen
+      gekreuzten Polarisatoren lässt sich damit Licht sehr schnell schalten oder modulieren;
+      beim optischen Kerr-Effekt verändert die Intensität eines starken Lichtstrahls selbst
+      die Brechzahl.
+    example: >-
+      Kerr-Zelle als schneller optischer Verschluss, Messung hoher Impulsspannungen und Feldverteilungen
+      in Isolierflüssigkeiten, Kerr-Linsen-Modenkopplung in Femtosekundenlasern, Selbstfokussierung
+      starker Laserstrahlen
+    conditions: >-
+      Ein optisch durchsichtiges Medium in einem starken elektrischen Feld; besonders große
+      Effekte zeigen polare Flüssigkeiten wie Nitrobenzol.
+    limits: >-
+      Wegen der quadratischen Abhängigkeit sind für eine merkliche Wirkung sehr hohe Feldstärken
+      nötig, oft mehrere Kilovolt auf wenige Millimeter.
+    sideEffects: >-
+      Bei hohen Laserintensitäten kann die Selbstfokussierung das Material zerstören.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Kerr effect
+    description: >-
+      An electric field makes an otherwise optically isotropic material such as nitrobenzene
+      or glass birefringent: light polarised parallel and perpendicular to the field travels
+      at different speeds. The difference in refractive index grows with the square of the
+      field strength and follows field changes within nanoseconds or faster. Between crossed
+      polarisers this allows light to be switched or modulated very quickly; in the optical
+      Kerr effect, the intensity of an intense light beam itself changes the refractive index.
+    example: >-
+      Kerr cell as a fast optical shutter, measuring high pulse voltages and field distributions
+      in insulating liquids, Kerr-lens mode locking in femtosecond lasers, self-focusing of
+      intense laser beams
+    conditions: >-
+      An optically transparent medium in a strong electric field; polar liquids such as nitrobenzene
+      show particularly large effects.
+    limits: >-
+      Because of the quadratic dependence, very high field strengths are needed for a noticeable
+      effect, often several kilovolts across a few millimetres.
+    sideEffects: At high laser intensities, self-focusing can destroy the material.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

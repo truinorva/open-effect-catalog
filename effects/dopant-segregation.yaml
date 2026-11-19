@@ -1,0 +1,73 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: dopant-segregation
+kind: effect
+home: separate|solid
+functions:
+  - separate|solid
+  - concentrate|liquid
+parameters:
+  - increase|purity
+  - decrease|homogeneity
+uses: []
+domain:
+  id: Materialwissenschaft
+  de: Materialwissenschaft
+  en: Materials science
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Seigerung
+  - https://en.wikipedia.org/wiki/Segregation_(materials_science)
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Segregation von Dotierstoffen (Seigerung)
+    description: >-
+      Erstarrt eine Schmelze, nimmt der wachsende Kristall Fremdatome meist in geringerer
+      Konzentration auf, als sie in der Schmelze vorliegen; das Verhältnis beschreibt der
+      Segregationskoeffizient. Die Fremdatome reichern sich deshalb in der Restschmelze an,
+      und der zuletzt erstarrende Teil ist am stärksten verunreinigt. Beim Zonenschmelzen
+      wird eine schmale Schmelzzone mehrfach durch einen Stab gezogen und schiebt so die Verunreinigungen
+      an ein Ende.
+    example: >-
+      Zonenreinigung von Silizium und Germanium für Halbleiter, Tiegelziehen (Czochralski-Verfahren)
+      von Einkristallen, Seigerungen in Stahlblöcken und Gussteilen
+    conditions: >-
+      Eine langsame, gerichtete Erstarrung und ein Segregationskoeffizient, der deutlich von
+      1 abweicht.
+    limits: >-
+      Stoffe mit einem Segregationskoeffizienten nahe 1, etwa Bor in Silizium, lassen sich
+      so kaum abtrennen.
+    sideEffects: >-
+      Ungleichmäßige Dotierung entlang gezogener Kristalle und Entmischungen in Gussstücken,
+      die die Festigkeit mindern.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Dopant segregation
+    description: >-
+      When a melt solidifies, the growing crystal usually takes up foreign atoms in a lower
+      concentration than is present in the melt; the ratio is described by the segregation
+      coefficient. The foreign atoms therefore accumulate in the remaining melt, and the part
+      that solidifies last is the most contaminated. In zone refining a narrow molten zone
+      is passed through a rod several times and thus pushes the impurities to one end.
+    example: >-
+      Zone refining of silicon and germanium for semiconductors, Czochralski crystal pulling,
+      segregation in steel ingots and castings
+    conditions: >-
+      Slow, directional solidification and a segregation coefficient clearly different from
+      1.
+    limits: >-
+      Substances with a segregation coefficient close to 1, such as boron in silicon, can
+      hardly be removed this way.
+    sideEffects: >-
+      Uneven doping along pulled crystals and segregation in castings that reduces their strength.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

@@ -1,0 +1,53 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: guided-rotor-compressor
+kind: application
+home: compress|gas
+functions:
+  - compress|gas
+  - move|gas
+parameters:
+  - increase|pressure
+uses: []
+domain:
+  id: Verfahrenstechnik
+  de: Verfahrenstechnik
+  en: Process engineering
+maturity: ''
+sources:
+  - https://en.wikipedia.org/wiki/Guided-rotor_compressor
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Guided-Rotor-Verdichter
+    description: >-
+      Der Guided-Rotor-Verdichter ist ein rotierender Verdrängerverdichter: Ein Rotor läuft,
+      durch einen Mechanismus zwangsgeführt, exzentrisch in einem Gehäuse um. Die Kammern
+      zwischen Rotor und Gehäusewand vergrößern und verkleinern sich dabei periodisch, sodass
+      Gas angesaugt, verdichtet und ausgeschoben wird.
+    example: ''
+    conditions: ''
+    limits: ''
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Guided-rotor compressor
+    description: >-
+      The guided-rotor compressor is a rotary positive-displacement compressor: a rotor, positively
+      guided by a mechanism, moves eccentrically inside a housing. The chambers between rotor
+      and housing wall periodically grow and shrink, so gas is drawn in, compressed and pushed
+      out.
+    example: ''
+    conditions: ''
+    limits: ''
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

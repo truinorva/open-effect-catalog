@@ -1,0 +1,65 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: vacuum-distillation
+kind: application
+home: separate|liquid
+functions:
+  - separate|liquid
+  - concentrate|liquid
+parameters:
+  - increase|purity
+  - decrease|temperature
+uses:
+  - vacuum
+  - vapour-pressure
+domain:
+  id: Verfahrenstechnik
+  de: Verfahrenstechnik
+  en: Process engineering
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Vakuumdestillation
+  - https://en.wikipedia.org/wiki/Vacuum_distillation
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Vakuumdestillation
+    description: >-
+      Bei vermindertem Druck sinken die Siedetemperaturen, weil eine Flüssigkeit siedet, sobald
+      ihr Dampfdruck den Umgebungsdruck erreicht. Destilliert man unter Vakuum, lassen sich
+      so hochsiedende oder hitzeempfindliche Stoffe trennen, ohne dass sie sich zersetzen.
+      Ansonsten gilt das Prinzip der gewöhnlichen Destillation: Die leichter flüchtigen Anteile
+      verdampfen bevorzugt und werden kondensiert aufgefangen.
+    example: >-
+      Vakuumdestillation von Rückständen in der Erdölraffinerie, Rotationsverdampfer im Labor,
+      Kurzwegdestillation von Vitaminen und Ölen, Lösemittelrückgewinnung
+    conditions: Dichte Apparatur und Vakuumpumpe; Kühlung zum Kondensieren der Dämpfe.
+    limits: >-
+      Bei sehr niedrigem Druck wird das Dampfvolumen groß, was große Kolonnendurchmesser verlangt.
+    sideEffects: Siedeverzug und Schäumen; eindringende Luft kann Produkte oxidieren.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Vacuum distillation
+    description: >-
+      At reduced pressure, boiling temperatures drop, because a liquid boils as soon as its
+      vapour pressure reaches the ambient pressure. Distilling under vacuum therefore allows
+      high-boiling or heat-sensitive substances to be separated without decomposing. Otherwise
+      the principle is that of ordinary distillation: the more volatile components evaporate
+      preferentially and are condensed and collected.
+    example: >-
+      Vacuum distillation of refinery residues, rotary evaporators in the laboratory, short-path
+      distillation of vitamins and oils, solvent recovery
+    conditions: Tight apparatus and vacuum pump; cooling to condense the vapours.
+    limits: >-
+      At very low pressure the vapour volume becomes large, requiring large column diameters.
+    sideEffects: Bumping and foaming; air leaking in can oxidise products.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

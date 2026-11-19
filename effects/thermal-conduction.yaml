@@ -1,0 +1,68 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: thermal-conduction
+kind: effect
+home: heat|solid
+functions:
+  - heat|solid
+  - cool|solid
+  - heat|liquid
+  - cool|liquid
+  - keep-temp|solid
+parameters:
+  - increase|temperature
+  - decrease|temperature
+  - stabilise|temperature
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/W%C3%A4rmeleitung
+  - https://en.wikipedia.org/wiki/Thermal_conduction
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Wärmeleitung
+    description: >-
+      In einem Stoff fließt Wärme ohne Materialbewegung von wärmeren zu kälteren Bereichen,
+      indem stärker schwingende Atome und freie Elektronen Energie an ihre Nachbarn weitergeben.
+      Der Wärmestrom ist proportional zum Temperaturgefälle und zur Wärmeleitfähigkeit (Fouriersches
+      Gesetz). Metalle und Diamant leiten Wärme sehr gut, Gase und poröse Stoffe sehr schlecht.
+    example: >-
+      Kühlkörper, Wärmeleitpaste, Kochtopfboden, Dämmstoffe mit eingeschlossener Luft, Lötkolbenspitze
+    conditions: >-
+      Ein Temperaturunterschied innerhalb eines Körpers oder zwischen Körpern, die sich berühren.
+    limits: >-
+      In Gasen und Flüssigkeiten wird die Wärmeleitung oft von Konvektion überlagert, und
+      an Kontaktstellen begrenzen Übergangswiderstände den Wärmefluss.
+    sideEffects: Unerwünschte Wärmebrücken führen zu Wärmeverlusten und Tauwasser.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Thermal conduction
+    description: >-
+      Within a material, heat flows from warmer to colder regions without any movement of
+      the material itself, as more strongly vibrating atoms and free electrons pass energy
+      on to their neighbours. The heat flow is proportional to the temperature gradient and
+      to the thermal conductivity (Fourier's law). Metals and diamond conduct heat very well,
+      gases and porous materials very poorly.
+    example: >-
+      Heat sinks, thermal paste, cookware bases, insulating materials with trapped air, soldering
+      iron tips
+    conditions: A temperature difference within a body or between bodies in contact.
+    limits: >-
+      In gases and liquids conduction is often overshadowed by convection, and at contact
+      points thermal contact resistance limits the heat flow.
+    sideEffects: Unwanted thermal bridges cause heat losses and condensation.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

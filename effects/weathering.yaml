@@ -1,0 +1,63 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: weathering
+kind: effect
+home: disassemble|solid
+functions:
+  - disassemble|solid
+  - destroy|solid
+  - absorb|gas
+parameters:
+  - decrease|strength
+  - increase|surface-area
+uses: []
+domain:
+  id: Chemie
+  de: Chemie
+  en: Chemistry
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Verwitterung
+  - https://en.wikipedia.org/wiki/Weathering
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Verwitterung
+    description: >-
+      Gesteine und Werkstoffe an der Erdoberfläche zerfallen im Zusammenspiel von Temperaturwechseln,
+      gefrierendem Wasser, Salzkristallen, Wasser, Sauerstoff, Kohlensäure und Lebewesen.
+      Physikalische Verwitterung sprengt das Material in immer kleinere Stücke, chemische
+      Verwitterung löst Minerale oder wandelt sie in neue um, etwa Feldspat in Ton. Bei der
+      Verwitterung von Silikaten wird dabei Kohlendioxid aus der Luft gebunden.
+    example: >-
+      Bodenbildung, Karsthöhlen, Frostschäden an Naturstein und Beton, beschleunigte Verwitterung
+      von Basalt zur CO2-Bindung, künstliche Bewitterung in Prüfkammern
+    conditions: Kontakt mit Wasser, Luft, Temperaturwechseln oder Organismen.
+    limits: >-
+      Natürliche Verwitterung verläuft sehr langsam, über Jahre bis Jahrtausende.
+    sideEffects: Schäden an Bauwerken und Denkmälern.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Weathering
+    description: >-
+      Rocks and materials at the Earth's surface break down through the interplay of temperature
+      changes, freezing water, salt crystals, water, oxygen, carbonic acid and living organisms.
+      Physical weathering splits the material into ever smaller pieces, while chemical weathering
+      dissolves minerals or converts them into new ones, such as feldspar into clay. The weathering
+      of silicates binds carbon dioxide from the air in the process.
+    example: >-
+      Soil formation, karst caves, frost damage to natural stone and concrete, enhanced weathering
+      of basalt to capture CO2, artificial weathering in test chambers
+    conditions: Exposure to water, air, temperature changes or organisms.
+    limits: Natural weathering proceeds very slowly, over years to millennia.
+    sideEffects: Damage to buildings and monuments.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

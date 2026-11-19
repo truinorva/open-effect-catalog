@@ -1,0 +1,72 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: evaporative-cooler
+kind: application
+home: cool|gas
+functions:
+  - cool|gas
+  - cool|liquid
+parameters:
+  - decrease|temperature
+  - increase|humidity
+uses:
+  - vaporization
+domain:
+  id: Verfahrenstechnik
+  de: Verfahrenstechnik
+  en: Process engineering
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Verdampfungsk%C3%BChlung
+  - https://en.wikipedia.org/wiki/Evaporative_cooler
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Verdunstungskühler
+    description: >-
+      Ein Verdunstungskühler leitet warme, trockene Luft über oder durch befeuchtete Flächen
+      wie Matten, Tücher oder poröse Tonwände. Ein Teil des Wassers verdunstet und entzieht
+      der Luft dabei die nötige Verdampfungswärme, sodass sie abkühlt und zugleich feuchter
+      wird. Bei indirekten Bauformen kühlt die befeuchtete Seite über einen Wärmeübertrager
+      einen getrennten Luftstrom, der trocken bleibt.
+    example: >-
+      Luftkühler in heißen Trockengebieten, Kühltürme, Tonkrug-Kühler (Pot-in-Pot), adiabate
+      Kühlung von Rechenzentren und Gewächshäusern
+    conditions: >-
+      Ausreichend trockene Luft; je niedriger die relative Feuchte, desto stärker die Kühlwirkung.
+    limits: >-
+      Bei direkter Bauart lässt sich die Luft höchstens bis auf ihre Feuchtkugeltemperatur
+      abkühlen; in feuchtem Klima ist die Wirkung gering.
+    sideEffects: >-
+      Wasserverbrauch, steigende Luftfeuchte und bei mangelnder Pflege Keim- oder Legionellenwachstum
+      im Wasser.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Evaporative cooler
+    description: >-
+      An evaporative cooler passes warm, dry air over or through wetted surfaces such as pads,
+      cloths or porous clay walls. Part of the water evaporates and takes the required heat
+      of vaporisation from the air, which cools down and becomes more humid at the same time.
+      In indirect designs the wetted side cools a separate air stream through a heat exchanger,
+      so that stream stays dry.
+    example: >-
+      Air coolers in hot, dry regions, cooling towers, clay pot coolers (pot-in-pot), adiabatic
+      cooling of data centres and greenhouses
+    conditions: >-
+      Sufficiently dry air; the lower the relative humidity, the stronger the cooling.
+    limits: >-
+      In direct designs the air can be cooled at most to its wet-bulb temperature; in humid
+      climates the effect is small.
+    sideEffects: >-
+      Water consumption, rising humidity and, with poor maintenance, growth of germs or Legionella
+      in the water.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

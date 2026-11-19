@@ -1,0 +1,79 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: phase-transition
+kind: effect
+home: change-phase|liquid
+functions:
+  - change-phase|liquid
+  - change-phase|solid
+  - change-phase|gas
+  - keep-temp|solid
+parameters:
+  - change|state
+  - stabilise|temperature
+  - increase|heat-capacity
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Phasen%C3%BCbergang
+  - https://en.wikipedia.org/wiki/Phase_transition
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Phasenübergang
+    description: >-
+      Bei einem Phasenübergang wechselt ein Stoff seinen Zustand, etwa von fest nach flüssig,
+      von flüssig nach gasförmig oder zwischen verschiedenen Kristallstrukturen. Bei Übergängen
+      erster Ordnung nimmt er dabei latente Wärme auf oder gibt sie ab, während die Temperatur
+      konstant bleibt, und Dichte, Volumen und andere Eigenschaften ändern sich sprunghaft.
+      Bei Übergängen zweiter Ordnung, etwa am Curie-Punkt oder beim Eintritt der Supraleitung,
+      ändern sich die Eigenschaften stetig, aber Größen wie die Wärmekapazität springen.
+    example: >-
+      Latentwärmespeicher und Kühlakkus, Verdunstungskühlung und Kältemaschinen, Gießen und
+      Schweißen, Formgedächtnislegierungen, Phasenwechselspeicher für Daten
+    conditions: >-
+      Druck und Temperatur müssen die Phasengrenze überschreiten; oft braucht es zusätzlich
+      Keime für den Beginn des Übergangs.
+    limits: >-
+      Die aufgenommene oder abgegebene Wärme ist auf die Umwandlungswärme der vorhandenen
+      Stoffmenge begrenzt, und Übergänge können verzögert eintreten, etwa als Unterkühlung
+      oder Überhitzung.
+    sideEffects: >-
+      Volumensprünge beim Erstarren oder Verdampfen können Behälter sprengen oder Lunker im
+      Gussteil verursachen.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Phase transition
+    description: >-
+      In a phase transition a substance changes its state, for example from solid to liquid,
+      from liquid to gas, or between different crystal structures. In first-order transitions
+      it absorbs or releases latent heat while the temperature stays constant, and density,
+      volume and other properties change abruptly. In second-order transitions, such as at
+      the Curie point or at the onset of superconductivity, properties change continuously,
+      but quantities such as the heat capacity jump.
+    example: >-
+      Latent heat storage and cool packs, evaporative cooling and refrigeration machines,
+      casting and welding, shape memory alloys, phase-change data storage
+    conditions: >-
+      Pressure and temperature must cross the phase boundary; nuclei are often needed to start
+      the transition.
+    limits: >-
+      The heat absorbed or released is limited to the transformation heat of the amount of
+      substance present, and transitions can be delayed, as in supercooling or superheating.
+    sideEffects: >-
+      Volume jumps on solidification or evaporation can burst containers or cause shrinkage
+      cavities in castings.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

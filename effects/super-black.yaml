@@ -1,0 +1,61 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: super-black
+kind: application
+home: absorb|field
+functions:
+  - absorb|field
+parameters:
+  - decrease|reflectivity
+uses: []
+domain:
+  id: Materialwissenschaft
+  de: Materialwissenschaft
+  en: Materials science
+maturity: ''
+sources:
+  - https://en.wikipedia.org/wiki/Super_black
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Superschwarz
+    description: >-
+      Superschwarze Oberflächen werfen nur einen winzigen Bruchteil des auftreffenden Lichts
+      zurück. Erreicht wird das durch mikroskopische Strukturen, etwa geätzte Krater in einer
+      Nickel-Phosphor-Schicht oder dicht stehende Kohlenstoff-Nanoröhrchen, zwischen denen
+      das Licht vielfach reflektiert und dabei nach und nach absorbiert wird, bevor es wieder
+      austreten kann.
+    example: >-
+      Streulichtunterdrückung in Teleskopen, Kameras und Weltraumoptiken, Kalibrierstrahler
+      und Strahlungsmessgeräte
+    conditions: Feine, offene Oberflächenstruktur aus stark absorbierendem Material.
+    limits: >-
+      Die empfindlichen Strukturen werden durch Berührung, Abrieb oder Verschmutzung leicht
+      zerstört und verlieren dann ihre Wirkung.
+    sideEffects: Die aufgenommene Strahlung erwärmt die Oberfläche.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Super black
+    description: >-
+      Super-black surfaces reflect only a tiny fraction of the incident light. This is achieved
+      with microscopic structures, such as etched craters in a nickel–phosphorus layer or
+      densely packed carbon nanotubes, between which light is reflected many times and gradually
+      absorbed before it can escape.
+    example: >-
+      Stray-light suppression in telescopes, cameras and space optics, calibration sources
+      and radiometers
+    conditions: Fine, open surface structure made of strongly absorbing material.
+    limits: >-
+      The delicate structures are easily destroyed by touch, abrasion or contamination and
+      then lose their effect.
+    sideEffects: The absorbed radiation heats the surface.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

@@ -1,0 +1,74 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: superconductivity
+kind: effect
+home: produce|field
+functions:
+  - produce|field
+  - hold|solid
+  - measure|field
+  - stop|field
+parameters:
+  - increase|conductivity
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: verbreitet
+sources:
+  - https://de.wikipedia.org/wiki/Supraleitung
+  - https://en.wikipedia.org/wiki/Superconductivity
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Supraleitung
+    description: >-
+      Bestimmte Metalle, Legierungen und keramische Verbindungen verlieren unterhalb einer
+      stoffabhängigen Sprungtemperatur ihren elektrischen Widerstand vollständig. Elektronen
+      bilden dann Paare, die sich als gemeinsamer Quantenzustand ohne Streuung am Gitter bewegen;
+      ein einmal angeworfener Strom fließt in einem geschlossenen Ring praktisch unbegrenzt
+      weiter. Zugleich verdrängt der Supraleiter Magnetfelder aus seinem Inneren (Meißner-Ochsenfeld-Effekt).
+    example: >-
+      Magnete in Kernspintomographen und Teilchenbeschleunigern, SQUID-Magnetometer, supraleitende
+      Kabel und Strombegrenzer, Schwebeversuche und Magnetlager
+    conditions: >-
+      Kühlung unter die Sprungtemperatur, je nach Werkstoff mit flüssigem Helium oder flüssigem
+      Stickstoff; Strom und Magnetfeld unterhalb kritischer Werte.
+    limits: >-
+      Übersteigen Stromdichte oder Magnetfeld einen kritischen Wert, bricht die Supraleitung
+      zusammen.
+    sideEffects: >-
+      Bricht die Supraleitung in einem Magneten plötzlich zusammen (Quench), wird die gespeicherte
+      Energie schlagartig als Wärme frei.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Superconductivity
+    description: >-
+      Certain metals, alloys and ceramic compounds lose their electrical resistance completely
+      below a material-specific critical temperature. Electrons then form pairs that move
+      as a single quantum state without scattering off the lattice; a current once started
+      in a closed loop flows on practically indefinitely. At the same time the superconductor
+      expels magnetic fields from its interior (Meissner effect).
+    example: >-
+      Magnets in MRI scanners and particle accelerators, SQUID magnetometers, superconducting
+      cables and fault-current limiters, levitation demonstrations and magnetic bearings
+    conditions: >-
+      Cooling below the critical temperature, with liquid helium or liquid nitrogen depending
+      on the material; current and magnetic field below critical values.
+    limits: >-
+      If current density or magnetic field exceeds a critical value, superconductivity breaks
+      down.
+    sideEffects: >-
+      If superconductivity collapses suddenly in a magnet (quench), the stored energy is released
+      abruptly as heat.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

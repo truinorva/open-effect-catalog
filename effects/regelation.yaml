@@ -1,0 +1,66 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: regelation
+kind: effect
+home: change-phase|solid
+functions:
+  - change-phase|solid
+  - join|solid
+parameters:
+  - change|state
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Regelation
+  - https://en.wikipedia.org/wiki/Regelation
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Regelation
+    description: >-
+      Unter hohem Druck schmilzt Eis schon unterhalb von 0 °C, weil Wasser dichter ist als
+      Eis und Druck daher den Schmelzpunkt senkt. Lässt der Druck nach, gefriert das Schmelzwasser
+      wieder; ein belasteter Draht kann so durch einen Eisblock wandern, während sich das
+      Eis hinter ihm wieder schließt, wobei die beim Gefrieren frei werdende Wärme durch den
+      Draht zur Schmelzstelle fließt.
+    example: >-
+      Drahtversuch am Eisblock, Gleiten von Gletschern über Hindernisse im Felsbett
+    conditions: >-
+      Eis nahe seinem Schmelzpunkt und örtlich hoher Druck; ein gut wärmeleitender Draht beschleunigt
+      den Vorgang.
+    limits: >-
+      Die Schmelzpunktsenkung ist mit etwa 0,0075 K je bar sehr klein; bei deutlich tieferen
+      Temperaturen bleibt der Effekt aus, und das Gleiten von Schlittschuhen lässt sich damit
+      nicht erklären.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Regelation
+    description: >-
+      Under high pressure, ice melts below 0 °C because water is denser than ice, so pressure
+      lowers the melting point. When the pressure is released the meltwater refreezes; a loaded
+      wire can thus pass through a block of ice while the ice closes up again behind it, with
+      the heat released on refreezing flowing through the wire to the melting zone.
+    example: >-
+      Wire experiment on an ice block, glaciers sliding over obstacles on the bedrock
+    conditions: >-
+      Ice close to its melting point and locally high pressure; a wire with good thermal conductivity
+      speeds up the process.
+    limits: >-
+      The melting point depression is very small, about 0.0075 K per bar; at clearly lower
+      temperatures the effect fails, and it cannot explain how ice skates glide.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

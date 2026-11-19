@@ -1,0 +1,72 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: nitriding
+kind: application
+home: stabilise|solid
+functions:
+  - stabilise|solid
+  - preserve|solid
+parameters:
+  - increase|hardness
+  - increase|strength
+  - decrease|friction
+uses: []
+domain:
+  id: Materialwissenschaft
+  de: Materialwissenschaft
+  en: Materials science
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Nitrieren
+  - https://en.wikipedia.org/wiki/Nitriding
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Nitrieren
+    description: >-
+      Beim Nitrieren diffundiert Stickstoff bei Temperaturen um 500 °C in die Randschicht
+      eines Bauteils aus Stahl oder Titan und bildet dort mit dem Grundmetall und den Legierungselementen
+      harte Nitride. Es entsteht eine dünne, sehr harte Verbindungsschicht über einer tieferen
+      Diffusionszone mit Druckeigenspannungen. Weil das Werkstück nicht abgeschreckt wird
+      und sich das Grundgefüge nicht umwandelt, verzieht es sich kaum.
+    example: >-
+      Kurbel- und Nockenwellen, Zahnräder, Extruderschnecken, Spritzgießwerkzeuge, Ventile
+    conditions: >-
+      Ein Stickstoff abgebendes Medium wie Ammoniakgas, Salzbad oder Stickstoff-Wasserstoff-Plasma;
+      am wirksamsten bei Stählen mit Nitridbildnern wie Aluminium, Chrom, Molybdän oder Vanadium.
+    limits: >-
+      Die gehärtete Schicht ist nur wenige Zehntelmillimeter dick, und das Verfahren dauert
+      je nach Tiefe viele Stunden.
+    sideEffects: >-
+      Die äußere Verbindungsschicht kann spröde sein und abplatzen, und die Bauteilmaße wachsen
+      geringfügig.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Nitriding
+    description: >-
+      In nitriding, nitrogen diffuses into the surface layer of a steel or titanium part at
+      temperatures around 500 °C and forms hard nitrides with the base metal and alloying
+      elements. The result is a thin, very hard compound layer above a deeper diffusion zone
+      with compressive residual stresses. Because the workpiece is not quenched and the base
+      microstructure does not transform, it hardly distorts.
+    example: >-
+      Crankshafts and camshafts, gears, extruder screws, injection moulding tools, valves
+    conditions: >-
+      A nitrogen-supplying medium such as ammonia gas, a salt bath or a nitrogen-hydrogen
+      plasma; most effective on steels containing nitride formers such as aluminium, chromium,
+      molybdenum or vanadium.
+    limits: >-
+      The hardened case is only a few tenths of a millimetre thick, and the process takes
+      many hours depending on depth.
+    sideEffects: >-
+      The outer compound layer can be brittle and flake off, and part dimensions grow slightly.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

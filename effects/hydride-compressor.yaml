@@ -1,0 +1,61 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: hydride-compressor
+kind: application
+home: compress|gas
+functions:
+  - compress|gas
+  - absorb|gas
+parameters:
+  - increase|pressure
+uses: []
+domain:
+  id: Verfahrenstechnik
+  de: Verfahrenstechnik
+  en: Process engineering
+maturity: ''
+sources:
+  - https://en.wikipedia.org/wiki/Hydride_compressor
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Metallhydrid-Verdichter
+    description: >-
+      Bestimmte Metalllegierungen nehmen Wasserstoff bei niedriger Temperatur und niedrigem
+      Druck auf, indem sie ein Metallhydrid bilden, und geben ihn beim Erwärmen bei deutlich
+      höherem Druck wieder ab. Abwechselndes Kühlen und Heizen mehrerer Hydridbetten verdichtet
+      so Wasserstoff thermisch, ohne bewegte Teile.
+    example: Wasserstoffverdichtung mit Niedertemperatur-Abwärme
+    conditions: >-
+      Eine Wärme- und eine Kältequelle; eine Legierung mit passendem Druck-Temperatur-Verhalten.
+    limits: >-
+      Das Verfahren eignet sich nur für Wasserstoff; Verunreinigungen wie Sauerstoff, Wasser
+      oder Kohlenmonoxid vergiften die Legierung, und die Zyklen sind langsam.
+    sideEffects: >-
+      Das Pulver dehnt sich bei der Beladung aus und zerfällt mit der Zeit in immer feinere
+      Partikel.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Hydride compressor
+    description: >-
+      Certain metal alloys take up hydrogen at low temperature and pressure by forming a metal
+      hydride, and release it at much higher pressure when heated. Alternately cooling and
+      heating several hydride beds thus compresses hydrogen thermally, without moving parts.
+    example: Hydrogen compression using low-temperature waste heat
+    conditions: >-
+      A heat source and a cold source; an alloy with suitable pressure-temperature behaviour.
+    limits: >-
+      The method works only for hydrogen; impurities such as oxygen, water or carbon monoxide
+      poison the alloy, and cycles are slow.
+    sideEffects: >-
+      The powder expands when charged and breaks down into ever finer particles over time.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

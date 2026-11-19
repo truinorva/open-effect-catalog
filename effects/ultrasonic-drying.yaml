@@ -1,0 +1,70 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: ultrasonic-drying
+kind: application
+home: remove|solid
+functions:
+  - remove|solid
+  - remove|particles
+parameters:
+  - decrease|humidity
+uses:
+  - ultrasound
+  - acoustic-streaming
+domain:
+  id: Verfahrenstechnik
+  de: Verfahrenstechnik
+  en: Process engineering
+maturity: kindheit
+sources:
+  - https://de.wikipedia.org/wiki/Ultraschall
+  - https://en.wikipedia.org/wiki/Ultrasound
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Ultraschalltrocknung
+    description: >-
+      Beim Trocknen wird zusätzlich Ultraschall über die Luft oder durch direkten Kontakt
+      in das feuchte Gut eingekoppelt. Die schnellen Druckwechsel pressen Feuchtigkeit wie
+      bei einem Schwamm aus den Kapillaren, Mikroströmungen verdünnen die Grenzschicht an
+      der Oberfläche, und der Stoffaustausch beschleunigt sich. So trocknet das Gut schneller
+      oder bei niedrigerer Temperatur, was wärmeempfindliche Produkte schont.
+    example: >-
+      Trocknung von Obst, Gemüse und Fleisch im Labor- und Pilotmaßstab, ultraschallunterstützte
+      Gefriertrocknung, Trocknung von Textilien (Forschung)
+    conditions: >-
+      Gute akustische Ankopplung an das Gut; Kontaktverfahren übertragen die Energie deutlich
+      besser als Luftschall.
+    limits: >-
+      Luft dämpft Ultraschall stark und koppelt schlecht an feste Körper, was den industriellen
+      Einsatz erschwert.
+    sideEffects: Das Gut erwärmt sich durch die aufgenommene Schallenergie leicht.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Ultrasonic drying
+    description: >-
+      During drying, ultrasound is additionally coupled into the moist material through the
+      air or by direct contact. The rapid pressure changes squeeze moisture out of the capillaries
+      like a sponge, microstreaming thins the boundary layer at the surface, and mass transfer
+      accelerates. The material thus dries faster or at a lower temperature, which protects
+      heat-sensitive products.
+    example: >-
+      Drying of fruit, vegetables and meat at laboratory and pilot scale, ultrasound-assisted
+      freeze-drying, drying of textiles (research)
+    conditions: >-
+      Good acoustic coupling to the material; contact methods transfer the energy much better
+      than airborne ultrasound.
+    limits: >-
+      Air strongly attenuates ultrasound and couples poorly to solids, which hampers industrial
+      use.
+    sideEffects: The material warms slightly from the absorbed sound energy.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

@@ -1,0 +1,72 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: loop-heat-pipe
+kind: application
+home: cool|solid
+functions:
+  - cool|solid
+  - keep-temp|solid
+parameters:
+  - increase|heat-conduction
+uses:
+  - capillary-action
+  - latent-heat
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: ''
+sources:
+  - https://en.wikipedia.org/wiki/Loop_heat_pipe
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Loop-Heatpipe
+    description: >-
+      Eine Loop-Heatpipe ist ein geschlossener Zweiphasen-Wärmetransportkreislauf, in dem
+      ein feinporiger Docht im Verdampfer das Arbeitsmittel durch Kapillarkräfte umwälzt.
+      Im Verdampfer nimmt die Flüssigkeit Wärme auf und verdampft, der Dampf strömt durch
+      eine glatte Leitung zum Kondensator und gibt dort die Wärme ab, und das Kondensat fließt
+      in einer getrennten Leitung zurück. Weil Dampf und Flüssigkeit getrennte Wege nehmen
+      und der Docht nur im Verdampfer sitzt, lassen sich größere Strecken und Höhenunterschiede
+      überbrücken als mit einer herkömmlichen Heatpipe.
+    example: >-
+      Thermalkontrolle von Satelliten und Raumsonden, Kühlung von Hochleistungselektronik,
+      Avionik
+    conditions: >-
+      Ein Arbeitsmittel, das im Arbeitstemperaturbereich siedet, etwa Ammoniak, Wasser oder
+      Propylen, und ein Docht mit sehr feinen Poren.
+    limits: >-
+      Der Kapillardruck des Dochts begrenzt die transportierbare Wärmeleistung und die Förderhöhe;
+      das Anfahren kann bei kleinen Leistungen unzuverlässig sein.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Loop heat pipe
+    description: >-
+      A loop heat pipe is a closed two-phase heat transport circuit in which a fine-pored
+      wick in the evaporator circulates the working fluid by capillary forces. In the evaporator
+      the liquid absorbs heat and evaporates; the vapour flows through a smooth line to the
+      condenser and gives off the heat there, and the condensate returns through a separate
+      line. Because vapour and liquid take separate paths and the wick sits only in the evaporator,
+      longer distances and greater height differences can be bridged than with a conventional
+      heat pipe.
+    example: >-
+      Thermal control of satellites and space probes, cooling of high-power electronics, avionics
+    conditions: >-
+      A working fluid that boils in the operating temperature range, such as ammonia, water
+      or propylene, and a wick with very fine pores.
+    limits: >-
+      The capillary pressure of the wick limits the heat load and the height against which
+      fluid can be pumped; start-up can be unreliable at low power.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

@@ -1,0 +1,69 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: anti-reflective-coating
+kind: application
+home: destroy|field
+functions:
+  - destroy|field
+parameters:
+  - decrease|reflectivity
+  - increase|translucency
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Antireflexbeschichtung
+  - https://en.wikipedia.org/wiki/Anti-reflective_coating
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Antireflexbeschichtung (Entspiegelung)
+    description: >-
+      Auf eine Glas- oder Kunststoffoberfläche werden eine oder mehrere dünne Schichten mit
+      passend gewähltem Brechungsindex aufgebracht. Bei einer Schichtdicke von etwa einem
+      Viertel der Wellenlänge löschen sich die an Ober- und Unterseite der Schicht reflektierten
+      Wellen gegenseitig aus, sodass weniger Licht zurückgeworfen und mehr durchgelassen wird.
+    example: >-
+      Entspiegelte Brillengläser, Kameraobjektive mit vielen Linsen, Solarzellen und Solarglas,
+      Displays und Museumsglas, Laseroptiken
+    conditions: >-
+      Der Brechungsindex einer Einzelschicht sollte zwischen dem von Luft und Substrat liegen,
+      ideal bei der Wurzel aus dem Brechungsindex des Substrats.
+    limits: >-
+      Eine Einzelschicht wirkt optimal nur bei einer Wellenlänge und einem Einfallswinkel;
+      breitbandige Entspiegelung erfordert Mehrschichtsysteme.
+    sideEffects: >-
+      Die dünnen Schichten sind kratzempfindlich, und Fingerabdrücke fallen auf entspiegelten
+      Flächen stärker auf.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Anti-reflective coating
+    description: >-
+      One or more thin layers with a suitably chosen refractive index are applied to a glass
+      or plastic surface. At a thickness of about a quarter of the wavelength, the waves reflected
+      at the top and bottom of the layer cancel each other, so less light is reflected and
+      more is transmitted.
+    example: >-
+      Anti-reflective spectacle lenses, camera lenses with many elements, solar cells and
+      solar glass, displays and museum glass, laser optics
+    conditions: >-
+      The refractive index of a single layer should lie between that of air and the substrate,
+      ideally at the square root of the substrate's index.
+    limits: >-
+      A single layer works optimally at only one wavelength and one angle of incidence; broadband
+      anti-reflection needs multilayer stacks.
+    sideEffects: >-
+      The thin layers scratch easily, and fingerprints are more noticeable on coated surfaces.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

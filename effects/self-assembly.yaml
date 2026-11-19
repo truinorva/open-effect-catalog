@@ -1,0 +1,69 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: self-assembly
+kind: effect
+home: orient|particles
+functions:
+  - orient|particles
+  - join|particles
+parameters: []
+uses: []
+domain:
+  id: Chemie
+  de: Chemie
+  en: Chemistry
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Selbstassemblierung
+  - https://en.wikipedia.org/wiki/Self-assembly
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Selbstassemblierung (Selbstorganisation)
+    description: >-
+      Bei der Selbstassemblierung ordnen sich Moleküle, Nanoteilchen oder größere Bausteine
+      ohne äußere Steuerung zu geordneten Strukturen. Antrieb sind schwache, umkehrbare Wechselwirkungen
+      wie Wasserstoffbrücken, Van-der-Waals-Kräfte, elektrostatische und hydrophobe Kräfte,
+      mit denen das System einen energetisch günstigen Zustand anstrebt; weil sich die Bindungen
+      lösen und neu bilden können, werden Fehler oft von selbst behoben.
+    example: >-
+      Seifenmizellen und Lipiddoppelschichten von Zellmembranen, selbstorganisierte Monolagen
+      von Thiolen auf Gold, Blockcopolymer-Lithografie, DNA-Origami, kolloidale Kristalle
+      für photonische Strukturen, Zusammenbau von Virushüllen
+    conditions: >-
+      Bausteine mit passender Form und gerichteten oder selektiven Wechselwirkungen, Beweglichkeit
+      in Lösung oder an Grenzflächen sowie geeignete Temperatur und Konzentration.
+    limits: >-
+      Fehlerfreie Strukturen über große Flächen von vielen Mikrometern sind schwer zu erreichen,
+      und die erzielbaren Muster sind durch die Bausteine festgelegt.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Self-assembly
+    description: >-
+      In self-assembly, molecules, nanoparticles or larger building blocks arrange themselves
+      into ordered structures without external control. The driving forces are weak, reversible
+      interactions such as hydrogen bonds, van der Waals forces, electrostatic and hydrophobic
+      forces, through which the system seeks an energetically favourable state; because the
+      bonds can break and re-form, defects are often corrected automatically.
+    example: >-
+      Soap micelles and the lipid bilayers of cell membranes, self-assembled monolayers of
+      thiols on gold, block copolymer lithography, DNA origami, colloidal crystals for photonic
+      structures, assembly of virus capsids
+    conditions: >-
+      Building blocks with suitable shape and directional or selective interactions, mobility
+      in solution or at interfaces, and suitable temperature and concentration.
+    limits: >-
+      Defect-free structures over large areas of many micrometres are hard to achieve, and
+      the attainable patterns are fixed by the building blocks.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

@@ -1,0 +1,65 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: cyclotron-radiation
+kind: effect
+home: produce|field
+functions:
+  - produce|field
+  - measure|gas
+parameters:
+  - measure|temperature
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: nische
+sources:
+  - https://en.wikipedia.org/wiki/Cyclotron_radiation
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Zyklotronstrahlung
+    description: >-
+      Geladene Teilchen, die in einem Magnetfeld auf Kreis- oder Spiralbahnen umlaufen, werden
+      ständig beschleunigt und strahlen deshalb elektromagnetische Wellen ab. Bei nichtrelativistischen
+      Geschwindigkeiten erfolgt die Abstrahlung bei der Zyklotronfrequenz, die nur von Ladung,
+      Masse und Magnetfeldstärke abhängt; bei sehr schnellen Teilchen geht sie in die breitbandige
+      Synchrotronstrahlung über.
+    example: >-
+      Messung der Elektronentemperatur in Fusionsplasmen (Elektronen-Zyklotron-Emission),
+      Gyrotrons als Mikrowellenquellen zur Plasmaheizung, Radioemission planetarer Magnetosphären
+    conditions: >-
+      Freie geladene Teilchen, meist Elektronen, in einem Magnetfeld im Vakuum oder in einem
+      Plasma.
+    limits: >-
+      Die von einzelnen langsamen Teilchen abgestrahlte Leistung ist winzig, nutzbare Intensitäten
+      entstehen nur in starken Feldern mit vielen Teilchen oder bei kohärenter Abstrahlung.
+    sideEffects: Energieverlust heißer Plasmen durch Abstrahlung.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Cyclotron radiation
+    description: >-
+      Charged particles circling or spiralling in a magnetic field are constantly accelerated
+      and therefore emit electromagnetic waves. At non-relativistic speeds the emission occurs
+      at the cyclotron frequency, which depends only on charge, mass and magnetic field strength;
+      for very fast particles it turns into broadband synchrotron radiation.
+    example: >-
+      Measuring the electron temperature in fusion plasmas (electron cyclotron emission),
+      gyrotrons as microwave sources for plasma heating, radio emission from planetary magnetospheres
+    conditions: >-
+      Free charged particles, usually electrons, in a magnetic field in vacuum or a plasma.
+    limits: >-
+      The power radiated by individual slow particles is tiny, and usable intensities arise
+      only in strong fields with many particles or with coherent emission.
+    sideEffects: Energy loss of hot plasmas through radiation.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

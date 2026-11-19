@@ -1,0 +1,71 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: desorption
+kind: effect
+home: remove|solid
+functions:
+  - remove|solid
+  - concentrate|gas
+parameters:
+  - increase|concentration
+uses: []
+domain:
+  id: Chemie
+  de: Chemie
+  en: Chemistry
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Desorption
+  - https://en.wikipedia.org/wiki/Desorption
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Desorption
+    description: >-
+      Bei der Desorption lösen sich zuvor adsorbierte Atome oder Moleküle wieder von einer
+      Oberfläche. Das geschieht, wenn ihre thermische Energie die Bindung überwindet – durch
+      Erwärmen, durch Absenken von Partialdruck oder Konzentration in der Umgebung oder durch
+      Verdrängung mit einem anderen Stoff. Technisch nutzt man das, um Adsorptionsmittel zu
+      regenerieren und den aufgenommenen Stoff konzentriert zurückzugewinnen.
+    example: >-
+      Regeneration von Aktivkohle und Zeolith in Druck- und Temperaturwechselanlagen, Thermodesorption
+      in der Gaschromatographie, Ausheizen von Vakuumkammern, Lösemittelrückgewinnung
+    conditions: >-
+      Zufuhr von Wärme oder Spülgas oder eine Druckabsenkung, die das Adsorptionsgleichgewicht
+      verschiebt.
+    limits: >-
+      Chemisch stark gebundene Stoffe lassen sich nur bei hohen Temperaturen oder gar nicht
+      wieder ablösen.
+    sideEffects: >-
+      Desorption verbraucht Energie und kühlt die Oberfläche, und in Vakuumanlagen verschlechtert
+      das Ausgasen der Wände das Vakuum.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Desorption
+    description: >-
+      In desorption, previously adsorbed atoms or molecules detach from a surface again. This
+      happens when their thermal energy overcomes the bond – through heating, by lowering
+      the partial pressure or concentration in the surroundings, or by displacement with another
+      substance. Technically this is used to regenerate adsorbents and recover the adsorbed
+      substance in concentrated form.
+    example: >-
+      Regeneration of activated carbon and zeolite in pressure- and temperature-swing plants,
+      thermal desorption in gas chromatography, bake-out of vacuum chambers, solvent recovery
+    conditions: >-
+      A supply of heat or purge gas, or a pressure reduction that shifts the adsorption equilibrium.
+    limits: >-
+      Strongly chemisorbed substances can be released only at high temperatures or not at
+      all.
+    sideEffects: >-
+      Desorption consumes energy and cools the surface, and in vacuum systems outgassing from
+      the walls impairs the vacuum.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

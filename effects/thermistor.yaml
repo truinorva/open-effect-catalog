@@ -1,0 +1,69 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: thermistor
+kind: application
+home: measure|solid
+functions:
+  - measure|solid
+  - measure|liquid
+  - measure|gas
+  - heat|gas
+parameters:
+  - measure|temperature
+  - stabilise|temperature
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Thermistor
+  - https://en.wikipedia.org/wiki/Thermistor
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Thermistor
+    description: >-
+      Ein Thermistor ist ein Widerstand aus Halbleiterkeramik oder Polymer, dessen elektrischer
+      Widerstand sich stark mit der Temperatur ändert. Beim Heißleiter (NTC) sinkt der Widerstand
+      mit steigender Temperatur, weil mehr Ladungsträger beweglich werden; beim Kaltleiter
+      (PTC) steigt er oberhalb einer Schalttemperatur steil an. Aus dem Widerstand lässt sich
+      die Temperatur ablesen, und ein PTC-Element begrenzt als Heizelement seine eigene Temperatur.
+    example: >-
+      Fieberthermometer, Temperaturfühler in Kühlwasser und Akkus, Einschaltstrombegrenzer,
+      selbstrückstellende Sicherungen, PTC-Zuheizer in Fahrzeugen
+    conditions: Gute thermische Ankopplung an das Messobjekt; kleiner Messstrom.
+    limits: >-
+      Der Messbereich ist enger als bei Thermoelementen oder Platin-Widerstandsthermometern,
+      und die Kennlinie des Heißleiters ist stark nichtlinear.
+    sideEffects: >-
+      Der Messstrom erwärmt den Thermistor selbst und verfälscht so die Messung.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Thermistor
+    description: >-
+      A thermistor is a resistor made of semiconducting ceramic or polymer whose electrical
+      resistance changes strongly with temperature. In an NTC thermistor the resistance falls
+      as the temperature rises because more charge carriers become mobile; in a PTC thermistor
+      it rises steeply above a switching temperature. The resistance indicates the temperature,
+      and a PTC element used as a heater limits its own temperature.
+    example: >-
+      Clinical thermometers, temperature sensors in coolant and battery packs, inrush current
+      limiters, resettable fuses, PTC auxiliary heaters in vehicles
+    conditions: Good thermal contact with the object measured; low measuring current.
+    limits: >-
+      The measuring range is narrower than that of thermocouples or platinum resistance thermometers,
+      and the NTC characteristic is strongly non-linear.
+    sideEffects: >-
+      The measuring current heats the thermistor itself and so falsifies the reading.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

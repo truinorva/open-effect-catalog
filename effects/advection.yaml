@@ -1,0 +1,62 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: advection
+kind: effect
+home: move|liquid
+functions:
+  - move|liquid
+  - move|gas
+  - move|particles
+parameters:
+  - change|position
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Advektion
+  - https://en.wikipedia.org/wiki/Advection
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Advektion
+    description: >-
+      Advektion ist der Transport gelöster Stoffe, mitgeführter Teilchen oder von Wärme dadurch,
+      dass das Fluid, in dem sie sich befinden, als Ganzes strömt. Anders als bei der Diffusion,
+      die von Konzentrationsunterschieden angetrieben wird, wandert die Eigenschaft einfach
+      mit der Strömung mit.
+    example: >-
+      Verfrachtung von Schadstoffen in Flüssen und Grundwasser, Wärmetransport durch Meeresströmungen,
+      Heranführen warmer oder kalter Luftmassen, Wärmetransport im Heizungskreislauf
+    conditions: Eine Strömung des Trägermediums.
+    limits: >-
+      Advektion allein verteilt nichts gleichmäßig; für die Durchmischung quer zur Strömung
+      sind Diffusion oder Turbulenz nötig.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Advection
+    description: >-
+      Advection is the transport of dissolved substances, entrained particles or heat by the
+      bulk flow of the fluid that contains them. Unlike diffusion, which is driven by concentration
+      differences, the property simply travels along with the flow.
+    example: >-
+      Transport of pollutants in rivers and groundwater, heat transport by ocean currents,
+      arrival of warm or cold air masses, heat transport in a heating circuit
+    conditions: A flow of the carrier medium.
+    limits: >-
+      Advection on its own does not even anything out; mixing across the flow needs diffusion
+      or turbulence.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

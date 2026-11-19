@@ -1,0 +1,71 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: combustion
+kind: effect
+home: heat|gas
+functions:
+  - heat|gas
+  - produce|gas
+  - destroy|solid
+  - move|solid
+parameters:
+  - increase|temperature
+  - increase|pressure
+uses: []
+domain:
+  id: Chemie
+  de: Chemie
+  en: Chemistry
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Verbrennung_(Chemie)
+  - https://en.wikipedia.org/wiki/Combustion
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Verbrennung
+    description: >-
+      Bei der Verbrennung reagiert ein Brennstoff rasch mit einem Oxidationsmittel, meist
+      dem Sauerstoff der Luft, und setzt dabei viel Wärme und häufig Licht als Flamme oder
+      Glut frei. Ist die Reaktion einmal gezündet, erhält die freigesetzte Wärme sie selbst
+      aufrecht, solange Brennstoff und Sauerstoff nachkommen. Die heißen, sich ausdehnenden
+      Verbrennungsgase lassen sich zum Heizen oder zum Antrieb von Motoren und Turbinen nutzen.
+    example: >-
+      Heizkessel, Verbrennungsmotor, Gasturbine, Raketentriebwerk, Müllverbrennung, Schweißbrenner,
+      Kerze
+    conditions: >-
+      Brennstoff, Oxidationsmittel und Zündtemperatur (Verbrennungsdreieck); das Gemisch muss
+      innerhalb der Zündgrenzen liegen.
+    limits: ''
+    sideEffects: >-
+      Es entsteht Kohlendioxid und je nach Bedingungen auch Kohlenmonoxid, Stickoxide, Ruß
+      und weitere Schadstoffe.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Combustion
+    description: >-
+      In combustion, a fuel reacts rapidly with an oxidant, usually the oxygen in air, releasing
+      a great deal of heat and often light as a flame or glow. Once ignited, the reaction
+      sustains itself through the heat it releases as long as fuel and oxygen are supplied.
+      The hot, expanding combustion gases can be used for heating or for driving engines and
+      turbines.
+    example: >-
+      Boilers, internal combustion engine, gas turbine, rocket engine, waste incineration,
+      welding torch, candle
+    conditions: >-
+      Fuel, oxidant and ignition temperature (fire triangle); the mixture must lie within
+      the flammability limits.
+    limits: ''
+    sideEffects: >-
+      Carbon dioxide is produced and, depending on conditions, also carbon monoxide, nitrogen
+      oxides, soot and other pollutants.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

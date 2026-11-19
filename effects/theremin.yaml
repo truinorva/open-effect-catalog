@@ -1,0 +1,65 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: theremin
+kind: application
+home: measure|solid
+functions:
+  - measure|solid
+  - produce|field
+parameters:
+  - measure|position
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: ''
+sources:
+  - https://de.wikipedia.org/wiki/Theremin
+  - https://en.wikipedia.org/wiki/Theremin
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Theremin
+    description: >-
+      Das Theremin ist ein elektronisches Musikinstrument, das ohne Berührung gespielt wird.
+      Die Hand des Spielers bildet mit einer Antenne einen kleinen Kondensator, der die Frequenz
+      eines Hochfrequenzoszillators verstimmt; aus der Differenz zu einem zweiten, fest eingestellten
+      Oszillator entsteht ein hörbarer Ton, dessen Höhe vom Abstand der Hand abhängt. Eine
+      zweite Antenne steuert auf dieselbe Weise die Lautstärke.
+    example: >-
+      Musikinstrument in Konzert- und Filmmusik, Lehrbeispiel für kapazitive Näherungssensoren
+    conditions: >-
+      Störungsarme Umgebung; das Instrument muss nach dem Einschalten abgeglichen werden.
+    limits: >-
+      Andere Personen oder Gegenstände in der Nähe verändern die Kapazität und verstimmen
+      das Instrument.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Theremin
+    description: >-
+      The theremin is an electronic musical instrument played without being touched. The player's
+      hand and an antenna form a small capacitor that detunes a radio-frequency oscillator;
+      the difference from a second, fixed oscillator produces an audible tone whose pitch
+      depends on the distance of the hand. A second antenna controls the volume in the same
+      way.
+    example: >-
+      Musical instrument in concert and film music, teaching example for capacitive proximity
+      sensors
+    conditions: >-
+      An environment with little interference; the instrument must be tuned after switching
+      on.
+    limits: >-
+      Other people or objects nearby change the capacitance and detune the instrument.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

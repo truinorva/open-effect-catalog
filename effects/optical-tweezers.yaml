@@ -1,0 +1,72 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: optical-tweezers
+kind: application
+home: hold|particles
+functions:
+  - hold|particles
+  - move|particles
+  - measure|particles
+parameters:
+  - measure|force
+  - change|position
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: wachstum
+sources:
+  - https://de.wikipedia.org/wiki/Optische_Pinzette
+  - https://en.wikipedia.org/wiki/Optical_tweezers
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Optische Pinzette
+    description: >-
+      Ein Laserstrahl wird durch ein Mikroskopobjektiv mit hoher numerischer Apertur stark
+      fokussiert. Ein durchsichtiges Teilchen, dessen Brechungsindex über dem der Umgebung
+      liegt, bricht das Licht und erfährt dabei Kräfte, die es zum Ort der höchsten Intensität,
+      also in den Fokus, ziehen. So lassen sich Zellen, Bakterien oder Mikrokügelchen berührungslos
+      festhalten und verschieben, und aus der Auslenkung im Fokus lassen sich Kräfte im Piconewton-Bereich
+      messen.
+    example: >-
+      Kraftmessung an Motorproteinen und DNA, Sortieren und Handhaben von Zellen, Viskositätsmessung
+      in kleinsten Volumina, Montage von Mikrostrukturen
+    conditions: >-
+      Ein stark fokussierter Laserstrahl und Teilchen, die wenig Licht absorbieren und einen
+      höheren Brechungsindex als die Umgebung haben.
+    limits: >-
+      Die Kräfte sind sehr klein und reichen nur für Teilchen von einigen zehn Nanometern
+      bis zu einigen zehn Mikrometern.
+    sideEffects: Das intensive Licht kann biologische Proben erwärmen und schädigen.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Optical tweezers
+    description: >-
+      A laser beam is tightly focused through a microscope objective with a high numerical
+      aperture. A transparent particle with a higher refractive index than its surroundings
+      refracts the light and experiences forces that pull it towards the point of highest
+      intensity, the focus. Cells, bacteria or microbeads can thus be held and moved without
+      contact, and forces in the piconewton range can be measured from the displacement within
+      the trap.
+    example: >-
+      Force measurements on motor proteins and DNA, sorting and handling cells, viscosity
+      measurement in tiny volumes, assembly of microstructures
+    conditions: >-
+      A tightly focused laser beam and particles that absorb little light and have a higher
+      refractive index than their surroundings.
+    limits: >-
+      The forces are very small and suffice only for particles from a few tens of nanometres
+      to a few tens of micrometres.
+    sideEffects: The intense light can heat and damage biological samples.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

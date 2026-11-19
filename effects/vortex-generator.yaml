@@ -1,0 +1,65 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: vortex-generator
+kind: application
+home: mix|gas
+functions:
+  - mix|gas
+  - cool|solid
+parameters:
+  - increase|force
+  - decrease|drag
+  - increase|heat-conduction
+uses:
+  - vortex-flow
+domain:
+  id: ''
+  de: ''
+  en: ''
+maturity: reife
+sources:
+  - https://en.wikipedia.org/wiki/Vortex_generator
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Wirbelgenerator
+    description: >-
+      Kleine, schräg angestellte Bleche oder Flossen auf einer umströmten Fläche erzeugen
+      an ihren Spitzen Längswirbel. Diese Wirbel mischen energiereiche Außenströmung in die
+      langsame wandnahe Grenzschicht, die dadurch länger an der Oberfläche anliegt und später
+      ablöst. So verbessern sie Auftrieb und Steuerbarkeit bei großen Anstellwinkeln und in
+      Wärmetauschern den Wärmeübergang.
+    example: >-
+      Wirbelgeneratoren auf Tragflügeln und Leitwerken, Rotorblätter von Windkraftanlagen,
+      Dachkante mancher Pkw, Lamellen von Rippenrohr-Wärmetauschern
+    conditions: >-
+      Anordnung vor dem Ablösegebiet; Höhe etwa in der Größenordnung der Grenzschichtdicke.
+    limits: ''
+    sideEffects: Bei anliegender Strömung erhöhen sie den Widerstand leicht.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Vortex generator
+    description: >-
+      Small, angled vanes or fins on a surface in a flow shed streamwise vortices from their
+      tips. These vortices mix high-energy outer flow into the slow boundary layer near the
+      wall, which therefore stays attached to the surface longer and separates later. They
+      thus improve lift and control at high angles of attack and, in heat exchangers, heat
+      transfer.
+    example: >-
+      Vortex generators on aircraft wings and tail surfaces, wind turbine blades, roof edges
+      of some cars, fins of finned-tube heat exchangers
+    conditions: >-
+      Placed upstream of the separation region; height roughly of the order of the boundary
+      layer thickness.
+    limits: ''
+    sideEffects: With attached flow they slightly increase drag.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

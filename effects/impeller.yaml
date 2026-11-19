@@ -1,0 +1,72 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: impeller
+kind: application
+home: move|liquid
+functions:
+  - move|liquid
+  - move|gas
+  - compress|gas
+parameters:
+  - increase|pressure
+  - increase|speed
+uses:
+  - centrifugal-force
+domain:
+  id: Verfahrenstechnik
+  de: Verfahrenstechnik
+  en: Process engineering
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Impeller
+  - https://en.wikipedia.org/wiki/Impeller
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Laufrad (Impeller)
+    description: >-
+      Ein Laufrad ist ein rotierendes Schaufelrad in einer Pumpe oder einem Verdichter, das
+      dem Fluid Energie zuführt. Die Schaufeln beschleunigen das Medium und schleudern es
+      bei Radialrädern nach außen, wo das Gehäuse die Geschwindigkeit in Druck umsetzt; Axialräder
+      fördern es entlang der Welle.
+    example: >-
+      Kreiselpumpen, Verdichter von Turboladern, Radialventilatoren, Wasserstrahlantriebe
+      von Booten, Staubsaugergebläse
+    conditions: >-
+      Pumpenlaufräder müssen mit Flüssigkeit gefüllt sein; leer saugen Kreiselpumpen nicht
+      selbst an.
+    limits: >-
+      Der erreichbare Druck pro Stufe ist begrenzt; für hohe Drücke werden mehrere Stufen
+      hintereinander geschaltet.
+    sideEffects: >-
+      Bei zu niedrigem Zulaufdruck tritt am Laufrad Kavitation auf, die die Schaufeln angreift.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Impeller
+    description: >-
+      An impeller is a rotating bladed wheel in a pump or compressor that adds energy to the
+      fluid. The blades accelerate the medium and, in radial impellers, fling it outwards,
+      where the casing converts the velocity into pressure; axial impellers move it along
+      the shaft.
+    example: >-
+      Centrifugal pumps, turbocharger compressors, centrifugal fans, waterjet drives of boats,
+      vacuum cleaner blowers
+    conditions: >-
+      Pump impellers must be filled with liquid; centrifugal pumps do not self-prime when
+      empty.
+    limits: >-
+      The pressure achievable per stage is limited; for high pressures several stages are
+      arranged in series.
+    sideEffects: >-
+      If the inlet pressure is too low, cavitation occurs at the impeller and attacks the
+      blades.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

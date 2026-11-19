@@ -1,0 +1,68 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: neel-temperature
+kind: effect
+home: orient|solid
+functions:
+  - orient|solid
+parameters:
+  - change|magnetism
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Curie-Temperatur
+  - https://en.wikipedia.org/wiki/Curie_temperature
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Néel-Temperatur
+    description: >-
+      In antiferromagnetischen Stoffen sind benachbarte magnetische Momente unterhalb der
+      Néel-Temperatur entgegengesetzt ausgerichtet, so dass sich ihre Magnetisierung nach
+      außen aufhebt. Oberhalb der Néel-Temperatur zerstört die Wärmebewegung diese Ordnung,
+      und der Stoff wird paramagnetisch; die magnetische Suszeptibilität durchläuft am Übergang
+      ein Maximum.
+    example: >-
+      Antiferromagnetische Pinning-Schichten (etwa IrMn oder PtMn) in GMR- und TMR-Leseköpfen
+      und -Sensoren, Einstellen der Austauschkopplung durch Abkühlen im Magnetfeld, Werkstoffcharakterisierung
+    conditions: >-
+      Ein antiferromagnetischer Werkstoff, etwa Chrom, Manganoxid, Hämatit oder Manganlegierungen.
+    limits: >-
+      Da Antiferromagnete nach außen kaum magnetisch wirken, lässt sich der Übergang nur indirekt
+      nutzen, etwa über angrenzende ferromagnetische Schichten.
+    sideEffects: >-
+      Werden solche Sensorschichten zu heiß, verlieren sie ihre fest eingestellte magnetische
+      Bezugsrichtung.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Néel temperature
+    description: >-
+      In antiferromagnetic materials, neighbouring magnetic moments below the Néel temperature
+      point in opposite directions, so their magnetisation cancels out externally. Above the
+      Néel temperature thermal agitation destroys this order and the material becomes paramagnetic;
+      the magnetic susceptibility passes through a maximum at the transition.
+    example: >-
+      Antiferromagnetic pinning layers (e.g. IrMn or PtMn) in GMR and TMR read heads and sensors,
+      setting the exchange bias by cooling in a magnetic field, materials characterisation
+    conditions: >-
+      An antiferromagnetic material such as chromium, manganese oxide, haematite or manganese
+      alloys.
+    limits: >-
+      Because antiferromagnets show hardly any external magnetism, the transition can only
+      be used indirectly, for example via adjacent ferromagnetic layers.
+    sideEffects: >-
+      If such sensor layers get too hot, they lose their fixed magnetic reference direction.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

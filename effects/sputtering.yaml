@@ -1,0 +1,69 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: sputtering
+kind: effect
+home: remove|solid
+functions:
+  - remove|solid
+  - produce|solid
+  - measure|solid
+parameters:
+  - measure|concentration
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: verbreitet
+sources:
+  - https://de.wikipedia.org/wiki/Sputtern
+  - https://en.wikipedia.org/wiki/Sputtering
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Sputtern (Kathodenzerstäubung)
+    description: >-
+      Treffen energiereiche Ionen, meist aus einem Edelgasplasma, auf eine Festkörperoberfläche,
+      übertragen sie ihren Impuls in Stoßkaskaden auf die Gitteratome. Atome nahe der Oberfläche
+      erhalten dabei genug Energie, um herausgeschlagen zu werden, so dass die Oberfläche
+      Atomlage für Atomlage abgetragen wird. Die freigesetzten Atome können sich auf einem
+      gegenüberliegenden Substrat als dünne Schicht niederschlagen.
+    example: >-
+      Beschichten von Architekturglas, Festplatten und Halbleiterbauteilen (Sputterdeposition),
+      Ionenstrahlätzen und Reinigen von Oberflächen, Tiefenprofilanalyse mit Sekundärionen-Massenspektrometrie
+    conditions: >-
+      Vakuum oder Niederdruckplasma; Ionenenergien oberhalb einer stoffabhängigen Schwelle
+      von einigen zehn Elektronenvolt.
+    limits: >-
+      Die Abtrag- und Abscheideraten sind niedriger als beim thermischen Verdampfen.
+    sideEffects: >-
+      Das Target erwärmt sich stark, und Bauteile in Plasmen, etwa Elektroden oder Wandverkleidungen,
+      werden ungewollt abgetragen.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Sputtering (cathode sputtering)
+    description: >-
+      When energetic ions, usually from a noble-gas plasma, strike a solid surface, they transfer
+      their momentum to the lattice atoms in collision cascades. Atoms near the surface gain
+      enough energy to be knocked out, so the surface is removed atomic layer by atomic layer.
+      The ejected atoms can condense on a facing substrate as a thin film.
+    example: >-
+      Coating architectural glass, hard disks and semiconductor devices (sputter deposition),
+      ion-beam etching and cleaning of surfaces, depth profiling with secondary ion mass spectrometry
+    conditions: >-
+      Vacuum or low-pressure plasma; ion energies above a material-specific threshold of a
+      few tens of electronvolts.
+    limits: Removal and deposition rates are lower than with thermal evaporation.
+    sideEffects: >-
+      The target heats up strongly, and parts exposed to plasmas, such as electrodes or wall
+      linings, are eroded unintentionally.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

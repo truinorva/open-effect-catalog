@@ -1,0 +1,76 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: metal-hydrides
+kind: effect
+home: absorb|gas
+functions:
+  - absorb|gas
+  - compress|gas
+  - separate|gas
+parameters:
+  - increase|pressure
+uses: []
+domain:
+  id: Chemie
+  de: Chemie
+  en: Chemistry
+maturity: verbreitet
+sources:
+  - https://de.wikipedia.org/wiki/Hydride
+  - https://en.wikipedia.org/wiki/Hydride
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Metallhydride (reversible Wasserstoffaufnahme)
+    description: >-
+      Bestimmte Metalle und Legierungen wie Palladium, Lanthan-Nickel, Titan-Eisen oder Magnesium
+      nehmen Wasserstoff auf: Die Moleküle werden an der Oberfläche in Atome gespalten, die
+      auf Zwischengitterplätze des Metalls wandern und ein Hydrid bilden. Die Aufnahme setzt
+      Wärme frei; durch Erwärmen oder Senken des Drucks wird der Wasserstoff wieder abgegeben.
+      Bei gegebener Temperatur stellt sich ein fester Gleichgewichtsdruck ein, der mit der
+      Temperatur stark ansteigt.
+    example: >-
+      Wasserstoffspeicher in U-Booten und Fahrzeugen, Nickel-Metallhydrid-Akkus, thermische
+      Wasserstoffverdichter, Reinigung von Wasserstoff, Metallhydrid-Wärmepumpen
+    conditions: >-
+      Reiner, trockener Wasserstoff oder gereinigtes Gas und eine Temperatur, bei der der
+      Gleichgewichtsdruck zum Prozess passt.
+    limits: >-
+      Die Speicherkapazität ist meist auf 1 bis 2, bei Magnesium auf rund 7 Massenprozent
+      Wasserstoff begrenzt, so dass die Speicher schwer sind; Verunreinigungen wie Sauerstoff,
+      Wasser oder Kohlenmonoxid vergiften die Oberfläche.
+    sideEffects: >-
+      Die freigesetzte Wärme muss abgeführt werden, und die Volumenänderung beim Beladen zerlegt
+      das Metall nach und nach zu feinem Pulver.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Metal hydrides (reversible hydrogen uptake)
+    description: >-
+      Certain metals and alloys such as palladium, lanthanum-nickel, titanium-iron or magnesium
+      take up hydrogen: the molecules split into atoms at the surface, which migrate into
+      interstitial sites of the metal lattice and form a hydride. The uptake releases heat;
+      heating or lowering the pressure releases the hydrogen again. At a given temperature
+      a fixed equilibrium pressure is established, which rises steeply with temperature.
+    example: >-
+      Hydrogen storage in submarines and vehicles, nickel-metal hydride batteries, thermal
+      hydrogen compressors, hydrogen purification, metal hydride heat pumps
+    conditions: >-
+      Pure, dry hydrogen or purified gas and a temperature at which the equilibrium pressure
+      suits the process.
+    limits: >-
+      Storage capacity is mostly limited to 1 to 2 per cent hydrogen by mass, about 7 per
+      cent for magnesium, so storage units are heavy; impurities such as oxygen, water or
+      carbon monoxide poison the surface.
+    sideEffects: >-
+      The heat released has to be removed, and the volume change during loading gradually
+      breaks the metal down into fine powder.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

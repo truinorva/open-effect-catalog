@@ -1,0 +1,71 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: iridescence
+kind: effect
+home: separate|field
+functions:
+  - separate|field
+  - measure|solid
+  - detect|solid
+parameters:
+  - change|colour
+  - measure|size
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Irisieren
+  - https://en.wikipedia.org/wiki/Iridescence
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Irisieren
+    description: >-
+      Irisierende Oberflächen wechseln ihre Farbe je nach Betrachtungs- und Beleuchtungswinkel.
+      Ursache sind Strukturen in der Größenordnung der Lichtwellenlänge, etwa dünne Schichten,
+      regelmäßige Rillen oder periodisch angeordnete Teilchen, an denen sich reflektierte
+      Lichtwellen je nach Wellenlänge und Winkel verstärken oder auslöschen. Die Farbe entsteht
+      also nicht durch Pigmente, sondern durch Interferenz und Beugung.
+    example: >-
+      Seifenblasen, Ölfilm auf Wasser, Perlmutt, Pfauenfedern, Morphofalter, Rückseite einer
+      CD, optisch variable Sicherheitsmerkmale auf Banknoten, Effektpigmente in Autolacken,
+      Abschätzen von Schichtdicken anhand von Interferenzfarben
+    conditions: >-
+      Transparente Schichten oder periodische Strukturen mit Abmessungen im Bereich der Lichtwellenlänge.
+    limits: >-
+      Ist die Schicht deutlich dicker als wenige Mikrometer oder die Struktur unregelmäßig,
+      mitteln sich die Farben aus und der Effekt verschwindet.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Iridescence
+    description: >-
+      Iridescent surfaces change colour with the angle of viewing and illumination. The cause
+      is structures on the scale of the wavelength of light, such as thin layers, regular
+      grooves or periodically arranged particles, at which reflected light waves reinforce
+      or cancel each other depending on wavelength and angle. The colour therefore comes not
+      from pigments but from interference and diffraction.
+    example: >-
+      Soap bubbles, oil film on water, mother-of-pearl, peacock feathers, morpho butterflies,
+      back of a CD, optically variable security features on banknotes, effect pigments in
+      car paints, estimating film thickness from interference colours
+    conditions: >-
+      Transparent layers or periodic structures with dimensions close to the wavelength of
+      light.
+    limits: >-
+      If the layer is much thicker than a few micrometres or the structure is irregular, the
+      colours average out and the effect disappears.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

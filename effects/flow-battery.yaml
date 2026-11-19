@@ -1,0 +1,64 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: flow-battery
+kind: application
+home: absorb|field
+functions:
+  - absorb|field
+  - produce|field
+parameters: []
+uses: []
+domain:
+  id: Chemie
+  de: Chemie
+  en: Chemistry
+maturity: wachstum
+sources:
+  - https://de.wikipedia.org/wiki/Redox-Flow-Batterie
+  - https://en.wikipedia.org/wiki/Flow_battery
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Redox-Flow-Batterie (Flussbatterie)
+    description: >-
+      In einer Flussbatterie sind die energiespeichernden Stoffe in zwei flüssigen Elektrolyten
+      gelöst, die in getrennten Tanks lagern und durch eine Zelle gepumpt werden. Dort laufen
+      an inerten Elektroden, getrennt durch eine Membran, umkehrbare Redoxreaktionen ab: Beim
+      Laden ändern die gelösten Ionen ihre Oxidationsstufe, beim Entladen kehrt sich die Reaktion
+      um. Leistung (Zellfläche) und Energie (Tankvolumen) lassen sich daher unabhängig voneinander
+      auslegen.
+    example: >-
+      Vanadium-Redox-Flow-Speicher für Netz- und Solarstrom, Zink-Brom-Batterien
+    conditions: ''
+    limits: >-
+      Geringe Energiedichte im Vergleich zu Lithium-Ionen-Batterien, daher vor allem für ortsfeste
+      Speicher.
+    sideEffects: >-
+      Die Pumpen verbrauchen einen Teil der Energie; manche Elektrolyte sind korrosiv oder
+      giftig.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Flow battery (redox flow battery)
+    description: >-
+      In a flow battery, the energy-storing substances are dissolved in two liquid electrolytes,
+      which are kept in separate tanks and pumped through a cell. There, reversible redox
+      reactions take place at inert electrodes separated by a membrane: charging changes the
+      oxidation state of the dissolved ions, and discharging reverses the reaction. Power
+      (cell area) and energy (tank volume) can therefore be sized independently.
+    example: >-
+      Vanadium redox flow storage for grid and solar power, zinc–bromine batteries
+    conditions: ''
+    limits: >-
+      Low energy density compared with lithium-ion batteries, so mainly for stationary storage.
+    sideEffects: >-
+      The pumps consume part of the energy; some electrolytes are corrosive or toxic.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

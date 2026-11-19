@@ -1,0 +1,62 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: thermomagnetic-convection
+kind: effect
+home: move|liquid
+functions:
+  - move|liquid
+  - cool|solid
+parameters:
+  - increase|heat-conduction
+  - increase|speed
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: nische
+sources:
+  - https://en.wikipedia.org/wiki/Thermomagnetic_convection
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Thermomagnetische Konvektion
+    description: >-
+      Die Magnetisierung eines Ferrofluids nimmt mit steigender Temperatur ab. Liegt ein Magnetfeld
+      an, wird kühleres Fluid stärker in Bereiche hoher Feldstärke gezogen als wärmeres und
+      verdrängt dieses; so entsteht eine Strömung, die Wärme transportiert, ohne Pumpe und
+      unabhängig von der Schwerkraft.
+    example: >-
+      Selbstpumpende Ferrofluid-Kühlkreisläufe im Labormaßstab, Wärmetransport unter Schwerelosigkeit,
+      Kühlung elektronischer Bauteile (Forschung)
+    conditions: >-
+      Ferrofluid mit temperaturabhängiger Magnetisierung, Temperaturgefälle und Magnetfeld
+      bzw. Feldgradient.
+    limits: ''
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Thermomagnetic convection
+    description: >-
+      The magnetisation of a ferrofluid decreases as its temperature rises. In a magnetic
+      field, cooler fluid is pulled more strongly into regions of high field strength than
+      warmer fluid and displaces it; this creates a flow that carries heat without a pump
+      and independently of gravity.
+    example: >-
+      Self-pumping ferrofluid cooling loops at laboratory scale, heat transport in weightlessness,
+      cooling of electronic components (research)
+    conditions: >-
+      Ferrofluid with temperature-dependent magnetisation, a temperature gradient, and a magnetic
+      field or field gradient.
+    limits: ''
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

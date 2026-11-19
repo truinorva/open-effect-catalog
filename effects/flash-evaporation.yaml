@@ -1,0 +1,70 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: flash-evaporation
+kind: effect
+home: change-phase|liquid
+functions:
+  - change-phase|liquid
+  - cool|liquid
+  - separate|liquid
+  - concentrate|liquid
+parameters:
+  - decrease|temperature
+  - increase|purity
+uses: []
+domain:
+  id: Verfahrenstechnik
+  de: Verfahrenstechnik
+  en: Process engineering
+maturity: verbreitet
+sources:
+  - https://de.wikipedia.org/wiki/Entspannungsverdampfung
+  - https://en.wikipedia.org/wiki/Flash_evaporation
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Entspannungsverdampfung (Flash-Verdampfung)
+    description: >-
+      Wird eine gesättigte oder überhitzte Flüssigkeit plötzlich auf einen niedrigeren Druck
+      entspannt, liegt sie über ihrer neuen Siedetemperatur, und ein Teil verdampft schlagartig.
+      Die nötige Verdampfungswärme stammt aus der Flüssigkeit selbst, die sich dabei auf die
+      Siedetemperatur beim neuen Druck abkühlt; Dampf und Restflüssigkeit lassen sich anschließend
+      trennen.
+    example: >-
+      Mehrstufige Entspannungsverdampfung (MSF) zur Meerwasserentsalzung, Flash-Behälter in
+      Raffinerien und Kraftwerken, Geothermiekraftwerke, Entspannung des Kältemittels im Kältekreis
+    conditions: >-
+      Flüssigkeit unter Druck nahe oder über ihrer Siedetemperatur; Drosselorgan und Abscheidebehälter.
+    limits: >-
+      Je Stufe verdampft nur ein kleiner Anteil, weil die fühlbare Wärme der Flüssigkeit begrenzt
+      ist.
+    sideEffects: >-
+      Gelöste Gase werden frei, und mitgerissene Tropfen können den Dampf verunreinigen.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Flash evaporation
+    description: >-
+      When a saturated or superheated liquid is suddenly let down to a lower pressure, it
+      is above its new boiling point, and part of it vaporises instantly. The heat of vaporisation
+      comes from the liquid itself, which cools to the boiling temperature at the new pressure;
+      vapour and remaining liquid can then be separated.
+    example: >-
+      Multi-stage flash (MSF) desalination of seawater, flash drums in refineries and power
+      plants, geothermal power plants, refrigerant expansion in refrigeration circuits
+    conditions: >-
+      Liquid under pressure near or above its boiling temperature; throttling device and separator
+      vessel.
+    limits: >-
+      Only a small fraction evaporates per stage, because the liquid's sensible heat is limited.
+    sideEffects: >-
+      Dissolved gases are released, and entrained droplets can contaminate the vapour.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

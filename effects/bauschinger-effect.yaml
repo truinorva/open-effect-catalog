@@ -1,0 +1,63 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: bauschinger-effect
+kind: effect
+home: deform|solid
+functions:
+  - deform|solid
+parameters:
+  - decrease|strength
+uses: []
+domain:
+  id: Materialwissenschaft
+  de: Materialwissenschaft
+  en: Materials science
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Bauschingereffekt
+  - https://en.wikipedia.org/wiki/Bauschinger_effect
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Bauschinger-Effekt
+    description: >-
+      Wird ein Metall zunächst in einer Richtung plastisch verformt, etwa gezogen, sinkt anschließend
+      seine Fließgrenze bei Belastung in der Gegenrichtung, etwa auf Druck. Ursache sind innere
+      Rückspannungen aus aufgestauten Versetzungen, die das Zurückgleiten der Versetzungen
+      erleichtern.
+    example: >-
+      Berechnung der Rückfederung beim Blechumformen, Auslegung autofrettierter Rohre, Festigkeit
+      kaltgeformter Stahlprofile und Leitungsrohre, zyklische Werkstoffmodelle in der Simulation
+    conditions: >-
+      Eine vorangegangene plastische Verformung und eine anschließende Umkehr der Belastungsrichtung.
+    limits: ''
+    sideEffects: >-
+      Bauteile, die erst in eine Richtung umgeformt und dann umgekehrt belastet werden, können
+      früher fließen, als der Werkstoffkennwert erwarten lässt.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Bauschinger effect
+    description: >-
+      If a metal is first deformed plastically in one direction, for example in tension, its
+      yield strength under loading in the opposite direction, for example in compression,
+      is subsequently lower. The cause is internal back stresses from piled-up dislocations,
+      which make it easier for the dislocations to glide back.
+    example: >-
+      Springback calculation in sheet metal forming, design of autofrettaged tubes, strength
+      of cold-formed steel sections and line pipe, cyclic material models in simulation
+    conditions: >-
+      Prior plastic deformation followed by a reversal of the loading direction.
+    limits: ''
+    sideEffects: >-
+      Parts that are first formed in one direction and then loaded the opposite way can yield
+      earlier than the material data suggest.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

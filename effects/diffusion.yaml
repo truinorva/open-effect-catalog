@@ -1,0 +1,73 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: diffusion
+kind: effect
+home: mix|gas
+functions:
+  - mix|gas
+  - mix|liquid
+  - mix|solid
+  - separate|gas
+parameters:
+  - increase|homogeneity
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Diffusion
+  - https://en.wikipedia.org/wiki/Diffusion
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Diffusion
+    description: >-
+      Durch die ungeordnete Wärmebewegung von Atomen und Molekülen gleichen sich Konzentrationsunterschiede
+      ohne äußeren Antrieb allmählich aus. Der Stoffstrom ist proportional zum Konzentrationsgefälle
+      (Ficksches Gesetz); in Gasen ist die Diffusion schnell, in Flüssigkeiten langsamer und
+      in Festkörpern erst bei hohen Temperaturen merklich. Die zurückgelegte Strecke wächst
+      nur mit der Wurzel aus der Zeit, daher wirkt Diffusion vor allem über kurze Wege.
+    example: >-
+      Einsatzhärten und Nitrieren von Stahl, Dotieren von Halbleitern, Wasserstoffreinigung
+      mit Palladiummembranen, Gasaustausch in der Lunge, Dialyse
+    conditions: >-
+      Ein Konzentrationsgefälle und ausreichende Beweglichkeit der Teilchen, in Festkörpern
+      meist eine hohe Temperatur.
+    limits: >-
+      Über große Entfernungen ist Diffusion sehr langsam und wird in Fluiden von der Konvektion
+      übertroffen.
+    sideEffects: >-
+      Unerwünschte Durchmischung von Schichten, Gasverlust durch Behälterwände und Alterung
+      von Lötstellen und Halbleiterbauteilen.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Diffusion
+    description: >-
+      Through the random thermal motion of atoms and molecules, concentration differences
+      gradually even out without any external drive. The flow of substance is proportional
+      to the concentration gradient (Fick's law); diffusion is fast in gases, slower in liquids
+      and noticeable in solids only at high temperatures. The distance covered grows only
+      with the square root of time, so diffusion acts mainly over short distances.
+    example: >-
+      Case hardening and nitriding of steel, doping of semiconductors, hydrogen purification
+      with palladium membranes, gas exchange in the lungs, dialysis
+    conditions: >-
+      A concentration gradient and sufficient mobility of the particles, in solids usually
+      a high temperature.
+    limits: >-
+      Over large distances diffusion is very slow and is outpaced by convection in fluids.
+    sideEffects: >-
+      Unwanted intermixing of layers, gas loss through container walls, and ageing of solder
+      joints and semiconductor devices.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

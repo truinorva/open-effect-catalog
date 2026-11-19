@@ -1,0 +1,68 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: electron-beam-technology
+kind: application
+home: heat|solid
+functions:
+  - heat|solid
+  - join|solid
+  - remove|solid
+  - change-phase|solid
+  - preserve|solid
+parameters:
+  - increase|temperature
+  - increase|strength
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: reife
+sources:
+  - https://en.wikipedia.org/wiki/Electron-beam_technology
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Elektronenstrahltechnik
+    description: >-
+      Elektronen werden aus einer Glühkathode emittiert, im Vakuum durch Hochspannung beschleunigt
+      und mit elektrischen oder magnetischen Linsen zu einem Strahl gebündelt, der sich sehr
+      schnell ablenken lässt. Beim Auftreffen wird ihre Bewegungsenergie im Werkstoff fast
+      vollständig in Wärme umgesetzt oder bricht chemische Bindungen auf; je nach Leistungsdichte
+      lässt sich damit schweißen, schmelzen, verdampfen, bohren, härten, vernetzen oder sterilisieren.
+    example: >-
+      Elektronenstrahlschweißen, Elektronenstrahlschmelzen in der additiven Fertigung, Elektronenstrahlverdampfen
+      zur Beschichtung, Vernetzen von Kabelisolierungen, Sterilisation von Medizinprodukten,
+      Elektronenstrahllithografie
+    conditions: >-
+      Hochvakuum im Strahlerzeuger, für Schweißen und Schmelzen meist auch in der Arbeitskammer.
+    limits: An Luft wird der Strahl schnell gestreut und abgebremst.
+    sideEffects: Beim Auftreffen entsteht Röntgenstrahlung, die abgeschirmt werden muss.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Electron-beam technology
+    description: >-
+      Electrons emitted from a hot cathode are accelerated by high voltage in a vacuum and
+      focused by electric or magnetic lenses into a beam that can be deflected very quickly.
+      On impact, their kinetic energy is converted almost entirely into heat in the material
+      or breaks chemical bonds; depending on power density, this can be used for welding,
+      melting, evaporating, drilling, hardening, cross-linking or sterilising.
+    example: >-
+      Electron-beam welding, electron-beam melting in additive manufacturing, electron-beam
+      evaporation for coating, cross-linking cable insulation, sterilising medical devices,
+      electron-beam lithography
+    conditions: >-
+      High vacuum in the beam generator, and usually in the working chamber for welding and
+      melting.
+    limits: In air, the beam is quickly scattered and slowed down.
+    sideEffects: X-rays are produced on impact and must be shielded.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

@@ -1,0 +1,76 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: capacitance
+kind: effect
+home: detect|solid
+functions:
+  - detect|solid
+  - measure|solid
+  - measure|liquid
+  - measure|gas
+parameters:
+  - measure|position
+  - measure|quantity
+  - measure|humidity
+  - measure|size
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Elektrische_Kapazit%C3%A4t
+  - https://en.wikipedia.org/wiki/Capacitance
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Elektrische Kapazität (kapazitiver Effekt)
+    description: >-
+      Zwei voneinander isolierte Leiter speichern elektrische Ladung, wenn zwischen ihnen
+      eine Spannung anliegt; die Kapazität gibt an, wie viel Ladung je Volt. Sie wächst mit
+      der Fläche der Leiter und der Permittivität des Stoffes dazwischen und sinkt mit ihrem
+      Abstand. Weil jede Änderung von Abstand, Überdeckung oder Material zwischen den Elektroden
+      die Kapazität verändert, eignet sie sich gut zum berührungslosen Messen.
+    example: >-
+      Touchscreens, kapazitive Näherungsschalter, Füllstandsmessung, Feuchtesensoren, Wegsensoren
+      und MEMS-Beschleunigungssensoren, Dickenmessung isolierender Schichten
+    conditions: >-
+      Leitfähige Elektroden und eine Wechsel- oder Gleichspannung, deren Ladestrom ausgewertet
+      wird.
+    limits: >-
+      Die Kapazitäten sind oft sehr klein (Pikofarad), sodass Streukapazitäten von Kabeln
+      und Umgebung die Messung verfälschen.
+    sideEffects: >-
+      Parasitäre Kapazitäten zwischen Leitungen verursachen in Schaltungen Übersprechen und
+      begrenzen die Schaltgeschwindigkeit.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Capacitance (capacitive effect)
+    description: >-
+      Two conductors insulated from each other store electric charge when a voltage is applied
+      between them; capacitance states how much charge per volt. It grows with the area of
+      the conductors and the permittivity of the material between them and falls with their
+      distance. Since any change in distance, overlap or material between the electrodes changes
+      the capacitance, it is well suited for contactless measurement.
+    example: >-
+      Touchscreens, capacitive proximity switches, level measurement, humidity sensors, displacement
+      sensors and MEMS accelerometers, thickness measurement of insulating layers
+    conditions: >-
+      Conductive electrodes and an AC or DC voltage whose charging current is evaluated.
+    limits: >-
+      Capacitances are often very small (picofarads), so stray capacitances of cables and
+      surroundings distort the measurement.
+    sideEffects: >-
+      Parasitic capacitances between lines cause crosstalk in circuits and limit switching
+      speed.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

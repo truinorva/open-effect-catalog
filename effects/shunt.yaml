@@ -1,0 +1,67 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: shunt
+kind: application
+home: measure|field
+functions:
+  - measure|field
+parameters: []
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Shunt_(Elektrotechnik)
+  - https://en.wikipedia.org/wiki/Shunt_(electrical)
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Shunt (Strommesswiderstand)
+    description: >-
+      Ein Shunt ist ein niederohmiger, genau bekannter Widerstand, der in einen Stromkreis
+      eingefügt oder parallel zu einem Messwerk geschaltet wird. Der Strom erzeugt an ihm
+      einen kleinen Spannungsabfall, der nach dem ohmschen Gesetz proportional zum Strom ist;
+      so lassen sich große Ströme mit einem Spannungsmesser bestimmen oder der Messbereich
+      eines Strommessers erweitern, weil der Großteil des Stroms am Messwerk vorbeigeleitet
+      wird.
+    example: >-
+      Strommessung in Batteriemanagementsystemen und Ladegeräten, Messbereichserweiterung
+      von Amperemetern, Stromerfassung in Motorsteuerungen
+    conditions: >-
+      Widerstandswerkstoff mit kleinem Temperaturkoeffizienten, etwa Manganin; Vierleiteranschluss
+      für genaue Messungen.
+    limits: >-
+      Der Shunt bietet keine galvanische Trennung; bei großen Strömen erwärmt er sich und
+      verfälscht den Messwert.
+    sideEffects: Am Widerstand geht Leistung als Wärme verloren.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Shunt (current shunt)
+    description: >-
+      A shunt is a low-value, precisely known resistor inserted into a circuit or connected
+      in parallel with a meter movement. The current produces a small voltage drop across
+      it that, by Ohm's law, is proportional to the current; this allows large currents to
+      be measured with a voltmeter, or extends the range of an ammeter by routing most of
+      the current past the movement.
+    example: >-
+      Current measurement in battery management systems and chargers, range extension of ammeters,
+      current sensing in motor controllers
+    conditions: >-
+      Resistance alloy with a low temperature coefficient, such as manganin; four-terminal
+      connection for accurate measurement.
+    limits: >-
+      The shunt provides no galvanic isolation; at high currents it heats up and distorts
+      the reading.
+    sideEffects: Power is lost as heat in the resistor.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

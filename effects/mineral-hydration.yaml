@@ -1,0 +1,76 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: mineral-hydration
+kind: effect
+home: absorb|liquid
+functions:
+  - absorb|liquid
+  - expand|solid
+  - join|particles
+  - remove|gas
+parameters:
+  - decrease|humidity
+  - increase|volume
+  - increase|strength
+uses: []
+domain:
+  id: Chemie
+  de: Chemie
+  en: Chemistry
+maturity: lehrbuch
+sources:
+  - https://en.wikipedia.org/wiki/Mineral_hydration
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Hydratation von Mineralen
+    description: >-
+      Bei der Hydratation baut ein Mineral Wassermoleküle oder Hydroxidgruppen fest in sein
+      Kristallgitter ein und wird so zu einem neuen, wasserhaltigen Mineral. Die Reaktion
+      bindet Wasser chemisch, setzt meist Wärme frei und vergrößert häufig das Volumen des
+      Feststoffs. Bilden die neuen Hydratphasen ein zusammenhängendes Gefüge, verfestigt sich
+      ein zuvor loses Pulver zu einem harten Körper.
+    example: >-
+      Abbinden von Zement und Gipsputz, Trockenmittel wie wasserfreies Calciumsulfat oder
+      Calciumchlorid, Quellen von Anhydrit im Tunnelbau, Serpentinisierung von Olivin in ozeanischem
+      Gestein
+    conditions: >-
+      Wasser in flüssiger Form oder als Dampf muss das Mineral erreichen, und Temperatur sowie
+      Wasserdampfdruck müssen im Stabilitätsbereich der wasserhaltigen Phase liegen.
+    limits: >-
+      Beim Erhitzen über die Stabilitätsgrenze gibt das Mineral das gebundene Wasser wieder
+      ab.
+    sideEffects: >-
+      Die Volumenzunahme kann Gestein und Bauwerke anheben oder zerreißen, etwa bei quellendem
+      Anhydrit.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Mineral hydration
+    description: >-
+      In hydration, a mineral incorporates water molecules or hydroxide groups firmly into
+      its crystal lattice and becomes a new, water-bearing mineral. The reaction binds water
+      chemically, usually releases heat and often increases the volume of the solid. If the
+      new hydrate phases grow into a coherent network, a previously loose powder sets into
+      a hard body.
+    example: >-
+      Setting of cement and gypsum plaster, desiccants such as anhydrous calcium sulphate
+      or calcium chloride, swelling of anhydrite in tunnelling, serpentinisation of olivine
+      in oceanic rock
+    conditions: >-
+      Liquid water or water vapour must reach the mineral, and temperature and vapour pressure
+      must lie within the stability range of the hydrated phase.
+    limits: >-
+      Heated beyond its stability limit, the mineral releases the bound water again.
+    sideEffects: >-
+      The volume increase can lift or crack rock and structures, for example with swelling
+      anhydrite.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

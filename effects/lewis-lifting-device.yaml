@@ -1,0 +1,70 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: lewis-lifting-device
+kind: application
+home: hold|solid
+functions:
+  - hold|solid
+  - move|solid
+parameters: []
+uses: []
+domain:
+  id: ''
+  de: ''
+  en: ''
+maturity: ''
+sources:
+  - https://de.wikipedia.org/wiki/Steintransport
+  - https://en.wikipedia.org/wiki/Lewis_(lifting_appliance)
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Wolf (Steinhebezeug)
+    description: >-
+      Ein Wolf ist ein Hebezeug für Werksteinblöcke, das in ein schwalbenschwanzförmig unterschnittenes
+      Loch an der Oberseite des Steins eingesetzt wird. Er besteht meist aus zwei keilförmigen
+      Außenteilen, die in das Loch geschoben und durch ein gerades Mittelstück auseinandergedrückt
+      werden, so dass sie die Unterschneidung formschlüssig ausfüllen. Zieht der Kran am Bolzen,
+      der alle drei Teile verbindet, kann der Block nicht abrutschen und lässt sich ohne seitliche
+      Schlingen versetzen.
+    example: >-
+      Versetzen von Quadern im Mauerwerks- und Denkmalbau, antike und mittelalterliche Tempel-
+      und Kirchenbauten, Natursteinarbeiten
+    conditions: >-
+      Fester, nicht spaltender Stein und ein sorgfältig ausgearbeitetes, unterschnittenes
+      Loch.
+    limits: >-
+      Die Tragkraft hängt von der Festigkeit des Steins um das Loch ab; weiche oder rissige
+      Steine können ausbrechen.
+    sideEffects: >-
+      Am fertigen Bauwerk bleibt das Wolfsloch sichtbar, sofern es nicht verdeckt oder verfüllt
+      wird.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Lewis (lifting device)
+    description: >-
+      A lewis is a lifting device for dressed stone blocks that is inserted into a dovetail-shaped,
+      undercut hole in the top of the stone. It usually consists of two wedge-shaped outer
+      pieces pushed into the hole and spread apart by a straight middle piece, so that together
+      they fill the undercut by form fit. When the crane pulls on the bolt that connects all
+      three pieces, the block cannot slip off and can be set in place without slings around
+      its sides.
+    example: >-
+      Setting ashlar blocks in masonry and monument construction, ancient and medieval temple
+      and church buildings, natural stone work
+    conditions: Strong stone that does not split and a carefully cut, undercut hole.
+    limits: >-
+      The load capacity depends on the strength of the stone around the hole; soft or cracked
+      stones can break out.
+    sideEffects: >-
+      The lewis hole remains visible on the finished building unless it is covered or filled.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

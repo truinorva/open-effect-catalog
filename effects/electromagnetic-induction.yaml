@@ -1,0 +1,64 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: electromagnetic-induction
+kind: effect
+home: produce|field
+functions:
+  - produce|field
+  - heat|solid
+  - measure|field
+  - detect|solid
+  - stop|solid
+parameters:
+  - measure|speed
+  - measure|position
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Elektromagnetische_Induktion
+  - https://en.wikipedia.org/wiki/Electromagnetic_induction
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Elektromagnetische Induktion
+    description: >-
+      Ändert sich der magnetische Fluss durch eine Leiterschleife – weil sich das Magnetfeld
+      ändert oder der Leiter sich darin bewegt –, wird in ihr eine Spannung induziert, die
+      proportional zur Änderungsgeschwindigkeit des Flusses ist (Faradaysches Induktionsgesetz).
+      Der dadurch getriebene Strom ist nach der Lenzschen Regel so gerichtet, dass er seiner
+      Ursache entgegenwirkt.
+    example: >-
+      Generator, Transformator, Induktionsherd, Wirbelstrombremse, Metalldetektor, induktive
+      Näherungs- und Drehzahlsensoren, kabelloses Laden
+    conditions: Zeitlich veränderlicher magnetischer Fluss durch einen Leiter.
+    limits: ''
+    sideEffects: >-
+      In massiven Leitern entstehen Wirbelströme, die Verluste und Erwärmung verursachen.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Electromagnetic induction
+    description: >-
+      When the magnetic flux through a conducting loop changes – because the magnetic field
+      varies or the conductor moves within it – a voltage is induced in the loop, proportional
+      to the rate of change of the flux (Faraday's law of induction). According to Lenz's
+      law, the resulting current flows in a direction that opposes its cause.
+    example: >-
+      Generator, transformer, induction hob, eddy current brake, metal detector, inductive
+      proximity and speed sensors, wireless charging
+    conditions: Time-varying magnetic flux through a conductor.
+    limits: ''
+    sideEffects: Eddy currents arise in solid conductors, causing losses and heating.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

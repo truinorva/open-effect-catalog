@@ -1,0 +1,68 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: crevice-corrosion
+kind: effect
+home: destroy|solid
+functions:
+  - destroy|solid
+parameters:
+  - decrease|strength
+uses: []
+domain:
+  id: Chemie
+  de: Chemie
+  en: Chemistry
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Spaltkorrosion
+  - https://en.wikipedia.org/wiki/Crevice_corrosion
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Spaltkorrosion
+    description: >-
+      In engen Spalten, etwa unter Dichtungen, Schraubenköpfen oder Ablagerungen, wird der
+      Sauerstoff im eingeschlossenen Elektrolyten verbraucht und nicht nachgeliefert. Der
+      Spalt wird zur Anode, Metallionen reichern sich an, hydrolysieren und säuern die Lösung
+      an, und eingewanderte Chloridionen zerstören die Passivschicht. Die Korrosion beschleunigt
+      sich so selbst und frisst sich in den Spalt hinein, während die Außenfläche intakt aussieht.
+    example: >-
+      Schäden unter Flanschdichtungen und Unterlegscheiben, an Edelstahl in Meerwasser, an
+      überlappenden Blechen und Nietverbindungen; Spaltkorrosionsprüfungen zur Werkstoffqualifizierung
+    conditions: >-
+      Spaltbreiten von wenigen Hundertstel bis Zehntel Millimetern, ein meist chloridhaltiger
+      Elektrolyt und ein passivierbares Metall wie nichtrostender Stahl oder Aluminium.
+    limits: >-
+      In sehr breiten Spalten wird genug Sauerstoff nachgeliefert, und der Effekt bleibt aus.
+    sideEffects: >-
+      Verborgene Schwächung tragender Teile und Undichtigkeiten, die oft erst beim Versagen
+      entdeckt werden.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Crevice corrosion
+    description: >-
+      In narrow gaps, for example under seals, bolt heads or deposits, the oxygen in the trapped
+      electrolyte is consumed and not replenished. The crevice becomes the anode, metal ions
+      accumulate, hydrolyse and acidify the solution, and chloride ions migrating in destroy
+      the passive layer. The corrosion thus accelerates itself and eats into the crevice while
+      the outer surface looks intact.
+    example: >-
+      Damage under flange gaskets and washers, on stainless steel in seawater, on overlapping
+      sheets and riveted joints; crevice corrosion tests for qualifying materials
+    conditions: >-
+      Gap widths of a few hundredths to tenths of a millimetre, an electrolyte that usually
+      contains chloride, and a passivating metal such as stainless steel or aluminium.
+    limits: >-
+      In very wide gaps enough oxygen is supplied, and the effect does not occur.
+    sideEffects: >-
+      Hidden weakening of load-bearing parts and leaks that are often discovered only on failure.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

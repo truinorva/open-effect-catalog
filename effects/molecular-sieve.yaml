@@ -1,0 +1,78 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: molecular-sieve
+kind: application
+home: separate|gas
+functions:
+  - separate|gas
+  - separate|liquid
+  - remove|gas
+  - remove|liquid
+  - absorb|gas
+parameters:
+  - decrease|humidity
+  - increase|purity
+uses:
+  - physisorption
+domain:
+  id: Verfahrenstechnik
+  de: Verfahrenstechnik
+  en: Process engineering
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Molekularsieb
+  - https://en.wikipedia.org/wiki/Molecular_sieve
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Molekularsieb
+    description: >-
+      Molekularsiebe sind Feststoffe mit Poren einheitlicher Größe im Bereich von Moleküldurchmessern,
+      meist synthetische Zeolithe oder Kohlenstoff-Molekularsiebe. Moleküle, die klein genug
+      sind, dringen in die Poren ein und werden an der großen inneren Oberfläche adsorbiert,
+      größere bleiben draußen. So lassen sich Gase und Flüssigkeiten nach Molekülgröße und
+      Polarität trennen oder sehr gründlich trocknen.
+    example: >-
+      Trocknung von Lösungsmitteln, Erdgas und Isolierglas-Zwischenräumen, Sauerstoffkonzentratoren
+      mit Druckwechseladsorption, Stickstofferzeugung mit Kohlenstoff-Molekularsieb, Trennung
+      von n- und iso-Paraffinen
+    conditions: >-
+      Eine zur Zielkomponente passende Porenweite, etwa 3, 4, 5 oder 10 Å, und regelmäßige
+      Regeneration durch Erwärmen oder Druckabsenkung.
+    limits: >-
+      Ist die Aufnahmekapazität erschöpft, bricht die Komponente durch, bis das Sieb regeneriert
+      ist.
+    sideEffects: >-
+      Bei der Adsorption wird Wärme frei, die das Bett merklich erwärmen kann, und Abrieb
+      kann nachgeschaltete Anlagen verschmutzen.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Molecular sieve
+    description: >-
+      Molecular sieves are solids with pores of uniform size on the scale of molecular diameters,
+      usually synthetic zeolites or carbon molecular sieves. Molecules small enough enter
+      the pores and are adsorbed on the large internal surface, while larger ones stay outside.
+      Gases and liquids can thus be separated by molecular size and polarity, or dried very
+      thoroughly.
+    example: >-
+      Drying of solvents, natural gas and insulating glass units, oxygen concentrators using
+      pressure swing adsorption, nitrogen generation with carbon molecular sieve, separation
+      of n- and iso-paraffins
+    conditions: >-
+      A pore size matched to the target component, such as 3, 4, 5 or 10 Å, and regular regeneration
+      by heating or pressure reduction.
+    limits: >-
+      Once the capacity is exhausted, the component breaks through until the sieve is regenerated.
+    sideEffects: >-
+      Adsorption releases heat that can noticeably warm the bed, and attrition dust can contaminate
+      downstream equipment.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

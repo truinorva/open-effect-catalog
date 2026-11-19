@@ -1,0 +1,70 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: rayleigh-benard-convection
+kind: effect
+home: move|liquid
+functions:
+  - move|liquid
+  - mix|liquid
+  - move|gas
+parameters:
+  - increase|heat-conduction
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Rayleigh-B%C3%A9nard-Konvektion
+  - https://en.wikipedia.org/wiki/Rayleigh%E2%80%93B%C3%A9nard_convection
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Rayleigh-Bénard-Konvektion
+    description: >-
+      Wird eine waagerechte Flüssigkeits- oder Gasschicht von unten beheizt und von oben gekühlt,
+      liegt das wärmere, leichtere Fluid unten, und die Schichtung ist instabil. Überschreitet
+      die Rayleigh-Zahl, die Auftrieb gegen Zähigkeit und Wärmeleitung abwägt, einen kritischen
+      Wert, der zwischen zwei festen Wänden etwa 1708 beträgt, setzt plötzlich Konvektion
+      in regelmäßigen Walzen ein, die Wärme weit wirksamer transportiert als reine Wärmeleitung.
+    example: >-
+      Granulation der Sonnenoberfläche, Konvektion im Erdmantel und in der Atmosphäre, Wolkenstraßen,
+      Wärmeübergang in waagerechten Spalten und Behältern, Kristallzüchtung aus der Schmelze
+    conditions: >-
+      Eine waagerechte Fluidschicht mit Temperaturgefälle von unten nach oben in einem Schwerefeld
+      und eine Rayleigh-Zahl oberhalb des kritischen Werts.
+    limits: >-
+      Unterhalb der kritischen Rayleigh-Zahl bleibt die Schicht in Ruhe, und Wärme wird nur
+      durch Leitung transportiert; in Schwerelosigkeit fehlt der Auftrieb.
+    sideEffects: >-
+      Bei sehr hohen Rayleigh-Zahlen wird die Strömung turbulent und unregelmäßig.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Rayleigh–Bénard convection
+    description: >-
+      When a horizontal layer of liquid or gas is heated from below and cooled from above,
+      the warmer, lighter fluid lies at the bottom and the stratification is unstable. Once
+      the Rayleigh number, which weighs buoyancy against viscosity and heat conduction, exceeds
+      a critical value of about 1708 between two rigid walls, convection sets in abruptly
+      in regular rolls that carry heat far more effectively than conduction alone.
+    example: >-
+      Granulation of the solar surface, convection in the Earth's mantle and atmosphere, cloud
+      streets, heat transfer in horizontal gaps and vessels, crystal growth from the melt
+    conditions: >-
+      A horizontal fluid layer with a temperature drop from bottom to top in a gravitational
+      field, and a Rayleigh number above the critical value.
+    limits: >-
+      Below the critical Rayleigh number the layer stays at rest and heat is transported by
+      conduction only; in weightlessness there is no buoyancy.
+    sideEffects: At very high Rayleigh numbers the flow becomes turbulent and irregular.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

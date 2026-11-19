@@ -1,0 +1,63 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: thermography
+kind: application
+home: measure|solid
+functions:
+  - measure|solid
+  - detect|solid
+  - measure|liquid
+parameters:
+  - measure|temperature
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Thermografie
+  - https://en.wikipedia.org/wiki/Thermography
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Thermografie
+    description: >-
+      Jeder Körper strahlt abhängig von seiner Temperatur Infrarotstrahlung ab. Eine Wärmebildkamera
+      bildet diese Strahlung auf einen Detektor ab und rechnet sie über den Emissionsgrad
+      der Oberfläche in ein Temperaturbild um. So lassen sich Temperaturverteilungen berührungslos
+      und flächig erfassen und Fehlstellen, Wärmebrücken oder heiße Stellen sichtbar machen.
+    example: >-
+      Gebäudethermografie, Inspektion von Schaltanlagen und Freileitungen, Fehlersuche an
+      Leiterplatten, aktive Thermografie an Faserverbundbauteilen, Fiebererkennung
+    conditions: Freie Sicht auf die Oberfläche; bekannter Emissionsgrad.
+    limits: >-
+      Gemessen wird nur die Oberflächentemperatur; blanke Metalle spiegeln die Umgebung, und
+      Glas ist für langwelliges Infrarot undurchsichtig.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Thermography
+    description: >-
+      Every body emits infrared radiation depending on its temperature. A thermal imaging
+      camera focuses this radiation onto a detector and, using the emissivity of the surface,
+      converts it into a temperature image. Temperature distributions can thus be captured
+      over an area without contact, revealing defects, thermal bridges or hot spots.
+    example: >-
+      Building thermography, inspection of switchgear and power lines, troubleshooting circuit
+      boards, active thermography of fibre composite parts, fever screening
+    conditions: Clear line of sight to the surface; known emissivity.
+    limits: >-
+      Only the surface temperature is measured; bare metals reflect their surroundings, and
+      glass is opaque to long-wave infrared.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

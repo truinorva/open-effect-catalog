@@ -1,0 +1,76 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: lorentz-force
+kind: effect
+home: move|solid
+functions:
+  - move|solid
+  - rotate|solid
+  - vibrate|solid
+  - separate|particles
+  - move|liquid
+parameters:
+  - increase|force
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: verbreitet
+sources:
+  - https://de.wikipedia.org/wiki/Lorentzkraft
+  - https://en.wikipedia.org/wiki/Lorentz_force
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Lorentzkraft
+    description: >-
+      Eine elektrische Ladung, die sich in einem Magnetfeld bewegt, erfährt eine Kraft senkrecht
+      zu ihrer Bewegungsrichtung und zu den Feldlinien. Fließt Strom durch einen Leiter im
+      Magnetfeld, summieren sich diese Kräfte auf die Ladungsträger zu einer Kraft auf den
+      ganzen Leiter, die proportional zu Stromstärke, Leiterlänge und Flussdichte ist. Damit
+      lässt sich elektrische Energie direkt in Bewegung umsetzen, und geladene Teilchen lassen
+      sich ablenken.
+    example: >-
+      Elektromotoren und Lautsprecher, Drehspulmessinstrumente, Wirbelstromscheider für Nichteisenmetalle,
+      Ablenkung von Elektronenstrahlen, elektromagnetische Pumpen für Flüssigmetalle, Schienenkanone
+    conditions: >-
+      Bewegte Ladungen oder ein stromdurchflossener Leiter in einem Magnetfeld, das nicht
+      parallel zur Bewegung oder zum Strom gerichtet ist.
+    limits: >-
+      Die Kraft ist durch die erreichbare Flussdichte und die zulässige Stromdichte begrenzt,
+      denn höhere Ströme erwärmen den Leiter.
+    sideEffects: >-
+      Gegenkräfte wirken auf Magnet und Halterung; in bewegten Leitern induzierte Ströme bremsen
+      die Bewegung und erzeugen Wärme.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Lorentz force
+    description: >-
+      An electric charge moving in a magnetic field experiences a force perpendicular both
+      to its direction of motion and to the field lines. When current flows through a conductor
+      in a magnetic field, these forces on the charge carriers add up to a force on the whole
+      conductor proportional to current, conductor length and flux density. Electrical energy
+      can thus be converted directly into motion, and charged particles can be deflected.
+    example: >-
+      Electric motors and loudspeakers, moving-coil meters, eddy-current separators for non-ferrous
+      metals, deflection of electron beams, electromagnetic pumps for liquid metals, railgun
+    conditions: >-
+      Moving charges or a current-carrying conductor in a magnetic field whose direction is
+      not parallel to the motion or current.
+    limits: >-
+      The force is limited by the achievable flux density and the permissible current density,
+      as higher currents heat the conductor.
+    sideEffects: >-
+      Reaction forces act on the magnet and its mounting; currents induced in moving conductors
+      brake the motion and generate heat.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

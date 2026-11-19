@@ -1,0 +1,66 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: mobius-strip
+kind: effect
+home: move|particles
+functions:
+  - move|particles
+  - rotate|solid
+parameters:
+  - increase|surface-area
+uses: []
+domain:
+  id: Geometrie
+  de: Geometrie
+  en: Geometry
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/M%C3%B6biusband
+  - https://en.wikipedia.org/wiki/M%C3%B6bius_strip
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Möbiusband
+    description: >-
+      Ein Band, das vor dem Schließen zu einem Ring um eine halbe Drehung verdrillt wird,
+      hat nur noch eine Seite und eine Kante. Wer der Oberfläche entlang der Mittellinie folgt,
+      kommt erst nach zwei Umläufen an den Ausgangspunkt zurück und hat dabei beide ursprünglichen
+      Seiten überstrichen. Ein umlaufendes Band in dieser Form nutzt deshalb seine gesamte
+      Fläche gleichmäßig, statt nur auf einer Seite zu verschleißen.
+    example: >-
+      Förderbänder und Treibriemen, Endlos-Tonbandschleifen und Farbbänder, Möbius-Widerstand,
+      Recycling-Symbol
+    conditions: >-
+      Das Band muss die Verdrillung elastisch aufnehmen können, ohne zu knicken.
+    limits: >-
+      Bänder mit unterschiedlich gestalteter Ober- und Unterseite, etwa mit Profil oder einseitiger
+      Beschichtung, lassen sich so nicht nutzen.
+    sideEffects: >-
+      Die Verdrillung erzeugt zusätzliche Spannungen im Band und kann den Geradeauslauf erschweren.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Möbius strip
+    description: >-
+      A strip given a half twist before being closed into a loop has only one side and one
+      edge. Following the surface along the centre line, one returns to the starting point
+      only after two rounds, having passed over both original sides. A running belt of this
+      shape therefore uses its entire surface evenly instead of wearing on one side only.
+    example: >-
+      Conveyor and drive belts, endless tape loops and ink ribbons, Möbius resistor, recycling
+      symbol
+    conditions: The strip must accommodate the twist elastically without kinking.
+    limits: >-
+      Belts whose two faces differ, for example with a tread or a one-sided coating, cannot
+      be used this way.
+    sideEffects: >-
+      The twist puts additional stress into the belt and can make it harder to track straight.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

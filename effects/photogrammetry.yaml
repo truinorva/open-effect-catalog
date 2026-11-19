@@ -1,0 +1,69 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: photogrammetry
+kind: application
+home: measure|solid
+functions:
+  - measure|solid
+parameters:
+  - measure|shape
+  - measure|position
+  - measure|size
+uses:
+  - parallax
+domain:
+  id: Geometrie
+  de: Geometrie
+  en: Geometry
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Photogrammetrie
+  - https://en.wikipedia.org/wiki/Photogrammetry
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Photogrammetrie
+    description: >-
+      Die Photogrammetrie bestimmt Form, Lage und Größe von Objekten aus Fotos, die aus mehreren
+      Blickwinkeln aufgenommen werden. Ein Rechenverfahren sucht in den Bildern einander entsprechende
+      Punkte, ermittelt die Kamerastandorte und berechnet die Raumkoordinaten der Punkte durch
+      Triangulation. Aus vielen solchen Punkten entstehen Punktwolken, 3D-Modelle oder maßstäbliche
+      Karten.
+    example: >-
+      Luftbildvermessung und Kartenherstellung, Drohnenvermessung von Baustellen und Halden,
+      3D-Erfassung von Bauteilen in der Qualitätsprüfung, Dokumentation von Unfallstellen
+      und Baudenkmälern
+    conditions: >-
+      Ausreichend überlappende Bilder mit gut erkennbaren Merkmalen und ein Maßstab, etwa
+      durch Passpunkte oder bekannte Abstände.
+    limits: >-
+      Glänzende, durchsichtige oder strukturlose Flächen liefern kaum zuordenbare Punkte.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Photogrammetry
+    description: >-
+      Photogrammetry determines the shape, position and size of objects from photographs taken
+      from several viewpoints. An algorithm finds corresponding points in the images, determines
+      the camera positions and calculates the spatial coordinates of the points by triangulation.
+      Many such points yield point clouds, 3D models or scaled maps.
+    example: >-
+      Aerial surveying and mapping, drone surveys of construction sites and stockpiles, 3D
+      capture of components in quality inspection, documentation of accident scenes and historic
+      monuments
+    conditions: >-
+      Sufficiently overlapping images with clearly recognisable features and a scale, for
+      example from control points or known distances.
+    limits: >-
+      Shiny, transparent or featureless surfaces yield hardly any matchable points.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

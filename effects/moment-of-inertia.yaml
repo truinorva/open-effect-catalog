@@ -1,0 +1,67 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: moment-of-inertia
+kind: effect
+home: rotate|solid
+functions:
+  - rotate|solid
+parameters:
+  - stabilise|speed
+  - increase|speed
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Tr%C3%A4gheitsmoment
+  - https://en.wikipedia.org/wiki/Moment_of_inertia
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Massenträgheitsmoment
+    description: >-
+      Ein Körper widersetzt sich einer Änderung seiner Drehbewegung umso stärker, je größer
+      sein Massenträgheitsmoment ist. Dieses hängt nicht nur von der Masse ab, sondern vor
+      allem davon, wie weit sie von der Drehachse entfernt liegt, und zwar mit dem Quadrat
+      des Abstands. Ein großes Trägheitsmoment speichert viel Rotationsenergie und glättet
+      Drehzahlschwankungen; verkleinert ein frei rotierender Körper sein Trägheitsmoment,
+      dreht er sich wegen der Drehimpulserhaltung schneller.
+    example: >-
+      Schwungrad an Kolbenmotoren, Schwungradspeicher, Pirouette im Eiskunstlauf, leichte
+      Felgen für schnelleres Beschleunigen, Töpferscheibe
+    conditions: ''
+    limits: >-
+      Schwungräder sind durch die Festigkeit des Werkstoffs begrenzt, weil die Fliehkraft
+      mit dem Quadrat der Drehzahl wächst.
+    sideEffects: >-
+      Große Trägheitsmomente machen Antriebe träge beim Beschleunigen und Bremsen.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Moment of inertia
+    description: >-
+      A body resists a change in its rotation the more strongly, the larger its moment of
+      inertia. This depends not only on the mass but above all on how far that mass lies from
+      the axis of rotation, with the square of the distance. A large moment of inertia stores
+      much rotational energy and smooths out speed fluctuations; if a freely spinning body
+      reduces its moment of inertia, it spins faster because angular momentum is conserved.
+    example: >-
+      Flywheel on piston engines, flywheel energy storage, figure-skating pirouette, light
+      wheel rims for quicker acceleration, potter's wheel
+    conditions: ''
+    limits: >-
+      Flywheels are limited by the strength of their material, because the centrifugal load
+      grows with the square of the speed.
+    sideEffects: >-
+      Large moments of inertia make drives sluggish when accelerating and braking.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

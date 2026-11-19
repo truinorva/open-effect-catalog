@@ -1,0 +1,73 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: magnetic-hysteresis
+kind: effect
+home: heat|solid
+functions:
+  - heat|solid
+  - heat|particles
+  - stop|solid
+  - rotate|solid
+parameters:
+  - stabilise|magnetism
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: verbreitet
+sources:
+  - https://en.wikipedia.org/wiki/Magnetic_hysteresis
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Magnetische Hysterese
+    description: >-
+      Die Magnetisierung eines ferromagnetischen Stoffes hängt nicht nur vom gerade anliegenden
+      Feld ab, sondern auch von seiner Vorgeschichte. Weil sich magnetische Domänen nur unter
+      Energieaufwand umordnen und Domänenwände an Gitterfehlern hängen bleiben, folgt die
+      Magnetisierung bei steigendem und fallendem Feld verschiedenen Kurven, und nach Abschalten
+      des Feldes bleibt eine Restmagnetisierung zurück. Die von der Hystereseschleife eingeschlossene
+      Fläche entspricht der Energie, die bei jedem Ummagnetisieren als Wärme frei wird.
+    example: >-
+      Dauermagnete, magnetische Datenspeicher, Hysteresebremsen und -kupplungen, Hysteresemotoren,
+      Erwärmung magnetischer Partikel bei der Hyperthermie, Ummagnetisierungsverluste in Transformatorkernen
+    conditions: >-
+      Ein ferro- oder ferrimagnetischer Stoff unterhalb seiner Curie-Temperatur.
+    limits: >-
+      Oberhalb der Curie-Temperatur verschwindet die Hysterese; die Form der Schleife hängt
+      stark von Werkstoff, Gefüge und Frequenz ab.
+    sideEffects: >-
+      In Transformatoren, Motoren und Drosseln verursacht die Hysterese Energieverluste und
+      Erwärmung, weshalb dort weichmagnetische Werkstoffe mit schmaler Schleife eingesetzt
+      werden.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Magnetic hysteresis
+    description: >-
+      The magnetisation of a ferromagnetic material depends not only on the field currently
+      applied but also on its history. Because magnetic domains rearrange only at an energy
+      cost and domain walls get pinned at lattice defects, the magnetisation follows different
+      curves for rising and falling fields, and a residual magnetisation remains after the
+      field is switched off. The area enclosed by the hysteresis loop equals the energy released
+      as heat in each magnetisation cycle.
+    example: >-
+      Permanent magnets, magnetic data storage, hysteresis brakes and clutches, hysteresis
+      motors, heating of magnetic particles in hyperthermia, core losses in transformer cores
+    conditions: A ferromagnetic or ferrimagnetic material below its Curie temperature.
+    limits: >-
+      Above the Curie temperature the hysteresis disappears; the shape of the loop depends
+      strongly on material, microstructure and frequency.
+    sideEffects: >-
+      In transformers, motors and chokes, hysteresis causes energy losses and heating, which
+      is why soft magnetic materials with a narrow loop are used there.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

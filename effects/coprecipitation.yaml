@@ -1,0 +1,70 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: coprecipitation
+kind: effect
+home: separate|liquid
+functions:
+  - separate|liquid
+  - remove|liquid
+  - produce|particles
+parameters:
+  - increase|purity
+  - decrease|concentration
+uses: []
+domain:
+  id: Chemie
+  de: Chemie
+  en: Chemistry
+maturity: lehrbuch
+sources:
+  - https://en.wikipedia.org/wiki/Coprecipitation
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Mitfällung (Kopräzipitation)
+    description: >-
+      Fällt in einer Lösung ein Niederschlag aus, reißt er auch Stoffe mit, die für sich allein
+      gelöst bleiben würden. Sie werden an der Oberfläche der wachsenden Teilchen adsorbiert,
+      ins Kristallgitter eingebaut oder in Hohlräumen eingeschlossen. So lassen sich Spurenstoffe
+      aus großen Flüssigkeitsmengen abtrennen oder Mischoxide gezielt herstellen.
+    example: >-
+      Arsen- und Schwermetallentfernung mit Eisenhydroxid in der Wasseraufbereitung, Anreicherung
+      von Radionukliden in der Radiochemie, Herstellung von Magnetit-Nanopartikeln und Mischoxid-Katalysatoren
+    conditions: >-
+      Ein Trägerniederschlag, meist ein voluminöses Hydroxid oder Sulfat, und ein passender
+      pH-Wert.
+    limits: >-
+      Die Trennung ist nicht scharf, und in der gravimetrischen Analyse verfälscht unerwünschte
+      Mitfällung das Ergebnis.
+    sideEffects: >-
+      Es fällt Schlamm an, der die abgetrennten Schadstoffe enthält und entsorgt werden muss.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Coprecipitation
+    description: >-
+      When a precipitate forms in a solution, it also carries down substances that would remain
+      dissolved on their own. They are adsorbed on the surface of the growing particles, built
+      into the crystal lattice or trapped in cavities. This allows trace substances to be
+      removed from large volumes of liquid or mixed oxides to be produced in a controlled
+      way.
+    example: >-
+      Removal of arsenic and heavy metals with iron hydroxide in water treatment, concentration
+      of radionuclides in radiochemistry, production of magnetite nanoparticles and mixed-oxide
+      catalysts
+    conditions: >-
+      A carrier precipitate, usually a voluminous hydroxide or sulphate, and a suitable pH.
+    limits: >-
+      The separation is not sharp, and in gravimetric analysis unwanted coprecipitation falsifies
+      the result.
+    sideEffects: >-
+      It produces sludge containing the removed pollutants, which has to be disposed of.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

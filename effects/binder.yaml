@@ -1,0 +1,68 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: binder
+kind: application
+home: join|particles
+functions:
+  - join|particles
+  - stabilise|particles
+  - join|solid
+parameters:
+  - increase|strength
+  - stabilise|shape
+uses: []
+domain:
+  id: Materialwissenschaft
+  de: Materialwissenschaft
+  en: Materials science
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Bindemittel
+  - https://en.wikipedia.org/wiki/Binder_(material)
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Bindemittel
+    description: >-
+      Ein Bindemittel umhüllt oder verknüpft lose Teilchen wie Körner, Fasern oder Pigmente
+      und härtet anschließend aus – durch Trocknen, chemische Reaktion, Abkühlen oder Hydratation.
+      So wird aus einem losen Haufwerk ein zusammenhängender fester Körper oder eine haftende
+      Schicht.
+    example: >-
+      Zement im Beton, Bitumen im Asphalt, Harz in Spanplatten, Polymerbinder in Lacken, Binder-Jetting
+      im 3D-Druck, kunstharzgebundene Schleifscheiben
+    conditions: >-
+      Das Bindemittel muss die Teilchen benetzen und gleichmäßig verteilt sein, bevor es aushärtet.
+    limits: >-
+      Die Festigkeit des Verbunds wird oft durch die Haftung zwischen Bindemittel und Teilchen
+      oder durch die Festigkeit des Bindemittels selbst begrenzt.
+    sideEffects: >-
+      Organische Bindemittel können beim Aushärten Lösemittel oder andere flüchtige Stoffe
+      abgeben.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Binder
+    description: >-
+      A binder coats or links loose particles such as grains, fibres or pigments and then
+      sets – by drying, chemical reaction, cooling or hydration. This turns a loose heap into
+      a coherent solid body or an adherent layer.
+    example: >-
+      Cement in concrete, bitumen in asphalt, resin in particleboard, polymer binder in paints,
+      binder jetting 3D printing, resin-bonded grinding wheels
+    conditions: >-
+      The binder must wet the particles and be evenly distributed before it sets.
+    limits: >-
+      The strength of the bond is often limited by the adhesion between binder and particles
+      or by the strength of the binder itself.
+    sideEffects: >-
+      Organic binders can release solvents or other volatile compounds while curing.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

@@ -1,0 +1,68 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: brewsters-angle
+kind: effect
+home: orient|field
+functions:
+  - orient|field
+  - separate|field
+  - measure|solid
+parameters:
+  - change|polarisation
+  - decrease|reflectivity
+  - measure|refraction
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Brewster-Winkel
+  - https://en.wikipedia.org/wiki/Brewster%27s_angle
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Brewster-Winkel
+    description: >-
+      Fällt Licht unter dem Brewster-Winkel auf die Grenzfläche zweier durchsichtiger Medien,
+      wird der parallel zur Einfallsebene polarisierte Anteil vollständig durchgelassen und
+      gar nicht reflektiert. Das reflektierte Licht ist dann vollständig senkrecht zur Einfallsebene
+      polarisiert. Der Winkel hängt nur von den Brechzahlen ab (tan θ = n₂/n₁) und beträgt
+      für den Übergang von Luft in Glas etwa 56°.
+    example: >-
+      Brewster-Fenster in Gaslasern, Polarisationsfilter in der Fotografie gegen Spiegelungen,
+      Bestimmung von Brechzahlen, Brewster-Winkel-Mikroskopie von Monoschichten
+    conditions: >-
+      Licht, das auf eine Grenzfläche zwischen nicht absorbierenden, isotropen Medien trifft.
+    limits: >-
+      Bei absorbierenden Stoffen wie Metallen gibt es nur ein Reflexionsminimum, keine vollständige
+      Auslöschung.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Brewster's angle
+    description: >-
+      When light strikes the interface between two transparent media at Brewster's angle,
+      the component polarised parallel to the plane of incidence is fully transmitted and
+      not reflected at all. The reflected light is then completely polarised perpendicular
+      to the plane of incidence. The angle depends only on the refractive indices (tan θ =
+      n₂/n₁) and is about 56° for light passing from air into glass.
+    example: >-
+      Brewster windows in gas lasers, polarising filters in photography against reflections,
+      determining refractive indices, Brewster angle microscopy of monolayers
+    conditions: Light striking an interface between non-absorbing, isotropic media.
+    limits: >-
+      For absorbing materials such as metals there is only a reflection minimum, not complete
+      extinction.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

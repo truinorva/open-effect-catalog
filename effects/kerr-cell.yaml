@@ -1,0 +1,66 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: kerr-cell
+kind: application
+home: orient|field
+functions:
+  - orient|field
+parameters:
+  - change|translucency
+  - change|polarisation
+uses:
+  - kerr-effect
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: niedergang
+sources:
+  - https://de.wikipedia.org/wiki/Kerr-Effekt
+  - https://en.wikipedia.org/wiki/Kerr_effect
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Kerr-Zelle
+    description: >-
+      Eine Kerr-Zelle ist ein Gefäß mit einer Kerr-aktiven Flüssigkeit, meist Nitrobenzol,
+      zwischen zwei Elektroden, das zwischen gekreuzte Polarisatoren gesetzt wird. Ohne Spannung
+      sperrt die Anordnung das Licht; eine Hochspannung macht die Flüssigkeit doppelbrechend,
+      verändert die Polarisation und öffnet den Lichtweg innerhalb von Nanosekunden. So arbeitet
+      die Zelle als trägheitsloser Verschluss oder Lichtmodulator.
+    example: >-
+      Verschlüsse für Hochgeschwindigkeitsfotografie, frühe Güteschaltung von Lasern, Lichtmodulator
+      bei der Messung der Lichtgeschwindigkeit nach Karolus, frühe Bildtelegrafie und Fernsehtechnik
+    conditions: Hochspannung von mehreren Kilovolt und polarisiertes Licht.
+    limits: >-
+      Die nötigen hohen Spannungen und das giftige Nitrobenzol haben dazu geführt, dass heute
+      meist Pockels-Zellen eingesetzt werden.
+    sideEffects: >-
+      Nitrobenzol ist giftig, und die hohen Spannungen erfordern eine sorgfältige Isolation.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Kerr cell
+    description: >-
+      A Kerr cell is a vessel containing a Kerr-active liquid, usually nitrobenzene, between
+      two electrodes, placed between crossed polarisers. Without voltage the arrangement blocks
+      the light; a high voltage makes the liquid birefringent, changes the polarisation and
+      opens the light path within nanoseconds. The cell thus works as an inertia-free shutter
+      or light modulator.
+    example: >-
+      Shutters for high-speed photography, early Q-switching of lasers, light modulator in
+      Karolus's measurement of the speed of light, early picture telegraphy and television
+    conditions: High voltage of several kilovolts and polarised light.
+    limits: >-
+      The high voltages required and the toxic nitrobenzene have led to Pockels cells being
+      used in most cases today.
+    sideEffects: Nitrobenzene is toxic, and the high voltages require careful insulation.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

@@ -1,0 +1,72 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: ferromagnetism
+kind: effect
+home: produce|field
+functions:
+  - produce|field
+  - hold|solid
+  - move|solid
+  - separate|particles
+parameters:
+  - increase|magnetism
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Ferromagnetismus
+  - https://en.wikipedia.org/wiki/Ferromagnetism
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Ferromagnetismus
+    description: >-
+      In ferromagnetischen Stoffen wie Eisen, Nickel, Kobalt und vielen ihrer Legierungen
+      richten sich die magnetischen Momente benachbarter Atome durch die quantenmechanische
+      Austauschwechselwirkung parallel aus und bilden Bereiche gleicher Magnetisierung, die
+      Weissschen Bezirke. Ein äußeres Feld richtet diese Bezirke aus, so dass das Material
+      sehr stark magnetisiert und von Magneten kräftig angezogen wird; hartmagnetische Stoffe
+      behalten die Magnetisierung danach als Dauermagnet.
+    example: >-
+      Dauermagnete, Transformator- und Motorkerne, Magnetabscheider, magnetische Datenspeicher,
+      Magnethalter
+    conditions: Temperatur unterhalb der Curie-Temperatur des Materials.
+    limits: >-
+      Oberhalb der Curie-Temperatur wird der Stoff paramagnetisch; die Magnetisierung ist
+      durch die Sättigung begrenzt.
+    sideEffects: >-
+      Das Ummagnetisieren im Wechselfeld verursacht Hystereseverluste und Erwärmung; Magnetostriktion
+      erzeugt Brummen.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Ferromagnetism
+    description: >-
+      In ferromagnetic materials such as iron, nickel, cobalt and many of their alloys, the
+      magnetic moments of neighbouring atoms align in parallel through the quantum-mechanical
+      exchange interaction, forming regions of uniform magnetisation called domains. An external
+      field aligns these domains, so the material becomes very strongly magnetised and is
+      strongly attracted by magnets; hard magnetic materials retain the magnetisation afterwards
+      as permanent magnets.
+    example: >-
+      Permanent magnets, transformer and motor cores, magnetic separators, magnetic data storage,
+      magnetic holders
+    conditions: Temperature below the material's Curie temperature.
+    limits: >-
+      Above the Curie temperature the material becomes paramagnetic; magnetisation is limited
+      by saturation.
+    sideEffects: >-
+      Remagnetisation in alternating fields causes hysteresis losses and heating; magnetostriction
+      produces hum.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

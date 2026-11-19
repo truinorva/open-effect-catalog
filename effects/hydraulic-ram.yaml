@@ -1,0 +1,65 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: hydraulic-ram
+kind: application
+home: move|liquid
+functions:
+  - move|liquid
+parameters:
+  - increase|pressure
+uses: []
+domain:
+  id: ''
+  de: ''
+  en: ''
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Hydraulischer_Widder
+  - https://en.wikipedia.org/wiki/Hydraulic_ram
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Hydraulischer Widder (Stoßheber)
+    description: >-
+      Wasser fließt aus einem höher gelegenen Zulauf durch ein Triebrohr und strömt durch
+      ein offenes Stoßventil ab, bis die Strömung das Ventil schlagartig zudrückt. Der entstehende
+      Druckstoß öffnet ein Rückschlagventil und drückt einen Teil des Wassers in einen Windkessel
+      und von dort in eine hoch gelegene Steigleitung; danach öffnet das Stoßventil wieder,
+      und der Zyklus beginnt von vorn, ganz ohne Fremdenergie.
+    example: >-
+      Wasserversorgung abgelegener Höfe, Almen und Dörfer, Bewässerung, Viehtränken
+    conditions: Ein ständiger Zufluss und ein Gefälle zwischen Quelle und Widder.
+    limits: >-
+      Nur ein kleiner Teil des Wassers wird gehoben; je höher die Förderhöhe im Verhältnis
+      zum Gefälle, desto geringer die Fördermenge.
+    sideEffects: >-
+      Das schlagende Ventil verursacht ein ständiges Klopfgeräusch, und das Triebwasser fließt
+      ungenutzt ab.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Hydraulic ram
+    description: >-
+      Water flows from a higher source through a drive pipe and escapes through an open waste
+      valve until the flow slams the valve shut. The resulting pressure surge opens a non-return
+      valve and pushes part of the water into an air chamber and from there into a delivery
+      pipe leading uphill; the waste valve then reopens and the cycle repeats, without any
+      external energy.
+    example: >-
+      Water supply for remote farms, alpine pastures and villages, irrigation, livestock watering
+    conditions: A constant inflow and a fall between source and ram.
+    limits: >-
+      Only a small part of the water is lifted; the higher the delivery head relative to the
+      fall, the smaller the delivered flow.
+    sideEffects: >-
+      The slamming valve causes a constant knocking noise, and the drive water drains away
+      unused.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

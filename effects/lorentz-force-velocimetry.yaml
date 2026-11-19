@@ -1,0 +1,68 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: lorentz-force-velocimetry
+kind: application
+home: measure|liquid
+functions:
+  - measure|liquid
+parameters:
+  - measure|speed
+uses:
+  - lorentz-force
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: kindheit
+sources:
+  - https://de.wikipedia.org/wiki/Lorentzkraft-Anemometrie
+  - https://en.wikipedia.org/wiki/Lorentz_force_velocimetry
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Lorentzkraft-Anemometrie
+    description: >-
+      Bei der Lorentzkraft-Anemometrie wird ein Permanentmagnet von außen an ein Rohr oder
+      einen Kanal gebracht, durch den eine elektrisch leitfähige Flüssigkeit strömt. Die Strömung
+      durch das Magnetfeld induziert im Fluid Wirbelströme, deren Lorentzkraft die Strömung
+      bremst und als gleich große Gegenkraft auf den Magneten wirkt. Diese Kraft wird gemessen
+      und ist ein Maß für Strömungsgeschwindigkeit und Durchfluss, ohne dass das Messsystem
+      das Fluid berührt.
+    example: >-
+      Durchflussmessung an heißen und aggressiven Metallschmelzen wie Aluminium und Stahl,
+      Forschung an Strömungen schwach leitender Elektrolyte
+    conditions: >-
+      Ein elektrisch leitfähiges Fluid und ein starker Magnet nahe der Strömung.
+    limits: >-
+      Bei schwach leitenden Fluiden wie Salzwasser ist die Kraft extrem klein und nur mit
+      sehr empfindlicher Kraftmessung erfassbar; das Messsignal hängt von der Leitfähigkeit
+      des Fluids ab.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Lorentz force velocimetry
+    description: >-
+      In Lorentz force velocimetry, a permanent magnet is placed outside a pipe or channel
+      through which an electrically conductive liquid flows. The flow through the magnetic
+      field induces eddy currents in the fluid whose Lorentz force brakes the flow and acts
+      on the magnet as an equal and opposite force. This force is measured and indicates flow
+      velocity and flow rate without the measuring system touching the fluid.
+    example: >-
+      Flow measurement on hot and aggressive metal melts such as aluminium and steel, research
+      on flows of weakly conducting electrolytes
+    conditions: An electrically conductive fluid and a strong magnet close to the flow.
+    limits: >-
+      In weakly conducting fluids such as salt water the force is extremely small and can
+      only be detected with very sensitive force measurement; the reading depends on the conductivity
+      of the fluid.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

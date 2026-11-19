@@ -1,0 +1,65 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: vapour-pressure
+kind: effect
+home: change-phase|liquid
+functions:
+  - change-phase|liquid
+  - move|liquid
+  - separate|liquid
+parameters:
+  - stabilise|pressure
+  - measure|temperature
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Dampfdruck
+  - https://en.wikipedia.org/wiki/Vapor_pressure
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Dampfdruck
+    description: >-
+      Aus jeder Flüssigkeit und jedem Feststoff treten Moleküle in die Gasphase über, bis
+      der Dampf einen Gleichgewichtsdruck erreicht, den Dampfdruck. Er hängt nur vom Stoff
+      und von der Temperatur ab, nicht von der vorhandenen Menge, und steigt mit der Temperatur
+      steil an; erreicht er den Umgebungsdruck, siedet die Flüssigkeit. Solange in einem geschlossenen
+      Behälter noch Flüssigkeit vorhanden ist, bleibt der Druck bei gleicher Temperatur daher
+      konstant.
+    example: >-
+      Treibgas in Spraydosen und Feuerzeugen, Dampfdruckthermometer, Schnellkochtopf, Kältemittel
+      in Kältemaschinen, Destillation
+    conditions: Flüssige oder feste Phase im Gleichgewicht mit ihrem Dampf.
+    limits: >-
+      Der Druck ändert sich stark mit der Temperatur; eine kalte Spraydose sprüht schwächer.
+    sideEffects: Verdunstungsverluste und bei brennbaren Stoffen explosionsfähige Dämpfe.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Vapour pressure
+    description: >-
+      Molecules escape from every liquid and solid into the gas phase until the vapour reaches
+      an equilibrium pressure, the vapour pressure. It depends only on the substance and the
+      temperature, not on the amount present, and rises steeply with temperature; when it
+      reaches the ambient pressure, the liquid boils. As long as liquid remains in a closed
+      container, the pressure therefore stays constant at a given temperature.
+    example: >-
+      Propellant in spray cans and lighters, vapour pressure thermometers, pressure cooker,
+      refrigerants in refrigeration machines, distillation
+    conditions: Liquid or solid phase in equilibrium with its vapour.
+    limits: >-
+      The pressure changes strongly with temperature; a cold spray can sprays more weakly.
+    sideEffects: Evaporation losses and, with flammable substances, explosive vapours.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
