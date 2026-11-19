@@ -1,0 +1,62 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: spiral
+kind: effect
+home: move|solid
+functions:
+  - move|solid
+  - hold|solid
+  - compress|gas
+parameters:
+  - change|position
+uses: []
+domain:
+  id: Geometrie
+  de: Geometrie
+  en: Geometry
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Spirale
+  - https://en.wikipedia.org/wiki/Spiral
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Spirale
+    description: >-
+      Eine Spirale ist eine ebene Kurve, die um einen Mittelpunkt läuft und sich dabei stetig
+      von ihm entfernt. Dreht man eine spiralförmige Nut oder Leiste, wandert ein darin geführtes
+      Element gleichmäßig nach innen oder außen, so dass eine Drehung in eine radiale Bewegung
+      umgesetzt wird. Zwei ineinandergreifende Spiralen, von denen eine eine Kreisbahn beschreibt,
+      schließen Kammern ein, die sich zur Mitte hin verkleinern; außerdem bringt die Spiralform
+      eine große Länge auf kleiner Fläche unter.
+    example: >-
+      Dreibackenfutter mit Spiralscheibe, Scrollverdichter in Klimaanlagen, Spiralfedern in
+      Uhren, Spiralwärmetauscher, aufgerollte Schläuche und Bänder
+    conditions: ''
+    limits: ''
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Spiral
+    description: >-
+      A spiral is a plane curve that winds around a centre while moving steadily away from
+      it. When a spiral groove or ridge is turned, an element guided in it moves evenly inwards
+      or outwards, converting rotation into radial motion. Two interleaved spirals, one of
+      them orbiting, enclose chambers that shrink towards the centre; in addition, the spiral
+      shape packs a great length into a small area.
+    example: >-
+      Three-jaw chuck with scroll plate, scroll compressors in air conditioners, hairsprings
+      and mainsprings in clocks, spiral heat exchangers, coiled hoses and tapes
+    conditions: ''
+    limits: ''
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

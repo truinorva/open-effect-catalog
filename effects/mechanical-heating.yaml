@@ -1,0 +1,74 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: mechanical-heating
+kind: effect
+home: heat|solid
+functions:
+  - heat|solid
+  - heat|liquid
+  - change-phase|solid
+parameters:
+  - increase|temperature
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/W%C3%A4rme%C3%A4quivalent
+  - https://en.wikipedia.org/wiki/Mechanical_equivalent_of_heat
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Erwärmung durch mechanische Arbeit
+    description: >-
+      Mechanische Arbeit, die in einem Körper oder Fluid nicht als Bewegungs- oder Lageenergie
+      gespeichert wird, geht durch Reibung, innere Reibung und bleibende Verformung in Wärme
+      über. Joule zeigte mit einem Rührwerk in Wasser, dass stets dieselbe Arbeit nötig ist,
+      um eine bestimmte Wärmemenge zu erzeugen, rund 4,19 Joule für ein Gramm Wasser und ein
+      Kelvin. So lassen sich Stoffe von innen heraus und ohne äußere Wärmequelle erwärmen.
+    example: >-
+      Plastifizieren von Kunststoffen in Extruderschnecken durch Scherung, Erwärmung eines
+      hin und her gebogenen Drahtes, Reibschweißen, Erwärmung von Flüssigkeiten in Pumpen
+      und Rührwerken, Bremsen
+    conditions: >-
+      Eine verlustbehaftete mechanische Einwirkung wie das Scheren eines zähen Stoffes, Gleitreibung
+      oder bleibende Verformung.
+    limits: >-
+      Für größere Temperaturerhöhungen sind erhebliche mechanische Leistungen nötig; ungleichmäßige
+      Scherung führt zu ungleichmäßiger Erwärmung.
+    sideEffects: >-
+      In Getrieben, Pumpen und Lagern ist die entstehende Wärme ein Energieverlust und kann
+      Schmierstoffe oder Produkte schädigen.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Heating by mechanical work
+    description: >-
+      Mechanical work that is not stored in a body or fluid as kinetic or potential energy
+      is converted into heat through friction, internal friction and permanent deformation.
+      Joule showed with a paddle wheel in water that the same amount of work is always needed
+      to produce a given quantity of heat, about 4.19 joules per gram of water and kelvin.
+      In this way materials can be heated from within, without an external heat source.
+    example: >-
+      Plasticising plastics in extruder screws by shear, heating of a wire bent back and forth,
+      friction welding, heating of liquids in pumps and stirrers, brakes
+    conditions: >-
+      A lossy mechanical action, such as shearing a viscous substance, sliding friction or
+      permanent deformation.
+    limits: >-
+      Large temperature increases require considerable mechanical power; uneven shear leads
+      to uneven heating.
+    sideEffects: >-
+      In gearboxes, pumps and bearings the heat generated is an energy loss and can damage
+      lubricants or products.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

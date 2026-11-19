@@ -1,0 +1,73 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: london-dispersion-force
+kind: effect
+home: join|solid
+functions:
+  - join|solid
+  - join|particles
+  - hold|solid
+  - change-phase|gas
+parameters:
+  - increase|force
+uses: []
+domain:
+  id: Chemie
+  de: Chemie
+  en: Chemistry
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/London-Kraft
+  - https://en.wikipedia.org/wiki/London_dispersion_force
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: London-Dispersionskraft
+    description: >-
+      Auch in unpolaren Atomen und Molekülen verschiebt sich die Elektronenhülle ständig für
+      kurze Momente, so dass flüchtige Dipole entstehen, die in Nachbarteilchen gleichgerichtete
+      Dipole hervorrufen. Die daraus folgende Anziehung wirkt zwischen allen Teilchen, ist
+      aber schwach; ihre Energie nimmt bei zwei Molekülen mit der sechsten Potenz des Abstands
+      ab. Zwischen großen Flächen und Partikeln summiert sie sich jedoch zu merklichen Haftkräften,
+      und sie wächst mit Größe und Polarisierbarkeit der Moleküle.
+    example: >-
+      Haftung von Geckofüßen, Trockenklebebänder nach Gecko-Vorbild, Agglomeration und Wandhaftung
+      feiner Pulver, Verflüssigung von Edelgasen, steigende Siedepunkte in der Reihe der Alkane
+    conditions: >-
+      Sehr geringe Abstände im Bereich weniger Nanometer und große, eng anliegende Kontaktflächen.
+    limits: >-
+      Schon geringe Rauheit oder Verschmutzung vergrößert den Abstand und lässt die Kraft
+      stark einbrechen.
+    sideEffects: >-
+      Feine Pulver verklumpen und haften an Wänden, was Dosieren und Fördern erschwert.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: London dispersion force
+    description: >-
+      Even in non-polar atoms and molecules, the electron cloud constantly shifts for brief
+      moments, creating fleeting dipoles that induce aligned dipoles in neighbouring particles.
+      The resulting attraction acts between all particles but is weak; for two molecules its
+      energy falls off with the sixth power of the distance. Between large surfaces and particles,
+      however, it adds up to noticeable adhesive forces, and it grows with the size and polarisability
+      of the molecules.
+    example: >-
+      Adhesion of gecko feet, gecko-inspired dry adhesive tapes, agglomeration and wall adhesion
+      of fine powders, liquefaction of noble gases, rising boiling points along the alkane
+      series
+    conditions: >-
+      Very short distances in the range of a few nanometres and large, closely fitting contact
+      areas.
+    limits: >-
+      Even slight roughness or contamination increases the distance and makes the force collapse.
+    sideEffects: >-
+      Fine powders clump and stick to walls, which makes dosing and conveying difficult.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

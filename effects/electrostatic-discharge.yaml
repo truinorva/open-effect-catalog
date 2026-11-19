@@ -1,0 +1,64 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: electrostatic-discharge
+kind: effect
+home: produce|field
+functions:
+  - produce|field
+  - heat|gas
+parameters:
+  - decrease|charge
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: lehrbuch
+sources:
+  - https://en.wikipedia.org/wiki/Electric_discharge
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Elektrostatische Entladung (ESD)
+    description: >-
+      Zwei Körper mit unterschiedlichem elektrostatischem Potential, etwa ein durch Reibung
+      aufgeladener Mensch und ein geerdetes Gerät, gleichen ihre Ladung bei Annäherung oder
+      Berührung schlagartig aus. Der Ausgleich geschieht innerhalb von Nanosekunden als Funke
+      oder Büschelentladung mit kurzzeitig hohen Strömen, obwohl die umgesetzte Energie meist
+      klein ist.
+    example: >-
+      Elektrischer Schlag an der Türklinke, ESD-Prüfungen elektronischer Geräte, Zündquelle
+      in staub- oder gasexplosionsgefährdeten Bereichen
+    conditions: >-
+      Ladungstrennung, etwa durch Reibung, und geringe Luftfeuchte, die das Abfließen der
+      Ladung verhindert.
+    limits: ''
+    sideEffects: >-
+      Schädigt empfindliche Halbleiterbauelemente und kann brennbare Gemische entzünden.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Electrostatic discharge (ESD)
+    description: >-
+      Two bodies at different electrostatic potentials, such as a person charged by friction
+      and an earthed device, equalise their charge abruptly when they approach or touch. The
+      equalisation takes place within nanoseconds as a spark or brush discharge, with briefly
+      high currents, although the energy involved is usually small.
+    example: >-
+      Shock from a door handle, ESD testing of electronic devices, ignition source in areas
+      with explosive dust or gas
+    conditions: >-
+      Charge separation, e.g. by friction, and low humidity that prevents the charge from
+      leaking away.
+    limits: ''
+    sideEffects: >-
+      Damages sensitive semiconductor components and can ignite flammable mixtures.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

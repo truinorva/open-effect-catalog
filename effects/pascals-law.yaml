@@ -1,0 +1,66 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: pascals-law
+kind: effect
+home: move|solid
+functions:
+  - move|solid
+  - hold|solid
+  - compress|solid
+parameters:
+  - increase|force
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Pascalsches_Gesetz
+  - https://en.wikipedia.org/wiki/Pascal%27s_law
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Pascalsches Gesetz
+    description: >-
+      Ein Druck, der von außen auf eine eingeschlossene, ruhende Flüssigkeit ausgeübt wird,
+      breitet sich in ihr nach allen Richtungen gleichmäßig aus. Wirkt dieser Druck auf Kolben
+      unterschiedlicher Fläche, entsteht am größeren Kolben eine entsprechend größere Kraft,
+      allerdings bei kürzerem Weg. So lassen sich Kräfte mit Flüssigkeiten vervielfachen und
+      über Leitungen an beliebige Stellen übertragen.
+    example: >-
+      Hydraulische Presse, Wagenheber und Hebebühne, hydraulische Bremse, Baggerhydraulik,
+      hydraulisches Spannen von Werkstücken
+    conditions: Eine eingeschlossene, nahezu inkompressible Flüssigkeit ohne Gasblasen.
+    limits: >-
+      Der Kraftgewinn geht immer mit einem entsprechend kürzeren Kolbenweg einher, und Leckagen
+      oder Luft im System mindern die Wirkung.
+    sideEffects: >-
+      Hohe Drücke belasten Dichtungen und Leitungen, und unter Druck austretendes Öl ist gefährlich.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Pascal's law
+    description: >-
+      Pressure applied from outside to an enclosed fluid at rest spreads equally in all directions
+      throughout it. If this pressure acts on pistons of different areas, the larger piston
+      receives a correspondingly larger force, though over a shorter stroke. Forces can thus
+      be multiplied with liquids and transmitted through lines to any point.
+    example: >-
+      Hydraulic press, car jack and vehicle lift, hydraulic brake, excavator hydraulics, hydraulic
+      workpiece clamping
+    conditions: An enclosed, nearly incompressible liquid free of gas bubbles.
+    limits: >-
+      The gain in force always comes with a correspondingly shorter piston stroke, and leaks
+      or air in the system reduce the effect.
+    sideEffects: >-
+      High pressures stress seals and lines, and oil escaping under pressure is dangerous.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

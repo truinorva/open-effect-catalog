@@ -1,0 +1,74 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: magnetic-shape-memory
+kind: effect
+home: deform|solid
+functions:
+  - deform|solid
+  - move|solid
+  - vibrate|solid
+parameters:
+  - change|shape
+uses: []
+domain:
+  id: Materialwissenschaft
+  de: Materialwissenschaft
+  en: Materials science
+maturity: nische
+sources:
+  - https://de.wikipedia.org/wiki/Magnetische_Formged%C3%A4chtnislegierung
+  - https://en.wikipedia.org/wiki/Magnetic_shape-memory_alloy
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Magnetischer Formgedächtniseffekt
+    description: >-
+      In magnetischen Formgedächtnislegierungen wie Nickel-Mangan-Gallium liegt die martensitische
+      Phase in Zwillingsvarianten vor, deren Kristallachsen unterschiedlich ausgerichtet sind
+      und die jeweils eine bevorzugte Magnetisierungsrichtung haben. Ein äußeres Magnetfeld
+      begünstigt die Varianten, deren Vorzugsrichtung zum Feld passt; die Zwillingsgrenzen
+      wandern, und das Material dehnt sich oder verkürzt sich um mehrere Prozent. Weil dafür
+      kein Phasenübergang nötig ist, reagiert der Werkstoff viel schneller als thermisch geschaltete
+      Formgedächtnislegierungen.
+    example: >-
+      Schnelle Aktoren und Stellglieder, Mikropumpen, Schwingungs- und Energiewandler, Verformungssensoren
+    conditions: >-
+      Der Werkstoff muss sich im martensitischen Zustand befinden, also unterhalb seiner Umwandlungstemperatur,
+      und eine geringe Zwillingsspannung haben.
+    limits: >-
+      Große Dehnungen erreichen vor allem Einkristalle; die Legierungen sind spröde, und der
+      nutzbare Temperaturbereich ist begrenzt.
+    sideEffects: >-
+      Ohne Rückstellkraft, etwa durch eine Feder oder ein gedrehtes Feld, bleibt die Verformung
+      nach Abschalten des Feldes erhalten.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Magnetic shape memory effect
+    description: >-
+      In magnetic shape memory alloys such as nickel-manganese-gallium, the martensitic phase
+      consists of twin variants whose crystal axes are oriented differently and which each
+      have a preferred direction of magnetisation. An external magnetic field favours the
+      variants whose preferred direction matches the field; the twin boundaries move and the
+      material expands or contracts by several per cent. Because no phase change is needed,
+      the material responds much faster than thermally switched shape memory alloys.
+    example: >-
+      Fast actuators, micropumps, vibration and energy converters, deformation sensors
+    conditions: >-
+      The material must be in the martensitic state, i.e. below its transformation temperature,
+      and have a low twinning stress.
+    limits: >-
+      Large strains are achieved mainly in single crystals; the alloys are brittle and the
+      usable temperature range is limited.
+    sideEffects: >-
+      Without a restoring force, such as a spring or a rotated field, the deformation persists
+      after the field is switched off.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

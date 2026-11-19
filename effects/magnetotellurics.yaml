@@ -1,0 +1,72 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: magnetotellurics
+kind: application
+home: measure|solid
+functions:
+  - measure|solid
+  - detect|liquid
+  - detect|solid
+parameters:
+  - measure|conductivity
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Magnetotellurik
+  - https://en.wikipedia.org/wiki/Magnetotellurics
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Magnetotellurik
+    description: >-
+      Die Magnetotellurik misst an der Erdoberfläche gleichzeitig die natürlichen zeitlichen
+      Schwankungen des magnetischen und des elektrischen Felds. Diese Schwankungen, angeregt
+      durch Gewitter und durch Ströme in Ionosphäre und Magnetosphäre, induzieren Ströme im
+      Untergrund, deren Stärke von der elektrischen Leitfähigkeit der Gesteine abhängt. Weil
+      langsame Schwankungen tiefer eindringen als schnelle, ergibt sich aus dem Verhältnis
+      beider Felder bei verschiedenen Frequenzen die Leitfähigkeitsverteilung bis in große
+      Tiefen.
+    example: >-
+      Erkundung geothermischer Reservoire, Öl-, Gas- und Erzexploration, Untersuchung von
+      Magmakammern und Erdkruste, Grundwassererkundung
+    conditions: >-
+      Ausreichende natürliche Feldschwankungen und ein elektrisch und magnetisch möglichst
+      ungestörter Messort.
+    limits: >-
+      Elektrische Störquellen wie Bahnstrom, Stromleitungen und Zäune verfälschen die Messung;
+      die räumliche Auflösung nimmt mit der Tiefe ab.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Magnetotellurics
+    description: >-
+      Magnetotellurics measures the natural variations of the magnetic and electric fields
+      at the Earth's surface simultaneously. These variations, excited by thunderstorms and
+      by currents in the ionosphere and magnetosphere, induce currents in the subsurface whose
+      strength depends on the electrical conductivity of the rocks. Because slow variations
+      penetrate deeper than fast ones, the ratio of the two fields at different frequencies
+      reveals the conductivity distribution down to great depths.
+    example: >-
+      Exploring geothermal reservoirs, oil, gas and ore exploration, studying magma chambers
+      and the Earth's crust, groundwater exploration
+    conditions: >-
+      Sufficient natural field variations and a measurement site as free as possible from
+      electrical and magnetic interference.
+    limits: >-
+      Electrical noise sources such as railway currents, power lines and fences distort the
+      measurement; spatial resolution decreases with depth.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

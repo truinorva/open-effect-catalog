@@ -1,0 +1,68 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: photosynthesis
+kind: effect
+home: produce|solid
+functions:
+  - produce|solid
+  - produce|gas
+  - absorb|gas
+parameters:
+  - decrease|concentration
+uses: []
+domain:
+  id: Biologie
+  de: Biologie
+  en: Biology
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Photosynthese
+  - https://en.wikipedia.org/wiki/Photosynthesis
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Photosynthese
+    description: >-
+      Pflanzen, Algen und Cyanobakterien nutzen Lichtenergie, um aus Kohlendioxid und Wasser
+      Zucker aufzubauen, und setzen dabei Sauerstoff frei. Chlorophyll und andere Pigmente
+      fangen das Licht ein; in den Lichtreaktionen wird Wasser gespalten und chemische Energie
+      bereitgestellt, mit der im Calvin-Zyklus Kohlendioxid gebunden wird. So wird Sonnenlicht
+      in speicherbare chemische Energie und Biomasse umgewandelt.
+    example: >-
+      Land- und Forstwirtschaft, Algen-Photobioreaktoren für Biomasse und Wertstoffe, Sauerstoffversorgung
+      in Aquarien und geschlossenen Lebenserhaltungssystemen, Vorbild für künstliche Photosynthese
+    conditions: >-
+      Licht, Wasser, Kohlendioxid und Nährstoffe sowie eine geeignete Temperatur.
+    limits: >-
+      Nur wenige Prozent der eingestrahlten Sonnenenergie werden in Biomasse gespeichert.
+    sideEffects: >-
+      Starkes Algenwachstum durch Nährstoffeintrag kann Gewässer trüben und nachts oder beim
+      Absterben der Algen den Sauerstoff aufzehren.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Photosynthesis
+    description: >-
+      Plants, algae and cyanobacteria use light energy to build sugars from carbon dioxide
+      and water, releasing oxygen in the process. Chlorophyll and other pigments capture the
+      light; in the light reactions water is split and chemical energy is provided, which
+      is used in the Calvin cycle to fix carbon dioxide. Sunlight is thus converted into storable
+      chemical energy and biomass.
+    example: >-
+      Agriculture and forestry, algae photobioreactors for biomass and valuable products,
+      oxygen supply in aquariums and closed life-support systems, model for artificial photosynthesis
+    conditions: >-
+      Light, water, carbon dioxide and nutrients as well as a suitable temperature.
+    limits: Only a few percent of the incident solar energy is stored in biomass.
+    sideEffects: >-
+      Heavy algal growth from nutrient inputs can cloud waters and deplete oxygen at night
+      or when the algae die off.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

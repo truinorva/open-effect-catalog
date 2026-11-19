@@ -1,0 +1,70 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: moire-interferometry
+kind: application
+home: measure|solid
+functions:
+  - measure|solid
+parameters:
+  - measure|position
+  - measure|size
+uses:
+  - moire-effect
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Moir%C3%A9-Effekt
+  - https://en.wikipedia.org/wiki/Moir%C3%A9_pattern
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Moiré-Interferometrie
+    description: >-
+      Auf die Probenoberfläche wird ein feines Beugungsgitter mit typischerweise über tausend
+      Linien pro Millimeter übertragen. Zwei schräg einfallende, kohärente Laserstrahlen bilden
+      ein virtuelles Referenzgitter, und das an der Probe gebeugte Licht interferiert damit
+      zu Moiré-Streifen. Verformt sich die Probe, verändern sich die Streifen, wobei eine
+      Streifenordnung einer Verschiebung in der Oberflächenebene von nur einem Bruchteil eines
+      Mikrometers entspricht.
+    example: >-
+      Verformungsanalyse an Faserverbund- und Elektronikbauteilen, thermischer Verzug von
+      Lötstellen und Chipgehäusen, bruchmechanische Versuche
+    conditions: >-
+      Ein auf die Probe geklebtes oder abgeformtes Gitter, kohärentes Licht und ein schwingungsarmer
+      Aufbau.
+    limits: >-
+      Erfasst werden nur Verschiebungen in der Ebene der Oberfläche; Bewegungen senkrecht
+      dazu erfordern andere Verfahren.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Moiré interferometry
+    description: >-
+      A fine diffraction grating, typically with more than a thousand lines per millimetre,
+      is replicated onto the specimen surface. Two obliquely incident coherent laser beams
+      form a virtual reference grating, and the light diffracted by the specimen interferes
+      with it to produce moiré fringes. When the specimen deforms, the fringes change, with
+      one fringe order corresponding to an in-plane displacement of only a fraction of a micrometre.
+    example: >-
+      Deformation analysis of fibre composite and electronic components, thermal warpage of
+      solder joints and chip packages, fracture mechanics tests
+    conditions: >-
+      A grating bonded or replicated onto the specimen, coherent light and a vibration-isolated
+      setup.
+    limits: >-
+      Only displacements within the plane of the surface are captured; out-of-plane motion
+      requires other methods.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

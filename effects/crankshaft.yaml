@@ -1,0 +1,64 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: crankshaft
+kind: application
+home: rotate|solid
+functions:
+  - rotate|solid
+  - move|solid
+parameters: []
+uses: []
+domain:
+  id: ''
+  de: ''
+  en: ''
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Kurbelwelle
+  - https://en.wikipedia.org/wiki/Crankshaft
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Kurbelwelle
+    description: >-
+      Eine Kurbelwelle trägt gegenüber ihrer Drehachse versetzte Kurbelzapfen, an denen Pleuelstangen
+      angreifen. So wird die hin- und hergehende Bewegung von Kolben in eine Drehbewegung
+      umgewandelt – oder umgekehrt eine Drehung in eine Hubbewegung, wie bei Kolbenpumpen
+      und Kompressoren.
+    example: >-
+      Verbrennungsmotoren, Kolbenkompressoren, Kolbenpumpen, Dampfmaschinen, Kurbelpressen
+    conditions: Eine gelagerte Welle, Pleuelstangen und eine geführte Hubbewegung.
+    limits: >-
+      Der Kurbeltrieb hat Totpunkte, über die ihn nur eine Schwungmasse oder mehrere versetzte
+      Zylinder hinwegbringen, und Massenkräfte begrenzen die Drehzahl.
+    sideEffects: >-
+      Ungleichförmiges Drehmoment und Schwingungen, die Ausgleichsgewichte, Schwungräder oder
+      Torsionsschwingungsdämpfer erfordern.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Crankshaft
+    description: >-
+      A crankshaft carries crank pins offset from its axis of rotation, to which connecting
+      rods are attached. In this way the reciprocating motion of pistons is converted into
+      rotation – or, conversely, rotation into a stroke motion, as in piston pumps and compressors.
+    example: >-
+      Internal combustion engines, reciprocating compressors, piston pumps, steam engines,
+      crank presses
+    conditions: >-
+      A shaft supported in bearings, connecting rods and a guided stroke motion.
+    limits: >-
+      The crank mechanism has dead centres that only a flywheel or several offset cylinders
+      can carry it through, and inertial forces limit the speed.
+    sideEffects: >-
+      Uneven torque and vibrations that require counterweights, flywheels or torsional vibration
+      dampers.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

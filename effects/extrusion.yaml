@@ -1,0 +1,64 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: extrusion
+kind: application
+home: deform|solid
+functions:
+  - deform|solid
+  - deform|liquid
+  - mix|liquid
+parameters:
+  - change|shape
+uses: []
+domain:
+  id: Verfahrenstechnik
+  de: Verfahrenstechnik
+  en: Process engineering
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Extrusion_(Verfahrenstechnik)
+  - https://en.wikipedia.org/wiki/Extrusion
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Extrusion (Strangpressen)
+    description: >-
+      Ein Werkstoff wird unter Druck durch eine formgebende Öffnung, die Düse oder Matrize,
+      gepresst und tritt als endloser Strang mit deren Querschnitt aus. Metalle wie Aluminium
+      werden dafür erwärmt und von einem Stempel durch die Matrize gedrückt; Kunststoffe,
+      Lebensmittel oder keramische Massen fördert, verdichtet und plastifiziert meist eine
+      Schnecke, die sie dabei zugleich durchmischt.
+    example: >-
+      Aluminiumprofile für Fenster, Kunststoffrohre und Folien, Nudeln und Frühstückscerealien,
+      Ziegelstränge, Compoundieren von Kunststoffen
+    conditions: Plastisch verformbarer oder fließfähiger Werkstoff.
+    limits: Nur Bauteile mit über die Länge gleichbleibendem Querschnitt.
+    sideEffects: >-
+      Kunststoffstränge quellen beim Austritt auf (Strangaufweitung), was bei der Auslegung
+      der Düse berücksichtigt werden muss.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Extrusion
+    description: >-
+      A material is forced under pressure through a shaping opening, the die, and emerges
+      as a continuous strand with the die's cross-section. Metals such as aluminium are heated
+      and pushed through the die by a ram; plastics, foods or ceramic pastes are usually conveyed,
+      compacted and plasticised by a screw, which also mixes them.
+    example: >-
+      Aluminium window profiles, plastic pipes and films, pasta and breakfast cereals, clay
+      brick columns, compounding of plastics
+    conditions: Plastically deformable or flowable material.
+    limits: Only parts with a constant cross-section along their length.
+    sideEffects: >-
+      Plastic extrudates swell on leaving the die (die swell), which must be allowed for in
+      die design.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

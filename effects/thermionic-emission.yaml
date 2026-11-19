@@ -1,0 +1,73 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: thermionic-emission
+kind: effect
+home: produce|field
+functions:
+  - produce|field
+parameters:
+  - increase|conductivity
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Edison-Richardson-Effekt
+  - https://en.wikipedia.org/wiki/Thermionic_emission
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Glühemission (Edison-Richardson-Effekt)
+    description: >-
+      Wird ein Metall oder Oxid stark erhitzt, erhalten einige Elektronen genug thermische
+      Energie, um die Austrittsarbeit zu überwinden und die Oberfläche zu verlassen. Die emittierte
+      Stromdichte steigt sehr steil mit der Temperatur und ist umso größer, je kleiner die
+      Austrittsarbeit des Kathodenwerkstoffs ist. Im Vakuum lassen sich die Elektronen dann
+      durch ein elektrisches Feld absaugen und zu einem Strahl bündeln.
+    example: >-
+      Glühkathoden in Elektronenröhren, Röntgenröhren und Magnetrons, Elektronenkanonen in
+      Elektronenmikroskopen und Elektronenstrahl-Schweißanlagen, Kathodenstrahlröhren, Glühkathoden-Ionisationsvakuummeter
+    conditions: >-
+      Hohe Kathodentemperatur, Vakuum und eine Absaugspannung; Werkstoffe mit hohem Schmelzpunkt
+      wie Wolfram oder mit niedriger Austrittsarbeit wie Lanthanhexaborid und Oxidschichten.
+    limits: >-
+      Ohne ausreichende Absaugspannung begrenzt die Raumladung der ausgetretenen Elektronen
+      den Strom.
+    sideEffects: >-
+      Die Kathode verdampft allmählich und verliert an Emissionsfähigkeit; die Heizung verbraucht
+      viel Leistung.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Thermionic emission
+    description: >-
+      When a metal or oxide is strongly heated, some electrons gain enough thermal energy
+      to overcome the work function and leave the surface. The emitted current density rises
+      very steeply with temperature and is greater the lower the work function of the cathode
+      material. In vacuum the electrons can then be extracted by an electric field and focused
+      into a beam.
+    example: >-
+      Hot cathodes in vacuum tubes, X-ray tubes and magnetrons, electron guns in electron
+      microscopes and electron-beam welding machines, cathode-ray tubes, hot-cathode ionisation
+      gauges
+    conditions: >-
+      High cathode temperature, vacuum and an extraction voltage; materials with a high melting
+      point such as tungsten, or with a low work function such as lanthanum hexaboride and
+      oxide coatings.
+    limits: >-
+      Without sufficient extraction voltage the space charge of the emitted electrons limits
+      the current.
+    sideEffects: >-
+      The cathode gradually evaporates and loses emissivity; heating consumes considerable
+      power.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

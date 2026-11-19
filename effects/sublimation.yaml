@@ -1,0 +1,73 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: sublimation
+kind: effect
+home: change-phase|solid
+functions:
+  - change-phase|solid
+  - remove|solid
+  - separate|solid
+  - cool|solid
+parameters:
+  - change|state
+  - decrease|temperature
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: verbreitet
+sources:
+  - https://de.wikipedia.org/wiki/Sublimation_(Phasen%C3%BCbergang)
+  - https://en.wikipedia.org/wiki/Sublimation
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Sublimation
+    description: >-
+      Bei der Sublimation geht ein Stoff direkt vom festen in den gasförmigen Zustand über,
+      ohne vorher flüssig zu werden. Das geschieht unterhalb des Tripelpunkts, wo die flüssige
+      Phase nicht stabil ist; die Moleküle verlassen die Kristalloberfläche unmittelbar. Der
+      Übergang verbraucht Wärme, die Sublimationsenthalpie, und kühlt dadurch den Stoff und
+      seine Umgebung.
+    example: >-
+      Gefriertrocknung von Lebensmitteln und Arzneimitteln, Kühlen mit Trockeneis, Reinigen
+      von Stoffen wie Iod oder organischen Halbleitern durch Sublimation, Thermosublimationsdruck,
+      Trockeneisstrahlen
+    conditions: >-
+      Temperatur unterhalb des Tripelpunkts und ein Partialdruck des Stoffs in der Umgebung,
+      der unter seinem Dampfdruck über dem Feststoff liegt.
+    limits: >-
+      Die Sublimation verläuft meist langsam, weil die nötige Wärme nur über die Oberfläche
+      zugeführt werden kann.
+    sideEffects: >-
+      Eis und gefrorene Lebensmittel verlieren durch Sublimation Wasser (Gefrierbrand).
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Sublimation
+    description: >-
+      In sublimation a substance passes directly from the solid to the gaseous state without
+      first becoming liquid. This happens below the triple point, where the liquid phase is
+      not stable, and molecules leave the crystal surface directly. The transition consumes
+      heat, the enthalpy of sublimation, and thus cools the substance and its surroundings.
+    example: >-
+      Freeze-drying of food and pharmaceuticals, cooling with dry ice, purifying substances
+      such as iodine or organic semiconductors by sublimation, dye-sublimation printing, dry-ice
+      blasting
+    conditions: >-
+      Temperature below the triple point and a partial pressure of the substance in the surroundings
+      below its vapour pressure over the solid.
+    limits: >-
+      Sublimation is usually slow because the required heat can only be supplied through the
+      surface.
+    sideEffects: Ice and frozen food lose water through sublimation (freezer burn).
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

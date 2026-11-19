@@ -1,0 +1,65 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: mobius-resistor
+kind: application
+home: dilute|field
+functions:
+  - dilute|field
+parameters: []
+uses:
+  - mobius-strip
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: ''
+sources:
+  - https://de.wikipedia.org/wiki/M%C3%B6bius-Widerstand
+  - https://en.wikipedia.org/wiki/M%C3%B6bius_resistor
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Möbius-Widerstand
+    description: >-
+      Ein Möbius-Widerstand besteht aus einem dielektrischen Band, das auf beiden Seiten eine
+      leitfähige Schicht trägt, um eine halbe Drehung verdrillt und zu einem Möbiusband geschlossen
+      ist. Die Anschlüsse sind so angebracht, dass der Strom in den beiden Leiterschichten
+      an jeder Stelle in entgegengesetzter Richtung fließt. Ihre Magnetfelder heben sich dadurch
+      weitgehend auf, und der Widerstand hat praktisch keine Eigeninduktivität.
+    example: >-
+      Induktionsarme Heizelemente für magnetfeldempfindliche Messaufbauten, Widerstände für
+      Hochfrequenz- und Impulsschaltungen
+    conditions: >-
+      Zwei gleichartige Leiterschichten mit einer dünnen, gleichmäßigen Isolierschicht dazwischen.
+    limits: >-
+      Zwischen den eng benachbarten Leiterschichten entsteht eine merkliche Kapazität, die
+      bei hohen Frequenzen wirksam wird.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Möbius resistor
+    description: >-
+      A Möbius resistor consists of a dielectric strip coated with a conductive layer on both
+      sides, given a half twist and closed into a Möbius strip. The terminals are placed so
+      that current flows in opposite directions in the two conductive layers at every point.
+      Their magnetic fields therefore largely cancel, and the resistor has practically no
+      self-inductance.
+    example: >-
+      Low-inductance heating elements for setups sensitive to magnetic fields, resistors for
+      high-frequency and pulse circuits
+    conditions: >-
+      Two identical conductive layers with a thin, uniform insulating layer between them.
+    limits: >-
+      The closely spaced conductive layers form a noticeable capacitance that becomes effective
+      at high frequencies.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

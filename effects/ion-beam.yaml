@@ -1,0 +1,71 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: ion-beam
+kind: application
+home: remove|solid
+functions:
+  - remove|solid
+  - measure|solid
+  - destroy|solid
+parameters:
+  - change|shape
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Ionenstrahl
+  - https://en.wikipedia.org/wiki/Ion_beam
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Ionenstrahl
+    description: >-
+      Ionen werden in einer Quelle erzeugt, durch elektrische Felder beschleunigt und mit
+      elektrischen oder magnetischen Linsen zu einem Strahl gebündelt. Treffen sie auf einen
+      Festkörper, schlagen sie Atome aus der Oberfläche heraus (Zerstäuben), bleiben im Material
+      stecken oder geben ihre Energie in einer bestimmten Tiefe ab; je nach Energie und Ionenart
+      dient der Strahl zum Abtragen, Dotieren, Analysieren oder Bestrahlen.
+    example: >-
+      Focused Ion Beam (FIB) zur Präparation und Reparatur in der Halbleitertechnik, Ionenstrahlätzen,
+      Ionenstrahl-Figurieren von Präzisionsoptiken, Rutherford-Rückstreuanalyse, Ionenstrahltherapie
+      mit Protonen und Kohlenstoffionen, Ionenantriebe
+    conditions: Vakuum entlang der Strahlführung.
+    limits: >-
+      Als Bearbeitungsverfahren trägt der Strahl nur sehr langsam ab, und die Anlagen sind
+      aufwendig und teuer.
+    sideEffects: >-
+      Die Ionen schädigen das Kristallgitter und lagern sich teilweise im Material ein, etwa
+      Gallium beim FIB.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Ion beam
+    description: >-
+      Ions are generated in a source, accelerated by electric fields and focused into a beam
+      by electric or magnetic lenses. When they hit a solid, they knock atoms out of the surface
+      (sputtering), become embedded in the material or deposit their energy at a certain depth;
+      depending on energy and ion species, the beam is used for removing material, doping,
+      analysis or irradiation.
+    example: >-
+      Focused ion beam (FIB) for sample preparation and repair in semiconductor technology,
+      ion beam etching, ion beam figuring of precision optics, Rutherford backscattering analysis,
+      ion beam therapy with protons and carbon ions, ion thrusters
+    conditions: Vacuum along the beam line.
+    limits: >-
+      As a machining process the beam removes material only very slowly, and the equipment
+      is complex and expensive.
+    sideEffects: >-
+      The ions damage the crystal lattice and are partly embedded in the material, for example
+      gallium in FIB.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

@@ -1,0 +1,75 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: optical-filter
+kind: application
+home: separate|field
+functions:
+  - separate|field
+  - absorb|field
+parameters:
+  - change|colour
+  - decrease|brightness
+uses:
+  - absorption-of-electromagnetic-radiation
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Filter_(Optik)
+  - https://en.wikipedia.org/wiki/Optical_filter
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Optischer Filter
+    description: >-
+      Ein optischer Filter lässt nur einen gewählten Teil des Spektrums durch und hält den
+      Rest zurück. Absorptionsfilter aus eingefärbtem Glas, Kunststoff oder Gelatine schlucken
+      die unerwünschten Wellenlängen und wandeln sie in Wärme um, während Interferenzfilter
+      aus vielen dünnen Schichten sie zurückwerfen. Graufilter schwächen alle Wellenlängen
+      gleichmäßig ab.
+    example: >-
+      Farbfilter in der Fotografie, Infrarot-Sperrfilter vor Kamerasensoren, Graufilter, Fluoreszenzmikroskopie,
+      Schweißerschutzglas, Bandpassfilter in Infrarot-Gassensoren
+    conditions: >-
+      Filterwerkstoff oder Schichtsystem müssen auf den gewünschten Wellenlängenbereich und,
+      bei Interferenzfiltern, auf den Einfallswinkel abgestimmt sein.
+    limits: >-
+      Bei Interferenzfiltern verschiebt sich der Durchlassbereich mit schrägerem Lichteinfall
+      zu kürzeren Wellenlängen, und Absorptionsfilter haben meist flache Kanten zwischen Sperr-
+      und Durchlassbereich.
+    sideEffects: >-
+      Absorptionsfilter erwärmen sich bei hoher Strahlungsleistung und können dadurch springen
+      oder ausbleichen.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Optical filter
+    description: >-
+      An optical filter passes only a selected part of the spectrum and holds back the rest.
+      Absorptive filters made of tinted glass, plastic or gelatine swallow the unwanted wavelengths
+      and turn them into heat, whereas interference filters made of many thin layers reflect
+      them. Neutral density filters attenuate all wavelengths evenly.
+    example: >-
+      Colour filters in photography, infrared cut filters in front of camera sensors, neutral
+      density filters, fluorescence microscopy, welding glass, bandpass filters in infrared
+      gas sensors
+    conditions: >-
+      The filter material or layer stack must match the desired wavelength range and, for
+      interference filters, the angle of incidence.
+    limits: >-
+      The passband of an interference filter shifts to shorter wavelengths as the light arrives
+      more obliquely, and absorptive filters usually have gentle edges between blocking and
+      passing ranges.
+    sideEffects: >-
+      Absorptive filters heat up under high radiant power and may crack or fade as a result.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

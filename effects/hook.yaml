@@ -1,0 +1,60 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: hook
+kind: application
+home: hold|solid
+functions:
+  - hold|solid
+  - join|solid
+parameters: []
+uses: []
+domain:
+  id: ''
+  de: ''
+  en: ''
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Haken_(Ger%C3%A4t)
+  - https://en.wikipedia.org/wiki/Hook
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Haken
+    description: >-
+      Ein Haken ist ein gebogenes Bauteil, das eine Last, Öse oder Schlaufe in seine Krümmung
+      aufnimmt und sie durch seine Form festhält. Weil die Last nur durch Formschluss gehalten
+      wird, lässt sie sich schnell ein- und aushängen; viele kleine Haken, die sich in Schlaufen
+      verfangen, ergeben einen lösbaren Verschluss.
+    example: >-
+      Kranhaken, Kleiderhaken, Angelhaken mit Widerhaken, Klettverschluss, Karabiner und Enterhaken,
+      Kletten als Vorbild aus der Natur
+    conditions: ''
+    limits: >-
+      Ohne Sicherung kann die Last aushängen, wenn sie entlastet oder seitlich bewegt wird;
+      deshalb haben Lasthaken Sicherungsfallen.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Hook
+    description: >-
+      A hook is a curved part that receives a load, eye or loop in its bend and holds it by
+      its shape. Because the load is held purely by form fit, it can be attached and released
+      quickly; many small hooks catching in loops make a releasable fastener.
+    example: >-
+      Crane hooks, coat hooks, barbed fish hooks, hook-and-loop fasteners, snap hooks and
+      grappling hooks, burdock burrs as a model from nature
+    conditions: ''
+    limits: >-
+      Without a safety catch the load can come off when it is unloaded or moved sideways;
+      this is why load hooks have safety latches.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

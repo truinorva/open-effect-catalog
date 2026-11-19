@@ -1,0 +1,72 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: microspheres
+kind: application
+home: separate|liquid
+functions:
+  - separate|liquid
+  - expand|solid
+  - absorb|liquid
+parameters:
+  - decrease|density
+  - increase|surface-area
+uses: []
+domain:
+  id: Materialwissenschaft
+  de: Materialwissenschaft
+  en: Materials science
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Mikropartikel
+  - https://en.wikipedia.org/wiki/Microparticle
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Mikrokugeln (Mikropartikel)
+    description: >-
+      Mikrokugeln sind kugelförmige Teilchen von etwa 1 bis 1000 µm Durchmesser aus Glas,
+      Keramik oder Polymer, massiv, porös oder hohl. Ihre einheitliche Form und Größe sorgen
+      für gutes Fließ- und Packungsverhalten und eine definierte Oberfläche, an die sich Wirkstoffe,
+      Antikörper oder magnetische Kerne binden lassen. Hohlkugeln senken die Dichte eines
+      Werkstoffs, poröse oder gefüllte Kugeln nehmen Stoffe auf und geben sie wieder ab.
+    example: >-
+      Glashohlkugeln als Leichtfüllstoff, syntaktischer Schaum, Säulenfüllungen in der Chromatographie,
+      magnetische Beads zur Zelltrennung, Depotarzneimittel, expandierbare Mikrosphären in
+      Schaumdruckfarben
+    conditions: ''
+    limits: >-
+      Hohlkugeln können bei hohem Verarbeitungsdruck oder starker Scherung brechen und verlieren
+      dann ihre dichtesenkende Wirkung.
+    sideEffects: >-
+      Feine Partikel können als Staub eingeatmet werden, und Mikrokugeln aus Kunststoff tragen
+      zur Belastung mit Mikroplastik bei.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Microspheres (microparticles)
+    description: >-
+      Microspheres are spherical particles about 1 to 1000 µm in diameter, made of glass,
+      ceramic or polymer, and solid, porous or hollow. Their uniform shape and size give good
+      flow and packing behaviour and a defined surface to which drugs, antibodies or magnetic
+      cores can be attached. Hollow spheres lower the density of a material, while porous
+      or filled spheres take up substances and release them again.
+    example: >-
+      Hollow glass spheres as lightweight filler, syntactic foam, chromatography column packings,
+      magnetic beads for cell separation, depot drug formulations, expandable microspheres
+      in puff inks
+    conditions: ''
+    limits: >-
+      Hollow spheres can break under high processing pressure or strong shear and then lose
+      their density-reducing effect.
+    sideEffects: >-
+      Fine particles can be inhaled as dust, and plastic microspheres add to microplastic
+      pollution.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

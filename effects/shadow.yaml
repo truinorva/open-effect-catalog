@@ -1,0 +1,73 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: shadow
+kind: effect
+home: detect|solid
+functions:
+  - detect|solid
+  - measure|solid
+  - keep-temp|solid
+parameters:
+  - decrease|brightness
+  - measure|size
+  - measure|position
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Schatten
+  - https://en.wikipedia.org/wiki/Shadow
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Schatten
+    description: >-
+      Ein undurchsichtiger Körper im Weg einer Lichtquelle hält das Licht zurück; dahinter
+      entsteht ein unbeleuchteter Bereich, dessen Umriss die Form des Körpers abbildet. Weil
+      sich Licht geradlinig ausbreitet, lassen sich aus Lage und Größe des Schattens Anwesenheit,
+      Position und Abmessungen des Körpers ablesen. Eine punktförmige Quelle gibt scharfe
+      Ränder, eine ausgedehnte Quelle einen Kernschatten mit umgebendem Halbschatten.
+    example: >-
+      Lichtschranke, Laser-Schattenmikrometer, Profilprojektor, Sonnenuhr, Verschattung von
+      Gebäuden
+    conditions: >-
+      Lichtquelle, deren Strahlung der Körper nicht durchlässt; Auffangfläche oder Sensor
+      hinter dem Körper.
+    limits: >-
+      An Kanten wird das Licht gebeugt, so dass sehr kleine Strukturen keinen scharfen Schatten
+      mehr werfen.
+    sideEffects: >-
+      Unerwünschte Verschattung mindert den Ertrag von Solaranlagen und die Ausleuchtung von
+      Arbeitsplätzen.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Shadow
+    description: >-
+      An opaque body in the path of a light source blocks the light, leaving an unlit region
+      behind it whose outline reproduces the body's shape. Since light travels in straight
+      lines, the position and size of the shadow reveal whether a body is present, where it
+      is and how large it is. A point source casts sharp edges; an extended source produces
+      a core shadow (umbra) surrounded by a penumbra.
+    example: >-
+      Light barrier, laser shadow micrometer, profile projector, sundial, solar shading of
+      buildings
+    conditions: >-
+      A light source whose radiation the body does not transmit; a screen or sensor behind
+      the body.
+    limits: >-
+      Light is diffracted at edges, so very small structures no longer cast a sharp shadow.
+    sideEffects: >-
+      Unwanted shading reduces the yield of solar panels and the lighting of workplaces.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

@@ -1,0 +1,74 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: rocket-engine
+kind: application
+home: move|solid
+functions:
+  - move|solid
+  - move|gas
+parameters:
+  - increase|speed
+uses:
+  - reaction-force
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Raketentriebwerk
+  - https://en.wikipedia.org/wiki/Rocket_engine
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Raketentriebwerk
+    description: >-
+      Ein Raketentriebwerk erzeugt Schub, indem es mitgeführten Brennstoff und Oxidator oder
+      einen einzelnen Treibstoff in einer Brennkammer umsetzt und die heißen Gase durch eine
+      Lavaldüse mit Überschallgeschwindigkeit ausstößt. Nach dem Rückstoßprinzip wirkt auf
+      die Rakete eine gleich große Gegenkraft, und weil sie keine Umgebungsluft braucht, arbeitet
+      sie auch im Vakuum.
+    example: >-
+      Trägerraketen und Raumfahrzeuge, Steuer- und Lageregelungstriebwerke, Feuerwerksraketen,
+      Flugkörper, Schleudersitze
+    conditions: >-
+      Mitgeführte Treibstoffe; für hohe Effizienz hohe Brennkammerdrücke und an den Umgebungsdruck
+      angepasste Düsen.
+    limits: >-
+      Weil die Rakete ihren gesamten Treibstoff mitführen muss, bestimmt die Raketengleichung
+      die erreichbare Geschwindigkeitsänderung; für eine Erdumlaufbahn sind daher meist mehrere
+      Stufen nötig.
+    sideEffects: >-
+      Sehr starker Lärm, hohe Temperaturen und Abgase; je nach Treibstoff entstehen giftige
+      oder klimawirksame Emissionen.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Rocket engine
+    description: >-
+      A rocket engine produces thrust by reacting fuel and oxidiser carried on board, or a
+      single propellant, in a combustion chamber and expelling the hot gases at supersonic
+      speed through a de Laval nozzle. By the reaction principle an equal and opposite force
+      acts on the rocket, and because it needs no ambient air, it also works in vacuum.
+    example: >-
+      Launch vehicles and spacecraft, reaction control and attitude thrusters, fireworks rockets,
+      missiles, ejection seats
+    conditions: >-
+      Propellants carried on board; for high efficiency, high chamber pressures and nozzles
+      matched to the ambient pressure.
+    limits: >-
+      Because the rocket must carry all its propellant, the rocket equation determines the
+      achievable change in velocity; reaching Earth orbit therefore usually requires several
+      stages.
+    sideEffects: >-
+      Very loud noise, high temperatures and exhaust gases; depending on the propellant, toxic
+      or climate-relevant emissions.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

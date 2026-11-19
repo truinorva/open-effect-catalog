@@ -1,0 +1,73 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: cryogenics
+kind: application
+home: cool|solid
+functions:
+  - cool|solid
+  - change-phase|gas
+  - separate|gas
+  - preserve|solid
+parameters:
+  - decrease|temperature
+uses:
+  - joule-thomson-effect
+  - distillation
+domain:
+  id: ''
+  de: ''
+  en: ''
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Kryotechnik
+  - https://en.wikipedia.org/wiki/Cryogenics
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Kryotechnik
+    description: >-
+      Die Kryotechnik erzeugt und nutzt Temperaturen unterhalb von etwa −150 °C. Gase werden
+      verdichtet, gekühlt und über Drosseln oder Expansionsmaschinen entspannt, bis sie sich
+      so weit abkühlen, dass sie flüssig werden; mit flüssigem Stickstoff oder Helium lassen
+      sich dann Bauteile, Proben und Stoffströme sehr tief kühlen.
+    example: >-
+      Luftzerlegung, Erdgasverflüssigung (LNG), Kühlung supraleitender Magnete im MRT, Kryokonservierung
+      von Zellen, kryogenes Mahlen von Kunststoffen und Gewürzen, Schrumpfpassungen
+    conditions: >-
+      Gut isolierte Behälter (Vakuum-Dewargefäße) und Kältemaschinen oder ein Vorrat an Kryoflüssigkeit.
+    limits: >-
+      Der Energieaufwand steigt mit sinkender Temperatur stark an, und Helium ist knapp und
+      teuer.
+    sideEffects: >-
+      Werkstoffe verspröden, verdampfende Kryoflüssigkeiten können den Sauerstoff verdrängen
+      (Erstickungsgefahr), und es drohen Kälteverbrennungen.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Cryogenics
+    description: >-
+      Cryogenics produces and uses temperatures below about −150 °C. Gases are compressed,
+      cooled and expanded through throttles or expansion engines until they cool down far
+      enough to liquefy; liquid nitrogen or helium can then be used to cool components, samples
+      and process streams to very low temperatures.
+    example: >-
+      Air separation, natural gas liquefaction (LNG), cooling of superconducting magnets in
+      MRI, cryopreservation of cells, cryogenic grinding of plastics and spices, shrink fitting
+    conditions: >-
+      Well-insulated vessels (vacuum dewars) and refrigerating machines or a supply of cryogenic
+      liquid.
+    limits: >-
+      The energy required rises steeply as the temperature falls, and helium is scarce and
+      expensive.
+    sideEffects: >-
+      Materials become brittle, evaporating cryogenic liquids can displace oxygen (risk of
+      suffocation), and cold burns can occur.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

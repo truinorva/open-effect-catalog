@@ -1,0 +1,76 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: reverse-osmosis
+kind: application
+home: separate|liquid
+functions:
+  - separate|liquid
+  - remove|liquid
+  - concentrate|liquid
+parameters:
+  - increase|purity
+  - increase|concentration
+uses:
+  - osmosis
+  - semipermeable-membrane
+domain:
+  id: Verfahrenstechnik
+  de: Verfahrenstechnik
+  en: Process engineering
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Umkehrosmose
+  - https://en.wikipedia.org/wiki/Reverse_osmosis
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Umkehrosmose
+    description: >-
+      Bei der Umkehrosmose wird eine Lösung mit einem Druck, der höher ist als ihr osmotischer
+      Druck, gegen eine semipermeable Membran gepresst. Dadurch strömt Wasser entgegen der
+      natürlichen osmotischen Richtung durch die Membran, während gelöste Salze, Zucker, Keime
+      und andere Stoffe weitgehend zurückgehalten werden und sich im Konzentrat anreichern.
+    example: >-
+      Meerwasser- und Brackwasserentsalzung, Reinstwasser für Halbleiterfertigung und Labor,
+      Trinkwasseraufbereitung im Haushalt, Aufkonzentrieren von Fruchtsäften und Milch, Vorkonzentration
+      von Ahornsaft, Wasser für die Dialyse
+    conditions: >-
+      Ein Druck oberhalb des osmotischen Drucks, bei Meerwasser typischerweise 50 bis 80 bar,
+      und eine Vorbehandlung des Zulaufs gegen Ablagerungen.
+    limits: >-
+      Je höher die Salzkonzentration, desto höher der nötige Druck, was die Ausbeute begrenzt;
+      gelöste Gase und manche kleinen ungeladenen Moleküle passieren die Membran teilweise.
+    sideEffects: >-
+      Es entsteht ein salzreiches Konzentrat (Sole), das entsorgt werden muss; die Membranen
+      verschmutzen durch Scaling und Biofouling, und der Energiebedarf ist erheblich.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Reverse osmosis
+    description: >-
+      In reverse osmosis a solution is pressed against a semipermeable membrane at a pressure
+      higher than its osmotic pressure. Water then flows through the membrane against the
+      natural osmotic direction, while dissolved salts, sugars, microbes and other substances
+      are largely retained and accumulate in the concentrate.
+    example: >-
+      Seawater and brackish water desalination, ultrapure water for semiconductor production
+      and laboratories, household drinking water treatment, concentration of fruit juices
+      and milk, pre-concentration of maple sap, water for dialysis
+    conditions: >-
+      A pressure above the osmotic pressure, typically 50 to 80 bar for seawater, and pretreatment
+      of the feed against deposits.
+    limits: >-
+      The higher the salt concentration, the higher the pressure needed, which limits the
+      recovery; dissolved gases and some small uncharged molecules partly pass the membrane.
+    sideEffects: >-
+      A salt-rich concentrate (brine) is produced that must be disposed of; membranes foul
+      through scaling and biofouling, and energy demand is considerable.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

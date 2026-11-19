@@ -1,0 +1,62 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: sonic-anemometer
+kind: application
+home: measure|gas
+functions:
+  - measure|gas
+parameters:
+  - measure|speed
+  - measure|temperature
+uses:
+  - speed-of-sound
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Anemometer
+  - https://en.wikipedia.org/wiki/Anemometer
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Ultraschall-Anemometer
+    description: >-
+      Zwischen mehreren Paaren gegenüberliegender Ultraschallwandler laufen kurze Schallimpulse
+      in beide Richtungen. Wind entlang einer Messstrecke verkürzt die Laufzeit in die eine
+      und verlängert sie in die andere Richtung; aus der Differenz ergibt sich die Windkomponente,
+      aus mehreren Messstrecken Betrag und Richtung des Windes. Aus der mittleren Laufzeit
+      lässt sich näherungsweise auch die Lufttemperatur berechnen, weil die Schallgeschwindigkeit
+      von ihr abhängt.
+    example: >-
+      Wetterstationen, Windenergieanlagen, Turbulenz- und Flussmessungen in der Mikrometeorologie
+    conditions: Freie Messstrecken ohne Hindernisse; genau bekannter Wandlerabstand.
+    limits: >-
+      Starker Regen, Schnee oder Vereisung der Wandler können die Messung stören.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Sonic anemometer
+    description: >-
+      Short ultrasonic pulses travel in both directions between several pairs of opposing
+      transducers. Wind along a measuring path shortens the travel time in one direction and
+      lengthens it in the other; the difference gives the wind component, and several paths
+      together give wind speed and direction. The mean travel time also yields an approximate
+      air temperature, because the speed of sound depends on it.
+    example: >-
+      Weather stations, wind turbines, turbulence and flux measurements in micrometeorology
+    conditions: Unobstructed measuring paths; precisely known transducer spacing.
+    limits: >-
+      Heavy rain, snow or icing of the transducers can disturb the measurement.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

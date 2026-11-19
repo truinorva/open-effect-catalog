@@ -1,0 +1,73 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: iontophoresis
+kind: application
+home: move|liquid
+functions:
+  - move|liquid
+  - measure|liquid
+parameters:
+  - increase|concentration
+uses:
+  - electrophoresis
+  - electro-osmotic-flow
+domain:
+  id: ''
+  de: ''
+  en: ''
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Iontophorese
+  - https://en.wikipedia.org/wiki/Iontophoresis
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Iontophorese
+    description: >-
+      Bei der Iontophorese treibt ein schwacher Gleichstrom zwischen zwei auf die Haut gelegten
+      Elektroden geladene Wirkstoffmoleküle durch die Haut in das darunterliegende Gewebe.
+      Die Ionen wandern dabei im elektrischen Feld zur entgegengesetzt geladenen Elektrode,
+      zusätzlich trägt ein elektroosmotischer Fluss auch ungeladene Moleküle mit. Umgekehrt
+      betrieben holt das Verfahren Stoffe aus dem Gewebe an die Hautoberfläche, wo sie gemessen
+      werden können.
+    example: >-
+      Lokale Gabe von Schmerzmitteln und Entzündungshemmern in der Physiotherapie, Leitungswasser-Iontophorese
+      gegen übermäßiges Schwitzen, Pilocarpin-Schweißtest bei Mukoviszidose, transdermale
+      Glukosemessung
+    conditions: >-
+      Der Wirkstoff muss gelöst und möglichst geladen vorliegen; die Stromdichte ist auf wenige
+      Zehntel Milliampere pro Quadratzentimeter begrenzt.
+    limits: >-
+      Große Moleküle gelangen kaum durch die Haut, und es lassen sich nur kleine Dosen einbringen.
+    sideEffects: >-
+      Hautrötung, Kribbeln und bei zu hoher Stromdichte Verbrennungen unter den Elektroden.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Iontophoresis
+    description: >-
+      In iontophoresis, a weak direct current between two electrodes on the skin drives charged
+      drug molecules through the skin into the underlying tissue. The ions migrate in the
+      electric field towards the oppositely charged electrode, and an electro-osmotic flow
+      also carries uncharged molecules along. Run in reverse, the method draws substances
+      from the tissue to the skin surface, where they can be measured.
+    example: >-
+      Local delivery of painkillers and anti-inflammatories in physiotherapy, tap-water iontophoresis
+      against excessive sweating, pilocarpine sweat test for cystic fibrosis, transdermal
+      glucose monitoring
+    conditions: >-
+      The drug must be in solution and preferably charged; the current density is limited
+      to a few tenths of a milliampere per square centimetre.
+    limits: >-
+      Large molecules hardly pass through the skin, and only small doses can be delivered.
+    sideEffects: >-
+      Skin reddening, tingling and, at excessive current density, burns under the electrodes.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

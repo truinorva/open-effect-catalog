@@ -1,0 +1,72 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: heat-treatment
+kind: application
+home: stabilise|solid
+functions:
+  - stabilise|solid
+  - heat|solid
+  - cool|solid
+parameters:
+  - increase|hardness
+  - increase|strength
+  - decrease|hardness
+uses:
+  - grain-boundary-strengthening
+domain:
+  id: Materialwissenschaft
+  de: Materialwissenschaft
+  en: Materials science
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/W%C3%A4rmebehandlung
+  - https://en.wikipedia.org/wiki/Heat_treating
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Wärmebehandlung
+    description: >-
+      Bei der Wärmebehandlung wird ein Werkstück nach einem festgelegten Programm erwärmt,
+      auf Temperatur gehalten und wieder abgekühlt, um sein Gefüge und damit seine Eigenschaften
+      gezielt zu verändern. Schnelles Abschrecken von Stahl aus dem Austenitgebiet erzeugt
+      harten Martensit, Anlassen macht ihn wieder zäher, und Glühen baut Spannungen ab und
+      macht den Werkstoff weich und gut umformbar.
+    example: >-
+      Härten und Anlassen von Werkzeugen und Zahnrädern, Einsatzhärten, Normalglühen von Schmiedeteilen,
+      Aushärten von Aluminiumlegierungen, Spannungsarmglühen von Schweißkonstruktionen
+    conditions: >-
+      Ein Werkstoff mit Phasenumwandlungen oder Ausscheidungsvorgängen im genutzten Temperaturbereich;
+      genaue Führung von Temperatur und Zeit.
+    limits: >-
+      Dicke Querschnitte lassen sich nicht überall gleich schnell abkühlen, sodass der Kern
+      weniger hart wird.
+    sideEffects: Verzug, Maßänderungen, Härterisse sowie Randoxidation oder Entkohlung.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Heat treatment
+    description: >-
+      In heat treatment, a workpiece is heated, held at temperature and cooled again according
+      to a defined programme in order to change its microstructure and thus its properties
+      in a targeted way. Rapid quenching of steel from the austenite range produces hard martensite,
+      tempering makes it tougher again, and annealing relieves stresses and makes the material
+      soft and easy to form.
+    example: >-
+      Hardening and tempering of tools and gears, case hardening, normalising of forgings,
+      age hardening of aluminium alloys, stress-relief annealing of welded structures
+    conditions: >-
+      A material with phase transformations or precipitation processes in the temperature
+      range used; precise control of temperature and time.
+    limits: >-
+      Thick sections cannot be cooled equally fast throughout, so the core becomes less hard.
+    sideEffects: >-
+      Distortion, dimensional changes, quench cracks and surface oxidation or decarburisation.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

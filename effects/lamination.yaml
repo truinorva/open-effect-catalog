@@ -1,0 +1,74 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: lamination
+kind: application
+home: join|solid
+functions:
+  - join|solid
+  - preserve|solid
+  - stabilise|solid
+parameters:
+  - increase|strength
+  - increase|tightness
+uses: []
+domain:
+  id: Materialwissenschaft
+  de: Materialwissenschaft
+  en: Materials science
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Kaschierung_(Fertigungstechnik)
+  - https://en.wikipedia.org/wiki/Lamination
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Laminieren (Kaschieren)
+    description: >-
+      Beim Laminieren oder Kaschieren werden zwei oder mehr flächige Lagen, etwa Folie, Papier,
+      Textil, Holz oder Glas, mit Klebstoff, Wärme oder Druck dauerhaft zu einem Verbund gefügt.
+      Der Schichtverbund vereint die Eigenschaften der einzelnen Lagen, zum Beispiel die Festigkeit
+      der einen und die Dichtheit oder Schutzwirkung der anderen. Bei Sperrholz und Faserverbunden
+      heben versetzt ausgerichtete Lagen außerdem die Richtungsschwächen der einzelnen Schichten
+      auf.
+    example: >-
+      Foliengeschützte Ausweise und Dokumente, Verbundsicherheitsglas, Sperrholz, Getränkekartons,
+      Verpackungsfolien mit Barriereschicht, Leiterplatten, Laminatböden
+    conditions: >-
+      Lagen mit verträglichen Oberflächen und ein passender Klebstoff oder eine schmelzbare
+      Zwischenschicht.
+    limits: >-
+      Unterschiedliche Wärmeausdehnung oder Feuchteaufnahme der Lagen kann den Verbund verwölben
+      oder ablösen.
+    sideEffects: >-
+      Fest verbundene Mehrschichtverbunde aus unterschiedlichen Werkstoffen lassen sich schlecht
+      sortenrein recyceln.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Lamination
+    description: >-
+      In lamination, two or more flat layers such as film, paper, textile, wood or glass are
+      permanently bonded into a composite using adhesive, heat or pressure. The laminate combines
+      the properties of the individual layers, for example the strength of one and the tightness
+      or protective effect of another. In plywood and fibre composites, layers laid at different
+      orientations also cancel out the directional weaknesses of the individual layers.
+    example: >-
+      Laminated ID cards and documents, laminated safety glass, plywood, beverage cartons,
+      packaging films with a barrier layer, printed circuit boards, laminate flooring
+    conditions: >-
+      Layers with compatible surfaces and a suitable adhesive or meltable interlayer.
+    limits: >-
+      Differing thermal expansion or moisture uptake of the layers can warp or delaminate
+      the composite.
+    sideEffects: >-
+      Firmly bonded multilayer composites of different materials are hard to recycle by material
+      type.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

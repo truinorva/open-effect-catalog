@@ -1,0 +1,62 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: hard-soft-multilayer-coating
+kind: application
+home: preserve|solid
+functions:
+  - preserve|solid
+parameters:
+  - increase|hardness
+  - increase|strength
+uses: []
+domain:
+  id: Materialwissenschaft
+  de: Materialwissenschaft
+  en: Materials science
+maturity: ''
+sources:
+  - https://en.wikipedia.org/wiki/Coating
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Hart-weich-Mehrlagenbeschichtung
+    description: >-
+      Statt einer einzigen harten Schicht werden viele dünne Lagen aus abwechselnd hartem
+      Werkstoff (z. B. Titannitrid oder diamantähnlichem Kohlenstoff) und weicherem, zäherem
+      Werkstoff (z. B. Titan oder einem anderen Metall) übereinander abgeschieden. Die Grenzflächen
+      lenken Risse ab und stoppen sie, und die weichen Lagen bauen Spannungen ab, sodass der
+      Schichtstapel zäher ist und besser haftet als eine gleich dicke Einzelschicht, ohne
+      viel Härte einzubüßen.
+    example: >-
+      Verschleißschutzschichten auf Zerspanungswerkzeugen, Erosionsschutz auf Maschinenteilen
+      und Verdichterschaufeln
+    conditions: >-
+      Ein Abscheideverfahren mit genauer Kontrolle der Lagendicke, meist PVD oder CVD.
+    limits: ''
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Hard/soft multilayer coating
+    description: >-
+      Instead of a single hard layer, many thin layers of alternately hard material (e.g.
+      titanium nitride or diamond-like carbon) and softer, tougher material (e.g. titanium
+      or another metal) are deposited on top of each other. The interfaces deflect and stop
+      cracks, and the soft layers relieve stresses, so the stack is tougher and adheres better
+      than a single layer of the same thickness without losing much hardness.
+    example: >-
+      Wear-resistant coatings on cutting tools, erosion protection on machine parts and compressor
+      blades
+    conditions: >-
+      A deposition process with precise control of layer thickness, usually PVD or CVD.
+    limits: ''
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

@@ -1,0 +1,66 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: faraday-effect
+kind: effect
+home: orient|field
+functions:
+  - orient|field
+  - measure|field
+  - stop|field
+parameters:
+  - change|polarisation
+  - measure|magnetism
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Faraday-Effekt
+  - https://en.wikipedia.org/wiki/Faraday_effect
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Faraday-Effekt
+    description: >-
+      Durchläuft linear polarisiertes Licht ein durchsichtiges Material parallel zu einem
+      Magnetfeld, dreht sich seine Polarisationsebene um einen Winkel, der proportional zur
+      Feldstärke und zur Weglänge ist. Anders als bei optisch aktiven Stoffen hängt der Drehsinn
+      von der Feldrichtung ab, nicht von der Ausbreitungsrichtung: Licht, das hin und zurück
+      läuft, wird daher doppelt gedreht statt zurückgedreht.
+    example: >-
+      Optischer Isolator und Zirkulator in Lasersystemen, faseroptische Stromsensoren in Hochspannungsanlagen,
+      Messung kosmischer Magnetfelder in der Radioastronomie
+    conditions: >-
+      Material mit hoher Verdet-Konstante, z. B. Terbium-Gallium-Granat, und ein Magnetfeld
+      in Ausbreitungsrichtung.
+    limits: Die Verdet-Konstante hängt stark von Wellenlänge und Temperatur ab.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Faraday effect
+    description: >-
+      When linearly polarised light passes through a transparent material parallel to a magnetic
+      field, its plane of polarisation rotates by an angle proportional to the field strength
+      and the path length. Unlike in optically active substances, the sense of rotation depends
+      on the field direction, not on the direction of propagation: light travelling there
+      and back is therefore rotated twice instead of being turned back.
+    example: >-
+      Optical isolators and circulators in laser systems, fibre-optic current sensors in high-voltage
+      installations, measurement of cosmic magnetic fields in radio astronomy
+    conditions: >-
+      Material with a high Verdet constant, e.g. terbium gallium garnet, and a magnetic field
+      along the direction of propagation.
+    limits: The Verdet constant depends strongly on wavelength and temperature.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

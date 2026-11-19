@@ -1,0 +1,63 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: chemical-beam-epitaxy
+kind: application
+home: produce|solid
+functions:
+  - produce|solid
+parameters: []
+uses: []
+domain:
+  id: Materialwissenschaft
+  de: Materialwissenschaft
+  en: Materials science
+maturity: ''
+sources:
+  - https://en.wikipedia.org/wiki/Chemical_beam_epitaxy
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Chemische Strahlepitaxie (CBE)
+    description: >-
+      Bei der chemischen Strahlepitaxie werden gasförmige Ausgangsstoffe wie metallorganische
+      Verbindungen und Hydride im Ultrahochvakuum als gerichtete Molekularstrahlen auf ein
+      geheiztes Kristallsubstrat gelenkt. Erst auf der heißen Oberfläche zerfallen die Moleküle,
+      und die Elemente lagern sich Atomlage für Atomlage in der Kristallordnung der Unterlage
+      an. Das Verfahren verbindet die Strahlführung der Molekularstrahlepitaxie mit den gasförmigen
+      Quellen der metallorganischen Gasphasenepitaxie.
+    example: >-
+      Herstellung von Schichten aus III-V-Verbindungshalbleitern wie InP und GaAs für Laser,
+      Fotodetektoren und Hochfrequenztransistoren
+    conditions: >-
+      Ultrahochvakuum, damit die Moleküle ohne Zusammenstöße zum Substrat gelangen, und ein
+      geheiztes kristallines Substrat.
+    limits: ''
+    sideEffects: Verwendete Hydride wie Arsin und Phosphin sind hochgiftig.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Chemical beam epitaxy (CBE)
+    description: >-
+      In chemical beam epitaxy, gaseous source materials such as metal-organic compounds and
+      hydrides are directed as molecular beams onto a heated crystal substrate in ultra-high
+      vacuum. The molecules only decompose on the hot surface, and the elements are added
+      layer by layer in the crystal order of the substrate. The process combines the beam
+      control of molecular beam epitaxy with the gaseous sources of metal-organic vapour phase
+      epitaxy.
+    example: >-
+      Growth of III-V compound semiconductor layers such as InP and GaAs for lasers, photodetectors
+      and high-frequency transistors
+    conditions: >-
+      Ultra-high vacuum so that the molecules reach the substrate without collisions, and
+      a heated crystalline substrate.
+    limits: ''
+    sideEffects: Hydrides used, such as arsine and phosphine, are highly toxic.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

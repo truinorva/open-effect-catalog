@@ -1,0 +1,63 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: aeolipile
+kind: application
+home: rotate|solid
+functions:
+  - rotate|solid
+parameters:
+  - increase|speed
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: ''
+sources:
+  - https://de.wikipedia.org/wiki/Heronsball
+  - https://en.wikipedia.org/wiki/Aeolipile
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Heronsball (Äolipile)
+    description: >-
+      Ein drehbar gelagerter, mit Wasser gefüllter Hohlkörper wird erhitzt, und der entstehende
+      Dampf strömt aus zwei gegenüberliegenden, abgewinkelten Düsen aus. Nach dem Rückstoßprinzip
+      erzeugen die Dampfstrahlen ein Drehmoment, sodass die Kugel schnell rotiert; Heron von
+      Alexandria beschrieb diese frühe Reaktionsdampfturbine im 1. Jahrhundert.
+    example: >-
+      Lehr- und Demonstrationsmodell, historisches Vorbild der Reaktionsturbine, Rasensprenger
+      mit Rückstoßantrieb nach demselben Prinzip
+    conditions: >-
+      Eine Wärmequelle und ein geschlossener Kessel, aus dem der Dampf nur durch die Düsen
+      entweichen kann.
+    limits: >-
+      Der Wirkungsgrad ist sehr gering, weil die Dampfstrahlen den größten Teil ihrer Energie
+      ungenutzt mitnehmen.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Aeolipile (Hero's engine)
+    description: >-
+      A hollow vessel filled with water and mounted so that it can turn is heated, and the
+      steam escapes through two opposite, bent nozzles. By the reaction principle the steam
+      jets produce a torque, so the sphere spins rapidly; Hero of Alexandria described this
+      early reaction steam turbine in the 1st century AD.
+    example: >-
+      Teaching and demonstration model, historical forerunner of the reaction turbine, reaction-driven
+      lawn sprinklers working on the same principle
+    conditions: >-
+      A heat source and a closed boiler from which steam can escape only through the nozzles.
+    limits: >-
+      Efficiency is very low because the steam jets carry most of their energy away unused.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

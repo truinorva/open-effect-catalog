@@ -1,0 +1,62 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: garshelis-effect
+kind: effect
+home: measure|solid
+functions:
+  - measure|solid
+parameters:
+  - measure|force
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: nische
+sources:
+  - https://en.wikipedia.org/wiki/Garshelis_effect
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Garshelis-Effekt
+    description: >-
+      Wird eine in Umfangsrichtung magnetisierte Zone einer Welle aus magnetostriktivem Stahl
+      tordiert, kippen die mechanischen Spannungen die Magnetisierung leicht in Richtung der
+      Achse. Außerhalb der Welle entsteht dadurch ein axiales Magnetfeld, das in Betrag und
+      Vorzeichen dem Drehmoment folgt und sich berührungslos mit Magnetfeldsensoren messen
+      lässt.
+    example: >-
+      Berührungslose Drehmomentsensoren an rotierenden Wellen, z. B. in Antriebssträngen und
+      auf Prüfständen
+    conditions: >-
+      Ferromagnetischer, magnetostriktiver Werkstoff mit remanenter Magnetisierung in Umfangsrichtung.
+    limits: >-
+      Das Signal ist klein und temperaturabhängig; äußere Magnetfelder stören die Messung.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Garshelis effect
+    description: >-
+      When a circumferentially magnetised zone of a shaft made of magnetostrictive steel is
+      twisted, the mechanical stresses tilt the magnetisation slightly towards the axis. This
+      creates an axial magnetic field outside the shaft that follows the torque in magnitude
+      and sign and can be measured contactlessly with magnetic field sensors.
+    example: >-
+      Contactless torque sensors on rotating shafts, for example in drivetrains and on test
+      rigs
+    conditions: >-
+      Ferromagnetic, magnetostrictive material with remanent circumferential magnetisation.
+    limits: >-
+      The signal is small and temperature-dependent; external magnetic fields disturb the
+      measurement.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

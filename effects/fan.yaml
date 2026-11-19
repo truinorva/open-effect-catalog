@@ -1,0 +1,55 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: fan
+kind: application
+home: move|gas
+functions:
+  - move|gas
+  - cool|solid
+  - mix|gas
+parameters:
+  - increase|speed
+uses: []
+domain:
+  id: ''
+  de: ''
+  en: ''
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Ventilator
+  - https://en.wikipedia.org/wiki/Fan_(machine)
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Ventilator (Lüfter)
+    description: >-
+      Ein Ventilator fördert Luft oder andere Gase mit einem rotierenden Laufrad, dessen Schaufeln
+      dem Gas Impuls übertragen. Er erzeugt große Volumenströme bei nur geringer Druckerhöhung;
+      nach der Strömungsführung unterscheidet man Axial-, Radial- und Querstromventilatoren.
+    example: >-
+      Gehäuselüfter in Computern, Raumlüftung, Kühlerlüfter im Auto, Deckenventilator, Abluftanlagen
+    conditions: ''
+    limits: Für höhere Druckverhältnisse sind Gebläse oder Verdichter nötig.
+    sideEffects: Strömungs- und Lagergeräusche; Staub lagert sich an den Schaufeln ab.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Fan
+    description: >-
+      A fan moves air or other gases with a rotating impeller whose blades impart momentum
+      to the gas. It produces large flow rates with only a small pressure rise; depending
+      on the flow path, axial, centrifugal and cross-flow fans are distinguished.
+    example: >-
+      Computer case fans, room ventilation, car radiator fans, ceiling fans, exhaust systems
+    conditions: ''
+    limits: Blowers or compressors are needed for higher pressure ratios.
+    sideEffects: Flow and bearing noise; dust builds up on the blades.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

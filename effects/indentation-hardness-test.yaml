@@ -1,0 +1,73 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: indentation-hardness-test
+kind: application
+home: measure|solid
+functions:
+  - measure|solid
+parameters:
+  - measure|hardness
+uses: []
+domain:
+  id: Materialwissenschaft
+  de: Materialwissenschaft
+  en: Materials science
+maturity: reife
+sources:
+  - >-
+    https://de.wikipedia.org/wiki/H%C3%A4rte%23H%C3%A4rtepr%C3%BCfung_nach_Brinell
+  - >-
+    https://de.wikipedia.org/wiki/H%C3%A4rte%23H%C3%A4rtepr%C3%BCfung_nach_Knoop
+  - >-
+    https://de.wikipedia.org/wiki/H%C3%A4rte%23H%C3%A4rtepr%C3%BCfung_nach_Vickers_(HV)
+  - https://en.wikipedia.org/wiki/Brinell_hardness_test
+  - https://en.wikipedia.org/wiki/Knoop_hardness_test
+  - https://en.wikipedia.org/wiki/Vickers_hardness_test
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Eindringhärteprüfung (Brinell, Vickers, Knoop)
+    description: >-
+      Ein harter Eindringkörper wird mit definierter Kraft in die Oberfläche des Werkstoffs
+      gedrückt, und aus der Größe des bleibenden Eindrucks wird die Härte berechnet. Bei Brinell
+      ist der Eindringkörper eine Hartmetallkugel, bei Vickers eine quadratische Diamantpyramide
+      und bei Knoop eine lang gestreckte rhombische Diamantpyramide, deren flacher Eindruck
+      sich für dünne Schichten und spröde Stoffe eignet.
+    example: >-
+      Wareneingangsprüfung von Stahl und Gusseisen (Brinell), Kontrolle von Wärmebehandlungen,
+      Härte dünner Schichten und Beschichtungen (Vickers, Knoop), Härteverläufe an Querschliffen
+    conditions: >-
+      Eine ebene, saubere Prüffläche und eine ausreichend dicke Probe, damit die Unterlage
+      den Eindruck nicht beeinflusst.
+    limits: >-
+      Brinell eignet sich nicht für sehr harte Werkstoffe, weil sich die Kugel verformt; Mikrohärtewerte
+      hängen bei kleinen Prüfkräften von der Prüflast ab.
+    sideEffects: Der Eindruck bleibt als kleine Beschädigung auf dem Bauteil zurück.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Indentation hardness test (Brinell, Vickers, Knoop)
+    description: >-
+      A hard indenter is pressed into the surface of the material with a defined force, and
+      the hardness is calculated from the size of the permanent impression. Brinell uses a
+      hard-metal ball, Vickers a square-based diamond pyramid and Knoop an elongated rhombic
+      diamond pyramid, whose shallow impression suits thin layers and brittle materials.
+    example: >-
+      Incoming inspection of steel and cast iron (Brinell), checking heat treatments, hardness
+      of thin layers and coatings (Vickers, Knoop), hardness profiles on cross-sections
+    conditions: >-
+      A flat, clean test surface and a sufficiently thick specimen so that the support does
+      not influence the impression.
+    limits: >-
+      Brinell is unsuitable for very hard materials because the ball deforms; microhardness
+      values depend on the test load at small forces.
+    sideEffects: The impression remains on the part as a small damage.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

@@ -1,0 +1,71 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: negative-index-metamaterial
+kind: application
+home: orient|field
+functions:
+  - orient|field
+parameters:
+  - decrease|refraction
+uses:
+  - negative-refraction
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: kindheit
+sources:
+  - https://en.wikipedia.org/wiki/Negative-index_metamaterial
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Metamaterialien mit negativem Brechungsindex
+    description: >-
+      Diese Metamaterialien bestehen aus regelmäßig angeordneten künstlichen Elementen wie
+      Spaltringresonatoren und Drahtgittern, die viel kleiner als die Wellenlänge sind. Ihre
+      Resonanzen bestimmen, wie das Material elektrisch und magnetisch auf eine Welle antwortet,
+      sodass in einem Frequenzband Permittivität und Permeabilität gleichzeitig negativ werden.
+      Eine solche Struktur bricht Wellen zur ungewohnten Seite, kann schon als flache Platte
+      wie eine Linse wirken und im Idealfall Details unterhalb der Beugungsgrenze abbilden.
+    example: >-
+      Superlinsen und Nahfeldabbildung in der Forschung, kompakte Antennen und Mikrowellenbauteile,
+      Tarnkappen-Konzepte im Mikrowellenbereich
+    conditions: >-
+      Bauelemente deutlich kleiner als die Wellenlänge; der negative Index gilt nur in einem
+      schmalen Frequenzband nahe den Resonanzen.
+    limits: >-
+      Hohe Verluste in den metallischen Strukturen und die Fertigung im Nanometermaßstab erschweren
+      den Einsatz bei sichtbarem Licht.
+    sideEffects: >-
+      Starke Dispersion: Schon kleine Frequenzänderungen verändern den Brechungsindex erheblich.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Negative-index metamaterial
+    description: >-
+      These metamaterials consist of regularly arranged artificial elements such as split-ring
+      resonators and wire arrays, much smaller than the wavelength. Their resonances determine
+      how the material responds electrically and magnetically to a wave, so that permittivity
+      and permeability become negative at the same time within a frequency band. Such a structure
+      refracts waves to the unusual side, can act as a lens even as a flat slab, and ideally
+      images details below the diffraction limit.
+    example: >-
+      Superlenses and near-field imaging in research, compact antennas and microwave components,
+      cloaking concepts in the microwave range
+    conditions: >-
+      Elements much smaller than the wavelength; the negative index holds only in a narrow
+      frequency band near the resonances.
+    limits: >-
+      High losses in the metallic structures and nanometre-scale fabrication make use with
+      visible light difficult.
+    sideEffects: >-
+      Strong dispersion: even small changes in frequency alter the refractive index considerably.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

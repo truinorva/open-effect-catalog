@@ -1,0 +1,63 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: electrodynamic-bearing
+kind: application
+home: hold|solid
+functions:
+  - hold|solid
+parameters:
+  - decrease|friction
+uses:
+  - electromagnetic-induction
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: kindheit
+sources:
+  - https://de.wikipedia.org/wiki/Magnetlager
+  - https://en.wikipedia.org/wiki/Magnetic_bearing
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Elektrodynamisches Lager
+    description: >-
+      Ein elektrodynamisches Lager trägt oder zentriert einen drehenden Läufer berührungslos
+      mit Hilfe von Wirbelströmen. Bewegt sich ein Leiter relativ zu einem Magnetfeld, etwa
+      weil der Läufer aus der Mitte ausgelenkt wird, werden in ihm Ströme induziert, deren
+      Magnetfeld nach der Lenzschen Regel eine rückstellende Kraft erzeugt. Anders als aktive
+      Magnetlager braucht es dafür weder Sensoren noch Regelung, wirkt aber erst oberhalb
+      einer Mindestdrehzahl.
+    example: >-
+      Berührungslose Lagerung schnelllaufender Rotoren, z. B. in Prototypen von Schwungradspeichern
+    conditions: Ausreichende Relativgeschwindigkeit zwischen Leiter und Magnetfeld.
+    limits: >-
+      Im Stillstand und bei niedriger Drehzahl trägt das Lager nicht, so dass Hilfslager nötig
+      sind.
+    sideEffects: Wirbelströme verursachen Verluste und erwärmen den Leiter.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Electrodynamic bearing
+    description: >-
+      An electrodynamic bearing supports or centres a rotating rotor without contact by means
+      of eddy currents. When a conductor moves relative to a magnetic field, for example because
+      the rotor is displaced off-centre, currents are induced in it whose magnetic field produces
+      a restoring force according to Lenz's law. Unlike active magnetic bearings, it needs
+      neither sensors nor control, but only works above a minimum speed.
+    example: >-
+      Contact-free support of high-speed rotors, e.g. in flywheel energy storage prototypes
+    conditions: Sufficient relative speed between conductor and magnetic field.
+    limits: >-
+      The bearing provides no support at standstill or at low speed, so auxiliary bearings
+      are needed.
+    sideEffects: Eddy currents cause losses and heat the conductor.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

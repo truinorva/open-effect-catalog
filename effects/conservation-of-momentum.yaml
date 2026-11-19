@@ -1,0 +1,67 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: conservation-of-momentum
+kind: effect
+home: move|solid
+functions:
+  - move|solid
+  - stop|solid
+  - measure|solid
+parameters:
+  - increase|speed
+  - decrease|speed
+  - measure|speed
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Impuls
+  - https://en.wikipedia.org/wiki/Momentum
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Impulserhaltung
+    description: >-
+      In einem abgeschlossenen System bleibt der Gesamtimpuls – die Summe aus Masse mal Geschwindigkeit
+      – konstant. Stößt ein Körper Masse in eine Richtung aus, bewegt er sich deshalb in die
+      Gegenrichtung (Rückstoß), und bei Stößen geht Impuls von einem Körper auf den anderen
+      über.
+    example: >-
+      Raketen- und Strahlantrieb, Rückstoß von Geschützen, Newton-Pendel, Billard, ballistisches
+      Pendel
+    conditions: Keine oder vernachlässigbare äußere Kräfte während des Vorgangs.
+    limits: >-
+      Äußere Kräfte wie Reibung oder Schwerkraft verändern den Gesamtimpuls, wenn sie lange
+      genug wirken.
+    sideEffects: >-
+      Der Rückstoß belastet Halterungen und Lafetten, und bei unelastischen Stößen wird Bewegungsenergie
+      in Verformung und Wärme umgesetzt.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Conservation of momentum
+    description: >-
+      In a closed system the total momentum – the sum of mass times velocity – stays constant.
+      A body that ejects mass in one direction therefore moves in the opposite direction (recoil),
+      and in collisions momentum passes from one body to another.
+    example: >-
+      Rocket and jet propulsion, recoil of guns, Newton's cradle, billiards, ballistic pendulum
+    conditions: No or negligible external forces during the process.
+    limits: >-
+      External forces such as friction or gravity change the total momentum if they act long
+      enough.
+    sideEffects: >-
+      Recoil loads mounts and gun carriages, and in inelastic collisions kinetic energy is
+      converted into deformation and heat.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

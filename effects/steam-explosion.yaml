@@ -1,0 +1,73 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: steam-explosion
+kind: effect
+home: change-phase|liquid
+functions:
+  - change-phase|liquid
+  - disassemble|solid
+parameters:
+  - increase|pressure
+  - increase|volume
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Physikalische_Explosion
+  - https://en.wikipedia.org/wiki/Steam_explosion
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Dampfexplosion
+    description: >-
+      Kommt Wasser in innigen Kontakt mit einem Stoff, der weit heißer als sein Siedepunkt
+      ist, etwa mit flüssigem Metall oder Lava, verdampft es so schnell, dass sich der Dampf
+      nicht gemächlich entspannen kann und eine Druckwelle entsteht. Oft trennt zunächst ein
+      Dampffilm die beiden Stoffe; bricht er zusammen, zerreißt die heiße Schmelze in feine
+      Tropfen, die Kontaktfläche wächst sprunghaft, und die Verdampfung verstärkt sich selbst.
+      Technisch genutzt wird ein verwandter Vorgang, wenn mit Druckdampf getränktes Material
+      schlagartig entspannt wird und das Wasser im Inneren verdampft.
+    example: >-
+      Dampfexplosionsaufschluss von Holz und Biomasse, Herstellung von Faserplatten; als Gefahr
+      in Gießereien, bei Vulkanausbrüchen unter Wasserbeteiligung und beim Kesselzerknall
+    conditions: >-
+      Ein sehr heißer Stoff in feiner Vermischung mit Wasser oder ein plötzlicher Druckabfall
+      über überhitztem Wasser.
+    limits: ''
+    sideEffects: >-
+      Unbeabsichtigte Dampfexplosionen zerstören Anlagen und gefährden Menschen, etwa wenn
+      feuchter Schrott in eine Metallschmelze gelangt.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Steam explosion
+    description: >-
+      When water comes into intimate contact with a material far hotter than its boiling point,
+      such as molten metal or lava, it vaporises so quickly that the steam cannot expand gently
+      and a pressure wave is produced. A vapour film often separates the two at first; when
+      it collapses, the hot melt is torn into fine droplets, the contact area grows abruptly
+      and the vaporisation reinforces itself. A related process is used technically when material
+      soaked with pressurised steam is suddenly depressurised and the water inside flashes
+      to steam.
+    example: >-
+      Steam explosion pulping of wood and biomass, fibreboard production; as a hazard in foundries,
+      in volcanic eruptions involving water and in boiler explosions
+    conditions: >-
+      A very hot material finely mixed with water, or a sudden pressure drop over superheated
+      water.
+    limits: ''
+    sideEffects: >-
+      Unintended steam explosions destroy plants and endanger people, for example when wet
+      scrap gets into molten metal.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

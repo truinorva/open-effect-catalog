@@ -1,0 +1,72 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: convection
+kind: effect
+home: cool|solid
+functions:
+  - cool|solid
+  - heat|gas
+  - heat|liquid
+  - cool|liquid
+  - mix|liquid
+parameters:
+  - increase|temperature
+  - decrease|temperature
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: verbreitet
+sources:
+  - https://de.wikipedia.org/wiki/Konvektion
+  - https://en.wikipedia.org/wiki/Convection
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Konvektion
+    description: >-
+      Bei der Konvektion wird Wärme mit einem strömenden Gas oder einer Flüssigkeit mitgetragen.
+      Bei freier Konvektion treibt der Auftrieb des erwärmten, leichteren Fluids die Strömung
+      an, bei erzwungener Konvektion sorgen Pumpe oder Lüfter dafür, und bei Mischkonvektion
+      wirken beide Antriebe vergleichbar stark. Je schneller und turbulenter das Fluid an
+      einer Oberfläche entlangströmt, desto mehr Wärme nimmt es auf oder gibt es ab.
+    example: >-
+      Heizkörper, Lüfterkühlung von Elektronik, Kühlkreislauf im Motor, Warmwasserkreislauf,
+      Thermik über erwärmtem Boden
+    conditions: >-
+      Ein bewegliches Fluid in Kontakt mit Flächen anderer Temperatur, für freie Konvektion
+      zusätzlich die Schwerkraft.
+    limits: >-
+      Freie Konvektion ist schwach und kommt in Schwerelosigkeit oder sehr engen Spalten zum
+      Erliegen, erzwungene Konvektion braucht Antriebsleistung.
+    sideEffects: Aufgewirbelter Staub, Zugluft und Lüftergeräusche.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Convection
+    description: >-
+      In convection, heat is carried along by a flowing gas or liquid. In free convection
+      the buoyancy of the heated, lighter fluid drives the flow, in forced convection a pump
+      or fan does so, and in mixed convection both drives are of comparable strength. The
+      faster and more turbulent the fluid flows along a surface, the more heat it takes up
+      or gives off.
+    example: >-
+      Radiators, fan cooling of electronics, engine cooling circuit, hot-water circulation,
+      thermals over heated ground
+    conditions: >-
+      A mobile fluid in contact with surfaces at a different temperature; for free convection,
+      gravity as well.
+    limits: >-
+      Free convection is weak and stops in weightlessness or very narrow gaps, while forced
+      convection needs driving power.
+    sideEffects: Stirred-up dust, draughts and fan noise.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

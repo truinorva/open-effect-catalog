@@ -1,0 +1,65 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: magneto-optic-kerr-effect
+kind: effect
+home: measure|solid
+functions:
+  - measure|solid
+  - detect|solid
+parameters:
+  - measure|magnetism
+  - change|polarisation
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Magnetooptischer_Kerr-Effekt
+  - https://en.wikipedia.org/wiki/Magneto-optic_Kerr_effect
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Magnetooptischer Kerr-Effekt (MOKE)
+    description: >-
+      Wird linear polarisiertes Licht an der Oberfläche eines magnetisierten Materials reflektiert,
+      ist das reflektierte Licht leicht gedreht und elliptisch polarisiert. Ausmaß und Richtung
+      dieser Änderung hängen von Betrag und Richtung der Magnetisierung an der Oberfläche
+      ab. Mit Polarisationsoptik lassen sich daraus Magnetisierung und magnetische Domänen
+      berührungslos bestimmen und sichtbar machen.
+    example: >-
+      Kerr-Mikroskopie magnetischer Domänen, Messung von Hystereseschleifen dünner Schichten,
+      Auslesen magnetooptischer Speicherplatten (MiniDisc, MO-Laufwerke)
+    conditions: Ein magnetisiertes, reflektierendes Material und polarisiertes Licht.
+    limits: >-
+      Die Drehwinkel sind klein, meist unter einem Grad, und erfordern empfindliche Polarisationsmessung;
+      erfasst wird nur eine dünne Oberflächenschicht in der Eindringtiefe des Lichts.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Magneto-optic Kerr effect (MOKE)
+    description: >-
+      When linearly polarised light is reflected from the surface of a magnetised material,
+      the reflected light is slightly rotated and elliptically polarised. The size and direction
+      of this change depend on the magnitude and direction of the magnetisation at the surface.
+      With polarisation optics, magnetisation and magnetic domains can thus be measured and
+      made visible without contact.
+    example: >-
+      Kerr microscopy of magnetic domains, measuring hysteresis loops of thin films, reading
+      magneto-optical discs (MiniDisc, MO drives)
+    conditions: A magnetised, reflecting material and polarised light.
+    limits: >-
+      The rotation angles are small, usually below one degree, and require sensitive polarisation
+      measurement; only a thin surface layer within the penetration depth of light is probed.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

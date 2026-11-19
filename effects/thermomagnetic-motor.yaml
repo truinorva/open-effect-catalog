@@ -1,0 +1,62 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: thermomagnetic-motor
+kind: application
+home: rotate|solid
+functions:
+  - rotate|solid
+parameters:
+  - change|magnetism
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: kindheit
+sources:
+  - https://en.wikipedia.org/wiki/Thermo-magnetic_motor
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Thermomagnetischer Motor (Curie-Motor)
+    description: >-
+      Ein ferromagnetischer Rotor dreht sich neben einem Dauermagneten, und eine Stelle seines
+      Umfangs wird über die Curie-Temperatur erwärmt. Dort verliert der Werkstoff seinen Ferromagnetismus,
+      sodass der Magnet nur noch den kühleren Nachbarbereich anzieht; dieser Kraftunterschied
+      dreht den Rotor weiter, und der erwärmte Bereich kühlt ab, bevor er wieder am Magneten
+      vorbeikommt. So wird Wärme ohne Kolben oder Arbeitsgas in Drehbewegung umgesetzt.
+    example: >-
+      Curie-Rad als Demonstrationsversuch, Versuchsmotoren mit Gadolinium für Abwärme nahe
+      Raumtemperatur, historische Patente von Nikola Tesla
+    conditions: >-
+      Werkstoff mit einer Curie-Temperatur im verfügbaren Temperaturbereich; Wärmequelle und
+      Kühlung an verschiedenen Stellen des Rotors.
+    limits: Leistung und Wirkungsgrad sind sehr klein.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Thermomagnetic motor (Curie motor)
+    description: >-
+      A ferromagnetic rotor turns next to a permanent magnet, and one spot on its circumference
+      is heated above the Curie temperature. There the material loses its ferromagnetism,
+      so the magnet attracts only the cooler neighbouring region; this force imbalance keeps
+      the rotor turning, and the heated part cools again before it returns to the magnet.
+      Heat is thus converted into rotation without pistons or a working gas.
+    example: >-
+      Curie wheel as a demonstration, experimental motors with gadolinium for waste heat near
+      room temperature, historical patents by Nikola Tesla
+    conditions: >-
+      Material whose Curie temperature lies within the available temperature range; heat source
+      and cooling at different points of the rotor.
+    limits: Power output and efficiency are very low.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

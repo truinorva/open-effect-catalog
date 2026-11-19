@@ -1,0 +1,66 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: matteucci-effect
+kind: effect
+home: measure|solid
+functions:
+  - measure|solid
+  - measure|field
+parameters:
+  - measure|force
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: nische
+sources:
+  - https://en.wikipedia.org/wiki/Matteucci_effect
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Matteucci-Effekt
+    description: >-
+      Der Matteucci-Effekt ist ein magnetomechanischer Effekt und die Umkehrung des Wiedemann-Effekts:
+      Wird ein ferromagnetischer, magnetostriktiver Draht tordiert, erhält er eine schraubenförmige
+      magnetische Vorzugsrichtung. Ändert sich dann seine Magnetisierung in Längsrichtung,
+      etwa durch ein Wechselfeld in einer umgebenden Spule, ändert sich zugleich die Magnetisierung
+      in Umfangsrichtung, und zwischen den Drahtenden entsteht eine Spannung. Höhe und Form
+      dieser Spannungsimpulse hängen von der Verdrillung und vom äußeren Feld ab.
+    example: >-
+      Drehmoment- und Torsionssensoren, Magnetfeldsensoren mit amorphen Drähten
+    conditions: >-
+      Ein magnetostriktiver ferromagnetischer Draht, oft amorph, mit Torsion oder eingeprägter
+      schraubenförmiger Anisotropie und ein axiales Wechselfeld.
+    limits: >-
+      Die erzeugten Spannungen sind klein, und der Effekt hängt stark von Werkstoff, Wärmebehandlung
+      und Temperatur ab.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Matteucci effect
+    description: >-
+      The Matteucci effect is a magnetomechanical effect and the inverse of the Wiedemann
+      effect: twisting a ferromagnetic, magnetostrictive wire gives it a helical preferred
+      direction of magnetisation. If its axial magnetisation then changes, for example due
+      to an alternating field in a surrounding coil, the circumferential magnetisation changes
+      as well, and a voltage appears between the ends of the wire. The height and shape of
+      these voltage pulses depend on the twist and on the external field.
+    example: Torque and torsion sensors, magnetic field sensors with amorphous wires
+    conditions: >-
+      A magnetostrictive ferromagnetic wire, often amorphous, with torsion or an imprinted
+      helical anisotropy, and an axial alternating field.
+    limits: >-
+      The voltages generated are small, and the effect depends strongly on material, heat
+      treatment and temperature.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

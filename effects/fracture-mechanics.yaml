@@ -1,0 +1,64 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: fracture-mechanics
+kind: effect
+home: disassemble|solid
+functions:
+  - disassemble|solid
+  - measure|solid
+parameters:
+  - decrease|strength
+  - measure|strength
+uses: []
+domain:
+  id: Materialwissenschaft
+  de: Materialwissenschaft
+  en: Materials science
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Bruchmechanik
+  - https://en.wikipedia.org/wiki/Fracture_mechanics
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Bruchmechanik (Rissausbreitung)
+    description: >-
+      An der Spitze eines Risses oder einer scharfen Kerbe konzentriert sich die mechanische
+      Spannung um ein Vielfaches. Überschreitet die Spannungsintensität dort die Bruchzähigkeit
+      des Werkstoffs, wächst der Riss weiter, in spröden Stoffen schlagartig. Deshalb bestimmen
+      kleine Fehlstellen die Festigkeit eines Bauteils, und ein gezielt gesetzter Anriss erlaubt
+      sauberes, kontrolliertes Brechen.
+    example: >-
+      Glasschneiden durch Anritzen und Brechen, Brechen von Halbleiterwafern entlang von Ritzlinien,
+      Aufreißkerben an Verpackungen, Rissstopp-Bohrungen, schadenstolerante Auslegung im Flugzeugbau
+    conditions: Ein Riss oder eine Kerbe und eine Zugspannung, die ihn öffnet.
+    limits: >-
+      In zähen Metallen bildet sich an der Rissspitze eine plastische Zone; die linear-elastische
+      Rechnung gilt dann nur noch näherungsweise.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Fracture mechanics (crack propagation)
+    description: >-
+      Mechanical stress is concentrated many times over at the tip of a crack or sharp notch.
+      When the stress intensity there exceeds the fracture toughness of the material, the
+      crack grows, abruptly in brittle materials. This is why small flaws govern a component's
+      strength, and why a deliberately placed starter crack allows clean, controlled breaking.
+    example: >-
+      Cutting glass by scoring and snapping, cleaving semiconductor wafers along scribe lines,
+      tear notches on packaging, crack-stop holes, damage-tolerant design in aircraft
+    conditions: A crack or notch and a tensile stress that opens it.
+    limits: >-
+      In ductile metals a plastic zone forms at the crack tip; linear elastic analysis is
+      then only an approximation.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

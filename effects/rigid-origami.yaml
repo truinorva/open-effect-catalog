@@ -1,0 +1,69 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: rigid-origami
+kind: effect
+home: expand|solid
+functions:
+  - expand|solid
+  - compress|solid
+parameters:
+  - change|shape
+  - decrease|volume
+uses: []
+domain:
+  id: Geometrie
+  de: Geometrie
+  en: Geometry
+maturity: nische
+sources:
+  - https://en.wikipedia.org/wiki/Rigid_origami
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Starres Origami
+    description: >-
+      Beim starren Origami bleiben die Flächen zwischen den Faltlinien vollkommen eben und
+      unverformt; die gesamte Bewegung findet in den Falten statt, die wie Scharniere wirken.
+      Nur bestimmte Faltmuster lassen sich so stetig falten, dafür übertragen sie sich auf
+      Platten aus Metall, Kunststoff oder Verbundwerkstoff, und Muster wie das Miura-Ori entfalten
+      sich mit einer einzigen Bewegung von einem kleinen Paket zu einer großen Fläche.
+    example: >-
+      Miura-Faltung für Solarflächen von Raumfahrzeugen (Space Flyer Unit) und für Faltkarten,
+      entfaltbare Antennen und Sonnenschilde im All, zusammenklappbare Behälter und Architekturelemente
+    conditions: >-
+      Ein starr faltbares Faltmuster und Scharniere mit ausreichender Beweglichkeit; bei dicken
+      Platten muss die Materialstärke in der Geometrie berücksichtigt werden.
+    limits: >-
+      Viele Papierfaltungen sind nicht starr faltbar, weil sie ein Biegen der Flächen erfordern;
+      dicke Platten stoßen in den Falten aneinander, wenn ihre Dicke nicht eigens ausgeglichen
+      wird.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Rigid origami
+    description: >-
+      In rigid origami the panels between the creases stay perfectly flat and undeformed;
+      all motion takes place in the creases, which act as hinges. Only certain crease patterns
+      can be folded continuously in this way, but they carry over to plates of metal, plastic
+      or composite, and patterns such as the Miura fold unfold with a single motion from a
+      small package to a large surface.
+    example: >-
+      Miura fold for spacecraft solar arrays (Space Flyer Unit) and for folding maps, deployable
+      antennas and sunshields in space, collapsible containers and architectural elements
+    conditions: >-
+      A rigidly foldable crease pattern and hinges with sufficient freedom of movement; with
+      thick panels the material thickness must be accounted for in the geometry.
+    limits: >-
+      Many paper folds are not rigidly foldable because they require bending of the panels;
+      thick panels collide at the creases unless their thickness is specially accommodated.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

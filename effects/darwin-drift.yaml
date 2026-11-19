@@ -1,0 +1,62 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: darwin-drift
+kind: effect
+home: move|liquid
+functions:
+  - move|liquid
+  - mix|liquid
+parameters:
+  - change|position
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: nische
+sources:
+  - https://en.wikipedia.org/wiki/Darwin_drift
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Darwin-Drift
+    description: >-
+      Bewegt sich ein Körper durch ein ruhendes Fluid, werden die Fluidteilchen nicht nur
+      seitlich verdrängt, sondern bleiben nach seinem Vorbeigang ein Stück in Bewegungsrichtung
+      versetzt zurück. Für eine reibungsfreie Strömung zeigte Charles Galton Darwin 1953,
+      dass das so mitgeführte Driftvolumen genau dem Volumen entspricht, das zur hydrodynamischen
+      Zusatzmasse des Körpers gehört.
+    example: >-
+      Farbstofflinien, die ein geschleppter Körper im Versuchstank mitzieht, Abschätzungen
+      zur Durchmischung des Ozeans durch schwimmende Tiere
+    conditions: Der Körper durchquert das Fluid auf einer langen, geraden Bahn.
+    limits: >-
+      Die einfache Beziehung gilt nur für ideale, reibungsfreie Strömung, und wie viel schwimmende
+      Tiere auf diese Weise tatsächlich zur Durchmischung des Ozeans beitragen, ist umstritten.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Darwin drift
+    description: >-
+      When a body moves through a fluid at rest, the fluid particles are not only pushed aside
+      but are left displaced a little in the direction of motion after it has passed. For
+      an inviscid flow, Charles Galton Darwin showed in 1953 that the drift volume carried
+      along in this way equals the volume corresponding to the body's hydrodynamic added mass.
+    example: >-
+      Dye lines dragged along by a towed body in a test tank, estimates of ocean mixing by
+      swimming animals
+    conditions: The body crosses the fluid on a long, straight path.
+    limits: >-
+      The simple relation holds only for ideal inviscid flow, and how much swimming animals
+      actually contribute to ocean mixing in this way is disputed.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

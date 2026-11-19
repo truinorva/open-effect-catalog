@@ -1,0 +1,69 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: nanofoam
+kind: application
+home: keep-temp|solid
+functions:
+  - keep-temp|solid
+  - absorb|gas
+  - absorb|liquid
+parameters:
+  - decrease|heat-conduction
+  - decrease|density
+  - increase|surface-area
+uses: []
+domain:
+  id: Materialwissenschaft
+  de: Materialwissenschaft
+  en: Materials science
+maturity: wachstum
+sources:
+  - https://en.wikipedia.org/wiki/Nanofoam
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Nanoschaum
+    description: >-
+      Nanoschäume sind hochporöse Festkörper, deren Poren überwiegend kleiner als 100 nm sind,
+      etwa Aerogele aus Silica oder Kohlenstoff sowie Metall- und Polymer-Nanoschäume. Weil
+      die Poren nicht größer sind als die mittlere freie Weglänge der Luftmoleküle, rund 70
+      nm bei Normaldruck, wird die Wärmeleitung durch das eingeschlossene Gas stark unterdrückt.
+      Zugleich bieten sie bei sehr geringer Dichte eine enorme innere Oberfläche.
+    example: >-
+      Aerogel-Dämmmatten für Rohrleitungen und Gebäude, Wärmedämmung in der Raumfahrt, Elektroden
+      für Superkondensatoren, Ölbindemittel, Katalysatorträger
+    conditions: >-
+      Herstellung meist über Sol-Gel-Verfahren mit schonender, oft überkritischer Trocknung,
+      damit das feine Gerüst nicht zusammenfällt.
+    limits: Viele Nanoschäume sind spröde und mechanisch wenig belastbar.
+    sideEffects: >-
+      Bei der Verarbeitung von Aerogelmatten entsteht feiner Staub, der Haut und Atemwege
+      reizen kann.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Nanofoam
+    description: >-
+      Nanofoams are highly porous solids whose pores are mostly smaller than 100 nm, such
+      as silica or carbon aerogels and metal or polymer nanofoams. Because the pores are no
+      larger than the mean free path of air molecules, about 70 nm at normal pressure, heat
+      conduction through the trapped gas is strongly suppressed. At the same time they offer
+      an enormous internal surface at very low density.
+    example: >-
+      Aerogel insulation blankets for pipes and buildings, thermal insulation in spaceflight,
+      supercapacitor electrodes, oil sorbents, catalyst supports
+    conditions: >-
+      Usually made by sol-gel processes with gentle, often supercritical drying so that the
+      fine skeleton does not collapse.
+    limits: Many nanofoams are brittle and can bear little mechanical load.
+    sideEffects: >-
+      Handling aerogel blankets produces fine dust that can irritate skin and airways.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

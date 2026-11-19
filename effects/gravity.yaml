@@ -1,0 +1,66 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: gravity
+kind: effect
+home: move|solid
+functions:
+  - move|solid
+  - move|liquid
+  - move|particles
+  - separate|particles
+  - measure|solid
+parameters:
+  - measure|mass
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Gravitation
+  - https://en.wikipedia.org/wiki/Gravity
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Gravitation (Schwerkraft)
+    description: >-
+      Alle Massen ziehen sich gegenseitig an; die Kraft wächst mit den Massen und nimmt mit
+      dem Quadrat des Abstands ab. An der Erdoberfläche zieht sie jeden Körper mit seiner
+      Gewichtskraft nach unten und bewirkt dadurch Gefälleströmung, Auftrieb, Schichtung nach
+      der Dichte und hydrostatischen Druck.
+    example: >-
+      Waagen, Schwerkraftförderung in Rutschen und Fallrohren, Pendeluhren, Schwerkraftabscheider,
+      Lot und Wasserwaage, Gezeiten
+    conditions: ''
+    limits: >-
+      Gegenüber elektrischen und magnetischen Kräften ist sie sehr schwach; auf der Erde ist
+      die Beschleunigung mit etwa 9,81 m/s² fest vorgegeben, eine stärkere Wirkung erfordert
+      Zentrifugen.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Gravity
+    description: >-
+      All masses attract each other; the force grows with the masses and falls off with the
+      square of the distance. At the Earth's surface it pulls every body downwards with its
+      weight, which gives rise to downhill flow, buoyancy, layering by density and hydrostatic
+      pressure.
+    example: >-
+      Weighing scales, gravity conveying in chutes and downpipes, pendulum clocks, gravity
+      separators, plumb lines and spirit levels, tides
+    conditions: ''
+    limits: >-
+      It is very weak compared with electric and magnetic forces; on Earth the acceleration
+      is fixed at about 9.81 m/s², and a stronger effect requires centrifuges.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

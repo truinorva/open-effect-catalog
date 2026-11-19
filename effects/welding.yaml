@@ -1,0 +1,68 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: welding
+kind: application
+home: join|solid
+functions:
+  - join|solid
+parameters:
+  - increase|temperature
+  - change|state
+uses:
+  - friction
+  - induction-heating
+  - ultrasonic-heating
+domain:
+  id: ''
+  de: ''
+  en: ''
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Schwei%C3%9Fen
+  - https://en.wikipedia.org/wiki/Welding
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Schweißen
+    description: >-
+      Beim Schweißen werden Werkstücke unter Wärme, Druck oder beidem stoffschlüssig verbunden.
+      Beim Schmelzschweißen schmelzen Lichtbogen, Laser, Elektronenstrahl oder Flamme die
+      Fügezone auf, die Schmelzen vermischen sich und erstarren zu einer gemeinsamen Naht;
+      beim Pressschweißen genügen Reibung, Ultraschall oder Widerstandserwärmung zusammen
+      mit Druck, damit sich die Atome der Oberflächen verbinden.
+    example: >-
+      Stahl- und Schiffbau, Karosseriebau mit Punktschweißen, Pipelines, Rührreibschweißen
+      von Aluminium, Ultraschallschweißen von Kunststoffen
+    conditions: >-
+      Schweißbare Werkstoffe; saubere Fügeflächen und häufig Schutzgas gegen Oxidation.
+    limits: >-
+      Manche Werkstoffpaarungen lassen sich nicht schmelzschweißen, weil spröde Phasen entstehen.
+    sideEffects: >-
+      Verzug und Eigenspannungen, veränderte Wärmeeinflusszone, Schweißrauch und UV-Strahlung.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Welding
+    description: >-
+      Welding joins workpieces into a material bond using heat, pressure or both. In fusion
+      welding, an arc, laser, electron beam or flame melts the joint zone, the melts mix and
+      solidify into a common seam; in pressure welding, friction, ultrasound or resistance
+      heating combined with pressure is enough for the atoms of the surfaces to bond.
+    example: >-
+      Steel construction and shipbuilding, car body assembly with spot welding, pipelines,
+      friction stir welding of aluminium, ultrasonic welding of plastics
+    conditions: >-
+      Weldable materials; clean joint surfaces and often shielding gas against oxidation.
+    limits: >-
+      Some material combinations cannot be fusion welded because brittle phases form.
+    sideEffects: >-
+      Distortion and residual stresses, altered heat-affected zone, welding fumes and UV radiation.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

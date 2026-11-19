@@ -1,0 +1,67 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: composting
+kind: application
+home: destroy|solid
+functions:
+  - destroy|solid
+  - heat|solid
+  - produce|solid
+parameters:
+  - decrease|volume
+  - increase|temperature
+uses:
+  - exothermic-reaction
+domain:
+  id: Biologie
+  de: Biologie
+  en: Biology
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Kompost
+  - https://en.wikipedia.org/wiki/Compost
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Kompostierung
+    description: >-
+      Mikroorganismen und Bodentiere bauen organische Abfälle unter Luftzufuhr zu humusreichem
+      Kompost ab. Dabei wird so viel Wärme frei, dass sich ein ausreichend großer Haufen auf
+      etwa 50 bis 70 °C erwärmt; diese heiße Phase tötet viele Krankheitserreger und Unkrautsamen
+      ab. Am Ende steht ein stabiles, nährstoffhaltiges Material, das als Dünger und Bodenverbesserer
+      dient.
+    example: >-
+      Gartenkompost, Bioabfall-Kompostwerke, Kompostierung von Klärschlamm, Mietenkompostierung
+      in der Landwirtschaft, Biomeiler zur Wärmegewinnung
+    conditions: >-
+      Ausreichend Sauerstoff und Feuchte sowie ein geeignetes Verhältnis von Kohlenstoff zu
+      Stickstoff.
+    limits: >-
+      Holzige, ligninreiche Bestandteile werden nur langsam abgebaut; der Vorgang dauert Wochen
+      bis Monate.
+    sideEffects: Bei Sauerstoffmangel entstehen Gerüche sowie Methan und Lachgas.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Composting
+    description: >-
+      Microorganisms and soil animals break down organic waste in the presence of air into
+      humus-rich compost. So much heat is released that a sufficiently large heap warms up
+      to about 50 to 70 °C; this hot phase kills many pathogens and weed seeds. The end product
+      is a stable, nutrient-containing material used as fertiliser and soil improver.
+    example: >-
+      Garden compost, biowaste composting plants, composting of sewage sludge, windrow composting
+      in agriculture, compost heaters for heat recovery
+    conditions: Sufficient oxygen and moisture and a suitable carbon-to-nitrogen ratio.
+    limits: >-
+      Woody, lignin-rich material breaks down only slowly; the process takes weeks to months.
+    sideEffects: Lack of oxygen produces odours as well as methane and nitrous oxide.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

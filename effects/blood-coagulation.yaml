@@ -1,0 +1,68 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: blood-coagulation
+kind: effect
+home: stop|liquid
+functions:
+  - stop|liquid
+  - join|particles
+parameters:
+  - increase|viscosity
+uses: []
+domain:
+  id: Biologie
+  de: Biologie
+  en: Biology
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Blutstillung
+  - https://en.wikipedia.org/wiki/Coagulation
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Blutgerinnung
+    description: >-
+      Wird ein Blutgefäß verletzt, lagern sich Blutplättchen an der Wunde an und verkleben
+      zu einem ersten Pfropf. Zugleich setzt eine Kaskade von Enzymreaktionen ein, an deren
+      Ende das lösliche Fibrinogen in Fibrinfäden umgewandelt wird; diese vernetzen sich zu
+      einem Geflecht, das Blutzellen einschließt und den Pfropf zu einem festen Gerinnsel
+      verstärkt. So wird die Blutung gestoppt.
+    example: >-
+      Wundverschluss, blutstillende Verbände und Fibrinkleber in der Chirurgie, Gerinnungstests
+      (Quick-Wert, INR), Blutkonserven mit Gerinnungshemmer (Citrat)
+    conditions: >-
+      Gerinnungsfaktoren, Calciumionen und Blutplättchen sowie ein Auslöser wie verletztes
+      Gewebe oder der Kontakt mit Fremdoberflächen.
+    limits: ''
+    sideEffects: >-
+      Ungewollte Gerinnung in Gefäßen, an Kathetern oder in medizinischen Geräten führt zu
+      Thrombosen und Embolien.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Blood coagulation
+    description: >-
+      When a blood vessel is injured, platelets attach to the wound and stick together to
+      form an initial plug. At the same time a cascade of enzyme reactions starts, at the
+      end of which soluble fibrinogen is converted into fibrin strands; these cross-link into
+      a mesh that traps blood cells and reinforces the plug into a firm clot. This stops the
+      bleeding.
+    example: >-
+      Wound closure, haemostatic dressings and fibrin glue in surgery, coagulation tests (prothrombin
+      time, INR), stored blood with anticoagulant (citrate)
+    conditions: >-
+      Clotting factors, calcium ions and platelets, plus a trigger such as injured tissue
+      or contact with foreign surfaces.
+    limits: ''
+    sideEffects: >-
+      Unwanted clotting in vessels, on catheters or in medical devices leads to thrombosis
+      and embolism.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

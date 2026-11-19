@@ -1,0 +1,72 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: cholesteric-liquid-crystals
+kind: effect
+home: measure|solid
+functions:
+  - measure|solid
+  - measure|liquid
+  - orient|field
+parameters:
+  - change|colour
+  - measure|temperature
+  - change|reflectivity
+uses: []
+domain:
+  id: Materialwissenschaft
+  de: Materialwissenschaft
+  en: Materials science
+maturity: verbreitet
+sources:
+  - https://de.wikipedia.org/wiki/Cholesterische_Fl%C3%BCssigkristallanzeige
+  - https://en.wikipedia.org/wiki/Cholesteric_liquid_crystal
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Cholesterische Flüssigkristalle
+    description: >-
+      In cholesterischen (chiral-nematischen) Flüssigkristallen sind die Moleküle schichtweise
+      ausgerichtet, wobei sich die Vorzugsrichtung von Schicht zu Schicht ein wenig dreht
+      und eine Schraube bildet. Licht, dessen Wellenlänge zur Ganghöhe dieser Schraube passt,
+      wird als zirkular polarisiertes Licht einer Drehrichtung reflektiert; dadurch schillert
+      das Material farbig. Da sich die Ganghöhe mit Temperatur, mechanischer Spannung oder
+      elektrischem Feld ändert, ändert sich auch die Farbe.
+    example: >-
+      Thermometerstreifen (Stirn- und Aquarienthermometer), Thermografie der Haut, Sichtbarmachen
+      der Wärmeverteilung auf Bauteilen, bistabile E-Paper-Anzeigen, Stimmungsringe
+    conditions: >-
+      Chirale Moleküle oder Zusätze und ein dunkler Untergrund, vor dem die reflektierte Farbe
+      sichtbar wird.
+    limits: >-
+      Der Farbumschlag ist auf einen durch die Mischung festgelegten Temperaturbereich beschränkt;
+      UV-Licht und Verunreinigungen lassen die Stoffe altern.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Cholesteric liquid crystals
+    description: >-
+      In cholesteric (chiral nematic) liquid crystals the molecules are aligned in layers,
+      with the preferred direction turning slightly from layer to layer to form a helix. Light
+      whose wavelength matches the pitch of this helix is reflected as circularly polarised
+      light of one handedness, which makes the material shimmer in colour. Since the pitch
+      changes with temperature, mechanical stress or electric field, the colour changes too.
+    example: >-
+      Thermometer strips (forehead and aquarium thermometers), skin thermography, visualising
+      heat distribution on components, bistable e-paper displays, mood rings
+    conditions: >-
+      Chiral molecules or additives, and a dark background against which the reflected colour
+      becomes visible.
+    limits: >-
+      The colour change is limited to a temperature range fixed by the mixture; UV light and
+      contamination age the materials.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

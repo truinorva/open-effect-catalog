@@ -1,0 +1,64 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: hydrophilicity
+kind: effect
+home: move|liquid
+functions:
+  - move|liquid
+  - absorb|liquid
+parameters:
+  - decrease|friction
+  - increase|translucency
+uses: []
+domain:
+  id: Chemie
+  de: Chemie
+  en: Chemistry
+maturity: verbreitet
+sources:
+  - https://en.wikipedia.org/wiki/Hydrophile
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Hydrophilie
+    description: >-
+      Hydrophile Stoffe und Oberflächen ziehen Wasser an, weil sie polare Gruppen tragen,
+      die mit Wassermolekülen Wasserstoffbrücken oder ionische Wechselwirkungen eingehen.
+      Wasser benetzt solche Oberflächen gut (Kontaktwinkel unter 90°), breitet sich als Film
+      aus und wird in feine Poren oder Fasern hineingezogen.
+    example: >-
+      Antibeschlagschichten auf Brillen und Spiegeln, feuchtigkeitstransportierende Funktionstextilien,
+      gleitfähige Beschichtungen auf Kathetern, Teststreifen mit Kapillarkanälen, Plasma-
+      oder Coronabehandlung vor dem Kleben und Bedrucken
+    conditions: ''
+    limits: >-
+      Durch Plasma oder Corona erzeugte Hydrophilie klingt mit der Zeit ab, und organische
+      Ablagerungen machen Oberflächen wieder wasserabweisender.
+    sideEffects: Hydrophile Werkstoffe nehmen Feuchte auf und können dabei quellen.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Hydrophilicity
+    description: >-
+      Hydrophilic substances and surfaces attract water because they carry polar groups that
+      form hydrogen bonds or ionic interactions with water molecules. Water wets such surfaces
+      well (contact angle below 90°), spreads into a film and is drawn into fine pores or
+      fibres.
+    example: >-
+      Anti-fog coatings on glasses and mirrors, moisture-wicking sports textiles, lubricious
+      coatings on catheters, test strips with capillary channels, plasma or corona treatment
+      before bonding and printing
+    conditions: ''
+    limits: >-
+      Hydrophilicity produced by plasma or corona treatment fades over time, and organic deposits
+      make surfaces more water-repellent again.
+    sideEffects: Hydrophilic materials absorb moisture and can swell as a result.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

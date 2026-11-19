@@ -1,0 +1,71 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: sonochemistry
+kind: effect
+home: produce|liquid
+functions:
+  - produce|liquid
+  - produce|particles
+  - destroy|liquid
+parameters: []
+uses: []
+domain:
+  id: Chemie
+  de: Chemie
+  en: Chemistry
+maturity: nische
+sources:
+  - https://de.wikipedia.org/wiki/Sonochemie
+  - https://en.wikipedia.org/wiki/Sonochemistry
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Sonochemie
+    description: >-
+      Starker Ultraschall erzeugt in Flüssigkeiten Kavitationsblasen, die wachsen und dann
+      schlagartig zusammenfallen. Im Inneren der kollabierenden Blase entstehen kurzzeitig
+      Temperaturen von mehreren tausend Kelvin und hohe Drücke; dabei werden Moleküle gespalten
+      und reaktive Radikale gebildet, und an Grenzflächen sorgen Mikrostrahlen und Stoßwellen
+      für intensive Durchmischung. So lassen sich chemische Reaktionen auslösen oder beschleunigen,
+      die sonst nur unter harschen Bedingungen ablaufen.
+    example: >-
+      Ultraschallunterstützte organische Synthese, Herstellung von Nanopartikeln, Abbau organischer
+      Schadstoffe im Wasser, Aktivieren von Metalloberflächen für Grignard-Reaktionen
+    conditions: >-
+      Flüssigkeit mit gelöstem Gas; Ultraschall ausreichender Intensität, meist zwischen etwa
+      20 kHz und einigen hundert Kilohertz.
+    limits: >-
+      Die Energieausbeute ist gering, und die Übertragung vom Labor auf große Reaktoren ist
+      schwierig.
+    sideEffects: >-
+      Die Flüssigkeit erwärmt sich, und Ultraschallsonotroden erodieren mit der Zeit durch
+      Kavitation.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Sonochemistry
+    description: >-
+      Intense ultrasound creates cavitation bubbles in liquids that grow and then collapse
+      violently. Inside the collapsing bubble, temperatures of several thousand kelvin and
+      high pressures arise for a very short time; molecules are split and reactive radicals
+      are formed, while microjets and shock waves at interfaces cause intense mixing. This
+      can trigger or speed up chemical reactions that otherwise require harsh conditions.
+    example: >-
+      Ultrasound-assisted organic synthesis, production of nanoparticles, degradation of organic
+      pollutants in water, activating metal surfaces for Grignard reactions
+    conditions: >-
+      Liquid with dissolved gas; ultrasound of sufficient intensity, typically from about
+      20 kHz to several hundred kilohertz.
+    limits: >-
+      Energy efficiency is low, and scaling up from the laboratory to large reactors is difficult.
+    sideEffects: >-
+      The liquid heats up, and ultrasonic horns erode over time through cavitation.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

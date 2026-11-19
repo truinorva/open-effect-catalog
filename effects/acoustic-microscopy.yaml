@@ -1,0 +1,66 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: acoustic-microscopy
+kind: application
+home: detect|solid
+functions:
+  - detect|solid
+  - measure|solid
+parameters:
+  - measure|size
+  - measure|rigidity
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Akustische_Mikroskopie
+  - https://en.wikipedia.org/wiki/Acoustic_microscopy
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Akustische Mikroskopie (Ultraschallmikroskopie)
+    description: >-
+      Ein stark gebündelter Ultraschallstrahl sehr hoher Frequenz tastet eine Probe Punkt
+      für Punkt ab, und die Echos werden zu einem Bild zusammengesetzt. Da Schall an jeder
+      Grenzfläche zwischen Stoffen unterschiedlicher akustischer Impedanz reflektiert wird,
+      werden Hohlräume, Ablösungen und Risse auch unter der Oberfläche undurchsichtiger Bauteile
+      sichtbar.
+    example: >-
+      Prüfung von Chipgehäusen auf Delaminationen, Kontrolle von Löt- und Klebeverbindungen,
+      Prüfung gebondeter Wafer, Untersuchung biologischer Gewebe
+    conditions: >-
+      Die Probe muss über ein Koppelmedium, meist Wasser, mit dem Schallkopf verbunden sein.
+    limits: >-
+      Höhere Frequenzen verbessern die Auflösung, werden aber stärker gedämpft und verringern
+      so die Eindringtiefe.
+    sideEffects: Das Koppelwasser kann in feuchteempfindliche Proben eindringen.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Acoustic microscopy (scanning acoustic microscopy)
+    description: >-
+      A tightly focused, very high-frequency ultrasound beam scans a sample point by point,
+      and the echoes are assembled into an image. Since sound is reflected at every interface
+      between materials of different acoustic impedance, voids, delaminations and cracks become
+      visible even below the surface of opaque parts.
+    example: >-
+      Inspection of chip packages for delamination, checking solder and adhesive joints, inspection
+      of bonded wafers, examination of biological tissue
+    conditions: >-
+      The sample must be coupled to the transducer through a medium, usually water.
+    limits: >-
+      Higher frequencies improve resolution but are attenuated more strongly, which reduces
+      the penetration depth.
+    sideEffects: The coupling water can penetrate moisture-sensitive samples.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

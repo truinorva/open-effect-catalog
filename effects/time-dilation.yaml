@@ -1,0 +1,67 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: time-dilation
+kind: effect
+home: measure|field
+functions:
+  - measure|field
+parameters:
+  - measure|position
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Zeitdilatation
+  - https://en.wikipedia.org/wiki/Time_dilation
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Zeitdilatation
+    description: >-
+      Nach der Relativitätstheorie gehen bewegte Uhren aus Sicht eines ruhenden Beobachters
+      langsamer, und Uhren tiefer im Schwerefeld gehen langsamer als höher gelegene. Ursache
+      ist, dass Raum und Zeit nicht absolut sind: Die Lichtgeschwindigkeit ist für alle Beobachter
+      gleich, und die Gravitation krümmt die Raumzeit. Vergleicht man genaue Uhren, lassen
+      sich daraus Geschwindigkeiten und Höhenunterschiede im Schwerefeld bestimmen.
+    example: >-
+      Uhrenkorrektur in GPS- und Galileo-Satelliten, verlängerte Lebensdauer von Myonen aus
+      der Höhenstrahlung, Höhenmessung mit optischen Atomuhren (chronometrische Geodäsie)
+    conditions: >-
+      Hohe Relativgeschwindigkeit oder Unterschied im Gravitationspotenzial; sehr genaue Uhren.
+    limits: >-
+      Im Alltag ist der Effekt winzig; bei GPS-Satelliten summiert er sich auf etwa 38 Mikrosekunden
+      pro Tag.
+    sideEffects: >-
+      Ohne Korrektur würden Satellitennavigationssysteme schnell um Kilometer falsch liegen.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Time dilation
+    description: >-
+      According to relativity, moving clocks run slow as seen by an observer at rest, and
+      clocks deeper in a gravitational field run slower than those higher up. The reason is
+      that space and time are not absolute: the speed of light is the same for all observers,
+      and gravity curves spacetime. Comparing precise clocks therefore reveals velocities
+      and height differences in the gravitational field.
+    example: >-
+      Clock correction in GPS and Galileo satellites, extended lifetime of cosmic-ray muons,
+      height measurement with optical atomic clocks (chronometric geodesy)
+    conditions: >-
+      High relative velocity or difference in gravitational potential; very precise clocks.
+    limits: >-
+      In everyday life the effect is tiny; for GPS satellites it adds up to about 38 microseconds
+      per day.
+    sideEffects: >-
+      Without correction, satellite navigation systems would quickly be off by kilometres.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

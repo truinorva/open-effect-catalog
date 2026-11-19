@@ -1,0 +1,67 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: piezomagnetism
+kind: effect
+home: produce|field
+functions:
+  - produce|field
+parameters:
+  - increase|magnetism
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: nische
+sources:
+  - https://en.wikipedia.org/wiki/Piezomagnetism
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Piezomagnetismus
+    description: >-
+      Beim Piezomagnetismus erzeugt eine mechanische Spannung in einem Kristall eine Magnetisierung,
+      die linear von der Spannung abhängt und mit deren Vorzeichen umkehrt; umgekehrt verformt
+      ein Magnetfeld den Kristall linear. Der Effekt tritt nur in Kristallen mit passender
+      magnetischer Symmetrie auf, etwa in bestimmten Antiferromagneten wie Cobalt(II)-fluorid
+      oder Mangan(II)-fluorid. Er unterscheidet sich von der Magnetostriktion, deren Verformung
+      quadratisch vom Feld abhängt und beim Umpolen des Felds die Richtung nicht wechselt.
+    example: >-
+      Grundlagenforschung an antiferromagnetischen Kristallen wie CoF₂ und MnF₂, Untersuchung
+      magnetischer Symmetrien
+    conditions: >-
+      Ein Kristall mit geeigneter magnetischer Ordnung und Symmetrie, meist bei tiefen Temperaturen
+      unterhalb der Néel-Temperatur.
+    limits: >-
+      Der Effekt ist sehr schwach und in den meisten Werkstoffen aus Symmetriegründen gar
+      nicht vorhanden.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Piezomagnetism
+    description: >-
+      In piezomagnetism, mechanical stress in a crystal produces a magnetisation that depends
+      linearly on the stress and reverses with its sign; conversely, a magnetic field deforms
+      the crystal linearly. The effect only occurs in crystals with a suitable magnetic symmetry,
+      for example certain antiferromagnets such as cobalt(II) fluoride or manganese(II) fluoride.
+      It differs from magnetostriction, whose deformation depends quadratically on the field
+      and does not change direction when the field is reversed.
+    example: >-
+      Basic research on antiferromagnetic crystals such as CoF₂ and MnF₂, study of magnetic
+      symmetries
+    conditions: >-
+      A crystal with suitable magnetic order and symmetry, usually at low temperatures below
+      the Néel temperature.
+    limits: >-
+      The effect is very weak and, for symmetry reasons, absent altogether in most materials.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

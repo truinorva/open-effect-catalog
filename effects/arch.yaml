@@ -1,0 +1,64 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: arch
+kind: effect
+home: hold|solid
+functions:
+  - hold|solid
+  - stabilise|solid
+parameters:
+  - increase|strength
+uses: []
+domain:
+  id: Geometrie
+  de: Geometrie
+  en: Geometry
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Bogen_(Architektur)
+  - https://en.wikipedia.org/wiki/Arch
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Bogen (Bogentragwirkung)
+    description: >-
+      Ein gekrümmtes Tragwerk leitet senkrechte Lasten überwiegend als Druckkräfte entlang
+      seiner Krümmung zu den Auflagern ab. Folgt die Form der Stützlinie der Last, tritt kaum
+      Biegung auf; deshalb können auch Werkstoffe mit geringer Zugfestigkeit wie Naturstein,
+      Ziegel oder Beton große Spannweiten überbrücken.
+    example: >-
+      Steinbrücken und Gewölbe, Bogenstaumauern, Tunnelschalen, Torbögen, Eierschale und Schädeldach
+    conditions: Widerlager, die den seitlichen Horizontalschub aufnehmen können.
+    limits: >-
+      Weicht die Last stark von der Form der Stützlinie ab, etwa bei großen Einzellasten,
+      entstehen Biegemomente, die zum Versagen führen können.
+    sideEffects: >-
+      In Schüttgütern bilden sich ungewollt Gewölbe über der Auslauföffnung von Silos und
+      Trichtern, die den Ausfluss blockieren (Brückenbildung).
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Arch (arch action)
+    description: >-
+      A curved structure carries vertical loads to its supports mainly as compressive forces
+      along its curve. If the shape follows the line of thrust of the load, there is hardly
+      any bending; materials with low tensile strength such as stone, brick or concrete can
+      therefore span large openings.
+    example: >-
+      Stone bridges and vaults, arch dams, tunnel linings, gateways, eggshells and the skull
+    conditions: Abutments that can take up the horizontal thrust.
+    limits: >-
+      If the load departs strongly from the shape of the line of thrust, for instance under
+      large point loads, bending moments arise that can lead to failure.
+    sideEffects: >-
+      In bulk solids, unwanted arches form above the outlets of silos and hoppers and block
+      discharge (bridging).
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

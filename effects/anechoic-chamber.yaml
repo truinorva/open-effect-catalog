@@ -1,0 +1,67 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: anechoic-chamber
+kind: application
+home: absorb|field
+functions:
+  - absorb|field
+parameters:
+  - decrease|sound
+  - decrease|reflectivity
+uses:
+  - acoustic-absorption
+  - absorption-of-electromagnetic-radiation
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Reflexionsarmer_Raum
+  - https://en.wikipedia.org/wiki/Anechoic_chamber
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Reflexionsarmer Raum (Absorberraum)
+    description: >-
+      Wände, Decke und oft auch der Boden eines reflexionsarmen Raums sind mit keil- oder
+      pyramidenförmigen Absorbern ausgekleidet, die einfallenden Schall oder elektromagnetische
+      Wellen fast vollständig schlucken. Dadurch erreicht nur die direkte Welle der Quelle
+      den Empfänger, als befände man sich im freien Raum ohne Echos.
+    example: >-
+      Messung von Lautsprechern und Mikrofonen, Geräuschmessung an Maschinen, Antennenmessung,
+      Prüfung der elektromagnetischen Verträglichkeit, Radarquerschnittsmessung
+    conditions: Absorber, deren Tiefe zur tiefsten zu messenden Frequenz passt.
+    limits: >-
+      Unterhalb einer Grenzfrequenz sind die Absorber im Verhältnis zur Wellenlänge zu klein,
+      und es treten wieder Reflexionen auf.
+    sideEffects: >-
+      Akustische reflexionsarme Räume sind ungewohnt still, was auf Menschen beklemmend wirken
+      kann.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Anechoic chamber
+    description: >-
+      The walls, ceiling and often the floor of an anechoic chamber are lined with wedge-
+      or pyramid-shaped absorbers that swallow almost all incident sound or electromagnetic
+      waves. As a result only the direct wave from the source reaches the receiver, as if
+      in free space without echoes.
+    example: >-
+      Measuring loudspeakers and microphones, machine noise measurement, antenna measurement,
+      electromagnetic compatibility testing, radar cross-section measurement
+    conditions: Absorbers whose depth suits the lowest frequency to be measured.
+    limits: >-
+      Below a cut-off frequency the absorbers are too small relative to the wavelength, and
+      reflections reappear.
+    sideEffects: >-
+      Acoustic anechoic rooms are unusually quiet, which many people find oppressive.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

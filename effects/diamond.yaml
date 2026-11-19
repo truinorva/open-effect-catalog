@@ -1,0 +1,72 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: diamond
+kind: application
+home: disassemble|solid
+functions:
+  - disassemble|solid
+  - cool|solid
+parameters:
+  - increase|hardness
+  - increase|heat-conduction
+uses: []
+domain:
+  id: Materialwissenschaft
+  de: Materialwissenschaft
+  en: Materials science
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Diamant
+  - https://en.wikipedia.org/wiki/Diamond
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Diamant
+    description: >-
+      Diamant ist kristalliner Kohlenstoff, in dem jedes Atom über starke kovalente Bindungen
+      mit vier Nachbarn verknüpft ist. Daraus folgen die größte Härte aller natürlichen Stoffe,
+      eine außergewöhnlich hohe Wärmeleitfähigkeit bei zugleich sehr gutem elektrischem Isoliervermögen
+      und Durchlässigkeit für einen weiten Spektralbereich. Technisch dient er vor allem als
+      Schneid- und Schleifstoff, aber auch als Wärmespreizer und optisches Fenster.
+    example: >-
+      Diamanttrennscheiben und Bohrkronen, Schleif- und Polierpasten, Abrichtwerkzeuge, Wärmespreizer
+      für Laserdioden, Fenster für Hochleistungslaser, Strahlungsdetektoren
+    conditions: >-
+      Für Schneid- und Schleifzwecke meist synthetische Diamanten, gebunden in Metall, Keramik
+      oder Kunstharz.
+    limits: >-
+      Zum Bearbeiten von Eisen und Stahl ist Diamant ungeeignet, weil Kohlenstoff bei hohen
+      Temperaturen ins Eisen übergeht, und an Luft oxidiert er ab etwa 600 bis 800 °C.
+    sideEffects: >-
+      Trotz seiner Härte ist Diamant spröde und kann bei Schlägen entlang seiner Spaltebenen
+      brechen.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Diamond
+    description: >-
+      Diamond is crystalline carbon in which every atom is linked to four neighbours by strong
+      covalent bonds. This results in the greatest hardness of all natural materials, exceptionally
+      high thermal conductivity combined with very good electrical insulation, and transparency
+      over a wide spectral range. Technically it is used mainly as a cutting and grinding
+      material, but also as a heat spreader and optical window.
+    example: >-
+      Diamond cutting discs and core bits, grinding and polishing pastes, dressing tools,
+      heat spreaders for laser diodes, windows for high-power lasers, radiation detectors
+    conditions: >-
+      For cutting and grinding mostly synthetic diamonds, bonded in metal, ceramic or resin.
+    limits: >-
+      Diamond is unsuitable for machining iron and steel because its carbon dissolves into
+      the iron at high temperatures, and in air it oxidises from about 600 to 800 °C.
+    sideEffects: >-
+      Despite its hardness diamond is brittle and can split along its cleavage planes under
+      impact.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

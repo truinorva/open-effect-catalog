@@ -1,0 +1,71 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: supercooling
+kind: effect
+home: change-phase|liquid
+functions:
+  - change-phase|liquid
+  - heat|solid
+  - preserve|solid
+parameters:
+  - stabilise|state
+  - decrease|temperature
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Unterk%C3%BChlung_(Thermodynamik)
+  - https://en.wikipedia.org/wiki/Supercooling
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Unterkühlung (Thermodynamik)
+    description: >-
+      Eine Flüssigkeit kann unter ihren Gefrierpunkt abgekühlt werden, ohne zu erstarren,
+      wenn keine Keime vorhanden sind, an denen die ersten Kristalle wachsen könnten. Der
+      Zustand ist metastabil: Eine Erschütterung, ein Impfkristall oder ein Staubkorn löst
+      die Kristallisation aus, die sich dann rasch durch die ganze Flüssigkeit ausbreitet
+      und die Schmelzwärme schlagartig freisetzt.
+    example: >-
+      Wärmekissen mit Natriumacetat-Trihydrat, unterkühlte Wolkentröpfchen und Wolkenimpfung,
+      Lagerung von Lebensmitteln und Organen knapp unter 0 °C ohne Eisbildung, Eisregen
+    conditions: >-
+      Reine Flüssigkeit ohne Keime, glatte Gefäßwände und langsames, erschütterungsfreies
+      Abkühlen.
+    limits: >-
+      Unterhalb einer stoffabhängigen Grenze setzt spontane Keimbildung ein; bei Wasser liegt
+      sie bei etwa −40 °C.
+    sideEffects: >-
+      Unterkühlte Wassertropfen gefrieren beim Aufprall und verursachen Eisregen und die Vereisung
+      von Flugzeugen.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Supercooling
+    description: >-
+      A liquid can be cooled below its freezing point without solidifying if there are no
+      nuclei on which the first crystals could grow. The state is metastable: a jolt, a seed
+      crystal or a speck of dust triggers crystallisation, which then spreads rapidly through
+      the whole liquid and releases the latent heat of fusion abruptly.
+    example: >-
+      Heat packs with sodium acetate trihydrate, supercooled cloud droplets and cloud seeding,
+      storing food and organs just below 0 °C without ice formation, freezing rain
+    conditions: >-
+      Pure liquid without nuclei, smooth vessel walls and slow cooling without vibration.
+    limits: >-
+      Below a material-specific limit spontaneous nucleation sets in; for water it lies at
+      about −40 °C.
+    sideEffects: >-
+      Supercooled water droplets freeze on impact, causing freezing rain and aircraft icing.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

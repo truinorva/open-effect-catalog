@@ -1,0 +1,72 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: newtons-rings
+kind: effect
+home: measure|solid
+functions:
+  - measure|solid
+  - detect|solid
+parameters:
+  - measure|shape
+  - measure|size
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Newtonsche_Ringe
+  - https://en.wikipedia.org/wiki/Newton%27s_rings
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Newtonsche Ringe
+    description: >-
+      Liegt eine schwach gewölbte Linse auf einer ebenen Glasplatte, bildet sich dazwischen
+      ein Luftspalt, dessen Dicke nach außen zunimmt. Licht, das an der Ober- und an der Unterseite
+      des Spalts reflektiert wird, überlagert sich und verstärkt oder löscht sich je nach
+      Gangunterschied, also je nach örtlicher Spaltdicke. So entstehen konzentrische helle
+      und dunkle Ringe, die die Spaltdicke auf Bruchteile einer Wellenlänge genau wiedergeben.
+    example: >-
+      Prüfung von Linsen und optischen Flächen mit Probegläsern, Bestimmung von Krümmungsradien,
+      Messung der Lichtwellenlänge im Praktikum, Ebenheitsprüfung mit Planglas
+    conditions: >-
+      Zwei glatte, reflektierende Flächen mit sehr dünnem Spalt und möglichst einfarbiges
+      Licht.
+    limits: >-
+      Die Flächen müssen optisch glatt sein, und bei weißem Licht sind nur die innersten,
+      farbigen Ringe zu erkennen.
+    sideEffects: >-
+      Störende Ringmuster entstehen beim Scannen von Filmen und in glasgerahmten Dias; dagegen
+      hilft leicht angerautes Anti-Newton-Glas.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Newton's rings
+    description: >-
+      When a slightly convex lens rests on a flat glass plate, an air gap forms between them
+      whose thickness increases outwards. Light reflected at the upper and lower faces of
+      the gap interferes, reinforcing or cancelling depending on the path difference, that
+      is on the local gap thickness. This produces concentric bright and dark rings that map
+      the gap thickness to a fraction of a wavelength.
+    example: >-
+      Testing lenses and optical surfaces with test glasses, determining radii of curvature,
+      measuring the wavelength of light in lab courses, flatness testing with an optical flat
+    conditions: >-
+      Two smooth reflecting surfaces with a very thin gap and preferably monochromatic light.
+    limits: >-
+      The surfaces must be optically smooth, and in white light only the innermost, coloured
+      rings are visible.
+    sideEffects: >-
+      Unwanted ring patterns appear when scanning film and in glass-mounted slides; slightly
+      textured anti-Newton glass prevents them.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

@@ -1,0 +1,64 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: sponge
+kind: application
+home: absorb|liquid
+functions:
+  - absorb|liquid
+  - hold|liquid
+  - remove|solid
+parameters: []
+uses:
+  - capillary-action
+domain:
+  id: ''
+  de: ''
+  en: ''
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Badeschwamm
+  - https://en.wikipedia.org/wiki/Sponge_(tool)
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Schwamm
+    description: >-
+      Ein Schwamm ist ein weicher, offenporiger Körper mit einem Netz aus vielen feinen, miteinander
+      verbundenen Hohlräumen. Kapillarkräfte ziehen Flüssigkeit in die Poren und halten sie
+      dort fest, so dass ein Schwamm ein Vielfaches seines Eigengewichts aufnehmen kann; durch
+      Zusammendrücken gibt er sie wieder ab. Ursprünglich wurden die Skelette von Meeresschwämmen
+      genutzt, heute meist Zellulose- oder Kunststoffschaum.
+    example: >-
+      Haushalts- und Badeschwamm, Tafelschwamm, Saugschwamm zum Aufnehmen von Wasser, Steckschaum
+      in der Floristik
+    conditions: Eine offenporige Struktur, die von der Flüssigkeit benetzt wird.
+    limits: >-
+      Ist das Porenvolumen gefüllt, nimmt der Schwamm nichts mehr auf; nicht benetzende Flüssigkeiten
+      werden kaum aufgesogen.
+    sideEffects: Feuchte Schwämme sind ein guter Nährboden für Bakterien.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Sponge
+    description: >-
+      A sponge is a soft, open-pored body with a network of many fine, interconnected cavities.
+      Capillary forces draw liquid into the pores and hold it there, so a sponge can take
+      up many times its own weight; squeezing releases it again. Originally the skeletons
+      of marine sponges were used; today mostly cellulose or plastic foam.
+    example: >-
+      Kitchen and bath sponges, blackboard sponge, absorbent sponge for mopping up water,
+      floral foam
+    conditions: An open-pored structure that the liquid wets.
+    limits: >-
+      Once the pore volume is full, the sponge takes up nothing more; non-wetting liquids
+      are hardly absorbed.
+    sideEffects: Damp sponges are a good breeding ground for bacteria.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

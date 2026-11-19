@@ -1,0 +1,63 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: fractal-forms
+kind: effect
+home: move|liquid
+functions:
+  - move|liquid
+  - move|gas
+parameters:
+  - increase|surface-area
+  - increase|homogeneity
+uses: []
+domain:
+  id: Geometrie
+  de: Geometrie
+  en: Geometry
+maturity: nische
+sources:
+  - https://de.wikipedia.org/wiki/Fraktal
+  - https://en.wikipedia.org/wiki/Fractal
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Fraktale Formen
+    description: >-
+      Fraktale Formen wiederholen ihre Grundstruktur auf immer kleineren Skalen, etwa durch
+      fortgesetztes Verzweigen oder Falten. Dadurch bringen sie in einem begrenzten Bauraum
+      eine sehr große Oberfläche oder Kantenlänge unter und können einen Strom über viele
+      gleich lange Wege gleichmäßig auf eine Fläche oder ein Volumen verteilen.
+    example: >-
+      Fraktale Flüssigkeitsverteiler in Kolonnen, Fraktalantennen in Mobilgeräten, verzweigte
+      Kühlkanäle, Lunge und Blutgefäße als natürliche Vorbilder
+    conditions: ''
+    limits: >-
+      Technisch lässt sich die Selbstähnlichkeit nur über wenige Stufen umsetzen, weil die
+      Fertigung eine kleinste Strukturgröße vorgibt.
+    sideEffects: Viele feine Kanäle erhöhen den Druckverlust und neigen zum Verstopfen.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Fractal forms
+    description: >-
+      Fractal forms repeat their basic structure at ever smaller scales, for example by repeated
+      branching or folding. This packs a very large surface area or edge length into a limited
+      space and lets a flow be spread evenly over an area or volume through many paths of
+      equal length.
+    example: >-
+      Fractal liquid distributors in columns, fractal antennas in mobile devices, branched
+      cooling channels, lungs and blood vessels as natural models
+    conditions: ''
+    limits: >-
+      In practice, self-similarity can only be realised over a few levels, because manufacturing
+      sets a minimum feature size.
+    sideEffects: Many fine channels increase the pressure drop and tend to clog.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

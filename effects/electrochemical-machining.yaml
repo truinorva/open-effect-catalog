@@ -1,0 +1,71 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: electrochemical-machining
+kind: application
+home: remove|solid
+functions:
+  - remove|solid
+  - deform|solid
+parameters:
+  - change|shape
+  - change|surface-finish
+uses:
+  - electrolysis
+domain:
+  id: Chemie
+  de: Chemie
+  en: Chemistry
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Elektrochemisches_Abtragen
+  - https://en.wikipedia.org/wiki/Electrochemical_machining
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Elektrochemisches Abtragen (ECM)
+    description: >-
+      Das Werkstück wird als Anode geschaltet, und eine geformte Werkzeugkathode wird ihm
+      in geringem Abstand genähert, während ein Elektrolyt, meist eine Salzlösung, mit hoher
+      Geschwindigkeit durch den Spalt strömt. Der Strom löst das Metall dort anodisch auf,
+      wo es dem Werkzeug am nächsten ist, so dass sich die Werkzeugform im Werkstück abbildet;
+      das Werkzeug selbst verschleißt dabei nicht.
+    example: >-
+      Turbinenschaufeln, elektrochemisches Entgraten von Bohrungen, Formen und Gesenke aus
+      schwer zerspanbaren Legierungen
+    conditions: >-
+      Elektrisch leitfähiger Werkstoff; Gleichstrom hoher Stromdichte und kräftige Elektrolytspülung
+      des Spalts.
+    limits: >-
+      Die Abbildegenauigkeit ist durch Streuströme und die Weite des Arbeitsspalts begrenzt.
+    sideEffects: >-
+      Es fallen Metallhydroxid-Schlämme an, die aufbereitet oder entsorgt werden müssen; beim
+      Abtragen chromhaltiger Stähle kann giftiges Chromat entstehen.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Electrochemical machining (ECM)
+    description: >-
+      The workpiece is connected as the anode, and a shaped tool cathode is brought close
+      to it while an electrolyte, usually a salt solution, flows through the gap at high speed.
+      The current dissolves the metal anodically wherever it is closest to the tool, so the
+      tool's shape is reproduced in the workpiece; the tool itself does not wear.
+    example: >-
+      Turbine blades, electrochemical deburring of bores, moulds and dies made of hard-to-machine
+      alloys
+    conditions: >-
+      Electrically conductive material; high-density direct current and vigorous electrolyte
+      flushing of the gap.
+    limits: >-
+      Accuracy of reproduction is limited by stray currents and the width of the working gap.
+    sideEffects: >-
+      Metal hydroxide sludge is produced and must be treated or disposed of; machining chromium-containing
+      steels can generate toxic chromate.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

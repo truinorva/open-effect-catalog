@@ -1,0 +1,71 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: shaking
+kind: effect
+home: mix|liquid
+functions:
+  - mix|liquid
+  - mix|particles
+  - vibrate|liquid
+  - vibrate|particles
+  - absorb|liquid
+parameters:
+  - increase|homogeneity
+uses: []
+domain:
+  id: Verfahrenstechnik
+  de: Verfahrenstechnik
+  en: Process engineering
+maturity: verbreitet
+sources:
+  - https://de.wikipedia.org/wiki/Sch%C3%BCttelmaschine_(Labor)
+  - https://en.wikipedia.org/wiki/Shaker_(laboratory)
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Schütteln
+    description: >-
+      Das ganze Gefäß wird periodisch hin und her, auf und ab oder auf einer Kreisbahn bewegt,
+      ohne dass ein Rührorgan in den Inhalt eintaucht. Wegen seiner Trägheit schwappt der
+      Inhalt gegen die Wände und wird verwirbelt; Flüssigkeiten und Feststoffe vermischen
+      sich, und die ständig erneuerte Oberfläche verbessert den Austausch mit der Gasphase,
+      etwa die Sauerstoffaufnahme einer Kultur.
+    example: >-
+      Laborschüttler und Schüttelkolben für Zellkulturen, Farbmischer im Baumarkt, Cocktailshaker,
+      Ausschütteln im Scheidetrichter
+    conditions: Nur teilweise gefülltes Gefäß, damit der Inhalt Raum zur Bewegung hat.
+    limits: >-
+      Bei zähen Flüssigkeiten und großen Behältern reicht die eingetragene Energie oft nicht
+      für eine gleichmäßige Durchmischung.
+    sideEffects: >-
+      Schüttgut aus unterschiedlich großen Teilchen kann sich beim Schütteln auch entmischen,
+      etwa durch den Paranuss-Effekt; empfindliche Zellen und Eiweiße können durch Scherung
+      und Schaumbildung geschädigt werden.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Shaking
+    description: >-
+      The whole vessel is moved periodically back and forth, up and down or along a circular
+      path, with no stirrer dipping into the contents. Because of their inertia the contents
+      slosh against the walls and swirl; liquids and solids mix, and the constantly renewed
+      surface improves exchange with the gas phase, such as the oxygen uptake of a culture.
+    example: >-
+      Laboratory shakers and shake flasks for cell cultures, paint mixers in DIY stores, cocktail
+      shaker, shake-out extraction in a separating funnel
+    conditions: A vessel that is only partly filled so the contents have room to move.
+    limits: >-
+      In viscous liquids and large vessels the energy put in is often not enough for uniform
+      mixing.
+    sideEffects: >-
+      Bulk solids of mixed particle sizes can also segregate when shaken, for example through
+      the Brazil nut effect; sensitive cells and proteins can be damaged by shear and foaming.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

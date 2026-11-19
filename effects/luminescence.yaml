@@ -1,0 +1,72 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: luminescence
+kind: effect
+home: produce|field
+functions:
+  - produce|field
+  - detect|solid
+  - detect|liquid
+  - measure|liquid
+parameters:
+  - increase|brightness
+  - change|colour
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: verbreitet
+sources:
+  - https://de.wikipedia.org/wiki/Lumineszenz
+  - https://en.wikipedia.org/wiki/Luminescence
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Lumineszenz
+    description: >-
+      Lumineszenz ist die Aussendung von Licht durch einen Stoff, dessen Elektronen zuvor
+      nicht durch Wärme, sondern auf anderem Weg angeregt wurden, etwa durch Licht, elektrischen
+      Strom, chemische Reaktionen oder mechanische Beanspruchung. Beim Zurückfallen in den
+      Grundzustand geben sie die Energie als Licht ab, dessen Farbe von den Energieniveaus
+      des Stoffes abhängt. Je nach Lebensdauer des angeregten Zustands erlischt das Leuchten
+      sofort (Fluoreszenz) oder klingt langsam ab (Phosphoreszenz).
+    example: >-
+      Leuchtstofflampen und weiße LEDs, nachleuchtende Sicherheitszeichen, Knicklichter, Luminol-Nachweis
+      von Blutspuren, Fluoreszenzmikroskopie, fluoreszierende Eindringprüfung, UV-Sicherheitsmerkmale
+      auf Banknoten
+    conditions: >-
+      Ein Stoff mit geeigneten Energieniveaus und eine ausreichend energiereiche Anregung.
+    limits: >-
+      Verunreinigungen, Sauerstoff und hohe Temperatur können die Lumineszenz löschen; viele
+      Leuchtstoffe und Farbstoffe bleichen unter Dauerbestrahlung aus.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Luminescence
+    description: >-
+      Luminescence is the emission of light by a substance whose electrons were previously
+      excited not by heat but by other means, such as light, electric current, chemical reactions
+      or mechanical stress. As they return to the ground state, they release the energy as
+      light whose colour depends on the energy levels of the substance. Depending on the lifetime
+      of the excited state, the glow stops immediately (fluorescence) or fades slowly (phosphorescence).
+    example: >-
+      Fluorescent lamps and white LEDs, afterglow safety signs, glow sticks, luminol detection
+      of blood traces, fluorescence microscopy, fluorescent penetrant inspection, UV security
+      features on banknotes
+    conditions: >-
+      A substance with suitable energy levels and a sufficiently energetic excitation.
+    limits: >-
+      Impurities, oxygen and high temperature can quench luminescence; many phosphors and
+      dyes bleach under prolonged irradiation.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

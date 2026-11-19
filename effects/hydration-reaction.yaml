@@ -1,0 +1,63 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: hydration-reaction
+kind: effect
+home: produce|liquid
+functions:
+  - produce|liquid
+parameters: []
+uses: []
+domain:
+  id: Chemie
+  de: Chemie
+  en: Chemistry
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Hydratisierung
+  - https://en.wikipedia.org/wiki/Hydration_reaction
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Hydratisierung (Wasseranlagerung)
+    description: >-
+      Bei einer Hydratisierung wird ein Wassermolekül chemisch an eine Verbindung angelagert,
+      etwa an die Doppelbindung eines Alkens, das dadurch zu einem Alkohol wird. Die Reaktion
+      braucht meist einen sauren Katalysator oder ein Enzym und setzt in der Regel Wärme frei.
+    example: >-
+      Herstellung von Ethanol aus Ethen und von Isopropanol aus Propen, Umsetzung von Acrylnitril
+      zu Acrylamid, Hydratisierung von Kohlendioxid in Organismen durch das Enzym Carboanhydrase
+    conditions: >-
+      Ein Katalysator (Säure, Metallkomplex oder Enzym); bei Alkenen oft erhöhter Druck und
+      erhöhte Temperatur.
+    limits: >-
+      Bei hohen Temperaturen liegt das Gleichgewicht auf der Seite der Ausgangsstoffe, sodass
+      der Umsatz pro Durchgang begrenzt ist.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Hydration reaction
+    description: >-
+      In a hydration reaction, a water molecule is chemically added to a compound, for example
+      to the double bond of an alkene, which thereby becomes an alcohol. The reaction usually
+      needs an acid catalyst or an enzyme and generally releases heat.
+    example: >-
+      Production of ethanol from ethylene and of isopropanol from propylene, conversion of
+      acrylonitrile to acrylamide, hydration of carbon dioxide in organisms by the enzyme
+      carbonic anhydrase
+    conditions: >-
+      A catalyst (acid, metal complex or enzyme); for alkenes often elevated pressure and
+      temperature.
+    limits: >-
+      At high temperatures the equilibrium lies on the side of the starting materials, so
+      conversion per pass is limited.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

@@ -1,0 +1,71 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: kalina-cycle
+kind: application
+home: produce|field
+functions:
+  - produce|field
+parameters: []
+uses: []
+domain:
+  id: Verfahrenstechnik
+  de: Verfahrenstechnik
+  en: Process engineering
+maturity: ''
+sources:
+  - https://de.wikipedia.org/wiki/Kalina-Kreisprozess
+  - https://en.wikipedia.org/wiki/Kalina_cycle
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Kalina-Kreisprozess
+    description: >-
+      Der Kalina-Kreisprozess ist ein Dampfkraftprozess, der statt reinen Wassers ein Gemisch
+      aus Ammoniak und Wasser als Arbeitsmittel verwendet. Weil ein solches Gemisch nicht
+      bei einer festen Temperatur, sondern über einen Temperaturbereich siedet und kondensiert,
+      passt sich seine Erwärmung besser an eine abkühlende Wärmequelle an als bei einem reinen
+      Stoff. Dadurch lässt sich aus Wärme niedriger und mittlerer Temperatur mehr mechanische
+      und elektrische Arbeit gewinnen.
+    example: >-
+      Geothermiekraftwerke, Stromerzeugung aus Industrieabwärme, Abwärmenutzung hinter Gasturbinen
+      und Motoren
+    conditions: >-
+      Eine Wärmequelle, deren Temperatur bei der Wärmeabgabe stark absinkt, etwa Thermalwasser
+      oder Abgas.
+    limits: >-
+      Die Anlage ist aufwendiger als ein einfacher Dampf- oder ORC-Prozess, weil die Zusammensetzung
+      des Gemischs in mehreren Teilen des Kreislaufs verändert werden muss.
+    sideEffects: >-
+      Ammoniak ist giftig und greift Kupfer und Kupferlegierungen an, was hohe Anforderungen
+      an Dichtheit und Werkstoffwahl stellt.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Kalina cycle
+    description: >-
+      The Kalina cycle is a vapour power cycle that uses a mixture of ammonia and water instead
+      of pure water as its working fluid. Because such a mixture boils and condenses over
+      a temperature range rather than at a fixed temperature, its heating curve matches a
+      cooling heat source better than a pure substance does. More mechanical and electrical
+      work can therefore be extracted from low- and medium-temperature heat.
+    example: >-
+      Geothermal power plants, power generation from industrial waste heat, heat recovery
+      behind gas turbines and engines
+    conditions: >-
+      A heat source whose temperature drops considerably as it gives off heat, such as thermal
+      water or exhaust gas.
+    limits: >-
+      The plant is more complex than a simple steam or ORC cycle because the mixture composition
+      has to be changed in several parts of the cycle.
+    sideEffects: >-
+      Ammonia is toxic and attacks copper and copper alloys, which places high demands on
+      tightness and choice of materials.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

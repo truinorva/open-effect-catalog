@@ -1,0 +1,73 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: pockels-effect
+kind: effect
+home: orient|field
+functions:
+  - orient|field
+  - measure|field
+parameters:
+  - change|refraction
+  - change|polarisation
+  - measure|charge
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: verbreitet
+sources:
+  - https://de.wikipedia.org/wiki/Pockels-Effekt
+  - https://en.wikipedia.org/wiki/Pockels_effect
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Pockels-Effekt
+    description: >-
+      In Kristallen ohne Symmetriezentrum ändert ein elektrisches Feld die Brechungsindizes
+      linear mit der Feldstärke und erzeugt so eine steuerbare Doppelbrechung. Licht, das
+      den Kristall durchläuft, erfährt dadurch eine spannungsabhängige Phasenverschiebung;
+      zwischen Polarisatoren wird daraus eine schnelle Modulation oder Schaltung der Lichtintensität.
+    example: >-
+      Pockelszelle als Güteschalter in Pulslasern, elektrooptische Modulatoren aus Lithiumniobat
+      in der Glasfaser-Nachrichtentechnik, optische Spannungs- und Feldsensoren, schnelle
+      Lichtverschlüsse
+    conditions: >-
+      Ein nichtzentrosymmetrischer Kristall wie Lithiumniobat, KDP oder BBO und ein angelegtes
+      elektrisches Feld.
+    limits: >-
+      Die Indexänderung ist klein, sodass Volumenkristalle Steuerspannungen im Kilovoltbereich
+      brauchen; erst integrierte Wellenleiter-Modulatoren kommen mit wenigen Volt aus.
+    sideEffects: >-
+      Temperaturabhängige Doppelbrechung und piezoelektrische Resonanzen des Kristalls können
+      die Modulation stören.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Pockels effect
+    description: >-
+      In crystals without a centre of symmetry, an electric field changes the refractive indices
+      linearly with field strength and thus creates a controllable birefringence. Light passing
+      through the crystal experiences a voltage-dependent phase shift; placed between polarisers,
+      this becomes fast modulation or switching of the light intensity.
+    example: >-
+      Pockels cell as Q-switch in pulsed lasers, lithium niobate electro-optic modulators
+      in fibre-optic communication, optical voltage and field sensors, fast optical shutters
+    conditions: >-
+      A non-centrosymmetric crystal such as lithium niobate, KDP or BBO, and an applied electric
+      field.
+    limits: >-
+      The index change is small, so bulk crystals need control voltages in the kilovolt range;
+      only integrated waveguide modulators manage with a few volts.
+    sideEffects: >-
+      Temperature-dependent birefringence and piezoelectric resonances of the crystal can
+      disturb the modulation.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

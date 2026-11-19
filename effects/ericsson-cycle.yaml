@@ -1,0 +1,64 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: ericsson-cycle
+kind: application
+home: produce|field
+functions:
+  - produce|field
+parameters: []
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: ''
+sources:
+  - https://de.wikipedia.org/wiki/Ericsson-Kreisprozess
+  - https://en.wikipedia.org/wiki/Ericsson_cycle
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Ericsson-Kreisprozess
+    description: >-
+      Der Ericsson-Kreisprozess ist ein idealer Wärmekraftprozess aus zwei isothermen und
+      zwei isobaren Zustandsänderungen eines Gases. Ein Regenerator nimmt die Wärme bei der
+      isobaren Abkühlung auf und gibt sie bei der isobaren Erwärmung wieder ab, so dass Wärme
+      mit der Umgebung nur bei der oberen und der unteren Temperatur ausgetauscht wird; der
+      ideale Prozess erreicht dadurch den Carnot-Wirkungsgrad.
+    example: >-
+      Heißluftmaschinen von John Ericsson im 19. Jahrhundert, Gasturbinen mit Zwischenkühlung,
+      Zwischenerhitzung und Rekuperator als Annäherung
+    conditions: >-
+      Regenerator mit hoher Wirksamkeit; isotherme Verdichtung und Entspannung, in der Praxis
+      angenähert durch mehrstufige Zwischenkühlung und Zwischenerhitzung.
+    limits: >-
+      Wirklich isotherme Verdichtung und Entspannung lassen sich technisch nur näherungsweise
+      erreichen.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Ericsson cycle
+    description: >-
+      The Ericsson cycle is an ideal heat engine cycle consisting of two isothermal and two
+      isobaric changes of state of a gas. A regenerator absorbs the heat released during isobaric
+      cooling and returns it during isobaric heating, so heat is exchanged with the surroundings
+      only at the upper and lower temperatures; the ideal cycle thus reaches Carnot efficiency.
+    example: >-
+      John Ericsson's hot-air engines of the 19th century, gas turbines with intercooling,
+      reheat and recuperator as an approximation
+    conditions: >-
+      Highly effective regenerator; isothermal compression and expansion, approximated in
+      practice by multi-stage intercooling and reheating.
+    limits: >-
+      Truly isothermal compression and expansion can only be approximated in practice.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

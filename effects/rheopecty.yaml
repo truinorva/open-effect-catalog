@@ -1,0 +1,59 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: rheopecty
+kind: effect
+home: stabilise|liquid
+functions:
+  - stabilise|liquid
+parameters:
+  - increase|viscosity
+uses: []
+domain:
+  id: Rheologie
+  de: Rheologie
+  en: Rheology
+maturity: nische
+sources:
+  - https://de.wikipedia.org/wiki/Rheopexie
+  - https://en.wikipedia.org/wiki/Rheopecty
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Rheopexie
+    description: >-
+      Rheopexe Stoffe werden unter andauernder Scherung mit der Zeit zäher und kehren in Ruhe
+      wieder zu ihrer ursprünglichen, niedrigeren Viskosität zurück. Ursache ist meist, dass
+      die Scherbewegung den Aufbau einer inneren Struktur fördert, etwa das Zusammenlagern
+      von Teilchen oder Molekülen; das Verhalten ist das zeitabhängige Gegenstück zur Thixotropie.
+    example: Gipssuspensionen, einige Druckfarben und Schmierfette
+    conditions: >-
+      Andauernde, meist mäßige Scherung eines strukturbildenden Stoffes, etwa einer Suspension
+      mit länglichen oder plättchenförmigen Teilchen.
+    limits: ''
+    sideEffects: >-
+      Das zeitabhängige Eindicken kann Pump- und Mischvorgänge unerwartet erschweren.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Rheopecty
+    description: >-
+      Rheopectic materials become more viscous over time under continued shear and return
+      to their original, lower viscosity at rest. The usual cause is that the shearing motion
+      promotes the build-up of an internal structure, such as particles or molecules aggregating;
+      the behaviour is the time-dependent counterpart of thixotropy.
+    example: Gypsum suspensions, some printing inks and lubricating greases
+    conditions: >-
+      Continued, usually moderate shear of a structure-forming material, such as a suspension
+      of elongated or platelet-shaped particles.
+    limits: ''
+    sideEffects: >-
+      The time-dependent thickening can unexpectedly hamper pumping and mixing.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

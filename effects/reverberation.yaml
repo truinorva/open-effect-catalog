@@ -1,0 +1,68 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: reverberation
+kind: effect
+home: vibrate|gas
+functions:
+  - vibrate|gas
+  - measure|solid
+parameters:
+  - increase|sound
+  - measure|sound
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Nachhall
+  - https://en.wikipedia.org/wiki/Reverberation
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Nachhall
+    description: >-
+      In einem geschlossenen Raum wird Schall vielfach an Wänden, Decke und Gegenständen reflektiert,
+      sodass er nach dem Abschalten der Quelle nicht sofort verstummt, sondern allmählich
+      abklingt. Die Nachhallzeit, in der der Schallpegel um 60 dB sinkt, wächst mit dem Raumvolumen
+      und nimmt mit der Schallabsorption der Flächen ab (Sabinesche Formel).
+    example: >-
+      Raumakustik von Konzertsälen, Kirchen und Hörsälen, Hallräume zur Messung von Schallabsorptionsgrad
+      und Schallleistung, Hallgeräte und digitale Halleffekte in der Tontechnik, Hallplatten
+      und Federhall
+    conditions: >-
+      Ein weitgehend geschlossener Raum mit schallreflektierenden Begrenzungsflächen.
+    limits: >-
+      Die einfache Sabinesche Formel gilt nur für diffuse Schallfelder und mäßige Absorption;
+      in stark bedämpften Räumen ist die Formel nach Eyring genauer.
+    sideEffects: >-
+      Zu langer Nachhall verschlechtert die Sprachverständlichkeit und erhöht den Lärmpegel.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Reverberation
+    description: >-
+      In an enclosed space, sound is reflected many times by walls, ceiling and objects, so
+      that it does not stop immediately when the source is switched off but dies away gradually.
+      The reverberation time, in which the sound level falls by 60 dB, grows with room volume
+      and decreases with the sound absorption of the surfaces (Sabine's formula).
+    example: >-
+      Room acoustics of concert halls, churches and lecture theatres, reverberation rooms
+      for measuring sound absorption and sound power, reverb units and digital reverb in audio
+      engineering, plate and spring reverb
+    conditions: A largely enclosed space with sound-reflecting boundary surfaces.
+    limits: >-
+      Sabine's simple formula only holds for diffuse sound fields and moderate absorption;
+      in highly damped rooms Eyring's formula is more accurate.
+    sideEffects: >-
+      Excessive reverberation reduces speech intelligibility and raises the noise level.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

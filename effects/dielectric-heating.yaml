@@ -1,0 +1,71 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: dielectric-heating
+kind: effect
+home: heat|solid
+functions:
+  - heat|solid
+  - join|solid
+  - remove|solid
+parameters:
+  - increase|temperature
+  - decrease|humidity
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: verbreitet
+sources:
+  - https://de.wikipedia.org/wiki/Dielektrische_Erw%C3%A4rmung
+  - https://en.wikipedia.org/wiki/Dielectric_heating
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Hochfrequenz-Erwärmung (dielektrisch)
+    description: >-
+      Ein schlecht leitendes, aber polares oder ionenhaltiges Material wird zwischen zwei
+      Elektroden einem hochfrequenten elektrischen Wechselfeld ausgesetzt, meist bei 13,56,
+      27,12 oder 40,68 MHz. Dipole, die dem Feld ständig nachzudrehen versuchen, und hin-
+      und herwandernde Ionen setzen die Feldenergie im ganzen Volumen in Wärme um. Die Wellenlänge
+      ist viel größer als bei Mikrowellen, so dass auch dicke Güter gleichmäßiger durchwärmt
+      werden.
+    example: >-
+      Hochfrequenzschweißen von PVC-Folien (Planen, Blutbeutel), Verleimen und Trocknen von
+      Holz, Auftauen von Gefrierblöcken, Entwesung von Lebensmitteln, Vorwärmen von Kunststoffpressmassen
+    conditions: >-
+      Ein Material mit merklichen dielektrischen Verlusten wie PVC, Holz, Lebensmittel oder
+      feuchte Güter, während unpolare Kunststoffe wie PE oder PP sich so nicht erwärmen lassen.
+    limits: >-
+      Ungleichmäßige Feuchte oder Dicke führt zu Überhitzungsstellen, und Metallteile im Feld
+      können Überschläge auslösen.
+    sideEffects: Elektromagnetische Abstrahlung, die abgeschirmt werden muss.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Radio-frequency dielectric heating
+    description: >-
+      A poorly conducting but polar or ion-containing material is exposed between two electrodes
+      to a high-frequency alternating electric field, usually at 13.56, 27.12 or 40.68 MHz.
+      Dipoles constantly trying to follow the field and ions moving back and forth convert
+      the field energy into heat throughout the volume. The wavelength is much longer than
+      with microwaves, so even thick goods are heated more evenly.
+    example: >-
+      High-frequency welding of PVC films (tarpaulins, blood bags), gluing and drying of wood,
+      thawing of frozen blocks, disinfestation of food, preheating of plastic moulding compounds
+    conditions: >-
+      A material with noticeable dielectric losses such as PVC, wood, food or moist goods,
+      while non-polar plastics such as PE or PP cannot be heated this way.
+    limits: >-
+      Uneven moisture or thickness leads to hot spots, and metal parts in the field can cause
+      flashovers.
+    sideEffects: Electromagnetic radiation that has to be shielded.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

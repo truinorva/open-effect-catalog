@@ -1,0 +1,70 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: electron-paramagnetic-resonance
+kind: effect
+home: measure|solid
+functions:
+  - measure|solid
+  - measure|liquid
+  - detect|solid
+  - measure|field
+parameters:
+  - measure|magnetism
+  - measure|concentration
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Elektronenspinresonanz
+  - https://en.wikipedia.org/wiki/Electron_paramagnetic_resonance
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Elektronenspinresonanz (ESR, EPR)
+    description: >-
+      Ungepaarte Elektronen besitzen ein magnetisches Moment, dessen zwei Einstellungen in
+      einem äußeren Magnetfeld unterschiedliche Energie haben. Eingestrahlte Mikrowellen werden
+      absorbiert, wenn ihre Frequenz genau diesem Energieabstand entspricht; aus Lage, Form
+      und Aufspaltung der Resonanzlinien lassen sich Art, Menge und Umgebung von Radikalen,
+      Übergangsmetallionen und Kristalldefekten bestimmen.
+    example: >-
+      Nachweis freier Radikale in Chemie und Biologie, Alanin-Dosimetrie, Altersbestimmung
+      an Zahnschmelz, Untersuchung von Defekten in Halbleitern
+    conditions: >-
+      Probe mit ungepaarten Elektronen; im verbreiteten X-Band etwa 9,5 GHz bei einem Magnetfeld
+      um 0,34 Tesla.
+    limits: >-
+      Stoffe ohne ungepaarte Elektronen sind unsichtbar; Wasser in der Probe absorbiert Mikrowellen
+      stark.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Electron paramagnetic resonance (EPR, ESR)
+    description: >-
+      Unpaired electrons have a magnetic moment whose two orientations in an external magnetic
+      field differ in energy. Irradiated microwaves are absorbed when their frequency exactly
+      matches this energy gap; the position, shape and splitting of the resonance lines reveal
+      the type, amount and environment of radicals, transition metal ions and crystal defects.
+    example: >-
+      Detection of free radicals in chemistry and biology, alanine dosimetry, dating of tooth
+      enamel, study of defects in semiconductors
+    conditions: >-
+      Sample with unpaired electrons; in the common X band about 9.5 GHz at a magnetic field
+      of around 0.34 tesla.
+    limits: >-
+      Substances without unpaired electrons are invisible; water in the sample strongly absorbs
+      microwaves.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

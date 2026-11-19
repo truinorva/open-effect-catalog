@@ -1,0 +1,67 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: diffusion-welding
+kind: application
+home: join|solid
+functions:
+  - join|solid
+parameters: []
+uses:
+  - diffusion
+domain:
+  id: Materialwissenschaft
+  de: Materialwissenschaft
+  en: Materials science
+maturity: reife
+sources:
+  - https://en.wikipedia.org/wiki/Diffusion_bonding
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Diffusionsschweißen
+    description: >-
+      Zwei sehr glatte, saubere Bauteile werden bei hoher Temperatur, aber unterhalb des Schmelzpunkts,
+      längere Zeit unter Druck aneinandergepresst. Die Oberflächen verformen sich an den Rauheitsspitzen,
+      bis sie vollflächig anliegen, und Atome diffundieren über die Grenzfläche, so dass eine
+      Verbindung ohne Schmelze und meist ohne Zusatzwerkstoff entsteht.
+    example: >-
+      Titan-Strukturteile in der Luft- und Raumfahrt (oft kombiniert mit superplastischem
+      Umformen), kompakte Plattenwärmeübertrager, Verbindungen ungleicher Werkstoffe wie Metall
+      und Keramik, Kühlkanäle in Werkzeugen
+    conditions: >-
+      Glatte, oxidfreie Oberflächen, Vakuum oder Schutzgas, eine Temperatur von meist 50 bis
+      80 % der absoluten Schmelztemperatur und gleichmäßiger Anpressdruck.
+    limits: >-
+      Lange Prozesszeiten und teure Vakuumanlagen, und die Bauteilgröße ist durch Ofen oder
+      Presse begrenzt.
+    sideEffects: Gefügeveränderungen wie Kornwachstum durch die lange Wärmebehandlung.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Diffusion welding (diffusion bonding)
+    description: >-
+      Two very smooth, clean parts are pressed together for an extended time at high temperature,
+      but below the melting point. The surfaces deform at their roughness peaks until they
+      are in full contact, and atoms diffuse across the interface, creating a joint without
+      melting and usually without filler metal.
+    example: >-
+      Titanium structural parts in aerospace (often combined with superplastic forming), compact
+      plate heat exchangers, joints between dissimilar materials such as metal and ceramic,
+      cooling channels in tools
+    conditions: >-
+      Smooth, oxide-free surfaces, vacuum or shielding gas, a temperature usually at 50 to
+      80 % of the absolute melting temperature and uniform contact pressure.
+    limits: >-
+      Long process times and expensive vacuum equipment, and the component size is limited
+      by the furnace or press.
+    sideEffects: >-
+      Microstructural changes such as grain growth due to the long heat treatment.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

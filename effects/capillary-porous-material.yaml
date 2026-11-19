@@ -1,0 +1,70 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: capillary-porous-material
+kind: application
+home: move|liquid
+functions:
+  - move|liquid
+  - absorb|liquid
+  - hold|liquid
+parameters:
+  - increase|porosity
+  - increase|surface-area
+uses:
+  - capillary-action
+domain:
+  id: Materialwissenschaft
+  de: Materialwissenschaft
+  en: Materials science
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Kapillareffekt
+  - https://en.wikipedia.org/wiki/Capillary_action
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Kapillarporöses Material
+    description: >-
+      Kapillarporöse Stoffe durchzieht ein Netz feiner, miteinander verbundener Poren, in
+      denen Kapillarkräfte stärker wirken als die Schwerkraft. Benetzende Flüssigkeiten werden
+      daher aufgesaugt, in alle Richtungen weitergeleitet und festgehalten; über die Porengröße
+      lassen sich Saughöhe, Fördergeschwindigkeit und Haltevermögen einstellen.
+    example: >-
+      Dochte, Schwämme, Filz- und Faserschreiber, Sintermetall-Dochte in Wärmerohren, selbstschmierende
+      Sinterlager, Ziegel und Beton, Papier
+    conditions: >-
+      Offene, untereinander verbundene Poren und eine Flüssigkeit, die das Material benetzt.
+    limits: >-
+      Feine Poren erhöhen die Saughöhe, verlangsamen aber den Durchfluss; nicht benetzende
+      Flüssigkeiten dringen nicht ein.
+    sideEffects: >-
+      Feuchtigkeit wandert ungewollt in Bauteile, z. B. als aufsteigende Nässe im Mauerwerk,
+      und kann dort Frost- und Salzschäden verursachen.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Capillary-porous material
+    description: >-
+      Capillary-porous materials are permeated by a network of fine, interconnected pores
+      in which capillary forces act more strongly than gravity. Wetting liquids are therefore
+      soaked up, conducted in all directions and retained; pore size sets the suction height,
+      the transport rate and the holding capacity.
+    example: >-
+      Wicks, sponges, felt-tip and fibre-tip pens, sintered metal wicks in heat pipes, self-lubricating
+      sintered bearings, bricks and concrete, paper
+    conditions: Open, interconnected pores and a liquid that wets the material.
+    limits: >-
+      Fine pores raise the suction height but slow down the flow; non-wetting liquids do not
+      penetrate.
+    sideEffects: >-
+      Moisture migrates unintentionally into components, e.g. as rising damp in masonry, where
+      it can cause frost and salt damage.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

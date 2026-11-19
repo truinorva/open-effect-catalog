@@ -1,0 +1,74 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: boiling
+kind: effect
+home: change-phase|liquid
+functions:
+  - change-phase|liquid
+  - cool|solid
+  - keep-temp|liquid
+  - separate|liquid
+parameters:
+  - change|state
+  - stabilise|temperature
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Sieden
+  - https://en.wikipedia.org/wiki/Boiling
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Sieden
+    description: >-
+      Beim Sieden verdampft eine Flüssigkeit nicht nur an ihrer Oberfläche, sondern im ganzen
+      Volumen: Sobald ihr Dampfdruck den Umgebungsdruck erreicht, bilden sich im Inneren und
+      an heißen Wänden Dampfblasen. Solange die Flüssigkeit siedet, bleibt ihre Temperatur
+      bei gegebenem Druck auf der Siedetemperatur stehen, weil die zugeführte Wärme als Verdampfungswärme
+      verbraucht wird.
+    example: >-
+      Kochen von Speisen, Dampfkessel, Destillation, Siedekühlung von Leistungselektronik
+      und Reaktoren, Schnellkochtopf, Siedepunkt als Reinheitsprüfung
+    conditions: >-
+      Der Dampfdruck der Flüssigkeit muss den Umgebungsdruck erreichen; die Siedetemperatur
+      steigt mit dem Druck.
+    limits: >-
+      Oberhalb einer kritischen Wärmestromdichte bildet sich an der Heizfläche ein isolierender
+      Dampffilm (Filmsieden), und der Wärmeübergang bricht ein.
+    sideEffects: >-
+      In sehr reinen Flüssigkeiten und glatten Gefäßen kann ein Siedeverzug auftreten, auf
+      den ein plötzliches, heftiges Aufsieden folgt.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Boiling
+    description: >-
+      When a liquid boils, it vaporises not only at its surface but throughout its volume:
+      as soon as its vapour pressure reaches the ambient pressure, vapour bubbles form inside
+      it and on hot walls. As long as the liquid boils, its temperature stays at the boiling
+      point for the given pressure, because the heat supplied is consumed as heat of vaporisation.
+    example: >-
+      Cooking, steam boilers, distillation, boiling cooling of power electronics and reactors,
+      pressure cooker, boiling point as a purity check
+    conditions: >-
+      The vapour pressure of the liquid must reach the ambient pressure; the boiling point
+      rises with pressure.
+    limits: >-
+      Above a critical heat flux, an insulating vapour film forms on the heating surface (film
+      boiling) and heat transfer collapses.
+    sideEffects: >-
+      In very pure liquids and smooth vessels, superheating can occur, followed by sudden
+      violent boiling (bumping).
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

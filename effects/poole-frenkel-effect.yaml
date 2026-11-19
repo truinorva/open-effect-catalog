@@ -1,0 +1,69 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: poole-frenkel-effect
+kind: effect
+home: measure|solid
+functions:
+  - measure|solid
+parameters:
+  - increase|conductivity
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: nische
+sources:
+  - https://en.wikipedia.org/wiki/Poole%E2%80%93Frenkel_effect
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Poole-Frenkel-Effekt
+    description: >-
+      In Isolatoren und stark gestörten Halbleitern sitzen Elektronen in lokalisierten Haftstellen
+      fest, aus denen sie nur durch thermische Anregung ins Leitungsband gelangen. Ein starkes
+      elektrisches Feld senkt die Coulomb-Barriere dieser Haftstellen ab, sodass die Emission
+      und damit der Strom mit der Feldstärke viel stärker ansteigen, als es das Ohmsche Gesetz
+      erwarten lässt.
+    example: >-
+      Leckströme in dünnen Gate- und Kondensatordielektrika wie Siliziumnitrid, Leitungsmechanismus
+      in resistiven Speichern und Chalkogenidgläsern, Bestimmung von Haftstellentiefen aus
+      Strom-Spannungs-Kennlinien
+    conditions: >-
+      Hohe elektrische Feldstärke und ein Material mit Haftstellen, die nach dem Abgeben des
+      Elektrons geladen zurückbleiben und so ein Coulomb-Potential bilden.
+    limits: >-
+      Der Effekt überwiegt nur in einem bestimmten Bereich von Feldstärke und Temperatur;
+      unter anderen Bedingungen dominieren Schottky-Emission oder Tunneln.
+    sideEffects: >-
+      Der erhöhte Leckstrom verschlechtert die Isolationswirkung dünner Schichten.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Poole–Frenkel effect
+    description: >-
+      In insulators and heavily defective semiconductors, electrons sit in localised traps
+      from which they reach the conduction band only by thermal excitation. A strong electric
+      field lowers the Coulomb barrier of these traps, so emission, and thus current, rises
+      much faster with field strength than Ohm's law would predict.
+    example: >-
+      Leakage currents in thin gate and capacitor dielectrics such as silicon nitride, conduction
+      in resistive memories and chalcogenide glasses, determining trap depths from current-voltage
+      curves
+    conditions: >-
+      High electric field strength and a material with traps that remain charged after releasing
+      their electron, so that they form a Coulomb potential.
+    limits: >-
+      The effect dominates only within a certain range of field and temperature; under other
+      conditions Schottky emission or tunnelling prevail.
+    sideEffects: >-
+      The increased leakage current degrades the insulating performance of thin films.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

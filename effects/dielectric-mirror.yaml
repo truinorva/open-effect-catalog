@@ -1,0 +1,67 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: dielectric-mirror
+kind: application
+home: orient|field
+functions:
+  - orient|field
+  - separate|field
+parameters:
+  - increase|reflectivity
+uses: []
+domain:
+  id: ''
+  de: ''
+  en: ''
+maturity: reife
+sources:
+  - https://en.wikipedia.org/wiki/Dielectric_mirror
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Dielektrischer Spiegel
+    description: >-
+      Ein dielektrischer Spiegel besteht aus einem Stapel verlustarmer Schichten mit abwechselnd
+      hoher und niedriger Brechzahl, die jeweils etwa eine Viertelwellenlänge dick sind. Die
+      an allen Grenzflächen reflektierten Anteile überlagern sich gleichphasig, so dass in
+      einem gewählten Wellenlängenbereich mehr als 99,9 % des Lichts zurückgeworfen werden.
+      Weil kaum Licht absorbiert wird, halten solche Spiegel auch hohe Laserleistungen aus.
+    example: >-
+      Resonatorspiegel in Lasern, Umlenkspiegel für die Lasermaterialbearbeitung, Bragg-Spiegel
+      in oberflächenemittierenden Halbleiterlasern (VCSEL), Spiegel für Teleskope und Interferometer
+    conditions: >-
+      Viele präzise Schichten aus transparenten Materialien mit möglichst großem Brechzahlunterschied.
+    limits: >-
+      Die hohe Reflexion gilt nur in einem begrenzten Wellenlängen- und Einfallswinkelbereich,
+      außerhalb dessen das Licht durchgelassen wird.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Dielectric mirror
+    description: >-
+      A dielectric mirror consists of a stack of low-loss layers of alternately high and low
+      refractive index, each about a quarter wavelength thick. The portions reflected at all
+      interfaces add up in phase, so that more than 99.9 % of the light is reflected in a
+      chosen wavelength range. Because hardly any light is absorbed, such mirrors also withstand
+      high laser powers.
+    example: >-
+      Resonator mirrors in lasers, beam-delivery mirrors for laser materials processing, Bragg
+      mirrors in vertical-cavity surface-emitting lasers (VCSEL), mirrors for telescopes and
+      interferometers
+    conditions: >-
+      Many precise layers of transparent materials with the largest possible difference in
+      refractive index.
+    limits: >-
+      High reflection applies only within a limited range of wavelengths and angles of incidence,
+      outside of which the light is transmitted.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

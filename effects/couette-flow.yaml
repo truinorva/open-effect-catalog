@@ -1,0 +1,66 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: couette-flow
+kind: effect
+home: move|liquid
+functions:
+  - move|liquid
+  - measure|liquid
+parameters:
+  - measure|viscosity
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Scherstr%C3%B6mung
+  - https://en.wikipedia.org/wiki/Couette_flow
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Couette-Strömung
+    description: >-
+      Bewegt sich eine Wand parallel zu einer zweiten, ruhenden Wand, zieht sie das Fluid
+      dazwischen durch innere Reibung mit. Bei laminarer Strömung stellt sich ein lineares
+      Geschwindigkeitsprofil mit überall gleicher Scherrate ein, und die zum Bewegen nötige
+      Kraft ist direkt proportional zur Viskosität. Zwischen zwei koaxialen Zylindern, von
+      denen einer rotiert, wirkt dasselbe Prinzip in Ringform.
+    example: >-
+      Rotationsviskosimeter (Zylinder- und Kegel-Platte-Messsysteme), Schmierfilm in Gleitlagern,
+      Rheometer, Schergeräte für Emulsionen und Zellen
+    conditions: >-
+      Laminare Strömung in einem engen Spalt ohne nennenswerte Druckunterschiede in Strömungsrichtung.
+    limits: >-
+      Dreht der Innenzylinder schnell, schlägt die Strömung in Taylor-Wirbel und schließlich
+      in Turbulenz um.
+    sideEffects: Die Scherung erwärmt das Fluid durch innere Reibung.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Couette flow
+    description: >-
+      If one wall moves parallel to a second, stationary wall, it drags the fluid between
+      them along through internal friction. In laminar flow a linear velocity profile with
+      the same shear rate everywhere develops, and the force needed for the motion is directly
+      proportional to the viscosity. Between two coaxial cylinders, one of which rotates,
+      the same principle works in annular form.
+    example: >-
+      Rotational viscometers (concentric cylinder and cone-plate systems), lubricating film
+      in plain bearings, rheometers, shearing devices for emulsions and cells
+    conditions: >-
+      Laminar flow in a narrow gap without significant pressure differences in the flow direction.
+    limits: >-
+      When the inner cylinder rotates fast, the flow changes into Taylor vortices and eventually
+      turbulence.
+    sideEffects: Shearing heats the fluid through internal friction.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

@@ -1,0 +1,73 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: pulse-tube-refrigerator
+kind: application
+home: cool|solid
+functions:
+  - cool|solid
+parameters:
+  - decrease|temperature
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: wachstum
+sources:
+  - https://de.wikipedia.org/wiki/Pulsr%C3%B6hrenk%C3%BChler
+  - https://en.wikipedia.org/wiki/Pulse_tube_refrigerator
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Pulsröhrenkühler
+    description: >-
+      Ein Pulsröhrenkühler erzeugt tiefe Temperaturen mit einer hin- und herströmenden Gasfüllung,
+      meist Helium, und kommt am kalten Ende ohne bewegte Teile aus. Ein Kompressor oder ein
+      Drehventil lässt den Druck periodisch steigen und fallen; Regenerator, eine dünnwandige
+      Röhre und ein Phasenschieber aus Drossel und Puffervolumen verschieben Druck- und Strömungsschwingung
+      so gegeneinander, dass Gaspakete am kalten Ende expandieren und Wärme zum warmen Ende
+      transportiert wird.
+    example: >-
+      Vorkühlung von Verdünnungskryostaten für Quantencomputer, Kühlung von Infrarotdetektoren
+      auf Satelliten, Kaltköpfe für supraleitende Magnete
+    conditions: >-
+      Druckschwingung durch einen Kompressor mit Drehventil (Gifford-McMahon-Bauart) oder
+      einen Linearkompressor (Stirling-Bauart); Helium als Arbeitsgas für die tiefsten Temperaturen.
+    limits: >-
+      Zweistufige Geräte erreichen etwa 2 bis 4 K; die Kälteleistung liegt bei diesen Temperaturen
+      nur im Watt-Bereich, und der Wirkungsgrad ist geringer als bei Stirlingkühlern.
+    sideEffects: >-
+      Der Kompressor braucht viel elektrische Leistung und Kühlwasser, und die Druckpulse
+      verursachen leichte Vibrationen am Kaltkopf.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Pulse tube refrigerator
+    description: >-
+      A pulse tube refrigerator produces low temperatures with an oscillating gas charge,
+      usually helium, and has no moving parts at the cold end. A compressor or rotary valve
+      makes the pressure rise and fall periodically; a regenerator, a thin-walled tube and
+      a phase shifter made of an orifice and buffer volume shift pressure and flow oscillations
+      against each other so that gas parcels expand at the cold end and heat is carried to
+      the warm end.
+    example: >-
+      Precooling of dilution refrigerators for quantum computers, cooling of infrared detectors
+      on satellites, cold heads for superconducting magnets
+    conditions: >-
+      Pressure oscillation from a compressor with rotary valve (Gifford-McMahon type) or from
+      a linear compressor (Stirling type); helium as working gas for the lowest temperatures.
+    limits: >-
+      Two-stage units reach roughly 2 to 4 K; cooling power at these temperatures is only
+      in the watt range, and efficiency is lower than that of Stirling coolers.
+    sideEffects: >-
+      The compressor needs considerable electrical power and cooling water, and the pressure
+      pulses cause slight vibrations at the cold head.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

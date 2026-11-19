@@ -1,0 +1,73 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: bubble
+kind: effect
+home: separate|particles
+functions:
+  - separate|particles
+  - move|particles
+  - mix|liquid
+  - measure|solid
+parameters:
+  - increase|surface-area
+  - decrease|density
+  - measure|orientation
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Blase_(Physik)
+  - https://en.wikipedia.org/wiki/Bubble_(physics)
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Blase (Gasblase)
+    description: >-
+      Eine Blase ist ein von Flüssigkeit umschlossenes Gasvolumen oder, wie bei der Seifenblase,
+      ein Gasvolumen in einer dünnen Flüssigkeitshaut. Die Oberflächenspannung formt sie annähernd
+      kugelig und erzeugt in ihr einen Überdruck, der mit kleinerem Radius steigt. Wegen ihrer
+      geringen Dichte steigen Blasen auf, bieten eine große Grenzfläche für den Stoffaustausch
+      und können wasserabweisende Teilchen anlagern und mitnehmen.
+    example: >-
+      Flotation von Erzen und Altpapier (Deinking), Belüftung in Kläranlagen, Blasensäulenreaktoren,
+      Libelle der Wasserwaage, Ultraschall-Kontrastmittel, Blasenkammer
+    conditions: >-
+      Gas und Flüssigkeit, die nicht ineinander gelöst sind; stabile Blasen erfordern oft
+      Tenside.
+    limits: >-
+      Kleine Blasen lösen sich wegen ihres hohen Innendrucks mit der Zeit auf, große zerfallen
+      beim Aufsteigen.
+    sideEffects: >-
+      Blasen in Flüssigkeiten und Gießharzen verursachen Fehlstellen; in Pumpen und Leitungen
+      führen sie zu Störungen.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Bubble
+    description: >-
+      A bubble is a volume of gas enclosed by liquid or, as in a soap bubble, by a thin liquid
+      film. Surface tension makes it nearly spherical and creates an overpressure inside that
+      rises as the radius gets smaller. Because of their low density, bubbles rise, offer
+      a large interface for mass transfer and can pick up and carry water-repellent particles.
+    example: >-
+      Flotation of ores and waste paper (deinking), aeration in sewage plants, bubble column
+      reactors, spirit level vial, ultrasound contrast agents, bubble chamber
+    conditions: >-
+      Gas and liquid that are not dissolved in each other; stable bubbles often need surfactants.
+    limits: >-
+      Small bubbles dissolve over time because of their high internal pressure; large ones
+      break up as they rise.
+    sideEffects: >-
+      Bubbles in liquids and casting resins cause voids; in pumps and pipes they cause malfunctions.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

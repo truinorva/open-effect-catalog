@@ -1,0 +1,73 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: soldering
+kind: application
+home: join|solid
+functions:
+  - join|solid
+parameters:
+  - increase|conductivity
+uses:
+  - capillary-action
+domain:
+  id: Materialwissenschaft
+  de: Materialwissenschaft
+  en: Materials science
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/L%C3%B6ten
+  - https://en.wikipedia.org/wiki/Soldering
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Löten
+    description: >-
+      Beim Löten werden metallische Teile mit einem geschmolzenen Zusatzmetall, dem Lot, verbunden,
+      dessen Schmelztemperatur unter der der Grundwerkstoffe liegt. Das flüssige Lot benetzt
+      die von Oxiden befreiten Oberflächen, wird durch Kapillarkräfte in den engen Fügespalt
+      gezogen und bildet an den Grenzflächen eine dünne Legierungsschicht; die Bauteile selbst
+      schmelzen nicht. Unterhalb von 450 °C Arbeitstemperatur spricht man von Weichlöten,
+      darüber von Hartlöten.
+    example: >-
+      Bestücken von Leiterplatten in der Elektronik, Kupferrohre in der Haustechnik, hartgelötete
+      Wärmetauscher, Hartmetallschneiden an Werkzeugen
+    conditions: >-
+      Saubere, oxidfreie Fügeflächen, meist mit Flussmittel oder Schutzgas; enger, gleichmäßiger
+      Spalt.
+    limits: >-
+      Die Verbindung hält nur Temperaturen bis unterhalb des Schmelzbereichs des Lots aus;
+      Weichlötstellen sind mechanisch wenig belastbar.
+    sideEffects: >-
+      Flussmittelreste können korrodierend wirken; bleihaltige Lote und Flussmitteldämpfe
+      sind gesundheitsschädlich.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Soldering and brazing
+    description: >-
+      Soldering joins metal parts with a molten filler metal, the solder, whose melting point
+      lies below that of the base metals. The liquid solder wets the oxide-free surfaces,
+      is drawn into the narrow joint gap by capillary forces and forms a thin alloy layer
+      at the interfaces; the parts themselves do not melt. Below a working temperature of
+      450 °C the process is called soft soldering, above it brazing.
+    example: >-
+      Assembling printed circuit boards, copper pipework in buildings, brazed heat exchangers,
+      carbide tips on tools
+    conditions: >-
+      Clean, oxide-free joint surfaces, usually with flux or shielding gas; a narrow, even
+      gap.
+    limits: >-
+      The joint withstands temperatures only up to below the melting range of the solder;
+      soft-soldered joints carry little mechanical load.
+    sideEffects: >-
+      Flux residues can be corrosive; lead-containing solders and flux fumes are harmful to
+      health.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

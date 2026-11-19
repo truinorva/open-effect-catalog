@@ -1,0 +1,62 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: triboluminescence
+kind: effect
+home: produce|field
+functions:
+  - produce|field
+  - detect|solid
+parameters:
+  - increase|brightness
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: nische
+sources:
+  - https://de.wikipedia.org/wiki/Tribolumineszenz
+  - https://en.wikipedia.org/wiki/Triboluminescence
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Tribolumineszenz
+    description: >-
+      Manche Stoffe leuchten kurz auf, wenn man sie zerbricht, zerkratzt, reibt oder auseinanderzieht;
+      geschieht das beim Bruch von Kristallen, spricht man auch von Fraktolumineszenz. Beim
+      Trennen der Flächen werden elektrische Ladungen getrennt, und ihre Entladung regt das
+      umgebende Gas (vor allem Stickstoff) oder den Stoff selbst zum Leuchten an.
+    example: >-
+      Zerbeißen von Zuckerkristallen oder Wintergreen-Bonbons im Dunkeln, Abziehen von Klebeband,
+      Aneinanderreiben von Quarzkieseln, Forschung zu Aufprallsensoren in Faserverbundbauteilen
+    conditions: >-
+      Meist kristalline Stoffe, häufig solche mit piezoelektrischen Eigenschaften; eine mechanische
+      Einwirkung, die Oberflächen voneinander trennt.
+    limits: Das Licht ist schwach und dauert nur Bruchteile einer Sekunde.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Triboluminescence
+    description: >-
+      Some materials give off brief flashes of light when they are broken, scratched, rubbed
+      or pulled apart; when this happens as crystals fracture, it is also called fractoluminescence.
+      Separating the surfaces separates electric charges, and their discharge makes the surrounding
+      gas (mainly nitrogen) or the material itself emit light.
+    example: >-
+      Crunching sugar crystals or wintergreen sweets in the dark, peeling adhesive tape, rubbing
+      quartz pebbles together, research on impact sensors in fibre composite parts
+    conditions: >-
+      Mostly crystalline materials, often ones with piezoelectric properties; mechanical action
+      that separates surfaces.
+    limits: The light is faint and lasts only a fraction of a second.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

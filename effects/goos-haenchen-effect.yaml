@@ -1,0 +1,68 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: goos-haenchen-effect
+kind: effect
+home: move|field
+functions:
+  - move|field
+  - measure|liquid
+parameters:
+  - measure|refraction
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: nische
+sources:
+  - https://de.wikipedia.org/wiki/Goos-H%C3%A4nchen-Effekt
+  - https://en.wikipedia.org/wiki/Goos%E2%80%93H%C3%A4nchen_effect
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Goos-Hänchen-Effekt
+    description: >-
+      Wird ein Lichtstrahl totalreflektiert, ist der reflektierte Strahl ein kleines Stück
+      entlang der Grenzfläche versetzt, typischerweise um etwa eine Wellenlänge. Ursache ist
+      das evaneszente Feld, das kurz in das optisch dünnere Medium eindringt, zusammen mit
+      der winkelabhängigen Phase der Reflexion, die die Teilwellen des endlich breiten Strahls
+      unterschiedlich verschiebt.
+    example: >-
+      Forschung zu hochempfindlichen Brechzahl- und Biosensoren, Berücksichtigung bei der
+      Modellierung von Lichtwellenleitern
+    conditions: >-
+      Totalreflexion oder Reflexion nahe dem Grenzwinkel an einer Grenzfläche; Strahl endlicher
+      Breite.
+    limits: >-
+      Die Verschiebung liegt nur in der Größenordnung der Wellenlänge und ist ohne Mehrfachreflexion
+      oder Verstärkung schwer nachzuweisen.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Goos-Hänchen effect
+    description: >-
+      When a light beam undergoes total internal reflection, the reflected beam is displaced
+      a short distance along the interface, typically by about one wavelength. The cause is
+      the evanescent field that penetrates briefly into the optically thinner medium, together
+      with the angle-dependent phase of the reflection, which shifts the partial waves of
+      the finite-width beam by different amounts.
+    example: >-
+      Research on highly sensitive refractive-index and biosensors, a factor in modelling
+      optical waveguides
+    conditions: >-
+      Total internal reflection or reflection near the critical angle at an interface; beam
+      of finite width.
+    limits: >-
+      The shift is only of the order of the wavelength and is hard to detect without multiple
+      reflections or enhancement.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

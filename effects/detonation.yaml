@@ -1,0 +1,67 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: detonation
+kind: effect
+home: disassemble|solid
+functions:
+  - disassemble|solid
+  - deform|solid
+  - join|solid
+parameters:
+  - increase|pressure
+uses: []
+domain:
+  id: Chemie
+  de: Chemie
+  en: Chemistry
+maturity: verbreitet
+sources:
+  - https://de.wikipedia.org/wiki/Detonation
+  - https://en.wikipedia.org/wiki/Detonation
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Detonation
+    description: >-
+      Bei einer Detonation läuft die chemische Umsetzung eines Explosivstoffs als Stoßwelle
+      mit Überschallgeschwindigkeit durch das Material – bei festen Sprengstoffen mit mehreren
+      Kilometern pro Sekunde. Der extreme Druck der Stoßfront zündet die Reaktion unmittelbar
+      weiter, ohne auf Wärmeleitung angewiesen zu sein. Die entstehenden Drücke von vielen
+      Gigapascal können Gestein zertrümmern, Metall umformen oder Bleche miteinander verschweißen.
+    example: >-
+      Sprengen in Bergbau und Abbruch, Sprengplattieren und Explosivumformen, Hohlladungen,
+      Detonationsspritzen von Beschichtungen, Herstellung von Nanodiamanten
+    conditions: >-
+      Ein detonationsfähiger Stoff oder ein Gasgemisch und eine ausreichend starke Initiierung,
+      etwa durch eine Sprengkapsel.
+    limits: >-
+      Unterhalb eines kritischen Durchmessers der Sprengladung bricht die Detonation ab.
+    sideEffects: Druck- und Splitterwirkung, Erschütterungen, Lärm und giftige Schwaden.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Detonation
+    description: >-
+      In a detonation the chemical reaction of an explosive runs through the material as a
+      shock wave at supersonic speed – in solid explosives at several kilometres per second.
+      The extreme pressure of the shock front ignites the reaction directly ahead, without
+      relying on heat conduction. The resulting pressures of many gigapascals can shatter
+      rock, form metal or weld plates together.
+    example: >-
+      Blasting in mining and demolition, explosive cladding and explosive forming, shaped
+      charges, detonation spraying of coatings, production of nanodiamonds
+    conditions: >-
+      A detonable substance or gas mixture and a sufficiently strong initiation, for example
+      by a detonator.
+    limits: >-
+      Below a critical diameter of the explosive charge the detonation dies out.
+    sideEffects: Blast and fragment effects, ground vibrations, noise and toxic fumes.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

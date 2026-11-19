@@ -1,0 +1,75 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: magnetometer
+kind: application
+home: measure|field
+functions:
+  - measure|field
+  - detect|solid
+parameters:
+  - measure|magnetism
+uses:
+  - hall-effect
+  - josephson-effect
+  - magnetic-saturation
+  - magnetoresistance
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Magnetometer
+  - https://en.wikipedia.org/wiki/Magnetometer
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Magnetometer
+    description: >-
+      Ein Magnetometer misst die Stärke und oft auch die Richtung eines Magnetfelds. Je nach
+      Bauart beruht es auf dem Hall-Effekt, auf magnetoresistiven Schichten, auf der periodischen
+      Sättigung eines weichmagnetischen Kerns (Förstersonde), auf der Präzession von Kern-
+      oder Elektronenspins oder auf dem Josephson-Effekt in supraleitenden Quanteninterferometern.
+      Die Empfindlichkeit reicht von einfachen Kompasssensoren bis zu SQUIDs, die Felder im
+      Femtotesla-Bereich auflösen.
+    example: >-
+      Elektronischer Kompass im Smartphone, Suche nach Kampfmitteln und Rohstoffen, archäologische
+      Prospektion, Erdmagnetfeldobservatorien, Magnetoenzephalographie, Fahrzeugerkennung
+      an Parkplätzen und Ampeln
+    conditions: >-
+      Ein für Feldbereich und Frequenz passendes Messprinzip und möglichst geringe magnetische
+      Störungen in der Umgebung.
+    limits: >-
+      Eisenteile, Ströme und elektrische Geräte in der Nähe verfälschen die Messung; die empfindlichsten
+      Sensoren brauchen Abschirmung oder Kühlung.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Magnetometer
+    description: >-
+      A magnetometer measures the strength and often the direction of a magnetic field. Depending
+      on its design, it relies on the Hall effect, on magnetoresistive layers, on the periodic
+      saturation of a soft magnetic core (fluxgate), on the precession of nuclear or electron
+      spins, or on the Josephson effect in superconducting quantum interference devices. Sensitivity
+      ranges from simple compass sensors to SQUIDs that resolve fields in the femtotesla range.
+    example: >-
+      Electronic compass in smartphones, searching for unexploded ordnance and mineral deposits,
+      archaeological prospecting, geomagnetic observatories, magnetoencephalography, vehicle
+      detection at car parks and traffic lights
+    conditions: >-
+      A measuring principle suited to the field range and frequency, and as little magnetic
+      interference from the surroundings as possible.
+    limits: >-
+      Nearby iron parts, currents and electrical devices distort the measurement; the most
+      sensitive sensors need shielding or cooling.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

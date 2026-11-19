@@ -1,0 +1,73 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: pulsed-field-magnet
+kind: application
+home: produce|field
+functions:
+  - produce|field
+  - deform|solid
+parameters:
+  - increase|magnetism
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: reife
+sources:
+  - https://en.wikipedia.org/wiki/Pulsed_field_magnet
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Pulsmagnet
+    description: >-
+      Ein Pulsmagnet erzeugt für Millisekunden oder kürzer Magnetfelder, die weit über denen
+      von Dauer- oder Gleichstrommagneten liegen. Dazu entlädt sich eine große Kondensatorbank
+      oder ein Generator über eine mechanisch verstärkte Spule; weil der Puls so kurz ist,
+      bleiben Erwärmung und Leistungsbedarf beherrschbar, und die Spule muss die enormen magnetischen
+      Kräfte nur für einen Augenblick aushalten.
+    example: >-
+      Hochfeldlabore mit zerstörungsfrei erzeugten Feldern bis etwa 100 Tesla, Aufmagnetisieren
+      von Dauermagneten, elektromagnetisches Umformen und Magnetpulsschweißen, Untersuchung
+      von Halbleitern und Supraleitern im Hochfeld
+    conditions: >-
+      Ein Energiespeicher hoher Leistung, ein schneller Schalter und eine mechanisch verstärkte,
+      oft mit flüssigem Stickstoff vorgekühlte Spule.
+    limits: >-
+      Die Feldstärke ist durch die Festigkeit der Spule gegen die magnetischen Kräfte begrenzt;
+      noch höhere Felder gelingen nur mit Einwindungsspulen, die dabei zerstört werden.
+    sideEffects: >-
+      Die Spule erhitzt sich stark und braucht zwischen den Pulsen lange Abkühlzeiten; Wirbelströme
+      in leitfähigen Proben erzeugen Wärme und Kräfte.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Pulsed field magnet
+    description: >-
+      A pulsed magnet produces magnetic fields for milliseconds or less that far exceed those
+      of permanent or DC magnets. A large capacitor bank or generator is discharged through
+      a mechanically reinforced coil; because the pulse is so short, heating and power demand
+      remain manageable, and the coil only has to withstand the enormous magnetic forces for
+      a moment.
+    example: >-
+      High-field laboratories with non-destructive fields up to about 100 tesla, magnetising
+      permanent magnets, electromagnetic forming and magnetic pulse welding, research on semiconductors
+      and superconductors in high fields
+    conditions: >-
+      A high-power energy store, a fast switch and a mechanically reinforced coil, often precooled
+      with liquid nitrogen.
+    limits: >-
+      Field strength is limited by the coil's strength against the magnetic forces; even higher
+      fields are only possible with single-turn coils that are destroyed in the process.
+    sideEffects: >-
+      The coil heats up strongly and needs long cooling times between pulses; eddy currents
+      in conductive samples cause heating and forces.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

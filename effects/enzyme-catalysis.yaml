@@ -1,0 +1,72 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: enzyme-catalysis
+kind: effect
+home: destroy|solid
+functions:
+  - destroy|solid
+  - remove|solid
+  - produce|liquid
+  - measure|liquid
+parameters:
+  - decrease|viscosity
+  - measure|concentration
+uses: []
+domain:
+  id: Biologie
+  de: Biologie
+  en: Biology
+maturity: verbreitet
+sources:
+  - https://de.wikipedia.org/wiki/Enzym
+  - https://en.wikipedia.org/wiki/Enzyme
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Enzymkatalyse (Enzyme)
+    description: >-
+      Enzyme sind Biokatalysatoren, meist Proteine, die chemische Reaktionen um viele Größenordnungen
+      beschleunigen, ohne selbst verbraucht zu werden. Das Substrat bindet an eine passgenaue
+      Stelle des Enzyms, das aktive Zentrum, wo es so ausgerichtet und verspannt wird, dass
+      die Aktivierungsenergie der Reaktion sinkt. Dadurch arbeiten Enzyme sehr selektiv und
+      unter milden Bedingungen, also bei mäßigen Temperaturen, Normaldruck und meist in wässriger
+      Lösung.
+    example: >-
+      Proteasen und Lipasen in Waschmitteln, Stärkeverzuckerung mit Amylasen, Glucoseoxidase
+      in Blutzuckermessstreifen, Lab bei der Käseherstellung, Pektinasen zur Saftklärung
+    conditions: >-
+      Passende Temperatur, passender pH-Wert und ausreichend Wasser; das Enzym muss zu seinem
+      Substrat passen.
+    limits: >-
+      Hitze, extreme pH-Werte, Lösemittel und manche Schwermetalle denaturieren oder hemmen
+      Enzyme.
+    sideEffects: Enzymstäube können Allergien auslösen.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Enzyme catalysis
+    description: >-
+      Enzymes are biocatalysts, mostly proteins, that speed up chemical reactions by many
+      orders of magnitude without being consumed. The substrate binds to a precisely shaped
+      site on the enzyme, the active site, where it is positioned and strained so that the
+      activation energy of the reaction drops. Enzymes therefore work very selectively and
+      under mild conditions, i.e. at moderate temperatures, normal pressure and usually in
+      aqueous solution.
+    example: >-
+      Proteases and lipases in detergents, saccharification of starch with amylases, glucose
+      oxidase in blood glucose test strips, rennet in cheese making, pectinases for juice
+      clarification
+    conditions: >-
+      Suitable temperature, suitable pH and sufficient water; the enzyme must match its substrate.
+    limits: >-
+      Heat, extreme pH, solvents and some heavy metals denature or inhibit enzymes.
+    sideEffects: Enzyme dusts can trigger allergies.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

@@ -1,0 +1,71 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: rifling
+kind: application
+home: rotate|solid
+functions:
+  - rotate|solid
+  - hold|solid
+parameters:
+  - stabilise|orientation
+uses:
+  - precession
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Zug_(Waffe)
+  - https://en.wikipedia.org/wiki/Rifling
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Züge (Laufdrall)
+    description: >-
+      In die Innenwand eines Laufs sind schraubenförmige Rillen, die Züge, eingeschnitten,
+      zwischen denen erhabene Felder stehen. Das Geschoss presst sich beim Schuss in dieses
+      Profil und erhält dadurch eine schnelle Drehung um seine Längsachse; die Kreiselwirkung
+      stabilisiert seine Lage im Flug, sodass es nicht taumelt und genauer trifft.
+    example: >-
+      Gewehre, Pistolen und Artilleriegeschütze, historische gezogene Vorderlader mit Minié-Geschossen,
+      forensischer Vergleich von Zugspuren an Geschossen
+    conditions: >-
+      Ein Geschoss, das sich formschlüssig in das Zugprofil einpresst, und eine Dralllänge,
+      die zu Form und Länge des Geschosses passt.
+    limits: >-
+      Zu langsamer Drall stabilisiert lange Geschosse nicht ausreichend, zu schneller Drall
+      kann leichte Geschosse überlasten oder zerlegen.
+    sideEffects: >-
+      Reibung und Verformung des Geschosses kosten Energie und verschleißen den Lauf; das
+      Geschoss trägt charakteristische Zugspuren, die forensisch ausgewertet werden.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Rifling
+    description: >-
+      Helical grooves are cut into the inner wall of a barrel, with raised lands between them.
+      On firing, the projectile is pressed into this profile and is thus given a fast spin
+      about its longitudinal axis; the gyroscopic effect stabilises its attitude in flight,
+      so that it does not tumble and hits more accurately.
+    example: >-
+      Rifles, pistols and artillery guns, historic rifled muskets with Minié balls, forensic
+      comparison of rifling marks on bullets
+    conditions: >-
+      A projectile that engages the groove profile, and a twist rate matched to the projectile's
+      shape and length.
+    limits: >-
+      Too slow a twist does not stabilise long projectiles sufficiently, too fast a twist
+      can overstress or break up light projectiles.
+    sideEffects: >-
+      Friction and deformation of the projectile cost energy and wear the barrel; the projectile
+      carries characteristic rifling marks that are evaluated forensically.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

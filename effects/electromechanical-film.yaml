@@ -1,0 +1,63 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: electromechanical-film
+kind: application
+home: measure|field
+functions:
+  - measure|field
+  - detect|solid
+  - produce|field
+parameters:
+  - measure|pressure
+  - measure|force
+uses:
+  - electret
+domain:
+  id: Materialwissenschaft
+  de: Materialwissenschaft
+  en: Materials science
+maturity: ''
+sources:
+  - https://en.wikipedia.org/wiki/Electromechanical_film
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Elektromechanischer Film (EMFi, Ferroelektret)
+    description: >-
+      Eine dünne Polypropylenfolie mit flachen, linsenförmigen Gasbläschen wird so stark aufgeladen,
+      dass in den Bläschen Teilentladungen auftreten und an deren Ober- und Unterseite entgegengesetzte
+      Ladungen haften bleiben. Wird die Folie zusammengedrückt, ändern sich die Abstände dieser
+      Ladungen und an den Elektroden entsteht ein Ladungssignal; umgekehrt ändert eine angelegte
+      Spannung ihre Dicke. Die Folie wirkt dadurch wie ein weicher, großflächiger Piezowandler.
+    example: >-
+      Sitzbelegungs- und Schlafsensoren, Drucksensormatten, flache Lautsprecher und Mikrofone
+    conditions: ''
+    limits: >-
+      Die eingeprägte Ladung baut sich bei erhöhter Temperatur ab, was den Einsatzbereich
+      begrenzt.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Electromechanical film (EMFi, ferroelectret)
+    description: >-
+      A thin polypropylene film with flat, lens-shaped gas voids is charged so strongly that
+      partial discharges occur in the voids, leaving opposite charges stuck to their upper
+      and lower faces. When the film is compressed, the distance between these charges changes
+      and a charge signal appears at the electrodes; conversely, an applied voltage changes
+      its thickness. The film thus behaves like a soft, large-area piezoelectric transducer.
+    example: >-
+      Seat occupancy and sleep sensors, pressure-sensing mats, flat loudspeakers and microphones
+    conditions: ''
+    limits: >-
+      The embedded charge decays at elevated temperature, which limits the operating range.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

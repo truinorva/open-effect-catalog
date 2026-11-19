@@ -1,0 +1,70 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: auxetics
+kind: effect
+home: expand|solid
+functions:
+  - expand|solid
+  - compress|solid
+  - stop|solid
+parameters:
+  - change|shape
+  - increase|hardness
+uses: []
+domain:
+  id: Materialwissenschaft
+  de: Materialwissenschaft
+  en: Materials science
+maturity: nische
+sources:
+  - https://de.wikipedia.org/wiki/Auxetisches_Material
+  - https://en.wikipedia.org/wiki/Auxetics
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Auxetisches Verhalten (negative Querkontraktion)
+    description: >-
+      Auxetische Werkstoffe und Strukturen haben eine negative Querkontraktionszahl: Zieht
+      man an ihnen, werden sie auch quer zur Zugrichtung dicker, und unter Druck ziehen sie
+      sich seitlich zusammen. Ursache ist eine besondere innere Geometrie, etwa nach innen
+      geknickte Wabenzellen, gegeneinander drehende starre Einheiten oder gezielt geformte
+      Hohlräume, die sich unter Last wie ein Gelenkmechanismus ent- oder einfalten.
+    example: >-
+      Stoßdämpfende Polster und Schutzausrüstung, Schuhsohlen, Stents, die sich beim Aufdehnen
+      gleichmäßig weiten, Dübel und Befestigungselemente (teils im Forschungsstadium)
+    conditions: >-
+      Eine Mikro- oder Makrostruktur, die sich unter Last wie ein Gelenkmechanismus verformt.
+    limits: >-
+      Die gezielt eingebrachten Hohlräume senken Steifigkeit und Festigkeit gegenüber dem
+      vollen Material.
+    sideEffects: >-
+      Beim Biegen wölben sich auxetische Platten kuppelförmig statt sattelförmig, und unter
+      einer eindrückenden Last verdichtet sich das Material dort und widersteht stärker.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Auxetic behaviour (negative Poisson's ratio)
+    description: >-
+      Auxetic materials and structures have a negative Poisson's ratio: when stretched they
+      also get thicker across the direction of pull, and under compression they contract sideways.
+      The cause is a special internal geometry, such as re-entrant honeycomb cells, counter-rotating
+      rigid units or specially shaped voids that unfold or fold up under load like a linkage.
+    example: >-
+      Impact-absorbing pads and protective gear, shoe soles, stents that widen evenly when
+      expanded, dowels and fasteners (partly at research stage)
+    conditions: A micro- or macrostructure that deforms under load like a linkage.
+    limits: >-
+      The deliberately introduced voids reduce stiffness and strength compared with the solid
+      material.
+    sideEffects: >-
+      When bent, auxetic plates curve into a dome rather than a saddle, and under an indenting
+      load the material densifies locally and resists more strongly.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

@@ -1,0 +1,64 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: thermionic-energy-conversion
+kind: application
+home: produce|field
+functions:
+  - produce|field
+parameters: []
+uses:
+  - thermionic-emission
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: ''
+sources:
+  - https://en.wikipedia.org/wiki/Thermionic_converter
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Thermionischer Wandler
+    description: >-
+      Ein thermionischer Wandler erzeugt elektrischen Strom direkt aus Wärme, ohne bewegliche
+      Teile. Eine heiße Emitterelektrode gibt durch Glühemission Elektronen ab, die über einen
+      schmalen Spalt zu einer kälteren Kollektorelektrode mit kleinerer Austrittsarbeit gelangen;
+      über einen äußeren Stromkreis fließen sie durch den Verbraucher zurück. Häufig füllt
+      Cäsiumdampf den Spalt, um die Raumladung zu neutralisieren und die Austrittsarbeit der
+      Elektroden zu senken.
+    example: >-
+      Stromversorgung von Raumfahrzeugen mit Kernreaktor (z. B. sowjetische TOPAZ-Reaktoren),
+      Versuchsanlagen zur Abwärmenutzung
+    conditions: >-
+      Emittertemperaturen über 1000 °C, Vakuum oder Cäsiumdampf im Spalt und ein kleiner Elektrodenabstand.
+    limits: >-
+      Der Wirkungsgrad ist mäßig, und die hohen Temperaturen belasten die Werkstoffe stark.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Thermionic converter
+    description: >-
+      A thermionic converter generates electricity directly from heat, without moving parts.
+      A hot emitter electrode releases electrons by thermionic emission, which cross a narrow
+      gap to a cooler collector electrode with a lower work function and flow back through
+      the load via an external circuit. Caesium vapour often fills the gap to neutralise space
+      charge and lower the work functions of the electrodes.
+    example: >-
+      Power supply for spacecraft with nuclear reactors (e.g. Soviet TOPAZ reactors), experimental
+      waste-heat recovery systems
+    conditions: >-
+      Emitter temperatures above 1000 °C, a vacuum or caesium vapour in the gap, and a small
+      electrode spacing.
+    limits: >-
+      Efficiency is moderate, and the high temperatures place heavy demands on the materials.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

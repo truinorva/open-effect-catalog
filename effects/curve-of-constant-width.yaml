@@ -1,0 +1,68 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: curve-of-constant-width
+kind: effect
+home: move|solid
+functions:
+  - move|solid
+  - disassemble|solid
+  - measure|solid
+parameters:
+  - stabilise|size
+uses: []
+domain:
+  id: Geometrie
+  de: Geometrie
+  en: Geometry
+maturity: nische
+sources:
+  - https://de.wikipedia.org/wiki/Gleichdick
+  - https://en.wikipedia.org/wiki/Curve_of_constant_width
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Gleichdick
+    description: >-
+      Ein Gleichdick ist eine konvexe Form, die in jeder Richtung dieselbe Breite hat – zwischen
+      zwei parallele Tangenten passt sie immer genau gleich. Neben dem Kreis gibt es unendlich
+      viele solcher Formen; die bekannteste ist das aus drei Kreisbögen gebildete Reuleaux-Dreieck.
+      Ein Körper mit einem solchen Querschnitt lässt sich zwischen zwei parallelen Ebenen
+      drehen, ohne dass sich deren Abstand ändert.
+    example: >-
+      Münzen mit gleichdickem Rand (britische 20- und 50-Pence-Münzen), Bohrer für nahezu
+      quadratische Löcher, Rollen zum Transport von Lasten, Kanaldeckel, die nicht in den
+      Schacht fallen können
+    conditions: >-
+      Ein genau gefertigtes Profil und eine Abstützung zwischen zwei parallelen Flächen.
+    limits: >-
+      Anders als beim Kreis wandert der Mittelpunkt beim Abrollen, weshalb Gleichdicke als
+      Räder auf einer festen Achse ungeeignet sind.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Curve of constant width
+    description: >-
+      A curve of constant width is a convex shape that has the same width in every direction
+      – it always fits exactly between two parallel tangents. Besides the circle there are
+      infinitely many such shapes, the best known being the Reuleaux triangle formed from
+      three circular arcs. A body with such a cross-section can be turned between two parallel
+      planes without changing their distance.
+    example: >-
+      Coins with a constant-width edge (British 20p and 50p coins), drills for almost square
+      holes, rollers for moving loads, manhole covers that cannot fall into the shaft
+    conditions: >-
+      An accurately manufactured profile and support between two parallel surfaces.
+    limits: >-
+      Unlike a circle, the centre wanders while rolling, which makes curves of constant width
+      unsuitable as wheels on a fixed axle.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

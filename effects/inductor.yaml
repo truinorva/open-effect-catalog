@@ -1,0 +1,65 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: inductor
+kind: application
+home: stabilise|field
+functions:
+  - stabilise|field
+  - produce|field
+parameters: []
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Induktivit%C3%A4t_(Bauelement)
+  - https://en.wikipedia.org/wiki/Inductor
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Spule (Induktivität)
+    description: >-
+      Eine Spule speichert Energie im Magnetfeld, das der durch sie fließende Strom aufbaut.
+      Ändert sich der Strom, induziert das sich ändernde Feld eine Gegenspannung, die der
+      Änderung entgegenwirkt; deshalb glätten Spulen Ströme, sperren hohe Frequenzen und geben
+      beim Abschalten die gespeicherte Energie als Spannungsspitze ab.
+    example: >-
+      Speicherdrosseln in Schaltnetzteilen, Entstör- und Netzdrosseln, Schwingkreise und Filter,
+      Zündspulen, Vorschaltdrosseln für Leuchtstofflampen
+    conditions: ''
+    limits: >-
+      Bei zu hohem Strom geht der Kern in die Sättigung, und die Induktivität bricht ein;
+      Wicklungswiderstand und Kernverluste begrenzen die Güte.
+    sideEffects: >-
+      Abschaltspannungsspitzen können Schalter zerstören, und Streufelder stören benachbarte
+      Schaltungen.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Inductor
+    description: >-
+      An inductor stores energy in the magnetic field set up by the current flowing through
+      it. When the current changes, the changing field induces a back voltage that opposes
+      the change; this is why inductors smooth currents, block high frequencies and release
+      the stored energy as a voltage spike when switched off.
+    example: >-
+      Storage chokes in switched-mode power supplies, interference suppression and line chokes,
+      resonant circuits and filters, ignition coils, ballasts for fluorescent lamps
+    conditions: ''
+    limits: >-
+      At too high a current the core saturates and the inductance collapses; winding resistance
+      and core losses limit the quality factor.
+    sideEffects: >-
+      Switch-off voltage spikes can destroy switches, and stray fields interfere with neighbouring
+      circuits.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

@@ -1,0 +1,71 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: angular-momentum-conservation
+kind: effect
+home: rotate|solid
+functions:
+  - rotate|solid
+  - hold|solid
+  - orient|solid
+parameters:
+  - increase|speed
+  - stabilise|orientation
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Drehimpuls
+  - https://en.wikipedia.org/wiki/Angular_momentum
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Drehimpulserhaltung
+    description: >-
+      Ohne äußeres Drehmoment bleibt der Drehimpuls eines Körpers oder Systems nach Betrag
+      und Richtung erhalten. Zieht ein rotierender Körper Masse zur Drehachse heran, dreht
+      er sich deshalb schneller; ein schnell rotierender Kreisel behält die Richtung seiner
+      Achse bei, und beginnt ein Teil eines Systems sich in eine Richtung zu drehen, dreht
+      sich der Rest in die Gegenrichtung.
+    example: >-
+      Pirouette im Eiskunstlauf, Drallstabilisierung von Geschossen und Satelliten, Kreiselkompass,
+      Reaktionsräder zur Lageregelung von Satelliten, Heckrotor des Hubschraubers gegen das
+      Gegendrehmoment
+    conditions: Keine oder nur geringe äußere Drehmomente, etwa durch Reibung.
+    limits: >-
+      Reibung und äußere Momente bauen den Drehimpuls allmählich ab oder lassen die Achse
+      ausweichen (Präzession).
+    sideEffects: >-
+      Rotierende Massen widersetzen sich gewollten Richtungsänderungen und üben dabei Kreiselmomente
+      auf Lager und Gestell aus.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Conservation of angular momentum
+    description: >-
+      Without an external torque, the angular momentum of a body or system is conserved in
+      magnitude and direction. A spinning body that draws mass towards its axis therefore
+      turns faster; a fast-spinning gyroscope keeps the direction of its axis, and if one
+      part of a system starts turning one way, the rest turns the other way.
+    example: >-
+      Pirouettes in figure skating, spin stabilisation of projectiles and satellites, gyrocompass,
+      reaction wheels for satellite attitude control, helicopter tail rotor countering the
+      reaction torque
+    conditions: No or only small external torques, for example from friction.
+    limits: >-
+      Friction and external torques gradually reduce the angular momentum or make the axis
+      wander (precession).
+    sideEffects: >-
+      Rotating masses resist intended changes of direction and exert gyroscopic moments on
+      bearings and frames in doing so.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

@@ -1,0 +1,74 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: parasitic-capacitance
+kind: effect
+home: detect|solid
+functions:
+  - detect|solid
+  - measure|solid
+parameters:
+  - measure|position
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: lehrbuch
+sources:
+  - https://en.wikipedia.org/wiki/Parasitic_capacitance
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Parasitäre Kapazität (Streukapazität)
+    description: >-
+      Zwei Leiter mit unterschiedlichem Potenzial, die durch einen Isolator oder Luft getrennt
+      sind, bilden immer einen Kondensator, auch wenn das nicht beabsichtigt ist. Solche Streukapazitäten
+      bestehen zwischen benachbarten Leiterbahnen, zwischen den Windungen einer Spule, an
+      Bauteilanschlüssen und zwischen einem Gerät und dem menschlichen Körper. Sie koppeln
+      Signale ungewollt über und begrenzen die Grenzfrequenz von Schaltungen; nähert sich
+      ein leitfähiger Körper, ändert sich die Kapazität messbar, was sich zum Erkennen von
+      Annäherung nutzen lässt.
+    example: >-
+      Kapazitive Annäherungsschalter und Touch-Sensoren, Theremin, Erkennung von Händen am
+      Lenkrad, Füllstandserkennung durch Behälterwände
+    conditions: >-
+      Benachbarte Leiter mit Potenzialunterschied; die Kapazität wächst mit der Fläche und
+      der Dielektrizitätszahl und mit abnehmendem Abstand.
+    limits: >-
+      Die Kapazitäten liegen meist im Bereich von Pikofarad oder darunter und sind nur mit
+      empfindlicher Elektronik auswertbar.
+    sideEffects: >-
+      Übersprechen, Schwingneigung, Umschaltverluste und begrenzte Bandbreite in Hochfrequenz-
+      und Digitalschaltungen; Spulen werden ab einer bestimmten Frequenz eigenresonant.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Parasitic capacitance (stray capacitance)
+    description: >-
+      Two conductors at different potentials separated by an insulator or air always form
+      a capacitor, even when this is not intended. Such stray capacitances exist between neighbouring
+      traces, between the turns of a coil, at component leads and between a device and the
+      human body. They couple signals unintentionally and limit the bandwidth of circuits;
+      when a conductive body approaches, the capacitance changes measurably, which can be
+      used to detect proximity.
+    example: >-
+      Capacitive proximity switches and touch sensors, theremin, hands-on detection on steering
+      wheels, level detection through container walls
+    conditions: >-
+      Neighbouring conductors with a potential difference; the capacitance grows with area
+      and permittivity and with decreasing distance.
+    limits: >-
+      The capacitances are usually in the picofarad range or below and can only be evaluated
+      with sensitive electronics.
+    sideEffects: >-
+      Crosstalk, tendency to oscillate, switching losses and limited bandwidth in high-frequency
+      and digital circuits; coils become self-resonant above a certain frequency.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

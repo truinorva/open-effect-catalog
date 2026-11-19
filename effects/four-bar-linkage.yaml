@@ -1,0 +1,63 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: four-bar-linkage
+kind: application
+home: move|solid
+functions:
+  - move|solid
+  - rotate|solid
+  - vibrate|solid
+parameters:
+  - change|position
+uses: []
+domain:
+  id: Geometrie
+  de: Geometrie
+  en: Geometry
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Gelenkviereck
+  - https://en.wikipedia.org/wiki/Four-bar_linkage
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Gelenkviereck (Viergelenkgetriebe)
+    description: >-
+      Vier starre Glieder sind durch vier Drehgelenke zu einer geschlossenen Kette verbunden,
+      von der ein Glied feststeht. Je nach Längenverhältnis der Glieder wird eine Drehbewegung
+      in eine Schwingbewegung umgesetzt oder umgekehrt, oder ein Punkt des Koppelglieds beschreibt
+      eine bestimmte Bahn, etwa eine annähernd gerade Linie; die Grashof-Bedingung entscheidet,
+      ob ein Glied ganz umlaufen kann.
+    example: >-
+      Scheibenwischerantrieb, Parallelogrammgestänge von Schreibtischleuchten, Wattsche Geradführung,
+      Radaufhängungen, Laufmaschinen
+    conditions: ''
+    limits: >-
+      In den Totlagen kann das Getriebe klemmen oder seine Bewegungsrichtung unbestimmt werden.
+    sideEffects: Die ungleichförmige Bewegung erzeugt Massenkräfte und Schwingungen.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Four-bar linkage
+    description: >-
+      Four rigid links are joined by four pivots into a closed chain, one link of which is
+      fixed. Depending on the link length ratios, a rotary motion is converted into a rocking
+      motion or vice versa, or a point on the coupler traces a particular path, such as an
+      approximately straight line; the Grashof condition determines whether a link can rotate
+      fully.
+    example: >-
+      Windscreen wiper drive, parallelogram linkage of desk lamps, Watt's straight-line linkage,
+      wheel suspensions, walking mechanisms
+    conditions: ''
+    limits: >-
+      At the dead-centre positions the linkage can jam or its direction of motion become undetermined.
+    sideEffects: The non-uniform motion produces inertial forces and vibration.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

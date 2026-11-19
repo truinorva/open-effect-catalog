@@ -1,0 +1,73 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: magnetoresistance
+kind: effect
+home: measure|field
+functions:
+  - measure|field
+  - detect|solid
+  - measure|solid
+parameters:
+  - change|conductivity
+  - measure|magnetism
+  - measure|position
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: verbreitet
+sources:
+  - https://de.wikipedia.org/wiki/Magnetoresistiver_Effekt
+  - https://en.wikipedia.org/wiki/Magnetoresistance
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Magnetoresistiver Effekt
+    description: >-
+      Der elektrische Widerstand eines Materials ändert sich, wenn es einem Magnetfeld ausgesetzt
+      wird. In gewöhnlichen Leitern liegt das an der Ablenkung der Ladungsträger, in ferromagnetischen
+      Schichten am Winkel zwischen Strom und Magnetisierung (AMR); in Schichtstapeln aus magnetischen
+      und nichtmagnetischen Lagen hängt der Widerstand stark von der relativen Ausrichtung
+      der Magnetisierungen ab (GMR, TMR). In diesen Schichtsystemen kann sich der Widerstand
+      um einige bis mehrere hundert Prozent ändern.
+    example: >-
+      Leseköpfe von Festplatten, magnetoresistive Speicher (MRAM), Winkel- und Drehzahlsensoren
+      im Auto, elektronische Kompasse, berührungslose Strommessung
+    conditions: >-
+      Ein Magnetfeld am Ort des Sensors und eine Widerstandsmessung mit konstantem Strom oder
+      in einer Brückenschaltung.
+    limits: >-
+      Starke Felder können die Schichten sättigen oder ummagnetisieren; der Effekt hängt von
+      der Temperatur ab und muss kompensiert werden.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Magnetoresistance
+    description: >-
+      The electrical resistance of a material changes when it is exposed to a magnetic field.
+      In ordinary conductors this is due to the deflection of charge carriers, in ferromagnetic
+      layers to the angle between current and magnetisation (AMR); in stacks of magnetic and
+      non-magnetic layers, the resistance depends strongly on the relative alignment of the
+      magnetisations (GMR, TMR). In these layer systems the resistance can change by several
+      to several hundred per cent.
+    example: >-
+      Hard disk read heads, magnetoresistive memory (MRAM), angle and speed sensors in cars,
+      electronic compasses, contactless current measurement
+    conditions: >-
+      A magnetic field at the sensor and resistance measurement at constant current or in
+      a bridge circuit.
+    limits: >-
+      Strong fields can saturate or remagnetise the layers; the effect depends on temperature
+      and has to be compensated.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

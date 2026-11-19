@@ -1,0 +1,72 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: particle-image-velocimetry
+kind: application
+home: measure|liquid
+functions:
+  - measure|liquid
+  - measure|gas
+parameters:
+  - measure|speed
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Particle_Image_Velocimetry
+  - https://en.wikipedia.org/wiki/Particle_image_velocimetry
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Particle Image Velocimetry (PIV)
+    description: >-
+      Der Strömung werden feine Tracerpartikel beigegeben, die ihr möglichst ohne Schlupf
+      folgen. Ein gepulster Laser beleuchtet eine dünne Ebene der Strömung zweimal kurz hintereinander,
+      und eine Kamera nimmt beide Bilder auf. Durch Kreuzkorrelation kleiner Bildausschnitte
+      ermittelt ein Rechner, wie weit sich die Partikelmuster verschoben haben, und berechnet
+      daraus ein flächiges Geschwindigkeitsfeld.
+    example: >-
+      Wind- und Wasserkanalversuche, Optimierung von Pumpen, Rührwerken und Brennkammern,
+      Strömung in Herzklappenmodellen, Validierung von Strömungssimulationen
+    conditions: >-
+      Optischer Zugang zur Strömung, geeignete Tracerpartikel und eine genau bekannte Zeit
+      zwischen den beiden Lichtpulsen.
+    limits: >-
+      Gemessen wird nur in der beleuchteten Ebene; für die dritte Geschwindigkeitskomponente
+      braucht es Stereo- oder tomografische PIV mit mehreren Kameras.
+    sideEffects: >-
+      Die Tracerpartikel können Anlagen verschmutzen, und die starken Laserpulse erfordern
+      Augenschutz.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Particle image velocimetry (PIV)
+    description: >-
+      Fine tracer particles that follow the flow with as little slip as possible are added
+      to it. A pulsed laser illuminates a thin plane of the flow twice in quick succession,
+      and a camera records both images. By cross-correlating small image windows, a computer
+      determines how far the particle patterns have moved and calculates a planar velocity
+      field from this.
+    example: >-
+      Wind and water tunnel tests, optimisation of pumps, stirrers and combustion chambers,
+      flow in heart valve models, validation of flow simulations
+    conditions: >-
+      Optical access to the flow, suitable tracer particles and a precisely known time between
+      the two light pulses.
+    limits: >-
+      Measurements are made only in the illuminated plane; the third velocity component requires
+      stereo or tomographic PIV with several cameras.
+    sideEffects: >-
+      The tracer particles can contaminate equipment, and the strong laser pulses require
+      eye protection.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

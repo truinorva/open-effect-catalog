@@ -1,0 +1,65 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: cotton-mouton-effect
+kind: effect
+home: orient|field
+functions:
+  - orient|field
+  - measure|liquid
+parameters:
+  - change|polarisation
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: nische
+sources:
+  - https://de.wikipedia.org/wiki/Cotton-Mouton-Effekt
+  - https://en.wikipedia.org/wiki/Cotton%E2%80%93Mouton_effect
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Cotton-Mouton-Effekt
+    description: >-
+      Eine Flüssigkeit im Magnetfeld wird doppelbrechend für Licht, das quer zu den Feldlinien
+      hindurchläuft. Das Feld richtet anisotrope Moleküle teilweise aus, so dass parallel
+      und senkrecht zum Feld polarisiertes Licht unterschiedliche Brechzahlen erfährt. Der
+      entstehende Gangunterschied wächst mit dem Quadrat der magnetischen Flussdichte.
+    example: >-
+      Messung der magnetischen Anisotropie von Molekülen, Polarimetrie der Elektronendichte
+      in Fusionsplasmen, Untersuchung von Flüssigkristallen und kolloidalen Suspensionen
+    conditions: >-
+      Lichtausbreitung quer zum Magnetfeld und ein Stoff mit anisotropen Molekülen oder Teilchen.
+    limits: >-
+      Bei gewöhnlichen Flüssigkeiten ist der Effekt sehr klein und erfordert starke Felder
+      und empfindliche Polarimetrie.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Cotton-Mouton effect
+    description: >-
+      A liquid in a magnetic field becomes birefringent for light travelling perpendicular
+      to the field lines. The field partially aligns anisotropic molecules, so that light
+      polarised parallel and perpendicular to the field experiences different refractive indices.
+      The resulting phase difference grows with the square of the magnetic flux density.
+    example: >-
+      Measuring the magnetic anisotropy of molecules, polarimetry of the electron density
+      in fusion plasmas, studies of liquid crystals and colloidal suspensions
+    conditions: >-
+      Light propagating across the magnetic field and a material with anisotropic molecules
+      or particles.
+    limits: >-
+      In ordinary liquids the effect is very small and requires strong fields and sensitive
+      polarimetry.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

@@ -1,0 +1,70 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: transient-liquid-phase-bonding
+kind: application
+home: join|solid
+functions:
+  - join|solid
+parameters: []
+uses:
+  - melting
+domain:
+  id: Materialwissenschaft
+  de: Materialwissenschaft
+  en: Materials science
+maturity: wachstum
+sources:
+  - https://en.wikipedia.org/wiki/Transient_liquid_phase_diffusion_bonding
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Transient-Liquid-Phase-Fügen (TLP-Bonden)
+    description: >-
+      Beim Transient-Liquid-Phase-Fügen wird zwischen die Fügeteile eine dünne Zwischenschicht
+      gelegt, die bei der Fügetemperatur schmilzt, etwa weil sie einen schmelzpunktsenkenden
+      Zusatz wie Bor oder Silizium oder ein niedrig schmelzendes Metall wie Zinn enthält.
+      Die Schmelze benetzt die Fügeflächen, während ihre schmelzpunktsenkenden Bestandteile
+      in die Grundwerkstoffe diffundieren oder mit ihnen hochschmelzende Verbindungen bilden.
+      Dadurch erstarrt die Naht schon bei gleichbleibender Temperatur und hält danach Temperaturen
+      weit über der Fügetemperatur stand.
+    example: >-
+      Reparatur und Fügen von Turbinenschaufeln aus Nickelbasis-Superlegierungen, Chipbefestigung
+      in der Leistungselektronik mit Kupfer-Zinn- oder Silber-Zinn-Systemen, Fügen von Wärmetauschern
+    conditions: >-
+      Saubere, eng anliegende Fügeflächen, meist Vakuum oder Schutzgas und ausreichend Zeit
+      für die Diffusion bei Fügetemperatur.
+    limits: >-
+      Die isotherme Erstarrung dauert je nach Schichtdicke Minuten bis viele Stunden; spröde
+      intermetallische Phasen können die Naht schwächen.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Transient liquid phase bonding
+    description: >-
+      In transient liquid phase bonding, a thin interlayer is placed between the parts that
+      melts at the bonding temperature, for instance because it contains a melting-point depressant
+      such as boron or silicon or a low-melting metal such as tin. The melt wets the joint
+      faces while its melting-point-depressing constituents diffuse into the base materials
+      or form high-melting compounds with them. As a result the joint solidifies while the
+      temperature is held constant and afterwards withstands temperatures well above the bonding
+      temperature.
+    example: >-
+      Repairing and joining nickel-based superalloy turbine blades, die attach in power electronics
+      with copper-tin or silver-tin systems, joining heat exchangers
+    conditions: >-
+      Clean, closely fitting joint faces, usually vacuum or shielding gas, and enough time
+      for diffusion at the bonding temperature.
+    limits: >-
+      Depending on layer thickness, isothermal solidification takes from minutes to many hours;
+      brittle intermetallic phases can weaken the joint.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

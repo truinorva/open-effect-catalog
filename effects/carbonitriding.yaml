@@ -1,0 +1,70 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: carbonitriding
+kind: application
+home: stabilise|solid
+functions:
+  - stabilise|solid
+  - absorb|gas
+parameters:
+  - increase|hardness
+  - increase|strength
+uses: []
+domain:
+  id: Materialwissenschaft
+  de: Materialwissenschaft
+  en: Materials science
+maturity: reife
+sources:
+  - https://en.wikipedia.org/wiki/Carbonitriding
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Carbonitrieren
+    description: >-
+      Beim Carbonitrieren wird Stahl im austenitischen Zustand, typischerweise bei etwa 750
+      bis 900 °C, in einer Atmosphäre geglüht, die sowohl Kohlenstoff als auch Stickstoff
+      abgibt, meist einem Aufkohlungsgas mit Ammoniakzusatz. Beide Elemente diffundieren in
+      die Randschicht; anschließendes Abschrecken erzeugt eine harte, verschleißfeste Randzone.
+      Der Stickstoff verbessert die Härtbarkeit, sodass auch unlegierte Stähle mit milderem
+      Abschrecken und geringerem Verzug gehärtet werden können.
+    example: >-
+      Kleine Zahnräder, Bolzen, Buchsen und Massenkleinteile aus unlegiertem oder niedrig
+      legiertem Stahl
+    conditions: >-
+      Stahl mit niedrigem Kohlenstoffgehalt und eine kontrollierte Ofenatmosphäre mit Kohlenstoff-
+      und Stickstoffspendern.
+    limits: >-
+      Die erreichbare Härtetiefe ist geringer als beim Aufkohlen und liegt meist unter etwa
+      einem Millimeter.
+    sideEffects: >-
+      Ein zu hoher Stickstoffgehalt führt zu Restaustenit und Porosität in der Randschicht.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Carbonitriding
+    description: >-
+      In carbonitriding, steel is held in the austenitic state, typically at about 750 to
+      900 °C, in an atmosphere that supplies both carbon and nitrogen, usually a carburising
+      gas with added ammonia. Both elements diffuse into the surface layer; subsequent quenching
+      produces a hard, wear-resistant case. The nitrogen improves hardenability, so even plain
+      carbon steels can be hardened with milder quenching and less distortion.
+    example: >-
+      Small gears, pins, bushings and mass-produced small parts made of plain carbon or low-alloy
+      steel
+    conditions: >-
+      Low-carbon steel and a controlled furnace atmosphere with carbon and nitrogen donors.
+    limits: >-
+      The achievable case depth is smaller than with carburising, usually below about one
+      millimetre.
+    sideEffects: >-
+      Too high a nitrogen content leads to retained austenite and porosity in the case.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

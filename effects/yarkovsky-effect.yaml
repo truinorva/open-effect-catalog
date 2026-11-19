@@ -1,0 +1,65 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: yarkovsky-effect
+kind: effect
+home: move|solid
+functions:
+  - move|solid
+parameters:
+  - change|position
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: nische
+sources:
+  - https://de.wikipedia.org/wiki/Jarkowski-Effekt
+  - https://en.wikipedia.org/wiki/Yarkovsky_effect
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Jarkowski-Effekt
+    description: >-
+      Ein rotierender Körper im Sonnenlicht gibt die aufgenommene Wärme verzögert als Infrarotstrahlung
+      ab, am stärksten auf seiner Nachmittagsseite. Weil abgestrahlte Photonen einen Rückstoß
+      erzeugen, entsteht eine winzige, aber stetige Kraft, die nicht genau von der Sonne weg
+      zeigt. Über Jahrzehnte wird sie messbar, über Jahrmillionen verschiebt sie die Bahnen
+      kleiner Asteroiden erheblich.
+    example: >-
+      Bahnvorhersagen für erdnahe Asteroiden wie Bennu und Apophis, Transport von Meteoriten
+      aus dem Asteroidengürtel zur Erde, Bahnstörungen von Satelliten durch thermische Abstrahlung
+    conditions: >-
+      Rotierender Körper im Sonnenlicht und im Vakuum, mit merklicher Wärmeträgheit.
+    limits: >-
+      Die Kraft ist äußerst klein und wirkt sich nur bei kleinen Körpern und über lange Zeiträume
+      aus.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Yarkovsky effect
+    description: >-
+      A rotating body in sunlight re-emits the absorbed heat as infrared radiation with a
+      delay, most strongly on its afternoon side. Because emitted photons produce recoil,
+      a tiny but steady force arises that does not point exactly away from the sun. Over decades
+      it becomes measurable, and over millions of years it shifts the orbits of small asteroids
+      considerably.
+    example: >-
+      Orbit predictions for near-Earth asteroids such as Bennu and Apophis, delivery of meteorites
+      from the asteroid belt to Earth, orbital perturbations of satellites due to thermal
+      emission
+    conditions: >-
+      Rotating body in sunlight and in vacuum, with appreciable thermal inertia.
+    limits: >-
+      The force is extremely small and matters only for small bodies and over long periods.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

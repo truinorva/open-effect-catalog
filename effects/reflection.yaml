@@ -1,0 +1,74 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: reflection
+kind: effect
+home: orient|field
+functions:
+  - orient|field
+  - keep-temp|solid
+  - measure|solid
+  - heat|liquid
+parameters:
+  - increase|reflectivity
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Reflexion_(Physik)
+  - https://en.wikipedia.org/wiki/Reflection_(physics)
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Reflexion
+    description: >-
+      Trifft eine Welle wie Licht, Schall oder Funkstrahlung auf eine Grenzfläche zwischen
+      zwei Medien mit unterschiedlichem Wellenwiderstand, wird ein Teil von ihr zurückgeworfen.
+      An glatten Flächen gilt Einfallswinkel gleich Ausfallswinkel (gerichtete Reflexion),
+      an rauen Flächen wird die Welle diffus in viele Richtungen verteilt; der reflektierte
+      Anteil hängt von Material, Wellenlänge, Polarisation und Einfallswinkel ab.
+    example: >-
+      Spiegel und Hohlspiegel, Rückspiegel und Periskope, Parabolrinnen in Solarkraftwerken,
+      Rettungsdecken und Thermosflaschen, Echolot und Ultraschallbildgebung, Radar
+    conditions: >-
+      Eine Grenzfläche mit einem Sprung der Brechzahl oder der akustischen Impedanz; für Spiegelbilder
+      Rauheiten, die deutlich kleiner als die Wellenlänge sind.
+    limits: >-
+      Kein realer Spiegel reflektiert vollständig; Silber und Aluminium werfen etwa 90 bis
+      98 % des sichtbaren Lichts zurück, Glas bei senkrechtem Einfall nur etwa 4 % je Fläche.
+    sideEffects: >-
+      Unerwünschte Reflexionen erzeugen Blendung, Geisterbilder in Optiken, Echos und stehende
+      Wellen.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Reflection
+    description: >-
+      When a wave such as light, sound or radio radiation hits an interface between two media
+      with different wave impedance, part of it is thrown back. On smooth surfaces the angle
+      of incidence equals the angle of reflection (specular reflection), on rough surfaces
+      the wave is scattered diffusely in many directions; the reflected fraction depends on
+      material, wavelength, polarisation and angle of incidence.
+    example: >-
+      Mirrors and concave mirrors, rear-view mirrors and periscopes, parabolic troughs in
+      solar power plants, emergency blankets and vacuum flasks, echo sounders and ultrasound
+      imaging, radar
+    conditions: >-
+      An interface with a jump in refractive index or acoustic impedance; for mirror images,
+      roughness much smaller than the wavelength.
+    limits: >-
+      No real mirror reflects completely; silver and aluminium reflect about 90 to 98 % of
+      visible light, glass at normal incidence only about 4 % per surface.
+    sideEffects: >-
+      Unwanted reflections cause glare, ghost images in optics, echoes and standing waves.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

@@ -1,0 +1,65 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: plateau-rayleigh-instability
+kind: effect
+home: disassemble|liquid
+functions:
+  - disassemble|liquid
+parameters:
+  - change|shape
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Plateau-Rayleigh-Instabilit%C3%A4t
+  - https://en.wikipedia.org/wiki/Plateau%E2%80%93Rayleigh_instability
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Plateau-Rayleigh-Instabilität
+    description: >-
+      Ein dünner Flüssigkeitsstrahl oder -faden ist nicht stabil: Durch die Oberflächenspannung
+      wachsen kleine Einschnürungen an, deren Wellenlänge größer als der Umfang des Strahls
+      ist, bis er in einzelne Tropfen zerfällt. Die Triebkraft ist die Verringerung der Oberfläche,
+      denn eine Tropfenreihe hat bei gleichem Volumen weniger Oberfläche als ein Zylinder.
+    example: >-
+      Zerfall des Wasserstrahls aus dem Wasserhahn, Tintenstrahldrucker mit kontinuierlichem
+      Strahl, Tropfenperlen auf Spinnfäden, Granulieren von Schmelzen, Tropfengeneratoren
+      in der Mikrofluidik
+    conditions: >-
+      Eine Flüssigkeit mit Oberflächenspannung in Form eines Strahls oder Fadens, der deutlich
+      länger als sein Umfang ist.
+    limits: >-
+      Hohe Viskosität verlangsamt den Zerfall, und Viskoelastizität kann ihn zu Perlschnur-Strukturen
+      verzögern.
+    sideEffects: Zwischen den Haupttropfen entstehen oft kleinere Satellitentropfen.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Plateau–Rayleigh instability
+    description: >-
+      A thin jet or thread of liquid is unstable: surface tension makes small necks grow whose
+      wavelength exceeds the circumference of the jet, until it breaks up into separate drops.
+      The driving force is the reduction of surface area, since a row of drops has less surface
+      than a cylinder of the same volume.
+    example: >-
+      Break-up of a stream from a tap, continuous inkjet printers, droplets beading on spider
+      silk, melt granulation, droplet generators in microfluidics
+    conditions: >-
+      A liquid with surface tension in the form of a jet or thread much longer than its circumference.
+    limits: >-
+      High viscosity slows the break-up, and viscoelasticity can delay it into beads-on-a-string
+      structures.
+    sideEffects: Smaller satellite droplets often form between the main drops.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

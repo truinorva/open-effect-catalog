@@ -1,0 +1,73 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: radiant-heating
+kind: effect
+home: heat|solid
+functions:
+  - heat|solid
+  - remove|solid
+parameters:
+  - increase|temperature
+  - decrease|humidity
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: verbreitet
+sources:
+  - https://de.wikipedia.org/wiki/Strahlungsheizung
+  - https://en.wikipedia.org/wiki/Radiant_heating_and_cooling
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Strahlungserwärmung (Licht und Infrarot)
+    description: >-
+      Licht und Infrarotstrahlung transportieren Energie ohne Trägermedium und werden erst
+      dort zu Wärme, wo ein Körper sie absorbiert. Ein Strahler wie eine Halogenlampe oder
+      ein Heizstab kann so Oberflächen gezielt erwärmen, ohne die Luft dazwischen nennenswert
+      aufzuheizen. Wie gut das gelingt, hängt davon ab, wie stark das Material die abgegebenen
+      Wellenlängen absorbiert.
+    example: >-
+      Infrarotstrahler zum Trocknen von Lacken und Druckfarben, Heizstrahler auf Terrassen,
+      Halogenkochfelder und Lichtwellenöfen, Wärmelampen für Tiere, Infrarotkabinen, Thermoformen
+      von Kunststoffplatten
+    conditions: >-
+      Sichtverbindung zwischen Strahler und Werkstück und ein Material, das die abgegebene
+      Wellenlänge gut absorbiert.
+    limits: >-
+      Abgeschattete Bereiche und stark reflektierende Flächen werden kaum erwärmt; dicke Teile
+      erwärmen sich vor allem an der Oberfläche.
+    sideEffects: >-
+      Bei zu hoher Bestrahlungsstärke können Oberflächen verbrennen oder sich verfärben, während
+      das Innere noch kalt ist.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Radiant heating (light and infrared)
+    description: >-
+      Light and infrared radiation carry energy without a medium and turn into heat only where
+      a body absorbs them. An emitter such as a halogen lamp or a heating rod can therefore
+      heat surfaces selectively without noticeably warming the air in between. How well this
+      works depends on how strongly the material absorbs the wavelengths emitted.
+    example: >-
+      Infrared emitters for drying paints and printing inks, patio heaters, halogen hobs and
+      lightwave ovens, heat lamps for animals, infrared cabins, thermoforming of plastic sheets
+    conditions: >-
+      Line of sight between emitter and workpiece and a material that absorbs the emitted
+      wavelength well.
+    limits: >-
+      Shaded areas and highly reflective surfaces are hardly heated; thick parts heat up mainly
+      at the surface.
+    sideEffects: >-
+      At excessive irradiance, surfaces can burn or discolour while the interior is still
+      cold.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

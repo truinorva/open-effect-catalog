@@ -1,0 +1,70 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: coacervation
+kind: effect
+home: separate|liquid
+functions:
+  - separate|liquid
+  - preserve|liquid
+  - produce|particles
+parameters:
+  - increase|concentration
+uses: []
+domain:
+  id: Chemie
+  de: Chemie
+  en: Chemistry
+maturity: nische
+sources:
+  - https://en.wikipedia.org/wiki/Coacervate
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Koazervation
+    description: >-
+      In Lösungen von Polymeren oder Kolloiden kann sich bei einer Änderung von pH-Wert, Salzgehalt
+      oder Temperatur eine eigene flüssige Phase abscheiden, die sehr reich an gelöstem Polymer
+      ist: das Koazervat. Bei der komplexen Koazervation ziehen sich zwei entgegengesetzt
+      geladene Polymere wie Gelatine und Gummi arabicum an und bilden gemeinsam dichte Tröpfchen.
+      Diese lagern sich bevorzugt um dispergierte Öltropfen oder Feststoffteilchen an und
+      bilden nach dem Verfestigen eine Kapselhülle.
+    example: >-
+      Mikroverkapselung von Aromen, Duftstoffen und Ölen, Durchschreibepapier ohne Kohlepapier,
+      Proteinreinigung, membranlose Kompartimente in Zellen
+    conditions: >-
+      Eine passende Polymerkonzentration sowie pH-Wert, Salzgehalt und Temperatur in einem
+      engen Bereich.
+    limits: >-
+      Ohne nachträgliche Vernetzung sind Koazervate empfindlich gegen Änderungen von pH-Wert,
+      Salzgehalt und Temperatur und lösen sich wieder auf.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Coacervation
+    description: >-
+      In solutions of polymers or colloids, a change in pH, salt content or temperature can
+      cause a separate liquid phase to separate out that is very rich in dissolved polymer:
+      the coacervate. In complex coacervation, two oppositely charged polymers such as gelatin
+      and gum arabic attract each other and together form dense droplets. These droplets readily
+      deposit around dispersed oil droplets or solid particles and, once solidified, form
+      a capsule shell.
+    example: >-
+      Microencapsulation of flavours, fragrances and oils, carbonless copy paper, protein
+      purification, membraneless compartments in cells
+    conditions: >-
+      A suitable polymer concentration as well as pH, salt content and temperature within
+      a narrow range.
+    limits: >-
+      Without subsequent cross-linking, coacervates are sensitive to changes in pH, salt content
+      and temperature and dissolve again.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

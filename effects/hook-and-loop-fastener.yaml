@@ -1,0 +1,63 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: hook-and-loop-fastener
+kind: application
+home: join|solid
+functions:
+  - join|solid
+  - hold|solid
+parameters: []
+uses: []
+domain:
+  id: ''
+  de: ''
+  en: ''
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Klettverschluss
+  - https://en.wikipedia.org/wiki/Velcro
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Klettverschluss
+    description: >-
+      Ein Band trägt viele kleine Häkchen, das Gegenstück weiche Schlaufen. Drückt man beide
+      zusammen, verhaken sich die Häkchen in den Schlaufen; die Verbindung hält große Scherkräfte,
+      weil sich die Last auf sehr viele Haken verteilt, lässt sich aber durch Abschälen leicht
+      lösen, weil dabei nur wenige Haken gleichzeitig belastet sind. Vorbild waren die Früchte
+      der Klette, die mit hakenförmigen Hüllblättern im Fell von Tieren hängen bleiben.
+    example: >-
+      Schuhe und Bekleidung, Blutdruckmanschetten, Kabelbinder, Befestigung von Schleif- und
+      Polierscheiben, Ausrüstung in der Raumfahrt
+    conditions: ''
+    limits: >-
+      Fusseln und Haare setzen die Häkchen zu, und die Haltekraft nimmt mit der Zahl der Öffnungen
+      ab.
+    sideEffects: Die Häkchen verfangen sich in Textilien, und das Öffnen ist laut.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Hook-and-loop fastener
+    description: >-
+      One strip carries many small hooks, the other soft loops. When pressed together, the
+      hooks catch in the loops; the joint withstands large shear forces because the load is
+      shared by very many hooks, yet it is easy to peel apart because only a few hooks are
+      loaded at a time. The model was the burdock burr, whose hooked bracts catch in animal
+      fur.
+    example: >-
+      Shoes and clothing, blood pressure cuffs, cable ties, attaching sanding and polishing
+      discs, equipment in spaceflight
+    conditions: ''
+    limits: >-
+      Lint and hair clog the hooks, and the holding force decreases with the number of opening
+      cycles.
+    sideEffects: The hooks snag on fabrics, and opening is noisy.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

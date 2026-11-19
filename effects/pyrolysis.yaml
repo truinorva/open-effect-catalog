@@ -1,0 +1,72 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: pyrolysis
+kind: effect
+home: destroy|solid
+functions:
+  - destroy|solid
+  - produce|solid
+  - produce|liquid
+  - produce|gas
+parameters: []
+uses: []
+domain:
+  id: Chemie
+  de: Chemie
+  en: Chemistry
+maturity: verbreitet
+sources:
+  - https://de.wikipedia.org/wiki/Pyrolyse
+  - https://en.wikipedia.org/wiki/Pyrolysis
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Pyrolyse
+    description: >-
+      Bei der Pyrolyse werden organische Stoffe unter Ausschluss von Sauerstoff stark erhitzt,
+      sodass ihre großen Moleküle thermisch in kleinere zerbrechen, ohne zu verbrennen. Es
+      entstehen ein brennbares Gasgemisch, flüssige Öle und Teere sowie ein kohlenstoffreicher
+      fester Rückstand; Temperatur, Aufheizgeschwindigkeit und Verweilzeit bestimmen die Anteile
+      der Produkte.
+    example: >-
+      Herstellung von Holzkohle und Pflanzenkohle, Verkokung von Steinkohle, Steamcracken
+      von Naphtha zu Ethen, Pyrolyseöl aus Altreifen und Kunststoffabfällen, Herstellung von
+      Kohlenstofffasern
+    conditions: >-
+      Temperaturen von typischerweise einigen hundert bis über tausend Grad Celsius in weitgehend
+      sauerstofffreier Atmosphäre.
+    limits: >-
+      Anorganische Bestandteile werden nicht zersetzt und bleiben im Rückstand oder in der
+      Asche.
+    sideEffects: >-
+      Die Produkte können giftige Stoffe wie polyzyklische aromatische Kohlenwasserstoffe
+      enthalten, und die Gase sind brennbar und teils explosionsfähig.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Pyrolysis
+    description: >-
+      In pyrolysis, organic materials are heated strongly in the absence of oxygen, so that
+      their large molecules break thermally into smaller ones without burning. The result
+      is a combustible gas mixture, liquid oils and tars, and a carbon-rich solid residue;
+      temperature, heating rate and residence time determine the proportions of the products.
+    example: >-
+      Charcoal and biochar production, coking of hard coal, steam cracking of naphtha to ethylene,
+      pyrolysis oil from waste tyres and plastics, production of carbon fibres
+    conditions: >-
+      Temperatures typically from a few hundred to over a thousand degrees Celsius, in a largely
+      oxygen-free atmosphere.
+    limits: >-
+      Inorganic components are not decomposed and remain in the residue or ash.
+    sideEffects: >-
+      The products may contain toxic substances such as polycyclic aromatic hydrocarbons,
+      and the gases are flammable and can be explosive.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

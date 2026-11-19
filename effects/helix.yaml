@@ -1,0 +1,63 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: helix
+kind: effect
+home: move|solid
+functions:
+  - move|solid
+  - move|particles
+  - stop|solid
+parameters:
+  - increase|force
+uses: []
+domain:
+  id: Geometrie
+  de: Geometrie
+  en: Geometry
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Helix
+  - https://en.wikipedia.org/wiki/Helix
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Helix (Schraubenlinie)
+    description: >-
+      Eine Helix windet sich mit gleichbleibender Steigung um eine Achse. Dreht man eine schraubenförmige
+      Fläche oder Windung, wandert jeder Punkt darauf entlang der Achse weiter; so wird Drehung
+      in Längsbewegung umgesetzt, wobei eine kleine Umfangskraft eine große Axialkraft erzeugt,
+      und eine gewendelte Feder speichert elastische Energie.
+    example: >-
+      Schraubengewinde, Schneckenförderer, Schraubenfedern, schrägverzahnte Zahnräder, Wendeltreppen,
+      Wendelantennen, DNA-Doppelhelix
+    conditions: ''
+    limits: >-
+      Bei kleinem Steigungswinkel ist ein Gewinde selbsthemmend und lässt sich nicht durch
+      eine Axialkraft zurückdrehen.
+    sideEffects: Die Gewindereibung zehrt einen großen Teil der eingeleiteten Arbeit auf.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Helix
+    description: >-
+      A helix winds around an axis at a constant pitch. Turning a helical surface or coil
+      moves every point on it along the axis; this converts rotation into linear motion, with
+      a small circumferential force producing a large axial force, and a coiled spring stores
+      elastic energy.
+    example: >-
+      Screw threads, screw conveyors, coil springs, helical gears, spiral staircases, helical
+      antennas, DNA double helix
+    conditions: ''
+    limits: >-
+      At a small helix angle a thread is self-locking and cannot be turned back by an axial
+      force.
+    sideEffects: Thread friction consumes a large part of the work put in.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

@@ -1,0 +1,63 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: fresnel-lens
+kind: application
+home: move|field
+functions:
+  - move|field
+  - heat|solid
+parameters:
+  - increase|brightness
+  - decrease|mass
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Fresnel-Linse
+  - https://en.wikipedia.org/wiki/Fresnel_lens
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Fresnel-Linse
+    description: >-
+      Eine Fresnel-Linse zerlegt die gekrümmte Fläche einer gewöhnlichen Linse in viele schmale,
+      konzentrische Ringstufen, die jeweils dieselbe Neigung wie die ursprüngliche Fläche
+      haben. Weil die Brechung nur an der Oberfläche stattfindet, wirkt sie fast wie eine
+      dicke Linse, ist aber flach, leicht und materialsparend.
+    example: >-
+      Leuchttürme, Overheadprojektoren, Fahrzeugleuchten, Sonnenkonzentratoren, Linsen von
+      Bewegungsmeldern, Lupenfolien
+    conditions: ''
+    limits: >-
+      Die Stufen streuen Licht und erzeugen Ringartefakte, sodass die Abbildungsqualität unter
+      der einer klassischen Linse bleibt.
+    sideEffects: Gebündeltes Sonnenlicht kann im Brennpunkt Brände auslösen.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Fresnel lens
+    description: >-
+      A Fresnel lens divides the curved surface of an ordinary lens into many narrow concentric
+      ring steps, each with the same slope as the original surface. Since refraction only
+      happens at the surface, it acts almost like a thick lens but is flat, light and uses
+      little material.
+    example: >-
+      Lighthouses, overhead projectors, vehicle lamps, solar concentrators, motion detector
+      lenses, magnifying sheets
+    conditions: ''
+    limits: >-
+      The steps scatter light and create ring artefacts, so image quality stays below that
+      of a classic lens.
+    sideEffects: Concentrated sunlight can start fires at the focal point.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

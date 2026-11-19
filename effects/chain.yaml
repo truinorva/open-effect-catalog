@@ -1,0 +1,62 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: chain
+kind: application
+home: move|solid
+functions:
+  - move|solid
+  - hold|solid
+  - rotate|solid
+parameters: []
+uses: []
+domain:
+  id: ''
+  de: ''
+  en: ''
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Kette
+  - https://en.wikipedia.org/wiki/Chain
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Kette
+    description: >-
+      Eine Kette besteht aus gelenkig miteinander verbundenen Gliedern. Sie überträgt hohe
+      Zugkräfte, ist dabei aber in einer Richtung biegsam und lässt sich daher um Räder, Rollen
+      und Kanten führen; Ketten, die formschlüssig in Kettenräder greifen, übertragen Bewegung
+      ohne Schlupf. Druckkräfte kann sie dagegen nicht aufnehmen.
+    example: >-
+      Fahrradkette, Steuerkette im Motor, Kettenförderer, Ankerkette, Kettenzug, Schneeketten,
+      Kettensäge
+    conditions: Zugbelastung; formschlüssige Kettentriebe brauchen passende Kettenräder.
+    limits: >-
+      Verschleiß in den Gelenken längt die Kette, sodass sie nicht mehr richtig in die Kettenräder
+      greift; bei hohen Geschwindigkeiten verursacht der Polygoneffekt Schwingungen.
+    sideEffects: Geräusche und Schmierbedarf an den Gelenken.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Chain
+    description: >-
+      A chain consists of links connected to each other by joints. It transmits high tensile
+      forces but is flexible in one direction, so it can be guided around wheels, pulleys
+      and edges; chains that mesh positively with sprockets transmit motion without slip.
+      It cannot take compressive forces.
+    example: >-
+      Bicycle chain, timing chain in engines, chain conveyors, anchor chain, chain hoist,
+      snow chains, chainsaw
+    conditions: Tensile loading; positive chain drives need matching sprockets.
+    limits: >-
+      Joint wear elongates the chain so that it no longer meshes properly with the sprockets;
+      at high speeds the polygon effect causes vibrations.
+    sideEffects: Noise and the need to lubricate the joints.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

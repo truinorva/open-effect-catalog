@@ -1,0 +1,76 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: shock-wave
+kind: effect
+home: compress|gas
+functions:
+  - compress|gas
+  - heat|gas
+  - disassemble|solid
+  - deform|solid
+parameters:
+  - increase|pressure
+  - increase|temperature
+  - increase|density
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Sto%C3%9Fwelle
+  - https://en.wikipedia.org/wiki/Shock_wave
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Stoßwelle
+    description: >-
+      Eine Stoßwelle ist eine sehr dünne Front, an der Druck, Dichte und Temperatur eines
+      Mediums sprunghaft ansteigen; sie läuft schneller als der Schall durch das ungestörte
+      Medium. Sie entsteht, wenn sich ein Körper mit Überschallgeschwindigkeit bewegt oder
+      schlagartig viel Energie frei wird, etwa bei einer Explosion, weil die Störungen dann
+      nicht mehr vorauslaufen und sich ausgleichen können.
+    example: >-
+      Überschallknall, Stoßwellen-Lithotripsie gegen Nierensteine, Explosionsumformen von
+      Blechen, Stoßwellenrohr für Hochtemperatur-Reaktionsuntersuchungen, Verdichtungsstöße
+      im Einlauf von Überschall-Triebwerken
+    conditions: >-
+      Bewegung schneller als die Schallgeschwindigkeit des Mediums oder schlagartige Energiefreisetzung.
+    limits: >-
+      Mit wachsender Entfernung von der Quelle wird die Stoßwelle schwächer und geht schließlich
+      in eine gewöhnliche Schallwelle über.
+    sideEffects: >-
+      Der Durchgang durch den Stoß ist verlustbehaftet, was beim Überschallflug Wellenwiderstand
+      verursacht; starke Stöße können Bauwerke und Gewebe schädigen.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Shock wave
+    description: >-
+      A shock wave is a very thin front across which the pressure, density and temperature
+      of a medium jump abruptly; it travels faster than sound through the undisturbed medium.
+      It forms when a body moves at supersonic speed or a large amount of energy is released
+      suddenly, for example in an explosion, because the disturbances can no longer run ahead
+      and even out.
+    example: >-
+      Sonic boom, shock wave lithotripsy of kidney stones, explosive forming of sheet metal,
+      shock tubes for high-temperature reaction studies, compression shocks in supersonic
+      engine inlets
+    conditions: >-
+      Motion faster than the speed of sound in the medium, or sudden release of energy.
+    limits: >-
+      With growing distance from the source the shock weakens and finally turns into an ordinary
+      sound wave.
+    sideEffects: >-
+      Passage through the shock is lossy, which causes wave drag in supersonic flight; strong
+      shocks can damage structures and tissue.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

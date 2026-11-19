@@ -1,0 +1,63 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: barlows-wheel
+kind: application
+home: rotate|solid
+functions:
+  - rotate|solid
+parameters: []
+uses:
+  - magnetic-field
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: ''
+sources:
+  - https://de.wikipedia.org/wiki/Barlow-Rad
+  - https://en.wikipedia.org/wiki/Barlow%27s_wheel
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Barlow-Rad
+    description: >-
+      Ein sternförmiges Metallrad taucht mit seinen Zacken in eine Quecksilberrinne und steht
+      zwischen den Polen eines Hufeisenmagneten. Fließt Strom von der Achse durch die jeweils
+      eintauchende Zacke ins Quecksilber, wirkt auf ihn im Magnetfeld eine Kraft quer zu Strom-
+      und Feldrichtung, und das Rad beginnt sich zu drehen; Peter Barlow stellte diesen frühen
+      Elektromotor 1822 vor.
+    example: >-
+      Historisches Demonstrationsgerät für die Kraft auf Ströme im Magnetfeld, Vorläufer der
+      Unipolarmaschine
+    conditions: Gleichstrom und ein Magnetfeld senkrecht zur Radebene.
+    limits: >-
+      Die Leistung ist sehr gering, und das giftige Quecksilber schließt heute einen praktischen
+      Einsatz aus.
+    sideEffects: Quecksilberdämpfe sind gesundheitsschädlich.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Barlow's wheel
+    description: >-
+      A star-shaped metal wheel dips its points into a trough of mercury and sits between
+      the poles of a horseshoe magnet. When current flows from the axle through the immersed
+      point into the mercury, the magnetic field exerts a force on it at right angles to current
+      and field, and the wheel starts to turn; Peter Barlow presented this early electric
+      motor in 1822.
+    example: >-
+      Historical demonstration of the force on currents in a magnetic field, forerunner of
+      the homopolar motor
+    conditions: >-
+      Direct current and a magnetic field perpendicular to the plane of the wheel.
+    limits: >-
+      Power output is very low, and the toxic mercury rules out practical use today.
+    sideEffects: Mercury vapour is harmful to health.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

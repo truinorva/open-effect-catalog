@@ -1,0 +1,72 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: antifoam
+kind: application
+home: remove|liquid
+functions:
+  - remove|liquid
+parameters:
+  - decrease|volume
+  - increase|density
+uses:
+  - surface-tension
+domain:
+  id: Chemie
+  de: Chemie
+  en: Chemistry
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Entsch%C3%A4umer
+  - https://en.wikipedia.org/wiki/Defoamer
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Entschäumer
+    description: >-
+      Entschäumer sind Zusätze mit niedriger Oberflächenspannung, die sich in der schäumenden
+      Flüssigkeit kaum lösen, etwa Silikonöle, Mineralöle oder feine wasserabweisende Partikel.
+      Sie dringen in die Flüssigkeitslamellen zwischen den Blasen ein, breiten sich dort aus
+      und verdrängen die schaumstabilisierenden Tenside, sodass die Lamellen dünner werden
+      und reißen.
+    example: >-
+      Fermentation und Bioreaktoren, Abwasserreinigung, Papierherstellung, Lebensmittelverarbeitung,
+      Waschmittel für Waschmaschinen, Farben und Lacke
+    conditions: >-
+      Der Entschäumer muss fein verteilt, aber in der Flüssigkeit unlöslich sein und eine
+      geringere Oberflächenspannung haben als diese.
+    limits: >-
+      Die Wirkung lässt mit der Zeit nach, weil sich die Tröpfchen verteilen oder verbraucht
+      werden, und eine Überdosierung kann selbst Störungen verursachen.
+    sideEffects: >-
+      Silikonhaltige Entschäumer können beim späteren Lackieren oder Beschichten Benetzungsstörungen
+      und Krater verursachen.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Antifoam (defoamer)
+    description: >-
+      Defoamers are additives with low surface tension that hardly dissolve in the foaming
+      liquid, such as silicone oils, mineral oils or fine water-repellent particles. They
+      enter the liquid films between the bubbles, spread there and displace the foam-stabilising
+      surfactants, so that the films thin and burst.
+    example: >-
+      Fermentation and bioreactors, wastewater treatment, papermaking, food processing, machine
+      washing detergents, paints and coatings
+    conditions: >-
+      The defoamer must be finely dispersed yet insoluble in the liquid and have a lower surface
+      tension than it.
+    limits: >-
+      The effect wears off over time as the droplets spread out or are used up, and overdosing
+      can itself cause problems.
+    sideEffects: >-
+      Silicone-based defoamers can cause wetting defects and craters in later painting or
+      coating.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

@@ -1,0 +1,68 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: valve
+kind: application
+home: stop|liquid
+functions:
+  - stop|liquid
+  - stop|gas
+  - hold|liquid
+  - hold|gas
+parameters:
+  - stabilise|pressure
+  - decrease|pressure
+  - stabilise|speed
+uses: []
+domain:
+  id: ''
+  de: ''
+  en: ''
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Ventil
+  - https://en.wikipedia.org/wiki/Valve
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Ventil
+    description: >-
+      Ein Ventil öffnet, schließt oder verengt einen Strömungsweg, indem ein bewegliches Schließteil
+      wie Kegel, Kugel, Klappe oder Membran gegen einen Sitz bewegt wird. Je nach Bauart wird
+      es von Hand, durch einen Antrieb oder selbsttätig durch den Druck des Mediums betätigt,
+      etwa als Rückschlag-, Sicherheits- oder Druckminderventil. So lassen sich Durchfluss
+      und Druck von Flüssigkeiten und Gasen sperren, regeln oder begrenzen.
+    example: >-
+      Wasserhahn, Regelventile in Prozessanlagen, Rückschlagventile in Pumpen, Sicherheitsventile
+      an Dampfkesseln, Motorventile, Herzklappen als biologisches Vorbild
+    conditions: ''
+    limits: ''
+    sideEffects: >-
+      Druckverlust auch im geöffneten Zustand; beim Drosseln von Flüssigkeiten kann Kavitation
+      auftreten, und schnelles Schließen erzeugt Druckstöße.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Valve
+    description: >-
+      A valve opens, closes or restricts a flow path by moving a closing element such as a
+      plug, ball, flap or diaphragm against a seat. Depending on its design it is operated
+      by hand, by an actuator or automatically by the pressure of the medium, for example
+      as a check, safety or pressure-reducing valve. Flow and pressure of liquids and gases
+      can thus be shut off, controlled or limited.
+    example: >-
+      Water tap, control valves in process plants, check valves in pumps, safety valves on
+      steam boilers, engine valves, heart valves as a biological model
+    conditions: ''
+    limits: ''
+    sideEffects: >-
+      Pressure loss even when open; throttling liquids can cause cavitation, and closing quickly
+      produces pressure surges.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

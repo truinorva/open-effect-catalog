@@ -1,0 +1,62 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: soliton
+kind: effect
+home: stabilise|field
+functions:
+  - stabilise|field
+parameters:
+  - stabilise|shape
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: nische
+sources:
+  - https://de.wikipedia.org/wiki/Soliton
+  - https://en.wikipedia.org/wiki/Soliton
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Soliton
+    description: >-
+      Ein Soliton ist ein einzelner Wellenberg oder Impuls, der sich über große Strecken ausbreitet,
+      ohne seine Form zu verändern. Gewöhnlich läuft ein Wellenpaket durch Dispersion auseinander;
+      in nichtlinearen Medien kann ein von der Amplitude abhängiger Effekt dieses Auseinanderlaufen
+      genau ausgleichen. Zwei Solitonen können sich sogar durchdringen und laufen danach mit
+      unveränderter Form weiter.
+    example: >-
+      Einzelwellen in Kanälen, Solitonen-Impulse in Glasfasern, modengekoppelte Femtosekundenlaser,
+      interne Wellen im Meer
+    conditions: Nichtlineares, dispersives Medium mit passender Impulsform und -stärke.
+    limits: >-
+      Dämpfung im Medium schwächt das Soliton; ohne Nachverstärkung zerfällt es auf langen
+      Strecken.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Soliton
+    description: >-
+      A soliton is a single wave crest or pulse that travels over long distances without changing
+      its shape. Normally a wave packet spreads out through dispersion; in nonlinear media
+      an amplitude-dependent effect can exactly compensate this spreading. Two solitons can
+      even pass through each other and continue afterwards with their shape unchanged.
+    example: >-
+      Solitary waves in canals, soliton pulses in optical fibres, mode-locked femtosecond
+      lasers, internal waves in the ocean
+    conditions: Nonlinear, dispersive medium with suitable pulse shape and strength.
+    limits: >-
+      Losses in the medium weaken the soliton; without re-amplification it decays over long
+      distances.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

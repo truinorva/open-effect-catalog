@@ -1,0 +1,70 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: heat-exchanger
+kind: application
+home: heat|liquid
+functions:
+  - heat|liquid
+  - cool|liquid
+  - heat|gas
+  - cool|gas
+  - change-phase|liquid
+parameters:
+  - increase|temperature
+  - decrease|temperature
+uses: []
+domain:
+  id: Verfahrenstechnik
+  de: Verfahrenstechnik
+  en: Process engineering
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/W%C3%A4rmetauscher
+  - https://en.wikipedia.org/wiki/Heat_exchanger
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Wärmeübertrager (Wärmetauscher)
+    description: >-
+      In einem Wärmeübertrager strömen zwei Medien unterschiedlicher Temperatur, meist durch
+      eine Wand getrennt, aneinander vorbei, und Wärme fließt vom wärmeren zum kälteren Medium.
+      Große Austauschflächen, dünne, gut leitende Wände und Gegenstromführung sorgen dafür,
+      dass möglichst viel Wärme übertragen wird.
+    example: >-
+      Autokühler, Plattenwärmeübertrager in Heizungen und Molkereien, Rohrbündelapparate in
+      der Chemie, Wärmerückgewinnung in Lüftungsanlagen, Verdampfer und Verflüssiger in Kälteanlagen
+    conditions: Ein Temperaturunterschied zwischen den Medien.
+    limits: >-
+      Ein Medium kann höchstens die Eintrittstemperatur des anderen erreichen; je kleiner
+      die Temperaturdifferenz, desto größer muss die Fläche sein.
+    sideEffects: >-
+      Ablagerungen (Fouling) verschlechtern den Wärmeübergang, und die Strömung verursacht
+      Druckverlust.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Heat exchanger
+    description: >-
+      In a heat exchanger, two media at different temperatures flow past each other, usually
+      separated by a wall, and heat flows from the warmer to the colder one. Large exchange
+      surfaces, thin, well-conducting walls and counterflow arrangement make sure that as
+      much heat as possible is transferred.
+    example: >-
+      Car radiators, plate heat exchangers in heating systems and dairies, shell-and-tube
+      units in chemical plants, heat recovery in ventilation systems, evaporators and condensers
+      in refrigeration
+    conditions: A temperature difference between the media.
+    limits: >-
+      One medium can at most reach the inlet temperature of the other; the smaller the temperature
+      difference, the larger the surface must be.
+    sideEffects: >-
+      Deposits (fouling) impair heat transfer, and the flow causes pressure loss.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

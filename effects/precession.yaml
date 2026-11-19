@@ -1,0 +1,71 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: precession
+kind: effect
+home: rotate|solid
+functions:
+  - rotate|solid
+  - orient|solid
+  - measure|field
+parameters:
+  - change|orientation
+  - measure|orientation
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Pr%C3%A4zession
+  - https://en.wikipedia.org/wiki/Precession
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Präzession
+    description: >-
+      Wirkt auf einen rotierenden Körper ein Drehmoment quer zu seiner Drehachse, kippt er
+      nicht einfach um, sondern seine Drehachse wandert langsam auf einem Kegelmantel herum.
+      Ursache ist, dass das Drehmoment den Drehimpuls in seiner Richtung ändert und nicht
+      in seinem Betrag; dasselbe gilt für die magnetischen Momente von Atomkernen und Elektronen
+      im Magnetfeld (Larmor-Präzession).
+    example: >-
+      Kreisel und Fahrradräder, Kreiselkompass, Präzession der Erdachse, Protonen-Präzessionsmagnetometer,
+      Kernspinresonanz und Magnetresonanztomographie
+    conditions: >-
+      Ein schnell rotierender Körper oder ein Teilchen mit Drehimpuls und ein äußeres Drehmoment.
+    limits: >-
+      Die Präzession ist umso langsamer, je größer der Drehimpuls ist; bei zu langsamer Rotation
+      geht sie in ein Umkippen über.
+    sideEffects: >-
+      Eine überlagerte Nutation lässt die Achse zusätzlich nicken, und Kreiselmomente belasten
+      die Lager.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Precession
+    description: >-
+      When a torque acts on a spinning body at right angles to its axis of rotation, the body
+      does not simply topple; instead its axis slowly sweeps around a cone. The reason is
+      that the torque changes the direction of the angular momentum, not its magnitude; the
+      same applies to the magnetic moments of nuclei and electrons in a magnetic field (Larmor
+      precession).
+    example: >-
+      Spinning tops and bicycle wheels, gyrocompass, precession of the Earth's axis, proton
+      precession magnetometer, nuclear magnetic resonance and MRI
+    conditions: >-
+      A fast-spinning body or a particle carrying angular momentum, and an external torque.
+    limits: >-
+      Precession is slower the larger the angular momentum; if the spin is too slow it turns
+      into toppling.
+    sideEffects: >-
+      Superimposed nutation makes the axis nod as well, and gyroscopic moments load the bearings.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

@@ -1,0 +1,71 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: viscometer
+kind: application
+home: measure|liquid
+functions:
+  - measure|liquid
+  - measure|gas
+parameters:
+  - measure|viscosity
+uses:
+  - viscosity
+domain:
+  id: Rheologie
+  de: Rheologie
+  en: Rheology
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Viskosimeter
+  - https://en.wikipedia.org/wiki/Viscometer
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Viskosimeter
+    description: >-
+      Ein Viskosimeter bestimmt die Zähigkeit eines Fluids aus einer Bewegung, deren Geschwindigkeit
+      oder Widerstand von ihr abhängt. Je nach Bauart misst man die Fallzeit einer Kugel (Kugelfallviskosimeter),
+      die Steigzeit einer Luftblase (Blasenviskosimeter), die Durchlaufzeit durch eine Kapillare
+      (U-Rohr- bzw. Kapillarviskosimeter), das Drehmoment an einem rotierenden Körper (Rotationsviskosimeter)
+      oder die Dämpfung eines schwingenden Elements (Schwingungsviskosimeter).
+    example: >-
+      Qualitätskontrolle von Motorölen, Lacken und Lebensmitteln, Ubbelohde-Viskosimeter im
+      Labor, Höppler-Kugelfallviskosimeter, Inline-Messung in Prozessleitungen
+    conditions: >-
+      Eine bekannte, konstante Temperatur, da die Viskosität stark von ihr abhängt; für die
+      einfachen Bauarten newtonsches Fließverhalten.
+    limits: >-
+      Kapillar-, Kugelfall- und Blasenviskosimeter liefern bei nicht-newtonschen Flüssigkeiten
+      nur einen Wert bei unbestimmter Schergeschwindigkeit; dafür braucht man Rotationsviskosimeter
+      mit definierter Scherung.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Viscometer
+    description: >-
+      A viscometer determines the viscosity of a fluid from a motion whose speed or resistance
+      depends on it. Depending on the design, it measures the fall time of a sphere (falling-sphere
+      viscometer), the rise time of an air bubble (bubble viscometer), the flow time through
+      a capillary (U-tube or capillary viscometer), the torque on a rotating body (rotational
+      viscometer) or the damping of a vibrating element (vibrational viscometer).
+    example: >-
+      Quality control of engine oils, paints and foods, Ubbelohde viscometer in the laboratory,
+      Höppler falling-ball viscometer, in-line measurement in process pipes
+    conditions: >-
+      A known, constant temperature, as viscosity depends strongly on it; Newtonian flow behaviour
+      for the simple designs.
+    limits: >-
+      For non-Newtonian liquids, capillary, falling-sphere and bubble viscometers give only
+      a single value at an undefined shear rate; rotational viscometers with defined shear
+      are needed instead.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

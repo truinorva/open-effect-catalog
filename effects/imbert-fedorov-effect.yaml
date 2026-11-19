@@ -1,0 +1,62 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: imbert-fedorov-effect
+kind: effect
+home: move|field
+functions:
+  - move|field
+parameters:
+  - change|position
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: nische
+sources:
+  - https://de.wikipedia.org/wiki/Imbert-Fedorov-Effekt
+  - https://en.wikipedia.org/wiki/Imbert%E2%80%93Fedorov_effect
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Imbert-Fedorov-Effekt
+    description: >-
+      Wird ein zirkular oder elliptisch polarisierter Lichtstrahl reflektiert oder gebrochen,
+      verschiebt er sich geringfügig quer zur Einfallsebene, und die Richtung der Verschiebung
+      hängt vom Drehsinn der Polarisation ab. Der Effekt ist eine Form des Spin-Hall-Effekts
+      des Lichts und folgt aus der Erhaltung des Gesamtdrehimpulses des Strahls an der Grenzfläche.
+    example: >-
+      Grundlagenforschung zur Spinoptik, Präzisionsmessungen mit der Methode der schwachen
+      Messung
+    conditions: >-
+      Ein Strahl endlicher Breite mit zirkularer oder elliptischer Polarisation an einer Grenzfläche.
+    limits: >-
+      Die Verschiebung ist kleiner als die Wellenlänge und nur mit Verstärkungstechniken nachweisbar.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Imbert-Fedorov effect
+    description: >-
+      When a circularly or elliptically polarised light beam is reflected or refracted, it
+      shifts slightly perpendicular to the plane of incidence, and the direction of the shift
+      depends on the handedness of the polarisation. The effect is a form of the spin Hall
+      effect of light and follows from conservation of the beam's total angular momentum at
+      the interface.
+    example: >-
+      Fundamental research in spin optics, precision measurements using the weak-measurement
+      technique
+    conditions: >-
+      A beam of finite width with circular or elliptical polarisation at an interface.
+    limits: >-
+      The shift is smaller than the wavelength and detectable only with amplification techniques.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

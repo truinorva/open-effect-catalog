@@ -1,0 +1,71 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: photoionisation
+kind: effect
+home: detect|gas
+functions:
+  - detect|gas
+  - measure|gas
+parameters:
+  - increase|charge
+  - measure|concentration
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Photoelektrochemischer_Prozess
+  - https://en.wikipedia.org/wiki/Photoelectrochemical_process
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Photoionisation
+    description: >-
+      Absorbiert ein Atom oder Molekül ein Photon, dessen Energie größer ist als seine Ionisierungsenergie,
+      löst sich ein Elektron, und ein positives Ion bleibt zurück. Für die meisten Gase braucht
+      es dazu UV-Strahlung, für Edelgase und die Hauptbestandteile der Luft sogar Vakuum-UV.
+      Weil jeder Stoff eine eigene Ionisierungsenergie hat, lässt sich über die Photonenenergie
+      steuern, welche Moleküle ionisiert werden, und die entstandenen Ionen lassen sich als
+      Strom messen.
+    example: >-
+      Photoionisationsdetektoren (PID) für flüchtige organische Verbindungen, Ionenquellen
+      in der Massenspektrometrie, Ionosphäre der Erde
+    conditions: >-
+      Eine Photonenenergie oberhalb der Ionisierungsenergie des Zielstoffs, typischerweise
+      im UV- oder Vakuum-UV-Bereich.
+    limits: >-
+      Stoffe mit hoher Ionisierungsenergie wie Methan, Stickstoff oder Sauerstoff werden mit
+      den üblichen UV-Lampen nicht erfasst.
+    sideEffects: >-
+      Die entstehenden Ionen und Radikale können weitere chemische Reaktionen auslösen.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Photoionisation
+    description: >-
+      When an atom or molecule absorbs a photon with more energy than its ionisation energy,
+      an electron is released and a positive ion remains. Most gases require UV radiation
+      for this, and noble gases and the main constituents of air even need vacuum UV. Because
+      every substance has its own ionisation energy, the photon energy controls which molecules
+      are ionised, and the resulting ions can be measured as a current.
+    example: >-
+      Photoionisation detectors (PIDs) for volatile organic compounds, ion sources in mass
+      spectrometry, the Earth's ionosphere
+    conditions: >-
+      A photon energy above the ionisation energy of the target substance, typically in the
+      UV or vacuum UV range.
+    limits: >-
+      Substances with high ionisation energy such as methane, nitrogen or oxygen are not detected
+      with the usual UV lamps.
+    sideEffects: The ions and radicals formed can trigger further chemical reactions.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

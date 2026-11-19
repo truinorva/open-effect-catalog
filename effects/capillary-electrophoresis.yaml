@@ -1,0 +1,71 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: capillary-electrophoresis
+kind: application
+home: separate|liquid
+functions:
+  - separate|liquid
+  - measure|liquid
+parameters:
+  - measure|concentration
+uses:
+  - electrophoresis
+  - electro-osmotic-flow
+domain:
+  id: Chemie
+  de: Chemie
+  en: Chemistry
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Kapillarelektrophorese
+  - https://en.wikipedia.org/wiki/Capillary_electrophoresis
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Kapillarelektrophorese
+    description: >-
+      Bei der Kapillarelektrophorese wird eine Probe in eine dünne, mit Puffer gefüllte Quarzglaskapillare
+      eingebracht und eine hohe Spannung angelegt. Die gelösten Ionen und Moleküle wandern
+      je nach Ladung und Größe unterschiedlich schnell; zusätzlich zieht der elektroosmotische
+      Fluss die gesamte Flüssigkeit in eine Richtung. Die getrennten Zonen werden am Kapillarende
+      meist optisch erfasst.
+    example: >-
+      DNA-Sequenzierung und Fragmentanalyse, forensische DNA-Profile, Reinheitsprüfung von
+      Arzneimitteln und Proteinen, Ionenanalytik
+    conditions: >-
+      Ein elektrisch leitfähiger Puffer, eine Hochspannung von etwa 10 bis 30 kV und geladene
+      oder ladbare Analyten.
+    limits: >-
+      Wegen der winzigen Probenvolumina ist die Nachweisgrenze bei optischer Detektion oft
+      schlechter als in der Flüssigchromatographie.
+    sideEffects: >-
+      Joulesche Wärme in der Kapillare verbreitert die Zonen, wenn sie nicht abgeführt wird.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Capillary electrophoresis
+    description: >-
+      In capillary electrophoresis a sample is introduced into a thin fused-silica capillary
+      filled with buffer, and a high voltage is applied. The dissolved ions and molecules
+      migrate at different speeds depending on charge and size; in addition, electroosmotic
+      flow pulls the whole liquid in one direction. The separated zones are usually detected
+      optically at the end of the capillary.
+    example: >-
+      DNA sequencing and fragment analysis, forensic DNA profiling, purity testing of drugs
+      and proteins, ion analysis
+    conditions: >-
+      An electrically conductive buffer, a high voltage of roughly 10 to 30 kV and charged
+      or chargeable analytes.
+    limits: >-
+      Because of the tiny sample volumes, detection limits with optical detection are often
+      worse than in liquid chromatography.
+    sideEffects: Joule heat in the capillary broadens the zones if it is not removed.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

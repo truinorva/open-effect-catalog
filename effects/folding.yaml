@@ -1,0 +1,66 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: folding
+kind: effect
+home: deform|solid
+functions:
+  - deform|solid
+  - compress|solid
+  - expand|solid
+parameters:
+  - decrease|volume
+  - increase|rigidity
+  - change|shape
+uses: []
+domain:
+  id: Geometrie
+  de: Geometrie
+  en: Geometry
+maturity: verbreitet
+sources:
+  - https://de.wikipedia.org/wiki/Origami
+  - https://en.wikipedia.org/wiki/Origami
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Falten (Origami)
+    description: >-
+      Durch Falten entlang von Linien lässt sich ein flaches Blatt ohne Dehnung in eine dreidimensionale
+      Form bringen. Geeignete Faltmuster erlauben es, große Flächen auf ein kleines Packmaß
+      zusammenzulegen und mit einer einzigen Bewegung wieder zu entfalten, etwa das Miura-Faltmuster;
+      zugleich versteifen Falten ein dünnes Blech oder Papier erheblich, weil sie sein Flächenträgheitsmoment
+      erhöhen.
+    example: >-
+      Entfaltbare Solarpaneele von Satelliten, Faltschachteln, gefaltete Airbags, Stents,
+      Faltdächer, Landkarten
+    conditions: Biegsames Flächenmaterial oder Gelenke entlang der Faltlinien.
+    limits: >-
+      Dicke Materialien lassen sich nicht ohne Weiteres scharf falten; die Faltlinien sind
+      Schwachstellen, die bei häufigem Falten ermüden.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Folding (origami)
+    description: >-
+      Folding along lines turns a flat sheet into a three-dimensional shape without stretching
+      it. Suitable fold patterns allow large areas to be packed into a small volume and deployed
+      again in a single movement, as with the Miura fold; at the same time, folds stiffen
+      a thin sheet of metal or paper considerably by increasing its second moment of area.
+    example: >-
+      Deployable satellite solar panels, folding cartons, folded airbags, stents, folding
+      roofs, maps
+    conditions: Flexible sheet material, or hinges along the fold lines.
+    limits: >-
+      Thick materials cannot simply be folded sharply; fold lines are weak points that fatigue
+      with repeated folding.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

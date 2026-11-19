@@ -1,0 +1,67 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: ultrasonic-motor
+kind: application
+home: rotate|solid
+functions:
+  - rotate|solid
+  - move|solid
+  - hold|solid
+parameters:
+  - change|position
+uses:
+  - piezoelectric-effect
+  - friction
+domain:
+  id: ''
+  de: ''
+  en: ''
+maturity: reife
+sources:
+  - https://de.wikipedia.org/wiki/Ultraschallmotor
+  - https://en.wikipedia.org/wiki/Ultrasonic_motor
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Ultraschallmotor
+    description: >-
+      Piezokeramiken versetzen einen Stator in Ultraschallschwingungen, meist als Wanderwelle,
+      sodass Punkte seiner Oberfläche kleine elliptische Bahnen beschreiben. Ein angedrückter
+      Rotor oder Schlitten wird durch Reibung an diesen Punkten mitgenommen. Der Motor liefert
+      hohe Drehmomente bei kleiner Drehzahl ohne Getriebe, positioniert sehr fein und hält
+      im stromlosen Zustand seine Lage.
+    example: >-
+      Autofokusantriebe in Kameraobjektiven, Präzisionspositioniertische, magnetfeldfreie
+      Antriebe in MRT-Geräten
+    conditions: Genau eingestellter Anpressdruck und eine verschleißfeste Reibschicht.
+    limits: >-
+      Der Reibkontakt verschleißt und begrenzt die Lebensdauer; der Wirkungsgrad ist geringer
+      als bei elektromagnetischen Motoren.
+    sideEffects: Erwärmung am Reibkontakt.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Ultrasonic motor
+    description: >-
+      Piezoceramics set a stator vibrating at ultrasonic frequency, usually as a travelling
+      wave, so that points on its surface describe small elliptical paths. A rotor or slider
+      pressed against it is carried along by friction at these points. The motor delivers
+      high torque at low speed without a gearbox, positions very finely and holds its position
+      when unpowered.
+    example: >-
+      Autofocus drives in camera lenses, precision positioning stages, non-magnetic drives
+      in MRI scanners
+    conditions: Precisely set contact pressure and a wear-resistant friction layer.
+    limits: >-
+      The friction contact wears and limits service life; efficiency is lower than that of
+      electromagnetic motors.
+    sideEffects: Heating at the friction contact.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

@@ -1,0 +1,59 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: wave-power
+kind: application
+home: produce|field
+functions:
+  - produce|field
+parameters: []
+uses: []
+domain:
+  id: ''
+  de: ''
+  en: ''
+maturity: kindheit
+sources:
+  - https://en.wikipedia.org/wiki/Wave_power
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Wellenkraftwerk (Wellenenergie)
+    description: >-
+      Wellenkraftwerke nutzen die Auf- und Abbewegung der Meereswellen, die der Wind über
+      große Entfernungen aufbaut. Schwimmkörper treiben Hydraulik oder Generatoren an, in
+      Kammern mit schwingender Wassersäule wird Luft durch Turbinen gepresst, oder Wellen
+      schwappen in ein höher gelegenes Becken und fließen über eine Turbine zurück.
+    example: >-
+      Wellenkraftwerk in der Hafenmole von Mutriku (Spanien), Pelamis-Prototyp, Bojen-Wellenkraftwerke,
+      Wells-Turbinen in Kammern mit schwingender Wassersäule
+    conditions: Küsten mit beständigem, kräftigem Seegang.
+    limits: >-
+      Die Anlagen müssen Stürme und Salzwasser überstehen, was sie teuer macht; bisher gibt
+      es nur wenige.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Wave power
+    description: >-
+      Wave power plants use the up-and-down motion of ocean waves built up by wind over long
+      distances. Floating bodies drive hydraulic systems or generators, in oscillating water
+      column chambers air is forced through turbines, or waves overtop into a raised basin
+      and flow back through a turbine.
+    example: >-
+      Wave power plant in the Mutriku breakwater (Spain), Pelamis prototype, buoy-type wave
+      energy converters, Wells turbines in oscillating water column chambers
+    conditions: Coasts with consistent, strong swell.
+    limits: >-
+      The devices must survive storms and saltwater, which makes them expensive; so far only
+      a few exist.
+    sideEffects: ''
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

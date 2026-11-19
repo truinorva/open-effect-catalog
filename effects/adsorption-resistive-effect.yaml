@@ -1,0 +1,69 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: adsorption-resistive-effect
+kind: effect
+home: detect|gas
+functions:
+  - detect|gas
+  - measure|gas
+parameters:
+  - measure|concentration
+uses: []
+domain:
+  id: Chemie
+  de: Chemie
+  en: Chemistry
+maturity: verbreitet
+sources:
+  - https://en.wikipedia.org/wiki/Chemiresistor
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Chemoresistiver Effekt
+    description: >-
+      Lagern sich Gasmoleküle an der Oberfläche eines halbleitenden Materials an, geben sie
+      Elektronen ab oder nehmen welche auf und verändern so die Zahl der freien Ladungsträger
+      in einer dünnen Randschicht. Dadurch ändert sich der elektrische Widerstand messbar;
+      bei Metalloxiden wie Zinndioxid senken reduzierende Gase den Widerstand, weil sie an
+      der Oberfläche gebundenen Sauerstoff verbrauchen.
+    example: >-
+      Metalloxid-Gassensoren für Kohlenmonoxid und Methan, Alkoholtester, Luftgütesensoren
+      in Lüftungsanlagen, Sensoren aus leitfähigen Polymeren oder Kohlenstoffnanoröhren
+    conditions: >-
+      Metalloxid-Sensoren müssen auf einige hundert Grad Celsius beheizt werden.
+    limits: >-
+      Die Sensoren reagieren auf viele Gase zugleich, sind also wenig selektiv, und ihr Signal
+      hängt von Feuchte und Temperatur ab.
+    sideEffects: >-
+      Der Heizer verbraucht vergleichsweise viel Energie, und Stoffe wie Silikondämpfe können
+      die Oberfläche dauerhaft vergiften.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Chemiresistive effect
+    description: >-
+      When gas molecules adsorb on the surface of a semiconducting material, they donate or
+      accept electrons and so change the number of free charge carriers in a thin surface
+      layer. The electrical resistance changes measurably as a result; in metal oxides such
+      as tin dioxide, reducing gases lower the resistance because they use up oxygen bound
+      at the surface.
+    example: >-
+      Metal-oxide gas sensors for carbon monoxide and methane, breath alcohol testers, air
+      quality sensors in ventilation systems, sensors made of conducting polymers or carbon
+      nanotubes
+    conditions: Metal-oxide sensors must be heated to a few hundred degrees Celsius.
+    limits: >-
+      The sensors respond to many gases at once, so they are poorly selective, and their signal
+      depends on humidity and temperature.
+    sideEffects: >-
+      The heater consumes comparatively much energy, and substances such as silicone vapours
+      can permanently poison the surface.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

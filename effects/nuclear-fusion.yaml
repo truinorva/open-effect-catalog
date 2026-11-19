@@ -1,0 +1,72 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: nuclear-fusion
+kind: effect
+home: produce|field
+functions:
+  - produce|field
+  - heat|gas
+parameters:
+  - increase|temperature
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Fusionsenergie
+  - https://en.wikipedia.org/wiki/Fusion_power
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Kernfusion
+    description: >-
+      Bei der Kernfusion verschmelzen leichte Atomkerne wie Deuterium und Tritium zu einem
+      schwereren Kern, hier Helium, und geben dabei ein Neutron und sehr viel Energie ab,
+      weil der neue Kern stärker gebunden ist. Damit sich die positiv geladenen Kerne trotz
+      ihrer Abstoßung nahe genug kommen, muss der Brennstoff als Plasma auf über 100 Millionen
+      Kelvin erhitzt oder extrem verdichtet werden. Sterne beziehen ihre Energie aus Fusion;
+      technisch wird sie mit magnetischem Einschluss oder mit Laser-Trägheitsfusion angestrebt.
+    example: >-
+      Sonne und Sterne, Versuchsanlagen wie Tokamaks und Stellaratoren, Laserfusion, kompakte
+      Neutronengeneratoren für Bohrlochmessung und Materialprüfung, Wasserstoffbombe
+    conditions: >-
+      Extrem hohe Temperatur, ausreichende Dichte und genügend lange Einschlusszeit des Plasmas
+      (Lawson-Kriterium).
+    limits: >-
+      Eine Anlage, die mehr Energie liefert, als sie insgesamt verbraucht, ist bislang nicht
+      verwirklicht.
+    sideEffects: >-
+      Die schnellen Neutronen aktivieren und schädigen die Wandmaterialien, und der Brennstoff
+      Tritium ist radioaktiv.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Nuclear fusion
+    description: >-
+      In nuclear fusion, light nuclei such as deuterium and tritium merge into a heavier nucleus,
+      here helium, releasing a neutron and a great deal of energy because the new nucleus
+      is more tightly bound. For the positively charged nuclei to get close enough despite
+      their repulsion, the fuel must be heated as a plasma to over 100 million kelvin or compressed
+      extremely. Stars draw their energy from fusion; technically it is pursued with magnetic
+      confinement or laser-driven inertial fusion.
+    example: >-
+      Sun and stars, experimental devices such as tokamaks and stellarators, laser fusion,
+      compact neutron generators for well logging and materials testing, hydrogen bomb
+    conditions: >-
+      Extremely high temperature, sufficient density and a long enough confinement time of
+      the plasma (Lawson criterion).
+    limits: >-
+      A plant that delivers more energy than it consumes overall has not yet been realised.
+    sideEffects: >-
+      The fast neutrons activate and damage the wall materials, and the fuel tritium is radioactive.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

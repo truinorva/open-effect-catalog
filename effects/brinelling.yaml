@@ -1,0 +1,61 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: brinelling
+kind: effect
+home: deform|solid
+functions:
+  - deform|solid
+parameters:
+  - change|surface-finish
+uses: []
+domain:
+  id: Materialwissenschaft
+  de: Materialwissenschaft
+  en: Materials science
+maturity: nische
+sources:
+  - https://en.wikipedia.org/wiki/Brinelling
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Brinelling (Laufbahneindrückungen)
+    description: >-
+      In Wälzlagern drücken die Wälzkörper bleibende Mulden in die Laufbahn, wenn eine statische
+      Last oder ein Stoß die Fließgrenze des Werkstoffs überschreitet. Beim sogenannten False
+      Brinelling entstehen ähnliche Markierungen ohne Überlast: Kleine Schwingungen am stillstehenden
+      Lager reiben die Kontaktstellen und tragen dort durch Reibverschleiß Material ab.
+    example: >-
+      Lagerschäden durch Schläge bei der Montage, Stillstandsmarkierungen in Lagern von Fahrzeugen
+      und Maschinen während des Transports, Blattlager von Windenergieanlagen
+    conditions: >-
+      Hohe Kontaktpressung zwischen Wälzkörper und Laufbahn oder Mikrobewegungen im Stillstand.
+    limits: ''
+    sideEffects: >-
+      Im Betrieb verursachen die Eindrückungen Geräusche, Vibrationen und vorzeitigen Ermüdungsausfall
+      des Lagers.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Brinelling
+    description: >-
+      In rolling bearings, the rolling elements press permanent dents into the raceway when
+      a static load or an impact exceeds the yield strength of the material. In so-called
+      false brinelling, similar marks form without overload: small vibrations of a stationary
+      bearing rub the contact points and wear away material there by fretting.
+    example: >-
+      Bearing damage from blows during assembly, standstill marks in bearings of vehicles
+      and machines during transport, pitch bearings of wind turbines
+    conditions: >-
+      High contact pressure between rolling element and raceway, or micro-movements at standstill.
+    limits: ''
+    sideEffects: >-
+      In operation the dents cause noise, vibration and premature fatigue failure of the bearing.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

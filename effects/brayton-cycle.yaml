@@ -1,0 +1,67 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: brayton-cycle
+kind: effect
+home: produce|field
+functions:
+  - produce|field
+  - compress|gas
+  - heat|gas
+  - cool|gas
+parameters: []
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Joule-Kreisprozess
+  - https://en.wikipedia.org/wiki/Brayton_cycle
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Joule-Prozess (Brayton-Kreisprozess)
+    description: >-
+      Der Joule-Prozess beschreibt die Arbeitsweise von Gasturbinen: Ein Gas wird adiabat
+      verdichtet, bei konstantem Druck erhitzt, in einer Turbine adiabat entspannt und bei
+      konstantem Druck wieder abgekühlt. Da die Turbine mehr Arbeit liefert, als der Verdichter
+      benötigt, bleibt Nutzarbeit übrig; der Wirkungsgrad steigt mit dem Druckverhältnis.
+      Rückwärts durchlaufen dient der Prozess als Kaltluftprozess zur Kühlung.
+    example: >-
+      Flugtriebwerke, stationäre Gasturbinen, Gas-und-Dampf-Kraftwerke, Klimatisierung von
+      Flugzeugen (Air Cycle Machine), Gasturbinen mit geschlossenem Kreislauf
+    conditions: >-
+      Ein gasförmiges Arbeitsmedium, ein Verdichter, eine Wärmequelle und eine Turbine.
+    limits: >-
+      Die Turbineneintrittstemperatur ist durch die Werkstoffe begrenzt und damit auch der
+      erreichbare Wirkungsgrad.
+    sideEffects: >-
+      Die heißen Abgase tragen ungenutzte Wärme fort; bei Verbrennung entstehen Stickoxide.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Brayton cycle
+    description: >-
+      The Brayton (Joule) cycle describes how gas turbines work: a gas is compressed adiabatically,
+      heated at constant pressure, expanded adiabatically in a turbine and cooled again at
+      constant pressure. Because the turbine delivers more work than the compressor needs,
+      net work remains; efficiency rises with the pressure ratio. Run in reverse, the cycle
+      serves as an air-cycle refrigeration process.
+    example: >-
+      Jet engines, stationary gas turbines, combined-cycle power plants, aircraft air-conditioning
+      (air cycle machine), closed-cycle gas turbines
+    conditions: A gaseous working fluid, a compressor, a heat source and a turbine.
+    limits: >-
+      The turbine inlet temperature is limited by materials, and with it the achievable efficiency.
+    sideEffects: >-
+      Hot exhaust gases carry away unused heat; combustion produces nitrogen oxides.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
