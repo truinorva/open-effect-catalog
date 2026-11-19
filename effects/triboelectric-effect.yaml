@@ -1,0 +1,67 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+id: triboelectric-effect
+kind: effect
+home: separate|particles
+functions:
+  - separate|particles
+  - produce|field
+  - hold|particles
+parameters:
+  - change|charge
+uses: []
+domain:
+  id: Physik
+  de: Physik
+  en: Physics
+maturity: lehrbuch
+sources:
+  - https://de.wikipedia.org/wiki/Reibungselektrizit%C3%A4t
+  - https://en.wikipedia.org/wiki/Triboelectric_effect
+authors: []
+review:
+  status: ungeprueft
+  by: []
+  date: ''
+text:
+  de:
+    name: Triboelektrischer Effekt
+    description: >-
+      Berühren sich zwei verschiedene Werkstoffe und werden wieder getrennt, gehen Elektronen
+      von einem auf den anderen über; beide sind danach entgegengesetzt geladen. Reiben verstärkt
+      den Effekt, weil es viele Kontakte schafft.
+    example: >-
+      Elektrostatische Trennung von Kunststoffgemischen beim Recycling, Pulverbeschichtung
+      mit Reibungsaufladung, triboelektrische Nanogeneratoren
+    conditions: >-
+      Werkstoffe mit unterschiedlicher Neigung, Elektronen abzugeben; trockene Umgebung.
+    limits: >-
+      Feuchtigkeit leitet die Ladung schnell ab; wie stark und mit welchem Vorzeichen geladen
+      wird, schwankt mit Oberfläche und Verschmutzung.
+    sideEffects: >-
+      Unerwünschte Funkenentladungen, Staubanziehung, Explosionsgefahr beim Fördern brennbarer
+      Pulver.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'
+  en:
+    name: Triboelectric effect
+    description: >-
+      When two different materials touch and are separated again, electrons pass from one
+      to the other; afterwards both are oppositely charged. Rubbing strengthens the effect
+      because it creates many contacts.
+    example: >-
+      Electrostatic separation of plastic mixtures in recycling, powder coating with tribo
+      charging, triboelectric nanogenerators
+    conditions: >-
+      Materials with different tendencies to give up electrons; dry surroundings.
+    limits: >-
+      Humidity quickly drains the charge; the amount and sign of charging vary with surface
+      condition and contamination.
+    sideEffects: >-
+      Unwanted spark discharges, dust attraction, explosion risk when conveying combustible
+      powders.
+    kind: maschinell
+    author: ''
+    model: claude-opus-5-5
+    updated: '2026-11-19'

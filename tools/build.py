@@ -9,6 +9,9 @@ dist/ receives:
     vocabulary.json  actions, objects, operations and parameters
     NOTICE.md, LICENSE
 
+Only entries with review.status geprueft are released; drafts stay in the
+repository until a person has reviewed them.
+
 effects.json and vocabulary.json keep the structure of the TRIZ Effects Database
 (effects.json / functions.json), so a release can be dropped into its web viewer.
 """
@@ -18,10 +21,13 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import re
 import shutil
 import sys
+import unicodedata
 from pathlib import Path
 from typing import Any
+from urllib.parse import unquote
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import yamlio  # noqa: E402
@@ -34,7 +40,7 @@ except ImportError:  # pragma: no cover
 ROOT = Path(__file__).resolve().parent.parent
 ENTRY_ORDER = [
     "id", "kind", "home", "functions", "parameters", "uses",
-    "domain", "maturity", "sources", "authors", "origin", "text",
+    "domain", "maturity", "sources", "authors", "origin", "review", "text",
 ]
 
 
@@ -107,7 +113,45 @@ def check_entry(entry: dict[str, Any], path: Path, ids: dict[str, set[str]],
             if "TODO" in value:
                 rep.error(where, f"text.{lang}.{field} still contains TODO")
         if text.get("kind") == "maschinell" and not text.get("model"):
-            rep.warn(where, f"text.{lang}: machine translation without 'model'")
+            rep.warn(where, f"text.{lang}: machine text without 'model'")
+    texts = entry.get("text", {})
+    if not entry.get("authors"):
+        if not all(t.get("kind") == "maschinell" and t.get("model") for t in texts.values()):
+            rep.error(where, "no authors: allowed only for a machine draft (every text kind: maschinell, with model)")
+    review = entry.get("review", {})
+    if review.get("status") == "geprueft":
+        if not review.get("by") or not review.get("date"):
+            rep.error(where, "review.status geprueft needs review.by and review.date")
+        unread = [lang for lang, t in texts.items() if t.get("kind") == "maschinell"]
+        if unread:
+            rep.error(where, f"reviewed, but text {unread} is still kind: maschinell - set geprueft once read")
+
+
+def norm_name(name: str) -> str:
+    name = unicodedata.normalize("NFKD", name).encode("ascii", "ignore").decode()
+    return re.sub(r"[^a-z0-9]+", " ", name.lower()).strip()
+
+
+def norm_url(url: str) -> str:
+    return re.sub(r"^https?://", "", unquote(url.strip()).rstrip("/")).lower()
+
+
+def check_duplicates(entries: list[dict[str, Any]], files: dict[str, str], rep: Report) -> None:
+    """No two entries may share a name (any language); a shared source is only a hint."""
+    by_name: dict[str, str] = {}
+    by_source: dict[str, str] = {}
+    for entry in entries:
+        where = f"effects/{files[entry['id'].lower()]}"
+        keys = {norm_name(entry["id"])} | {norm_name(t["name"]) for t in entry["text"].values()}
+        for key in sorted(keys):
+            other = by_name.setdefault(key, entry["id"])
+            if other != entry["id"]:
+                rep.error(where, f"duplicate of {other!r}: same name {key!r}")
+        for src in entry["sources"]:
+            key = norm_url(src)
+            other = by_source.setdefault(key, entry["id"])
+            if other != entry["id"] and "wikipedia.org" in key:
+                rep.warn(where, f"shares the source {src} with {other!r} - check it is not a duplicate")
 
 
 def load_entries(schema: dict[str, Any], ids: dict[str, set[str]], origins: dict[str, Any],
@@ -145,12 +189,25 @@ def load_entries(schema: dict[str, Any], ids: dict[str, set[str]], origins: dict
         for used in entry["uses"]:
             if used not in known:
                 rep.error(f"effects/{seen[entry['id'].lower()]}", f"uses unknown entry {used!r}")
+    check_duplicates(entries, seen, rep)
     names = sorted({a for e in entries for a in e["authors"]}
-                   | {t["author"] for e in entries for t in e["text"].values() if t.get("author")})
+                   | {t["author"] for e in entries for t in e["text"].values() if t.get("author")}
+                   | {r for e in entries for r in e["review"]["by"]})
     for name in names:
         if name not in notice:
-            rep.error("NOTICE.md", f"author {name!r} is missing from the contributor list")
+            rep.error("NOTICE.md", f"author or reviewer {name!r} is missing from the contributor list")
     return entries
+
+
+def released(entries: list[dict[str, Any]], rep: Report) -> list[dict[str, Any]]:
+    """Only reviewed entries go into a release; they may not point to drafts."""
+    keep = [e for e in entries if e["review"]["status"] == "geprueft"]
+    ids = {e["id"] for e in keep}
+    for entry in keep:
+        for used in entry["uses"]:
+            if used not in ids:
+                rep.error(f"effects/{entry['id']}.yaml", f"reviewed, but uses {used!r}, which is not reviewed yet")
+    return keep
 
 
 def ordered(entry: dict[str, Any]) -> dict[str, Any]:
@@ -158,7 +215,7 @@ def ordered(entry: dict[str, Any]) -> dict[str, Any]:
 
 
 def build_meta(dataset: dict[str, Any], entries: list[dict[str, Any]], vocab: dict[str, Any],
-               version: str) -> dict[str, Any]:
+               version: str, drafts: int) -> dict[str, Any]:
     payload = json.dumps([entries, vocab], sort_keys=True, ensure_ascii=False, separators=(",", ":"))
     licenses = [dataset["license"]]
     origins = []
@@ -188,6 +245,7 @@ def build_meta(dataset: dict[str, Any], entries: list[dict[str, Any]], vocab: di
         "cells": len({c for e in entries for c in e["functions"]}),
         "parameterCells": len({c for e in entries for c in e["parameters"]}),
         "languages": sorted({lang for e in entries for lang in e["text"]}),
+        "unreviewedNotReleased": drafts,
         "origins": origins,
     }
 
@@ -209,6 +267,7 @@ def main() -> int:
     notice = (ROOT / "NOTICE.md").read_text(encoding="utf-8")
     vocab, ids = load_vocabulary(rep)
     entries = load_entries(schema, ids, dataset.get("origins", {}), notice, rep)
+    release = released(entries, rep)
 
     for w in rep.warnings:
         print(f"warning: {w}")
@@ -218,11 +277,13 @@ def main() -> int:
         print(f"\n{len(rep.errors)} error(s) in {len(entries)} valid entries - nothing written.")
         return 1
 
-    entries = sorted((ordered(e) for e in entries), key=lambda e: e["id"])
-    meta = build_meta(dataset, entries, vocab, args.version)
-    print(f"OK: {meta['effects']} effects, {meta['applications']} applications, "
-          f"{meta['cells']} function cells, {meta['parameterCells']} parameter cells, "
-          f"licence {meta['license']}, fingerprint {meta['fingerprint']}.")
+    drafts = len(entries) - len(release)
+    entries = sorted((ordered(e) for e in release), key=lambda e: e["id"])
+    meta = build_meta(dataset, entries, vocab, args.version, drafts)
+    print(f"OK: {len(entries) + drafts} entries valid. Release: {meta['effects']} effects, "
+          f"{meta['applications']} applications, {meta['cells']} function cells, "
+          f"{meta['parameterCells']} parameter cells; {drafts} unreviewed left out. "
+          f"Licence {meta['license']}, fingerprint {meta['fingerprint']}.")
     if args.check:
         return 0
 

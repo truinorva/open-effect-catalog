@@ -10,6 +10,9 @@ engineering design and everyday problem solving.
   edited, reviewed and discussed on its own.
 - **One file per release.** A tag bundles all entries into a single
   `effects.json` attached to the GitHub Release.
+- **Reviewed before release.** Every entry carries a review flag. Drafts —
+  also AI drafts — may live in the repository, but only entries a person has
+  checked go into a release.
 - **Attribution in one place.** Credit is given once, centrally, in
   [`NOTICE.md`](NOTICE.md), not per entry.
 
@@ -64,6 +67,10 @@ sources:
 authors:
   - Robert Adunka
 origin: triz-consulting      # only for entries taken over from another collection
+review:                      # only geprueft entries are released
+  status: geprueft           # geprueft | ungeprueft
+  by: [TRIZ Consulting Group]
+  date: '2026-11-11'
 text:
   de:
     name: Akustische Levitation
@@ -104,9 +111,10 @@ python tools/build.py                             # write dist/effects.json
 ```
 
 `build.py` checks every file against the schema, every cell against the
-vocabulary, every `uses` link, that each id equals its file name, and that
-every author is listed in NOTICE.md. CI runs the same check on each pull
-request.
+vocabulary, every `uses` link, that each id equals its file name, that no two
+entries share a name (duplicates), and that every author and reviewer is
+listed in NOTICE.md. The release contains only reviewed entries. CI runs the
+same check on each pull request.
 
 To add an entry:
 
