@@ -33,3 +33,6 @@ changed or removed.
   when an imported entry uses a cell the vocabulary does not know.
 - `templates/new-effect.yaml`: commented template for new entries, usable
   directly in the GitHub web editor.
+- Renamed to **Open Effects Catalog** (repository `truinorva/open-effects-catalog`),
+  in line with the established term "effects database". Links to the old name
+  `open-effect-catalog` are redirected by GitHub.

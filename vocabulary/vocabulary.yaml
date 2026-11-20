@@ -8,7 +8,7 @@ meta:
   title: TRIZ Effects Database — Vokabular
   version: 2.1.1
   updated: '2026-09-15'
-  maintained: open-effect-catalog repository (since 2026-11-20)
+  maintained: open-effects-catalog repository (since 2026-11-20)
   hinweis: >-
     Hergeleitet aus der Funktionsanalyse-Regel: Ein Verb kommt hinein, wenn es einen Parameter
     des Objekts aendert oder erhaelt; Messen ist der Sonderfall, Bestand (etwas entsteht oder

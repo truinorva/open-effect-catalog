@@ -1,6 +1,6 @@
-# NOTICE — Open Effect Catalog
+# NOTICE — Open Effects Catalog
 
-Open Effect Catalog
+Open Effects Catalog
 Copyright (c) 2026 Truinorva GmbH, TRIZ Consulting Group GmbH, Robert Adunka and contributors
 (the contributors are named below).
 
@@ -20,12 +20,12 @@ Keep `LICENSE` (or a link to it) with the data or with a product built on it,
 as the MIT License requires. On an imprint, an "Open-source licences" page or
 in an About box, one line is enough:
 
-> Open Effect Catalog — © 2026 Truinorva GmbH, TRIZ Consulting Group GmbH,
+> Open Effects Catalog — © 2026 Truinorva GmbH, TRIZ Consulting Group GmbH,
 > Robert Adunka and contributors, MIT License.
 
 German version:
 
-> Open Effect Catalog unter MIT-Lizenz, Copyright 2026 Truinorva GmbH,
+> Open Effects Catalog unter MIT-Lizenz, Copyright 2026 Truinorva GmbH,
 > TRIZ Consulting Group GmbH, Robert Adunka und Mitwirkende.
 
 The `authors` field stays in every entry as data; you need not display it.
