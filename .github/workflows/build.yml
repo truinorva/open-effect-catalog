@@ -50,7 +50,7 @@ jobs:
       - name: Upload the build as a workflow artefact
         uses: actions/upload-artifact@v4
         with:
-          name: open-effect-catalog
+          name: open-effects-catalog
           path: dist/
           if-no-files-found: error
           retention-days: 14

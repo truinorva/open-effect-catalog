@@ -1,14 +1,14 @@
 # Release metadata. tools/build.py copies this into the "meta" block of
 # dist/effects.json. Change licences here and in NOTICE.md together.
 
-title: Open Effect Catalog
+title: Open Effects Catalog
 description: >-
   An open catalog of physical, chemical, biological and geometric effects,
   searchable by function (action x object) and by parameter (operation x
   parameter). Made for function-oriented search in TRIZ and engineering design.
-source: https://github.com/truinorva/open-effect-catalog
+source: https://github.com/truinorva/open-effects-catalog
 license: MIT
-licenseUrl: https://github.com/truinorva/open-effect-catalog/blob/main/LICENSE
+licenseUrl: https://github.com/truinorva/open-effects-catalog/blob/main/LICENSE
 copyright: Truinorva GmbH, TRIZ Consulting Group GmbH, Robert Adunka and contributors
 notice: >-
   Attribution is given once, centrally, in NOTICE.md. Passing on NOTICE.md

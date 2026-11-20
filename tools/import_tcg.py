@@ -44,7 +44,7 @@ ENTRY_KEYS = [
 def fetch(source: str | None, name: str) -> Any:
     if source:
         return json.loads((Path(source) / name).read_text(encoding="utf-8"))
-    req = urllib.request.Request(BASE_URL + name, headers={"User-Agent": "open-effect-catalog-import"})
+    req = urllib.request.Request(BASE_URL + name, headers={"User-Agent": "open-effects-catalog-import"})
     with urllib.request.urlopen(req, timeout=30) as resp:  # noqa: S310 (fixed https URL)
         return json.loads(resp.read().decode("utf-8"))
 

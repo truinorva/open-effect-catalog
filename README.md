@@ -1,4 +1,4 @@
-# Open Effect Catalog
+# Open Effects Catalog
 
 An open catalog of physical, chemical, biological and geometric **effects**,
 searchable by function. Ask "how do I *move* a *liquid*?" and get every effect
@@ -95,7 +95,7 @@ read by its web viewer without conversion.
 ## Using a release
 
 Download `effects.json` from the
-[latest release](https://github.com/truinorva/open-effect-catalog/releases/latest).
+[latest release](https://github.com/truinorva/open-effects-catalog/releases/latest).
 It contains a `meta` block (version, fingerprint, licence, attribution,
 upstream collections, counts) and the `effects` array. `vocabulary.json` holds
 the labels for every cell id.

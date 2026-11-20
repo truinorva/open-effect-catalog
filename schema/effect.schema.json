@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://github.com/truinorva/open-effect-catalog/schema/effect.schema.json",
-  "title": "Open Effect Catalog: one entry",
+  "$id": "https://github.com/truinorva/open-effects-catalog/schema/effect.schema.json",
+  "title": "Open Effects Catalog: one entry",
   "description": "One effect or application, stored as effects/<id>.yaml. The field names follow the TRIZ Effects Database by TRIZ Consulting Group so that a release stays drop-in compatible with its effects.json. Cross-references (cells, uses, authors) are checked by tools/build.py, not by this schema.",
   "type": "object",
   "additionalProperties": false,
