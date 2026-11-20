@@ -1,0 +1,61 @@
+# yaml-language-server: $schema=../schema/effect.schema.json
+#
+# TEMPLATE for a new effect or application
+# ----------------------------------------
+# 1. Search first (GitHub: press T, type the name) - duplicates are rejected.
+# 2. Copy this file to effects/<id>.yaml. The id is English, lower case, words
+#    joined by hyphens (e.g. electrostatic-precipitator) and equals the file name.
+# 3. Replace every placeholder. Lines starting with # may stay or go.
+# 4. Add your name to the contributor list in NOTICE.md.
+# 5. Open a pull request. GitHub checks the file; locally: python tools/build.py --check
+#
+# Rules: write in your own words (sources are for looking things up), take
+# nothing from other effect databases, and choose the cells yourself.
+# Ids for cells: vocabulary/vocabulary.yaml
+
+id: your-effect-id                # = file name without .yaml; never changes once merged
+kind: effect                      # effect (phenomenon) | application (device, process, material)
+home: move|liquid                 # the cell where you came across it; must also be in functions
+functions:                        # every action|object cell it can fulfil
+  - move|liquid                   #   objects: solid, particles, liquid, gas, field
+parameters: []                    # operation|parameter cells, e.g. - decrease|friction
+uses: []                          # applications only: ids of the effects they rely on
+domain:                           # Physik/Physics, Chemie/Chemistry, Biologie/Biology,
+  id: Physik                      # Verfahrenstechnik/Process engineering, Rheologie/Rheology,
+  de: Physik                      # Materialwissenschaft/Materials science, Geometrie/Geometry
+  en: Physics
+maturity: ''                      # effects: lehrbuch | nische | verbreitet
+                                  # applications: kindheit | wachstum | reife | niedergang
+sources:                          # where readers can check the facts (URL or literature)
+  - https://en.wikipedia.org/wiki/YOUR_ARTICLE
+authors:
+  - Your Name                     # must also appear in NOTICE.md
+review:                           # a second person reviews and sets status: geprueft
+  status: ungeprueft
+  by: []
+  date: ''
+text:                             # one language is enough; delete the block you do not write
+  de:
+    name: TODO Deutscher Name
+    description: >-
+      TODO Zwei bis drei Sätze in eigenen Worten: was passiert und warum (Mechanismus).
+    example: ''                   # kurze Liste realer Anwendungen
+    conditions: ''                # was nötig ist, damit der Effekt auftritt
+    limits: ''                    # wo er an Grenzen stößt
+    sideEffects: ''               # unerwünschte Begleiterscheinungen
+    kind: original                # original = selbst geschrieben; maschinell = KI-Text (+ model)
+    author: Your Name
+    model: ''
+    updated: 'YYYY-MM-DD'
+  en:
+    name: TODO English name
+    description: >-
+      TODO Two or three sentences in your own words: what happens and why (mechanism).
+    example: ''
+    conditions: ''
+    limits: ''
+    sideEffects: ''
+    kind: original
+    author: Your Name
+    model: ''
+    updated: 'YYYY-MM-DD'

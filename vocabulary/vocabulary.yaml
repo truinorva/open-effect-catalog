@@ -1,21 +1,25 @@
 # Vocabulary: actions (grouped in domains), objects, operations and parameters.
-# Taken over from the TRIZ Effects Database by Robert Adunka, TRIZ Consulting Group
-# (used under MIT with his permission). Ids are stable: cells in effects/*.yaml refer
-# to them. Labels, hints and synonyms may be reworded at any time.
+# Taken over once from the TRIZ Effects Database by Robert Adunka, TRIZ Consulting Group
+# (version 2.1.1, used under MIT with his permission). Maintained HERE since 2026-11-20:
+# change it by pull request; tools/import_tcg.py no longer overwrites it.
+# Ids are stable: cells in effects/*.yaml refer to them. Labels, hints and synonyms
+# may be reworded at any time.
 meta:
   title: TRIZ Effects Database — Vokabular
   version: 2.1.1
   updated: '2026-09-15'
+  maintained: open-effect-catalog repository (since 2026-11-20)
   hinweis: >-
     Hergeleitet aus der Funktionsanalyse-Regel: Ein Verb kommt hinein, wenn es einen Parameter
     des Objekts aendert oder erhaelt; Messen ist der Sonderfall, Bestand (etwas entsteht oder
     verschwindet) die vierte Art. Die ids sind stabil und werden nie geaendert - an ihnen
     haengen die Zellzuordnungen. Labels, Erklaerungen und Synonyme duerfen jederzeit umformuliert
-    werden. Erzeugt aus dem Reiter Vokabular; dort pflegen, nicht hier. Zweiter Teil: die
-    Parametersicht (Operation x Parameter, OHNE Objektspalte). Sie ist eine unabhaengige zweite
-    Zuordnung auf denselben Effekten, keine Ableitung aus den Handlungen. Welche Sicht eine
-    Zelle meint, entscheidet die zweite Haelfte - Objekt- und Parameterkennungen duerfen sich
-    niemals ueberschneiden.
+    werden. Einmalig aus der TRIZ Effects Database (Version 2.1.1) übernommen; seit 2026-11-20
+    wird das Vokabular hier im Repository gepflegt, Änderungen per Pull Request. Zweiter Teil:
+    die Parametersicht (Operation x Parameter, OHNE Objektspalte). Sie ist eine unabhaengige
+    zweite Zuordnung auf denselben Effekten, keine Ableitung aus den Handlungen. Welche Sicht
+    eine Zelle meint, entscheidet die zweite Haelfte - Objekt- und Parameterkennungen duerfen
+    sich niemals ueberschneiden.
 kinds:
   - id: aendern
     label:

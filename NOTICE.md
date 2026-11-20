@@ -41,7 +41,8 @@ Adunka, TRIZ Consulting Group, permitted their use in this repository under
 the MIT License.
 
 They were converted into one YAML file per entry and one vocabulary file;
-wording and cell allocations were not changed at import. Entries taken over
+wording and cell allocations were not changed at import. The vocabulary was
+taken over once and has been maintained in this repository since 2026-11-20. Entries taken over
 this way carry `origin: triz-consulting`. All later changes are recorded in
 the git history.
 

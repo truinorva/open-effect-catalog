@@ -4,10 +4,15 @@
     python tools/import_tcg.py --from DIR      # use a local copy (effects.json, functions.json)
     python tools/import_tcg.py --dry-run       # only report what would change
 
-Writes one file per entry to effects/<id>.yaml (marked origin: triz-consulting)
-and the vocabulary to vocabulary/vocabulary.yaml. Entries written for this
-project (no origin, or another origin) are never touched. A re-sync overwrites
-local edits to imported entries; review the result with `git diff`.
+Writes one file per entry to effects/<id>.yaml (marked origin: triz-consulting).
+Entries written for this project (no origin, or another origin) are never
+touched. A re-sync overwrites local edits to imported entries; review the
+result with `git diff`.
+
+The vocabulary is NOT imported. It was taken over once (version 2.1.1) and has
+been maintained in this repository since 2026-11-20 (vocabulary/vocabulary.yaml).
+The script only reports how the upstream vocabulary differs, and warns when an
+imported entry uses a cell that the repository's vocabulary does not know.
 
 Upstream publishes the data under CC BY 4.0; Robert Adunka, TRIZ Consulting Group,
 permitted its use in this repository under the MIT License.
@@ -34,12 +39,6 @@ ENTRY_KEYS = [
     "id", "kind", "home", "functions", "parameters", "uses",
     "domain", "maturity", "sources", "authors",
 ]
-VOCAB_HEADER = (
-    "# Vocabulary: actions (grouped in domains), objects, operations and parameters.\n"
-    "# Taken over from the TRIZ Effects Database by Robert Adunka, TRIZ Consulting Group\n"
-    "# (used under MIT with his permission). Ids are stable: cells in effects/*.yaml refer\n"
-    "# to them. Labels, hints and synonyms may be reworded at any time.\n"
-)
 
 
 def fetch(source: str | None, name: str) -> Any:
@@ -48,6 +47,23 @@ def fetch(source: str | None, name: str) -> Any:
     req = urllib.request.Request(BASE_URL + name, headers={"User-Agent": "open-effect-catalog-import"})
     with urllib.request.urlopen(req, timeout=30) as resp:  # noqa: S310 (fixed https URL)
         return json.loads(resp.read().decode("utf-8"))
+
+
+def vocab_ids(vocab: dict[str, Any]) -> dict[str, set[str]]:
+    return {
+        "actions": {a["id"] for d in vocab.get("domains", []) for a in d.get("actions", [])},
+        "objects": {o["id"] for o in vocab.get("objects", [])},
+        "operations": {o["id"] for o in vocab.get("operations", [])},
+        "parameters": {p["id"] for g in vocab.get("parameterGroups", []) for p in g.get("parameters", [])},
+    }
+
+
+def unknown_cells(entry: dict[str, Any], ids: dict[str, set[str]]) -> list[str]:
+    bad = [c for c in entry["functions"]
+           if c.partition("|")[0] not in ids["actions"] or c.partition("|")[2] not in ids["objects"]]
+    bad += [c for c in entry["parameters"]
+            if c.partition("|")[0] not in ids["operations"] or c.partition("|")[2] not in ids["parameters"]]
+    return bad
 
 
 def to_entry(raw: dict[str, Any], version: str) -> dict[str, Any]:
@@ -70,7 +86,8 @@ def main() -> int:
     args = parser.parse_args()
 
     effects = fetch(args.source, "effects.json")
-    vocab = fetch(args.source, "functions.json")
+    upstream_vocab = fetch(args.source, "functions.json")
+    local_ids = vocab_ids(yamlio.load(ROOT / "vocabulary" / "vocabulary.yaml"))
     meta = effects.get("meta", {})
     print(f"Upstream: {meta.get('title')} {meta.get('version')} ({meta.get('license')}), "
           f"{len(effects['effects'])} entries")
@@ -81,6 +98,8 @@ def main() -> int:
     for raw in effects["effects"]:
         entry = to_entry(raw, meta.get("version", ""))
         path = out_dir / f"{entry['id']}.yaml"
+        for cell in unknown_cells(entry, local_ids):
+            print(f"  warn   {path.name}: cell {cell!r} is not in vocabulary/vocabulary.yaml - add it there or adjust the entry")
         new_text = yamlio.SCHEMA_HEADER + yamlio.dumps(entry)
         if path.exists():
             current = yamlio.load(path) or {}
@@ -99,22 +118,28 @@ def main() -> int:
         if not args.dry_run:
             path.write_text(new_text, encoding="utf-8", newline="\n")
 
-    vocab_path = ROOT / "vocabulary" / "vocabulary.yaml"
-    vocab_changed = not vocab_path.exists() or yamlio.load(vocab_path) != vocab
-    if vocab_changed:
-        print("  vocabulary changed" if vocab_path.exists() else "  new    vocabulary.yaml")
-        if not args.dry_run:
-            vocab_path.parent.mkdir(exist_ok=True)
-            yamlio.dump_plain(vocab, vocab_path, header=VOCAB_HEADER)
+    # The vocabulary is maintained here; upstream changes are only reported.
+    upstream_ids = vocab_ids(upstream_vocab)
+    vocab_diff = []
+    for kind in local_ids:
+        added = sorted(upstream_ids[kind] - local_ids[kind])
+        dropped = sorted(local_ids[kind] - upstream_ids[kind])
+        if added:
+            vocab_diff.append(f"upstream has {kind} not in the repository: {', '.join(added)}")
+        if dropped:
+            vocab_diff.append(f"repository has {kind} not upstream: {', '.join(dropped)}")
+    for line in vocab_diff:
+        print(f"  vocab  {line}")
 
-    upstream_ids = {raw["id"] for raw in effects["effects"]}
+    upstream_entry_ids = {raw["id"] for raw in effects["effects"]}
     gone = [p.name for p in out_dir.glob("*.yaml")
-            if p.stem not in upstream_ids and (yamlio.load(p) or {}).get("origin") == ORIGIN]
+            if p.stem not in upstream_entry_ids and (yamlio.load(p) or {}).get("origin") == ORIGIN]
     for name in gone:
         print(f"  note   {name}: imported earlier but no longer upstream - decide by hand")
 
     print(f"Done{' (dry run)' if args.dry_run else ''}: {created} new, {updated} updated, "
-          f"{unchanged} unchanged, {skipped} skipped, vocabulary {'changed' if vocab_changed else 'unchanged'}.")
+          f"{unchanged} unchanged, {skipped} skipped; vocabulary not imported "
+          f"({'differs from upstream, see above' if vocab_diff else 'same ids as upstream'}).")
     print(f"Remember: set origins.{ORIGIN}.version in dataset.yaml to {meta.get('version')!r} and update NOTICE.md.")
     return 0
 

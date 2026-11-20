@@ -23,6 +23,15 @@ Pull requests that break these rules are closed, however good the content.
 
 ## Adding an entry
 
+Search first (on GitHub press `T` and type the name): duplicates are rejected.
+
+**In the browser:** copy [`templates/new-effect.yaml`](templates/new-effect.yaml),
+create `effects/<id>.yaml` with "Add file → Create new file", paste the
+template and replace every placeholder. The comments in the template explain
+each field.
+
+**Locally:**
+
 ```bash
 python tools/new_effect.py <id> --name-en "..." --name-de "..." --author "Your Name" --source <url>
 ```
@@ -86,6 +95,19 @@ If you rewrote a draft substantially, add yourself to `authors` as well.
 
 Entries imported from the TRIZ Effects Database count as reviewed: TRIZ
 Consulting Group releases every entry through a reviewer before publishing it.
+
+## Changing the vocabulary
+
+`vocabulary/vocabulary.yaml` was taken over once from the TRIZ Effects
+Database (version 2.1.1) and has been maintained here since 2026-11-20.
+`tools/import_tcg.py` does not overwrite it; it only reports how the upstream
+vocabulary differs.
+
+- Labels, hints and synonyms may be reworded at any time.
+- Ids never change: every cell in `effects/` refers to them.
+- A new action, object, operation or parameter is added by pull request.
+  Explain which effects need it. Object and parameter ids must never overlap;
+  the build checks this.
 
 ## Branches and pull requests
 
