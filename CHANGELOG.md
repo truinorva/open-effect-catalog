@@ -27,3 +27,9 @@ changed or removed.
   the permission of Robert Adunka, TRIZ Consulting Group; the release licence
   is plain MIT. TRIZ Consulting Group GmbH and Robert Adunka are named as
   copyright holders in LICENSE and NOTICE.md.
+- Vocabulary: taken over once (version 2.1.1) and maintained in this
+  repository from now on. `tools/import_tcg.py` no longer overwrites
+  `vocabulary/vocabulary.yaml`; it reports upstream differences and warns
+  when an imported entry uses a cell the vocabulary does not know.
+- `templates/new-effect.yaml`: commented template for new entries, usable
+  directly in the GitHub web editor.

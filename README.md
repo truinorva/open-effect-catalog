@@ -33,17 +33,20 @@ Each entry is found in two independent grids:
   `change|orientation`.
 
 The vocabulary for both views lives in
-[`vocabulary/vocabulary.yaml`](vocabulary/vocabulary.yaml). Its ids are stable;
-labels, hints and synonyms may be reworded at any time.
+[`vocabulary/vocabulary.yaml`](vocabulary/vocabulary.yaml). It was taken over
+once from the TRIZ Effects Database (version 2.1.1) and is maintained in this
+repository; changes go through pull requests like any entry. Its ids are
+stable; labels, hints and synonyms may be reworded at any time.
 
 ```text
 effects/                one YAML file per effect or application
-vocabulary/             actions, objects, operations, parameters
+vocabulary/             actions, objects, operations, parameters (maintained here)
+templates/new-effect.yaml  commented template for a new entry
 schema/                 JSON Schema for an entry (editors validate as you type)
 dataset.yaml            release metadata and upstream collections
 tools/build.py          validate everything and bundle dist/effects.json
 tools/new_effect.py     create an empty entry to fill in
-tools/import_tcg.py     re-sync entries from the TRIZ Effects Database
+tools/import_tcg.py     re-sync entries from the TRIZ Effects Database (not the vocabulary)
 NOTICE.md               licences, attribution, contributors
 ```
 
@@ -116,7 +119,9 @@ entries share a name (duplicates), and that every author and reviewer is
 listed in NOTICE.md. The release contains only reviewed entries. CI runs the
 same check on each pull request.
 
-To add an entry:
+To add an entry, copy [`templates/new-effect.yaml`](templates/new-effect.yaml)
+to `effects/<id>.yaml` and fill it in — on GitHub in the browser is fine. Or,
+locally:
 
 ```bash
 python tools/new_effect.py magnetostriction --name-en Magnetostriction --name-de Magnetostriktion --author "Your Name" --source https://en.wikipedia.org/wiki/Magnetostriction
